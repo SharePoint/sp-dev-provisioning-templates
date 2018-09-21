@@ -1,0 +1,8 @@
+{
+    "categories": [
+        {"id": "HR", "displayName": "Human Resources"},
+        {"id": "ACCOUNTING", "displayName": "Accounting"},
+        {"id": "BIZPROC", "displayName": "Business Processes"},
+        {"id": "SAMPLES", "displayName": "Technology Samples"},
+    ]
+}
