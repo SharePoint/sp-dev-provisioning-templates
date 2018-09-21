@@ -2,9 +2,9 @@
                   Author="John White"
                   Generator="Human being"
                   Version="1.0"
-                  Description="A sample Provisioning document"
-                  DisplayName="Sample Provisioning"
-                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/Sample-Package-1/Milan.png">
+                  Description="Sample template for family travel related tpics"
+                  DisplayName="Family Travel Program"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/Sample-Package-1/contoso-family-travel-template.jpg">
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
