@@ -4,7 +4,7 @@
                   Version="1.0"
                   Description="A sample Provisioning document"
                   DisplayName="Sample Provisioning"
-                  ImagePreviewUrl="https://raw.githubusercontent.com/PiaSys/sp-dev-provisioning-templates/master/site/Sample-Package-1/Milan.png">
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/Sample-Package-1/Milan.png">
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
