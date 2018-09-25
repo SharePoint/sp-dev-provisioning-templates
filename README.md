@@ -7,7 +7,7 @@ Repository for SharePoint PnP Provisioning templateates to automate site / tenan
 
 - Tenant - These templates contain tenant level provisioning. They could contain for example multiple site collections, site designs, taxonomy configurations etc. You will need to have tenant level permissions to apply these templates.
 
-Sub folders in specific folders are actual templates. Each template has at least one screenshot file and readme file. Readme file should follow readme template available in the root of this repository. Each template has also mandatory json file, which has to follow the provided json file structure. This json file information is used to surface metadata on a web site from where the templates can be used.
+Sub folders in specific folders are actual templates. Each template has at least one screenshot file and readme file. Readme file should follow readme template available in the root of this repository. Each template has also mandatory json file, which has to follow the provided json file structure. This json file information is used to surface metadata on a web site from where the templates can be used. 
 
 # Contributing
 
