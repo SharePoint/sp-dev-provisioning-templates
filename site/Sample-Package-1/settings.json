@@ -1,4 +1,6 @@
 {
   "categories": ["BIZPROC","HR"],
-  "packageFile": "Sample-Package-1.xml"
+  "packageFile": "Sample-Package-1.xml",
+  "promoted":"true",
+  "preview":"true"
 }

@@ -1,0 +1,21 @@
+{
+    "tenants": [
+        {"id": "", "tenantName": "piasysdev.onmicrosoft.com", "referenceOwner": "Paolo Pialorsi"},
+        {"id": "", "tenantName": "microsoft.onmicrosoft.com", "referenceOwner": "Microsoft"},
+        {"id": "", "tenantName": "erwinmcm.onmicrosoft.com", "referenceOwner": "Erwin van Hunen"},
+        {"id": "", "tenantName": "erwinmcm.com", "referenceOwner": "Erwin van Hunen"},
+        {"id": "", "tenantName": "vesaj.onmicrosoft.com", "referenceOwner": "Vesa Juvonene"},
+        {"id": "", "tenantName": "bertonline.onmicrosoft.com", "referenceOwner": "Bert Jansen"},
+        {"id": "", "tenantName": "piasys1.onmicrosoft.com", "referenceOwner": "Paolo Pialorsi"},
+        {"id": "", "tenantName": "pialorsi.com", "referenceOwner": "Paolo Pialorsi"},
+        {"id": "", "tenantName": "officedevpnp.onmicrosoft.com", "referenceOwner": "Microsoft"},
+        {"id": "", "tenantName": "sppnp.onmicrosoft.com", "referenceOwner": "Microsoft"},
+        {"id": "", "tenantName": "sppplat.onmicrosoft.com", "referenceOwner": "Microsoft"},
+        {"id": "", "tenantName": "testf9e85fa041b34ea.onmicrosoft.com", "referenceOwner": "Microsoft"},
+        {"id": "", "tenantName": "n8dtest.onmicrosoft.com", "referenceOwner": "Stefan Bauer"},
+        {"id": "", "tenantName": "contosodemosg.sharepoint.com", "referenceOwner": "Microsoft"},
+        {"id": "", "tenantName": "contosoenergy.onmicrosoft.com", "referenceOwner": "Microsoft"},
+        {"id": "", "tenantName": "contosodemosx.sharepoint.com", "referenceOwner": "Microsoft"},
+        {"id": "", "tenantName": "contosodemosb.sharepoint.com", "referenceOwner": "Microsoft"},
+    ]
+}
