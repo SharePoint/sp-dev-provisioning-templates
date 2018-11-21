@@ -13,9 +13,9 @@
         {"id": "sppplat.onmicrosoft.com", "tenantName": "sppplat.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "testf9e85fa041b34ea.onmicrosoft.com", "tenantName": "testf9e85fa041b34ea.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "n8dtest.onmicrosoft.com", "tenantName": "n8dtest.onmicrosoft.com", "referenceOwner": "Stefan Bauer"},
-        {"id": "contosodemosg.sharepoint.com", "tenantName": "contosodemosg.sharepoint.com", "referenceOwner": "Microsoft"},
+        {"id": "contosodemosg.onmicrosoft.com", "tenantName": "contosodemosg.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "contosoenergy.onmicrosoft.com", "tenantName": "contosoenergy.onmicrosoft.com", "referenceOwner": "Microsoft"},
-        {"id": "contosodemosx.sharepoint.com", "tenantName": "contosodemosx.sharepoint.com", "referenceOwner": "Microsoft"},
-        {"id": "contosodemosb.sharepoint.com", "tenantName": "contosodemosb.sharepoint.com", "referenceOwner": "Microsoft"},
+        {"id": "contosodemosx.onmicrosoft.com", "tenantName": "contosodemosx.onmicrosoft.com", "referenceOwner": "Microsoft"},
+        {"id": "contosodemosb.onmicrosoft.com", "tenantName": "contosodemosb.onmicrosoft.com", "referenceOwner": "Microsoft"},
     ]
 }

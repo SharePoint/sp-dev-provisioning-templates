@@ -2,5 +2,34 @@
   "categories": ["SAMPLES", "BIZPROC"],
   "packageFile": "starterkit.pnp",
   "promoted":"true",
-  "preview":"true"
+  "preview":"true",
+  "metadata": {
+    "properties": [
+      {
+        "name":"Company",
+        "caption":"Company Name",
+        "description":"The name of your company",
+      },
+      {
+        "name":"SiteUrlPrefix",
+        "caption":"Site URL Prefix",
+        "description":"The prefix to use while creating sites in your tenant",
+      },
+      {
+        "name":"WeatherCity",
+        "caption":"City for Weather Forecasts",
+        "description":"The city for which you want to have weather forecasts in the home page of the Intranet",
+      },
+      {
+        "name":"StockSymbol",
+        "caption":"Stock Symbol",
+        "description":"The symbol of the stock to monitor in the home page of the Intranet (requires an AlphaVantage license key, or you can use 'demo' mode)",
+      },
+      {
+        "name":"lcid",
+        "caption":"Language",
+        "description":"The Locale ID of the language to use for provisioning the sites in the Intranet",
+      },
+    ]
+  }
 }

@@ -2,5 +2,8 @@
   "categories": ["BIZPROC","HR"],
   "packageFile": "Sample-Package-1.xml",
   "promoted":"true",
-  "preview":"true"
+  "preview":"true",
+  "metadata": {
+    "properties": []
+  }
 }
