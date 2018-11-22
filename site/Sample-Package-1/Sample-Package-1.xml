@@ -16,4 +16,27 @@
     </pnp:Parameters>
   </pnp:Preferences>
 
+  <pnp:Tenant>
+  </pnp:Tenant>
+
+  <pnp:Templates ID="SAMPLE-TEMPLATES">
+
+    <pnp:ProvisioningTemplate ID="SPECIALTEAM" Version="1.0"
+      BaseSiteTemplate="STS#0"
+      ImagePreviewUrl="https://preview.png"
+      DisplayName="Special Team Site"
+      Description="This is a Special Team Site for custom provisioning"
+      Scope="RootSite"
+      TemplateCultureInfo="1040">
+
+      <pnp:WebSettings
+        Title="Site Title"
+        CommentsOnSitePagesDisabled="false"
+        QuickLaunchEnabled="true"
+        />
+
+    </pnp:ProvisioningTemplate>
+
+  </pnp:Templates>
+
 </pnp:Provisioning>
