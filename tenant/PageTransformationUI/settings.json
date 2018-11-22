@@ -4,6 +4,12 @@
   "promoted":"false",
   "preview":"true",
   "metadata": {
-    "properties": []
+    "properties": [
+      {
+        "name":"AzureFunction",
+        "caption":"Azure function host",
+        "description":"Your Azure Page Transformation function host (e.g. https://contosomodernization.azurewebsites.net)",
+      }
+    ]
   }
 }
