@@ -1,10 +1,14 @@
 # Service Description
 
-Welcome to the SharePoint PnP 
+Welcome to the SharePoint PnP Provisioning Service, which can be used to provisioning demo sites with Microsoft provided provisioning templates. You can browse a catalog of templates and then apply those to any SharePoint Online tenant. This service is using PnP Tenant Templates, which are used to define what kind of customizations will be applied when the template is applied. These can be any of the following capabilities.
+
+- Site Desigsn and Site Scripts in tenant level - Visible in tenant level
+- Tenant themes
+- 
 
 **IMPORTANT** - Some templates might have pre-requirements like certain permission assumptions in the Terms Store or other adjustments. You will need to ensure that the pre-requirements have been applied or the provisioning event might fail.
 
-> Notice that the actual provisioning operation is NOT transactional, so if template provisioning is interrupted due an issue in the used template or due to any other reason, template might be only partially applied.
+**NOTICE** - Actual provisioning operation is NOT transactional, so if template provisioning is interrupted due an issue in the used template or due to any other reason, template might be only partially applied.
 
 ## Support and SLA
 
@@ -24,11 +28,14 @@ Please use [sp-dev-provisioning-templates issue list](https://github.com/SharePo
 
 ## Frequently Asked Questions
 
-*What?*
+**What?**
+
 Still can't hear me?
 
-*Who are you?*
+**Who are you?**
+
 You can't even see me?
 
-*What do you want?*
+**What do you want?**
+
 World peace!
