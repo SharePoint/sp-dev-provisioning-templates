@@ -4,6 +4,17 @@
   "promoted":"false",
   "preview":"true",
   "metadata": {
-    "properties": []
+    "properties": [
+      {
+        "name":"AzureAppID",
+        "caption":"Azure App ID",
+        "description":"The application ID of the Azure App used to secure the Azure Function app",
+      },
+      {
+        "name":"AzureFunction",
+        "caption":"Azure Function app url",
+        "description":"Your Azure Page Transformation Function app url (e.g. https://contosomodernization.azurewebsites.net)",
+      }
+    ]
   }
 }
