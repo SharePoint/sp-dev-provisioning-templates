@@ -1,7 +1,34 @@
 # Service Description
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a magna nisi. Cras ultrices mi orci, ut cursus est sollicitudin in. Cras pretium leo sit amet lorem tincidunt vulputate. Maecenas id pretium mauris, iaculis consequat lectus. Curabitur turpis turpis, congue vitae mi ut, elementum dapibus magna. Ut scelerisque suscipit quam quis luctus. Mauris ornare id enim eu condimentum. Aenean facilisis, turpis sit amet iaculis tempus, leo enim pharetra justo, ut tristique ante lacus in ante. Maecenas velit elit, imperdiet non consectetur non, laoreet et nunc. Cras malesuada sollicitudin consequat. Phasellus vestibulum aliquam ipsum quis luctus.
+Welcome to the SharePoint PnP 
 
-Suspendisse potenti. Nullam at iaculis neque. Nam vitae mauris vitae mauris congue imperdiet. In tincidunt erat in nunc elementum tincidunt. Morbi varius maximus lacus, at sollicitudin eros dignissim vel. Pellentesque non dolor a nunc dignissim cursus ac ac quam. Suspendisse et felis convallis, efficitur erat ac, pellentesque risus. Suspendisse pretium varius nisi molestie fringilla. Aliquam molestie faucibus tincidunt. Sed eget varius nisi, non ornare metus. Proin vestibulum condimentum enim, vel venenatis arcu feugiat sit amet. Morbi vel neque dignissim ante varius mollis et quis mauris.
+**IMPORTANT** - Some templates might have pre-requirements like certain permission assumptions in the Terms Store or other adjustments. You will need to ensure that the pre-requirements have been applied or the provisioning event might fail.
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vitae dolor mi. Proin hendrerit, urna nec iaculis dapibus, quam justo pulvinar dolor, dignissim interdum nisl massa ac massa. Aenean efficitur vitae odio elementum vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vel suscipit erat. Sed pretium sapien sed est luctus bibendum. Aenean ullamcorper erat sit amet justo scelerisque molestie. Vivamus cursus pretium tincidunt. Praesent at mauris viverra elit viverra vulputate id nec libero.
+> Notice that the actual provisioning operation is NOT transactional, so if template provisioning is interrupted due an issue in the used template or due to any other reason, template might be only partially applied.
+
+## Support and SLA
+
+PnP Provisioning Service is under the same support and SLA process as all open-source solutions and services provided by SharePoint engineering:
+
+- PnP guidance and samples are created by Microsoft & by the Community
+- PnP guidance and samples are maintained by Microsoft & community
+- PnP uses supported and recommended techniques
+- PnP implementations are reviewed and approved by Microsoft engineering
+- PnP is an open-source initiative by the community – people who work on the initiative for the benefit of others, have their normal day job as well
+- PnP is NOT a product and therefore it’s not supported by Premier Support or other official support channels
+- PnP is supported in similar ways as other open source projects done by Microsoft with support from the community by the - community
+- There is no SLA for responding on the issues related on this service
+- There are numerous partners that utilize PnP within their solutions for customers. Support for this is provided by the Partner. When PnP material is used in deployments, we recommend being clear with your customer/deployment owner on the support model
+
+Please use [sp-dev-provisioning-templates issue list](https://github.com/SharePoint/sp-dev-provisioning-templates) for reporting any issues on the templates or in the actual service. If you notice a generic SharePoint development related issue, please report those at the [sp-dev-docs issue list](https://github.com/SharePoint/sp-dev-docs/issues).
+
+## Frequently Asked Questions
+
+*What?*
+Still can't hear me?
+
+*Who are you?*
+You can't even see me?
+
+*What do you want?*
+World peace!
