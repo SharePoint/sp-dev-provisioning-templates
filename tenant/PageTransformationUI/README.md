@@ -30,3 +30,5 @@ Here are current pre-requirements for making this solution work in your tenant.
     - All solutions and web parts are also English in the current implementation
 - A tenant 'App Catalog' must have been created within the 'Apps' option of the SharePoint Admin Center
 
+
+<img src="https://telemetry.sharepointpnp.com/sp-dev-provisioning-templates/PageTransformationUI" />

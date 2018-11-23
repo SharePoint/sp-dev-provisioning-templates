@@ -28,3 +28,5 @@ Here are current pre-requirements for making this solution work in your tenant.
 - The tenant app catalog must have been created 
 
 ![SharePoint Starter Kit UI](./sp-starter-kit-front-page-16x9.png)
+
+<img src="https://telemetry.sharepointpnp.com/sp-dev-provisioning-templates/SP-Starter-Kit" />
