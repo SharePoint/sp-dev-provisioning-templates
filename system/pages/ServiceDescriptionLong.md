@@ -4,7 +4,11 @@ Welcome to the SharePoint PnP Provisioning Service, which can be used to provisi
 
 - Site Desigsn and Site Scripts in tenant level - Visible in tenant level
 - Tenant themes
-- 
+- SharePoint Framework solutions
+- Required Graph or 3rd party API permissions
+- Tenant taxonomy settings
+- Hub site configuration
+- Site collections and potential sub sites (not preferred)
 
 **IMPORTANT** - Some templates might have pre-requirements like certain permission assumptions in the Terms Store or other adjustments. You will need to ensure that the pre-requirements have been applied or the provisioning event might fail.
 
