@@ -1,4 +1,4 @@
-# Work Hub Template
+# Contoso @ Work Template
 
 This is just a sample package for testing purposes. 
 
