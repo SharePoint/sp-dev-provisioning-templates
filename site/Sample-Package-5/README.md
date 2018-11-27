@@ -1,4 +1,4 @@
-# Work Hub Template
+# Generic Template
 
 This is just a sample package for testing purposes. 
 
