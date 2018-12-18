@@ -2,6 +2,7 @@
   "categories": ["HR", "ACCOUNTING"],
   "packageFile": "Sample-Package-7.xml",
   "promoted":"false",
+  "preview":"true",
   "metadata": {
     "properties": []
   }
