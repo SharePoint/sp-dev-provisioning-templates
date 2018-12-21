@@ -6,7 +6,7 @@
   "metadata": {
     "properties": [
       {
-        "name":"O365CL",
+        "name":"SiteUrl",
         "caption":"Office 365 Custom Learning site URL",
         "description":"URL for the Office 365 Custom Learning site (default is /sites/O365CL)",
       }
