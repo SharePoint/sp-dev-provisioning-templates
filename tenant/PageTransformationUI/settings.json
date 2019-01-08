@@ -14,6 +14,16 @@
         "name":"AzureFunction",
         "caption":"Azure Function app url",
         "description":"Your Azure Page Transformation Function app url (e.g. https://contosomodernization.azurewebsites.net)",
+      },
+      {
+        "name":"CenterUrl",
+        "caption":"Modernization center URL",
+        "description":"URL for the modernization center site (should be /sites/modernizationcenter)",
+      },
+      {
+        "name":"ModernizationFeedbackList",
+        "caption":"Modernization Feedback List name",
+        "description":"Name for the modernization feedback list (should be ModernizationFeedbackList)",
       }
     ]
   }

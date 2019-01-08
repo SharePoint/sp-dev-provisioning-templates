@@ -2,8 +2,8 @@
                   Author="John White"
                   Generator="Human being"
                   Version="1.0"
-                  Description="Example Work Hub template"
-                  DisplayName="Work Hub"
+                  Description="Example Hobby Happy Hub template"
+                  DisplayName="Hobby Happy Hub"
                   ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/Sample-Package-2/work-contoso-hub.jpg">
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">

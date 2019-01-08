@@ -1,4 +1,4 @@
-# Work Hub Template
+# Hobby Happy Hub Template
 
 This is just a sample package for testing purposes. 
 

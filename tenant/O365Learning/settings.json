@@ -1,0 +1,15 @@
+{
+  "categories": ["SAMPLES", "BIZPROC"],
+  "packageFile": "O365CL.pnp",
+  "promoted":"true",
+  "preview":"true",
+  "metadata": {
+    "properties": [
+      {
+        "name":"SiteUrl",
+        "caption":"Office 365 Custom Learning site URL",
+        "description":"URL for the Office 365 Custom Learning site (default is /sites/O365CL)",
+      }
+    ]
+  }
+}
