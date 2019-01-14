@@ -18,5 +18,6 @@
         {"id": "contosodemosx.onmicrosoft.com", "tenantName": "contosodemosx.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "contosodemosb.onmicrosoft.com", "tenantName": "contosodemosb.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "m365x678527.onmicrosoft.com", "tenantName": "m365x678527.onmicrosoft.com", "referenceOwner": "Bert Jansen"},
+        {"id": "n8dlab001.onmicrosoft.com", "tenantName": "n8dlab001.onmicrosoft.com", "referenceOwner": "Stefan Bauer"},
     ]
 }
