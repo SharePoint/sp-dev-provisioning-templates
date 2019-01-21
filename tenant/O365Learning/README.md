@@ -8,6 +8,8 @@ Suspendisse potenti. Nullam at iaculis neque. Nam vitae mauris vitae mauris cong
 
 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vitae dolor mi. Proin hendrerit, urna nec iaculis dapibus, quam justo pulvinar dolor, dignissim interdum nisl massa ac massa. Aenean efficitur vitae odio elementum vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vel suscipit erat. Sed pretium sapien sed est luctus bibendum. Aenean ullamcorper erat sit amet justo scelerisque molestie. Vivamus cursus pretium tincidunt. Praesent at mauris viverra elit viverra vulputate id nec libero.
 
+![SharePoint Starter Kit UI](./o365cl-frontpage.png)
+
 # Pre-requirements
 
 Here are current pre-requirements for making this solution work in your tenant.
