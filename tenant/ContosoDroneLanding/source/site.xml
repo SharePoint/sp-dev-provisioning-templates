@@ -4,7 +4,7 @@
     Generator="SharePoint PnP" 
     Version="1.0" Description="Contoso Drone Landing page layout." 
     DisplayName="Contoso Drone Landing" 
-    ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/contosodronelanding/top-landing.png">
+    ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/ContosoDroneLanding/top-landing.png">
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.1.1809.0, Culture=neutral, PublicKeyToken=null">
     <pnp:Parameters>
       <pnp:Parameter Key="SiteTitle">Contoso Drone Landing</pnp:Parameter>
