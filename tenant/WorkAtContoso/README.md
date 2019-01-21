@@ -1,32 +1,27 @@
-# SharePoint Starter Kit
+# Work @ Contoso
 
-This is a solution designed for SharePoint Online which provides numerous web parts, extensions, and other components which you can use as an example and inspiration for your own customizations.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a magna nisi. Cras ultrices mi orci, ut cursus est sollicitudin in. Cras pretium leo sit amet lorem tincidunt vulputate.
 
-## Objectives of this solution
+![Live at Contoso top pic](./top-work-at-contoso.png)
 
-SharePoint Communication Sites have great out-of-the-box capabilities, but the out-of-the-box capabilities may not always be sufficient for your scenarios. This is exactly why you are able to include your own customizations. This solution addresses common scenarios and tasks you may encounter when introducing those customizations, and provides examples and guidance on how you might address them including:
+## Objectives of this template
 
-- Automated provisioning of simple demo content within a communication site
-- Automated provisioning of the whole solution to any tenant within minutes
-- Automated configuration of Site Scripts and Site Designs at the tenant level using the PnP Remote Provisioning engine
-- Implementation of different customizations for SharePoint Online
-- Usage of Office UI Fabric and reusable PnP SPFx controls within the customizations
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a magna nisi. Cras ultrices mi orci, ut cursus est sollicitudin in. Cras pretium leo sit amet lorem tincidunt vulputate. Maecenas id pretium mauris, iaculis consequat lectus. Curabitur turpis turpis, congue vitae mi ut, elementum dapibus magna. Ut scelerisque suscipit quam quis luctus. Mauris ornare id enim eu condimentum. Aenean facilisis, turpis sit amet iaculis tempus, leo enim pharetra justo, ut tristique ante lacus in ante. Maecenas velit elit, imperdiet non consectetur non, laoreet et nunc. Cras malesuada sollicitudin consequat. Phasellus vestibulum aliquam ipsum quis luctus.
 
-![SharePoint Starter Kit UI](./assets/ext-portal-footer.png)
+Suspendisse potenti. Nullam at iaculis neque. Nam vitae mauris vitae mauris congue imperdiet. In tincidunt erat in nunc elementum tincidunt. Morbi varius maximus lacus, at sollicitudin eros dignissim vel. Pellentesque non dolor a nunc dignissim cursus ac ac quam. Suspendisse et felis convallis, efficitur erat ac, pellentesque risus. Suspendisse pretium varius nisi molestie fringilla. Aliquam molestie faucibus tincidunt. Sed eget varius nisi, non ornare metus. Proin vestibulum condimentum enim, vel venenatis arcu feugiat sit amet. Morbi vel neque dignissim ante varius mollis et quis mauris.
 
-## Pre-requirements
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vitae dolor mi. Proin hendrerit, urna nec iaculis dapibus, quam justo pulvinar dolor, dignissim interdum nisl massa ac massa. Aenean efficitur vitae odio elementum vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vel suscipit erat. Sed pretium sapien sed est luctus bibendum. Aenean ullamcorper erat sit amet justo scelerisque molestie. Vivamus cursus pretium tincidunt. Praesent at mauris viverra elit viverra vulputate id nec libero.
+
+![SharePoint Starter Kit UI](./full-layout-work-at-contoso.png)
+
+# Pre-requirements
 
 Here are current pre-requirements for making this solution work in your tenant.
 
 - You will need to be a tenant administrator to be able to deploy this solution
-    - Notice that you can get free developer tenant from [Office 365 developer program](https://developer.microsoft.com/en-us/office/dev-program), if needed.
+    - Notice that you can get free developer tenant from [Office 365 developer program](https://developer.microsoft.com/en-us/office/dev-program), if needed
 - Automatic end-to-end provisioning only works with English tenants
     - All solutions and web parts are also English in the current implementation
-    - For tenants that have English but have a different default language, the [term set provisioning may be modified to assist with installation](./documentation/term-store.md#non-english-tenants).
-- Release preferences for your tenant will need to be set as "Targeted release for everyone" option (also known as First Release)
-- Add used tenant administrator account as Term Store Administrator in the Taxonomy Term Store 
-- The tenant app catalog must have been created 
+- A tenant 'App Catalog' must have been created within the 'Apps' option of the SharePoint Admin Center
 
-![SharePoint Starter Kit UI](./sp-starter-kit-front-page-16x9.png)
-
-<img src="https://telemetry.sharepointpnp.com/sp-dev-provisioning-templates/SP-Starter-Kit" />
+<img src="https://telemetry.sharepointpnp.com/sp-dev-provisioning-templates/WorkAtContoso" />
