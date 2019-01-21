@@ -5,7 +5,7 @@
     Version="1.0" 
     Description="Contoso Landings page sample." 
     DisplayName="Contoso Enterprise Landing" 
-    ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/ContosoLandings/top-contoso-landing.png">
+    ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/ContosoLanding/top-contoso-landing.png">
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.1.1809.0, Culture=neutral, PublicKeyToken=null">
     <pnp:Parameters>
       <pnp:Parameter Key="SiteTitle">Contoso Landings</pnp:Parameter>
