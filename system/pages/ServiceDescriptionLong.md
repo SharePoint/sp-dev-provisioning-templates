@@ -32,14 +32,18 @@ Please use [sp-dev-provisioning-templates issue list](https://github.com/SharePo
 
 ## Frequently Asked Questions
 
-**What?**
+**Who has decided what templates are available?**
 
-Still can't hear me?
+These templates were decided by SharePoint engineering together with the SharePoint design team. We do **not** welcome external templates at least for now to this service.
 
-**Who are you?**
+**Who has built this service?**
 
-You can't even see me?
+Service has been designed by SharePoint engineering and it has been built by SharePoint engineering together with the SharePoint Patterns and Practices MVP team. 
 
-**What do you want?**
+**Is the service code open-source?**
 
-World peace!
+Code used by the service will be released as an open-source sample later 2019. Actual provisioning logic is done using PnP Provisioning Engine, which is already open-sourced and avaialble using code or PowerShell.
+
+**I identified an issue on the service - where to report it?**
+
+Please report any issues which you might have using the the [sp-dev-docs issue list](https://github.com/SharePoint/sp-dev-docs/issues) issue list. We will be following up on them as soon as possible, but please note that there's no direct SLA for this community built project through Microsoft.
