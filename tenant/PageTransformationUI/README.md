@@ -7,6 +7,8 @@
 
 The Page Transformation UI solution makes it possible for end users to request a modern version of a wiki or web part page. The generated modern page will have a page banner web part on top of the page which will allow the user to keep the generated page or discard it. When the user discards the page the solution will show a feedback dialog asking for a reason why the page was not good.
 
+![page transformator web part](PageTransformationUI.png)
+
 Below diagram shows the high level architecture of the solution:
 
 1. From any of the UI elements the users triggers the creation of a modern version of the selected wiki or web part page. This will be done by calling a "central" proxy page which is hosted in the modernization center site collection
