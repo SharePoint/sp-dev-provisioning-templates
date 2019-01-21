@@ -1,0 +1,9 @@
+{
+  "categories": ["BIZPROC","HR"],
+  "packageFile": "ContosoLandings.pnp",
+  "promoted":"false",
+  "preview":"true",
+  "metadata": {
+    "properties": []
+  }
+}
