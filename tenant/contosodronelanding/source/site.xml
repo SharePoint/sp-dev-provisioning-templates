@@ -1,9 +1,14 @@
 ﻿<?xml version="1.0"?>
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema" Author="SharePoint PnP" Generator="SharePoint PnP" Version="1.0" Description="Contoso Landings" DisplayName="Contoso Landings" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/SP-Starter-Kit/sp-starter-kit-front-page-16x9.png">
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema" 
+    Author="SharePoint PnP" 
+    Generator="SharePoint PnP" 
+    Version="1.0" Description="Contoso Drone Landing page layout." 
+    DisplayName="Contoso Drone Landing" 
+    ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/contosodronelanding/top-landing.png">
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.1.1809.0, Culture=neutral, PublicKeyToken=null">
     <pnp:Parameters>
-      <pnp:Parameter Key="SiteTitle">Contoso Drone Landings</pnp:Parameter>
-      <pnp:Parameter Key="SiteUrl">/sites/contosodronelandings</pnp:Parameter>
+      <pnp:Parameter Key="SiteTitle">Contoso Drone Landing</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/contosodronelanding</pnp:Parameter>
       <pnp:Parameter Key="lcid">1033</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
