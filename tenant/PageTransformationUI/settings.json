@@ -1,7 +1,7 @@
 {
   "categories": ["SAMPLES", "BIZPROC"],
   "packageFile": "modernization.pnp",
-  "promoted":"true",
+  "promoted":"false",
   "preview":"true",
   "metadata": {
     "properties": [
