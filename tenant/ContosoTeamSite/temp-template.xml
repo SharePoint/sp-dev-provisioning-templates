@@ -4,7 +4,7 @@
                   Version="1.0"
                   Description="Example collboration site"
                   DisplayName="Contoso Team Site"
-                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/Sample-Package-2/work-contoso-hub.jpg">
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/ContosoTeamSite/top-team.png">
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
