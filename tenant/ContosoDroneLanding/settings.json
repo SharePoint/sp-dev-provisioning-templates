@@ -1,7 +1,7 @@
 {
   "categories": ["BIZPROC","HR"],
   "packageFile": "ContosoDroneLanding.pnp",
-  "promoted":"false",
+  "promoted":"true",
   "preview":"true",
   "metadata": {
     "properties": []
