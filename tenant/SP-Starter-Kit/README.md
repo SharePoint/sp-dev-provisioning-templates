@@ -1,6 +1,10 @@
 # SharePoint Starter Kit
 
-This is a solution designed for SharePoint Online which provides numerous web parts, extensions, and other components which you can use as an example and inspiration for your own customizations.
+This is a sample solution designed for SharePoint Online which provides numerous web parts, extensions, and other components which you can use as an example and inspiration for your own customizations.
+
+SharePoint Starter Kit is provided as an open-source solution for anyoen to benefit from overall design or from code perspetive. You can find all used assets from the [sp-starter-kit GitHub repository](https://github.com/SharePoint/sp-starter-kit).
+
+**Note.** please check the pre-requirements section later in this page, before trying to apply this to your demo tenant. Notice also that this template does perform tenant wide configurations, so it's not recommended to be used in production tenants, unless you know what you are doing.
 
 ## Objectives of this solution
 
@@ -14,6 +18,15 @@ SharePoint Communication Sites have great out-of-the-box capabilities, but the o
 
 ![SharePoint Starter Kit UI](./assets/ext-portal-footer.png)
 
+## Included customizations
+
+SharePoint Starter Kit applies following sites:
+
+- Creates 3 different site collections - landing hub site and two sub site colletions associated on the hub site
+- Installation of custom SharePoint Framework solution with 17 additional web parts and 7 SharePoint Framework extensions
+- Custom Site Designs which are visible in the out-of-the-box site creation process
+- Custom tenant themes, which are applied to the created site collections
+
 ## Pre-requirements
 
 Here are current pre-requirements for making this solution work in your tenant.
@@ -25,8 +38,13 @@ Here are current pre-requirements for making this solution work in your tenant.
     - For tenants that have English but have a different default language, the [term set provisioning may be modified to assist with installation](./documentation/term-store.md#non-english-tenants).
 - Release preferences for your tenant will need to be set as "Targeted release for everyone" option (also known as First Release)
 - Add used tenant administrator account as Term Store Administrator in the Taxonomy Term Store 
-- The tenant app catalog must have been created 
+- The tenant app catalog must have been created
 
 ![SharePoint Starter Kit UI](./sp-starter-kit-front-page-16x9.png)
+
+
+## Support for this template
+
+If you have any issues or questions around this template, please use the [sp-starter-kit GitHub repository issue list](https://github.com/SharePoint/sp-starter-kit/issues). This is community supported template.
 
 <img src="https://telemetry.sharepointpnp.com/sp-dev-provisioning-templates/SP-Starter-Kit" />

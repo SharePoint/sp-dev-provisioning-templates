@@ -1,20 +1,18 @@
 # Executive Corner
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a magna nisi. Cras ultrices mi orci, ut cursus est sollicitudin in. Cras pretium leo sit amet lorem tincidunt vulputate.
+Executive Corner is designed to demonstrate how a company executive information site could look like in the SharePoint Online. It has a relatively simple structure with some example page and content to get you started on updating the template based on your specific requirements.
 
-![Brand at Contoso top pic](./top-exec.png)
+This site could be associated to the enterprise or divisional hub site, so that it's sharing main navigation with the other related sites in single consistent information architecture.
 
-## Objectives of this template
+Notice that you can easily extend the initially provisioned site for example by doing following modifications:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a magna nisi. Cras ultrices mi orci, ut cursus est sollicitudin in. Cras pretium leo sit amet lorem tincidunt vulputate. Maecenas id pretium mauris, iaculis consequat lectus. Curabitur turpis turpis, congue vitae mi ut, elementum dapibus magna. Ut scelerisque suscipit quam quis luctus. Mauris ornare id enim eu condimentum. Aenean facilisis, turpis sit amet iaculis tempus, leo enim pharetra justo, ut tristique ante lacus in ante. Maecenas velit elit, imperdiet non consectetur non, laoreet et nunc. Cras malesuada sollicitudin consequat. Phasellus vestibulum aliquam ipsum quis luctus.
-
-Suspendisse potenti. Nullam at iaculis neque. Nam vitae mauris vitae mauris congue imperdiet. In tincidunt erat in nunc elementum tincidunt. Morbi varius maximus lacus, at sollicitudin eros dignissim vel. Pellentesque non dolor a nunc dignissim cursus ac ac quam. Suspendisse et felis convallis, efficitur erat ac, pellentesque risus. Suspendisse pretium varius nisi molestie fringilla. Aliquam molestie faucibus tincidunt. Sed eget varius nisi, non ornare metus. Proin vestibulum condimentum enim, vel venenatis arcu feugiat sit amet. Morbi vel neque dignissim ante varius mollis et quis mauris.
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean vitae dolor mi. Proin hendrerit, urna nec iaculis dapibus, quam justo pulvinar dolor, dignissim interdum nisl massa ac massa. Aenean efficitur vitae odio elementum vestibulum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vel suscipit erat. Sed pretium sapien sed est luctus bibendum. Aenean ullamcorper erat sit amet justo scelerisque molestie. Vivamus cursus pretium tincidunt. Praesent at mauris viverra elit viverra vulputate id nec libero.
+- Include Stream web parts with videos (not present by default)
+- Include Yammer web part, if in use, for discussions
+- Include company mission and latest leadership meeting documents on the front page
 
 ![Full layout](./full-layout-exec.png)
 
-# Pre-requirements
+## Pre-requirements
 
 Here are current pre-requirements for making this solution work in your tenant.
 
