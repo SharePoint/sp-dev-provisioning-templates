@@ -2,7 +2,7 @@
   "categories": ["SAMPLES", "BIZPROC"],
   "packageFile": "starterkit.pnp",
   "promoted":"false",
-  "preview":"true",
+  "preview":"false",
   "metadata": {
     "properties": [
       {

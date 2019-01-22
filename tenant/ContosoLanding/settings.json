@@ -1,8 +1,8 @@
 {
   "categories": ["BIZPROC","HR"],
   "packageFile": "ContosoLanding.pnp",
-  "promoted":"false",
-  "preview":"true",
+  "promoted":"true",
+  "preview":"false",
   "metadata": {
     "properties": []
   }
