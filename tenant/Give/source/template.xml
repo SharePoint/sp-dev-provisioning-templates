@@ -1,0 +1,215 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Give campaign sample site."
+                  DisplayName="Give @ Contoso"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/Give/top-give.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">Give @ Contoso</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/give</pnp:Parameter>
+      <pnp:Parameter Key="lcid">1033</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Tenant>
+    <pnp:Themes>
+      <pnp:Theme Name="{parameter:SiteTitle} Theme" IsInverted="false">
+        {
+        "neutralQuaternaryAlt": "#dadada",
+        "themeLighterAlt": "#f1f9fb",
+        "themeSecondary": "#168caa",
+        "themePrimary": "#017e9d",
+        "bodyText": "#333333",
+        "themeDarker": "#014759",
+        "themeDark": "#016078",
+        "themeLight": "#9fd5e2",
+        "error": "#e93333",
+        "neutralLighter": "#f4f4f4",
+        "neutralLighterAlt": "#f8f8f8",
+        "themeLighter": "#cae8ef",
+        "themeDarkAlt": "#01728e",
+        "themeTertiary": "#50adc5",
+        "primaryText": "#333333",
+        "accent": "#864B7A",
+        "bodyBackground": "#ffffff",
+        "neutralSecondary": "#858585",
+        "neutralQuaternary": "#d0d0d0",
+        "neutralLight": "#eaeaea",
+        "neutralPrimaryAlt": "#4b4b4b",
+        "white": "#ffffff",
+        "neutralDark": "#272727",
+        "neutralPrimary": "#333333",
+        "neutralTertiaryAlt": "#c8c8c8",
+        "neutralTertiary": "#c2c2c2",
+        "black": "#1d1d1d"
+        }
+      </pnp:Theme>
+    </pnp:Themes>
+  </pnp:Tenant>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" Theme="{parameter:SiteTitle} Theme" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Files>
+        <pnp:File Src="assets/logo_hr.png" Folder="SiteAssets" Overwrite="true"/>
+        <pnp:File Src="assets/mountainslake.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/Corporate Giving Press Release.docx" Folder="Shared Documents" Overwrite="true" />
+        <pnp:File Src="assets/Giving Campaign.docx" Folder="Shared Documents" Overwrite="true" />
+        <pnp:File Src="assets/woods.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/3590676818jean-lakosnyk-1325-unsplash.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/50668-donate.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/74855-Volunteer.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/39460-MatchMoney.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/FamilyDIY3.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/Picnic4.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/drone-1080844_1920.jpg" Folder="SiteAssets" Overwrite="true" />
+      </pnp:Files>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/logo_hr.png" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:Lists>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;dataVersion&quot;:&quot;1.3&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Community empowerment around the world&quot;,&quot;content[1].title&quot;:&quot;A Task Force for Change&quot;,&quot;content[2].title&quot;:&quot;Replacing What Is Used&quot;,&quot;content[3].title&quot;:&quot;Corporate Giving Press Release&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[1].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[2].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[3].callToActionText&quot;:&quot;Learn more&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/3590676818jean-lakosnyk-1325-unsplash.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}/SiteAssets/3590676818jean-lakosnyk-1325-unsplash.jpg&quot;,&quot;content[1].previewImage.url&quot;:&quot;{site}/SitePages/A-Task-Force-for-Change.aspx&quot;,&quot;content[2].previewImage.url&quot;:&quot;{site}/SitePages/Replacing-What-Is-Used.aspx&quot;,&quot;content[3].previewImage.url&quot;:&quot;{site}/Shared%20Documents/Corporate%20Giving%20Press%20Release.docx&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{hosturl}{site}/SiteAssets/3590676818jean-lakosnyk-1325-unsplash.jpg&quot;,&quot;content[1].link&quot;:&quot;{site}/SitePages/A-Task-Force-for-Change.aspx&quot;,&quot;content[2].link&quot;:&quot;{site}/SitePages/Replacing-What-Is-Used.aspx&quot;,&quot;content[3].link&quot;:&quot;{site}/Shared%20Documents/Corporate%20Giving%20Press%20Release.docx&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[0].previewImage.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;e92d5640-65db-4049-8c16-9d23f1cd3eb6&quot;,&quot;renderWidthRatio&quot;:0.5,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:1},&quot;content[1].previewImage.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[2].previewImage.url&quot;:{&quot;renderWidthRatio&quot;:0.25,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:640},&quot;content[3].previewImage.url&quot;:{&quot;renderWidthRatio&quot;:0.5,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:640},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}},&quot;properties&quot;:{&quot;id&quot;:&quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;,&quot;instanceId&quot;:&quot;d2e877d4-0ce1-436c-beb0-9f2ae525807c&quot;,&quot;title&quot;:&quot;Hero&quot;,&quot;description&quot;:&quot;Prominently display up to 5 pieces of content in a highly visual layout&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;&quot;,&quot;content[1].title&quot;:&quot;A Task Force for Change&quot;,&quot;content[2].title&quot;:&quot;Replacing What Is Used&quot;,&quot;content[3].title&quot;:&quot;Corporate Giving Press Release&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[1].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[2].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[3].callToActionText&quot;:&quot;Learn more&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/3590676818jean-lakosnyk-1325-unsplash.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}/SiteAssets/3590676818jean-lakosnyk-1325-unsplash.jpg&quot;,&quot;content[1].previewImage.url&quot;:&quot;{site}/SitePages/A-Task-Force-for-Change.aspx&quot;,&quot;content[2].previewImage.url&quot;:&quot;{site}/SitePages/Replacing-What-Is-Used.aspx&quot;,&quot;content[3].previewImage.url&quot;:&quot;{site}/Shared%20Documents/Corporate%20Giving%20Press%20Release.docx&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}/SiteAssets/3590676818jean-lakosnyk-1325-unsplash.jpg&quot;,&quot;content[1].link&quot;:&quot;{site}/SitePages/A-Task-Force-for-Change.aspx&quot;,&quot;content[2].link&quot;:&quot;{site}/SitePages/Replacing-What-Is-Used.aspx&quot;,&quot;content[3].link&quot;:&quot;{site}/Shared%20Documents/Corporate%20Giving%20Press%20Release.docx&quot;},&quot;componentDependencies&quot;:{&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:/SiteAssets/3590676818jean-lakosnyk-1325-unsplash.jpg}&quot;,&quot;renderwidthratiothreshold&quot;:&quot;640&quot;,&quot;mincanvaswidth&quot;:&quot;32767&quot;},&quot;content[0].previewImage.url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:/SiteAssets/3590676818jean-lakosnyk-1325-unsplash.jpg}&quot;,&quot;renderwidthratio&quot;:&quot;0.5&quot;,&quot;renderwidthratiothreshold&quot;:&quot;640&quot;,&quot;mincanvaswidth&quot;:&quot;1&quot;},&quot;content[1].previewImage.url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:/SitePages/A-Task-Force-for-Change.aspx}&quot;,&quot;renderwidthratio&quot;:&quot;0.25&quot;,&quot;renderwidthratiothreshold&quot;:&quot;640&quot;,&quot;mincanvaswidth&quot;:&quot;32767&quot;},&quot;content[2].previewImage.url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:/SitePages/Replacing-What-Is-Used.aspx}&quot;,&quot;renderwidthratio&quot;:&quot;0.25&quot;,&quot;renderwidthratiothreshold&quot;:&quot;640&quot;,&quot;mincanvaswidth&quot;:&quot;640&quot;},&quot;content[3].previewImage.url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Documents}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:/SitePages/Corporate Giving Press Release.docx}&quot;,&quot;renderwidthratio&quot;:&quot;0.5&quot;,&quot;renderwidthratiothreshold&quot;:&quot;640&quot;,&quot;mincanvaswidth&quot;:&quot;640&quot;}}},&quot;dataVersion&quot;:&quot;1.3&quot;,&quot;isFullWidth&quot;:true,&quot;content&quot;:[{&quot;image&quot;:{&quot;minCanvasWidth&quot;:32767},&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;id&quot;:&quot;e92d5640-65db-4049-8c16-9d23f1cd3eb6&quot;,&quot;minCanvasWidth&quot;:1,&quot;widthFactor&quot;:0.5},&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;type&quot;:&quot;Image&quot;,&quot;imageDisplayOption&quot;:1,&quot;color&quot;:4,&quot;isCustomImageLoaded&quot;:false,&quot;isDefaultImageLoaded&quot;:true,&quot;showCallToAction&quot;:true},{&quot;previewImage&quot;:{&quot;minCanvasWidth&quot;:32767},&quot;showDescription&quot;:false,&quot;imageDisplayOption&quot;:2,&quot;color&quot;:5,&quot;showTitle&quot;:true},{&quot;previewImage&quot;:{&quot;minCanvasWidth&quot;:640,&quot;widthFactor&quot;:0.25},&quot;showDescription&quot;:false,&quot;imageDisplayOption&quot;:1,&quot;color&quot;:4,&quot;isCustomImageLoaded&quot;:false,&quot;isDefaultImageLoaded&quot;:true,&quot;showTitle&quot;:true},{&quot;previewImage&quot;:{&quot;minCanvasWidth&quot;:640,&quot;widthFactor&quot;:0.5},&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:1,&quot;color&quot;:4,&quot;isCustomImageLoaded&quot;:false,&quot;isDefaultImageLoaded&quot;:true},{&quot;showDescription&quot;:false}],&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;layoutCategory&quot;:1,&quot;layout&quot;:4}}"/>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;The Contoso&amp;nbsp;Employee Giving Program (Give)&lt;/span&gt;&lt;/p&gt;"></pnp:CanvasControlProperty>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLarge&quot;&gt;Give helps employees make a difference in their communities by matching the time and money they donate to eligible organizations.&amp;nbsp;Give also supports companywide giving events and helps employees find volunteer opportunities with eligible US-based nonprofit organizations.&lt;/span&gt;"></pnp:CanvasControlProperty>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;:&quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Spacer&quot;,&quot;description&quot;:&quot;Add vertical space to your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}},&quot;dataVersion&quot;:&quot;1.0&quot;,&quot;properties&quot;:{&quot;autoHide&quot;:true,&quot;height&quot;:16}}" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;e2723ad0-efcd-48e7-b6f1-5d3b3c9a93f6&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/50668-donate.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/50668-donate.png}&quot;,&quot;width&quot;:&quot;147&quot;,&quot;height&quot;:&quot;100&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/50668-donate.png}&quot;,&quot;imgWidth&quot;:147,&quot;imgHeight&quot;:100,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false}}" Column="1"  Order="1"/>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;e2723ad0-efcd-48e7-b6f1-5d3b3c9a93f6&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/74855-Volunteer.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/74855-Volunteer.png}&quot;,&quot;width&quot;:&quot;147&quot;,&quot;height&quot;:&quot;100&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/74855-Volunteer.png}&quot;,&quot;imgWidth&quot;:147,&quot;imgHeight&quot;:100,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false}}" Column="2" Order="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;e2723ad0-efcd-48e7-b6f1-5d3b3c9a93f6&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/39460-MatchMoney.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/39460-MatchMoney.png}&quot;,&quot;width&quot;:&quot;147&quot;,&quot;height&quot;:&quot;100&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/39460-MatchMoney.png}&quot;,&quot;imgWidth&quot;:147,&quot;imgHeight&quot;:100,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false}}" Column="3" Order="1" />
+                <pnp:CanvasControl WebPartType="Text" Column="1" Order="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeXxLarge&quot;&gt;Donate&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;a data-interception=&quot;on&quot; href=&quot;{site}#&quot;&gt;&lt;strong&gt;LEARN MORE&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;"/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" Column="2" Order="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeXxLarge&quot;&gt;Volunteer&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;a data-interception=&quot;on&quot; href=&quot;{site}#&quot;&gt;&lt;strong&gt;LEARN MORE&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;"/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" Column="3" Order="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeXxLarge&quot;&gt;Match money&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;a data-interception=&quot;on&quot; href=&quot;{site}#&quot;&gt;&lt;strong&gt;LEARN MORE&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;"/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="NewsFeed" JsonControlData="{&quot;id&quot;:&quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;News&quot;,&quot;description&quot;:&quot;Show recent news for the current site.&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{site}&quot;}},&quot;dataVersion&quot;:&quot;1.7&quot;,&quot;properties&quot;:{&quot;dataProviderId&quot;:&quot;viewCounts&quot;,&quot;layoutId&quot;:&quot;GridNews&quot;,&quot;newsDataSourceProp&quot;:1,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;showChrome&quot;:false,&quot;prefetchCount&quot;:4,&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true},&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;propsLastEdited&quot;:&quot;2019-01-15T17:59:19.549Z&quot;}}"></pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="A-Task-Force-for-Change.aspx" Title="A Task Force for Change" PromoteAsNewsArticle="false">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" Order="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="We’re excited to announce a Contoso task force charged with the mission of localizing to help communities in need. We will create regional teams, staffed by Contoso employees around the globe. These teams will deploy assistance in the event of a natural disaster or community hardship in any of the locations we operate. Giving back is one of our core beliefs at Contoso and we hope you can help us."/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Image" Order="2" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page.&quot;,&quot;dataVersion&quot;:&quot;1.6&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{guid}&quot;,&quot;imgWidth&quot;:&quot;&quot;,&quot;imgHeight&quot;:&quot;&quot;,&quot;useParallax&quot;:false},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/mountainslake.PNG&quot;},&quot;links&quot;:{}}}" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Replacing-What-Is-Used.aspx" Title="Replacing What Is Used" PromoteAsNewsArticle="false">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" Order="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Contoso is passionate about the world we live in. Restoring and maintaining environmental health is a priority for us. Which is why we are pleased to launch a new campaign designed to restore the natural resources in the countries we travel and work in. We want to ensure that these areas thrive by routinely planting native fruit trees for everyone to benefit from."/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Image" Order="2" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page.&quot;,&quot;dataVersion&quot;:&quot;1.6&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{guid}&quot;,&quot;imgWidth&quot;:&quot;&quot;,&quot;imgHeight&quot;:&quot;&quot;,&quot;useParallax&quot;:false},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/woods.png&quot;},&quot;links&quot;:{}}}" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Why-I-donate-to-charities.aspx" Title="Why I donate to charties" PromoteAsNewsArticle="true">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/FamilyDIY3.jpg"/>
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" Order="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="I wanted to highlight why I care about the charities I donate to."/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Community-Spotlight-Music-Mania.aspx" Title="Community Spotlight - Music Mania" PromoteAsNewsArticle="true">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/Picnic4.png"/>
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" Order="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Music Mania is a nonprofit that needs your help - here's why."/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="How-to-make-your-volunteer-hours-count-.aspx" Title="How to make your volunteer hours count!" PromoteAsNewsArticle="true">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/drone-1080844_1920.jpg"/>
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" Order="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Little-known fact - did you know that Contoso Electronics will pay nonprofits for the time that you volunteer with them? Imagine that!"/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
