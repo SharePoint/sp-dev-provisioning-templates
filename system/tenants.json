@@ -4,8 +4,11 @@
         {"id": "microsoft.onmicrosoft.com", "tenantName": "microsoft.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "erwinmcm.onmicrosoft.com", "tenantName": "erwinmcm.onmicrosoft.com", "referenceOwner": "Erwin van Hunen"},
         {"id": "erwinmcm.com", "tenantName": "erwinmcm.com", "referenceOwner": "Erwin van Hunen"},
-        {"id": "vesaj.onmicrosoft.com", "tenantName": "vesaj.onmicrosoft.com", "referenceOwner": "Vesa Juvonene"},
+        {"id": "vesaj.onmicrosoft.com", "tenantName": "vesaj.onmicrosoft.com", "referenceOwner": "Vesa Juvonen"},
         {"id": "bertonline.onmicrosoft.com", "tenantName": "bertonline.onmicrosoft.com", "referenceOwner": "Bert Jansen"},
+        {"id": "a830edad9050849nda3127.onmicrosoft.com", "tenantName": "a830edad9050849nda3127.onmicrosoft.com", "referenceOwner": "Bert Jansen"},
+        {"id": "a830edad9050849523E17050400.onmicrosoft.com", "tenantName": "a830edad9050849523E17050400.onmicrosoft.com", "referenceOwner": "Bert Jansen"},
+        {"id": "m365x678527.onmicrosoft.com", "tenantName": "m365x678527.onmicrosoft.com", "referenceOwner": "Bert Jansen"},
         {"id": "piasys1.onmicrosoft.com", "tenantName": "piasys1.onmicrosoft.com", "referenceOwner": "Paolo Pialorsi"},
         {"id": "pialorsi.com", "tenantName": "pialorsi.com", "referenceOwner": "Paolo Pialorsi"},
         {"id": "officedevpnp.onmicrosoft.com", "tenantName": "officedevpnp.onmicrosoft.com", "referenceOwner": "Microsoft"},
@@ -17,7 +20,6 @@
         {"id": "contosoenergy.onmicrosoft.com", "tenantName": "contosoenergy.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "contosodemosx.onmicrosoft.com", "tenantName": "contosodemosx.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "contosodemosb.onmicrosoft.com", "tenantName": "contosodemosb.onmicrosoft.com", "referenceOwner": "Microsoft"},
-        {"id": "m365x678527.onmicrosoft.com", "tenantName": "m365x678527.onmicrosoft.com", "referenceOwner": "Bert Jansen"},
         {"id": "n8dlab001.onmicrosoft.com", "tenantName": "n8dlab001.onmicrosoft.com", "referenceOwner": "Stefan Bauer"},
     ]
 }

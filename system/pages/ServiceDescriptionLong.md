@@ -1,10 +1,12 @@
 # Service Description
 
-Welcome to the SharePoint PnP Provisioning Service, which can be used to provisioning demo sites with Microsoft provided provisioning templates. You can browse a catalog of templates and then apply those to any SharePoint Online tenant. This service is using PnP Tenant Templates, which are used to define what kind of customizations will be applied when the template is applied. These can be any of the following capabilities.
+Welcome to the SharePoint PnP Provisioning Service, which can be used to provisioning demo sites with Microsoft provided provisioning templates. You can browse a catalog of templates and then apply those to any SharePoint Online tenant. This service is using PnP Tenant Templates, which are used to define what kind of customizations will be applied when the template is applied. 
+
+These can be any of the following capabilities:
 
 - Site Desigsn and Site Scripts in tenant level - Visible in tenant level
-- Tenant themes
-- SharePoint Framework solutions
+- Modern Tenant themes
+- SharePoint Framework solutions with web parts and extensions
 - Required Graph or 3rd party API permissions
 - Tenant taxonomy settings
 - Hub site configuration
@@ -13,6 +15,8 @@ Welcome to the SharePoint PnP Provisioning Service, which can be used to provisi
 **IMPORTANT** - Some templates might have pre-requirements like certain permission assumptions in the Terms Store or other adjustments. You will need to ensure that the pre-requirements have been applied or the provisioning event might fail.
 
 **NOTICE** - Actual provisioning operation is NOT transactional, so if template provisioning is interrupted due an issue in the used template or due to any other reason, template might be only partially applied.
+
+This service uses the [PnP Provisioning engine](https://www.youtube.com/watch?v=kRbrrGCfUtE) as the underlying process to apply the needed configuration to your tenant. This is open-source community built engine, which is also available as CSOM extension or by using [PnP PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets?view=sharepoint-ps).
 
 ## Support and SLA
 
@@ -47,3 +51,7 @@ Code used by the service will be released as an open-source sample later 2019. A
 **I identified an issue on the service - where to report it?**
 
 Please report any issues which you might have using the the [sp-dev-docs issue list](https://github.com/SharePoint/sp-dev-docs/issues) issue list. We will be following up on them as soon as possible, but please note that there's no direct SLA for this community built project through Microsoft.
+
+**Are the templates only provisioning SharePoint assets?**
+
+Mainly yes. They can provision already Office 365 groups as those are created by default for the modern team sites. Starting from spring 2019, templates can also include other assets as the PnP Provisioning engine will start supporting for example Microsoft Team provisioning (Teams, channels, tabs) and other Office 365 assets based on the API support.
