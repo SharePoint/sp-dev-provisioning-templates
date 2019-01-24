@@ -1,6 +1,6 @@
-# Contoso Workshop Template
+# Contoso Workshop Template (x)
 
-Contoso Workshop template is designed to demonstrate how a generic workshop centric site could look like in the SharePoint Online.
+This template is designed to demonstrate how a generic workshop centric site could look like in the SharePoint Online.
 
 This site could be associated to the workshops hub site to aggregate workshop information from multiple workshops.
 

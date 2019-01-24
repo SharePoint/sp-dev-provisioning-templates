@@ -1,6 +1,6 @@
 # Give @ Contoso
 
-Live @ Contoso is designed to demonstrate how a typical company charity site could look like in the SharePoint Online. It has a relatively simple structure with some example page and content to get you started on updating the template based on your specific requirements.
+This template is designed to demonstrate how a typical company charity site could look like in the SharePoint Online. It has a relatively simple structure with some example page and content to get you started on updating the template based on your specific requirements.
 
 This site could be associated to the enterprise or divisional hub site, so that it's sharing main navigation with the other related sites in single consistent information architecture.
 
