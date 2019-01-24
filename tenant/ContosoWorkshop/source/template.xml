@@ -1,0 +1,156 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Example site for workshop events"
+                  DisplayName="Contoso Workshop Site"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/ContosoWorkshop/top-workshop.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">Contoso Workshop</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/contosoworkshop</pnp:Parameter>
+      <pnp:Parameter Key="lcid">1033</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Tenant>
+    <pnp:Themes>
+      <pnp:Theme Name="{parameter:SiteTitle} Theme" IsInverted="false">
+        {
+        "neutralQuaternaryAlt": "#dadada",
+        "themeLighterAlt": "#f9f8fb",
+        "themeSecondary": "#8675a5",
+        "themePrimary": "#786699",
+        "bodyText": "#333333",
+        "themeDarker": "#433956",
+        "themeDark": "#5b4e74",
+        "themeLight": "#d2cae0",
+        "error": "#e93333",
+        "neutralLighter": "#f4f4f4",
+        "neutralLighterAlt": "#f8f8f8",
+        "themeLighter": "#e6e2ef",
+        "themeDarkAlt": "#6c5c8a",
+        "themeTertiary": "#a99bc2",
+        "primaryText": "#333333",
+        "accent": "#786699",
+        "bodyBackground": "#ffffff",
+        "neutralSecondary": "#858585",
+        "neutralQuaternary": "#d0d0d0",
+        "neutralLight": "#eaeaea",
+        "neutralPrimaryAlt": "#4b4b4b",
+        "white": "#ffffff",
+        "neutralDark": "#272727",
+        "neutralPrimary": "#333333",
+        "neutralTertiaryAlt": "#c8c8c8",
+        "neutralTertiary": "#c2c2c2",
+        "black": "#1d1d1d"
+        }
+      </pnp:Theme>
+    </pnp:Themes>
+  </pnp:Tenant>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" Theme="{parameter:SiteTitle} Theme" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Files>
+        <pnp:File Src="assets/contosoworkshop.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/10295-GettyImages-867431800.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/2993280008GettyImages-946913156.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/557830426GettyImages-621491318.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/36557-D1.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/94901-D2.png" Folder="SiteAssets" Overwrite="true" />
+      </pnp:Files>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/contosoworkshop.png" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:Lists>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Get to know the latest capabilities of Contoso consumer drone series&quot;,&quot;content[1].title&quot;:&quot;Bring your ideas to life. Take part in hands-on training sessions&quot;,&quot;content[2].title&quot;:&quot;&quot;,&quot;content[3].title&quot;:&quot;&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;This is an img attribution &quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[1].callToActionText&quot;:&quot;Learn more&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/2993280008GettyImages-946913156.jpg&quot;,&quot;content[1].image.url&quot;:&quot;{site}/SiteAssets/557830426GettyImages-621491318.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}#&quot;,&quot;content[1].previewImage.url&quot;:&quot;{site}#&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}#&quot;,&quot;content[1].link&quot;:&quot;{site}#&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;539ca3d4-1f2f-40c4-b0c6-51893eca2772&quot;,&quot;renderWidthRatioThreshold&quot;:640},&quot;content[1].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;f715fbed-d660-4800-b785-f6176f67637a&quot;,&quot;renderWidthRatioThreshold&quot;:640},&quot;content[0].previewImage.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640},&quot;content[1].previewImage.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;isFullWidth&quot;:true,&quot;layoutCategory&quot;:1,&quot;layout&quot;:2,&quot;content&quot;:[{&quot;id&quot;:&quot;33b29983-1b88-47f2-8b91-41dfb35b17ce&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1},&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;539ca3d4-1f2f-40c4-b0c6-51893eca2772&quot;}},{&quot;id&quot;:&quot;ebc2e0dd-2805-42cc-9af1-3cdcfe205697&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1},&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;f715fbed-d660-4800-b785-f6176f67637a&quot;}},{&quot;id&quot;:&quot;c7e45639-4806-400d-b3a5-d4d12fa1a7ed&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;c7456d20-05be-4490-8c5e-c53d74a249ca&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;c5c7de9c-9247-4478-943d-af8985925b12&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false}]}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="80580a54-8af5-4ecb-9cab-c4cf3a24a426" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontSizeXLarge&quot;&gt;Join us at 2018 4th Quarterly Consumer Drone Training Session held by Contoso Electronics at Washington State Convention Center on Wednesday, December 19, 2018 and Thursday, December 20, 2018.&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeXLarge&quot;&gt;This event features announcement of a new Contoso drone line-up, including top-of-the-line&amp;nbsp;Contoso Eagle with 8K capable camera and up to an hour in-air time. Enjoy a series of talks given by&amp;nbsp;invited quests:&amp;nbsp;Adele Vance,&amp;nbsp;Chris McNulty,&amp;nbsp;Isaiah Langer&amp;nbsp;and&amp;nbsp;Patti Fernandez&lt;/span&gt;&lt;span class=&quot;fontSizeXLarge&quot;&gt;.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeXLarge&quot;&gt;Attend four specialized workshops on highly requested drone-related topics: 3D modeling of a high-performing prop, Utilizing recycled materials in drone components, Assembling hi-spec custom drones using CE components&amp;nbsp;and more.&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;,&quot;items[0].title&quot;:&quot;Reserve your seat&quot;,&quot;items[1].title&quot;:&quot;Two-day agenda&quot;,&quot;items[2].title&quot;:&quot;Directions&quot;,&quot;items[3].title&quot;:&quot;Contact info&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[2].description&quot;:&quot;&quot;,&quot;items[3].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[0].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=ed0522d5-d04e-456c-94f5-127108a5386d&quot;,&quot;items[1].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=ed0522d5-d04e-456c-94f5-127108a5386d&quot;,&quot;items[2].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=ed0522d5-d04e-456c-94f5-127108a5386d&quot;,&quot;items[3].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=ed0522d5-d04e-456c-94f5-127108a5386d&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}#&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;ticket&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;calendaragenda&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;mappin&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;headset&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:3,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="d9a293d6-65d8-4849-8b06-5f9ef6b2269b" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLargePlus&quot;&gt;Special guests&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;,&quot;persons[0].name&quot;:&quot;Adele Vance&quot;,&quot;persons[1].name&quot;:&quot;Chris McNulty&quot;,&quot;persons[2].name&quot;:&quot;Patti Fernandez&quot;,&quot;persons[3].name&quot;:&quot;Isaiah Langer&quot;,&quot;persons[0].email&quot;:&quot;AdeleV@contosodemosg.OnMicrosoft.com&quot;,&quot;persons[1].email&quot;:&quot;ChrisM@contosodemosg.onmicrosoft.com&quot;,&quot;persons[2].email&quot;:&quot;PattiF@contosodemosg.OnMicrosoft.com&quot;,&quot;persons[3].email&quot;:&quot;IsaiahL@contosodemosg.OnMicrosoft.com&quot;,&quot;persons[0].description&quot;:&quot;Fell in love with aerial drones when she was 8 years old. An encounter with a small micro-drone company in 2005 forever altered her views on the industry.&quot;,&quot;persons[1].description&quot;:&quot;Main contributor to the first drone-related legislation back in 2013 in Florida, Idaho, Montana, Oregon, North Carolina, Tennessee, Virginia, and Texas.&quot;,&quot;persons[2].description&quot;:&quot;Passionate about drones, grew a leading consumer drones manufacturing company from a drone repair shop in her own garage in 1999 (Tacoma, WA)&quot;,&quot;persons[3].description&quot;:&quot;Author of Sales is my passion bestseller. Nominee to SALES AWEard 2016. Since 2017 Isaiah devoted his free time to developing young people who have a passion for sales.&quot;},&quot;imageSources&quot;:{&quot;persons[0].imageUrl&quot;:&quot;/_layouts/15/userphoto.aspx?size=L&amp;accountname=adelev@contosodemosg.onmicrosoft.com&quot;,&quot;persons[1].imageUrl&quot;:&quot;/_layouts/15/userphoto.aspx?size=L&amp;accountname=chrism@contosodemosg.onmicrosoft.com&quot;,&quot;persons[2].imageUrl&quot;:&quot;/_layouts/15/userphoto.aspx?size=L&amp;accountname=pattif@contosodemosg.onmicrosoft.com&quot;,&quot;persons[3].imageUrl&quot;:&quot;/_layouts/15/userphoto.aspx?size=L&amp;accountname=isaiahl@contosodemosg.onmicrosoft.com&quot;},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;layout&quot;:2,&quot;persons&quot;:[{&quot;id&quot;:&quot;i:0#.f|membership|adelev@contosodemosg.onmicrosoft.com&quot;,&quot;firstName&quot;:&quot;Adele&quot;,&quot;lastName&quot;:&quot;Vance&quot;,&quot;role&quot;:&quot;Retail Manager&quot;,&quot;upn&quot;:&quot;AdeleV@contosodemosg.OnMicrosoft.com&quot;,&quot;phone&quot;:&quot;+1 425 555 0109&quot;,&quot;sip&quot;:&quot;AdeleV@contosodemosg.OnMicrosoft.com&quot;,&quot;department&quot;:&quot;Retail&quot;},{&quot;id&quot;:&quot;i:0#.f|membership|chrism@contosodemosg.onmicrosoft.com&quot;,&quot;firstName&quot;:&quot;Chris&quot;,&quot;lastName&quot;:&quot;McNulty&quot;,&quot;role&quot;:&quot;Admin&quot;,&quot;upn&quot;:&quot;ChrisM@contosodemosg.onmicrosoft.com&quot;,&quot;phone&quot;:&quot;+1 205 555 0103&quot;,&quot;sip&quot;:&quot;ChrisM@contosodemosg.onmicrosoft.com&quot;,&quot;department&quot;:&quot;IT&quot;},{&quot;id&quot;:&quot;i:0#.f|membership|pattif@contosodemosg.onmicrosoft.com&quot;,&quot;firstName&quot;:&quot;Patti&quot;,&quot;lastName&quot;:&quot;Fernandez&quot;,&quot;role&quot;:&quot;President&quot;,&quot;upn&quot;:&quot;PattiF@contosodemosg.OnMicrosoft.com&quot;,&quot;phone&quot;:&quot;+1 502 555 0144&quot;,&quot;sip&quot;:&quot;PattiF@contosodemosg.OnMicrosoft.com&quot;,&quot;department&quot;:&quot;Executive Management&quot;},{&quot;id&quot;:&quot;i:0#.f|membership|isaiahl@contosodemosg.onmicrosoft.com&quot;,&quot;firstName&quot;:&quot;Isaiah&quot;,&quot;lastName&quot;:&quot;Langer&quot;,&quot;role&quot;:&quot;Sales Rep&quot;,&quot;upn&quot;:&quot;IsaiahL@contosodemosg.OnMicrosoft.com&quot;,&quot;phone&quot;:&quot;+1 918 555 0101&quot;,&quot;sip&quot;:&quot;IsaiahL@contosodemosg.OnMicrosoft.com&quot;,&quot;department&quot;:&quot;Sales&quot;}]}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="2" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/36557-D1.png&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{hosturl}{site}#&quot;},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;67cabdcc-2e8b-4067-9928-3183223f0dd7&quot;,&quot;width&quot;:960,&quot;height&quot;:640}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Learn more&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;67cabdcc-2e8b-4067-9928-3183223f0dd7&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:640,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/94901-D2.png&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{hosturl}{site}#&quot;},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;5af70d3a-e2cb-4aff-831f-89f310eddd66&quot;,&quot;width&quot;:960,&quot;height&quot;:640}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Learn more&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;5af70d3a-e2cb-4aff-831f-89f310eddd66&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:640,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/10295-GettyImages-867431800.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;4f108d81-ae3a-4c93-8ab8-232c3f7e1b7a&quot;,&quot;width&quot;:6720,&quot;height&quot;:4480,&quot;cropX&quot;:0,&quot;cropY&quot;:1323,&quot;cropWidth&quot;:6720,&quot;cropHeight&quot;:1976}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Featured workshops&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;4f108d81-ae3a-4c93-8ab8-232c3f7e1b7a&quot;,&quot;imgWidth&quot;:6720,&quot;imgHeight&quot;:4480,&quot;isFullWidth&quot;:true,&quot;fixAspectRatio&quot;:false,&quot;cropX&quot;:0,&quot;cropY&quot;:1323,&quot;cropWidth&quot;:6720,&quot;cropHeight&quot;:1976,&quot;isOverlayTextEnabled&quot;:true}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="8" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;dataSource&quot;:7,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:20}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="9" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="BingMap" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;pushPins&quot;:[{&quot;location&quot;:{&quot;latitude&quot;:47.61178,&quot;longitude&quot;:-122.33168,&quot;altitude&quot;:0,&quot;altitudeReference&quot;:-1},&quot;defaultTitle&quot;:&quot;Washington State Convention Center&quot;,&quot;defaultAddress&quot;:&quot;Washington State Convention Center, 800 Convention Pl, Seattle, WA 98101, United States&quot;,&quot;title&quot;:&quot;Washington State Convention Center&quot;,&quot;address&quot;:&quot;&quot;}],&quot;maxNumberOfPushPins&quot;:1,&quot;shouldShowPushPinTitle&quot;:false,&quot;zoomLevel&quot;:13,&quot;mapType&quot;:&quot;road&quot;,&quot;center&quot;:{&quot;latitude&quot;:47.613775056035934,&quot;longitude&quot;:-122.3322551461891,&quot;altitude&quot;:0,&quot;altitudeReference&quot;:-1},&quot;title&quot;:&quot;Find us on the map&quot;}}" ControlId="e377ea37-9047-43b9-8cdb-a761be2f8e09" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="ff8a292c-f2d3-4eb2-8090-d78f77a03705" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeXLarge&quot;&gt;&lt;strong&gt;Washington State Convention Center&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeXLarge&quot;&gt;800 Convention Pl,&lt;br&gt;&#xA;Seattle, WA 98101,&lt;br&gt;&#xA;United States&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" Order="1" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Insert your registration from here. See example in the image below."/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Image" Order="2" Column="3" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/form.png&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:null},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{guid}&quot;,&quot;width&quot;:&quot;381&quot;,&quot;height&quot;:&quot;814&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{guid}&quot;,&quot;imgWidth&quot;:381,&quot;imgHeight&quot;:814,&quot;fixAspectRatio&quot;:false}}"/>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" />
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
