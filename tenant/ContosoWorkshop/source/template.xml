@@ -66,6 +66,7 @@
         <pnp:File Src="assets/557830426GettyImages-621491318.jpg" Folder="SiteAssets" Overwrite="true" />
         <pnp:File Src="assets/36557-D1.png" Folder="SiteAssets" Overwrite="true" />
         <pnp:File Src="assets/94901-D2.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/form.png" Folder="SiteAssets" Overwrite="true" />
       </pnp:Files>
       <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/contosoworkshop.png" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
       <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
