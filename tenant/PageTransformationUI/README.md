@@ -24,13 +24,12 @@ Below diagram shows the high level architecture of the solution:
 Here are current pre-requirements for making this solution work in your tenant.
 
 > **Important**:
-> You do have to setup the needed Azure function app upfront. See https://github.com/SharePoint/sp-dev-modernization/tree/dev/Solutions/PageTransformationUI/docs for details on how to do that.
+> You do have to setup the needed Azure function app upfront. See https://github.com/SharePoint/sp-dev-modernization/blob/master/Solutions/PageTransformationUI/docs/deploymentguide.md#step-1-setup-the-azure-side for details on how to do that.
 
 - You will need to be a tenant administrator to be able to deploy this solution
     - Notice that you can get free developer tenant from [Office 365 developer program](https://developer.microsoft.com/en-us/office/dev-program), if needed
 - Automatic end-to-end provisioning only works with English tenants
     - All solutions and web parts are also English in the current implementation
 - A tenant 'App Catalog' must have been created within the 'Apps' option of the SharePoint Admin Center
-
 
 <img src="https://telemetry.sharepointpnp.com/sp-dev-provisioning-templates/PageTransformationUI" />
