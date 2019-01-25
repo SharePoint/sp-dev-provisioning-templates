@@ -1,0 +1,544 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Example site to manage brand assets"
+                  DisplayName="Brand @ Contoso"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/BrandAtContoso/top-brand.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">Brand @ Contoso</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/contosobrand</pnp:Parameter>
+      <pnp:Parameter Key="lcid">1033</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Tenant>
+    <pnp:Themes>
+      <pnp:Theme Name="{parameter:SiteTitle} Theme" IsInverted="false">
+        {
+        "neutralQuaternaryAlt": "#dadada",
+        "themeLighterAlt": "#f1f9fb",
+        "themeSecondary": "#168caa",
+        "themePrimary": "#017e9d",
+        "bodyText": "#333333",
+        "themeDarker": "#014759",
+        "themeDark": "#016078",
+        "themeLight": "#9fd5e2",
+        "error": "#e93333",
+        "neutralLighter": "#f4f4f4",
+        "neutralLighterAlt": "#f8f8f8",
+        "themeLighter": "#cae8ef",
+        "themeDarkAlt": "#01728e",
+        "themeTertiary": "#50adc5",
+        "primaryText": "#333333",
+        "accent": "#864B7A",
+        "bodyBackground": "#ffffff",
+        "neutralSecondary": "#858585",
+        "neutralQuaternary": "#d0d0d0",
+        "neutralLight": "#eaeaea",
+        "neutralPrimaryAlt": "#4b4b4b",
+        "white": "#ffffff",
+        "neutralDark": "#272727",
+        "neutralPrimary": "#333333",
+        "neutralTertiaryAlt": "#c8c8c8",
+        "neutralTertiary": "#c2c2c2",
+        "black": "#1d1d1d"
+        }
+      </pnp:Theme>
+    </pnp:Themes>
+  </pnp:Tenant>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" Theme="{parameter:SiteTitle} Theme" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="false" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="The Contoso Brand" Url="{site}">
+              <pnp:NavigationNode Title="Story" Url="{site}" />
+              <pnp:NavigationNode Title="Strategy" Url="{site}" />
+              <pnp:NavigationNode Title="Strategic initiatives" Url="{site}" />
+              <pnp:NavigationNode Title="Identity" Url="{site}"/>
+              <pnp:NavigationNode Title="Core elements" Url="{site}" />
+              <pnp:NavigationNode Title="Resources" Url="{site}" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Our Products" Url="{site}">
+              <pnp:NavigationNode Title="Consumer" Url="{site}" />
+              <pnp:NavigationNode Title="Enterprise" Url="{site}" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Marketing Expression" Url="{site}">
+              <pnp:NavigationNode Title="Accessibility" Url="{site}" />
+              <pnp:NavigationNode Title="Adverstising" Url="{site}" />
+              <pnp:NavigationNode Title="Cobranding" Url="{site}" />
+              <pnp:NavigationNode Title="Email" Url="{site}" />
+              <pnp:NavigationNode Title="Presentations" Url="{site}" />
+              <pnp:NavigationNode Title="Social Media" Url="{site}" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Help" Url="{site}">
+              <pnp:NavigationNode Title="Ask a question" Url="{site}" />
+              <pnp:NavigationNode Title="Request a brand review" Url="{site}" />
+              <pnp:NavigationNode Title="FAQs" Url="{site}" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Work@Contoso Guides" Url="{site}/Lists/HR Collateral" />
+            <pnp:NavigationNode Title="Conference Prep" Url="{site}/Lists/Conference Prep/AllItems.aspx" />
+            <pnp:NavigationNode Title="Projects Costs" Url="{site}/Lists/Contoso Project Tracker" />
+            <pnp:NavigationNode Title="Sales Campaigns" Url="{site}/Lists/Sales Campaign/All Campaigns.aspx" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Files>
+        <pnp:File Src="assets/logo_sales_web_site.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/51347-hr_periwinkle.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/205985604dose-media-368248-unsplash.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/74187-siyan-ren-14405.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/87186-contoso-building.png" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/75990-azis-pradana-300290-unsplash-scrubbed.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/37373-find_photos.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/87852-get-guidelines.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/88609-present-powerfully.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/70897-CreativePrincipals_Hero_1abc.jpg" Folder="SiteAssets" Overwrite="true" />
+        <pnp:File Src="assets/66935-Story_2abc.jpg" Folder="SiteAssets" Overwrite="true"/>
+      </pnp:Files>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/logo_sales_web_site.png" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:SiteFields>
+        <Field Type="Choice" DisplayName="Career Category" Required="FALSE" Format="Dropdown" StaticName="CareerCategory" Name="CareerCategory" ID="{8e178580-8abd-4ca6-8dae-fd71d2b1928a}" SourceID="{a4f443a8-91e3-45a7-9d39-c7d5d5541266}">
+          <Default>Career Guide</Default>
+          <CHOICES>
+            <CHOICE>Career Guide</CHOICE>
+            <CHOICE>Promotions</CHOICE>
+            <CHOICE>Feedback</CHOICE>
+            <CHOICE>Referrals</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Choice" DisplayName="Work Tools" Required="FALSE" Format="Dropdown" StaticName="WorkTools" Name="WorkTools" ID="{d167ce30-d2a4-422f-98ce-38db0caca95d}" SourceID="{a4f443a8-91e3-45a7-9d39-c7d5d5541266}">
+          <Default>Connect Tool</Default>
+          <CHOICES>
+            <CHOICE>Connect Tool</CHOICE>
+            <CHOICE>Paystub</CHOICE>
+            <CHOICE>TAR</CHOICE>
+            <CHOICE>Stock</CHOICE>
+            <CHOICE>Rewards</CHOICE>
+            <CHOICE>Job Search</CHOICE>
+            <CHOICE>Employment Verification</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Currency" DisplayName="Adjusted Price" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Min="0" Max="10000" LCID="1041" StaticName="AdjustedPrice" Name="AdjustedPrice" ID="{502c4043-cd3b-4164-bcaa-886ae986af07}" SourceID="{a4f443a8-91e3-45a7-9d39-c7d5d5541266}" />
+        <Field Type="Choice" DisplayName="Project Category" Required="FALSE" Format="Dropdown" StaticName="ProjectCategory" Name="ProjectCategory" ID="{b2af2c30-00d7-421e-abeb-691bdea25895}" SourceID="{a4f443a8-91e3-45a7-9d39-c7d5d5541266}">
+          <Default>Operations</Default>
+          <CHOICES>
+            <CHOICE>Operations</CHOICE>
+            <CHOICE>IT</CHOICE>
+            <CHOICE>Legal</CHOICE>
+            <CHOICE>Engineering</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field DisplayName="Project Owner" Type="User" Required="FALSE" List="UserInfo" ID="{442f2678-2714-4918-b34d-1d54d718ee19}" SourceID="{{siteid}}" StaticName="siteColumnUser" Name="siteColumnUser" Group="Contoso Custom Fields" />
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0100B609FEFDEFAA484299C6DE254182E666" Name="ContosoHR" Description="custom list content type" Group="Custom Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="8e178580-8abd-4ca6-8dae-fd71d2b1928a" Name="CareerCategory" />
+            <pnp:FieldRef ID="d167ce30-d2a4-422f-98ce-38db0caca95d" Name="WorkTools" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100515A0ED3B562B548BC2D41D25BC592D7" Name="Contoso Projects" Description="custom list content type" Group="Custom Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" />
+            <pnp:FieldRef ID="502c4043-cd3b-4164-bcaa-886ae986af07" Name="AdjustedPrice" />
+            <pnp:FieldRef ID="b2af2c30-00d7-421e-abeb-691bdea25895" Name="ProjectCategory" />
+            <pnp:FieldRef ID="442f2678-2714-4918-b34d-1d54d718ee19" Name="siteColumnUser" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="HR Collateral" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/HR Collateral" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/HR Collateral/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/HR Collateral/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/HR Collateral/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=44" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0100B609FEFDEFAA484299C6DE254182E666" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{997F1ED0-7A6A-4322-9EB1-42EB2FBBF0E7}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/contosobrand01/Lists/HR Collateral/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Abstract" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Guide Notes" Type="Text" Required="FALSE" ID="{72fc80f5-6459-414e-b507-fc5e7a1f9f19}" StaticName="GuideNotes" Name="GuideNotes" Version="12" SourceID="{{listid:HR Collateral}}" ColName="nvarchar6" RowOrdinal="0" />
+            <Field DisplayName="Abstract" Type="Text" Required="FALSE" ID="{9d30bb7b-bc25-46dc-b044-fd71b11b8324}" StaticName="Abstract" Name="Abstract" Version="12" SourceID="{{listid:HR Collateral}}" ColName="nvarchar7" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="8e178580-8abd-4ca6-8dae-fd71d2b1928a" Name="CareerCategory" DisplayName="Career Category" />
+            <pnp:FieldRef ID="d167ce30-d2a4-422f-98ce-38db0caca95d" Name="WorkTools" DisplayName="Work Tools" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Sales Campaign" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Sales Campaign" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Sales Campaign/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Sales Campaign/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Sales Campaign/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{CCAE8DBF-4DFD-462D-9459-9664B6A56867}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/contosobrand01/Lists/Sales Campaign/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="Assigned_x0020_To" />
+                <FieldRef Name="Due_x0020_Date" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="Effort_x0020__x0028_Days_x0029_" />
+                <FieldRef Name="Remind_x0020_Me" />
+                <FieldRef Name="_x0024_Resources_x003a_core_x002" />
+                <FieldRef Name="Retrospective_x0020_Date" />
+                <FieldRef Name="City" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter>{"hideListHeader":false,"hideSelection":false,"additionalRowClass":{"operator":":","operands":[{"operator":"==","operands":["[$Status]","Blocked"]},"sp-field-severity--blocked",""]}}</CustomFormatter>
+            </View>
+            <View Name="{41CF7FD1-58C7-49F1-AC22-336369610C9A}" Type="HTML" DisplayName="In Progress and Review" Url="/sites/contosobrand01/Lists/Sales Campaign/In Progress and Review.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <Where>
+                  <In>
+                    <FieldRef Name="Status" />
+                    <Values>
+                      <Value Type="Choice">In Progress</Value>
+                      <Value Type="Choice">In Review</Value>
+                    </Values>
+                  </In>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="Status" Ascending="TRUE" />
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Due_x0020_Date" />
+                <FieldRef Name="Effort_x0020__x0028_Days_x0029_" />
+                <FieldRef Name="Assigned_x0020_To" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="Remind_x0020_Me" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{A22A6D0B-541C-489B-BF29-F63B8354F705}" DefaultView="TRUE" Type="HTML" DisplayName="All Campaigns" Url="/sites/contosobrand01/Lists/Sales Campaign/All Campaigns.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="Title" />
+                <FieldRef Name="Assigned_x0020_To" />
+                <FieldRef Name="Due_x0020_Date" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="Effort_x0020__x0028_Days_x0029_" />
+                <FieldRef Name="Remind_x0020_Me" />
+                <FieldRef Name="Updates" />
+                <FieldRef Name="_x0024_Resources_x003a_core_x002" />
+                <FieldRef Name="Number_x0020_" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Due Date" Format="DateOnly" Title="Due Date" Type="DateTime" ID="{26fa86cc-b012-4e71-a206-3e733990c835}" StaticName="Due_x0020_Date" Name="Due_x0020_Date" CustomFormatter="{&#xA;    &#xA;       &quot;elmType&quot;: &quot;div&quot;,&#xA;       &quot;txtContent&quot;: &quot;@currentField&quot;,&#xA;       &quot;style&quot;: {&#xA;          &quot;font-weight&quot;: {&#xA;             &quot;operator&quot;: &quot;?&quot;,&#xA;             &quot;operands&quot;: [&#xA;                {&#xA;                   &quot;operator&quot;: &quot;&lt;=&quot;,&#xA;                   &quot;operands&quot;: [&#xA;                      &quot;@currentField&quot;,&#xA;                      &quot;@now&quot;&#xA;                   ]&#xA;                },&#xA;                &quot;bold&quot;,&#xA;                &quot;&quot;&#xA;             ]&#xA;          }&#xA;       }&#xA;    }&#xA;    " SourceID="{{listid:Sales Campaign}}" ColName="datetime1" RowOrdinal="0" />
+            <Field DisplayName="Effort (Days)" Title="Effort (Days)" Type="Number" ID="{90c35977-6fa6-4067-9174-cde0e6081f6d}" StaticName="Effort_x0020__x0028_Days_x0029_" Name="Effort_x0020__x0028_Days_x0029_" CustomFormatter="{&#xA;  &quot;elmType&quot;: &quot;div&quot;,&#xA;  &quot;txtContent&quot;: &quot;@currentField&quot;,&#xA;  &quot;attributes&quot;: {&#xA;   &quot;class&quot;: &quot;sp-field-dataBars&quot;&#xA;  },&#xA;  &quot;style&quot;: {&#xA;    &quot;width&quot;: {&#xA;      &quot;operator&quot;: &quot;:&quot;,&#xA;      &quot;operands&quot;: [&#xA;        {&#xA;          &quot;operator&quot;: &quot;&gt;&quot;,&#xA;          &quot;operands&quot;: [&#xA;            &quot;@currentField&quot;,&#xA;            &quot;20&quot;&#xA;          ]&#xA;        },&#xA;        &quot;100%&quot;,&#xA;        {&#xA;          &quot;operator&quot;: &quot;+&quot;,&#xA;          &quot;operands&quot;: [&#xA;            {&#xA;              &quot;operator&quot;: &quot;toString()&quot;,&#xA;              &quot;operands&quot;: [&#xA;                {&#xA;                  &quot;operator&quot;: &quot;*&quot;,&#xA;                  &quot;operands&quot;: [&#xA;                    &quot;@currentField&quot;,&#xA;                    5&#xA;                  ]&#xA;                }&#xA;              ]&#xA;            },&#xA;            &quot;%&quot;&#xA;          ]&#xA;        }&#xA;      ]&#xA;    }&#xA;  }&#xA;}" SourceID="{{listid:Sales Campaign}}" ColName="float1" RowOrdinal="0" />
+            <Field DisplayName="Assigned To" Title="Assigned To" Type="User" UserSelectionMode="0" UserSelectionScope="0" ID="{b56da2ca-ccea-44c6-884c-bafa05c05e7f}" StaticName="Assigned_x0020_To" Name="Assigned_x0020_To" CustomFormatter="" SourceID="{{listid:Sales Campaign}}" ColName="int1" RowOrdinal="0" />
+            <Field DisplayName="Status" Title="Status" Type="Choice" ID="{5710dea3-acea-41de-982f-bfa6799b35e9}" StaticName="Status" Name="Status" CustomFormatter="{&#xA;  &quot;elmType&quot;: &quot;div&quot;,&#xA;  &quot;attributes&quot;: {&#xA;    &quot;class&quot;: {&#xA;      &quot;operator&quot;: &quot;:&quot;,&#xA;      &quot;operands&quot;: [&#xA;        { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;In Progress&quot;] },&#xA;        &quot;sp-field-severity--low&quot;,&#xA;        { &#xA;            &quot;operator&quot;: &quot;:&quot;,&#xA;            &quot;operands&quot;: [&#xA;                { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;Done&quot;] },&#xA;                &quot;sp-field-severity--good&quot;,&#xA;                {&#xA;                    &quot;operator&quot;: &quot;:&quot;,&#xA;                    &quot;operands&quot;: [&#xA;                        { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;In Review&quot;] },&#xA;                        &quot;sp-field-severity--warning&quot;,&#xA;                        {&#xA;                            &quot;operator&quot;: &quot;:&quot;,&#xA;                            &quot;operands&quot;: [&#xA;                                { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;Blocked&quot;] },&#xA;                                &quot;sp-field-severity--blocked&quot;,&#xA;                                &quot;&quot;&#xA;                            ]&#xA;                        }&#xA;                    ]&#xA;                }&#xA;            ]&#xA;        }&#xA;      ]&#xA;    }&#xA;  },&#xA;  &quot;children&quot;: [&#xA;    {&#xA;      &quot;elmType&quot;: &quot;span&quot;,&#xA;      &quot;attributes&quot;: {&#xA;      &quot;iconName&quot;: {&#xA;          &quot;operator&quot;: &quot;:&quot;,&#xA;          &quot;operands&quot;: [&#xA;            { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;Done&quot;] },&#xA;            &quot;CheckMark&quot;,&#xA;            {&#xA;              &quot;operator&quot;: &quot;:&quot;,&#xA;              &quot;operands&quot;: [&#xA;                { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;In Review&quot;] },&#xA;                &quot;Warning&quot;,&#xA;                {&#xA;                  &quot;operator&quot;: &quot;:&quot;,&#xA;                  &quot;operands&quot;: [&#xA;                    { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;Blocked&quot;] },&#xA;                    &quot;Error&quot;,&#xA;                    &quot;Forward&quot;&#xA;                  ]&#xA;                }&#xA;              ]&#xA;            }&#xA;          ]&#xA;        }&#xA;      }&#xA;    },&#xA;    {&#xA;      &quot;elmType&quot;: &quot;span&quot;,&#xA;      &quot;style&quot;: {&#xA;        &quot;display&quot;: &quot;inline-block&quot;,&#xA;        &quot;padding&quot;: &quot;0 4px&quot;&#xA;      },&#xA;      &quot;txtContent&quot;: &quot;@currentField&quot;&#xA;    }&#xA;  ]&#xA;} " SourceID="{{listid:Sales Campaign}}" ColName="nvarchar4" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>In Progress</CHOICE>
+                <CHOICE>In Review</CHOICE>
+                <CHOICE>Blocked</CHOICE>
+                <CHOICE>Done</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field DisplayName="Remind Me" MaxLength="255" Title="Remind Me" Type="Text" ID="{d8dd6d3f-0ca4-4d02-8dce-6addc9e667a2}" StaticName="Remind_x0020_Me" Name="Remind_x0020_Me" CustomFormatter="{&#xA;  &quot;elmType&quot;: &quot;span&quot;,&#xA;  &quot;style&quot;: {&#xA;    &quot;color&quot;: &quot;#0078d7&quot;&#xA;},&#xA;&#xA;  &quot;children&quot;: [&#xA;    {&#xA;      &quot;elmType&quot;: &quot;span&quot;,&#xA;      &quot;attributes&quot;: {&#xA;        &quot;iconName&quot;: &quot;Flow&quot;&#xA;      }&#xA;    },&#xA;    {&#xA;      &quot;elmType&quot;: &quot;button&quot;,&#xA;      &quot;style&quot;: {&#xA;        &quot;border&quot;: &quot;none&quot;,&#xA;        &quot;background-color&quot;: &quot;transparent&quot;,        &#xA;        &quot;color&quot;: &quot;#0078d7&quot;,    &#xA;        &quot;cursor&quot;: &quot;pointer&quot;&#xA;      },&#xA;      &quot;txtContent&quot;: &quot;Remind Me&quot;,&#xA;&#xA;      &quot;customRowAction&quot;: {&#xA;                      &quot;action&quot;: &quot;executeFlow&quot;,&#xA;                      &quot;actionParams&quot;: &quot;{\&quot;id\&quot;: \&quot;61a38276-6cff-41bd-bd54-bab3af5cb4f5\&quot;}&quot;&#xA;      }          &#xA;    }        &#xA;  ]&#xA;}" SourceID="{{listid:Sales Campaign}}" ColName="nvarchar5" RowOrdinal="0" />
+            <Field DisplayName="Sign-off status" StaticName="_Flow_SignoffStatus" Title="Sign-off status" Type="Text" ID="{618b8634-b4f9-47f5-b581-dc4d18103e88}" Name="_x0024_Resources_x003a_core_x002" SourceID="{{listid:Sales Campaign}}" ColName="nvarchar6" RowOrdinal="0" />
+            <Field DisplayName="Retrospective Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" Title="Retrospective Date" Type="DateTime" ID="{689c7b2a-6969-4fa6-87d7-742c8305a718}" StaticName="Retrospective_x0020_Date" Name="Retrospective_x0020_Date" SourceID="{{listid:Sales Campaign}}" ColName="datetime2" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Owning Office" MaxLength="255" Title="Owning Office" Type="Text" ID="{e61ddee0-50c1-4e9a-b1f0-1e50f14183fd}" Name="City" StaticName="City" CustomFormatter="{&#xA;    &quot;$schema&quot;: &quot;http://columnformatting.sharepointpnp.com/columnFormattingSchema.json&quot;,&#xA;    &quot;debugMode&quot;:true,&#xA;    &quot;elmType&quot;: &quot;div&quot;,&#xA;    &quot;style&quot;: {&#xA;      &quot;border&quot;: &quot;2px solid #666666&quot;,&#xA;      &quot;width&quot;: &quot;128px&quot;,&#xA;      &quot;height&quot;: &quot;64px&quot;&#xA;    },&#xA;    &quot;children&quot;: [&#xA;      {&#xA;        &quot;elmType&quot;: &quot;a&quot;,&#xA;        &quot;attributes&quot;: {&#xA;          &quot;href&quot;: {&#xA;            &quot;operator&quot;: &quot;+&quot;,&#xA;            &quot;operands&quot;: [&#xA;              &quot;https://www.bing.com/maps?where1=&quot;,&#xA;              &quot;@currentField&quot;&#xA;            ]&#xA;          },&#xA;          &quot;target&quot;: &quot;_blank&quot;&#xA;        },&#xA;        &quot;style&quot;: {&#xA;          &quot;height&quot;: &quot;100%&quot;&#xA;        },&#xA;        &quot;children&quot;: [&#xA;          {&#xA;            &quot;elmType&quot;: &quot;img&quot;,&#xA;            &quot;attributes&quot;: {&#xA;              &quot;src&quot;: {&#xA;                &quot;operator&quot;: &quot;+&quot;,&#xA;                &quot;operands&quot;: [&#xA;                  &quot;https://dev.virtualearth.net/REST/V1/Imagery/Map/AerialWithLabels/&quot;,&#xA;                  &quot;@currentField&quot;,&#xA;                  &quot;?&quot;,&#xA;                  &quot;&amp;mapSize=128,64&quot;,&#xA;                  &quot;&amp;key=Apfivg3hXfNpQrVxZalNjePxZ689Kh0O0dxFjIpzaw_GH_us7iVVUlzZJ-LFu2L9&quot;&#xA;                ]&#xA;              }&#xA;            }&#xA;          }&#xA;        ]&#xA;      }&#xA;    ]&#xA;  }&#xA;  " SourceID="{{listid:Sales Campaign}}" ColName="nvarchar7" RowOrdinal="0" />
+            <Field DisplayName="Updates" MaxLength="255" Title="Updates" Type="Text" ID="{06f9601a-00ea-47cb-8f58-e98a6a2d25ba}" StaticName="Updates" Name="Updates" SourceID="{{listid:Sales Campaign}}" ColName="nvarchar8" RowOrdinal="0" />
+            <Field DisplayName="Number " Percentage="FALSE" Title="Number " Type="Number" ID="{916bc281-479e-462e-9cd3-89442785fba7}" StaticName="Number_x0020_" Name="Number_x0020_" CustomFormatter="{&#xA;  &quot;elmType&quot;: &quot;div&quot;,&#xA;  &quot;txtContent&quot;: &quot;@currentField&quot;,&#xA;  &quot;attributes&quot;: {&#xA;    &quot;class&quot;: &quot;sp-field-dataBars&quot;&#xA;  },&#xA;  &quot;style&quot;: {&#xA;    &quot;width&quot;: {&#xA;      &quot;operator&quot;: &quot;:&quot;,&#xA;      &quot;operands&quot;: [&#xA;        {&#xA;          &quot;operator&quot;: &quot;&gt;&quot;,&#xA;          &quot;operands&quot;: [&#xA;            &quot;@currentField&quot;,&#xA;            &quot;20&quot;&#xA;          ]&#xA;        },&#xA;        &quot;100%&quot;,&#xA;        {&#xA;          &quot;operator&quot;: &quot;+&quot;,&#xA;          &quot;operands&quot;: [&#xA;            {&#xA;              &quot;operator&quot;: &quot;toString()&quot;,&#xA;              &quot;operands&quot;: [&#xA;                {&#xA;                  &quot;operator&quot;: &quot;*&quot;,&#xA;                  &quot;operands&quot;: [&#xA;                    &quot;@currentField&quot;,&#xA;                    5&#xA;                  ]&#xA;                }&#xA;              ]&#xA;            },&#xA;            &quot;%&quot;&#xA;          ]&#xA;        }&#xA;      ]&#xA;    }&#xA;  }&#xA;}" SourceID="{{listid:Sales Campaign}}" ColName="float2" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Contoso Project Tracker" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Contoso Project Tracker" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Contoso Project Tracker/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Contoso Project Tracker/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Contoso Project Tracker/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0100515A0ED3B562B548BC2D41D25BC592D7" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{A67F820A-2E24-4F14-87A2-0227F902C71A}" DefaultView="TRUE" Type="HTML" DisplayName="Contoso Projects by Category" Url="/sites/contosobrand01/Lists/Contoso Project Tracker/Contoso Projects by Category.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ProjectCategory" />
+                  <FieldRef Name="siteColumnUser" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="siteColumnUser" />
+                <FieldRef Name="AdjustedPrice" />
+                <FieldRef Name="ProjectCategory" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">100</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="502c4043-cd3b-4164-bcaa-886ae986af07" Name="AdjustedPrice" DisplayName="Adjusted Price" />
+            <pnp:FieldRef ID="b2af2c30-00d7-421e-abeb-691bdea25895" Name="ProjectCategory" DisplayName="Project Category" />
+            <pnp:FieldRef ID="442f2678-2714-4918-b34d-1d54d718ee19" Name="siteColumnUser" DisplayName="Project Owner" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Conference Prep" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Conference Prep" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Conference Prep/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Conference Prep/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Conference Prep/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{1E0BD03D-F383-44F2-8819-23285401172B}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/contosobrand01/Lists/Conference Prep/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=45">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Task" />
+                <FieldRef Name="Due_x0020_Date" />
+                <FieldRef Name="Effort_x0020__x0028_Days_x0029_" />
+                <FieldRef Name="Assigned_x0020_To" />
+                <FieldRef Name="Status" />
+                <FieldRef Name="Remind_x0020_Me" />
+                <FieldRef Name="Office_x0020_location" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter>
+                {
+                "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+                "additionalRowClass": "=if([$Task] == 'Travel', 'sp-field-severity--warning', '')"
+                }
+              </CustomFormatter>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Due Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" Title="Due Date" Type="DateTime" ID="{491fb91a-caa7-4cfa-b43b-1713590eb6d1}" StaticName="Due_x0020_Date" Name="Due_x0020_Date" CustomFormatter="{&#xA;&#xA;   &quot;elmType&quot;: &quot;div&quot;,&#xA;   &quot;txtContent&quot;: &quot;@currentField&quot;,&#xA;   &quot;style&quot;: {&#xA;      &quot;color&quot;: {&#xA;         &quot;operator&quot;: &quot;?&quot;,&#xA;         &quot;operands&quot;: [&#xA;            {&#xA;               &quot;operator&quot;: &quot;&lt;=&quot;,&#xA;               &quot;operands&quot;: [&#xA;                  &quot;@currentField&quot;,&#xA;                  &quot;@now&quot;&#xA;               ]&#xA;            },&#xA;            &quot;#ff0000&quot;,&#xA;            &quot;&quot;&#xA;         ]&#xA;      }&#xA;   }&#xA;}" SourceID="{{listid:Conference Prep}}" ColName="datetime1" RowOrdinal="0" />
+            <Field DisplayName="Effort (Days)" Percentage="FALSE" Title="Effort (Days)" Type="Number" ID="{c8ffe002-12cd-4c28-8536-fddcaf9e6280}" StaticName="Effort_x0020__x0028_Days_x0029_" Name="Effort_x0020__x0028_Days_x0029_" CustomFormatter="{&#xA;    &quot;elmType&quot;: &quot;div&quot;,&#xA;    &quot;txtContent&quot;: &quot;@currentField&quot;,&#xA;    &quot;attributes&quot;: {&#xA;     &quot;class&quot;: &quot;sp-field-dataBars&quot;&#xA;    },&#xA;    &quot;style&quot;: {&#xA;      &quot;width&quot;: {&#xA;        &quot;operator&quot;: &quot;:&quot;,&#xA;        &quot;operands&quot;: [&#xA;          {&#xA;            &quot;operator&quot;: &quot;&gt;&quot;,&#xA;            &quot;operands&quot;: [&#xA;              &quot;@currentField&quot;,&#xA;              &quot;20&quot;&#xA;            ]&#xA;          },&#xA;          &quot;100%&quot;,&#xA;          {&#xA;            &quot;operator&quot;: &quot;+&quot;,&#xA;            &quot;operands&quot;: [&#xA;              {&#xA;                &quot;operator&quot;: &quot;toString()&quot;,&#xA;                &quot;operands&quot;: [&#xA;                  {&#xA;                    &quot;operator&quot;: &quot;*&quot;,&#xA;                    &quot;operands&quot;: [&#xA;                      &quot;@currentField&quot;,&#xA;                      5&#xA;                    ]&#xA;                  }&#xA;                ]&#xA;              },&#xA;              &quot;%&quot;&#xA;            ]&#xA;          }&#xA;        ]&#xA;      }&#xA;    }&#xA;  }" SourceID="{{listid:Conference Prep}}" ColName="float1" RowOrdinal="0" />
+            <Field DisplayName="Assigned To" List="UserInfo" Title="Assigned To" Type="User" UserSelectionMode="0" UserSelectionScope="0" ID="{8830e70e-84f8-4e7e-80f1-2f913bcf0870}" StaticName="Assigned_x0020_To" Name="Assigned_x0020_To" CustomFormatter="{&#xA;    &quot;elmType&quot;: &quot;div&quot;,&#xA;    &quot;children&quot;: [&#xA;        {&#xA;            &quot;elmType&quot;: &quot;span&quot;,&#xA;            &quot;style&quot;: {&#xA;                &quot;padding-right&quot;: &quot;8px&quot;&#xA;            },&#xA;            &quot;txtContent&quot;: &quot;@currentField.title&quot;&#xA;        },&#xA;        {&#xA;            &quot;elmType&quot;: &quot;a&quot;,&#xA;            &quot;attributes&quot;: {&#xA;                &quot;iconName&quot;: &quot;Mail&quot;,&#xA;                &quot;class&quot;: &quot;sp-field-quickActions&quot;,&#xA;                &quot;href&quot;: {&#xA;                    &quot;operator&quot;: &quot;+&quot;,&#xA;                    &quot;operands&quot;: [&#xA;                        &quot;mailto:&quot;,&#xA;                        &quot;@currentField.email&quot;,&#xA;                        &quot;?subject=Task status&amp;body=Hey, how is your task coming along?.\r\n---\r\n&quot;,&#xA;                        &quot;@currentField.title&quot;,&#xA;                        &quot;\r\nClick this link for more info. https://contosodemosg.sharepoint.com/sites/strategy/Lists/Conference%20Prep/DispForm.aspx?ID=&quot;,&#xA;                        &quot;[$ID]&quot;&#xA;                    ]&#xA;                }&#xA;            }&#xA;        }&#xA;    ]&#xA;}" SourceID="{{listid:Conference Prep}}" ColName="int1" RowOrdinal="0" />
+            <Field DisplayName="Status" MaxLength="255" Title="Status" Type="Text" ID="{2bb257f3-2121-4cc2-b421-3dc5e18fc8e8}" StaticName="Status" Name="Status" CustomFormatter="{&#xA;      &quot;elmType&quot;: &quot;div&quot;,&#xA;      &quot;attributes&quot;: {&#xA;        &quot;class&quot;: {&#xA;          &quot;operator&quot;: &quot;:&quot;,&#xA;          &quot;operands&quot;: [&#xA;            { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;In Progress&quot;] },&#xA;            &quot;sp-field-severity--low&quot;,&#xA;            { &#xA;                &quot;operator&quot;: &quot;:&quot;,&#xA;                &quot;operands&quot;: [&#xA;                    { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;Done&quot;] },&#xA;                    &quot;sp-field-severity--good&quot;,&#xA;                    {&#xA;                        &quot;operator&quot;: &quot;:&quot;,&#xA;                        &quot;operands&quot;: [&#xA;                            { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;In Review&quot;] },&#xA;                            &quot;sp-field-severity--warning&quot;,&#xA;                            {&#xA;                                &quot;operator&quot;: &quot;:&quot;,&#xA;                                &quot;operands&quot;: [&#xA;                                    { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;Blocked&quot;] },&#xA;                                    &quot;sp-field-severity--blocked&quot;,&#xA;                                    &quot;&quot;&#xA;                                ]&#xA;                            }&#xA;                        ]&#xA;                    }&#xA;                ]&#xA;            }&#xA;          ]&#xA;        }&#xA;      },&#xA;      &quot;children&quot;: [&#xA;        {&#xA;          &quot;elmType&quot;: &quot;span&quot;,&#xA;          &quot;attributes&quot;: {&#xA;          &quot;iconName&quot;: {&#xA;              &quot;operator&quot;: &quot;:&quot;,&#xA;              &quot;operands&quot;: [&#xA;                { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;Done&quot;] },&#xA;                &quot;CheckMark&quot;,&#xA;                {&#xA;                  &quot;operator&quot;: &quot;:&quot;,&#xA;                  &quot;operands&quot;: [&#xA;                    { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;In Review&quot;] },&#xA;                    &quot;Warning&quot;,&#xA;                    {&#xA;                      &quot;operator&quot;: &quot;:&quot;,&#xA;                      &quot;operands&quot;: [&#xA;                        { &quot;operator&quot;: &quot;==&quot;, &quot;operands&quot;: [{&quot;operator&quot;: &quot;toString()&quot;, &quot;operands&quot;: [&quot;@currentField&quot;]}, &quot;Blocked&quot;] },&#xA;                        &quot;Error&quot;,&#xA;                        &quot;Forward&quot;&#xA;                      ]&#xA;                    }&#xA;                  ]&#xA;                }&#xA;              ]&#xA;            }&#xA;          }&#xA;        },&#xA;        {&#xA;          &quot;elmType&quot;: &quot;span&quot;,&#xA;          &quot;style&quot;: {&#xA;            &quot;display&quot;: &quot;inline-block&quot;,&#xA;            &quot;padding&quot;: &quot;0 4px&quot;&#xA;          },&#xA;          &quot;txtContent&quot;: &quot;@currentField&quot;&#xA;        }&#xA;      ]&#xA;    } " SourceID="{{listid:Conference Prep}}" ColName="nvarchar4" RowOrdinal="0" />
+            <Field DisplayName="Remind Me" MaxLength="255" Title="Remind Me" Type="Text" ID="{5e79bde4-9e59-40d8-b337-fb56922150bd}" StaticName="Remind_x0020_Me" Name="Remind_x0020_Me" CustomFormatter="{&#xA;  &quot;elmType&quot;: &quot;span&quot;,&#xA;  &quot;style&quot;: {&#xA;    &quot;color&quot;: &quot;#0078d7&quot;&#xA;},&#xA;&#xA;  &quot;children&quot;: [&#xA;    {&#xA;      &quot;elmType&quot;: &quot;span&quot;,&#xA;      &quot;attributes&quot;: {&#xA;        &quot;iconName&quot;: &quot;Flow&quot;&#xA;      }&#xA;    },&#xA;    {&#xA;      &quot;elmType&quot;: &quot;button&quot;,&#xA;      &quot;style&quot;: {&#xA;        &quot;border&quot;: &quot;none&quot;,&#xA;        &quot;background-color&quot;: &quot;transparent&quot;,        &#xA;        &quot;color&quot;: &quot;#0078d7&quot;,    &#xA;        &quot;cursor&quot;: &quot;pointer&quot;&#xA;      },&#xA;      &quot;txtContent&quot;: &quot;Remind Me&quot;,&#xA;&#xA;      &quot;customRowAction&quot;: {&#xA;                      &quot;action&quot;: &quot;executeFlow&quot;,&#xA;                      &quot;actionParams&quot;: &quot;{\&quot;id\&quot;: \&quot;61a38276-6cff-41bd-bd54-bab3af5cb4f5\&quot;}&quot;&#xA;      }          &#xA;    }        &#xA;  ]&#xA;}" SourceID="{{listid:Conference Prep}}" ColName="nvarchar5" RowOrdinal="0" />
+            <Field DisplayName="Office location" Format="Dropdown" Title="Office location" Type="Location" ID="{c2c4f8a8-f609-48d8-88c0-6865007414a3}" StaticName="Office_x0020_location" Name="Office_x0020_location" SourceID="{{listid:Conference Prep}}" ColName="ntext2" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Office location: Country/Region" StaticName="c2c4f8a8-f609-48d8-88c0-6865007414a3CountryOrRegion" Name="CountryOrRegion" ID="{735a2048-218b-46de-a4e8-9b58fd894fda}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="c2c4f8a8-f609-48d8-88c0-6865007414a3" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Conference Prep}}" ColName="nvarchar6" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Office location: State" StaticName="c2c4f8a8-f609-48d8-88c0-6865007414a3State" Name="State" ID="{7b1bdcac-214e-4415-a999-c1167b964fc8}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="c2c4f8a8-f609-48d8-88c0-6865007414a3" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Conference Prep}}" ColName="nvarchar7" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Office location: City" StaticName="c2c4f8a8-f609-48d8-88c0-6865007414a3City" Name="City" ID="{74a09144-0301-4ca2-98cd-d6650858d1cd}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="c2c4f8a8-f609-48d8-88c0-6865007414a3" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Conference Prep}}" ColName="nvarchar8" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Office location: Postal Code" StaticName="c2c4f8a8-f609-48d8-88c0-6865007414a3PostalCode" Name="PostalCode" ID="{42072b3e-7be1-4eb4-b3cc-43aa6f1c0f4d}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="c2c4f8a8-f609-48d8-88c0-6865007414a3" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Conference Prep}}" ColName="nvarchar9" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Office location: Street" StaticName="c2c4f8a8-f609-48d8-88c0-6865007414a3Street" Name="Street" ID="{f5795de9-c45d-4ce7-857d-2f82a971217d}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="c2c4f8a8-f609-48d8-88c0-6865007414a3" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Conference Prep}}" ColName="nvarchar10" RowOrdinal="0" />
+            <Field Type="Geolocation" DisplayName="Office location: Coordinates" StaticName="c2c4f8a8-f609-48d8-88c0-6865007414a3GeoLoc" Name="GeoLoc" ID="{44dca844-1c0c-4883-a1e7-f06c12541dc3}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="c2c4f8a8-f609-48d8-88c0-6865007414a3" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Conference Prep}}" ColName="geography1" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Office location: Name" StaticName="c2c4f8a8-f609-48d8-88c0-6865007414a3DispName" Name="DispName" ID="{e4bd7d13-12a5-4a2d-89ab-81b2abf4b149}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="c2c4f8a8-f609-48d8-88c0-6865007414a3" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Conference Prep}}" ColName="nvarchar11" RowOrdinal="0" />
+            <Field DisplayName="Task" FillInChoice="TRUE" Format="Dropdown" Title="Task" Type="Choice" ID="{d3d7370d-0e31-459f-84a8-0c90929b88d1}" StaticName="Task" Name="Task" SourceID="{{listid:Conference Prep}}" ColName="nvarchar12" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Travel</CHOICE>
+                <CHOICE>Demo</CHOICE>
+                <CHOICE>Presentation</CHOICE>
+                <CHOICE>Meeting</CHOICE>
+              </CHOICES>
+            </Field>
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+            <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+            <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Retention label" />
+            <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Retention label Applied" />
+            <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+            <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://12-northcentralus1.pushp.svc.ms/notifications?token=w1-8fc3f9ce-bc47-404f-afa1-336ea0509d6f" ExpiresInDays="-54" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;strong&gt;WE ARE CONTOSO&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;━&lt;/span&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;All of our collective experiences make up how we come through as Contoso. Our products, services, communications, and people all shape the perception of our brand, through every interaction and touch point. Together, we’re defining what it means to be Contoso.We aspire to be a brand that is authentic, inspiring, and relevant. We want to earn people’s love, creating fans that will advocate on our behalf. And you play an important part in doing that.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;This is where you’ll find what you need—from strategy, to identity elements, to expression examples—to bring our brand to life in a way that is distinctively Contoso.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;text-align:center;&quot;&gt;&amp;nbsp;&lt;/p&gt;"/>
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/51347-hr_periwinkle.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{guid}&quot;,&quot;width&quot;:&quot;3400&quot;,&quot;height&quot;:&quot;6&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{guid}&quot;,&quot;imgWidth&quot;:3400,&quot;imgHeight&quot;:6,&quot;isFullWidth&quot;:true,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false,&quot;altText&quot;:&quot;&quot;}}"/>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;:&quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Spacer&quot;,&quot;description&quot;:&quot;Add vertical space to your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}},&quot;dataVersion&quot;:&quot;1.0&quot;,&quot;properties&quot;:{&quot;autoHide&quot;:true,&quot;height&quot;:16}}" Order="1"/>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn">
+              <pnp:Controls>
+                <!--<pnp:CanvasControl WebPartType="Hero" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;​Storytelling brings our brand to life in powerful ways&quot;,&quot;content[1].title&quot;:&quot;&quot;,&quot;content[2].title&quot;:&quot;&quot;,&quot;content[3].title&quot;:&quot;&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;Continue reading&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/205985604dose-media-368248-unsplash.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}#&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}#&quot;,&quot;content[0].callToActionLink&quot;:&quot;{site}#&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;c428b28e-c49b-4d23-9de9-a2ad7f2ac062&quot;,&quot;renderWidthRatioThreshold&quot;:640},&quot;content[0].previewImage.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;layoutCategory&quot;:2,&quot;layout&quot;:1,&quot;content&quot;:[{&quot;id&quot;:&quot;9acdd782-86fa-4cc1-8054-98c7feaf0ad1&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;c428b28e-c49b-4d23-9de9-a2ad7f2ac062&quot;},&quot;description&quot;:&quot;Stories touch our hearts by revealing something about people, brands, products, and companies—in a way that rational business messaging never could.\n\n&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;featureText&quot;:&quot;CONTOSO BRAND&quot;,&quot;showFeatureText&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1}},{&quot;id&quot;:&quot;3a71d358-1c79-4941-9400-2bfb7a94d306&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;2fcb6f2e-4e2e-4703-aeba-438fc117d58c&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;7e850a79-190d-4ccf-99c1-a75166a7b5f6&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;9c95eb17-674a-4afa-9541-99f6680fc46b&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false}]}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />-->
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;dataVersion&quot;:&quot;1.3&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;​Storytelling brings our brand to life in powerful ways&quot;,&quot;content[1].title&quot;:&quot;&quot;,&quot;content[2].title&quot;:&quot;&quot;,&quot;content[3].title&quot;:&quot;&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;Continue reading&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/205985604dose-media-368248-unsplash.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}#&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}#&quot;,&quot;content[0].callToActionLink&quot;:&quot;{site}#&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;c428b28e-c49b-4d23-9de9-a2ad7f2ac062&quot;,&quot;renderWidthRatioThreshold&quot;:640},&quot;content[0].previewImage.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}},&quot;properties&quot;:{&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;layoutCategory&quot;:2,&quot;layout&quot;:1,&quot;content&quot;:[{&quot;id&quot;:&quot;9acdd782-86fa-4cc1-8054-98c7feaf0ad1&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;c428b28e-c49b-4d23-9de9-a2ad7f2ac062&quot;},&quot;description&quot;:&quot;Stories touch our hearts by revealing something about people, brands, products, and companies—in a way that rational business messaging never could.\n\n&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;featureText&quot;:&quot;CONTOSO BRAND&quot;,&quot;showFeatureText&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1}}]}}" Order="1"/>
+                <pnp:CanvasControl WebPartType="NewsReel" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.7&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0d8d5f97-0b3c-4ebc-91fc-194b69092eec&quot;}}, &quot;properties&quot;: {&quot;carouselSettings&quot;:{&quot;autoplay&quot;:true,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true},&quot;showChrome&quot;:false,&quot;layoutId&quot;:&quot;NewsHub&quot;,&quot;prefetchCount&quot;:12,&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;viewCounts&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;templateId&quot;:&quot;NewsHub&quot;,&quot;propsLastEdited&quot;:&quot;2018-09-24T23:30:32.902Z&quot;,&quot;compactMode&quot;:false,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}]}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="2" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;,&quot;items[0].title&quot;:&quot;Contoso logo assets&quot;,&quot;items[1].title&quot;:&quot;Brand architecture&quot;,&quot;items[2].title&quot;:&quot;Design templates &amp; icons&quot;,&quot;items[3].title&quot;:&quot;Contoso Illustration style&quot;,&quot;items[4].title&quot;:&quot;Brand overview&quot;,&quot;items[5].title&quot;:&quot;Brand execution guidelines&quot;,&quot;items[6].title&quot;:&quot;Marketing guidelines&quot;,&quot;items[7].title&quot;:&quot;Brand health monitor&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[2].description&quot;:&quot;&quot;,&quot;items[3].description&quot;:&quot;&quot;,&quot;items[4].description&quot;:&quot;&quot;,&quot;items[5].description&quot;:&quot;&quot;,&quot;items[6].description&quot;:&quot;&quot;,&quot;items[7].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;,&quot;items[4].altText&quot;:&quot;&quot;,&quot;items[5].altText&quot;:&quot;&quot;,&quot;items[6].altText&quot;:&quot;&quot;,&quot;items[7].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/contosobrand01/contoso-icon@2x.png&quot;,&quot;items[0].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[1].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[2].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[3].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[4].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[5].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[6].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[7].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[4].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[5].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[6].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[7].sourceItem.url&quot;:&quot;{site}#&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:1,&quot;id&quot;:8,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a8fa0a49-1cb5-460c-98ce-793bfd231777&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:7,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;manufacturing&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:6,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;powerpointdocument&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:5,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;edit&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;decisionsolid&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;megaphone&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;health&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:1,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="2" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/37373-find_photos.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;width&quot;:610,&quot;height&quot;:342}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;imgWidth&quot;:610,&quot;imgHeight&quot;:342,&quot;fixAspectRatio&quot;:false}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="e409f6a6-7922-456c-87f5-dafbd48c4181" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;&lt;strong&gt;FIND PHOTOS&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;Bring your story to life with the right photography.&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;,&quot;items[0].title&quot;:&quot;SEARCH PHOTOS ➜&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[0].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:1}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:1,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/87852-get-guidelines.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;281daad8-413f-49e8-874f-88b450b470f5&quot;,&quot;width&quot;:610,&quot;height&quot;:342}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;281daad8-413f-49e8-874f-88b450b470f5&quot;,&quot;imgWidth&quot;:610,&quot;imgHeight&quot;:342,&quot;fixAspectRatio&quot;:false}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="e21528c3-b0b5-4565-891c-262659eb617b" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;&lt;strong&gt;GET GUIDELINES&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;Find the details you need to design for any offering.&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;,&quot;items[0].title&quot;:&quot;DOWNLOAD GUIDELINES ➜&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[0].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:1}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:1,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/88609-present-powerfully.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;5d75c0bf-22e3-4a87-ad0d-e421886c7258&quot;,&quot;width&quot;:610,&quot;height&quot;:342}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;5d75c0bf-22e3-4a87-ad0d-e421886c7258&quot;,&quot;imgWidth&quot;:610,&quot;imgHeight&quot;:342,&quot;fixAspectRatio&quot;:false}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="3" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="b2504d11-7379-48a1-98d6-c853e2a41d2f" Order="2" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;&lt;b&gt;PRESENT POWERFULLY&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&#xA;Get the latest&amp;nbsp;templates to make your presentation pop.&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;,&quot;items[0].title&quot;:&quot;GET PRESENTATION TOOLS ➜&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[0].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:1}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:1,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="8" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="9" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="10" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/70897-CreativePrincipals_Hero_1abc.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;66d7c2de-2241-4b42-86ca-43ccabfe7296&quot;,&quot;width&quot;:2150,&quot;height&quot;:1075}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;66d7c2de-2241-4b42-86ca-43ccabfe7296&quot;,&quot;imgWidth&quot;:2150,&quot;imgHeight&quot;:1075,&quot;fixAspectRatio&quot;:false}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="20bd10cc-530d-4268-ab51-fc112ac0a7e7" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;&lt;strong&gt;CREATIVE PRINCIPLES&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;Our brand is crafted with care. Consistent expression unifies our experiences all around the world. It helps people recognize the Contoso&amp;nbsp;brand and our family of connected devices, drones and services.&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;Keep it simple&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&#xA;Create clean, open, timeless designs.&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;Make it personal&lt;/span&gt;&lt;br&gt;&#xA;Tailor experiences to the ways that people really think, live, and act.&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;Create delight&lt;/span&gt;&lt;br&gt;&#xA;Evoke wonder and discovery.&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;Details matter&lt;/span&gt;&lt;br&gt;&#xA;Achieve the highest levels of quality and craft. As with our products, every detail matters. Each moment is an opportunity to elevate quality.​​​​​​&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="11" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:24}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="12" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="969c4c16-bd14-448a-b7e5-6f517053fbb9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;&lt;strong&gt;PERSONALITY&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;Our personality guides our behavior and creates the foundation for how we express ourselves. Understanding who we are—approachable, empathetic, determined, real, and passionate—influences how our brand takes shape all over the world. Human, connected, intelligent experiences.&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;Approachable&lt;/span&gt;&lt;br&gt;&#xA;We're friendly and outgoing, always ready to talk and share ideas.&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;Empathetic&lt;/span&gt;&lt;br&gt;&#xA;We listen to people, seeking to understand their goals, hopes, and concerns.&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;Determined&lt;/span&gt;&lt;br&gt;&#xA;We're committed to advancing the many ways people achieve today, inspiring action, and anticipating what they’ll need tomorrow.&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/66935-Story_2abc.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;4c9a65bd-d76d-4cb6-a7c6-866f51b9177e&quot;,&quot;width&quot;:2150,&quot;height&quot;:1209}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;a group of people sitting at a table&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;Story_2abc.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;4c9a65bd-d76d-4cb6-a7c6-866f51b9177e&quot;,&quot;imgWidth&quot;:2150,&quot;imgHeight&quot;:1209,&quot;fixAspectRatio&quot;:false}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="why-simplicity-matters.aspx" PromoteAsNewsArticle="true" Overwrite="true" Title="Why simplicity matters">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="f420bcc3-80f9-4a47-a578-8dd44e053b35" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="In order to give customers fresh and clear experiences with their brand, companies need to focus on simplifying their customer experiences. Those efforts will drive innovation and growth for their business." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/74187-siyan-ren-14405.jpg" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="4-reasons-why-branding-is-important.aspx" PromoteAsNewsArticle="true" Overwrite="true" Title="4 reasons why branding is important">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="45e6a04b-15a1-406d-9883-716615d369b7" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Branding is important to the success of any organization, but it?s particularly important for us at Contoso Electronics.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/87186-contoso-building.png" TranslateX="50.1492537313433" TranslateY="58.9285714285714" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="The-importance-of-branding-at-Contoso.aspx" PromoteAsNewsArticle="true" Overwrite="true" Title="The importance of branding at Contoso">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="3057f200-1e7f-4dfb-b20b-38f2e0a1a374" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="At the heart of branding at Contoso is the promise that is made by us to our customers. The brand promise tells them who we are, what we believe in, and what unique value we provide.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/75990-azis-pradana-300290-unsplash-scrubbed.jpg" TranslateX="49.8507462686567" TranslateY="45" />
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
