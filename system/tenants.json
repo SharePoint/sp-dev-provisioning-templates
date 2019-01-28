@@ -16,6 +16,7 @@
         {"id": "M365x133161.onmicrosoft.com", "tenantName": "M365x133161.onmicrosoft.com", "referenceOwner": "Sam Crewdson MSIT"},
         {"id": "m365x575975.onmicrosoft.com", "tenantName": "m365x575975.onmicrosoft.com", "referenceOwner": "Tom Resing MSIT"},        
         {"id": "me4all.onmicrosoft.com", "tenantName": "me4all.onmicrosoft.com", "referenceOwner": "Marius Mag Escalation Engineer MSFT"},
+        {"id": "contosodemotech.onmicrosoft.com", "tenantName": "contosodemotech.onmicrosoft.com", "referenceOwner": "Eric Fernandes MSFT"},
         {"id": "piasys1.onmicrosoft.com", "tenantName": "piasys1.onmicrosoft.com", "referenceOwner": "Paolo Pialorsi"},
         {"id": "pialorsi.com", "tenantName": "pialorsi.com", "referenceOwner": "Paolo Pialorsi"},
         {"id": "officedevpnp.onmicrosoft.com", "tenantName": "officedevpnp.onmicrosoft.com", "referenceOwner": "Microsoft"},
