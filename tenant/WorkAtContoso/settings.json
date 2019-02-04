@@ -4,6 +4,47 @@
   "promoted":"false",
   "preview":"true",
   "metadata": {
-    "properties": []
+    "properties": [
+      {
+        "name": "SiteTitle",
+        "caption": "Main Hub Site Title",
+        "description": "The title for the main hub site site",
+      },
+      {
+        "name": "SiteUrl",
+        "caption": "Main Hub Site URL",
+        "description": "The relative URL to be used for the site",
+      },
+      {
+        "name": "LiveSiteTitle",
+        "caption": "Live @ Contoso Site Title",
+        "description": "The title for the Live @ Contoso site which will be associated to the main hubsite"
+      },
+      {
+        "name": "LiveSiteUrl",
+        "caption": "Live @ Contoso Site URL",
+        "description": "The relative URL for the Live @ Contoso site"
+      },
+      {
+        "name": "GiveSiteTitle",
+        "caption": "Give @ Contoso Site Title",
+        "description": "The title for the Give @ Contoso site which will be associated to the main hubsite"
+      },
+      {
+        "name": "GiveSiteUrl",
+        "caption": "Give @ Contoso Site URL",
+        "description": "The relative URL for the Give @ Contoso site"
+      },
+      {
+        "name": "TeamSiteTitle",
+        "caption": "Give Planning Team Site Title",
+        "description": "The title for the Give Planning Team site site which will be associated to the main hubsite"
+      },
+      {
+        "name": "TeamSiteAlias",
+        "caption": "Give Planning Team Site Alias",
+        "description": "The alias for the Give Planning Team O365 Group to create. The site URL will be /sites/<alias> or /teams/<alias> depending on your Tenant settings."
+      }
+    ]
   }
 }
