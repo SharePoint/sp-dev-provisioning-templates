@@ -1,6 +1,6 @@
 {
   "categories": ["BIZPROC","HR"],
-  "packageFile": "temp-template.xml",
+  "packageFile": "ContosoAtWork.pnp",
   "promoted":"false",
   "preview":"true",
   "metadata": {
