@@ -1,6 +1,6 @@
 {
   "categories": ["BIZPROC","HR"],
-  "packageFile": "ContosoAtWork.pnp",
+  "packageFile": "WorkAtContoso.pnp",
   "promoted":"false",
   "preview":"true",
   "metadata": {
