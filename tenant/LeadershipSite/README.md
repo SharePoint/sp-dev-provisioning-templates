@@ -1,13 +1,13 @@
 # Executive Corner (x)
 
-This template is designed to demonstrate how a company executive information site could look like in the SharePoint Online. It has a relatively simple structure with some example page and content to get you started on updating the template based on your specific requirements.
+This template is designed to demonstrate how a company executive information site could look like in SharePoint Online. It has a relatively simple structure with some example pages and contents to get you started on updating the template based on your specific requirements.
 
-This site could be associated to the enterprise or divisional hub site, so that it's sharing main navigation with the other related sites in single consistent information architecture.
+This site could be associated to an enterprise or divisional hub site, so that it is sharing the main navigation with the other related sites in single consistent information architecture.
 
 Notice that you can easily extend the initially provisioned site for example by doing following modifications:
 
 - Include Stream web parts with videos (not present by default)
-- Include Yammer web part, if in use, for discussions
+- Include Yammer web part, if in use, for discussions (not present by default)
 - Include company mission and latest leadership meeting documents on the front page
 
 ![Full layout](./full-layout-exec.png)

@@ -1,6 +1,6 @@
 # Contoso Drone Landing Site
 
-This template is a demonstration of a welcome site design for modern SharePoint portal build with communication site template.
+This template is a demonstration of a welcome site design for a modern SharePoint portal build with a communication site template.
 
 ![Brand at Contoso top pic](./top-landing.png)
 

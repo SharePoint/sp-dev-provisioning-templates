@@ -1,6 +1,6 @@
 # Contoso Team Site
 
-This template is quite complex template with some example content for enabling collaboration in team site level.
+This template is quite a complex template with some example content for enabling collaboration at team site level.
 
 Notice that you can easily extend the initially provisioned site for example by doing following modifications:
 
