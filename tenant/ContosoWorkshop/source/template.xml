@@ -10,47 +10,11 @@
     <pnp:Parameters>
       <pnp:Parameter Key="SiteTitle">Contoso Workshop</pnp:Parameter>
       <pnp:Parameter Key="SiteUrl">/sites/contosoworkshop</pnp:Parameter>
-      <pnp:Parameter Key="lcid">1033</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
-  <pnp:Tenant>
-    <pnp:Themes>
-      <pnp:Theme Name="{parameter:SiteTitle} Theme" IsInverted="false">
-        {
-        "neutralQuaternaryAlt": "#dadada",
-        "themeLighterAlt": "#f9f8fb",
-        "themeSecondary": "#8675a5",
-        "themePrimary": "#786699",
-        "bodyText": "#333333",
-        "themeDarker": "#433956",
-        "themeDark": "#5b4e74",
-        "themeLight": "#d2cae0",
-        "error": "#e93333",
-        "neutralLighter": "#f4f4f4",
-        "neutralLighterAlt": "#f8f8f8",
-        "themeLighter": "#e6e2ef",
-        "themeDarkAlt": "#6c5c8a",
-        "themeTertiary": "#a99bc2",
-        "primaryText": "#333333",
-        "accent": "#786699",
-        "bodyBackground": "#ffffff",
-        "neutralSecondary": "#858585",
-        "neutralQuaternary": "#d0d0d0",
-        "neutralLight": "#eaeaea",
-        "neutralPrimaryAlt": "#4b4b4b",
-        "white": "#ffffff",
-        "neutralDark": "#272727",
-        "neutralPrimary": "#333333",
-        "neutralTertiaryAlt": "#c8c8c8",
-        "neutralTertiary": "#c2c2c2",
-        "black": "#1d1d1d"
-        }
-      </pnp:Theme>
-    </pnp:Themes>
-  </pnp:Tenant>
   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" Theme="{parameter:SiteTitle} Theme" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>

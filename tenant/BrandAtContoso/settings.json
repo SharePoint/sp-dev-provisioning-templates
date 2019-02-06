@@ -1,24 +1,22 @@
 {
-  "categories": ["BIZPROC","HR"],
+  "categories": [
+    "BIZPROC",
+    "HR"
+  ],
   "packageFile": "BrandAtContoso.pnp",
-  "promoted":"false",
-  "preview":"true",
+  "promoted": "false",
+  "preview": "true",
   "metadata": {
     "properties": [
       {
         "name": "SiteTitle",
         "caption": "Site Title",
-        "description": "Title for your site",
+        "description": "Title for your site"
       },
       {
         "name": "SiteUrl",
         "caption": "Site URL",
-        "description": "Relative URL to be used for the site",
-      },
-      {
-        "name": "lcid",
-        "caption": "Language code",
-        "description": "Language code for the newly create site collection"
+        "description": "Relative URL to be used for the site"
       }
     ]
   }

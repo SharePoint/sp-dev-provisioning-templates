@@ -12,44 +12,9 @@
       <pnp:Parameter Key="SiteUrl">/sites/leadership</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
-  <pnp:Tenant>
-    <pnp:Themes>
-      <pnp:Theme Name="{parameter:SiteTitle} Theme" IsInverted="false">
-        {
-        "neutralQuaternaryAlt": "#dadada",
-        "themeLighterAlt": "#f1f9fb",
-        "themeSecondary": "#168caa",
-        "themePrimary": "#017e9d",
-        "bodyText": "#333333",
-        "themeDarker": "#014759",
-        "themeDark": "#016078",
-        "themeLight": "#9fd5e2",
-        "error": "#e93333",
-        "neutralLighter": "#f4f4f4",
-        "neutralLighterAlt": "#f8f8f8",
-        "themeLighter": "#cae8ef",
-        "themeDarkAlt": "#01728e",
-        "themeTertiary": "#50adc5",
-        "primaryText": "#333333",
-        "accent": "#864B7A",
-        "bodyBackground": "#ffffff",
-        "neutralSecondary": "#858585",
-        "neutralQuaternary": "#d0d0d0",
-        "neutralLight": "#eaeaea",
-        "neutralPrimaryAlt": "#4b4b4b",
-        "white": "#ffffff",
-        "neutralDark": "#272727",
-        "neutralPrimary": "#333333",
-        "neutralTertiaryAlt": "#c8c8c8",
-        "neutralTertiary": "#c2c2c2",
-        "black": "#1d1d1d"
-        }
-      </pnp:Theme>
-    </pnp:Themes>
-  </pnp:Tenant>
-  <pnp:Sequence ID="sequence">
+   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" Classification="Internal Only" ProvisioningId="MAIN" Theme="{parameter:SiteTitle} Theme" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" Classification="Internal Only" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>

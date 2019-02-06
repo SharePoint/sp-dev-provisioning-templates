@@ -12,39 +12,9 @@
       <pnp:Parameter Key="SiteAlias">contosoteam</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
-  <pnp:Tenant>
-    <pnp:Themes>
-      <pnp:Theme Name="{parameter:SiteTitle} Theme" IsInverted="false">
-        {
-        "themePrimary": "#038387",
-        "themeLighterAlt": "#f0fafa",
-        "themeLighter": "#c7ebec",
-        "themeLight": "#9bd9db",
-        "themeTertiary": "#4bb4b7",
-        "themeSecondary": "#159196",
-        "themeDarkAlt": "#02767a",
-        "themeDark": "#026367",
-        "themeDarker": "#02494c",
-        "neutralLighterAlt": "#f8f8f8",
-        "neutralLighter": "#f4f4f4",
-        "neutralLight": "#eaeaea",
-        "neutralQuaternaryAlt": "#dadada",
-        "neutralQuaternary": "#d0d0d0",
-        "neutralTertiaryAlt": "#c8c8c8",
-        "neutralTertiary": "#c2c2c2",
-        "neutralSecondary": "#858585",
-        "neutralPrimaryAlt": "#4b4b4b",
-        "neutralPrimary": "#333",
-        "neutralDark": "#272727",
-        "black": "#1d1d1d",
-        "white": "#fff"
-        }
-      </pnp:Theme>
-    </pnp:Themes>
-  </pnp:Tenant>
   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSite" DisplayName="{parameter:SiteTitle}" IsPublic="false" ProvisioningId="MAIN" Alias="{parameter:SiteAlias}" Theme="{parameter:SiteTitle} Theme" Title="{parameter:SiteTitle}" Description="" IsHubSite="false">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSite" DisplayName="{parameter:SiteTitle}" IsPublic="false" ProvisioningId="MAIN" Alias="{parameter:SiteAlias}" Title="{parameter:SiteTitle}" Description="" IsHubSite="false">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>

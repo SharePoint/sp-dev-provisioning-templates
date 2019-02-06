@@ -1,19 +1,22 @@
 {
-  "categories": ["BIZPROC","HR"],
+  "categories": [
+    "BIZPROC",
+    "HR"
+  ],
   "packageFile": "ContosoTeamSite.pnp",
-  "promoted":"false",
-  "preview":"true",
+  "promoted": "false",
+  "preview": "true",
   "metadata": {
     "properties": [
       {
         "name": "SiteTitle",
         "caption": "Site Title",
-        "description": "Title for your site and Office 365 Group",
+        "description": "Title for your site and Office 365 Group"
       },
       {
         "name": "SiteAlias",
         "caption": "Site Alias",
-        "description": "The alias for the O365 Group to create. The site URL will be /sites/<alias> or /teams/<alias> depending on your Tenant settings.",
+        "description": "The alias for the O365 Group to create. The site URL will be /sites/<alias> or /teams/<alias> depending on your Tenant settings."
       }
     ]
   }
