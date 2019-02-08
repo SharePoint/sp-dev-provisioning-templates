@@ -1,3 +1,7 @@
-# Provisioning
+# Provisioning of your template has started
 
-Provisioning based on the given values have been now started. This will take few minutes, depending on the chosen template and it's content. Our provisioning service will be executed asynchronuously in the Azure with the given parametrization you provided. You will get an email from SharePoint when a new modern sites is ready for you to access. Notice that depending on the template, you might receive this notification even before the whole template has been applied.
+Provisioning based on the given values have been now started. 
+
+This can take from few minutes up to 15 minutes, depending on the chosen template and it's content. Our provisioning service will be executed asynchronuously in the Azure with the given parametrization you provided.
+
+**You will get an email from SharePoint when a new modern sites is ready for you to access.**
