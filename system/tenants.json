@@ -40,6 +40,7 @@
         {"id": "sympraxis.onmicrosoft.com", "tenantName": "sympraxis.onmicrosoft.com", "referenceOwner": "Julie Turner"},
         {"id": "dgsp.onmicrosoft.com", "tenantName": "dgsp.onmicrosoft.com", "referenceOwner": "Daniel Glenn"},
         {"id": "M365x165391.onmicrosoft.com", "tenantName": "M365x165391.onmicrosoft.com", "referenceOwner": "Matthew McDermott"},
-        {"id": "bitstreamfoundry.onmicrosoft.com", "tenantName": "bitstreamfoundry.onmicrosoft.com", "referenceOwner": "Sean P. McDonough"}
+        {"id": "bitstreamfoundry.onmicrosoft.com", "tenantName": "bitstreamfoundry.onmicrosoft.com", "referenceOwner": "Sean P. McDonough"},
+        {"id": "andytalbot.onmicrosoft.com", "tenantName": "andytalbot.onmicrosoft.com", "referenceOwner": "Andy Talbot"}
     ]
 }
