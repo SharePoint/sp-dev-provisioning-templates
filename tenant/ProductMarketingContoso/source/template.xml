@@ -1,0 +1,180 @@
+﻿<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Example product marketing site"
+                  DisplayName="Product Marketing @ Contoso"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/ProductMarketingContoso/top-productmarketingcontoso.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">Product Marketing @ Contoso</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/productmarketingcontoso</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+     <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Global Marketing" Url="http://www.microsoft.com" IsExternal="true" />
+            <pnp:NavigationNode Title="Brand @ Contoso" Url="{site}" />
+            <pnp:NavigationNode Title="Sales" Url="http://www.microsoft.com" IsExternal="true" />
+            <pnp:NavigationNode Title="Product Support" Url="{site}" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+    <pnp:Files>
+        <pnp:File Src="assets/SitePages/ProductMarketingContoso/contoso_falcon_medium_optimized.gif" Folder="SiteAssets/SitePages/ProductMarketingContoso" Overwrite="true" Level="Published" />
+        <pnp:File Src="assets/SitePages/ProductMarketingContoso/ContosoDrone.gif" Folder="SiteAssets/SitePages/ProductMarketingContoso" Overwrite="true" Level="Published" />
+        <pnp:File Src="assets/SitePages/ProductMarketingContoso/26239-kevin-erdvig-761293-unsplash.jpg" Folder="SiteAssets/SitePages/ProductMarketingContoso" Overwrite="true" Level="Published" />
+        <pnp:File Src="assets/__sitelogo____sitelogo__logo-productmarketing@2x.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="assets/SitePages/Introducing-the-Eagle-2-Pro-Video-Competition/27880-Drone-Camera-Clouds-·-Free-photo-on-Pixabay.jpeg" Folder="SiteAssets/SitePages/Introducing-the-Eagle-2-Pro-Video-Competition" Overwrite="true" />
+        <pnp:File Src="assets/SitePages/Update-to-Washington-Drone-Laws/89414-FAA-seen-ready-to-open-skies-to-commercial-drones---Ye----.jpeg" Folder="SiteAssets/SitePages/Update-to-Washington-Drone-Laws" Overwrite="true" />
+        <pnp:File Src="assets/SitePages/The-importance-of-branding-at-Contoso/75990-azis-pradana-300290-unsplash-scrubbed.jpg" Folder="SiteAssets/SitePages/The-importance-of-branding-at-Contoso" Overwrite="true" />
+      </pnp:Files>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/__sitelogo____sitelogo__logo-productmarketing@2x.png" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:Lists>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Falcon spec guide&quot;,&quot;content[1].title&quot;:&quot;&quot;,&quot;content[2].title&quot;:&quot;&quot;,&quot;content[3].title&quot;:&quot;&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;Download marketing kit&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ProductMarketingContoso/contoso_falcon_medium_optimized.gif&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}#&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}#&quot;,&quot;content[0].callToActionLink&quot;:&quot;{site}#&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ProductMarketingContoso/contoso_falcon_medium_optimized.gif}&quot;,&quot;renderWidthRatio&quot;:1,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:1},&quot;content[0].previewImage.url&quot;:{&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;isFullWidth&quot;:true,&quot;layoutCategory&quot;:1,&quot;layout&quot;:1,&quot;content&quot;:[{&quot;id&quot;:&quot;82cc87ec-6cce-4cad-8a33-7594e2291a9d&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;minCanvasWidth&quot;:32767},&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ProductMarketingContoso/contoso_falcon_medium_optimized.gif}&quot;,&quot;widthFactor&quot;:1,&quot;minCanvasWidth&quot;:1},&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;31eb3f5f-9481-44cf-b1fe-2412a76d3550&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false,&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;bcb95f2c-081c-4c92-a8a9-dd6ec0c79fd9&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false,&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;bb0c20b4-b6eb-4e9a-900e-72edec19568c&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false,&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;9cebea04-a38c-4c4a-8d1b-65fe84f848a5&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false,&quot;upperCaseCallToAction&quot;:true}],&quot;useLegacyFourTileStyle&quot;:true}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="NewsReel" JsonControlData="{&quot;id&quot;:&quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;News&quot;,&quot;description&quot;:&quot;Display recent news.&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{site}&quot;}},&quot;dataVersion&quot;:&quot;1.7&quot;,&quot;properties&quot;:{&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true},&quot;showChrome&quot;:true,&quot;layoutId&quot;:&quot;NewsHub&quot;,&quot;prefetchCount&quot;:12,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;viewCounts&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;templateId&quot;:&quot;NewsHub&quot;,&quot;propsLastEdited&quot;:&quot;2019-02-11T09:22:20.38Z&quot;,&quot;compactMode&quot;:false}}" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Upcoming events&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0447e11d-bed9-4898-b600-8dbcd95e9cc2&quot;}}, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;layout&quot;:&quot;Compact&quot;,&quot;dataSource&quot;:3,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:8,&quot;layoutId&quot;:&quot;Flex&quot;,&quot;dataProviderId&quot;:&quot;Search&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="2" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ProductMarketingContoso/ContosoDrone.gif&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:null},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ProductMarketingContoso/ContosoDrone.gif}&quot;,&quot;width&quot;:&quot;672&quot;,&quot;height&quot;:&quot;338&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ProductMarketingContoso/ContosoDrone.gif}&quot;,&quot;imgWidth&quot;:672,&quot;imgHeight&quot;:338,&quot;fixAspectRatio&quot;:false}}" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="8cfc4dc1-5c4a-444b-94f1-dd09fb2b01c3" Order="3" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;strong&gt;INTRODUCING CONTOSO'S&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;span class=&quot;fontSizeSuper&quot;&gt;&lt;span class=&quot;fontColorThemeSecondary&quot;&gt;&lt;strong&gt;FALCON&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;Packed with&amp;nbsp;features you once thought possible only on much larger platforms into a&lt;br&gt;&#xA;compact quadcopter that is snappy, agile, and captures stunning high-resolution 8K images.&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="a521add8-7c76-4d04-8409-60dcd71083e1" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;600 grams&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;strong&gt;WEIGHT&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="0de0f095-d136-4555-8b0e-4c747e145166" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;45 mins&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;strong&gt;IN-AIR TIME&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="fa620c98-f80d-4990-8438-12aecb57da14" Order="1" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;8 k&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;strong&gt;VIDEO QUALITY&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="9b30fff1-d202-469d-ab95-285533a30770" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;1 mile&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;strong&gt;MAX ALTITUDE&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="3b9abe77-1ce5-4f80-9a92-caa3e692c7b1" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;10 mps&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;strong&gt;MAX VERTICAL SPEED&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="0a2c7728-0bcd-4fa3-8319-1a858ab5a6f6" Order="1" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;1 inch&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;strong&gt;CMOS SENSOR&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:32}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ProductMarketingContoso/26239-kevin-erdvig-761293-unsplash.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ProductMarketingContoso/26239-kevin-erdvig-761293-unsplash.jpg}&quot;,&quot;width&quot;:3840,&quot;height&quot;:2024,&quot;cropX&quot;:0,&quot;cropY&quot;:0,&quot;cropWidth&quot;:3840,&quot;cropHeight&quot;:939}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;a close up of a tree&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;kevin-erdvig-761293-unsplash.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ProductMarketingContoso/26239-kevin-erdvig-761293-unsplash.jpg}&quot;,&quot;imgWidth&quot;:3840,&quot;imgHeight&quot;:2024,&quot;isFullWidth&quot;:true,&quot;cropX&quot;:0,&quot;cropY&quot;:0,&quot;cropWidth&quot;:3840,&quot;cropHeight&quot;:939,&quot;fixAspectRatio&quot;:false}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="The-importance-of-branding-at-Contoso.aspx" Layout="Article" PromoteAsNewsArticle="true" Overwrite="true" Title="The importance of branding at Contoso">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="3057f200-1e7f-4dfb-b20b-38f2e0a1a374" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="At the heart of branding at Contoso is the promise that is made by us to our customers. The brand promise tells them who we are, what we believe in, and what unique value we provide.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/The-importance-of-branding-at-Contoso/75990-azis-pradana-300290-unsplash-scrubbed.jpg" TranslateX="49.8507462686567" TranslateY="45" />
+        </pnp:ClientSidePage>
+         <pnp:ClientSidePage PageName="Update-to-Washington-Drone-Laws.aspx" PromoteAsNewsArticle="true" Layout="Article" Overwrite="true" Title="Update to Washington Drone Laws">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="7fd0dbe4-f252-4fd3-ac78-9bcbc9d472fa" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span&gt;&lt;span&gt;On September 18th, the state of Washington added a few clauses to the laws regarding where drones can be used. As a company, it is important for us to stay updated on the current laws so that we do not accidentally misinform our customers and become legally responsible for any actions that they might take.&lt;/span&gt;&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Update-to-Washington-Drone-Laws/89414-FAA-seen-ready-to-open-skies-to-commercial-drones---Ye----.jpeg&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;&quot;}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Update-to-Washington-Drone-Laws/89414-FAA-seen-ready-to-open-skies-to-commercial-drones---Ye----.jpeg}&quot;,&quot;imgWidth&quot;:1600,&quot;imgHeight&quot;:1159,&quot;fixAspectRatio&quot;:false}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="2" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Introducing-the-Eagle-2-Pro-Video-Competition.aspx" PromoteAsNewsArticle="true" Layout="Article" Overwrite="true" Title="Introducing the Eagle 2 Pro Video Competition">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Introducing-the-Eagle-2-Pro-Video-Competition/27880-Drone-Camera-Clouds-·-Free-photo-on-Pixabay.jpeg&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;&quot;}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Introducing-the-Eagle-2-Pro-Video-Competition/27880-Drone-Camera-Clouds-·-Free-photo-on-Pixabay.jpeg}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:720,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="98501f6b-3c0a-46b8-a3ae-09a696067695" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span&gt;&lt;span&gt;Use the new Eagle 2 Pro drone to shoot a video of your after work adventures, and potentially win a gift card to the company store as well as a one-on-one lunch with CEO Patti Fernandez.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" />
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
