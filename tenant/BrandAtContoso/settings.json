@@ -16,7 +16,8 @@
       {
         "name": "SiteUrl",
         "caption": "Site URL",
-        "description": "Relative URL to be used for the site"
+        "description": "Relative URL to be used for the site",
+        "editor": "SiteUrl"
       }
     ]
   }
