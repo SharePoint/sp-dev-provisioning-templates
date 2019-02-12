@@ -2,6 +2,7 @@
 
 This template contains following elements which will be provisioned:
 
-- Isolated site collection (can use existing URL)
-- Branding elements in the specific site collection
-- Example content created to the specific site collection
+- Multiple site collection
+- One site collection set as a hub site
+- Branding elements in the created site collections
+- Example content added to the created site collections
