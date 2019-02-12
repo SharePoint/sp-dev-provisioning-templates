@@ -6,8 +6,6 @@ This template is designed to demonstrate how a typical marketing site could look
 
 This site could be associated to the enterprise or divisional hub site, so that it is sharing the main navigation with the other related sites in single consistent information architecture.
 
-![Full layout](./full-layout-marketinglanding.png)
-
 ## Pre-requirements
 
 Here are current pre-requirements for making this solution work in your tenant.
