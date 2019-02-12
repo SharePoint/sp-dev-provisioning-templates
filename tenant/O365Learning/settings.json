@@ -1,7 +1,7 @@
 {
   "categories": ["SAMPLES", "BIZPROC"],
   "packageFile": "O365CL.pnp",
-  "promoted":"true",
+  "promoted":"false",
   "preview":"true",
   "metadata": {
     "properties": [
