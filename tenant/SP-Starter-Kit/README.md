@@ -4,7 +4,7 @@ This is a sample solution designed for SharePoint Online which provides numerous
 
 SharePoint Starter Kit is provided as an open-source solution for anyoen to benefit from overall design or from code perspetive. You can find all used assets from the [sp-starter-kit GitHub repository](https://github.com/SharePoint/sp-starter-kit).
 
-**Note.** please check the pre-requirements section later in this page, before trying to apply this to your demo tenant. Notice also that this template does perform tenant wide configurations, so it's not recommended to be used in production tenants, unless you know what you are doing.
+**Note.** please check the Prerequisites section later in this page, before trying to apply this to your demo tenant. Notice also that this template does perform tenant wide configurations, so it's not recommended to be used in production tenants, unless you know what you are doing.
 
 ## Objectives of this solution
 
@@ -27,9 +27,9 @@ SharePoint Starter Kit applies following sites:
 - Custom Site Designs which are visible in the out-of-the-box site creation process
 - Custom tenant themes, which are applied to the created site collections
 
-## Pre-requirements
+## Prerequisites
 
-Here are current pre-requirements for making this solution work in your tenant.
+Here are current prerequisites for making this solution work in your tenant.
 
 - You will need to be a tenant administrator to be able to deploy this solution
     - Notice that you can get free developer tenant from [Office 365 developer program](https://developer.microsoft.com/en-us/office/dev-program), if needed.

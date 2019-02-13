@@ -48,6 +48,9 @@
         {"id": "M365x165391.onmicrosoft.com", "tenantName": "M365x165391.onmicrosoft.com", "referenceOwner": "Matthew McDermott"},
         {"id": "bitstreamfoundry.onmicrosoft.com", "tenantName": "bitstreamfoundry.onmicrosoft.com", "referenceOwner": "Sean P. McDonough"},
         {"id": "andytalbot.onmicrosoft.com", "tenantName": "andytalbot.onmicrosoft.com", "referenceOwner": "Andy Talbot"},
-        {"id": "mikeamm.onmicrosoft.com", "tenantName": "mikeamm.onmicrosoft.com", "referenceOwner": "Mike Ammerlaan - MSFT"}
+        {"id": "mikeamm.onmicrosoft.com", "tenantName": "mikeamm.onmicrosoft.com", "referenceOwner": "Mike Ammerlaan - MSFT"},
+        {"id": "m365x241399.onmicrosoft.com", "tenantName": "m365x241399.onmicrosoft.com", "referenceOwner": "Adam Harmetz - MSFT"},
+        {"id": "M365x172630.onmicrosoft.com", "tenantName": "M365x172630.onmicrosoft.com", "referenceOwner": "Olivier Jaton - MSFT"},
+        {"id": "M365x334955.onmicrosoft.com", "tenantName": "M365x334955.onmicrosoft.com", "referenceOwner": "Cecile Morin - MSFT"}
     ]
 }

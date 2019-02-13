@@ -19,9 +19,11 @@ Below diagram shows the high level architecture of the solution:
 
 ![page transformator web part](assets/PageTransformationUIarchitecture.png)
 
-# Pre-requirements
+**Note** - There might be small differences between the screenshot from the [SharePoint look book](https://spdesign.azurewebsites.net) and the end results of the template. Template automation will get you as close as possible given certain API level automation. Templates are also designed to be as independent as possible, which has resulted some compromises on the implementation.
 
-Here are current pre-requirements for making this solution work in your tenant.
+# Prerequisites
+
+Here are current prerequisites for making this solution work in your tenant.
 
 > **Important**:
 > You do have to setup the needed Azure function app upfront. See https://github.com/SharePoint/sp-dev-modernization/blob/master/Solutions/PageTransformationUI/docs/deploymentguide.md#step-1-setup-the-azure-side for details on how to do that.
