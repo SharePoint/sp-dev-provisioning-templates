@@ -90,7 +90,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PageName="Changes-To-Medical-Benefits-2018.aspx" Title="Changes to Medical Benefits 2018" PromoteAsNewsArticle="false">
+        <pnp:ClientSidePage PageName="Changes-To-Medical-Benefits-2018.aspx" Layout="Article" Title="Changes to Medical Benefits 2018" PromoteAsNewsArticle="true">
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -104,7 +104,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PageName="Open-Door-Policy.aspx" Title="Open Door Policy" PromoteAsNewsArticle="false">
+        <pnp:ClientSidePage PageName="Open-Door-Policy.aspx" Layout="Article" Title="Open Door Policy" PromoteAsNewsArticle="true">
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -118,7 +118,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PageName="Working-across-regions-effectively.aspx" Title="Working across regions effectively" PromoteAsNewsArticle="false">
+        <pnp:ClientSidePage PageName="Working-across-regions-effectively.aspx" Layout="Article" Title="Working across regions effectively" PromoteAsNewsArticle="true">
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -132,7 +132,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PageName="New-Office-Gym-Opens-Today.aspx" Title="New Office Gym Opens Today" PromoteAsNewsArticle="false">
+        <pnp:ClientSidePage PageName="New-Office-Gym-Opens-Today.aspx" Layout="Article" Title="New Office Gym Opens Today" PromoteAsNewsArticle="true">
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -146,7 +146,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PageName="Healthcare-Provider-Updates.aspx" Title="Healthcare Provider Updates" PromoteAsNewsArticle="true">
+        <pnp:ClientSidePage PageName="Healthcare-Provider-Updates.aspx" Layout="Article" Title="Healthcare Provider Updates" PromoteAsNewsArticle="true">
           <pnp:Header ServerRelativeImageUrl="{site}/SiteAssets/Garageband3.jpg" Type="Custom" TranslateX="50.9887760555852" TranslateY="17.8571428571429"/>
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
