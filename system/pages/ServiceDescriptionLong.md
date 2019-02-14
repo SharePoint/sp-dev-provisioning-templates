@@ -12,7 +12,7 @@ These can be any of the following capabilities:
 - Hub site configuration
 - Site collections and potential sub sites (not preferred)
 
-**IMPORTANT** - Some templates might have pre-requirements like certain permission assumptions in the Terms Store or other adjustments. You will need to ensure that the pre-requirements have been applied or the provisioning event might fail.
+**IMPORTANT** - Some templates might have Prerequisites like certain permission assumptions in the Terms Store or other adjustments. You will need to ensure that the Prerequisites have been applied or the provisioning event might fail.
 
 **NOTICE** - Actual provisioning operation is NOT transactional, so if template provisioning is interrupted due an issue in the used template or due to any other reason, template might be only partially applied.
 
