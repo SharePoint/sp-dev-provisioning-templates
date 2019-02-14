@@ -19,7 +19,7 @@ Below diagram shows the high level architecture of the solution:
 
 ![page transformator web part](assets/PageTransformationUIarchitecture.png)
 
-**Note** - There might be small differences between the screenshot from the [SharePoint look book](https://spdesign.azurewebsites.net) and the end results of the template. Template automation will get you as close as possible given certain API level automation. Templates are also designed to be as independent as possible, which has resulted some compromises on the implementation.
+**Note** - There might be small differences between the screenshot from the [SharePoint look book](https://spdesign.azurewebsites.net) and the end results of the template. Template automation will get you as close as possible given certain API level limitations. Templates are also designed to be as independent as possible, which has resulted some compromises on the implementation.
 
 # Prerequisites
 
