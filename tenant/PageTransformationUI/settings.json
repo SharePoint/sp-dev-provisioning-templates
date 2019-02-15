@@ -18,7 +18,7 @@
       {
         "name":"CenterUrl",
         "caption":"Modernization center URL",
-        "description":"URL for the modernization center site (should be /sites/modernizationcenter)",
+        "description":"URL for the modernization center site (should be /sites/modernizationcenter)"
       },
       {
         "name":"ModernizationFeedbackList",
