@@ -8,3 +8,5 @@ This template consists following **tenant level elements**:
 - Multiple web parts and extensions activated in tenant level
 - New themes created in the tennat level
 - New Site Designs and Site Scripts created for both team and collaboration sites
+
+Provisioning will take approximately 25 minutes and you will receive an email to the provided email address when it's completed. Notice that if you go to the site(s) before creation is fully completed, you might cause issues around the provisioning steps.
