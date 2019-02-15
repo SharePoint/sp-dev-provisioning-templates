@@ -14,6 +14,7 @@
         "name": "SiteUrl",
         "caption": "Main Hub Site URL",
         "description": "The relative URL to be used for the site",
+        "editor": "SiteUrl"
       },
       {
         "name": "LiveSiteTitle",
@@ -23,7 +24,8 @@
       {
         "name": "LiveSiteUrl",
         "caption": "Live @ Contoso Site URL",
-        "description": "The relative URL for the Live @ Contoso site"
+        "description": "The relative URL for the Live @ Contoso site",
+        "editor": "SiteUrl"
       },
       {
         "name": "GiveSiteTitle",
@@ -33,7 +35,8 @@
       {
         "name": "GiveSiteUrl",
         "caption": "Give @ Contoso Site URL",
-        "description": "The relative URL for the Give @ Contoso site"
+        "description": "The relative URL for the Give @ Contoso site",
+        "editor": "SiteUrl"
       },
       {
         "name": "TeamSiteTitle",
