@@ -1,4 +1,4 @@
-﻿<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema" Author="John White" Generator="Human being" Version="1.0" Description="Example product marketing site" DisplayName="Product Marketing @ Contoso" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/ProductMarketingContoso/top-productmarketingcontoso.png">
+﻿<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema" Author="John White" Generator="Human being" Version="1.0" Description="Example product marketing site" DisplayName="Marketing Landing" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/MarketingLanding/top-marketinglanding.png">
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
