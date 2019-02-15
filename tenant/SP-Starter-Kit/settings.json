@@ -13,7 +13,7 @@
       {
         "name":"SiteUrlPrefix",
         "caption":"Site URL Prefix",
-        "description":"The prefix to use while creating sites in your tenant",
+        "description":"The prefix to use for the site collection URLs while creating sites in your tenant",
       },
       {
         "name":"WeatherCity",
@@ -24,12 +24,7 @@
         "name":"StockSymbol",
         "caption":"Stock Symbol",
         "description":"The symbol of the stock to monitor in the home page of the Intranet (requires an AlphaVantage license key, or you can use 'demo' mode)",
-      },
-      {
-        "name":"lcid",
-        "caption":"Language",
-        "description":"The Locale ID of the language to use for provisioning the sites in the Intranet",
-      },
+      }
     ]
   }
 }

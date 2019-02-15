@@ -17,6 +17,8 @@
         {"id": "m365x109038.onmicrosoft.com", "tenantName": "m365x109038.onmicrosoft.com", "referenceOwner": "Customer Engineering"},
         {"id": "m365x471939.onmicrosoft.com", "tenantName": "m365x471939.onmicrosoft.com", "referenceOwner": "Customer Engineering"},
         {"id": "m365x507926.onmicrosoft.com", "tenantName": "m365x507926.onmicrosoft.com", "referenceOwner": "Customer Engineering"},
+        {"id": "m365x203690.onmicrosoft.com", "tenantName": "m365x203690.onmicrosoft.com", "referenceOwner": "Customer Engineering"},
+        {"id": "m365x507707.onmicrosoft.com", "tenantName": "m365x507707.onmicrosoft.com", "referenceOwner": "Customer Engineering"},
         {"id": "storyalsnet.onmicrosoft.com", "tenantName": "storyalsnet.onmicrosoft.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
         {"id": "vitalystllc.onmicrosoft.com", "tenantName": "vitalystllc.onmicrosoft.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
         {"id": "M365x133161.onmicrosoft.com", "tenantName": "M365x133161.onmicrosoft.com", "referenceOwner": "Sam Crewdson MSIT"},
@@ -53,6 +55,8 @@
         {"id": "M365x172630.onmicrosoft.com", "tenantName": "M365x172630.onmicrosoft.com", "referenceOwner": "Olivier Jaton - MSFT"},
         {"id": "M365x334955.onmicrosoft.com", "tenantName": "M365x334955.onmicrosoft.com", "referenceOwner": "Cecile Morin - MSFT"},
         {"id": "m365x122124.onmicrosoft.com", "tenantName": "m365x122124.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
-        {"id": "M365x632197.onmicrosoft.com", "tenantName": "M365x632197.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"}
+        {"id": "M365x632197.onmicrosoft.com", "tenantName": "M365x632197.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
+        {"id": "M365x245673.onmicrosoft.com", "tenantName": "M365x245673.onmicrosoft.com", "referenceOwner": "Tony Lintunen - MSFT"},
+        {"id": "M365x935107.onmicrosoft.com", "tenantName": "M365x935107.onmicrosoft.com", "referenceOwner": "Tony Lintunen - MSFT"}
     ]
 }
