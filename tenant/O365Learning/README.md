@@ -17,10 +17,10 @@ Complete documentation for our solution can be found on our service information 
 
 Here are current prerequisites for making this solution work in your tenant.
 
-- You will need to be a tenant administrator to be able to deploy this solution to the target tenant 
-    - Notice that you can get free developer tenant from [Office 365 developer program](https://developer.microsoft.com/en-us/office/dev-program), if needed
+- You will need to be a tenant administrator to be able to deploy this solution to the target tenant
+    - Notice that, if needed, you can get free developer tenant from [Office 365 developer program](https://developer.microsoft.com/en-us/office/dev-program)
 - Automatic end-to-end provisioning only works with English tenants
     - All solutions and web parts are also English in the current implementation
-- A tenant 'App Catalog' must have been created within the 'Apps' option of the SharePoint Admin Center
+- A tenant 'App Catalog' must have been created within the 'Apps' option of the SharePoint Admin Center and you have to be one of the site collection admins of the 'App Catalog' site collection
 
 <img src="https://telemetry.sharepointpnp.com/sp-dev-provisioning-templates/O365Learning" />
