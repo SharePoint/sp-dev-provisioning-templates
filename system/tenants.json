@@ -45,9 +45,9 @@
         {"id": "contosodemosb.onmicrosoft.com", "tenantName": "contosodemosb.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "n8dlab001.onmicrosoft.com", "tenantName": "n8dlab001.onmicrosoft.com", "referenceOwner": "Stefan Bauer"},
         {"id": "foxhole.onmicrosoft.com", "tenantName": "foxhole.onmicrosoft.com", "referenceOwner": "Bob Fox - MSFT"},
-        {"id": "Onemtc.onmicrosoft.com", "tenantName": "Onemtc.onmicrosoft.com", "referenceOwner": "Tim Wheeler - MSFT"},
-        {"id": "Onemtcqa.onmicrosoft.com", "tenantName": "Onemtcqa.onmicrosoft.com", "referenceOwner": "Tim Wheeler - MSFT"},
-        {"id": "Devwheel.onmicrosoft.com", "tenantName": "Devwheel.onmicrosoft.com", "referenceOwner": "Tim Wheeler - MSFT"},
+        {"id": "onemtc.onmicrosoft.com", "tenantName": "onemtc.onmicrosoft.com", "referenceOwner": "Tim Wheeler - MSFT"},
+        {"id": "onemtcqa.onmicrosoft.com", "tenantName": "onemtcqa.onmicrosoft.com", "referenceOwner": "Tim Wheeler - MSFT"},
+        {"id": "devwheel.onmicrosoft.com", "tenantName": "devwheel.onmicrosoft.com", "referenceOwner": "Tim Wheeler - MSFT"},
         {"id": "wrobelonline.onmicrosoft.com", "tenantName": "wrobelonline.onmicrosoft.com", "referenceOwner": "Tim Wheeler - MSFT"},
         {"id": "BGTest18.onmicrosoft.com", "tenantName": "BGTest18.onmicrosoft.com", "referenceOwner": "Bob German - MSFT"},
         {"id": "sympraxis.onmicrosoft.com", "tenantName": "sympraxis.onmicrosoft.com", "referenceOwner": "Julie Turner"},
@@ -63,6 +63,7 @@
         {"id": "m365x122124.onmicrosoft.com", "tenantName": "m365x122124.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
         {"id": "M365x632197.onmicrosoft.com", "tenantName": "M365x632197.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
         {"id": "M365x245673.onmicrosoft.com", "tenantName": "M365x245673.onmicrosoft.com", "referenceOwner": "Tony Lintunen - MSFT"},
-        {"id": "M365x935107.onmicrosoft.com", "tenantName": "M365x935107.onmicrosoft.com", "referenceOwner": "Tony Lintunen - MSFT"}
+        {"id": "M365x935107.onmicrosoft.com", "tenantName": "M365x935107.onmicrosoft.com", "referenceOwner": "Tony Lintunen - MSFT"},
+        {"id": "edhild.onmicrosoft.com", "tenantName": "edhild.onmicrosoft.com", "referenceOwner": "Ed Hild - MSFT"}
     ]
 }
