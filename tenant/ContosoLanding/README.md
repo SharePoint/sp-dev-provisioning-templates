@@ -6,7 +6,7 @@ This template is a demonstration of a welcome site design for modern SharePoint 
 
 This template is relatively complex welcome page with some example news, events and other content to demonstrate the possible structures you can create in SharePoint Online.
 
-You can also further extend the experiences by adding possibly custom web parts and other experiences on the sites, if the out-of-the-box experiences are not sufficient for your objectives.
+You can also further extend the experiences by adding possibly custom web parts and other experiences on the sites, if the out-of-the-box experiences are not enough for your objectives.
 
 ![Full layout](./full-layout-contoso-landing.png)
 

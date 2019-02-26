@@ -2,13 +2,13 @@
 
 This is a sample solution designed for SharePoint Online which provides numerous web parts, extensions, and other components which you can use as an example and inspiration for your own customizations.
 
-SharePoint Starter Kit is provided as an open-source solution for anyoen to benefit from overall design or from code perspetive. You can find all used assets from the [sp-starter-kit GitHub repository](https://github.com/SharePoint/sp-starter-kit).
+SharePoint Starter Kit is provided as an open-source solution for anyone to benefit from overall design or from code perspective. You can find all used assets from the [sp-starter-kit GitHub repository](https://github.com/SharePoint/sp-starter-kit).
 
 **Note.** please check the Prerequisites section later in this page, before trying to apply this to your demo tenant. Notice also that this template does perform tenant wide configurations, so it's not recommended to be used in production tenants, unless you know what you are doing.
 
 ## Objectives of this solution
 
-SharePoint Communication Sites have great out-of-the-box capabilities, but the out-of-the-box capabilities may not always be sufficient for your scenarios. This is exactly why you are able to include your own customizations. This solution addresses common scenarios and tasks you may encounter when introducing those customizations, and provides examples and guidance on how you might address them including:
+SharePoint Communication Sites have great out-of-the-box capabilities, but the out-of-the-box capabilities may not always be enough for your scenarios. This is exactly why you can include your own customizations. This solution addresses common scenarios and tasks you may encounter when introducing those customizations, and provides examples and guidance on how you might address them including:
 
 - Automated provisioning of simple demo content within a communication site
 - Automated provisioning of the whole solution to any tenant within minutes
@@ -22,7 +22,7 @@ SharePoint Communication Sites have great out-of-the-box capabilities, but the o
 
 SharePoint Starter Kit applies following sites:
 
-- Creates 3 different site collections - landing hub site and two sub site colletions associated on the hub site
+- Creates 3 different site collections - landing hub site and two sub site collections associated on the hub site
 - Installation of custom SharePoint Framework solution with 17 additional web parts and 7 SharePoint Framework extensions
 - Custom Site Designs which are visible in the out-of-the-box site creation process
 - Custom tenant themes, which are applied to the created site collections

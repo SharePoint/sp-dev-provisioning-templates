@@ -4,7 +4,7 @@ Welcome to the SharePoint PnP Provisioning Service, which can be used to provisi
 
 These can be any of the following capabilities:
 
-- Site Desigsn and Site Scripts in tenant level - Visible in tenant level
+- Site Designs and Site Scripts in tenant level - Visible in tenant level
 - Modern Tenant themes
 - SharePoint Framework solutions with web parts and extensions
 - Required Graph or 3rd party API permissions
@@ -46,11 +46,11 @@ Service has been designed by SharePoint engineering and it has been built by Sha
 
 **Is the service code open-source?**
 
-Code used by the service will be released as an open-source sample later 2019. Actual provisioning logic is done using PnP Provisioning Engine, which is already open-sourced and avaialble using code or PowerShell.
+Code used by the service will be released as an open-source sample later 2019. Actual provisioning logic is done using PnP Provisioning Engine, which is already open-sourced and available using code or PowerShell.
 
 **I identified an issue on the service - where to report it?**
 
-Please report any issues which you might have using the the [sp-dev-docs issue list](https://github.com/SharePoint/sp-dev-docs/issues) issue list. We will be following up on them as soon as possible, but please note that there's no direct SLA for this community built project through Microsoft.
+Please report any issues which you might have using the [sp-dev-docs issue list](https://github.com/SharePoint/sp-dev-docs/issues) issue list. We will be following up on them as soon as possible, but please note that there's no direct SLA for this community-built  project through Microsoft.
 
 **Are the templates only provisioning SharePoint assets?**
 

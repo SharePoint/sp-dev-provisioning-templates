@@ -7,7 +7,7 @@ This site could be associated to a workshops hub site to aggregate workshop info
 Notice that you can easily extend the initially provisioned site for example by doing following modifications:
 
 - Include registration web part using PowerApps (not present by default)
-- Include Yammer discussion web part for enablign attendees to discuss the workshop even before it happens
+- Include Yammer discussion web part for enabling attendees to discuss the workshop even before it happens
 
 ![Full layout](./full-layout-workshop.png)
 
