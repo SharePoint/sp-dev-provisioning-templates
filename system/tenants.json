@@ -27,6 +27,7 @@
         {"id": "storyalsnet.com", "tenantName": "storyalsnet.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
         {"id": "vitalystllc.onmicrosoft.com", "tenantName": "vitalystllc.onmicrosoft.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
         {"id": "commbank.onmicrosoft.com", "tenantName": "commbank.onmicrosoft.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
+        {"id": "go-planet.com", "tenantName": "go-planet.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
         {"id": "M365x133161.onmicrosoft.com", "tenantName": "M365x133161.onmicrosoft.com", "referenceOwner": "Sam Crewdson MSIT"},
         {"id": "m365x575975.onmicrosoft.com", "tenantName": "m365x575975.onmicrosoft.com", "referenceOwner": "Tom Resing MSFT"},              
         {"id": "me4all.onmicrosoft.com", "tenantName": "me4all.onmicrosoft.com", "referenceOwner": "Marius Mag Escalation Engineer MSFT"},
