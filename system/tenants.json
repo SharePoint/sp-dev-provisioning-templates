@@ -25,6 +25,7 @@
         {"id": "m365x975759.onmicrosoft.com", "tenantName": "m365x975759.onmicrosoft.com", "referenceOwner": "Brad McCabe - MSFT"},
         {"id": "m365x177703.onmicrosoft.com", "tenantName": "m365x177703.onmicrosoft.com", "referenceOwner": "Brad McCabe - MSFT"},
         {"id": "storyalsnet.com", "tenantName": "storyalsnet.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
+		{"id": "storyals.net", "tenantName": "storyals.net", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
         {"id": "vitalystllc.onmicrosoft.com", "tenantName": "vitalystllc.onmicrosoft.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
         {"id": "commbank.onmicrosoft.com", "tenantName": "commbank.onmicrosoft.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
         {"id": "go-planet.com", "tenantName": "go-planet.com", "referenceOwner": "Customer Engineering - Custom Learning pilot customers"},
