@@ -69,6 +69,7 @@
         {"id": "M365x632197.onmicrosoft.com", "tenantName": "M365x632197.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
         {"id": "M365x245673.onmicrosoft.com", "tenantName": "M365x245673.onmicrosoft.com", "referenceOwner": "Tony Lintunen - MSFT"},
         {"id": "M365x935107.onmicrosoft.com", "tenantName": "M365x935107.onmicrosoft.com", "referenceOwner": "Tony Lintunen - MSFT"},
-        {"id": "edhild.onmicrosoft.com", "tenantName": "edhild.onmicrosoft.com", "referenceOwner": "Ed Hild - MSFT"}
+        {"id": "edhild.onmicrosoft.com", "tenantName": "edhild.onmicrosoft.com", "referenceOwner": "Ed Hild - MSFT"},
+        {"id": "Sreeacademy.in", "tenantName": "Sreeacademy.in", "referenceOwner": "Sojesh Sreelayam - MSFT"}
     ]
 }
