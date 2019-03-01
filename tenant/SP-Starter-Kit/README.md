@@ -46,5 +46,3 @@ Here are current prerequisites for making this solution work in your tenant.
 ## Support for this template
 
 If you have any issues or questions around this template, please use the [sp-starter-kit GitHub repository issue list](https://github.com/SharePoint/sp-starter-kit/issues). This is community supported template.
-
-<img src="https://telemetry.sharepointpnp.com/sp-dev-provisioning-templates/SP-Starter-Kit" />

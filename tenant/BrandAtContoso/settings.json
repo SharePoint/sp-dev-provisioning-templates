@@ -1,9 +1,9 @@
 {
   "categories": [
-    "BIZPROC",
-    "HR"
+    "SAMPLE"
   ],
   "packageFile": "BrandAtContoso.pnp",
+  "abstract": "I'm the abstract",
   "promoted": "false",
   "preview": "true",
   "metadata": {

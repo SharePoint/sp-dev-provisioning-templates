@@ -1,6 +1,9 @@
 {
-  "categories": ["BIZPROC","HR"],
+  "categories": [
+    "SAMPLE"
+  ],
   "packageFile": "LiveAtContoso.pnp",
+  "abstract": "I'm the abstract",
   "promoted":"false",
   "preview":"true",
   "metadata": {

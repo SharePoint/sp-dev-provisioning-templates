@@ -1,6 +1,9 @@
 {
-  "categories": ["SAMPLES", "BIZPROC"],
+  "categories": [
+    "SOLUTION"
+  ],
   "packageFile": "O365CL.pnp",
+  "abstract": "I'm the abstract",
   "promoted":"false",
   "preview":"true",
   "metadata": {

@@ -22,5 +22,3 @@ Here are current prerequisites for making this solution work in your tenant.
 - Automatic end-to-end provisioning only works with English tenants
     - All solutions and web parts are also English in the current implementation
 - A tenant 'App Catalog' must have been created within the 'Apps' option of the SharePoint Admin Center and you have to be one of the site collection admins of the 'App Catalog' site collection
-
-<img src="https://telemetry.sharepointpnp.com/sp-dev-provisioning-templates/O365Learning" />

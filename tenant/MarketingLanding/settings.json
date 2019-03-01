@@ -1,9 +1,9 @@
 {
   "categories": [
-    "BIZPROC",
-    "HR"
+    "SAMPLE"
   ],
   "packageFile": "MarketingLanding.pnp",
+  "abstract": "I'm the abstract",
   "promoted": "true",
   "preview": "true",
   "metadata": {
