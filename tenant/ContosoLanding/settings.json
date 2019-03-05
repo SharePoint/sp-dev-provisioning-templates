@@ -6,7 +6,7 @@
   "abstract": "I'm the abstract",
   "sortOrder": 0,
   "promoted": "true",
-  "sortOrderPromoted": 0,
+  "sortOrderPromoted": 100,
   "preview": "false",
   "metadata": {
     "properties": [
