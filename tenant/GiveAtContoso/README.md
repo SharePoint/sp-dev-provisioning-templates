@@ -1,4 +1,4 @@
-# Give @ Contoso
+# Charity
 
 This template is designed to demonstrate how a typical company charity site could look like in SharePoint Online. It has a relatively simple structure with some example pages and contents to get you started on updating the template based on your specific requirements.
 

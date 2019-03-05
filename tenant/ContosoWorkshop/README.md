@@ -1,4 +1,4 @@
-# Contoso Workshop Template
+# Workshop
 
 This template is designed to demonstrate how a generic workshop centric site could look like in SharePoint Online.
 

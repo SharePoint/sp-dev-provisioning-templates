@@ -1,4 +1,4 @@
-# Live @ Contoso
+# HR Benefits
 
 This template is designed to demonstrate how a typical employee facing HR site could look like in SharePoint Online. It has a relatively simple structure with some example pages and contents to get you started on updating the template based on your specific requirements.
 

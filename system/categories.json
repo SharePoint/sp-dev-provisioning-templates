@@ -1,6 +1,6 @@
 {
     "categories": [
-        {"id": "SAMPLE", "displayName": "Sample Templates"},
-        {"id": "SOLUTION", "displayName": "Solution Templates"}
+        {"id": "SAMPLE", "displayName": "Samples"},
+        {"id": "SOLUTION", "displayName": "Solutions"}
     ]
 }

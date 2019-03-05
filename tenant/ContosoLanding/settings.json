@@ -3,7 +3,7 @@
     "SAMPLE"
   ],
   "packageFile": "ContosoLanding.pnp",
-  "abstract": "I'm the abstract",
+  "abstract": "This template is a demonstration of a welcome site design for modern SharePoint portal build with a communication site template.",
   "sortOrder": 0,
   "promoted": "true",
   "sortOrderPromoted": 100,

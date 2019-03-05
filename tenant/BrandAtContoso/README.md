@@ -1,4 +1,4 @@
-# Brand @ Contoso
+# Brand
 
 This template is designed to demonstrate how a typical company brand site could look like in the SharePoint Online. It has a relatively simple structure with some example pages and content to get you started on updating the template based on your specific requirements.
 

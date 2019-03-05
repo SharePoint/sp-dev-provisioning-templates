@@ -1,4 +1,4 @@
-# Work @ Contoso
+# Work
 
 This template demonstrates how a typical work-oriented hub site could look like in SharePoint Online. It is designed to aggregate content and news from the associated site collections to show all relevant information from a single location.
 

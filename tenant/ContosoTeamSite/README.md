@@ -1,4 +1,4 @@
-# Contoso Team Site
+# Team Site
 
 This template is quite a complex template with some example content for enabling collaboration at team site level.
 
