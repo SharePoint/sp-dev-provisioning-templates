@@ -4,7 +4,9 @@
   ],
   "packageFile": "ContosoLanding.pnp",
   "abstract": "I'm the abstract",
+  "sortOrder": 0,
   "promoted": "true",
+  "sortOrderPromoted": 0,
   "preview": "false",
   "metadata": {
     "properties": [

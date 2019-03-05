@@ -4,7 +4,9 @@
   ],
   "packageFile": "LiveAtContoso.pnp",
   "abstract": "I'm the abstract",
-  "promoted":"false",
+  "sortOrder": 0,
+  "promoted": "false",
+  "sortOrderPromoted": 0,
   "preview":"true",
   "metadata": {
     "properties": [
