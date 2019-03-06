@@ -1,4 +1,4 @@
-## Recap of provisioned artifacts
+## What will provisioned?
 
 This template consists following **tenant level elements**:
 

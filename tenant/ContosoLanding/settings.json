@@ -4,7 +4,7 @@
   ],
   "packageFile": "ContosoLanding.pnp",
   "abstract": "This template is a demonstration of a welcome site design for modern SharePoint portal build with a communication site template.",
-  "sortOrder": 0,
+  "sortOrder": 1000,
   "promoted": "true",
   "sortOrderPromoted": 100,
   "preview": "false",

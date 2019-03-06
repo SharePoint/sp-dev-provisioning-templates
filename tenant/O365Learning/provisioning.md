@@ -1,4 +1,4 @@
-## Recap of provisioned artifacts
+## What will provisioned?
 
 This template contains following elements which will be provisioned:
 

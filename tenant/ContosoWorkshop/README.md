@@ -4,10 +4,26 @@ This template is designed to demonstrate how a generic workshop centric site cou
 
 This site could be associated to a workshops hub site to aggregate workshop information from multiple workshops.
 
+PIC
+
 Notice that you can easily extend the initially provisioned site for example by doing following modifications:
 
 - Include registration web part using PowerApps (not present by default)
 - Include Yammer discussion web part for enabling attendees to discuss the workshop even before it happens
+
+## Template content
+
+Template contains following structures and assets:
+
+- New site collection using communication site template, unless applied on top of existing site
+- Custom welcome page
+- Sample image content used in the template
+
+**Notice** - If applied on top of existing communication site, welcome page content will be overridden.
+
+## Full layout
+
+Below picture shows the expected layout from this template.
 
 ![Full layout](./full-layout-workshop.png)
 
@@ -21,4 +37,3 @@ Here are current prerequisites for making this solution work in your tenant.
     - Notice that you can get free developer tenant from [Office 365 developer program](https://developer.microsoft.com/en-us/office/dev-program), if needed
 - Automatic end-to-end provisioning only works with English tenants
     - All solutions and web parts are also English in the current implementation
-- A tenant 'App Catalog' must have been created within the 'Apps' option of the SharePoint Admin Center

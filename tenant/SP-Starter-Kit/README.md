@@ -4,7 +4,7 @@ This is a sample solution designed for SharePoint Online which provides numerous
 
 SharePoint Starter Kit is provided as an open-source solution for anyone to benefit from overall design or from code perspective. You can find all used assets from the [sp-starter-kit GitHub repository](https://github.com/SharePoint/sp-starter-kit).
 
-**Note.** please check the Prerequisites section later in this page, before trying to apply this to your demo tenant. Notice also that this template does perform tenant wide configurations, so it's not recommended to be used in production tenants, unless you know what you are doing.
+**Note.** please check the **Prerequisites** section later in this page, before trying to apply this to your demo tenant. Notice also that this template does perform tenant wide configurations, so it's not recommended to be used in production tenants, unless you know what you are doing.
 
 ## Objectives of this solution
 
@@ -41,7 +41,6 @@ Here are current prerequisites for making this solution work in your tenant.
 - The tenant app catalog must have been created
 
 ![SharePoint Starter Kit UI](./sp-starter-kit-front-page-16x9.png)
-
 
 ## Support for this template
 

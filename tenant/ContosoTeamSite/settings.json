@@ -4,7 +4,7 @@
   ],
   "packageFile": "ContosoTeamSite.pnp",
   "abstract": "This template is quite a complex template with some example content for enabling collaboration at team site level.",
-  "sortOrder": 0,
+  "sortOrder": 300,
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview": "true",

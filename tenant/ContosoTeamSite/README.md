@@ -2,10 +2,31 @@
 
 This template is quite a complex template with some example content for enabling collaboration at team site level.
 
+![Full layout](./top-team.png)
+
 Notice that you can easily extend the initially provisioned site for example by doing following modifications:
 
 - Include product or company news directly on the team site welcome page from the hub sites
 - Include discussions and other web parts on the page based on your requirements
+
+## Template content
+
+Template contains following structures and assets:
+
+- New site collection using group associated team site template, unless applied on top of existing site
+- Custom welcome page
+- 2 additional content pages
+- 3 news articles with example content
+- Custom content type associated on the Documents library
+- Additional document library with custom content type
+- Sample Word, PowerPoint and Excel files related on the sample content of the site
+- Sample image content used in the template
+
+**Notice** - If applied on top of existing communication site, welcome page content will be overridden.
+
+## Full layout
+
+Below picture shows the expected layout from this template.
 
 ![Full layout](./full-layout-team.png)
 
