@@ -4,7 +4,7 @@ This template is designed to demonstrate how a generic workshop centric site cou
 
 This site could be associated to a workshops hub site to aggregate workshop information from multiple workshops.
 
-PIC
+![Full layout](./top-workshop.png)
 
 Notice that you can easily extend the initially provisioned site for example by doing following modifications:
 
