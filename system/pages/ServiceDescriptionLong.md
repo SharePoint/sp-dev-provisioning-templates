@@ -1,6 +1,6 @@
 # Service Description
 
-Welcome to the SharePoint PnP Provisioning Service, which can be used to provisioning demo sites with Microsoft provided provisioning templates. You can browse a catalog of templates and then apply those to any SharePoint Online tenant. This service is using PnP Tenant Templates, which are used to define what kind of customizations will be applied when the template is applied. 
+Welcome to the SharePoint PnP Provisioning Service, which can be used to provisioning demo sites with Microsoft provided provisioning templates. You can browse a catalog of templates and then apply those to any SharePoint Online tenant. This service is using PnP Tenant Templates, which are used to define what kind of customizations will be applied when the template is applied.
 
 These can be any of the following capabilities:
 
@@ -42,7 +42,7 @@ These templates were decided by SharePoint engineering together with the SharePo
 
 **Who has built this service?**
 
-Service has been designed by SharePoint engineering and it has been built by SharePoint engineering together with the SharePoint Patterns and Practices MVP team. 
+Service has been designed by SharePoint engineering and it has been built by SharePoint engineering together with the SharePoint Patterns and Practices MVP team.
 
 **Is the service code open-source?**
 
@@ -55,3 +55,11 @@ Please report any issues which you might have using the [sp-dev-docs issue list]
 **Are the templates only provisioning SharePoint assets?**
 
 Mainly yes. They can provision already Office 365 groups as those are created by default for the modern team sites. Starting from spring 2019, templates can also include other assets as the PnP Provisioning engine will start supporting for example Microsoft Team provisioning (Teams, channels, tabs) and other Office 365 assets based on the API support.
+
+**Is there away to use the templates without this service?**
+
+Yes. All templates which are visible in the service area available from [GitHub repository](https://github.com/SharePoint/sp-dev-docs/issues) which acts as the source location for the visible data. You can download the used templates and related assets directly from the GitHub and then use [PnP PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets) to use them also outside of this service.
+
+**Where can I find more details on the used PnP Tenant Templates?**
+
+Start by watching specific [PnP Webcast related on the PnP Tenant Templates](https://developer.microsoft.com/en-us/sharepoint/blogs/pnp-webcast-introduction-to-pnp-tenant-templates/).
