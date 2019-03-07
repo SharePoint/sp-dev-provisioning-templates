@@ -15,7 +15,7 @@
       <pnp:Parameter Key="GiveSiteTitle">Give @ Contoso</pnp:Parameter>
       <pnp:Parameter Key="GiveSiteUrl">/sites/wgive</pnp:Parameter>
       <pnp:Parameter Key="TeamSiteTitle">Contoso Team</pnp:Parameter>
-      <pnp:Parameter Key="TeamSiteAlias">contosoteam</pnp:Parameter>
+      <pnp:Parameter Key="TeamSiteAlias">wcontosoteam</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
