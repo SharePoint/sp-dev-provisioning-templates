@@ -12,7 +12,7 @@ Template contains following structures and assets:
 
 - New site collection using communication site template, unless applied on top of existing site
 - Custom welcome page
-- 2 additional content pages
+- 3 additional content pages
 - 3 news articles with sample content
 - Sample Word documents in Documents folder
 - Sample image content used in the template
