@@ -5,8 +5,8 @@
   "packageFile": "ContosoDroneLanding.pnp",
   "abstract": "This template is a demonstration of a welcome site design for modern SharePoint portal build with a communication site template.",
   "sortOrder": 900,
-  "promoted": "false",
-  "sortOrderPromoted": 0,
+  "promoted": "true",
+  "sortOrderPromoted": 10,
   "preview": "false",
   "metadata": {
     "properties": [

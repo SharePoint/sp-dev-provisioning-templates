@@ -6,7 +6,7 @@
   "abstract": "This template is designed to demonstrate how a generic workshop centric site could look like in SharePoint Online.",  
   "sortOrder": 400,
   "promoted": "false",
-  "sortOrderPromoted": 0,
+  "sortOrderPromoted": 200,
   "preview": "true",
   "metadata": {
     "properties": [

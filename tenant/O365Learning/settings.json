@@ -5,7 +5,7 @@
   "packageFile": "O365CL.pnp",
   "abstract": "Help your organization get more from Microsoft services by implementing the Custom Learning for Office 365 training portal. This digital, customizable learning solution streams on-demand content for Office 365 services and Windows 10 right to your end users.",
   "sortOrder": 100,
-  "promoted": "true",
+  "promoted": "false",
   "sortOrderPromoted": 0,
   "preview":"true",
   "metadata": {
