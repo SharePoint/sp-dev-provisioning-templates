@@ -1,3 +1,7 @@
-## Service Description
+## About the SharePoint PnP Provisioning Service
 
-Setup quick demo environments to your test tenants! This service is currently available for **preview** cross the world for any tenant. You can use this service (when released) to provision different kind of sites and site collections to your tenant. We do recommend using these templates first in your test tenant or carefully analyze what the template contains before installing anything into your production tenant to avoid unexpected changes as some configurations are applied in the tenant scope. This is an open-source community hosted service, so there's no specific support channel from Microsoft for this service.
+The SharePoint PnP Provisioning Service lets you add samples, templates and solutions to your Office 365 tenant.
+
+The service provisions content and configuration for site collections, sites, and tenants as documented in each sample, template and solution. We strongly recommend deploying to a test tenant so that you can carefully analyze the results before deploying to your production tenant.
+
+This is an open source community hosted service, so there is no support from Microsoft for this service or for the contents of samples, templates, and solutions.
