@@ -12,6 +12,8 @@ Custom Learning for Office 365 provides:
 
 **For complete Custom Learning for Office 365 documentation, go to  https://aka.ms/CLO365Docs.**
 
+[Custom Learning for Office 365 license](https://github.com/pnp/custom-learning-office-365/blob/master/LICENSE)
+
 ## Prerequisites
 
 Here are current prerequisites for making this solution work in your tenant.
