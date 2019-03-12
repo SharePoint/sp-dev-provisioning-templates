@@ -1,13 +1,14 @@
 # Team Site
 
-This template is quite a complex template with some example content for enabling collaboration at team site level.
+This template is an example of enabling collaboration at a team level.  It has many parts including news, files, and team calendar.
 
 ![Full layout](./top-team.png)
 
-Notice that you can easily extend the initially provisioned site for example by doing following modifications:
+You can easily extend the by doing following:
 
 - Include product or company news directly on the team site welcome page from the hub sites
-- Include discussions and other web parts on the page based on your requirements
+- Include discussions and other web parts on the page
+
 
 ## Template content
 

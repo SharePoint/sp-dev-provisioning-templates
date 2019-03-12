@@ -3,7 +3,7 @@
     "SAMPLE"
   ],
   "packageFile": "ContosoTeamSite.pnp",
-  "abstract": "This template is quite a complex template with some example content for enabling collaboration at team site level.",
+  "abstract": "This template is an example of enabling collaboration at a team level.  It has many parts including news, files, and team calendar.",
   "sortOrder": 300,
   "promoted": "false",
   "sortOrderPromoted": 0,

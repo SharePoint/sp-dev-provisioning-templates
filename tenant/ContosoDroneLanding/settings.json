@@ -3,7 +3,7 @@
     "SAMPLE"
   ],
   "packageFile": "ContosoDroneLanding.pnp",
-  "abstract": "This template is a demonstration of a welcome site design for modern SharePoint portal build with a communication site template.",
+  "abstract": "See how you can setup a welcome site using the communication site template and webparts.",
   "sortOrder": 900,
   "promoted": "true",
   "sortOrderPromoted": 10,

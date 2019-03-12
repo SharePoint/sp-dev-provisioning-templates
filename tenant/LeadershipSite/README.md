@@ -1,12 +1,10 @@
 # Leadership
 
-This template is designed to demonstrate how a company executive information site could look like in SharePoint Online. It has a relatively simple structure with some example pages and contents to get you started on updating the template based on your specific requirements.
+This template shows how a company executive information site could look like in SharePoint Online. It has example pages and contents to get you started. This site could be associated to an enterprise portal or divisional hub site, so that it is part of the main navigation with the other related sites in single consistent information architecture.
 
 ![Full layout](./top-exec.png)
 
-This site could be associated to an enterprise or divisional hub site, so that it is sharing the main navigation with the other related sites in single consistent information architecture.
-
-Notice that you can easily extend the initially provisioned site for example by doing following modifications:
+You can easily extend the site by doing following:
 
 - Include Stream web parts with videos (not present by default)
 - Include Yammer web part, if in use, for discussions (not present by default)

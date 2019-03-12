@@ -1,10 +1,10 @@
 # Product marketing
 
-This template is designed to demonstrate how a typical product marketing site could look like in the SharePoint Online. It has a relatively simple structure with some example pages and content to get you started on updating the template based on your specific requirements.
+This template shows how a typical product marketing site could look like in the SharePoint Online. It has example pages and content to get you started on updating the template.
 
 ![Product Marketing @ Contoso Top Picture](./top-productmarketingcontoso.png)
 
-This site could be associated to the enterprise or divisional hub site, so that it is sharing the main navigation with the other related sites in single consistent information architecture.
+This site could be associated to the enterprise portal or hub site, so that it is part of the main navigation with the other related sites in single consistent information architecture.
 
 ## Template content
 

@@ -1,12 +1,12 @@
 # Contoso Drone Landing Site
 
-This template is a demonstration of a welcome site design for a modern SharePoint portal build with a communication site template.
+This is the modern way of building a welcome site leveraging the communication site template and many webparts.
+
+The welcome page brings together example news, events and other content to demonstrate the possible information you can bring together in SharePoint Online.
 
 ![Brand at Contoso top pic](./top-landing.png)
 
-This template is relatively complex welcome page with some example news, events and other content to demonstrate the possible structures you can create in SharePoint Online.
-
-You can also further extend the experiences by adding possibly custom web parts and other experiences on the sites, if the out-of-the-box experiences are not enough for your objectives.
+You can also further extend the experiences by adding custom web parts, adjusting the layout and adding more page content.
 
 ## Template content
 

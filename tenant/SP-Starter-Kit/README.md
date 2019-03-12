@@ -4,11 +4,7 @@ This is a sample solution designed for SharePoint Online which provides numerous
 
 SharePoint Starter Kit is provided as an open-source solution for anyone to benefit from overall design or from code perspective. You can find all used assets, includign source code, from the [sp-starter-kit GitHub repository](https://github.com/SharePoint/sp-starter-kit).
 
-**Note.** please check the **Prerequisites** section later in this page, before trying to apply this to your demo tenant. Notice also that this template does perform tenant wide configurations, so it's not recommended to be used in production tenants, unless you know what you are doing.
-
 ![SharePoint Starter Kit UI](./sp-starter-kit-front-page-16x9.png)
-
-## Objectives of this solution
 
 SharePoint Communication Sites have great out-of-the-box capabilities, but the out-of-the-box capabilities may not always be enough for your scenarios. This is exactly why you can include your own customizations. This solution addresses common scenarios and tasks you may encounter when introducing those customizations, and provides examples and guidance on how you might address them including:
 
@@ -26,6 +22,8 @@ SharePoint Starter Kit applies following sites:
 - Installation of custom SharePoint Framework solution with 17 additional web parts and 7 SharePoint Framework extensions
 - Custom Site Designs which are visible in the out-of-the-box site creation process
 - Custom tenant themes, which are applied to the created site collections
+
+**Note:** Please check the **Prerequisites** section later in this page, before trying to apply this to your demo tenant. Notice also that this template does perform tenant wide configurations, so it's not recommended to be used in production tenants, unless you know what you are doing.
 
 ![SharePoint Starter Kit UI](./assets/ext-portal-footer.png)
 

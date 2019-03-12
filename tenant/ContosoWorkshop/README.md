@@ -1,15 +1,16 @@
 # Workshop
 
-This template is designed to demonstrate how a generic workshop centric site could look like in SharePoint Online.
+This template shows how a generic workshop centric site could look like in SharePoint Online.
 
 This site could be associated to a workshops hub site to aggregate workshop information from multiple workshops.
 
 ![Full layout](./top-workshop.png)
 
-Notice that you can easily extend the initially provisioned site for example by doing following modifications:
+You can easily extend the initially provisioned site for example by doing following modifications:
 
 - Include registration web part using PowerApps (not present by default)
 - Include Yammer discussion web part for enabling attendees to discuss the workshop even before it happens
+
 
 ## Template content
 

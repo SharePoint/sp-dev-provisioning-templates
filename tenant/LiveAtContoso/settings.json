@@ -3,7 +3,7 @@
     "SAMPLE"
   ],
   "packageFile": "LiveAtContoso.pnp",
-  "abstract": "This template is designed to demonstrate how a typical employee facing HR site could look like in SharePoint Online.",
+  "abstract": "This template shows what a typical employee Human Resources site could look like in SharePoint Online.",
   "sortOrder": 500,
   "promoted": "false",
   "sortOrderPromoted": 0,

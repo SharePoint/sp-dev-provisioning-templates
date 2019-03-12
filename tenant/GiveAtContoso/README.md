@@ -1,8 +1,8 @@
-# Charity
+# Giving campaign
 
-This template is designed to demonstrate how a typical company charity site could look like in SharePoint Online. It has a relatively simple structure with some example pages and contents to get you started on updating the template based on your specific requirements.
+This template shows what a human resources giving campaign site could look like. This site could be associated to an enterprise portal or hub site, so that it is part of the main navigation with the other related sites in consistent information architecture.
 
-This site could be associated to an enterprise or divisional hub site, so that it is sharing the main navigation with the other related sites in single consistent information architecture.
+You can also extend the experiences by adding custom web parts and other experiences on the sites.
 
 ![Top layout](./top-give.png)
 
