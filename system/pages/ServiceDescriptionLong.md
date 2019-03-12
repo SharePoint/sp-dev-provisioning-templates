@@ -4,13 +4,16 @@ Welcome to the SharePoint PnP Provisioning Service, which can be used to provisi
 
 Templates can contain any of the following capabilities:
 
+- Sample pages and images
+- Sample news articles
+- Office documents as a sample content for the pages
 - Site Designs and Site Scripts in tenant level - Visible in tenant level
-- Modern Tenant themes
+- Modern Tenant themes for branding
 - SharePoint Framework solutions with web parts and extensions
 - Required Graph or 3rd party API permissions
 - Tenant taxonomy settings
+- Site collections
 - Hub site configuration
-- Site collections and potential sub sites (not preferred)
 
 Please carefully read template description for details around the content of the template and on possible prerequisites. Some templates have certain permission assumptions for example for Terms Store settings or other adjustments. You will need to ensure that the Prerequisites have been applied or the provisioning operation can fail.
 
