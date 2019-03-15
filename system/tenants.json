@@ -1,6 +1,5 @@
 {
     "tenants": [
-        {"id": "microsoft.onmicrosoft.com", "tenantName": "microsoft.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "piasysdev.onmicrosoft.com", "tenantName": "piasysdev.onmicrosoft.com", "referenceOwner": "Paolo Pialorsi"},
         {"id": "microsoft.onmicrosoft.com", "tenantName": "microsoft.onmicrosoft.com", "referenceOwner": "Microsoft"},
         {"id": "erwinmcm.onmicrosoft.com", "tenantName": "erwinmcm.onmicrosoft.com", "referenceOwner": "Erwin van Hunen"},
