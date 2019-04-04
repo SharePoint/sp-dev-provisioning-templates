@@ -32,12 +32,15 @@
             <pnp:NavigationNode Title="Home" Url="{site}" />
             <pnp:NavigationNode Title="2018 goals" Url="{site}/SitePages/Ask.aspx" />
             <pnp:NavigationNode Title="Leadership accountability principles" Url="{site}/SitePages/2018.aspx" />
-            <pnp:NavigationNode Title="Leadership team" Url="{site}" />
+            <pnp:NavigationNode Title="Leadership team" Url="{site}/Lists/Leadership" />
             <pnp:NavigationNode Title="Pages" Url="{site}/SitePages/Forms/ByAuthor.aspx" />
           </pnp:StructuralNavigation>
         </pnp:CurrentNavigation>
       </pnp:Navigation>
       <pnp:Files>
+        <pnp:File Src="assets/people/lynnerobbins.jpg" Folder="SiteAssets/People" Overwrite="true" />
+        <pnp:File Src="assets/people/alexwilber.jpg" Folder="SiteAssets/People" Overwrite="true" />
+        <pnp:File Src="assets/people/emilybraun.jpg" Folder="SiteAssets/People" Overwrite="true" />
         <pnp:File Src="assets/sitelogo.png" Folder="SiteAssets" Overwrite="true" />
         <pnp:File Src="assets/SitePages/2018/75815-kevin-erdvig-761293-unsplash.jpg" Folder="SiteAssets/SitePages/2018" Overwrite="true" />
         <pnp:File Src="assets/SitePages/Ask/11157-GettyImages-903151382.png" Folder="SiteAssets/SitePages/Ask" Overwrite="true" />
@@ -59,6 +62,504 @@
             <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Leadership" Description="" DocumentTemplate="" OnQuickLaunch="false" TemplateType="100" Url="Lists/Leadership" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{316D5E7F-55EC-4BA5-BBA9-15C85E7305ED}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="JobTitle" />
+                <FieldRef Name="Company" />
+                <FieldRef Name="Email" />
+                <FieldRef Name="Phone" />
+                <FieldRef Name="StreetAddress" />
+                <FieldRef Name="City" />
+                <FieldRef Name="State" />
+                <FieldRef Name="ZipCode" />
+                <FieldRef Name="Picture" />
+                <FieldRef Name="Notes" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter>{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideListHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "flex-wrap": "wrap",
+      "align-items": "stretch",
+      "padding": "8px",
+      "margin-bottom": "16px",
+      "max-width": "930px",
+      "border-radius": "8px",
+      "box-shadow": "4px 4px 8px darkgrey"
+    },
+    "attributes": {
+      "class": "ms-bgColor-neutralLighter"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "flex-grow": "1",
+          "display": "flex",
+          "flex-wrap": "wrap",
+          "align-items": "stretch",
+          "max-width": "310px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "flex": "none"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "width": "100px",
+                  "height": "100px",
+                  "overflow": "hidden",
+                  "border-radius": "50%",
+                  "margin-right": "8px"
+                },
+                "children": [
+                  {
+                    "elmType": "img",
+                    "attributes": {
+                      "src": "=if([$Picture] == '', @currentWeb + '/_layouts/15/userphoto.aspx?size=M', [$Picture])",
+                      "title": "=if([$Picture] == '', 'No picture available', [$Picture.desc])"
+                    },
+                    "style": {
+                      "position": "relative",
+                      "top": "50%",
+                      "left": "50%",
+                      "width": "100%",
+                      "height": "auto",
+                      "margin-left": "-50%",
+                      "margin-top": "-50%"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "flex-grow": "1",
+              "display": "flex",
+              "flex-direction": "column",
+              "flex-wrap": "nowrap",
+              "align-items": "stretch",
+              "max-width": "200px"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "flex-grow": "1"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "txtContent": "[$Title]",
+                    "style": {
+                      "display": "block"
+                    },
+                    "attributes": {
+                      "class": "ms-fontSize-l ms-fontWeight-semibold ms-fontColor-neutralPrimary"
+                    }
+                  },
+                  {
+                    "elmType": "span",
+                    "txtContent": "[$JobTitle]",
+                    "style": {
+                      "display": "=if([$JobTitle] == '', 'none', 'block')"
+                    },
+                    "attributes": {
+                      "class": "ms-fontSize-m ms-fontWeight-regular ms-fontColor-neutralSecondary"
+                    }
+                  },
+                  {
+                    "elmType": "span",
+                    "txtContent": "[$Company]",
+                    "style": {
+                      "display": "=if([$Company] == '', 'none', 'block')"
+                    },
+                    "attributes": {
+                      "class": "ms-fontSize-m ms-fontWeight-regular ms-fontColor-neutralSecondary"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "flex-grow": "1",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "flex-wrap": "wrap",
+                  "align-items": "flex-end"
+                },
+                "children": [
+                  {
+                    "elmType": "a",
+                    "style": {
+                      "display": "=if([$Email] == '', 'none', 'block')",
+                      "width": "100%"
+                    },
+                    "attributes": {
+                      "class": "ms-fontSize-xs ms-fontWeight-regular ms-fontColor-neutralPrimary ms-fontColor-themePrimary--hover",
+                      "href": "='mailto:' + [$Email] + '?body=Dear ' + [$Title] + ',\r\n'"
+                    },
+                    "children": [
+                      {
+                        "elmType": "span",
+                        "attributes": {
+                          "iconName": "Mail",
+                          "class": "ms-fontColor-themePrimary"
+                        },
+                        "style": {
+                          "padding-right": "6px"
+                        }
+                      },
+                      {
+                        "elmType": "span",
+                        "txtContent": "[$Email]"
+                      }
+                    ]
+                  },
+                  {
+                    "elmType": "span",
+                    "style": {
+                      "display": "=if([$Phone] == '', 'none', 'block')",
+                      "width": "100%"
+                    },
+                    "attributes": {
+                      "class": "ms-fontSize-xs ms-fontWeight-regular ms-fontColor-neutralPrimary"
+                    },
+                    "children": [
+                      {
+                        "elmType": "span",
+                        "attributes": {
+                          "iconName": "Phone",
+                          "class": "ms-fontColor-themePrimary"
+                        },
+                        "style": {
+                          "padding-right": "6px"
+                        }
+                      },
+                      {
+                        "elmType": "span",
+                        "txtContent": "[$Phone]"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "flex-grow": "1",
+          "display": "flex",
+          "flex-direction": "column",
+          "flex-wrap": "nowrap",
+          "align-items": "stretch",
+          "max-width": "310px",
+          "min-width": "205px",
+          "margin-top": "8px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "flex-grow": "1",
+              "text-align": "center"
+            },
+            "children": [
+              {
+                "elmType": "a",
+                "attributes": {
+                  "href": "='https://www.google.com/maps/place/' + if([$StreetAddress] == '', '', [$StreetAddress] + ',') + if([$City] == '', '', [$City] + ',') + if([$State] == '', '', [$State]) + if([$ZipCode] == '', '', ' ' + [$ZipCode]) + '/'",
+                  "target": "_blank"
+                },
+                "style": {
+                  "height": "100%"
+                },
+                "children": [
+                  {
+                    "elmType": "img",
+                    "attributes": {
+                      "src": "='https://maps.googleapis.com/maps/api/staticmap?center=' + if([$StreetAddress] == '', '', [$StreetAddress] + ',') + if([$City] == '', '', [$City] + ',') + if([$State] == '', '', [$State]) + if([$ZipCode] == '', '', ' ' + [$ZipCode]) + '&amp;size=200x60&amp;key=AIzaSyDKNauYNcs4ZOq7sQMWYDyz1x82l00ek34'"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "flex-grow": "1",
+              "text-align": "center"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "txtContent": "[$StreetAddress]",
+                "style": {
+                  "display": "=if([$StreetAddress] == '', 'none', 'block')"
+                },
+                "attributes": {
+                  "class": "ms-fontSize-sPlus ms-fontWeight-regular ms-fontColor-neutralSecondary"
+                }
+              },
+              {
+                "elmType": "span",
+                "txtContent": "=if([$City] == '', '', [$City] + ', ') + if([$State] == '', '', [$State] + ' ') + if([$ZipCode] == '', '', [$ZipCode])",
+                "style": {
+                  "display": "=if([$City] == '' &amp;&amp; [$State] == '' &amp;&amp; [$ZipCode] == '', 'none', 'block')"
+                },
+                "attributes": {
+                  "class": "ms-fontSize-sPlus ms-fontWeight-regular ms-fontColor-neutralSecondary"
+                }
+              },
+              {
+                "elmType": "span",
+                "txtContent": "No address provided",
+                "style": {
+                  "display": "=if([$City] == '' &amp;&amp; [$State] == '' &amp;&amp; [$ZipCode] == '', 'block', 'none')"
+                },
+                "attributes": {
+                  "class": "ms-fontSize-s ms-fontWeight-semilight ms-fontColor-neutralTertiary"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "elmType": "div",
+        "style": {
+          "flex-grow": "1",
+          "display": "flex",
+          "flex-direction": "column",
+          "max-width": "310px",
+          "min-width": "155px"
+        },
+        "children": [
+          {
+            "elmType": "div",
+            "style": {
+              "flex-grow": "1"
+            },
+            "children": [
+              {
+                "elmType": "span",
+                "style": {
+                  "display": "block"
+                },
+                "attributes": {
+                  "class": "ms-fontWeight-semibold ms-fontSize-m"
+                },
+                "txtContent": "Notes:"
+              },
+              {
+                "elmType": "span",
+                "style": {
+                  "display": "=if([$Notes] == '', 'none', 'block')",
+                  "padding-left": "8px"
+                },
+                "txtContent": "[$Notes]",
+                "attributes": {
+                  "class": "ms-fontSize-s ms-fontWeight-regular ms-fontColor-neutralSecondary"
+                }
+              },
+              {
+                "elmType": "span",
+                "style": {
+                  "display": "=if([$Notes] == '', 'block', 'none')",
+                  "padding-left": "8px"
+                },
+                "txtContent": "No notes entered",
+                "attributes": {
+                  "class": "ms-fontSize-s ms-fontWeight-semilight ms-fontColor-neutralTertiary"
+                }
+              }
+            ]
+          },
+          {
+            "elmType": "div",
+            "style": {
+              "flex": "none",
+              "display": "flex",
+              "flex-direction": "row-reverse",
+              "flex-wrap": "nowrap"
+            },
+            "children": [
+              {
+                "elmType": "button",
+                "customRowAction": {
+                  "action": "share"
+                },
+                "attributes": {
+                  "title": "Share",
+                  "class": "ms-fontColor-neutralPrimary ms-fontColor-themePrimary--hover"
+                },
+                "style": {
+                  "border": "none",
+                  "background-color": "transparent",
+                  "cursor": "pointer"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "iconName": "Share"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "button",
+                "customRowAction": {
+                  "action": "delete"
+                },
+                "attributes": {
+                  "title": "Delete",
+                  "class": "ms-fontColor-neutralPrimary ms-fontColor-red--hover"
+                },
+                "style": {
+                  "border": "none",
+                  "background-color": "transparent",
+                  "cursor": "pointer"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "iconName": "Delete"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "button",
+                "customRowAction": {
+                  "action": "editProps"
+                },
+                "attributes": {
+                  "title": "Edit",
+                  "class": "ms-fontColor-neutralPrimary ms-fontColor-themePrimary--hover"
+                },
+                "style": {
+                  "border": "none",
+                  "background-color": "transparent",
+                  "cursor": "pointer"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "iconName": "Edit"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "button",
+                "customRowAction": {
+                  "action": "defaultClick"
+                },
+                "attributes": {
+                  "title": "See more details",
+                  "class": "ms-fontColor-neutralPrimary ms-fontColor-themePrimary--hover"
+                },
+                "style": {
+                  "border": "none",
+                  "background-color": "transparent",
+                  "cursor": "pointer"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "attributes": {
+                      "iconName": "ContactInfo"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}</CustomFormatter>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Text" DisplayName="Job Title" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{cc3c5910-6895-4e1a-9ceb-c0ef002a7903}" SourceID="{{listid:Leadership}}" StaticName="JobTitle" Name="JobTitle" ColName="nvarchar4" RowOrdinal="0" CustomFormatter="" Version="1" />
+            <Field Type="Text" DisplayName="Company" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{4f1166ea-cae7-427b-833d-b6d614a89e7c}" SourceID="{{listid:Leadership}}" StaticName="Company" Name="Company" ColName="nvarchar5" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Email" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{c07070c0-690c-46ae-803f-e025a162360c}" SourceID="{{listid:Leadership}}" StaticName="Email" Name="Email" ColName="nvarchar6" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Phone" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{2228663e-d256-4554-bf03-40be84c036e0}" SourceID="{{listid:Leadership}}" StaticName="Phone" Name="Phone" ColName="nvarchar7" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Street Address" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{fbb81660-411b-4cea-a612-4dbafc38c906}" SourceID="{{listid:Leadership}}" StaticName="StreetAddress" Name="StreetAddress" ColName="nvarchar8" RowOrdinal="0" CustomFormatter="" Version="1" />
+            <Field Type="Text" DisplayName="City" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{4a6cb27f-886b-4fbb-9683-04b0325fe05e}" SourceID="{{listid:Leadership}}" StaticName="City" Name="City" ColName="nvarchar9" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="State" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{5f029d51-2134-4ece-9421-badc09b314bb}" SourceID="{{listid:Leadership}}" StaticName="State" Name="State" ColName="nvarchar10" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Zip Code" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{2fc42004-0738-40cf-bbd8-91485e39eff7}" SourceID="{{listid:Leadership}}" StaticName="ZipCode" Name="ZipCode" ColName="nvarchar11" RowOrdinal="0" CustomFormatter="" Version="1" />
+            <Field Type="URL" DisplayName="Picture" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Image" ID="{0c48aac5-17ed-498a-9d6b-ca64d0c377dc}" SourceID="{{listid:Leadership}}" StaticName="Picture" Name="Picture" ColName="nvarchar12" RowOrdinal="0" ColName2="nvarchar13" RowOrdinal2="0" />
+            <Field Type="Note" DisplayName="Notes" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" RichTextMode="Compatible" IsolateStyles="FALSE" Sortable="FALSE" ID="{f345dc54-6941-4aa7-9a6c-35f05ab1a00b}" SourceID="{{listid:Leadership}}" StaticName="Notes" Name="Notes" ColName="ntext2" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:DataRows>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Lynne Robbins</pnp:DataValue>
+              <pnp:DataValue FieldName="JobTitle">Chief Executive Officer</pnp:DataValue>
+              <pnp:DataValue FieldName="Email">Lynne.Robbins@contoso.com</pnp:DataValue>
+              <pnp:DataValue FieldName="Company">Contoso</pnp:DataValue>
+              <pnp:DataValue FieldName="Phone">758-555-3298</pnp:DataValue>
+              <pnp:DataValue FieldName="StreetAddress">1413 Main St.</pnp:DataValue>
+              <pnp:DataValue FieldName="City">Knoxville</pnp:DataValue>
+              <pnp:DataValue FieldName="State">TN</pnp:DataValue>
+              <pnp:DataValue FieldName="ZipCode">37918</pnp:DataValue>
+              <pnp:DataValue FieldName="Picture">{site}/siteassets/people/lynnerobbins.jpg</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">Lynne Robbins is the CEO of Contoso since 1994.</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Emily Braun</pnp:DataValue>
+              <pnp:DataValue FieldName="JobTitle">Chief Financial Officer</pnp:DataValue>
+              <pnp:DataValue FieldName="Company">Contoso</pnp:DataValue>
+              <pnp:DataValue FieldName="Phone">758-555-3513</pnp:DataValue>
+              <pnp:DataValue FieldName="StreetAddress">3819 N. State St.</pnp:DataValue>
+              <pnp:DataValue FieldName="City">Sacramento</pnp:DataValue>
+              <pnp:DataValue FieldName="State">CA</pnp:DataValue>
+              <pnp:DataValue FieldName="ZipCode">3819</pnp:DataValue>
+              <pnp:DataValue FieldName="Picture">{site}/siteassets/people/emilybraun.jpg</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">Emily Braun has been working at Contoso since 1998, of which the last 2 years she acted as CFO.</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Alex Wilber</pnp:DataValue>
+              <pnp:DataValue FieldName="JobTitle">Human Resources</pnp:DataValue>
+              <pnp:DataValue FieldName="Company">Contoso</pnp:DataValue>
+              <pnp:DataValue FieldName="Picture">{site}/siteassets/people/alexwilber.jpg</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
         </pnp:ListInstance>
       </pnp:Lists>
       <pnp:ClientSidePages>
