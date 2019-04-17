@@ -1,23 +1,27 @@
 # Service Description
 
-The SharePoint PnP Provisioning Service lets you add samples, templates and solutions (collectively, "templates") to your Office 365 tenant.
+The SharePoint PnP Provisioning Service lets you add samples, templates and solutions to your Office 365 tenant.
+
+The service provisions content and configuration for site collections, sites, and tenants as documented in each sample, template and solution. We strongly recommend deploying to a test tenant so that you can carefully analyze the results before deploying to your production tenant.
+
+This is an open source community hosted service, so there is no direct support from Microsoft from standard support channels for this service or for the contents of samples, templates, and solutions. You can however get support by reporting any issues using the process defined later in this document.
 
 ## Using the SharePoint PnP Provisioning Service
 
-To use the service, browse the catalog and select a template. Read the documentation to understand the template's prerequisites, credential requirements, and customizations.
+To use the service, browse the catalog and select a template. Read the template documentation to understand the template's possible prerequisites, credential requirements, and customizations.
  
 ### PREREQUISITES
 
 Some templates have prerequisites including permissions to the term store or other configuration. Ensure that the prerequisites are met, otherwise provisioning might fail.
- 
+
 ### CREDENTIAL REQUIREMENTS
 
-To add a template to your tenant, you must be authenticated with appropriate credentials--tenant admin or site admin--as specified in the template documentation.
+To add a template to your tenant, you must be authenticated with appropriate tenant administrative credentials (SharePoint admin account is not sufficient) as specified in the template documentation.
 
 ### CUSTOMIZATIONS
 
 The SharePoint PnP Provisioning Service uses PnP tenant templates, and customizations include one or more of the following:
- 
+
 - Sample pages and images
 - Sample news articles
 - Office documents as a sample content
@@ -27,16 +31,16 @@ The SharePoint PnP Provisioning Service uses PnP tenant templates, and customiza
 - Microsoft Graph or 3rd party API permissions
 - Tenant taxonomy settings
 - Hub site configuration
-- Site collections 
+- Site collections
 
-After evaluating the sample, template or solution, deploy it to your environment by clicking **Add to your tenant**. We strongly recommend deploying to a test tenant so that you can carefully analyze the results before deploying to your production tenant. You will be required to log in to your tenant with appropriate credentials. 
+After evaluating the sample, template or solution, deploy it to your environment by clicking **Add to your tenant**. We strongly recommend deploying to a test tenant so that you can carefully analyze the results before deploying to your production tenant. You will be required to log in to your tenant with appropriate credentials.
 
 Provisioning operations are NOT transactional. If template provisioning is interrupted, the template might be only partially applied. In this case, you can either re-apply the template or manually delete content and revert configuration.
 
 ## About the SharePoint PnP Provisioning Service
 
 Each sample, template and solution is defined by a [PnP Tenant Template](https://developer.microsoft.com/en-us/sharepoint/blogs/pnp-webcast-introduction-to-pnp-tenant-templates/) that specifies content and configuration for the tenant, site collections, and sites. The PnP Template is deployed using the [PnP Provisioning engine](https://www.youtube.com/watch?v=kRbrrGCfUtE), an open source community built engine which is also available as a CSOM extension or by using [PnP PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets).
- 
+
 This is an open source community hosted service, so there is no support from Microsoft for this service or for the contents of samples, templates, and solutions.
 
 ## Support and SLA
@@ -52,9 +56,9 @@ The PnP Provisioning Service is covered by the same support and SLA process as a
 - PnP is supported in similar ways as other open source projects done by Microsoft with support from the community by the community
 - There is no SLA for responding on the issues related on this service
 - There are numerous partners that utilize PnP within their solutions for customers. Support for these solutions are provided by the Partner. When PnP material is used in deployments, we recommend being clear with your customer/deployment owner on the support model
- 
+
 Please use [sp-dev-docs issue list](https://github.com/SharePoint/sp-dev-docs/issues) for reporting any issues on the templates or in the actual service. You can use this location also for any generic SharePoint dev issues.
- 
+
 ## Frequently Asked Questions
 
 **Who has decided what templates are available?**
@@ -80,6 +84,12 @@ In addition to SharePoint content and configuration, some templates provision te
 **Is there away to use the templates without this service?**
 
 Yes. All templates which are visible in the service area available from [GitHub repository](https://github.com/SharePoint/sp-dev-provisioning-templates) which acts as the source location for all the visible information in this service. You can download the used templates and related assets directly from the GitHub and then use [PnP PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets) to use them also outside of this service.
+
+**Instructions include guidance ot use a test tenant - where to get one?**
+
+You can get a test tenant by using a trial [Office 365 tenants](https://products.office.com/en-us/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr2) or by subscribing to the [Office 365 developer program](https://developer.microsoft.com/en-us/office/dev-program) (if you are a developer). 
+
+You can also potentially use [Microsoft Demos](https://demos.microsoft.com) environments, if you are a Microsoft partner or a Microsoft employee.
 
 **I just created an app catalog to my tenant, but having challenges with the service**
 
