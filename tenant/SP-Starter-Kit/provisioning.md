@@ -1,4 +1,4 @@
-## What will provisioned?
+## What will be provisioned?
 
 This template consists following **tenant level elements**:
 

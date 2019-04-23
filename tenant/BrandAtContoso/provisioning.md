@@ -1,4 +1,4 @@
-## What will provisioned?
+## What will be provisioned?
 
 This template contains following elements which will be provisioned:
 
