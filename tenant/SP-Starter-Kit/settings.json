@@ -21,7 +21,7 @@
         "caption":"Site URL Prefix",
         "description":"The prefix to use for the site collection URLs while creating sites in your tenant",
 	"editor":"RegEx",
-	"editorSettings":"^(\w|\-|\.|\_)*$",
+	"editorSettings":"^(\\w|\\-|\\.|\\_)*$",
       }
     ]
   }
