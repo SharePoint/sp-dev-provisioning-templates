@@ -18,7 +18,9 @@
       {
         "name": "SiteAlias",
         "caption": "Site Alias",
-        "description": "The alias for the O365 Group to create. The site URL will be /sites/<alias> or /teams/<alias> depending on your Tenant settings."
+        "description": "The alias for the O365 Group to create. The site URL will be /sites/<alias> or /teams/<alias> depending on your Tenant settings.",
+        "editor":"RegEx",
+        "editorSettings":"^(\\w|\\-|\\.|\\_)*$"
       }
     ]
   }
