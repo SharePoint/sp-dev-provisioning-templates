@@ -1,4 +1,4 @@
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
                   Author="John White"
                   Generator="Human being"
                   Version="1.0"
@@ -23,6 +23,38 @@
   </pnp:Sequence>
   <pnp:Templates ID="SITE-TEMPLATES">
     <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Header BackgroundEmphasis="Strong" Layout="Standard" MenuStyle="Cascading"/>
+      <pnp:Theme Name="">
+        {
+        "neutralQuaternaryAlt":  "#dadada",
+        "themeLighterAlt":  "#f9f8fb",
+        "themeSecondary":  "#8675a5",
+        "themePrimary":  "#786699",
+        "bodyText":  "#333333",
+        "themeDarker":  "#433956",
+        "themeDark":  "#5b4e74",
+        "themeLight":  "#d2cae0",
+        "error":  "#e93333",
+        "neutralLighter":  "#f4f4f4",
+        "neutralLighterAlt":  "#f8f8f8",
+        "themeLighter":  "#e6e2ef",
+        "themeDarkAlt":  "#6c5c8a",
+        "themeTertiary":  "#a99bc2",
+        "primaryText":  "#333333",
+        "accent":  "#786699",
+        "bodyBackground":  "#ffffff",
+        "neutralSecondary":  "#858585",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralLight":  "#eaeaea",
+        "neutralPrimaryAlt":  "#4b4b4b",
+        "white":  "#ffffff",
+        "neutralDark":  "#272727",
+        "neutralPrimary":  "#333333",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "neutralTertiary":  "#c2c2c2",
+        "black":  "#1d1d1d"
+        }
+      </pnp:Theme>
       <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
         <pnp:GlobalNavigation NavigationType="Structural">
           <pnp:StructuralNavigation RemoveExistingNodes="false" />
@@ -356,7 +388,7 @@
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home">
           <pnp:Sections>
-            <pnp:Section Order="1" Type="TwoColumnLeft">
+            <pnp:Section Order="1" Type="TwoColumnLeft" BackgroundEmphasis="Neutral">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="Text" Column="1">
                   <pnp:CanvasControlProperties>
@@ -392,13 +424,13 @@
                 <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
               </pnp:Controls>
             </pnp:Section>
-            <pnp:Section Order="6" Type="OneColumn">
+            <pnp:Section Order="6" Type="OneColumn" BackgroundEmphasis="Soft">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
                 <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;,&quot;items[0].title&quot;:&quot;Contoso logo assets&quot;,&quot;items[1].title&quot;:&quot;Brand architecture&quot;,&quot;items[2].title&quot;:&quot;Design templates &amp; icons&quot;,&quot;items[3].title&quot;:&quot;Contoso Illustration style&quot;,&quot;items[4].title&quot;:&quot;Brand overview&quot;,&quot;items[5].title&quot;:&quot;Brand execution guidelines&quot;,&quot;items[6].title&quot;:&quot;Marketing guidelines&quot;,&quot;items[7].title&quot;:&quot;Brand health monitor&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[2].description&quot;:&quot;&quot;,&quot;items[3].description&quot;:&quot;&quot;,&quot;items[4].description&quot;:&quot;&quot;,&quot;items[5].description&quot;:&quot;&quot;,&quot;items[6].description&quot;:&quot;&quot;,&quot;items[7].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;,&quot;items[4].altText&quot;:&quot;&quot;,&quot;items[5].altText&quot;:&quot;&quot;,&quot;items[6].altText&quot;:&quot;&quot;,&quot;items[7].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/contosobrand01/contoso-icon@2x.png&quot;,&quot;items[0].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[1].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[2].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[3].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[4].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[5].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[6].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;items[7].rawPreviewImageUrl&quot;:&quot;/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile=a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[4].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[5].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[6].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[7].sourceItem.url&quot;:&quot;{site}#&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:1,&quot;id&quot;:8,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a8fa0a49-1cb5-460c-98ce-793bfd231777&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:7,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;manufacturing&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:6,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;powerpointdocument&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:5,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;edit&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;decisionsolid&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;megaphone&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;health&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:1,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="2" Column="1" />
               </pnp:Controls>
             </pnp:Section>
-            <pnp:Section Order="7" Type="ThreeColumn">
+            <pnp:Section Order="7" Type="ThreeColumn" BackgroundEmphasis="Soft">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="Image" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/37373-find_photos.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;width&quot;:610,&quot;height&quot;:342}}}, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a320af36-2ed1-402a-a86c-1ab62b5bf3dc&quot;,&quot;imgWidth&quot;:610,&quot;imgHeight&quot;:342,&quot;fixAspectRatio&quot;:false}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
                 <pnp:CanvasControl WebPartType="Text" ControlId="e409f6a6-7922-456c-87f5-dafbd48c4181" Order="2" Column="1">
