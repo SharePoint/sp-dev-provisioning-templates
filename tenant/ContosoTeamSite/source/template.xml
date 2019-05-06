@@ -1,4 +1,4 @@
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
                   Author="John White"
                   Generator="Human being"
                   Version="1.0"
@@ -23,6 +23,33 @@
   </pnp:Sequence>
   <pnp:Templates ID="SITE-TEMPLATES">
     <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:Header BackgroundEmphasis="Strong" Layout="Standard" />
+      <pnp:Theme Name="">
+        {
+        "themePrimary":  "#038387",
+        "themeLighterAlt":  "#f0fafa",
+        "themeLighter":  "#c7ebec",
+        "themeLight":  "#9bd9db",
+        "themeTertiary":  "#4bb4b7",
+        "themeSecondary":  "#159196",
+        "themeDarkAlt":  "#02767a",
+        "themeDark":  "#026367",
+        "themeDarker":  "#02494c",
+        "neutralLighterAlt":  "#f8f8f8",
+        "neutralLighter":  "#f4f4f4",
+        "neutralLight":  "#eaeaea",
+        "neutralQuaternaryAlt":  "#dadada",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "neutralTertiary":  "#c2c2c2",
+        "neutralSecondary":  "#858585",
+        "neutralPrimaryAlt":  "#4b4b4b",
+        "neutralPrimary":  "#333",
+        "neutralDark":  "#272727",
+        "black":  "#1d1d1d",
+        "white":  "#fff"
+        }
+      </pnp:Theme>
       <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="assets/contosoteam.jpg" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
       <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
       <pnp:Files>
@@ -314,7 +341,7 @@
                 <pnp:CanvasControl WebPartType="List" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:true,&quot;showDefaultDocumentLibrary&quot;:false,&quot;webpartHeightKey&quot;:1,&quot;selectedListUrl&quot;:&quot;{site}/Shared Documents&quot;,&quot;listTitle&quot;:&quot;Documents&quot;,&quot;selectedListId&quot;:&quot;{listid:Documents}&quot;,&quot;webRelativeListUrl&quot;:&quot;/Shared Documents&quot;,&quot;selectedViewId&quot;:&quot;{viewid:Documents,All Documents}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="3" />
               </pnp:Controls>
             </pnp:Section>
-            <pnp:Section Order="3" Type="OneColumn">
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Neutral">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="NewsReel" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.7&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Latest recommended news for you&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;ef1147f9-e3f4-4844-b4fe-ab7e6c1f3a10&quot;}}, &quot;properties&quot;: {&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true},&quot;showChrome&quot;:true,&quot;layoutId&quot;:&quot;GridNews&quot;,&quot;prefetchCount&quot;:4,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:4,&quot;dataProviderId&quot;:&quot;viewCounts&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;propsLastEdited&quot;:&quot;2019-03-07T09:13:11.608Z&quot;,&quot;templateId&quot;:&quot;GridNews&quot;,&quot;compactMode&quot;:false}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="1" Column="1" />
               </pnp:Controls>
