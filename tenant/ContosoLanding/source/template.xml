@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0"?>
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema" 
-    Author="SharePoint PnP" 
-    Generator="SharePoint PnP" 
-    Version="1.0" 
-    Description="Contoso Landings page sample." 
-    DisplayName="Contoso Enterprise Landing" 
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
+    Author="SharePoint PnP"
+    Generator="SharePoint PnP"
+    Version="1.0"
+    Description="Contoso Landings page sample."
+    DisplayName="Contoso Enterprise Landing"
     ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/ContosoLanding/top-contoso-landing.png">
   <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.1.1809.0, Culture=neutral, PublicKeyToken=null">
     <pnp:Parameters>
@@ -12,7 +12,7 @@
       <pnp:Parameter Key="SiteUrl">/sites/contosolandings</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
-   <pnp:Sequence ID="sequence">
+  <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
       <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
@@ -23,8 +23,38 @@
   </pnp:Sequence>
   <pnp:Templates ID="SITE-TEMPLATES">
     <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Header BackgroundEmphasis="Strong" Layout="Compact" MenuStyle="MegaMenu"/>
+      <pnp:Theme Name="">
+        {
+        "themePrimary":  "#69797e",
+        "themeLighterAlt":  "#f8f9fa",
+        "themeLighter":  "#e4e9ea",
+        "themeLight":  "#cdd5d8",
+        "themeTertiary":  "#9fadb1",
+        "themeSecondary":  "#78888d",
+        "themeDarkAlt":  "#5d6c70",
+        "themeDark":  "#4f5b5f",
+        "themeDarker":  "#3a4346",
+        "neutralLighterAlt":  "#f8f8f8",
+        "neutralLighter":  "#f4f4f4",
+        "neutralLight":  "#eaeaea",
+        "neutralQuaternaryAlt":  "#dadada",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "neutralTertiary":  "#c2c2c2",
+        "neutralSecondary":  "#858585",
+        "neutralPrimaryAlt":  "#4b4b4b",
+        "neutralPrimary":  "#333333",
+        "neutralDark":  "#272727",
+        "black":  "#1d1d1d",
+        "white":  "#fff"
+        }
+      </pnp:Theme>
+      <pnp:Footer Enabled="true" Logo="{site}/SiteAssets/__footerlogo__logo_contoso_footer.png"/>
       <pnp:Files>
+        <pnp:File Src="assets/__footerlogo__logo_contoso_footer.png" Folder="SiteAssets" Overwrite="true"/>
         <pnp:File Src="assets/__sitelogo__logo-portal-1@3x.png" Folder="SiteAssets" Overwrite="true"/>
+        <pnp:File Src="assets/divider.png" Folder="SiteAssets" Overwrite="true" />
         <pnp:File Src="assets/contoso_financial_calendar_q1.pptx" Folder="Shared%20Documents" Overwrite="true"/>
         <pnp:File Src="assets/33758-mentorship.jpeg" Folder="SiteAssets" Overwrite="true"/>
         <pnp:File Src="assets/48900-2993280008GettyImages-946913156.jpg" Folder="SiteAssets" Overwrite="true"/>
@@ -300,18 +330,26 @@
       &quot;compactMode&quot;: true
     }
   }" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="1" Column="1" />
-                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;countDate&quot;:&quot;Fri Oct 18 2019 20:00:00 GMT-0700 (Pacific Daylight Time)&quot;,&quot;title&quot;:&quot;The Contoso Eagle consumer product launch&quot;,&quot;description&quot;:&quot;A compact quadcopter that is snappy, agile, and captures stunning high-resolution 8K images.​&quot;,&quot;countDirection&quot;:&quot;COUNT_DOWN&quot;,&quot;dateDisplay&quot;:&quot;DAY_HOUR_MINUTE_SECOND&quot;,&quot;buttonText&quot;:&quot;Read press release&quot;,&quot;buttonURL&quot;:&quot;{hosturl}{site}#&quot;,&quot;showButton&quot;:true,&quot;backgroundImage&quot;:{&quot;focalPosition&quot;:{&quot;x&quot;:50,&quot;y&quot;:50},&quot;id&quot;:&quot;0f75fd8f-7105-4756-ac5b-aa5ca4cae1e7&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;url&quot;:&quot;{site}/SiteAssets/SitePages/contosoweb1/73939981christian-langenhan-588498-unsplash.jpg&quot;,&quot;webId&quot;:&quot;&quot;,&quot;zoomRatio&quot;:1,&quot;widthFactor&quot;:1.5},&quot;backgroundOverlay&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;opacity&quot;:63,&quot;useLightText&quot;:true}}}" ControlId="62cac389-787f-495d-beca-e11786162ef4" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;countDate&quot;:&quot;Fri Oct 18 2019 20:00:00 GMT-0700 (Pacific Daylight Time)&quot;,&quot;title&quot;:&quot;The Contoso Eagle consumer product launch&quot;,&quot;description&quot;:&quot;A compact quadcopter that is snappy, agile, and captures stunning high-resolution 8K images.​&quot;,&quot;countDirection&quot;:&quot;COUNT_DOWN&quot;,&quot;dateDisplay&quot;:&quot;DAY_HOUR_MINUTE_SECOND&quot;,&quot;buttonText&quot;:&quot;Read press release&quot;,&quot;buttonURL&quot;:&quot;{hosturl}{site}#&quot;,&quot;showButton&quot;:true}}" ControlId="62cac389-787f-495d-beca-e11786162ef4" Order="1" Column="2" />
               </pnp:Controls>
             </pnp:Section>
-            <pnp:Section Order="3" Type="OneColumn" />
-            <pnp:Section Order="4" Type="OneColumn">
+            <pnp:Section Order="3" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{guid}&quot;,&quot;width&quot;:&quot;3400&quot;,&quot;height&quot;:&quot;6&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{guid}&quot;,&quot;imgWidth&quot;:3400,&quot;imgHeight&quot;:6,&quot;isFullWidth&quot;:true,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false,&quot;altText&quot;:&quot;&quot;}}"/>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn" BackgroundEmphasis="Neutral">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
                 <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{ &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;,&quot;items[0].title&quot;:&quot;Senior leadership update&quot;,&quot;items[1].title&quot;:&quot;Employees living our culture&quot;,&quot;items[2].title&quot;:&quot;DroneTeam eLearning | Login&quot;,&quot;items[3].title&quot;:&quot;Contoso shuttle&quot;,&quot;items[4].title&quot;:&quot;Annual shareholders letter&quot;,&quot;items[5].title&quot;:&quot;Fostering our culture of inclusion&quot;,&quot;items[6].title&quot;:&quot;Tips for effective collaboration&quot;,&quot;items[7].title&quot;:&quot;FAQs &amp; help&quot;,&quot;items[0].description&quot;:&quot;Find the latest executive events, news, and speech transcripts.&quot;,&quot;items[1].description&quot;:&quot;Be inspired by your colleagues who are making a difference.&quot;,&quot;items[2].description&quot;:&quot;Get training, guidance, and learning solution roadmaps.&quot;,&quot;items[3].description&quot;:&quot;Need a ride? Plan your trip with route schedules and reservations.&quot;,&quot;items[4].description&quot;:&quot;Read about our strong results, new products, and future vision.&quot;,&quot;items[5].description&quot;:&quot;Learn how we innovate better and faster with diversity and inclusion.&quot;,&quot;items[6].description&quot;:&quot;Unlock creativity with collaboration. Use these tips to get started.&quot;,&quot;items[7].description&quot;:&quot;Check here for answers to common questions about Contoso services.&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;,&quot;items[4].altText&quot;:&quot;&quot;,&quot;items[5].altText&quot;:&quot;&quot;,&quot;items[6].altText&quot;:&quot;&quot;,&quot;items[7].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[0].rawPreviewImageUrl&quot;:&quot;/_layouts/15/images/sitepagethumbnail.png&quot;,&quot;items[1].rawPreviewImageUrl&quot;:&quot;/_layouts/15/images/sitepagethumbnail.png&quot;,&quot;items[2].rawPreviewImageUrl&quot;:&quot;/_layouts/15/images/sitepagethumbnail.png&quot;,&quot;items[3].rawPreviewImageUrl&quot;:&quot;/_layouts/15/images/sitepagethumbnail.png&quot;,&quot;items[4].rawPreviewImageUrl&quot;:&quot;/_layouts/15/images/sitepagethumbnail.png&quot;,&quot;items[5].rawPreviewImageUrl&quot;:&quot;/_layouts/15/images/sitepagethumbnail.png&quot;,&quot;items[6].rawPreviewImageUrl&quot;:&quot;/_layouts/15/images/sitepagethumbnail.png&quot;,&quot;items[7].rawPreviewImageUrl&quot;:&quot;/_layouts/15/images/sitepagethumbnail.png&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[4].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[5].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[6].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[7].sourceItem.url&quot;:&quot;{site}#&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:8,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;remindergroup&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:7},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:6,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;education&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:5,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;bus&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;textdocumentshared&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;teamwork&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;trackers&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;settings&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:true,&quot;buttonTreatment&quot;:1,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="2" Column="1" />
                 <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{ &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="1" />
               </pnp:Controls>
             </pnp:Section>
-            <pnp:Section Order="5" Type="OneColumn" />
+            <pnp:Section Order="5" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{guid}&quot;,&quot;width&quot;:&quot;3400&quot;,&quot;height&quot;:&quot;6&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{guid}&quot;,&quot;imgWidth&quot;:3400,&quot;imgHeight&quot;:6,&quot;isFullWidth&quot;:true,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false,&quot;altText&quot;:&quot;&quot;}}"/>
+              </pnp:Controls>
+            </pnp:Section>
             <pnp:Section Order="6" Type="TwoColumnRight">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="DocumentEmbed" JsonControlData="{
@@ -385,7 +423,11 @@
 }" ControlId="b7dd04e1-19ce-4b24-9132-b60a1c2b910d" Order="1" Column="2" />
               </pnp:Controls>
             </pnp:Section>
-            <pnp:Section Order="7" Type="OneColumn" />
+            <pnp:Section Order="7" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{guid}&quot;,&quot;width&quot;:&quot;3400&quot;,&quot;height&quot;:&quot;6&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{guid}&quot;,&quot;imgWidth&quot;:3400,&quot;imgHeight&quot;:6,&quot;isFullWidth&quot;:true,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false,&quot;altText&quot;:&quot;&quot;}}"/>
+              </pnp:Controls>
+            </pnp:Section>
             <pnp:Section Order="8" Type="ThreeColumn">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="Custom" JsonControlData="{
