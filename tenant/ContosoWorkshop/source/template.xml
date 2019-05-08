@@ -1,4 +1,4 @@
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
                   Author="John White"
                   Generator="Human being"
                   Version="1.0"
@@ -23,7 +23,40 @@
   </pnp:Sequence>
   <pnp:Templates ID="SITE-TEMPLATES">
     <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Theme Name="">
+        {
+        "neutralQuaternaryAlt":  "#dadada",
+        "themeLighterAlt":  "#f9f8fb",
+        "themeSecondary":  "#8675a5",
+        "themePrimary":  "#786699",
+        "bodyText":  "#333333",
+        "themeDarker":  "#433956",
+        "themeDark":  "#5b4e74",
+        "themeLight":  "#d2cae0",
+        "error":  "#e93333",
+        "neutralLighter":  "#f4f4f4",
+        "neutralLighterAlt":  "#f8f8f8",
+        "themeLighter":  "#e6e2ef",
+        "themeDarkAlt":  "#6c5c8a",
+        "themeTertiary":  "#a99bc2",
+        "primaryText":  "#333333",
+        "accent":  "#786699",
+        "bodyBackground":  "#ffffff",
+        "neutralSecondary":  "#858585",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralLight":  "#eaeaea",
+        "neutralPrimaryAlt":  "#4b4b4b",
+        "white":  "#ffffff",
+        "neutralDark":  "#272727",
+        "neutralPrimary":  "#333333",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "neutralTertiary":  "#c2c2c2",
+        "black":  "#1d1d1d"
+        }
+      </pnp:Theme>
+      <pnp:Footer Logo="{site}/SiteAssets/__footerlogo__logo_contoso_footer.png" Enabled="true"/>
       <pnp:Files>
+        <pnp:File Src="assets/__footerlogo__logo_contoso_footer.png" Folder="SiteAssets" Overwrite="true" />
         <pnp:File Src="assets/contosoworkshop.png" Folder="SiteAssets" Overwrite="true" />
         <pnp:File Src="assets/10295-GettyImages-867431800.jpg" Folder="SiteAssets" Overwrite="true" />
         <pnp:File Src="assets/2993280008GettyImages-946913156.jpg" Folder="SiteAssets" Overwrite="true" />
@@ -106,7 +139,7 @@
                 </pnp:CanvasControl>
                 <pnp:CanvasControl WebPartType="Text" Order="1" Column="3">
                   <pnp:CanvasControlProperties>
-                    <pnp:CanvasControlProperty Key="Text" Value="Insert your registration from here. See example in the image below."/>
+                    <pnp:CanvasControlProperty Key="Text" Value="Insert your registration form here. See example in the image below."/>
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
                 <pnp:CanvasControl WebPartType="Image" Order="2" Column="3" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;{guid}&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/form.png&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:null},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{guid}&quot;,&quot;width&quot;:&quot;381&quot;,&quot;height&quot;:&quot;814&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{guid}&quot;,&quot;imgWidth&quot;:381,&quot;imgHeight&quot;:814,&quot;fixAspectRatio&quot;:false}}"/>
