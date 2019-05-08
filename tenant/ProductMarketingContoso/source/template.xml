@@ -1,4 +1,4 @@
-﻿<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+﻿<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
                   Author="John White"
                   Generator="Human being"
                   Version="1.0"
@@ -23,7 +23,10 @@
   </pnp:Sequence>
   <pnp:Templates ID="SITE-TEMPLATES">
     <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
-     <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+      <pnp:Header BackgroundEmphasis="Strong" Layout="Standard" MenuStyle="MegaMenu"></pnp:Header>
+      <pnp:Footer Enabled="true" Logo="{site}/SiteAssets/__footerlogo__logo_contoso_footer.png"></pnp:Footer>
+      <pnp:Theme Name="Orange" />
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
         <pnp:GlobalNavigation NavigationType="Structural">
           <pnp:StructuralNavigation RemoveExistingNodes="true">
             <pnp:NavigationNode Title="Global Marketing" Url="http://www.microsoft.com" IsExternal="true" />
@@ -36,7 +39,8 @@
           <pnp:StructuralNavigation RemoveExistingNodes="true" />
         </pnp:CurrentNavigation>
       </pnp:Navigation>
-    <pnp:Files>
+      <pnp:Files>
+        <pnp:File Src="assets/__footerlogo__logo_contoso_footer.png" Folder="SiteAssets" Overwrite="true" Level="Published"/>
         <pnp:File Src="assets/SitePages/ProductMarketingContoso/contoso_falcon_medium.gif" Folder="SiteAssets/SitePages/ProductMarketingContoso" Overwrite="true" Level="Published" />
         <pnp:File Src="assets/SitePages/ProductMarketingContoso/ContosoDrone.gif" Folder="SiteAssets/SitePages/ProductMarketingContoso" Overwrite="true" Level="Published" />
         <pnp:File Src="assets/SitePages/ProductMarketingContoso/26239-kevin-erdvig-761293-unsplash.jpg" Folder="SiteAssets/SitePages/ProductMarketingContoso" Overwrite="true" Level="Published" />
@@ -144,7 +148,7 @@
           </pnp:Sections>
           <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/The-importance-of-branding-at-Contoso/75990-azis-pradana-300290-unsplash-scrubbed.jpg" TranslateX="49.8507462686567" TranslateY="45" />
         </pnp:ClientSidePage>
-         <pnp:ClientSidePage PageName="Update-to-Washington-Drone-Laws.aspx" PromoteAsNewsArticle="true" Layout="Article" Overwrite="true" Title="Update to Washington Drone Laws">
+        <pnp:ClientSidePage PageName="Update-to-Washington-Drone-Laws.aspx" PromoteAsNewsArticle="true" Layout="Article" Overwrite="true" Title="Update to Washington Drone Laws">
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
