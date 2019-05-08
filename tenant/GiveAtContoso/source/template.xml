@@ -1,4 +1,4 @@
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2018/07/ProvisioningSchema"
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
                   Author="John White"
                   Generator="Human being"
                   Version="1.0"
@@ -37,6 +37,37 @@
         <pnp:File Src="assets/drone-1080844_1920.jpg" Folder="SiteAssets" Overwrite="true" />
       </pnp:Files>
       <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/logo_hr.png" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:Theme Name="">
+        {
+        "neutralQuaternaryAlt": "#dadada",
+        "themeLighterAlt": "#f1f9fb",
+        "themeSecondary": "#168caa",
+        "themePrimary": "#017e9d",
+        "bodyText": "#333333",
+        "themeDarker": "#014759",
+        "themeDark": "#016078",
+        "themeLight": "#9fd5e2",
+        "error": "#e93333",
+        "neutralLighter": "#f4f4f4",
+        "neutralLighterAlt": "#f8f8f8",
+        "themeLighter": "#cae8ef",
+        "themeDarkAlt": "#01728e",
+        "themeTertiary": "#50adc5",
+        "primaryText": "#333333",
+        "accent": "#864B7A",
+        "bodyBackground": "#ffffff",
+        "neutralSecondary": "#858585",
+        "neutralQuaternary": "#d0d0d0",
+        "neutralLight": "#eaeaea",
+        "neutralPrimaryAlt": "#4b4b4b",
+        "white": "#ffffff",
+        "neutralDark": "#272727",
+        "neutralPrimary": "#333333",
+        "neutralTertiaryAlt": "#c8c8c8",
+        "neutralTertiary": "#c2c2c2",
+        "black": "#1d1d1d"
+        }
+      </pnp:Theme>
       <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
       <pnp:Lists>
         <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
