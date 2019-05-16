@@ -3,7 +3,7 @@
     "SOLUTION"
   ],
   "packageFile": "O365CL.pnp",
-  "abstract": "Help your organization get more from Microsoft services by implementing the Custom Learning for Office 365 training portal. This digital, customizable learning solution streams on-demand content for Office 365 services and Windows 10 right to your end users.",
+  "abstract": "Help your organization get more from Microsoft services by implementing the Microsoft 365 learning pathways. This digital, customizable, learning solution streams on-demand content for Microsoft 365 services right to your end users.",
   "sortOrder": 100,
   "promoted": "false",
   "sortOrderPromoted": 0,
@@ -12,8 +12,8 @@
     "properties": [
       {
         "name":"SiteUrl",
-        "caption":"Office 365 Custom Learning site URL",
-        "description":"URL for the Office 365 Custom Learning site (default is /sites/O365CL)",
+        "caption":"Microsoft 365 learning pathways site URL",
+        "description":"URL for the Microsoft 365 learning pathways site (default is /sites/O365CL)",
         "editor": "SiteUrl"
       }
     ]
