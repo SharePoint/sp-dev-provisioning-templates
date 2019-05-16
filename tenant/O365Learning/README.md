@@ -2,7 +2,7 @@
 
 Help your organization get more from Microsoft services by implementing Microsoft 365 learning pathways. This digital, customizable, learning solution streams on-demand content for Microsoft 365 services to users in an organization. The convenient playlist format allows employees to improve their skills on their timetable and at their pace. The modern SharePoint Online site also allows you to add your own content to create a complete, modern, training portal.
 
-![Custom Learning](./o365cl-frontpage.png)
+![Custom Learning](./M365LP-frontpage.png)
 
 Microsoft 365 learning pathways provides:
 
