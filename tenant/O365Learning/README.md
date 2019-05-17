@@ -1,18 +1,18 @@
-# Custom Learning for Office 365
+# Microsoft 365 learning pathways
 
-Help your organization get more from Microsoft services by implementing Custom Learning for Office 365. This digital, customizable, learning solution streams on-demand content for Office 365 services to your end users. The convenient playlist format allows employees to improve their skills on their timetable and at their pace. The modern SharePoint Online site also allows you to add your own content to create a complete modern training portal.
+Help your organization get more from Microsoft services by implementing Microsoft 365 learning pathways. This digital, customizable, learning solution streams on-demand content for Microsoft 365 services to users in an organization. The convenient playlist format allows employees to improve their skills on their timetable and at their pace. The modern SharePoint Online site also allows you to add your own content to create a complete, modern, training portal.
 
-![Custom Learning](./o365cl-frontpage.png)
+![Custom Learning](./M365LP-frontpage.png)
 
-Custom Learning for Office 365 provides:
+Microsoft 365 learning pathways provides:
 
-- **Customizable, flexible content** – Administrators can hide or show content to match the services in their environment or modify the Custom Learning SharePoint online site with the company brand and logo. In addition, administrators can edit site pages to link to Help and Support services within the organization.
-- **Build your own playlists** – With Custom Learning, administrators can create custom training playlists tailored to the unique needs of the organization.
-- **Always up-to-date content** – Custom Learning content is regularly updated, enabling organizations to provide a library of up-to-date learning content for end users.
+- **Customizable, flexible content** – Administrators can hide or show content to match the services in their environment or modify the Microsoft 365 learning pathways SharePoint online site with the company brand and logo. In addition, administrators can edit site pages to link to Help and Support services within the organization.
+- **Build your own playlists** – With learning pathways, administrators can create custom training playlists tailored to the unique needs of the organization.
+- **Always up-to-date content** – Learning pathways content is regularly updated, enabling organizations to provide a library of up-to-date learning content for users.
 
-**For complete Custom Learning for Office 365 documentation, go to  https://aka.ms/CLO365Docs.**
+**For complete Microsoft 365 learning pathways documentation, go to  https://aka.ms/CLO365Docs.**
 
-[Custom Learning for Office 365 license](https://github.com/pnp/custom-learning-office-365/blob/master/LICENSE)
+[Microsoft 365 learning pathways license](https://github.com/pnp/custom-learning-office-365/blob/master/LICENSE)
 
 ## Prerequisites
 
