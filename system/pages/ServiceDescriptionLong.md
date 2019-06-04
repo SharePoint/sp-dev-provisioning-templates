@@ -57,7 +57,7 @@ The PnP Provisioning Service is covered by the same support and SLA process as a
 - There is no SLA for responding on the issues related on this service
 - There are numerous partners that utilize PnP within their solutions for customers. Support for these solutions are provided by the Partner. When PnP material is used in deployments, we recommend being clear with your customer/deployment owner on the support model
 
-Please use [sp-dev-docs issue list](https://github.com/SharePoint/sp-dev-docs/issues) for reporting any issues on the templates or in the actual service. You can use this location also for any generic SharePoint dev issues.
+Please use [sp-provisioning-service issue list](https://github.com/SharePoint/sp-provisioning-service/issues) for reporting any issues on the templates or in the actual service. You can use this location also for any generic SharePoint dev issues.
 
 ## Frequently Asked Questions
 
@@ -75,7 +75,7 @@ Code used by the service will be released as an open-source sample later 2019. P
 
 **I identified an issue on the service - where to report it?**
 
-Please report any issues which you might have using the [sp-dev-docs issue list](https://github.com/SharePoint/sp-dev-docs/issues).  We will be following up on them as soon as possible, but please note that there's no SLA for this community-built project through Microsoft.
+Please report any issues which you might have using the [sp-provisioning-service issue list](https://github.com/SharePoint/sp-provisioning-service/issues).  We will be following up on them as soon as possible, but please note that there's no SLA for this community-built project through Microsoft.
 
 **Are the templates only provisioning SharePoint assets?**
 
@@ -93,4 +93,4 @@ You can also potentially use [Microsoft Demos](https://demos.microsoft.com) envi
 
 **I just created an app catalog to my tenant, but having challenges with the service**
 
-It can take up to 20-30 minutes for the app catalog creation to be fully completed. Please try again after a while and if the issue continues, please report that using the [sp-dev-docs issue list](https://github.com/SharePoint/sp-dev-docs/issues).
+It can take up to 20-30 minutes for the app catalog creation to be fully completed. Please try again after a while and if the issue continues, please report that using the [sp-provisioning-services issue list](https://github.com/SharePoint/sp-provisioning-service/issues).
