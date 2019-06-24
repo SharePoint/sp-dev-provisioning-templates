@@ -1,0 +1,21 @@
+{
+  "categories": [
+    "SOLUTION"
+  ],
+  "packageFile": "sample.pnp",
+  "abstract": "TBD created.",
+  "sortOrder": 100,
+  "promoted": "false",
+  "sortOrderPromoted": 0,
+  "preview":"true",
+  "metadata": {
+    "properties": [
+      {
+        "name":"SiteUrl",
+        "caption":"Microsoft 365 freelance toolkit site URL",
+        "description":"URL for the Microsoft 365 freelance toolkit site (default is /sites/toolkit)",
+        "editor": "SiteUrl"
+      }
+    ]
+  }
+}
