@@ -1,7 +1,7 @@
 
 # SharePoint Provisioning Templates
 
-Repository for SharePoint PnP Provisioning templateates to automate site / tenant level provisioning logic. Templates are divided on different folders based on the structure and needed permissions.
+Repository for SharePoint PnP Provisioning templates to automate site / tenant level provisioning logic. Templates are divided on different folders based on the structure and needed permissions.
 
 - Site - These templates contain site level provisioning logic. They can be provisioned and used by any site collection administrator and no tenant scoped permissions are needed.
 
