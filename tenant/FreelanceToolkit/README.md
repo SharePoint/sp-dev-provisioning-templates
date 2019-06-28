@@ -27,4 +27,3 @@ Here are current prerequisites for making this solution work in your tenant.
   - If needed, you can get free a developer tenant from the Office 365 developer program  
 - Automatic end-to-end provisioning only works with English tenants  
   - All solutions and web parts are also English in the current implementation
-
