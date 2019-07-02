@@ -8,6 +8,8 @@
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview":"true",
+  "forceNewSite":"true",  
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
   "metadata": {
     "properties": [
       {
