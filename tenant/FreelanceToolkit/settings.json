@@ -10,6 +10,7 @@
   "preview":"true",
   "forceNewSite":"true",  
   "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
+  "visible": "true",
   "metadata": {
     "properties": [
       {
