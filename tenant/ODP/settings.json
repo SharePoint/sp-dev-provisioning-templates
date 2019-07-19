@@ -1,0 +1,13 @@
+{
+  "categories": [],
+  "packageFile": "template.pnp",
+  "abstract": "This is a sample solution for testing ODP integration.",
+  "sortOrder": 0,
+  "promoted": "false",
+  "sortOrderPromoted": 0,
+  "preview":"false",
+  "visible": "false",
+  "metadata": {
+    "properties": []
+  }
+}

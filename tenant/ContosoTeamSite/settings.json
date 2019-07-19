@@ -8,6 +8,9 @@
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview": "false",
+  "forceNewSite":"false",  
+  "matchingSiteBaseTemplateId":"GROUP#0",  
+  "visible": "true",
   "metadata": {
     "properties": [
       {
