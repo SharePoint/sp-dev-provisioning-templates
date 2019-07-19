@@ -17,11 +17,20 @@
         "description":"The name of your company",
       },
       {
-        "name":"SiteUrlPrefix",
-        "caption":"Site URL Prefix",
-        "description":"The prefix to use for the site collection URLs while creating sites in your tenant",
-        "editor":"RegEx",
-        "editorSettings":"^(\\w|\\-|\\.|\\_)*$"
+        "name":"PORTALURL",
+        "caption":"The main portal url",
+        "description":"The tenant relative url of the main site collection",
+        "editor":"SiteUrl"
+      },
+      {
+        "name":"HRALIAS",
+        "caption":"HR site alias",
+        "description":"The alias for the HR O365 Group to create. The site URL will be /sites/<alias> or /teams/<alias> depending on your Tenant settings.",
+      },
+      {
+        "name":"MARKETINGALIAS",
+        "caption":"Marketing site alias",
+        "description":"The alias for the Marketing O365 Group to create. The site URL will be /sites/<alias> or /teams/<alias> depending on your Tenant settings.",
       }
     ]
   }
