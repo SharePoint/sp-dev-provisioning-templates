@@ -3,11 +3,11 @@
     "SOLUTION"
   ],
   "packageFile": "M365FreelanceCommsSite.pnp",
-  "abstract": "If you’re working with freelancers or running a freelancer program in your organization, the Microsoft 365 freelance toolkit template provides a great starting point for driving awareness, increasing engagement, and streamlining communication flow with your internal stakeholders and freelancers.  The Microsoft 365 freelance toolkit template is a SharePoint Online communication site template that you can install in your organization and easily customize to jump-start your freelance program efforts.",
+  "abstract": "If you’re working with freelancers or running a freelancer program in your organization, the Microsoft 365 freelance communications site template provides a great starting point for driving awareness, increasing engagement, and streamlining communication flow with your internal stakeholders and freelancers.  The Microsoft 365 freelance communications site template is a SharePoint Online communication site template that you can install in your organization and easily customize to jump-start your freelance program efforts.",
   "sortOrder": 300,
   "promoted": "false",
   "sortOrderPromoted": 0,
-  "preview":"true",
+  "preview":"false",
   "forceNewSite":"true",  
   "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
   "visible": "true",
@@ -15,8 +15,8 @@
     "properties": [
       {
         "name":"SiteUrl",
-        "caption":"Microsoft 365 freelance toolkit site URL",
-        "description":"URL for the Microsoft 365 freelance toolkit site (default is /sites/toolkit)",
+        "caption":"Microsoft 365 freelance communications site URL",
+        "description":"URL for the Microsoft 365 freelance communications site (default is /sites/toolkit)",
         "editor": "SiteUrl"
       }
     ]
