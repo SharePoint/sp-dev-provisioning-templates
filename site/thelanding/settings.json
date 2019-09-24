@@ -1,0 +1,29 @@
+{
+  "categories": [
+    "SAMPLE"
+  ],
+  "packageFile": "thelanding.pnp",
+  "abstract": "This template is an example of a home site.",
+  "sortOrder": 300,
+  "promoted": "false",
+  "sortOrderPromoted": 0,
+  "preview": "true",
+  "forceNewSite":"false",  
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
+  "visible": "true",
+  "metadata": {
+    "properties": [
+      {
+        "name": "SiteTitle",
+        "caption": "Site Title",
+        "description": "Title for your site"
+      },
+      {
+        "name": "SiteUrl",
+        "caption": "Site URL",
+        "description": "Relative URL to be used for the site",
+        "editor": "SiteUrl"
+      }
+    ]
+  }
+}
