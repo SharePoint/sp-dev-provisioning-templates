@@ -1,0 +1,548 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Home Site"
+                  DisplayName="The Perspective"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/theperspective/top-the-perspective.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">The Perspective</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/ThePerspective</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
+      <pnp:Footer Enabled="true" RemoveExistingNodes="true" />
+      <pnp:Theme Name="">
+        {
+        "neutralPrimaryAlt":  "#8d8b8a",
+        "themeLighterAlt":  "#f2f9fa",
+        "black":  "#494847",
+        "themeTertiary":  "#5aa8af",
+        "primaryBackground":  "#ffffff",
+        "neutralQuaternaryAlt":  "#dadada",
+        "accent":  "#535C68",
+        "themePrimary":  "#17717A",
+        "neutralSecondary":  "#a3a2a0",
+        "themeLighter":  "#cbe7ea",
+        "themeDark":  "#12575d",
+        "neutralPrimary":  "#323130",
+        "neutralLighterAlt":  "#f8f8f8",
+        "neutralLighter":  "#f4f4f4",
+        "neutralDark":  "#605e5d",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralLight":  "#eaeaea",
+        "primaryText":  "#333333",
+        "themeDarker":  "#0d4045",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "themeDarkAlt":  "#15676e",
+        "white":  "#ffffff",
+        "bodyBackground":  "#ffffff",
+        "themeSecondary":  "#28828a",
+        "bodyText":  "#333333",
+        "disabledBackground":  "# f4f4f4",
+        "neutralTertiary":  "#bab8b7",
+        "themeLight":  "#a3d3d7",
+        "disabledText":  "#c8c8c8"
+        }
+      </pnp:Theme>
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Who we are" Url="http://linkless.header/" IsExternal="true">
+              <pnp:NavigationNode Title="OUR COMPANY" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Facts" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Contoso News" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Sales &amp; Marketing" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Legal &amp; Procurement" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="PEOPLE" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Senior Leadership" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Board of directors" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Leadership Connection" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Shareholders" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Alumni Network" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="VALUES" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Innovation" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Diversity &amp; inclusion" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Corporate social responsibility" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Philanthropies" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Environment" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="CAREERS" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Development" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Locations" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Students &amp; Grads" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Search jobs" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="What's happening" Url="http://linkless.header/" IsExternal="true">
+              <pnp:NavigationNode Title="EVENTS" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Contoso events calendar" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="QA with Patti" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="FlySafe Conference" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Product Launches" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Find it" Url="http://linkless.header/" IsExternal="true">
+              <pnp:NavigationNode Title="MY CAREER &amp; BENEFITS" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Contoso Works" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Benefits" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="eLearning" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Give" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Company store" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="FACILITIES &amp; DINING" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Cafeteria &amp; meal plan" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Facilities request" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Conference room map" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Security" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="New campus project" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="POLICIES" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Company policies" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Corporate &amp; Legal" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Standards of business conduct" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Our response to disasters" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="TECH HELP" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="IT support" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="HelpDesk" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Internal alerts" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Distribution &amp; groups" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="FUN STUFF" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Contoso classifieds" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Contoso archives" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Social groups" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Visitor center" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="GETTING AROUND" Url="http://linkless.header/" IsExternal="true">
+                <pnp:NavigationNode Title="Campus maps" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Commuting" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Bus &amp; shuttle services" Url="http://linkless.header/" IsExternal="true" />
+              </pnp:NavigationNode>
+            </pnp:NavigationNode>
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Files>
+        <pnp:File Src="assets/__sitelogo___sitelogo_theperspective.png" Folder="SiteAssets" Overwrite="false" />
+        <pnp:File Src="assets/documents/Contoso Falcon.pdf" Folder="Shared%20Documents" Overwrite="false" />
+        <pnp:File Src="assets/documents/Contoso Flex.pdf" Folder="Shared%20Documents" Overwrite="false" />
+        <pnp:File Src="assets/documents/Contoso Mark8 Controller.pdf" Folder="Shared%20Documents" Overwrite="false" />
+        <pnp:File Src="assets/documents/Contoso Mark8.pdf" Folder="Shared%20Documents" Overwrite="false" />
+        <pnp:File Src="assets/documents/Contoso Quad.pdf" Folder="Shared%20Documents" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/2019-sales-leadership-award/sales-leadership-award.png" Folder="SiteAssets/SitePages/2019-sales-leadership-award" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/Contoso-called-on-drone-pilots-to/AdobeStock_145027729.jpeg" Folder="SiteAssets/SitePages/Contoso-called-on-drone-pilots-to" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/Contoso-partners-with-non-profit-to-deliver-life-saving-supplies/7719-larm-rmah-216854-unsplash.jpg" Folder="SiteAssets/SitePages/Contoso-partners-with-non-profit-to-deliver-life-saving-supplies" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/CLO17_azure_004.jpg" Folder="SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/One-million-drones-sold-in-2018/kevin-chow-176761-unsplash.jpg" Folder="SiteAssets/SitePages/One-million-drones-sold-in-2018" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/One-million-drones-sold-in-2018/white-drone-hovering-in-a-bright-blue-sky-PFV2XG7.jpg" Folder="SiteAssets/SitePages/One-million-drones-sold-in-2018" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/Our-commitment-to-sustainability/AdobeStock_83900723.jpeg" Folder="SiteAssets/SitePages/Our-commitment-to-sustainability" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/Patti-announces-flagship-store-opening/contoso-storefront.jpg" Folder="SiteAssets/SitePages/Patti-announces-flagship-store-opening" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/Pushing-the-Boundaries-on-Aerial-Inspection/AdobeStock_137739028.jpeg" Folder="SiteAssets/SitePages/Pushing-the-Boundaries-on-Aerial-Inspection" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/Singapore-building-update--August-2019/12891-artist_rendering.jpg" Folder="SiteAssets/SitePages/Singapore-building-update--August-2019" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/The-future-of-air-traffic--safely-sharing-the-skies-with-drones/AdobeStock_132294759.jpeg" Folder="SiteAssets/SitePages/The-future-of-air-traffic--safely-sharing-the-skies-with-drones" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/The-importance-of-branding-at-Contoso/SBLB-BRANDING.png" Folder="SiteAssets/SitePages/The-importance-of-branding-at-Contoso" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/ThePerspective/23363-showcase.jpg" Folder="SiteAssets/SitePages/ThePerspective" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/ThePerspective/27137-consumer-showcase-thumb-1.jpg" Folder="SiteAssets/SitePages/ThePerspective" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/ThePerspective/33318-consumer-showcase-thumb-2.jpg" Folder="SiteAssets/SitePages/ThePerspective" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/ThePerspective/1548836252flysafe-thumb.jpg" Folder="SiteAssets/SitePages/ThePerspective" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/ThePerspective/AdobeStock_109868254.jpeg" Folder="SiteAssets/SitePages/ThePerspective" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/ThePerspective/AdobeStock_132294759.jpeg" Folder="SiteAssets/SitePages/ThePerspective" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/ThePerspective/cta-banner.jpg" Folder="SiteAssets/SitePages/ThePerspective" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/ThePerspective/nasa-_SFJhRPzJHs-unsplash.jpg" Folder="SiteAssets/SitePages/ThePerspective" Overwrite="false" />
+        <pnp:File Src="assets/SitePages/Why-simplicity-matters/poster-patti-quote.png" Folder="SiteAssets/SitePages/Why-simplicity-matters" Overwrite="false" />
+      </pnp:Files>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/__sitelogo___sitelogo_theperspective.png" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:Lists>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." TemplateType="101" Url="SiteAssets">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" ImageUrl="/_layouts/15/images/itevent.png?rev=44" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{7FF4BBC1-43D7-41E7-8F9E-F18F28ED8FE1}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="CALENDAR" TabularView="FALSE" RecurrenceRowset="TRUE" DisplayName="Calendar" Url="/sites/portal/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=44">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Month />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="EventType" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="Workspace" />
+                <FieldRef Name="MasterSeriesItemID" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+            </View>
+            <View Name="{3D82A43A-7FB9-44CF-AD79-6391D9F79A6A}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=44">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{91888699-A7B0-4DB8-8DEA-D820A3C43D27}" MobileView="TRUE" Type="HTML" RecurrenceRowset="TRUE" DisplayName="Current Events" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=44">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Now />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
+            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" DisplayName="Start Time" />
+            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
+            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
+            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
+            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
+          </pnp:FieldRefs>
+          <pnp:DataRows KeyColumn="Title" UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Thanksgiving</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">true</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2019-11-28 00:00:00</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2019-11-28 23:59:00</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">In the design lab with Carlos Slattery</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Contoso HQ</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">false</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2020-01-02 10:00:00</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2020-01-02 12:00:00</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Company all-hands</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Contoso HQ</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">false</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2020-01-03 10:00:00</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2020-01-03 14:00:00</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Utilizing recycled materials in drone components</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Contoso HQ</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">false</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2020-01-31 13:00:00</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2020-01-31 14:00:00</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Inclusion training</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Contoso HQ</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">false</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2020-02-03 10:00:00</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2020-02-03 14:00:00</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnVerticalSection" VerticalSectionEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;:&quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;,&quot;instanceId&quot;:&quot;1ac6db3e-eb95-4d5d-a991-28ee34772313&quot;,&quot;title&quot;:&quot;News&quot;,&quot;description&quot;:&quot;Display recent news.&quot;,&quot;dataVersion&quot;:&quot;1.11&quot;,&quot;properties&quot;:{&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:false,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:true,&quot;showAuthor&quot;:true,&quot;showDate&quot;:true},&quot;layoutId&quot;:&quot;Hero&quot;,&quot;prefetchCount&quot;:5,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;viewCounts&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:5,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[{&quot;description&quot;:&quot;We’re proud to welcome Miriam Graham, who is joining Contoso Electronics as Chief Marketing Officer.\n\nIn this role, Miriam will lead a consolidated organization that focuses on advertising, campaigns, communications, and research. This organization, which brings together team members from the former&quot;,&quot;isAuthoritative&quot;:false,&quot;publishedOn&quot;:&quot;2019-09-26T06:49:49Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;10 minutes ago&quot;,&quot;image&quot;:&quot;{hosturl}{site}/SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/CLO17_azure_004.jpg&quot;,&quot;title&quot;:&quot;Miriam Graham, Contoso's new Chief Marketing Officer&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx&quot;,&quot;listItemId&quot;:41,&quot;path&quot;:&quot;SitePages/Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:1,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;As always in the case of emergency efforts, it’s important to ensure the technology is used appropriately at a vital time and that drone pilots don’t accidentally disrupt first responders.&quot;,&quot;isAuthoritative&quot;:false,&quot;publishedOn&quot;:&quot;2019-09-26T06:49:36Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;10 minutes ago&quot;,&quot;image&quot;:&quot;{hosturl}{site}/SiteAssets/SitePages/Contoso-called-on-drone-pilots-to/AdobeStock_145027729.jpeg&quot;,&quot;title&quot;:&quot;Contoso called on drone pilots to assist first responders&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Contoso-called-on-drone-pilots-to.aspx&quot;,&quot;listItemId&quot;:39,&quot;path&quot;:&quot;SitePages/Contoso-called-on-drone-pilots-to.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:null,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Contoso-called-on-drone-pilots-to.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;Building the workspace of the future\n\nA major renovation of Contoso's Singapore headquarters, along with workspace modernization projects around the globe, will help employees collaborate and create\n&quot;,&quot;isAuthoritative&quot;:false,&quot;publishedOn&quot;:&quot;2019-09-26T06:49:58Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;10 minutes ago&quot;,&quot;image&quot;:&quot;{hosturl}{site}/SiteAssets/SitePages/Singapore-building-update--August-2019/12891-artist_rendering.jpg&quot;,&quot;title&quot;:&quot;Singapore building update, August 2019&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Singapore-building-update,-August-2019.aspx&quot;,&quot;listItemId&quot;:42,&quot;path&quot;:&quot;SitePages/Singapore-building-update,-August-2019.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:2,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Singapore-building-update,-August-2019.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;Contoso Electronics and the Kansas department of transportation’s (KDOT) division of aviation has received authorization from the Federal Aviation Administration (FAA) to conduct unmanned aircraft system (UAS) test flights at Wichita’s Dwight D. Eisenhower National Airport (ICT).&quot;,&quot;isAuthoritative&quot;:false,&quot;publishedOn&quot;:&quot;2019-09-26T06:49:42Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;10 minutes ago&quot;,&quot;image&quot;:&quot;{hosturl}{site}/SiteAssets/SitePages/Pushing-the-Boundaries-on-Aerial-Inspection/AdobeStock_137739028.jpeg&quot;,&quot;title&quot;:&quot;Pushing the Boundaries on Aerial Inspection&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Pushing-the-Boundaries-on-Aerial-Inspection.aspx&quot;,&quot;listItemId&quot;:40,&quot;path&quot;:&quot;SitePages/Pushing-the-Boundaries-on-Aerial-Inspection.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:null,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Pushing-the-Boundaries-on-Aerial-Inspection.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;The sales leadership recognizes high performing technology sales leaders that embody the ideals of customer oriented leadership.&quot;,&quot;isAuthoritative&quot;:false,&quot;publishedOn&quot;:&quot;2019-09-26T06:50:34Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;9 minutes ago&quot;,&quot;image&quot;:&quot;{hosturl}{site}/SiteAssets/SitePages/2019-sales-leadership-award/sales-leadership-award.png&quot;,&quot;title&quot;:&quot;2019 sales leadership award&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/2019-sales-leadership-award.aspx&quot;,&quot;listItemId&quot;:34,&quot;path&quot;:&quot;SitePages/2019-sales-leadership-award.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:9,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/2019-sales-leadership-award.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;9518240a-9dde-40ff-a27b-732c68a4c6b7&quot;,&quot;siteId&quot;:&quot;9518240a-9dde-40ff-a27b-732c68a4c6b7&quot;,&quot;webId&quot;:&quot;9518240a-9dde-40ff-a27b-732c68a4c6b7&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;1134214a-4063-4bd2-aafd-09afb3ce0b2f&quot;,&quot;siteId&quot;:&quot;1134214a-4063-4bd2-aafd-09afb3ce0b2f&quot;,&quot;webId&quot;:&quot;1134214a-4063-4bd2-aafd-09afb3ce0b2f&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;a056b1da-6b75-4551-8443-a7eb100a0f5b&quot;,&quot;siteId&quot;:&quot;a056b1da-6b75-4551-8443-a7eb100a0f5b&quot;,&quot;webId&quot;:&quot;a056b1da-6b75-4551-8443-a7eb100a0f5b&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;11ddc90f-3bd5-4a98-869e-a9dcaa4e788f&quot;,&quot;siteId&quot;:&quot;11ddc90f-3bd5-4a98-869e-a9dcaa4e788f&quot;,&quot;webId&quot;:&quot;11ddc90f-3bd5-4a98-869e-a9dcaa4e788f&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;6967831a-0be2-47c8-b930-93137c49b46c&quot;,&quot;siteId&quot;:&quot;6967831a-0be2-47c8-b930-93137c49b46c&quot;,&quot;webId&quot;:&quot;6967831a-0be2-47c8-b930-93137c49b46c&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;a1fb8392-7b42-4924-b1d9-5ac8cd0fea54&quot;,&quot;siteId&quot;:&quot;a1fb8392-7b42-4924-b1d9-5ac8cd0fea54&quot;,&quot;webId&quot;:&quot;a1fb8392-7b42-4924-b1d9-5ac8cd0fea54&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;94226e0b-6de9-4776-a9c9-5ad198fdd1d7&quot;,&quot;siteId&quot;:&quot;94226e0b-6de9-4776-a9c9-5ad198fdd1d7&quot;,&quot;webId&quot;:&quot;94226e0b-6de9-4776-a9c9-5ad198fdd1d7&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;80678efe-36bf-4744-b2e9-1c219bfb5457&quot;,&quot;siteId&quot;:&quot;80678efe-36bf-4744-b2e9-1c219bfb5457&quot;,&quot;webId&quot;:&quot;80678efe-36bf-4744-b2e9-1c219bfb5457&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;ecab88c0-a634-4286-a134-02bb0895923f&quot;,&quot;siteId&quot;:&quot;ecab88c0-a634-4286-a134-02bb0895923f&quot;,&quot;webId&quot;:&quot;ecab88c0-a634-4286-a134-02bb0895923f&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;2ac6577a-ff23-4538-94fa-a49034e19ea5&quot;,&quot;siteId&quot;:&quot;2ac6577a-ff23-4538-94fa-a49034e19ea5&quot;,&quot;webId&quot;:&quot;2ac6577a-ff23-4538-94fa-a49034e19ea5&quot;}],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;templateId&quot;:&quot;Hero&quot;,&quot;propsLastEdited&quot;:&quot;2019-09-26T06:59:57.288Z&quot;,&quot;compactMode&quot;:false,&quot;showNewsPinningPanel&quot;:true},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;:&quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;,&quot;instanceId&quot;:&quot;e5fc83c0-3350-4eea-9606-6627646a0a4b&quot;,&quot;title&quot;:&quot;News&quot;,&quot;description&quot;:&quot;Display recent news.&quot;,&quot;dataVersion&quot;:&quot;1.11&quot;,&quot;properties&quot;:{&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:false,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:true,&quot;showAuthor&quot;:true,&quot;showDate&quot;:true},&quot;layoutId&quot;:&quot;NewsHub&quot;,&quot;prefetchCount&quot;:12,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;staleViewCounts&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[{&quot;description&quot;:&quot;Contoso Electronics has announced that its flagship store in Redmond, WA will open to the general public on July 10, 2020.&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Patti-announces-flagship-store-opening/contoso-storefront.jpg}&amp;ext=jpg&quot;,&quot;publishedOn&quot;:&quot;2019-09-20T21:59:38Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;5 days ago&quot;,&quot;title&quot;:&quot;Patti announces flagship store opening&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Patti-announces-flagship-store-opening.aspx&quot;,&quot;listItemId&quot;:10,&quot;path&quot;:&quot;SitePages/Patti-announces-flagship-store-opening.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:4,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Patti-announces-flagship-store-opening.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;At the heart of branding at Contoso is the promise that is made by us to our customers. The brand promise tells them who we are, what we believe in, and what unique value we provide.&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/The-importance-of-branding-at-Contoso/SBLB-BRANDING.png}&amp;ext=png&quot;,&quot;publishedOn&quot;:&quot;2019-09-20T22:45:38Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;5 days ago&quot;,&quot;title&quot;:&quot;The importance of branding at Contoso&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/The-importance-of-branding-at-Contoso.aspx&quot;,&quot;listItemId&quot;:17,&quot;path&quot;:&quot;SitePages/The-importance-of-branding-at-Contoso.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:3,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/The-importance-of-branding-at-Contoso.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;Accelerating global progress towards a more sustainable future. Since 2009, Contoso Electronics has made and met a series of commitments to reduce the company’s carbon footprint. While we’ve made progress toward our goal of cutting our operational c…&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Our-commitment-to-sustainability/AdobeStock_83900723.jpeg}&amp;ext=jpeg&quot;,&quot;publishedOn&quot;:&quot;2019-09-20T22:33:07Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;5 days ago&quot;,&quot;title&quot;:&quot;Our commitment to sustainability&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Our-commitment-to-sustainability.aspx&quot;,&quot;listItemId&quot;:12,&quot;path&quot;:&quot;SitePages/Our-commitment-to-sustainability.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:3,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Our-commitment-to-sustainability.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;Earlier this year, the Federal Aviation Administration (FAA) projected in its annual forecast that the number of commercial drones in the sky could triple by 2023.&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/The-future-of-air-traffic--safely-sharing-the-skies-with-drones/AdobeStock_132294759.jpeg}&amp;ext=jpeg&quot;,&quot;publishedOn&quot;:&quot;2019-09-20T19:53:50Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;5 days ago&quot;,&quot;title&quot;:&quot;The future of air traffic: safely sharing the skies with drones&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/The-future-of-air-traffic--safely-sharing-the-skies-with-drones.aspx&quot;,&quot;listItemId&quot;:5,&quot;path&quot;:&quot;SitePages/The-future-of-air-traffic--safely-sharing-the-skies-with-drones.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:5,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/The-future-of-air-traffic--safely-sharing-the-skies-with-drones.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;In order to give customers fresh and clear experiences with their brand, companies need to focus on simplifying their customer experiences. Those efforts will drive innovation and growth for their business.&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Why-simplicity-matters/poster-patti-quote.png}&amp;ext=png&quot;,&quot;publishedOn&quot;:&quot;2019-09-20T22:44:02Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;5 days ago&quot;,&quot;title&quot;:&quot;Why simplicity matters&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Why-simplicity-matters.aspx&quot;,&quot;listItemId&quot;:16,&quot;path&quot;:&quot;SitePages/Why-simplicity-matters.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:2,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Why-simplicity-matters.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;55e52d66-5d22-4068-aeb8-4f321699ed96&quot;,&quot;siteId&quot;:&quot;55e52d66-5d22-4068-aeb8-4f321699ed96&quot;,&quot;webId&quot;:&quot;55e52d66-5d22-4068-aeb8-4f321699ed96&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;8e5236a7-92d9-45b0-8af9-dc7bcca50ea4&quot;,&quot;siteId&quot;:&quot;8e5236a7-92d9-45b0-8af9-dc7bcca50ea4&quot;,&quot;webId&quot;:&quot;8e5236a7-92d9-45b0-8af9-dc7bcca50ea4&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;b6251dcd-573c-48bb-b6e6-5814e866e4b6&quot;,&quot;siteId&quot;:&quot;b6251dcd-573c-48bb-b6e6-5814e866e4b6&quot;,&quot;webId&quot;:&quot;b6251dcd-573c-48bb-b6e6-5814e866e4b6&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;eb30ce88-63ac-49ec-b8c7-9e9992b8a7b7&quot;,&quot;siteId&quot;:&quot;eb30ce88-63ac-49ec-b8c7-9e9992b8a7b7&quot;,&quot;webId&quot;:&quot;eb30ce88-63ac-49ec-b8c7-9e9992b8a7b7&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;8e6ba657-c5fb-43e8-8f3e-a34c29b57854&quot;,&quot;siteId&quot;:&quot;8e6ba657-c5fb-43e8-8f3e-a34c29b57854&quot;,&quot;webId&quot;:&quot;8e6ba657-c5fb-43e8-8f3e-a34c29b57854&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;74af2262-684b-41bc-bda6-e28699181073&quot;,&quot;siteId&quot;:&quot;74af2262-684b-41bc-bda6-e28699181073&quot;,&quot;webId&quot;:&quot;74af2262-684b-41bc-bda6-e28699181073&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;eda74764-3cc0-4ec2-a716-cf0632097138&quot;,&quot;siteId&quot;:&quot;eda74764-3cc0-4ec2-a716-cf0632097138&quot;,&quot;webId&quot;:&quot;eda74764-3cc0-4ec2-a716-cf0632097138&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;b592078d-3b4b-4712-ab84-444add5ed878&quot;,&quot;siteId&quot;:&quot;b592078d-3b4b-4712-ab84-444add5ed878&quot;,&quot;webId&quot;:&quot;b592078d-3b4b-4712-ab84-444add5ed878&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;da7af075-0e93-4b00-9e8f-393cd319d142&quot;,&quot;siteId&quot;:&quot;da7af075-0e93-4b00-9e8f-393cd319d142&quot;,&quot;webId&quot;:&quot;da7af075-0e93-4b00-9e8f-393cd319d142&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;9dbce1e0-b8cf-4c9c-bdeb-3492fba98cc5&quot;,&quot;siteId&quot;:&quot;9dbce1e0-b8cf-4c9c-bdeb-3492fba98cc5&quot;,&quot;webId&quot;:&quot;9dbce1e0-b8cf-4c9c-bdeb-3492fba98cc5&quot;}],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;templateId&quot;:&quot;NewsHub&quot;,&quot;propsLastEdited&quot;:&quot;2019-09-20T22:48:44.473Z&quot;,&quot;compactMode&quot;:false,&quot;showNewsPinningPanel&quot;:true},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0d8d5f97-0b3c-4ebc-91fc-194b69092eec&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;868ac3c3-cad7-4bd6-9a1c-14dc5cc8e823&quot;, &quot;instanceId&quot;: &quot;c1524d29-ab2a-44a3-809e-c01c3762c4ee&quot;, &quot;title&quot;: &quot;Weather&quot;, &quot;description&quot;: &quot;Show current weather conditions on your page&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;temperatureUnit&quot;:&quot;F&quot;,&quot;locations&quot;:[{&quot;latitude&quot;:47.679,&quot;longitude&quot;:-122.132,&quot;name&quot;:&quot;Redmond, United States&quot;,&quot;showCustomizedDisplayName&quot;:false,&quot;countryName&quot;:&quot;United States&quot;}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="868ac3c3-cad7-4bd6-9a1c-14dc5cc8e823" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="News" JsonControlData="{&quot;id&quot;: &quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;, &quot;instanceId&quot;: &quot;038a013e-3c65-4195-8be5-c0bb0dba7827&quot;, &quot;title&quot;: &quot;News&quot;, &quot;description&quot;: &quot;Display recent news.&quot;, &quot;dataVersion&quot;: &quot;1.11&quot;, &quot;properties&quot;: {&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:true,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:true,&quot;showAuthor&quot;:true,&quot;showDate&quot;:true},&quot;layoutId&quot;:&quot;GridNews&quot;,&quot;prefetchCount&quot;:4,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;propsLastEdited&quot;:&quot;2019-09-20T22:50:43.575Z&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;My news&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;ef1147f9-e3f4-4844-b4fe-ab7e6c1f3a10&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="2" Column="2" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;b519c4f1-5cf7-4586-a678-2f1c62cc175a&quot;, &quot;instanceId&quot;: &quot;f670d29e-847a-481b-833e-f0561844fe27&quot;, &quot;title&quot;: &quot;Recent documents&quot;, &quot;description&quot;: &quot;Display recent documents for the current user&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;layoutId&quot;:&quot;listDocumentLayout&quot;,&quot;count&quot;:6,&quot;dataProviderId&quot;:&quot;recentDocuments&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;My recent documents&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;c6eb85d4-7fd2-4938-bfb8-5a899344ee86&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="b519c4f1-5cf7-4586-a678-2f1c62cc175a" Order="3" Column="2" />
+                <pnp:CanvasControl WebPartType="Sites" JsonControlData="{&quot;id&quot;: &quot;7cba020c-5ccb-42e8-b6fc-75b3149aba7b&quot;, &quot;instanceId&quot;: &quot;35316cce-a762-4bec-a484-91507abc0214&quot;, &quot;title&quot;: &quot;Sites&quot;, &quot;description&quot;: &quot;Showcase hub sites or add links to other sites&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;sites&quot;:[],&quot;sourceType&quot;:3,&quot;itemCount&quot;:6,&quot;layoutId&quot;:&quot;CompactGrid&quot;,&quot;dataProviderId&quot;:&quot;SitesDataProvider&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;My recent sites&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7cba020c-5ccb-42e8-b6fc-75b3149aba7b" Order="4" Column="2" />
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;id&quot;: &quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;, &quot;instanceId&quot;: &quot;a916f2b0-1279-416d-97ce-0dc21313396c&quot;, &quot;title&quot;: &quot;Events&quot;, &quot;description&quot;: &quot;Display upcoming events&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;layout&quot;:&quot;Compact&quot;,&quot;dataSource&quot;:7,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:20,&quot;layoutId&quot;:&quot;Flex&quot;,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Company events&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0447e11d-bed9-4898-b600-8dbcd95e9cc2&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="5" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;:&quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;,&quot;instanceId&quot;:&quot;b022816d-c9de-4989-aa10-9b44bec4a872&quot;,&quot;title&quot;:&quot;Call to action&quot;,&quot;description&quot;:&quot;Call to action&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;LEARN MORE&quot;,&quot;overlayText.text&quot;:&quot;Innovation: Get news and tools to help tell your story&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/ThePerspective/cta-banner.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;/sites/ThePerspective#&quot;}},&quot;dataVersion&quot;:&quot;1.0&quot;,&quot;properties&quot;:{&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ThePerspective/cta-banner.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Center&quot;}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;984b089c-ca62-4f92-89c0-1ce0e1cb6c03&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;Areal view of fall colored trees&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;showcase.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a2898896-0357-430d-b059-273dd76d54c6&quot;,&quot;imgWidth&quot;:1150,&quot;imgHeight&quot;:650,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ThePerspective/23363-showcase.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a2898896-0357-430d-b059-273dd76d54c6&quot;,&quot;width&quot;:1150,&quot;height&quot;:650}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="39a0b044-9635-4f36-83b7-018458ab97e6" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;strong&gt;BREATHTAKING VIDEOS &amp;amp; PHOTOS&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Contoso MARK8 is the first drone to offer an 8K HDR camera that tilts vertically at and angle of 180&lt;strong&gt;°&lt;/strong&gt;, combined with an up to 2.8X lossless zoom and dolly zoom effect.&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontColorBlueDark&quot;&gt;&lt;strong&gt;–&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;span class=&quot;fontColorBlueDark&quot;&gt;&lt;strong&gt;2.8X FULL HD ZOOM&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;em&gt;Reveal your inner filmmaker&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;deb39e2b-11a0-4141-8ac1-1078fe7cc392&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;LEARN MORE&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;e0b59b5b-8a5a-406e-9deb-6e6f9de4bd3b&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;Areal view of beach&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;consumer-showcase-thumb-1.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;720ebeb6-a165-4925-9687-8f8bdfb7ff9a&quot;,&quot;imgWidth&quot;:1150,&quot;imgHeight&quot;:650,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ThePerspective/27137-consumer-showcase-thumb-1.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;720ebeb6-a165-4925-9687-8f8bdfb7ff9a&quot;,&quot;width&quot;:1150,&quot;height&quot;:650}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="71189af6-af4d-460b-9af4-4cebb6d76865" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;strong&gt;FLYING IS A BREEZE&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;The easy-to-operate MARK8 is designed for high-quality aerial photography and cinematography. Fly, capture and share photos and videos directly from the mobile app.&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontColorBlueDark&quot;&gt;&lt;strong&gt;–&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;span class=&quot;fontColorBlueDark&quot;&gt;&lt;strong&gt;8K HDR VIDEOS AND 21MP PHOTOS&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;em&gt;Perfection is in the details&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;c13f0fd7-6394-42e6-82b5-b4ae44e8f56a&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;LEARN MORE&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;d3d3a757-2c0c-49ac-a9d3-0b56709364a9&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;Areal view of road and trees&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;consumer-showcase-thumb-2.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;956706cc-71be-4ce4-842b-5ce4bcabfc09&quot;,&quot;imgWidth&quot;:1150,&quot;imgHeight&quot;:650,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ThePerspective/33318-consumer-showcase-thumb-2.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;956706cc-71be-4ce4-842b-5ce4bcabfc09&quot;,&quot;width&quot;:1150,&quot;height&quot;:650}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="3" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="22955c58-d14b-4881-bcd4-7ae2557b2e94" Order="2" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;b&gt;SMART &amp;amp; POWERFUL&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Equipped with a smart battery that lasts up to 45 minutes and resists extreme temperatures the high-performance and super quiet drone you can take anywhere.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontColorBlueDark&quot;&gt;&lt;strong&gt;–&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeMedium&quot;&gt;&lt;span class=&quot;fontColorBlueDark&quot;&gt;&lt;strong&gt;SLOW MOTION &amp;amp; HYPERLAPSE&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;em&gt;Speed it up or slow it down, take control of time&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;95cff313-14a2-40bd-be91-91d61fdafcad&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;LEARN MORE&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;id&quot;: &quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;, &quot;instanceId&quot;: &quot;1b7a6bce-c18c-4f9c-a230-6165e903526d&quot;, &quot;title&quot;: &quot;Hero&quot;, &quot;description&quot;: &quot;Prominently display up to 5 pieces of content in a highly visual layout&quot;, &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;layoutCategory&quot;:2,&quot;layout&quot;:1,&quot;content&quot;:[{&quot;id&quot;:&quot;a53e698f-def0-400e-90cb-f1098272c322&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;36263720-0247-4579-bed2-e5a52175d0e7&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Assets}/items/36263720-0247-4579-bed2-e5a52175d0e7/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:1},&quot;description&quot;:&quot;For the seasoned drone enthusiasts, new hobbyists, to professionals whose industries are rapidly adopting to this cutting-edge technology. Over 20,000 enthusiasts and 400 exhibitors are expected to attend, with 10 professional educational tracks planned with keynote speakers, seminars and panel discussions.&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;featureText&quot;:&quot;FLYSAFE CONFERENCE&quot;,&quot;showFeatureText&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.0/sharePoint:{site}#:/driveItem/thumbnails/0/c1600x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:32767},&quot;upperCaseCallToAction&quot;:false},{&quot;id&quot;:&quot;11a9e2b1-e519-4e10-9a8e-79e2c47dc2a8&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;6a62debc-f443-477d-9b6b-ec87d7c19984&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;58d3d07f-e4bc-4ce1-adfc-32d0f5d972ae&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;e1461008-d065-4695-b070-7c892513de3c&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;See the world through a new perspective&quot;,&quot;content[1].title&quot;:&quot;&quot;,&quot;content[2].title&quot;:&quot;&quot;,&quot;content[3].title&quot;:&quot;&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;REGISTER NOW&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ThePerspective/1548836252flysafe-thumb.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}#&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}#&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;36263720-0247-4579-bed2-e5a52175d0e7&quot;,&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:1},&quot;content[0].previewImage.url&quot;:{&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Templates/news-template.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="news template">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="text" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|adelev@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;AdeleV@M365x377533.OnMicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Adele Vance&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;Retail Manager&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|adelev@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="The-future-of-air-traffic--safely-sharing-the-skies-with-drones.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/The-future-of-air-traffic--safely-sharing-the-skies-with-drones/AdobeStock_132294759.jpeg}&amp;ext=jpeg" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The future of air traffic: safely sharing the skies with drones">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Earlier this year, the Federal Aviation Administration (FAA) projected in its&amp;nbsp;annual forecast&amp;nbsp;that the number of commercial drones in the sky could triple by 2023." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText=""  />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Contoso-called-on-drone-pilots-to.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Contoso-called-on-drone-pilots-to/AdobeStock_145027729.jpeg}&amp;ext=jpeg" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso called on drone pilots to assist first responders">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="As always in the case of emergency efforts, it’s important to ensure the technology is used appropriately at a vital time and that drone pilots don’t accidentally disrupt first responders." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText="" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Pushing-the-Boundaries-on-Aerial-Inspection.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Pushing-the-Boundaries-on-Aerial-Inspection/AdobeStock_137739028.jpeg}&amp;ext=jpeg" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Pushing the Boundaries on Aerial Inspection">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Contoso Electronics and the Kansas department of transportation’s (KDOT) division of aviation has received authorization from the Federal Aviation Administration (FAA) to conduct unmanned aircraft system (UAS) test flights at Wichita’s Dwight D. Eisenhower National Airport (ICT)." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText=""  />
+        </pnp:ClientSidePage>        
+        <pnp:ClientSidePage PageName="Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/CLO17_azure_004.jpg}&amp;ext=jpg" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Miriam Graham, Contoso's new Chief Marketing Officer">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;We’re proud to welcome Miriam Graham, who is joining Contoso Electronics as&amp;nbsp;Chief Marketing Officer.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;In this role, Miriam will lead a consolidated organization that focuses on advertising, campaigns, communications, and research. This organization, which brings together team members from the former Contoso Customer Research team and the former Contoso Advertising group, is ideally positioned for deep customer learning and resulting product strategies that lead to increased brand recognition, growth and market share across Contoso businesses.&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Miriam brings a wealth of experience to this role. Most recently she served as International Marketing Director for Northwind Traders, where for seven years she oversaw global advertising and campaigns. Prior to that, she led the advertising division at Lucerne Publishing where she was the key contact for marketing strategies across internal organizations and external partners.&amp;nbsp; Throughout her career, she has amassed experience in sales, media planning, business development, and customer support. She has a solid reputation as a leader who is innovative, skilled, collaborative, and passionate. Additionally, she has advanced degrees in a Mass Communications and in Business.&amp;nbsp;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText="" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Singapore-building-update,-August-2019.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Singapore-building-update--August-2019/12891-artist_rendering.jpg}&amp;ext=jpg" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Singapore building update, August 2019">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;Building the workspace of the future&lt;/p&gt;&#xA;&#xA;&lt;p&gt;A major renovation of Contoso's Singapore&amp;nbsp;headquarters, along with workspace modernization projects around the globe, will help employees collaborate and create&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText="" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Patti-announces-flagship-store-opening.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Patti-announces-flagship-store-opening/contoso-storefront.jpg}&amp;ext=jpg" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Patti announces flagship store opening">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Contoso Electronics has announced that its flagship store in Redmond, WA will open to the general public on July 10, 2020." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText=""  />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Contoso-partners-with-non-profit-to-deliver-life-saving-supplies.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Contoso-partners-with-non-profit-to-deliver-life-saving-supplies/7719-larm-rmah-216854-unsplash.jpg}&amp;ext=jpg" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso partners with non-profit to deliver life-saving supplies">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="An international team of scientists and&amp;nbsp;health care&amp;nbsp;workers have completed the world's first drone insulin delivery -- dropping off the life-saving medicine to a remote island in Singapore." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText="" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Our-commitment-to-sustainability.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Our-commitment-to-sustainability/AdobeStock_83900723.jpeg}&amp;ext=jpeg" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Our commitment to sustainability">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Accelerating global progress towards a more sustainable future.&amp;nbsp;Since 2009, Contoso Electronics&amp;nbsp;has made and met a series of&amp;nbsp;commitments&amp;nbsp;to reduce the company’s carbon footprint. While we’ve made progress toward our goal of cutting our operational carbon emissions by 75 percent by 2030, the magnitude and speed of the world’s environmental changes have made it increasingly clear that we must do more. And we are taking new steps to do just that." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText=""  />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="One-million-drones-sold-in-2018.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/One-million-drones-sold-in-2018/white-drone-hovering-in-a-bright-blue-sky-PFV2XG7.jpg}&amp;ext=jpg" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="One million drones sold in 2018">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Congratulations Contoso team! This September we set a new annual sales record." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText=""/>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="2019-sales-leadership-award.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/2019-sales-leadership-award/sales-leadership-award.png}&amp;ext=png" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="2019 sales leadership award">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="The sales leadership recognizes high performing&amp;nbsp;technology sales leaders that embody the ideals of customer&amp;nbsp;oriented leadership.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText="" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Why-simplicity-matters.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Why-simplicity-matters/poster-patti-quote.png}&amp;ext=png" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Why simplicity matters">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="In order to give customers fresh and clear experiences with their brand, companies need to focus on simplifying their customer experiences. Those efforts will drive innovation and growth for their business." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText="" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="The-importance-of-branding-at-Contoso.aspx" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/The-importance-of-branding-at-Contoso/SBLB-BRANDING.png}&amp;ext=png" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The importance of branding at Contoso">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b9f0e30c-3652-4b63-8f7c-925b54f898c9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="At the heart of branding at Contoso is the promise that is made by us to our customers. The brand promise tells them who we are, what we believe in, and what unique value we provide.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="the perspective" AlternativeText="" />
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
