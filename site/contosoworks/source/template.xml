@@ -1,0 +1,420 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Hub Site"
+                  DisplayName="Contoso Works"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/theperspective/top-contoso-works.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">Contoso Works</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/contosoworks</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" HubSiteTitle="Contoso HR" HubSiteLogoUrl="{hosturl}{parameter:SiteUrl}/SiteAssets/__hubLogo__logo_hr.png" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Theme Name="">
+        {
+        "neutralPrimaryAlt":  "#8d8b8a",
+        "themeLighterAlt":  "#f7f8fe",
+        "black":  "#494847",
+        "themeTertiary":  "#8da1ea",
+        "primaryBackground":  "#ffffff",
+        "neutralQuaternaryAlt":  "#dadada",
+        "accent":  "#6F1E51",
+        "themePrimary":  "#4A69DB",
+        "neutralSecondary":  "#a3a2a0",
+        "themeLighter":  "#dfe5f9",
+        "themeDark":  "#3951a7",
+        "neutralPrimary":  "#323130",
+        "neutralLighterAlt":  "#f8f8f8",
+        "neutralLighter":  "#f4f4f4",
+        "neutralDark":  "#605e5d",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralLight":  "#eaeaea",
+        "primaryText":  "#333333",
+        "themeDarker":  "#2a3b7b",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "themeDarkAlt":  "#435fc5",
+        "white":  "#ffffff",
+        "bodyBackground":  "#ffffff",
+        "themeSecondary":  "#5e7ae0",
+        "bodyText":  "#333333",
+        "disabledBackground":  "# f4f4f4",
+        "neutralTertiary":  "#bab8b7",
+        "themeLight":  "#c4cef4",
+        "disabledText":  "#c8c8c8"
+        }
+      </pnp:Theme>
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Benefits" Url="{site}">
+              <pnp:NavigationNode Title="Enroll or change benefits" Url="{site}">
+                <pnp:NavigationNode Title="Benefits" Url="https://m365x377533.sharepoint.com/sites/hr-live" IsExternal="true" />
+                <pnp:NavigationNode Title="New employee enrollment" Url="{site}" />
+                <pnp:NavigationNode Title="Open enrollment" Url="{site}" />
+                <pnp:NavigationNode Title="Qualified status change" Url="{site}" />
+                <pnp:NavigationNode Title="Tax considerations" Url="{site}" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="What's available" Url="{site}">
+                <pnp:NavigationNode Title="Medical, Vision &amp; Prescriptions" Url="{site}" />
+                <pnp:NavigationNode Title="Dental" Url="{site}" />
+                <pnp:NavigationNode Title="Wellness programs" Url="{site}" />
+                <pnp:NavigationNode Title="Savings &amp; investment plans" Url="{site}" />
+                <pnp:NavigationNode Title="Life insurance" Url="{site}" />
+                <pnp:NavigationNode Title="Children &amp; family programs" Url="{site}" />
+                <pnp:NavigationNode Title="Group legal" Url="{site}" />
+              </pnp:NavigationNode>
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Work &amp; Life" Url="{site}">
+              <pnp:NavigationNode Title="Time off" Url="{site}">
+                <pnp:NavigationNode Title="Vacation" Url="{site}" />
+                <pnp:NavigationNode Title="Short term disability" Url="{site}" />
+                <pnp:NavigationNode Title="Leave of absence" Url="{site}" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="Children &amp; Family" Url="{site}">
+                <pnp:NavigationNode Title="Child care" Url="{site}" />
+                <pnp:NavigationNode Title="Children camps" Url="{site}" />
+                <pnp:NavigationNode Title="Adult &amp; elder care" Url="{site}" />
+                <pnp:NavigationNode Title="Adoption assistance" Url="{site}" />
+                <pnp:NavigationNode Title="Parenting resources" Url="{site}" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="Workplace" Url="{site}">
+                <pnp:NavigationNode Title="Ergonomic assessments" Url="{site}" />
+                <pnp:NavigationNode Title="Accomodations" Url="{site}" />
+              </pnp:NavigationNode>
+              <pnp:NavigationNode Title="College programs &amp; financing" Url="{site}">
+                <pnp:NavigationNode Title="Tuition assistance" Url="{site}" />
+                <pnp:NavigationNode Title="Student loan refinancing" Url="{site}" />
+                <pnp:NavigationNode Title="College advising" Url="{site}" />
+              </pnp:NavigationNode>
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Give" Url="{site}" />
+          </pnp:StructuralNavigation>
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="My Benefits Dashboard" Url="http://linkless.header/" IsExternal="true" />
+            <pnp:NavigationNode Title="Our Mission" Url="{site}" />
+            <pnp:NavigationNode Title="New Employee Orientation" Url="http://linkless.header/" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" Folder="SiteAssets" Overwrite="false" />
+        <pnp:File Src="SiteAssets/__hubLogo__logo_hr.png" Folder="SiteAssets" Overwrite="false" />
+        <pnp:File Src="SiteAssets/__sitelogo__logo_works.png" Folder="SiteAssets" Overwrite="false" />
+        <pnp:File Src="Shared Documents/Contoso-Financial-Calendar-Q1_68340_97779.pptx" Folder="Shared Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/hr-works/1136779901WCO18_windowOffice_005.jpg" Folder="SiteAssets/SitePages/hr-works" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/hr-works/99174-content.png" Folder="SiteAssets/SitePages/hr-works" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/New-401K-Packets-Available-Now/401k-packets.png" Folder="SiteAssets/SitePages/New-401K-Packets-Available-Now" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Changes-to-Medical-Benefits/changes-to-medical-benefits.jpeg" Folder="SiteAssets/SitePages/Changes-to-Medical-Benefits" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Open-Door-Policy/open-door-policy.jpeg" Folder="SiteAssets/SitePages/Open-Door-Policy" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/New-benefits-options-for-your-family/new-beneifts-family.jpeg" Folder="SiteAssets/SitePages/New-benefits-options-for-your-family" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg" Folder="SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/President-s-Keynote-Speech--August-2019/keynote-speech.png" Folder="SiteAssets/SitePages/President-s-Keynote-Speech--August-2019" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Corporate-Communications-Define-Your-Brand-and-Culture/corp-comms-define-brand.png" Folder="SiteAssets/SitePages/Corporate-Communications-Define-Your-Brand-and-Culture" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Communicating-Product-Value/product-value.png" Folder="SiteAssets/SitePages/Communicating-Product-Value" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/The-importance-of-branding-at-Contoso/importance-of-branding.png" Folder="SiteAssets/SitePages/The-importance-of-branding-at-Contoso" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/4-reasons-why-branding-is-important/76947-4-reasons-header.png" Folder="SiteAssets/SitePages/4-reasons-why-branding-is-important" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/4-reasons-why-branding-is-important/4-reason-thumb.png" Folder="SiteAssets/SitePages/4-reasons-why-branding-is-important" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Contoso-Eagle-launch-and-the-future/contoso-eagle-launch.png" Folder="SiteAssets/SitePages/Contoso-Eagle-launch-and-the-future" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/One-Million-Drones-Sold-in-2018/1million-drones.jpeg" Folder="SiteAssets/SitePages/One-Million-Drones-Sold-in-2018" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__sitelogo__logo_works.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+      </pnp:Files>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/__sitelogo__logo_works.png" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:Lists>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." TemplateType="101" Url="SiteAssets">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn" BackgroundEmphasis="Neutral">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;c6f16e88-989a-4d6c-a71c-c6ee77814adc&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="News" JsonControlData="{&quot;id&quot;:&quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;,&quot;instanceId&quot;:&quot;e16964d0-e865-4289-8465-aa986ae805b7&quot;,&quot;title&quot;:&quot;News&quot;,&quot;description&quot;:&quot;Display recent news.&quot;,&quot;dataVersion&quot;:&quot;1.11&quot;,&quot;properties&quot;:{&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:false,&quot;showSocialActions&quot;:true,&quot;layoutId&quot;:&quot;NewsHub&quot;,&quot;prefetchCount&quot;:12,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[{&quot;description&quot;:&quot;Please stop by the HR offices to pick up the new 401K packets. These packets contain all the information you need to set up or update your 401K for the new year.&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;amp;guidWeb={siteid}&amp;amp;guidFile={fileuniqueid:SiteAssets/SitePages/New-401K-Packets-Available-Now/401k-packets.png}&amp;amp;ext=png&quot;,&quot;publishedOn&quot;:&quot;2019-08-28T16:30:53Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;August 28&quot;,&quot;title&quot;:&quot;New 401K Packets Available Now&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/New-401K-Packets-Available-Now.aspx&quot;,&quot;listItemId&quot;:5,&quot;path&quot;:&quot;SitePages/New-401K-Packets-Available-Now.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:8,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/New-401K-Packets-Available-Now.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;We have distributed the updated medical packages pamphlet and we realize all these changes will raise some questions. Make an appointment with your HR representative today to help navigate all the new medical benefits packages and changes from earli…&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;amp;guidWeb={siteid}&amp;amp;guidFile={fileuniqueid:SiteAssets/SitePages/Changes-to-Medical-Benefits/changes-to-medical-benefits.jpeg}&amp;amp;ext=jpeg&quot;,&quot;publishedOn&quot;:&quot;2019-08-28T16:33:36Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;August 28&quot;,&quot;title&quot;:&quot;Changes to Medical Benefits&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Changes-to-Medical-Benefits.aspx&quot;,&quot;listItemId&quot;:6,&quot;path&quot;:&quot;SitePages/Changes-to-Medical-Benefits.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:7,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Changes-to-Medical-Benefits.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;Contoso encourages our employees to come to us with any issue they might have. We want them to feel comfortable talking with upper management and know that they’re being heard.&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;amp;guidWeb={siteid}&amp;amp;guidFile={fileuniqueid:SiteAssets/SitePages/Open-Door-Policy/open-door-policy.jpeg}&amp;amp;ext=jpeg&quot;,&quot;publishedOn&quot;:&quot;2019-08-28T16:34:35Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;August 28&quot;,&quot;title&quot;:&quot;Open Door Policy&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Open-Door-Policy.aspx&quot;,&quot;listItemId&quot;:7,&quot;path&quot;:&quot;SitePages/Open-Door-Policy.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:7,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Open-Door-Policy.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;As enrollment season begins, we wanted to inform you of the changes on this year&apos;s choices. From new dental plans to more flexibility with your health savings account.&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;amp;guidWeb={siteid}&amp;amp;guidFile={fileuniqueid:SiteAssets/SitePages/New-benefits-options-for-your-family/new-beneifts-family.jpeg}&amp;amp;ext=jpeg&quot;,&quot;publishedOn&quot;:&quot;2019-08-28T16:35:44Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;August 28&quot;,&quot;title&quot;:&quot;New benefits options for your family&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/New-benefits-options-for-your-family.aspx&quot;,&quot;listItemId&quot;:8,&quot;path&quot;:&quot;SitePages/New-benefits-options-for-your-family.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:6,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/New-benefits-options-for-your-family.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;Contoso partners with local schools. Local school districts are looking for volunteers to mentor students interested in world travel. If you have a passion to help others, this is the opportunity for you. Giving back to the community is one of our c…&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;amp;guidWeb={siteid}&amp;amp;guidFile={fileuniqueid:SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg}&amp;amp;ext=jpeg&quot;,&quot;publishedOn&quot;:&quot;2019-08-28T16:38:31Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;August 28&quot;,&quot;title&quot;:&quot;Taking flight: Student mentorship opportunities at Contoso&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx&quot;,&quot;listItemId&quot;:9,&quot;path&quot;:&quot;SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:5,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;description&quot;:&quot;Successful product growth and engagement is fundamentally linked to whether customers understand and realize the value it offers. While all product teams aspire to create an elegant user experience and functionality that enables customers to intuiti…&quot;,&quot;isAuthoritative&quot;:false,&quot;image&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;amp;guidWeb={siteid}&amp;amp;guidFile={fileuniqueid:SiteAssets/SitePages/Communicating-Product-Value/product-value.png}&amp;amp;ext=png&quot;,&quot;publishedOn&quot;:&quot;2019-08-28T16:42:21Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;August 28&quot;,&quot;title&quot;:&quot;Communicating Product Value&quot;,&quot;url&quot;:&quot;{hosturl}{site}/SitePages/Communicating-Product-Value.aspx&quot;,&quot;listItemId&quot;:12,&quot;path&quot;:&quot;SitePages/Communicating-Product-Value.aspx&quot;,&quot;siteUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;viewCounts&quot;:6,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Communicating-Product-Value.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;7531e1d2-1b1a-467b-9d0b-40d9d859bfd2&quot;,&quot;siteId&quot;:&quot;7531e1d2-1b1a-467b-9d0b-40d9d859bfd2&quot;,&quot;webId&quot;:&quot;7531e1d2-1b1a-467b-9d0b-40d9d859bfd2&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;0e90fe1f-149e-4d9a-8cd5-41aa373ad6c9&quot;,&quot;siteId&quot;:&quot;0e90fe1f-149e-4d9a-8cd5-41aa373ad6c9&quot;,&quot;webId&quot;:&quot;0e90fe1f-149e-4d9a-8cd5-41aa373ad6c9&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;e0e3712b-5506-4b10-a391-d485dd31c545&quot;,&quot;siteId&quot;:&quot;e0e3712b-5506-4b10-a391-d485dd31c545&quot;,&quot;webId&quot;:&quot;e0e3712b-5506-4b10-a391-d485dd31c545&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;91f5cfcc-af0c-4385-b007-e2343852fe0d&quot;,&quot;siteId&quot;:&quot;91f5cfcc-af0c-4385-b007-e2343852fe0d&quot;,&quot;webId&quot;:&quot;91f5cfcc-af0c-4385-b007-e2343852fe0d&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;116190ea-5a3f-4ef4-9041-ced174eb4d86&quot;,&quot;siteId&quot;:&quot;116190ea-5a3f-4ef4-9041-ced174eb4d86&quot;,&quot;webId&quot;:&quot;116190ea-5a3f-4ef4-9041-ced174eb4d86&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;d2231d24-4938-41a5-8a0d-04c67954bd8e&quot;,&quot;siteId&quot;:&quot;d2231d24-4938-41a5-8a0d-04c67954bd8e&quot;,&quot;webId&quot;:&quot;d2231d24-4938-41a5-8a0d-04c67954bd8e&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;af92699a-58c1-4582-adfb-8354632452d2&quot;,&quot;siteId&quot;:&quot;af92699a-58c1-4582-adfb-8354632452d2&quot;,&quot;webId&quot;:&quot;af92699a-58c1-4582-adfb-8354632452d2&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;0e2eecba-dc99-4e98-bc8b-a22696cb25b1&quot;,&quot;siteId&quot;:&quot;0e2eecba-dc99-4e98-bc8b-a22696cb25b1&quot;,&quot;webId&quot;:&quot;0e2eecba-dc99-4e98-bc8b-a22696cb25b1&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;none&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;b2755822-d975-4e8d-9822-47b5d2a9b45e&quot;,&quot;siteId&quot;:&quot;b2755822-d975-4e8d-9822-47b5d2a9b45e&quot;,&quot;webId&quot;:&quot;b2755822-d975-4e8d-9822-47b5d2a9b45e&quot;}],&quot;propsLastEdited&quot;:&quot;2019-08-28T16:50:53.444Z&quot;,&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;showNewsPinningPanel&quot;:true,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:true,&quot;showAuthor&quot;:true,&quot;showDate&quot;:true}},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0d8d5f97-0b3c-4ebc-91fc-194b69092eec&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;b9183ac7-fc96-44bc-bc41-82a74f7a2429&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Spacer&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="DocumentEmbed" JsonControlData="{&quot;id&quot;: &quot;b7dd04e1-19ce-4b24-9132-b60a1c2b910d&quot;, &quot;instanceId&quot;: &quot;43eafc35-5d3d-402d-9944-988820bce7ce&quot;, &quot;title&quot;: &quot;File viewer&quot;, &quot;description&quot;: &quot;File viewer&quot;, &quot;dataVersion&quot;: &quot;1.4&quot;, &quot;properties&quot;: {&quot;authorName&quot;:&quot;Patti Fernandez&quot;,&quot;chartitem&quot;:&quot;&quot;,&quot;endrange&quot;:&quot;&quot;,&quot;excelSettingsType&quot;:&quot;&quot;,&quot;file&quot;:&quot;{site}/Shared Documents/Contoso-Financial-Calendar-Q1_68340_97779.pptx&quot;,&quot;listId&quot;:&quot;{listid:Documents}&quot;,&quot;modifiedAt&quot;:&quot;2018-09-18T22:30:18+02:00&quot;,&quot;photoUrl&quot;:&quot;/_layouts/15/userphoto.aspx?size=S&amp;accountname=PattiF%40contosodemosg.OnMicrosoft.com&quot;,&quot;rangeitem&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;startPage&quot;:1,&quot;startrange&quot;:&quot;&quot;,&quot;tableitem&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:Shared Documents/Contoso-Financial-Calendar-Q1_68340_97779.pptx}&quot;,&quot;wdallowinteractivity&quot;:true,&quot;wdhidegridlines&quot;:true,&quot;wdhideheaders&quot;:true,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;webAbsoluteUrl&quot;:&quot;{hosturl}{site}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;annotation&quot;:&quot;&quot;,&quot;title&quot;:&quot;Office 365 presentation title or event name&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;serverRelativeUrl&quot;:&quot;{site}/Shared%20Documents/Contoso-Financial-Calendar-Q1_68340_97779.pptx&quot;,&quot;wopiurl&quot;:&quot;{site}/_layouts/15/Doc.aspx?sourcedoc=%7b{fileuniqueid:Shared Documents/Contoso-Financial-Calendar-Q1_68340_97779.pptx}%7d&amp;action=interactivepreview&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="b7dd04e1-19ce-4b24-9132-b60a1c2b910d" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;id&quot;: &quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;, &quot;instanceId&quot;: &quot;c68b1628-f49d-4492-a96f-9094dba2287e&quot;, &quot;title&quot;: &quot;Events&quot;, &quot;description&quot;: &quot;Display upcoming events&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;dataSource&quot;:5,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:20,&quot;layoutId&quot;:&quot;Flex&quot;,&quot;dataProviderId&quot;:&quot;Search&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;U.S. corporate holidays&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0447e11d-bed9-4898-b600-8dbcd95e9cc2&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;id&quot;: &quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;, &quot;instanceId&quot;: &quot;71644ab2-9306-4d56-8355-1cdc7bdef6c7&quot;, &quot;title&quot;: &quot;Hero&quot;, &quot;description&quot;: &quot;Prominently display up to 5 pieces of content in a highly visual layout&quot;, &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;isFullWidth&quot;:true,&quot;layoutCategory&quot;:1,&quot;layout&quot;:1,&quot;content&quot;:[{&quot;id&quot;:&quot;6b7bde07-3fd1-4d16-8d93-d677f0f31761&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;focalPosition&quot;:{&quot;x&quot;:49.7294046903187,&quot;y&quot;:99.833333333333329},&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/hr-works/1136779901WCO18_windowOffice_005.jpg}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Assets}/items/{fileuniqueid:SiteAssets/SitePages/hr-works/1136779901WCO18_windowOffice_005.jpg}/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:1,&quot;minCanvasWidth&quot;:1},&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;id&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/{pageuniqueid:SitePages/Home.aspx}/driveItem/thumbnails/0/c2560x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:1,&quot;minCanvasWidth&quot;:32767},&quot;upperCaseCallToAction&quot;:false},{&quot;id&quot;:&quot;9dcfa1d7-07df-4315-90b6-77f03ec59ce9&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;cb11f9ea-fee9-4ab1-aea4-65ea63b8456d&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;7ae0b664-c869-493e-8566-d0831210cf41&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;957a1aef-3541-48a4-94f9-27bd5b54803c&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false}],&quot;useLegacyFourTileStyle&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Open enrollment: 2020 benefits&quot;,&quot;content[1].title&quot;:&quot;&quot;,&quot;content[2].title&quot;:&quot;&quot;,&quot;content[3].title&quot;:&quot;&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;LEARN MORE&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/hr-works/1136779901WCO18_windowOffice_005.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/hr-works/1136779901WCO18_windowOffice_005.jpg}&quot;,&quot;renderWidthRatio&quot;:1,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:1},&quot;content[0].previewImage.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;,&quot;renderWidthRatio&quot;:1,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="TwoColumnLeft" BackgroundEmphasis="Neutral">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;642eab56-fb5b-4362-b752-d9bc8dac22af&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Quick links&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:5,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;editcontact&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:6,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;money&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;weights&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;dietplannotebook&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;family&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;medical&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Benefits&quot;,&quot;items[0].title&quot;:&quot;Benefits Enrollment&quot;,&quot;items[1].title&quot;:&quot;401k&quot;,&quot;items[2].title&quot;:&quot;Contoso Gym&quot;,&quot;items[3].title&quot;:&quot;Employee Handbook&quot;,&quot;items[4].title&quot;:&quot;Work &lt; Life Balance&quot;,&quot;items[5].title&quot;:&quot;Find a provider&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[2].description&quot;:&quot;&quot;,&quot;items[3].description&quot;:&quot;&quot;,&quot;items[4].description&quot;:&quot;&quot;,&quot;items[5].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;,&quot;items[4].altText&quot;:&quot;&quot;,&quot;items[5].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://www.bing.com&quot;,&quot;items[3].sourceItem.url&quot;:&quot;https://www.bing.com&quot;,&quot;items[4].sourceItem.url&quot;:&quot;https://www.bing.com&quot;,&quot;items[5].sourceItem.url&quot;:&quot;https://www.bing.com&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;0e831e1a-8262-48a2-a356-ff4e73f2b1c0&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Quick links&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:5,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;d365talentlearn&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:6,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;peoplerepeat&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;medal&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;feedback&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;family&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;lightningbolt&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Career&quot;,&quot;items[0].title&quot;:&quot;Learning &amp; Development&quot;,&quot;items[1].title&quot;:&quot;Internal transfer &quot;,&quot;items[2].title&quot;:&quot;Promotions&quot;,&quot;items[3].title&quot;:&quot;Feedback&quot;,&quot;items[4].title&quot;:&quot;Open positions&quot;,&quot;items[5].title&quot;:&quot;Refer someone&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[2].description&quot;:&quot;&quot;,&quot;items[3].description&quot;:&quot;&quot;,&quot;items[4].description&quot;:&quot;&quot;,&quot;items[5].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;,&quot;items[4].altText&quot;:&quot;&quot;,&quot;items[5].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://www.bing.com&quot;,&quot;items[3].sourceItem.url&quot;:&quot;https://www.bing.com&quot;,&quot;items[4].sourceItem.url&quot;:&quot;https://www.bing.com&quot;,&quot;items[5].sourceItem.url&quot;:&quot;https://www.bing.com&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;ccab8e1f-3235-4543-b519-ca505b95ef8a&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Quick links&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:5,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;airplane&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;calendarmirrored&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;people&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;money&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;paste&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:6,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;settings&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:true,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Tools&quot;,&quot;items[0].title&quot;:&quot;Booking travel &quot;,&quot;items[1].title&quot;:&quot;Requesting time off&quot;,&quot;items[2].title&quot;:&quot;Payroll Contact List&quot;,&quot;items[3].title&quot;:&quot;Payroll Tools &amp; Services&quot;,&quot;items[4].title&quot;:&quot;HR Profile /  HRWeb&quot;,&quot;items[5].title&quot;:&quot;FAQs &amp; Help&quot;,&quot;items[0].description&quot;:&quot;Learn about travel policies and programs, plan a trip, make reservations, find accommodations&quot;,&quot;items[1].description&quot;:&quot;To report your vacation, sick, or floating holiday time, go to the Time and Absence Reporting (TAR) tool.\n\n&quot;,&quot;items[2].description&quot;:&quot;Get information about payroll questions utilizing FAQs, email aliases, and phone numbers.&quot;,&quot;items[3].description&quot;:&quot;Commonly used payroll tools and services such as verification of employment, paydays and time card due dates. &quot;,&quot;items[4].description&quot;:&quot;Helpful links to HR related items&quot;,&quot;items[5].description&quot;:&quot;Check here for answers to common questions about Contoso services \n&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;,&quot;items[4].altText&quot;:&quot;&quot;,&quot;items[5].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}#&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://www.bing.com&quot;,&quot;items[3].sourceItem.url&quot;:&quot;https://www.bing.com&quot;,&quot;items[4].sourceItem.url&quot;:&quot;https://www.bing.com&quot;,&quot;items[5].sourceItem.url&quot;:&quot;{site}#&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;9dacaeac-e9d3-43a3-a2ac-66bf2f557929&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;content.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/hr-works/99174-content.png}&quot;,&quot;imgWidth&quot;:750,&quot;imgHeight&quot;:1290,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;Example PowerApp&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/hr-works/99174-content.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/hr-works/99174-content.png}&quot;,&quot;width&quot;:750,&quot;height&quot;:1290}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;:&quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;,&quot;instanceId&quot;:&quot;426d85f7-84cb-4348-9903-7f3013bc3fce&quot;,&quot;title&quot;:&quot;People&quot;,&quot;description&quot;:&quot;People&quot;,&quot;dataVersion&quot;:&quot;1.3&quot;,&quot;properties&quot;:{&quot;layout&quot;:1,&quot;persons&quot;:[{&quot;id&quot;:&quot;DiegoS@contoso.com&quot;,&quot;role&quot;:&quot;HR Manager&quot;},{&quot;id&quot;:&quot;PattiF@contoso.com&quot;,&quot;role&quot;:&quot;President&quot;},{&quot;id&quot;:&quot;LeeG@contoso.com&quot;,&quot;role&quot;:&quot;Director&quot;},{&quot;id&quot;:&quot;IsaiahL@contoso.com&quot;,&quot;role&quot;:&quot;Sales Rep&quot;}]},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;HR contacts &quot;,&quot;persons[0].name&quot;:&quot;Diego Siciliani&quot;,&quot;persons[1].name&quot;:&quot;Patti Fernandez&quot;,&quot;persons[2].name&quot;:&quot;Lee Gu&quot;,&quot;persons[3].name&quot;:&quot;Isaiah Langer&quot;,&quot;persons[0].email&quot;:&quot;DiegoS@Mcontoso.com&quot;,&quot;persons[1].email&quot;:&quot;PattiF@Mcontoso.com&quot;,&quot;persons[2].email&quot;:&quot;LeeG@contoso.com&quot;,&quot;persons[3].email&quot;:&quot;IsaiahL@contoso.com&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Templates/news-template.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="true" Overwrite="true" Title="news template" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="New-401K-Packets-Available-Now.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New 401K Packets Available Now" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/New-401K-Packets-Available-Now/401k-packets.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Please stop by the HR offices to pick up the new 401K packets. These packets contain all the information you need to set up or update your 401K for the new year." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="benefits" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Changes-to-Medical-Benefits.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Changes to Medical Benefits" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Changes-to-Medical-Benefits/changes-to-medical-benefits.jpeg}&amp;ext=jpeg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="We have distributed the updated medical packages pamphlet and we realize all these changes will raise some questions. Make an appointment with your HR representative today to help navigate all the new medical benefits packages and changes from earlier years." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Open-Door-Policy.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Open Door Policy" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Open-Door-Policy/open-door-policy.jpeg}&amp;ext=jpeg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Contoso encourages our employees to come to us with any issue they might have. We want them to feel comfortable talking with upper management and know that they’re being heard." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="New-benefits-options-for-your-family.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New benefits options for your family" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/New-benefits-options-for-your-family/new-beneifts-family.jpeg}&amp;ext=jpeg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="As enrollment season begins, we wanted to inform you of the changes on this year's choices. From new dental plans to more flexibility with your health savings account." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Taking flight: Student mentorship opportunities at Contoso" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg}&amp;ext=jpeg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Contoso partners with local schools.&lt;/h3&gt;&#xA;&#xA;&lt;p&gt;Local school districts are looking for volunteers to mentor students interested in world travel. If you have a passion to help others, this is the opportunity for you.&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Giving back to the&amp;nbsp;community is one of our core values.&amp;nbsp;Getting started is easy. Learn more at our upcoming program meetings, or schedule a lunch with one of our program experts to see just how you can help.&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="President's-Keynote-Speech--August-2019.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="President's Keynote Speech: August 2019" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/President-s-Keynote-Speech--August-2019/keynote-speech.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Contoso President, Patti Fernadez delivered a key note address detailing Contoso's mission and goals for the upcoming year." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Corporate-Communications-Define-Your-Brand-and-Culture.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Corporate Communications Define Your Brand and Culture" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Corporate-Communications-Define-Your-Brand-and-Culture/corp-comms-define-brand.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Corporate communications are carefully crafted key messages that provide the face and voice to your brand. They define your culture and company to the world." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Communicating-Product-Value.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Communicating Product Value" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Communicating-Product-Value/product-value.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Successful product growth and engagement is fundamentally linked to whether customers understand and realize the value it offers. While all product teams aspire to create an elegant user experience and functionality that enables customers to intuitively “get it” after they try it, product marketers are focused on conveying the product’s value to the customer to engage, convert and retain them. Product marketers play a key role in driving awareness and trial as well as packaging the product to appeal to customers. They accomplish this by packaging a product’s features and functionality into messaging and positioning, pricing, and collateral." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="The-importance-of-branding-at-Contoso.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The importance of branding at Contoso" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/The-importance-of-branding-at-Contoso/importance-of-branding.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="At the heart of branding at Contoso is the promise that is made by us to our customers. The brand promise tells them who we are, what we believe in, and what unique value we provide.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="4-reasons-why-branding-is-important.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="4 reasons why branding is important" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/4-reasons-why-branding-is-important/4-reason-thumb.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Branding is important to the success of any organization, but it's particularly important for us at Contoso Electronics. This news posts is an example of how you can use two different images for display. The top header image is 1920 x 1080 with a safe space of 320px in height - where the posters are aligned to. In page details, there is a second image that will display as the news thumbnail. It is also 1920x1080, a 16:9 ratio that works best in most of our thumbnail displays." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/4-reasons-why-branding-is-important/76947-4-reasons-header.png" TranslateX="50" TranslateY="52" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Contoso-Eagle-launch-and-the-future.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso Eagle launch and the future" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Contoso-Eagle-launch-and-the-future/contoso-eagle-launch.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;strong&gt;We have lift off!&lt;/strong&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;This year at the FlySafe Conference I had the opportunity to give the keynote address, with more then 6,000 attendees and press,&amp;nbsp;on advancements in drone technology for the professional and consumer market with a hint to what the future of our industry holds.&amp;nbsp;&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;It was an honor to represent the results of your hard work and dedication on our products.&amp;nbsp; If you haven't already had a chance please watch the summary of our product updates.&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="One-Million-Drones-Sold-in-2018.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="One Million Drones Sold in 2018" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/One-Million-Drones-Sold-in-2018/1million-drones.jpeg}&amp;ext=jpeg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="61174d71-f98a-4e45-836e-7f02c9cbf82a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Congratulations Contoso team! This September we set a new annual sales record." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
+      <pnp:Footer Enabled="true" Logo="{site}/SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" RemoveExistingNodes="true">
+        <pnp:FooterLinks>
+          <pnp:FooterLink DisplayName="Contact us" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Terms of use" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Privacy Policy" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Legal" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Site map" Url="http://linkless.header/" />
+        </pnp:FooterLinks>
+      </pnp:Footer>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
