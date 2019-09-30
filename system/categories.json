@@ -1,6 +1,9 @@
 {
     "categories": [
-        {"id": "SAMPLE", "displayName": "Samples"},
+        {"id": "ORGANIZATION", "displayName": "Organization"},
+        {"id": "DEPARTMENT", "displayName": "Department"},
+        {"id": "TEAM", "displayName": "Team"},
+        {"id": "COMMUNITY", "displayName": "Community"},
         {"id": "SOLUTION", "displayName": "Solutions"}
     ]
 }
