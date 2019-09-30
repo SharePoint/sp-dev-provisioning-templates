@@ -8,13 +8,13 @@
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
-      <pnp:Parameter Key="SiteTitle">Global Marketing</pnp:Parameter>
+      <pnp:Parameter Key="SiteTitle">Marketing</pnp:Parameter>
       <pnp:Parameter Key="SiteUrl">/sites/GlobalMarketing</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" HubSiteLogoUrl="{hosturl}{parameter:SiteUrl}/SiteAssets/__hubLogo__logo_global_marketing.png" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" HubSiteTitle="Global Marketing" HubSiteLogoUrl="{hosturl}{parameter:SiteUrl}/SiteAssets/__hubLogo__logo_global_marketing.png" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>
