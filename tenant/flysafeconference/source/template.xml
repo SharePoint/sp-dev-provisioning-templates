@@ -1,0 +1,320 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Fly Safe Conference"
+                  DisplayName="Fly Safe Conference"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/flysafeconference/top-fly-safe-conference.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">Fly Safe Conference</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/FlySafeConference</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Theme Name="">
+        {
+        "themePrimary": "#0078d4",
+        "themeLighterAlt": "#eff6fc",
+        "themeLighter": "#deecf9",
+        "themeLight": "#c7e0f4",
+        "themeTertiary": "#71afe5",
+        "themeSecondary": "#2b88d8",
+        "themeDarkAlt": "#106ebe",
+        "themeDark": "#005a9e",
+        "themeDarker": "#004578",
+        "neutralLighterAlt": "#f8f8f8",
+        "neutralLighter": "#f4f4f4",
+        "neutralLight": "#eaeaea",
+        "neutralQuaternaryAlt": "#dadada",
+        "neutralQuaternary": "#d0d0d0",
+        "neutralTertiaryAlt": "#c8c8c8",
+        "neutralTertiary": "#c2c2c2",
+        "neutralSecondary": "#858585",
+        "neutralPrimaryAlt": "#4b4b4b",
+        "neutralPrimary": "#333333",
+        "neutralDark": "#272727",
+        "black": "#1d1d1d",
+        "white": "#fff",
+        "primaryBackground": "#fff",
+        "primaryText": "#333333",
+        "bodyBackground": "#fff",
+        "bodyText": "#333333",
+        "disabledBackground": "#f4f4f4",
+        "disabledText": "#c8c8c8"
+        }
+      </pnp:Theme>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" Title="Conference" SiteLogo="{hosturl}{site}/SiteAssets/__sitelogo__FlySafe_logo@4x.png" AlternateCSS="" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Speakers" Url="http://linkless.header/" IsExternal="true" />
+            <pnp:NavigationNode Title="Schedule" Url="http://linkless.header/" IsExternal="true" />
+            <pnp:NavigationNode Title="Events" Url="http://linkless.header/" IsExternal="true" />
+            <pnp:NavigationNode Title="FAQs" Url="http://linkless.header/" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/SitePages/FlySafeConference/74831-flysafe-header.png" Folder="SiteAssets/SitePages/FlySafeConference" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/FlySafeConference/38062003FlySafe_conference.jpeg" Folder="SiteAssets/SitePages/FlySafeConference" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/FlySafeConference/2091610606teemu-paananen-bzdhc5b3Bxs-unsplash.png" Folder="SiteAssets/SitePages/FlySafeConference" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/FlySafeConference/3346565835topographic-white.png" Folder="SiteAssets/SitePages/FlySafeConference" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/FlySafeConference/94587-ticket-left.png" Folder="SiteAssets/SitePages/FlySafeConference" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/FlySafeConference/30689-ticket-premium.png" Folder="SiteAssets/SitePages/FlySafeConference" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/FlySafeConference/11752-ticket-vip.png" Folder="SiteAssets/SitePages/FlySafeConference" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+        <pnp:File Src="SiteAssets/__sitelogo__FlySafe_logo@4x.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+      </pnp:Files>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{BD598C0C-FDC9-480C-AD2A-2A523B77E084}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="CALENDAR" TabularView="FALSE" RecurrenceRowset="TRUE" DisplayName="Calendar" Url="{site}/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Month />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="EventType" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="Workspace" />
+                <FieldRef Name="MasterSeriesItemID" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+            </View>
+            <View Name="{C859958C-30BB-4E8E-A4C6-19F051C846D4}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Url="{site}/Lists/Events/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{A862CEF4-00D3-4F88-8FFB-86400BED5F60}" MobileView="TRUE" Type="HTML" RecurrenceRowset="TRUE" DisplayName="Current Events" Url="{site}/Lists/Events/MyItems.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Now />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
+            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" DisplayName="Start Time" />
+            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
+            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
+            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
+            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
+          </pnp:FieldRefs>
+          <pnp:DataRows KeyColumn="Title" UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Keynote address</pnp:DataValue>
+              <pnp:DataValue FieldName="Category">Speaker sessions</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Contoso HQ</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">7/26/2020 9:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">7/26/2020 11:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">No</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Specific Operations Risk Assessment (SORA)</pnp:DataValue>
+              <pnp:DataValue FieldName="Category">Preconference workshop</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Contoso HQ</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">7/25/2020 2:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">7/25/2020 3:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">No</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Drone Videography</pnp:DataValue>
+              <pnp:DataValue FieldName="Category">Speaker sessions</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Contoso HQ</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">7/25/2020 1:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">7/25/2020 2:30 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">No</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Registration open</pnp:DataValue>
+              <pnp:DataValue FieldName="Category">Preconference workshop</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Rotunda room</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">7/26/2020 8:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">7/26/2020 5:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">No</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+          <pnp:FieldDefaults>
+            <pnp:FieldDefault FieldName="Category" />
+          </pnp:FieldDefaults>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;73669ee1-9ea7-4869-a066-ab85ea2ce2e4&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;flysafe-header@2x.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/74831-flysafe-header.png}&quot;,&quot;imgWidth&quot;:7681,&quot;imgHeight&quot;:1601,&quot;isFullWidth&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/FlySafeConference/74831-flysafe-header.png&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:null},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/74831-flysafe-header.png}&quot;,&quot;width&quot;:&quot;7681&quot;,&quot;height&quot;:&quot;1601&quot;}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;62cac389-787f-495d-beca-e11786162ef4&quot;, &quot;instanceId&quot;: &quot;ae5372cb-c07e-497a-9415-a65c88d71aa4&quot;, &quot;title&quot;: &quot;Countdown Timer&quot;, &quot;description&quot;: &quot;This web part is used to allow a site admin to count down/up to an important event.&quot;, &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;properties&quot;: {&quot;isFullWidth&quot;:true,&quot;showButton&quot;:true,&quot;countDate&quot;:&quot;Sun Jul 26 2020 14:00:00 GMT-0700 (Pacific Daylight Time)&quot;,&quot;description&quot;:&quot;For the seasoned drone enthusiasts, new hobbyists, to professionals whose industries are rapidly adopting to this cutting-edge technology. Over 20,000 enthusiasts and 400 exhibitors are expected to attend, with 10 professional educational tracks planned with keynote speakers, seminars and panel discussions.&quot;,&quot;countDirection&quot;:&quot;COUNT_DOWN&quot;,&quot;dateDisplay&quot;:&quot;DAY_HOUR_MINUTE_SECOND&quot;,&quot;buttonText&quot;:&quot;GET YOUR TICKETS&quot;,&quot;backgroundImage&quot;:{&quot;focalPosition&quot;:{&quot;x&quot;:50,&quot;y&quot;:50},&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/38062003FlySafe_conference.jpeg}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;zoomRatio&quot;:1,&quot;widthFactor&quot;:1.7777777777777777},&quot;backgroundOverlay&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;opacity&quot;:56,&quot;useLightText&quot;:true}}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;See the world through a new perspective&quot;},&quot;imageSources&quot;:{&quot;backgroundImage.url&quot;:&quot;{site}/SiteAssets/SitePages/FlySafeConference/38062003FlySafe_conference.jpeg&quot;},&quot;links&quot;:{&quot;buttonURL&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="62cac389-787f-495d-beca-e11786162ef4" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;a4914951-46a0-4391-b97c-23dfee274bc2&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="TwoColumnRight" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="9b5c4500-8217-4c8f-ab48-b92fcad7c16b" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeSuper&quot;&gt;&lt;strong&gt;Technology and&amp;nbsp;innovation&lt;/strong&gt;&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="0e777771-4d7a-4b8f-adba-ec3d8293e418" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="In recent years, drone technology has aided in streamlining and improving business processes across a multitude of industries. Our goal at FlySafe is to coordinate an opportunity for management teams, strategists, engineers, educators and the general public to meet with those companies and individuals who are driving this change. Be prepared to be inspired, amazed and educated on how these evolving technologies will impact your business for the better.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;446a00b1-0622-427f-913a-5da529c1c110&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d8631ee0-e826-4583-974c-15a587247e4b&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;id&quot;: &quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;, &quot;instanceId&quot;: &quot;4450ba9b-c60b-49c0-b724-38948cd31dfe&quot;, &quot;title&quot;: &quot;Events&quot;, &quot;description&quot;: &quot;Display upcoming events&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;dataSource&quot;:7,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:20,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Sessions&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;b18ec74b-8281-40df-ae7e-aad7b2d5a709&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;id&quot;: &quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;, &quot;instanceId&quot;: &quot;ebdabefa-0e4c-4ec3-8fa0-40fcc80c641d&quot;, &quot;title&quot;: &quot;Hero&quot;, &quot;description&quot;: &quot;Prominently display up to 5 pieces of content in a highly visual layout&quot;, &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;isFullWidth&quot;:true,&quot;layoutCategory&quot;:1,&quot;layout&quot;:2,&quot;content&quot;:[{&quot;id&quot;:&quot;3efb50ef-0efc-4fb8-92c7-864b795bbb82&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/2091610606teemu-paananen-bzdhc5b3Bxs-unsplash.png}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Assets}/items/{fileuniqueid:SiteAssets/SitePages/FlySafeConference/2091610606teemu-paananen-bzdhc5b3Bxs-unsplash.png}/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.5,&quot;minCanvasWidth&quot;:1},&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.0/sharePoint:{site}#:/driveItem/thumbnails/0/c1600x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.5,&quot;minCanvasWidth&quot;:32767}},{&quot;id&quot;:&quot;7bca201e-4853-44b5-9c93-e6d25cc56431&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/3346565835topographic-white.png}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Assets}/items/{fileuniqueid:SiteAssets/SitePages/FlySafeConference/3346565835topographic-white.png}/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.5,&quot;minCanvasWidth&quot;:640},&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;e3d9dbb0-0f9f-40a5-9334-e46356736cf3&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Assets}/items/e3d9dbb0-0f9f-40a5-9334-e46356736cf3/driveItem/thumbnails/0/c1600x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.5,&quot;minCanvasWidth&quot;:32767}},{&quot;id&quot;:&quot;6f186122-405d-4b0a-834b-be875d5e3ed3&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;ed7944f3-6f1f-4518-aa60-fbb6f2988ec1&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;ad4e6ca1-7b64-4b2a-8fa0-3121f2882e90&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false}],&quot;useLegacyFourTileStyle&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Keynote&quot;,&quot;content[1].title&quot;:&quot;Schedule&quot;,&quot;content[2].title&quot;:&quot;&quot;,&quot;content[3].title&quot;:&quot;&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[1].callToActionText&quot;:&quot;Learn more&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/FlySafeConference/2091610606teemu-paananen-bzdhc5b3Bxs-unsplash.png&quot;,&quot;content[1].image.url&quot;:&quot;{site}/SiteAssets/SitePages/FlySafeConference/3346565835topographic-white.png&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}#&quot;,&quot;content[1].previewImage.url&quot;:&quot;{site}/SiteAssets/SitePages/FlySafeConference/4201021821topographic-default.png&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}#&quot;,&quot;content[1].link&quot;:&quot;{site}/SiteAssets/SitePages/FlySafeConference/4201021821topographic-default.png&quot;},&quot;componentDependencies&quot;:{&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/2091610606teemu-paananen-bzdhc5b3Bxs-unsplash.png}&quot;,&quot;renderwidthratio&quot;:&quot;0.5&quot;,&quot;renderwidthratiothreshold&quot;:&quot;640&quot;,&quot;mincanvaswidth&quot;:&quot;1&quot;},&quot;content[1].image.url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/3346565835topographic-white.png}&quot;,&quot;renderwidthratio&quot;:&quot;0.5&quot;,&quot;renderwidthratiothreshold&quot;:&quot;640&quot;,&quot;mincanvaswidth&quot;:&quot;640&quot;},&quot;content[0].previewImage.url&quot;:{&quot;renderwidthratio&quot;:&quot;0.5&quot;,&quot;renderwidthratiothreshold&quot;:&quot;640&quot;,&quot;mincanvaswidth&quot;:&quot;32767&quot;},&quot;content[1].previewImage.url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;e3d9dbb0-0f9f-40a5-9334-e46356736cf3&quot;,&quot;renderwidthratio&quot;:&quot;0.5&quot;,&quot;renderwidthratiothreshold&quot;:&quot;640&quot;,&quot;mincanvaswidth&quot;:&quot;32767&quot;}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="8" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;9b1e6621-9d27-4fb7-9911-dfc666fed334&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="9" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;1a9d7bc3-11ad-449e-b81b-d9616258dbf0&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;ticket-left.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/94587-ticket-left.png}&quot;,&quot;imgWidth&quot;:761,&quot;imgHeight&quot;:101,&quot;isFullWidth&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/FlySafeConference/94587-ticket-left.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/94587-ticket-left.png}&quot;,&quot;width&quot;:&quot;761&quot;,&quot;height&quot;:&quot;101&quot;}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="40d86749-4298-4713-8610-395b307e3cc2" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeMedium&quot;&gt;STANDARD TICKET&lt;/span&gt;&lt;br&gt;&#xA;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeSuper&quot;&gt;&lt;strong&gt;$49&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="cc8ae9fb-aab4-479d-b262-f9ca7c25adb0" Order="3" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;☑️ Full access to lectures and workshops&lt;/p&gt;&#xA;&#xA;&lt;p&gt;❌&amp;nbsp;&lt;s&gt;Video presentations&lt;/s&gt;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;❌&amp;nbsp;&lt;s&gt;Meet and greet with event speakers&lt;/s&gt;&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;02065206-cb61-4605-8158-6de60ca4a698&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;GET TICKETS&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="4" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;ed4e3c94-6e63-4a4f-a4d9-c7684040776c&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;ticket-premium.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/30689-ticket-premium.png}&quot;,&quot;imgWidth&quot;:761,&quot;imgHeight&quot;:101,&quot;isFullWidth&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/FlySafeConference/30689-ticket-premium.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/30689-ticket-premium.png}&quot;,&quot;width&quot;:&quot;761&quot;,&quot;height&quot;:&quot;101&quot;}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="5c276bb1-adec-40ca-bb68-abf6608dd0d6" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeMedium&quot;&gt;PREMIUM TICKET&lt;/span&gt;&lt;br&gt;&#xA;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeSuper&quot;&gt;&lt;strong&gt;$79&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="9ac2922e-233a-4d72-b2d0-36e27f3907b9" Order="3" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;☑️ Full access to lectures and workshops&lt;/p&gt;&#xA;&#xA;&lt;p&gt;☑️ Video presentations&lt;/p&gt;&#xA;&#xA;&lt;p&gt;❌&amp;nbsp;&lt;s&gt;Meet and greet with event speakers&lt;/s&gt;&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;336e01ff-0ed8-41d9-aff9-5d5310da8cf6&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;GET TICKETS&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="4" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;037d046f-1d74-4f7b-8ccc-6e35dc6093cf&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;ticket-vip.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/11752-ticket-vip.png}&quot;,&quot;imgWidth&quot;:761,&quot;imgHeight&quot;:101,&quot;isFullWidth&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/FlySafeConference/11752-ticket-vip.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/FlySafeConference/11752-ticket-vip.png}&quot;,&quot;width&quot;:&quot;761&quot;,&quot;height&quot;:&quot;101&quot;}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="3" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="87db79e7-b560-4d50-84dc-216c66f14537" Order="2" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeMedium&quot;&gt;VIP TICKET&lt;/span&gt;&lt;br&gt;&#xA;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeSuper&quot;&gt;&lt;strong&gt;$99&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="0121f8b6-1b9f-4a3a-9c58-837997443443" Order="3" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;☑️ Full access to lectures and workshops&lt;/p&gt;&#xA;&#xA;&lt;p&gt;☑️ Video presentations&lt;/p&gt;&#xA;&#xA;&lt;p&gt;☑️ Meet and greet with event speakers&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;a67d5913-74ed-46df-9e47-87f2317f2021&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;GET TICKETS&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="4" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="10" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;4b447888-89f6-49c3-9609-0d506b5ef444&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
+      <pnp:Footer Enabled="true" Logo="{site}/SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
