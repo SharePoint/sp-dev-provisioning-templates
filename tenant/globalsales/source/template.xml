@@ -12,6 +12,8 @@
       <pnp:Parameter Key="SiteUrl">/sites/GlobalSales</pnp:Parameter>
       <pnp:Parameter Key="RetailOperationsSiteTitle">Retail Operations</pnp:Parameter>
       <pnp:Parameter Key="RetailOperationsSiteUrl">/sites/RetailOperations</pnp:Parameter>
+      <pnp:Parameter Key="ConsumerRetailSiteTitle">Consumer Retail</pnp:Parameter>
+      <pnp:Parameter Key="ConsumerRetailSiteUrl">/sites/ConsumerRetail</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
@@ -23,7 +25,12 @@
       </pnp:SiteCollection>
       <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="RETAILOPERATIONS" SiteDesign="Topic" Title="{parameter:RetailOperationsSiteTitle}" Description="" Url="{parameter:RetailOperationsSiteUrl}" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
-          <pnp:ProvisioningTemplateReference ID="RETAIL-CONNECTION-TEMPLATE"/>
+          <pnp:ProvisioningTemplateReference ID="RETAIL-OPERATIONS-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSiteNoGroup" ProvisioningId="CONSUMERRETAIL" Title="{parameter:ConsumerRetailSiteTitle}" Description="" Url="{hosturl}{parameter:ConsumerRetailSiteUrl}" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="CONSUMER-RETAIL-TEMPLATE"/>
         </pnp:Templates>
       </pnp:SiteCollection>
     </pnp:SiteCollections>
@@ -86,7 +93,7 @@
             </pnp:NavigationNode>
             <pnp:NavigationNode Title="Retail" Url="http://linkless.header/" IsExternal="true">
               <pnp:NavigationNode Title="Operations" Url="http://linkless.header/" IsExternal="true">
-                <pnp:NavigationNode Title="Consumer" Url="http://linkless.header/" IsExternal="true" />
+                <pnp:NavigationNode Title="Consumer" Url="{sequenceSiteUrl:CONSUMERRETAIL}" IsExternal="true" />
                 <pnp:NavigationNode Title="Enterprise" Url="http://linkless.header/" IsExternal="true" />
                 <pnp:NavigationNode Title="Core" Url="http://linkless.header/" IsExternal="true" />
               </pnp:NavigationNode>
@@ -427,7 +434,7 @@
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
     </pnp:ProvisioningTemplate>
-    <pnp:ProvisioningTemplate ID="RETAIL-CONNECTION-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+    <pnp:ProvisioningTemplate ID="RETAIL-OPERATIONS-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
       <pnp:Theme Name="">
         {
         "themeLight":  "#9edacb",
@@ -485,6 +492,16 @@
         <pnp:File Src="Shared Documents/schematics/79886contosoelectronics-store.jpg" Folder="Shared Documents/schematics" Overwrite="true" Level="Published" />
         <pnp:File Src="Shared Documents/schematics/59415retail.jpg" Folder="Shared Documents/schematics" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/RetailOperations/1767883204kevin-chow-176761-unsplash.jpg" Folder="SiteAssets/SitePages/RetailOperations" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Sales-person-of-the-month/sales-person-adele.jpg" Folder="SiteAssets/SitePages/Sales-person-of-the-month" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/5--best--tips-for-our-sales-staff/christiann-koepke-0jPuWm8_9wY-unsplash.jpg" Folder="SiteAssets/SitePages/5--best--tips-for-our-sales-staff" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Q4--Consumer-usage/consumer-usage.png" Folder="SiteAssets/SitePages/Q4--Consumer-usage" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/What-s-the-difference-between-customer-support-and-customer-engagement/jared-sluyter-342883-unsplash.jpg" Folder="SiteAssets/SitePages/What-s-the-difference-between-customer-support-and-customer-engagement" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Nominate-a-project-for-the-2019-sales-leadership-award/sales-leadership-award.png" Folder="SiteAssets/SitePages/Nominate-a-project-for-the-2019-sales-leadership-award" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/One-million-drones-sold-in-2018/kevin-chow-176761-unsplash.jpg" Folder="SiteAssets/SitePages/One-million-drones-sold-in-2018" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Retail-store-opening-and-closing-procedure/alexandre-godreau-7YlHU_ZPS34-unsplash.jpg" Folder="SiteAssets/SitePages/Retail-store-opening-and-closing-procedure" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Store-design-responsibilites/roman-bozhko-OXXsAafHDeo-unsplash.jpg" Folder="SiteAssets/SitePages/Store-design-responsibilites" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Functions-of-customer-service/retail_258493796.jpeg" Folder="SiteAssets/SitePages/Functions-of-customer-service" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Why-customer-service-is-the-new-marketing/AdobeStock_194825087.jpeg" Folder="SiteAssets/SitePages/Why-customer-service-is-the-new-marketing" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
         <pnp:File Src="SiteAssets/__sitelogo__logo_retail_ops.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
       </pnp:Files>
@@ -544,9 +561,467 @@
             <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
           </pnp:Security>
         </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Templates/generic-news-post.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="generic news post" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="007c93f4-3668-4829-903d-89362689d0f5" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Add your text here" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Sales-person-of-the-month.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Sales person of the month" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Sales-person-of-the-month/sales-person-adele.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="007c93f4-3668-4829-903d-89362689d0f5" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="We would like to congratulate Adele Vance on a job well done this month. &amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="5-(best)-tips-for-our-sales-staff.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="5 (best) tips for our sales staff" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/5--best--tips-for-our-sales-staff/christiann-koepke-0jPuWm8_9wY-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="007c93f4-3668-4829-903d-89362689d0f5" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="The number one piece of advice I have for salespeople is you have to market in the moment we live. You have to reverse engineer consumer attention and deploy all of your time, energy and resources into producing content for that specific behavior." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Q4--Consumer-usage.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Q4: Consumer usage" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Q4--Consumer-usage/consumer-usage.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="965bec05-a5b9-4b14-be89-5921800eb1bc" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="This quarter our consumer business had&amp;nbsp;some bright spots, while also experiencing substantial usage headwinds over and around Easter weekend.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="GLOBAL SALES" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="What's-the-difference-between-customer-support-and-customer-engagement.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="What's the difference between customer support and customer engagement" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/What-s-the-difference-between-customer-support-and-customer-engagement/jared-sluyter-342883-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="4569dcdc-4519-435c-8fcc-82acbaccd3e4" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;The terms “customer service” and “customer experience” are often confused or used interchangeably. They’re not the same thing, but they are related.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;The difference between customer service and customer experience is that while customer service is one piece of the puzzle — focused on human interaction and directly supporting customers — customer experience is the sum of the entire customer journey with your business.&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="leadership" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Nominate-a-project-for-the-2019-sales-leadership-award.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Nominate a project for the 2019 sales leadership award" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Nominate-a-project-for-the-2019-sales-leadership-award/sales-leadership-award.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="219d0ebe-8315-4016-84ea-8ea5c82323ce" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="The sales leadership recognizes high performing&amp;nbsp;technology sales leaders that embody the ideals of customer&amp;nbsp;oriented leadership.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="One-million-drones-sold-in-2018.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="One million drones sold in 2018" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/One-million-drones-sold-in-2018/kevin-chow-176761-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="9b3e0b08-65ec-4a81-b43b-aaaf928b74d9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Congratulations Contoso team! This September we set a new annual sales record." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail news" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Retail-store-opening-and-closing-procedure.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Retail store opening and closing procedure" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Retail-store-opening-and-closing-procedure/alexandre-godreau-7YlHU_ZPS34-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="007c93f4-3668-4829-903d-89362689d0f5" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Establishing opening and closing procedures that leave as little to chance as possible can really help. Handled correctly, these two key periods of your day will leave you free to deal with the urgent details that tend to come up for most retailers. They also allow your employees to focus on what is most important,&amp;nbsp;taking care of your customers." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Store-design-responsibilites.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Store design responsibilities" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Store-design-responsibilites/roman-bozhko-OXXsAafHDeo-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="007c93f4-3668-4829-903d-89362689d0f5" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Design and aesthetics are a major part of the shopping experience. Design is both art and science, often using data to help make choices, such as product display and placement." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Functions-of-customer-service.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Functions of customer service" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Functions-of-customer-service/retail_258493796.jpeg}&amp;ext=jpeg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="007c93f4-3668-4829-903d-89362689d0f5" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Much of a store’s success depends on customer service - how it treats its customers. Customers may not always be right, but they’re always the customer, representing a potential sale and potential review." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Why-customer-service-is-the-new-marketing.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Why customer service is the new marketing" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Why-customer-service-is-the-new-marketing/AdobeStock_194825087.jpeg}&amp;ext=jpeg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="007c93f4-3668-4829-903d-89362689d0f5" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;Out of every 10,000 companies that claim they offer ‘a superior customer experience’,&amp;nbsp;only 100&amp;nbsp;or so are actually delivering it.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;That’s one out of 100. Ouch.&lt;/strong&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
       </pnp:ClientSidePages>
       <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
       <pnp:Footer Enabled="true" Logo="{site}/SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" />
+    </pnp:ProvisioningTemplate>
+    <pnp:ProvisioningTemplate ID="CONSUMER-RETAIL-TEMPLATE" Version="1" BaseSiteTemplate="STS#3" Scope="RootSite">
+      <pnp:Theme Name="">
+        {
+        "themeLight":  "#9edacb",
+        "themeTertiary":  "#51b69d",
+        "black":  "#494847",
+        "neutralSecondary":  "#a3a2a0",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "themeSecondary":  "#1c9375",
+        "themeDarker":  "#064a39",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralPrimaryAlt":  "#8d8b8a",
+        "neutralPrimary":  "#323130",
+        "themeDark":  "#08654e",
+        "themeLighter":  "#c9ebe3",
+        "neutralTertiary":  "#bab8b7",
+        "accent":  "#596275",
+        "neutralQuaternaryAlt":  "#dadada",
+        "themeLighterAlt":  "#f1faf8",
+        "white":  "#ffffff",
+        "neutralLighter":  "#f4f4f4",
+        "neutralLight":  "#eaeaea",
+        "neutralDark":  "#605e5d",
+        "themeDarkAlt":  "#0a775c",
+        "neutralLighterAlt":  "#f8f8f8",
+        "themePrimary":  "#0b8466"
+        }
+      </pnp:Theme>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/siteassets/sitelogo_consumer_retail.png" HubSiteUrl="{sequenceSiteUrl:GLOBALSALES}" AlternateCSS="" />
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Home" Url="{site}" />
+            <pnp:NavigationNode Title="Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Pages" Url="{site}/SitePages/Forms/ByAuthor.aspx" />
+            <pnp:NavigationNode Title="Site contents" Url="{site}/_layouts/15/viewlsts.aspx" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Products" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Products" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Products/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Products/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Products/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{668B7E7E-0FA3-4E98-8D5E-D6ACC8939FB7}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Products/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Attachments" />
+                <FieldRef Name="RetailCategory" />
+                <FieldRef Name="Specguide" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter><![CDATA[]]></CustomFormatter>
+            </View>
+            <View Name="{8CFEE316-1319-403F-AB09-93010F5951FF}" DefaultView="TRUE" Type="HTML" DisplayName="All Products" Url="{site}/Lists/Products/All Products.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="LinkTitle" Ascending="TRUE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="PhotoSubmission" />
+                <FieldRef Name="RetailCategory" />
+                <FieldRef Name="Specguide" />
+                <FieldRef Name="ReleaseDate" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Retail Category" FillInChoice="FALSE" Format="Dropdown" Name="RetailCategory" Title="Retail Category" Type="Choice" ID="{6f35006c-4d87-414a-8788-5171356ae262}" StaticName="RetailCategory" SourceID="{{listid:Products}}" ColName="nvarchar4" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Consumer</CHOICE>
+                <CHOICE>Enterprise</CHOICE>
+              </CHOICES>
+              <Default>Consumer</Default>
+            </Field>
+            <Field DisplayName="Spec guide" Format="Hyperlink" Name="Specguide" Title="Spec guide" Type="URL" ID="{8ec2b8b5-ed59-48c6-8548-f9ef7a1e7714}" StaticName="Specguide" SourceID="{{listid:Products}}" ColName="nvarchar5" RowOrdinal="0" ColName2="nvarchar6" RowOrdinal2="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&#xA;  &quot;$schema&quot;: &quot;https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json&quot;,&#xA;  &quot;elmType&quot;: &quot;img&quot;,&#xA;  &quot;attributes&quot;: {&#xA;    &quot;src&quot;: &quot;[$PhotoSubmission]&quot;&#xA;  },&#xA;  &quot;style&quot;: {&#xA;    &quot;width&quot;: &quot;90%&quot;,&#xA;    &quot;max-height&quot;: &quot;120px&quot;,&#xA;    &quot;margin-left&quot;: &quot;0px&quot;,&#xA;    &quot;margin-right&quot;: &quot;24px&quot;,&#xA;    &quot;display&quot;: &quot;inline-block&quot;&#xA;  }&#xA;}" DisplayName="Product image" Format="Dropdown" MaxLength="255" Name="PhotoSubmission" Title="Product image" Type="Text" ID="{ef374fa2-e271-494a-bf79-8202e0482995}" StaticName="PhotoSubmission" SourceID="{{listid:Products}}" ColName="nvarchar7" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;padding&quot;:&quot;0 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]},{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@now&quot;]}]}]},&quot;sp-css-backgroundColor-blueBackground37&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]},{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@now&quot;]}]}]},&quot;sp-css-backgroundColor-successBackground&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]},{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@now&quot;]}]}]},&quot;sp-css-backgroundColor-warningBackground50&quot;,&quot;&quot;]}]}]}]}},&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;templateId&quot;:&quot;BgColorDate&quot;}" DisplayName="Release Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" Name="ReleaseDate" Title="Release Date" Type="DateTime" ID="{897ec153-f67a-4475-9f99-b7311e492f07}" StaticName="ReleaseDate" SourceID="{{listid:Products}}" ColName="datetime1" RowOrdinal="0" Version="1" />
+          </pnp:Fields>
+          <pnp:DataRows KeyColumn="Title" UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Contoso Quad</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Consumer</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Contoso Quad v.0318</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">2/9/2019</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Shared Documents/Product imagery/Contoso4.png</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Eagle Air</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Enterprise</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Eagle Air v.0919</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">8/24/2016</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Shared Documents/Product imagery/EagleAir.png</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Gimbal Case</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Consumer</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Gimbal Aerial case v.0919</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">8/1/2018</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Shared Documents/Product imagery/AerialGimbal.png</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Mark8</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Consumer</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Mark8 v.0419</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">2/1/2020</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Shared Documents/Product imagery/Mark8.png</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Mark8 Controller</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Consumer</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Mark8 Contoller v.0419</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">2/1/2020</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Shared Documents/Product imagery/Mark8-remotecontroller.png</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/sitelogo_consumer_retail.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Product imagery/AerialGimbal.png" Folder="Shared%20Documents/Product%20imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Product imagery/Contoso4.png" Folder="Shared%20Documents/Product%20imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Product imagery/ContosoElite.png" Folder="Shared%20Documents/Product%20imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Product imagery/ContosoFalcon.png" Folder="Shared%20Documents/Product%20imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Product imagery/EagleAir.png" Folder="Shared%20Documents/Product%20imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Product imagery/Mark8.png" Folder="Shared%20Documents/Product%20imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Product imagery/Mark8-remotecontroller.png" Folder="Shared%20Documents/Product%20imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/Contoso Quad.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/Contoso Mark8.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/Contoso Falcon.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/Contoso Flex.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/Contoso Mark8 Controller.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/256_PDF.png" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/256_LINK.png" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/82290contoso-storefront.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/99025retail-shelf.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/86299display.jpeg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/25232christiann-koepke-0jPuWm8_9wY-unsplash.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/39614product-swag.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/67621in-store-training.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/79886contosoelectronics-store.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ConsumerRetail/59415retail.jpg" Folder="SiteAssets/SitePages/ConsumerRetail" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/5--best--tips-for-our-sales-staff/christiann-koepke-0jPuWm8_9wY-unsplash.jpg" Folder="SiteAssets/SitePages/5--best--tips-for-our-sales-staff" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Sales-person-of-the-month/product-swag.jpg" Folder="SiteAssets/SitePages/Sales-person-of-the-month" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Retail-store-opening-and-closing-procedure/alexandre-godreau-7YlHU_ZPS34-unsplash.jpg" Folder="SiteAssets/SitePages/Retail-store-opening-and-closing-procedure" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Functions-of-customer-service/71217-retail_258493796.jpeg" Folder="SiteAssets/SitePages/Functions-of-customer-service" Overwrite="true" Level="Published" />
+      </pnp:Files>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="71bf85d9-94ff-4390-9efb-3ae7c2c3c643" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;b&gt;GLOBAL SALES&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;span class=&quot;fontSizeXLargePlus&quot;&gt;Announcements &amp;amp; News&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="News" JsonControlData="{&quot;id&quot;: &quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;, &quot;instanceId&quot;: &quot;c4775dc3-b815-4e0d-b2d2-36a2987e98c1&quot;, &quot;title&quot;: &quot;News&quot;, &quot;description&quot;: &quot;Display recent news.&quot;, &quot;dataVersion&quot;: &quot;1.11&quot;, &quot;properties&quot;: {&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:false,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:false,&quot;showAuthor&quot;:false,&quot;showDate&quot;:false},&quot;layoutId&quot;:&quot;GridNews&quot;,&quot;prefetchCount&quot;:4,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:3,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;templateId&quot;:&quot;GridNews&quot;,&quot;propsLastEdited&quot;:&quot;2019-09-20T15:04:25.11Z&quot;,&quot;compactMode&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;ef1147f9-e3f4-4844-b4fe-ab7e6c1f3a10&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="84d3b2f8-f434-4151-8297-97e870e0f00c" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;strong&gt;2020 PRODUCT LINE-UP&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;span class=&quot;fontSizeXLargePlus&quot;&gt;Specification Guides&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;b391ef02-fac7-4a6c-9993-2720e8aca5bb&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:5,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/Contoso Quad.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:4,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/Contoso Mark8.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:3,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/Contoso Falcon.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:2,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/Contoso Flex.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:1,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/Contoso Mark8 Controller.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;,&quot;items[0].title&quot;:&quot;Contoso Quad specifications '20&quot;,&quot;items[1].title&quot;:&quot;Contoso Mark8 specifications '20&quot;,&quot;items[2].title&quot;:&quot;Contoso Falcon specifications '20&quot;,&quot;items[3].title&quot;:&quot;Contoso Flex specifications '20&quot;,&quot;items[4].title&quot;:&quot;Mark8 Controller specifications '20&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[2].description&quot;:&quot;&quot;,&quot;items[3].description&quot;:&quot;&quot;,&quot;items[4].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;,&quot;items[4].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/Contoso%20Quad.jpg&quot;,&quot;items[1].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/Contoso%20Mark8.jpg&quot;,&quot;items[2].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/Contoso%20Falcon.jpg&quot;,&quot;items[3].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/Contoso%20Flex.jpg&quot;,&quot;items[4].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/Contoso%20Mark8%20Controller.jpg&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[4].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="2" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="2423a9c1-a13f-456f-9638-552ec549663a" Order="3" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;b&gt;CONSUMER RETAIL&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&#xA;&lt;span class=&quot;fontSizeXLargePlus&quot;&gt;Resources&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;d9989966-4f9b-4018-878f-643751110f22&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:4,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/256_PDF.png}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:3,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/256_PDF.png}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:2,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/256_PDF.png}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:6,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/256_PDF.png}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:5,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/256_LINK.png}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:true,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Product Specs »&quot;,&quot;items[1].title&quot;:&quot;Point of Sales »&quot;,&quot;items[2].title&quot;:&quot;Product Display »&quot;,&quot;items[3].title&quot;:&quot;Opening &amp; Closing Checklist&quot;,&quot;items[4].title&quot;:&quot;Employee uniforms »&quot;,&quot;items[0].description&quot;:&quot;Get product info, download pdfs&quot;,&quot;items[1].description&quot;:&quot;User manual and set up instructions&quot;,&quot;items[2].description&quot;:&quot;Get all the information on how to set up displays&quot;,&quot;items[3].description&quot;:&quot;Retail store opening and closing procedures&quot;,&quot;items[4].description&quot;:&quot;Get the approved gear here&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;,&quot;items[4].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/256_PDF.png&quot;,&quot;items[1].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/256_PDF.png&quot;,&quot;items[2].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/256_PDF.png&quot;,&quot;items[3].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/256_PDF.png&quot;,&quot;items[4].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/256_LINK.png&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[4].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="4" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn" BackgroundEmphasis="Neutral">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="ImageGallery" JsonControlData="{&quot;id&quot;: &quot;af8be689-990e-492a-81f7-ba3e4cd3ed9c&quot;, &quot;instanceId&quot;: &quot;f75cc385-1b81-4a13-80ea-b39cecbdcf84&quot;, &quot;title&quot;: &quot;Image gallery&quot;, &quot;description&quot;: &quot;Spotlight your favorite images in a gallery&quot;, &quot;dataVersion&quot;: &quot;1.7&quot;, &quot;properties&quot;: {&quot;layout&quot;:4,&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:false,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true},&quot;gridSettings&quot;:{&quot;imageSize&quot;:2,&quot;imageCropping&quot;:1,&quot;imageAspectRatio&quot;:1,&quot;lightbox&quot;:false},&quot;imageSourceType&quot;:1,&quot;isRecursive&quot;:false,&quot;isCdnEnabledForList&quot;:false,&quot;hasDynamicModeEnabled&quot;:false,&quot;maxImagesCount&quot;:10,&quot;images&quot;:[{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/82290contoso-storefront.jpg}&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/99025retail-shelf.jpg}&quot;,&quot;isInList&quot;:true,&quot;title&quot;:null,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/86299display.jpeg}&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/25232christiann-koepke-0jPuWm8_9wY-unsplash.jpg}&quot;,&quot;isInList&quot;:true,&quot;title&quot;:null,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/39614product-swag.jpg}&quot;,&quot;isInList&quot;:true,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/67621in-store-training.jpg}&quot;,&quot;isInList&quot;:true,&quot;title&quot;:null,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/79886contosoelectronics-store.jpg}&quot;,&quot;isInList&quot;:true,&quot;title&quot;:null,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ConsumerRetail/59415retail.jpg}&quot;,&quot;isInList&quot;:true,&quot;title&quot;:null,&quot;imageTileWidth&quot;:300}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Point of purchase schematics&quot;,&quot;images[0].title&quot;:&quot;Contoso Electronics flag ship store&quot;,&quot;images[2].title&quot;:&quot;&quot;,&quot;images[4].title&quot;:&quot;&quot;,&quot;images[0].description&quot;:&quot;&quot;,&quot;images[1].description&quot;:&quot;&quot;,&quot;images[2].description&quot;:&quot;&quot;,&quot;images[3].description&quot;:&quot;&quot;,&quot;images[4].description&quot;:&quot;&quot;,&quot;images[5].description&quot;:&quot;&quot;,&quot;images[6].description&quot;:&quot;&quot;,&quot;images[7].description&quot;:&quot;&quot;,&quot;images[0].altText&quot;:&quot;Contoso Electronics flag ship store&quot;,&quot;images[1].altText&quot;:&quot;&quot;,&quot;images[2].altText&quot;:&quot;&quot;,&quot;images[3].altText&quot;:&quot;&quot;,&quot;images[4].altText&quot;:&quot;&quot;,&quot;images[5].altText&quot;:&quot;&quot;,&quot;images[6].altText&quot;:&quot;&quot;,&quot;images[7].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;images[0].url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/82290contoso-storefront.jpg&quot;,&quot;images[1].url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/99025retail-shelf.jpg&quot;,&quot;images[2].url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/86299display.jpeg&quot;,&quot;images[3].url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/25232christiann-koepke-0jPuWm8_9wY-unsplash.jpg&quot;,&quot;images[4].url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/39614product-swag.jpg&quot;,&quot;images[5].url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/67621in-store-training.jpg&quot;,&quot;images[6].url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/79886contosoelectronics-store.jpg&quot;,&quot;images[7].url&quot;:&quot;{site}/SiteAssets/SitePages/ConsumerRetail/59415retail.jpg&quot;},&quot;links&quot;:{},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0b7d8cdf-385c-4657-b62c-a2b2e10863e1&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="af8be689-990e-492a-81f7-ba3e4cd3ed9c" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;371c9c43-997c-4e18-ae5b-09d467e4ca12&quot;, &quot;title&quot;: &quot;List&quot;, &quot;description&quot;: &quot;Add a list&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:false,&quot;selectedListId&quot;:&quot;{listid:Products}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Lists/Products&quot;,&quot;webRelativeListUrl&quot;:&quot;/Lists/Products&quot;,&quot;webpartHeightKey&quot;:4}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Products&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="5-(best)-tips-for-our-sales-staff.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="5 (best) tips for our sales staff" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/5--best--tips-for-our-sales-staff/christiann-koepke-0jPuWm8_9wY-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="5b92e7a2-fa72-43c0-b464-049d6c2a0615" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="The number one piece of advice I have for salespeople is you have to market in the moment we live. You have to reverse engineer consumer attention and deploy all of your time, energy and resources into producing content for that specific behavior." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Sales-person-of-the-month.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Sales person of the month" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Sales-person-of-the-month/product-swag.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="d36d4b10-407a-4d05-98cc-1dd9cb69e35a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="We would like to congratulate Grady Archie&amp;nbsp;on a job well done this month. &amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="Consumer retail" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Retail-store-opening-and-closing-procedure.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Retail store opening and closing procedure" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Retail-store-opening-and-closing-procedure/alexandre-godreau-7YlHU_ZPS34-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1049bec4-cbbb-4a38-8154-c1bcaeacac0f" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Establishing opening and closing procedures that leave as little to chance as possible can really help. Handled correctly, these two key periods of your day will leave you free to deal with the urgent details that tend to come up for most retailers. They also allow your employees to focus on what is most important,&amp;nbsp;taking care of your customers." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="consumer retail" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Functions-of-customer-service.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Functions of customer service" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="11b9a9fd-91a5-4eb8-9550-22df05f8543d" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Much of a store’s success depends on customer service - how it treats its customers. Customers may not always be right, but they’re always the customer, representing a potential sale and potential review." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Functions-of-customer-service/71217-retail_258493796.jpeg" TranslateX="50.2609992542878" TranslateY="40.4444444444444" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Standard" BackgroundEmphasis="Strong" />
     </pnp:ProvisioningTemplate>
   </pnp:Templates>
 </pnp:Provisioning>
