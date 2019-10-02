@@ -1,0 +1,23 @@
+.page-wrapper {
+    /* hide image sliding in from right offpage */
+    overflow-x: hidden;
+}
+
+.image-container {
+    margin-top: 48px;
+}
+
+@media (min-width: 1200px) {
+    .image-container {
+        margin-top: 0;
+    }
+}
+
+.add-to-tenant-subsection h1 {
+    display: none;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-inline-start: 30px;
+}
