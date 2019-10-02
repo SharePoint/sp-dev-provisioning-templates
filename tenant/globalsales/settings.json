@@ -26,7 +26,7 @@
       }
     ],
     "displayInfo": {
-        "pageTemplateId": "0C827DDB-18E9-4709-896B-12B0C34C8E40",
+        "pageTemplateId": "system/pageTemplates/template-1",
         "descriptionParagraphs": [
             "This template shows how a typical company brand site could look like in the SharePoint Online. It has example pages and content to get you started on updating the template based on your specific requirements.",
             "This site could be associated to the enterprise portal or hub site, so that it is part of the main navigation with the other related sites in single consistent information architecture."
@@ -34,13 +34,13 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Contoso Landing Layout",
-                "url": "./full-layout-contoso-landing.png"
+                "altText": "The Landing Layout",
+                "url": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/full-layout-the-landing.png"
             },
             {
                 "type": "cardpreview",
-                "altText": "Contoso Landing Preview",
-                "url": "./card-preview-contoso-landing.png"
+                "altText": "The Landing Preview",
+                "url": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/top-the-landing.png"
             }
         ],
         "detailItemCategories": [
@@ -114,12 +114,12 @@
                 "items": [
                     {
                         "name": "Walkthrough",
-                        "url": "./resources/walkthrough.docx"
+                        "url": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/resources/walkthrough.docx"
                     },
                     {
                         "name": "Video",
-                        "url": "./resources/video.mp4",
-                        "previewImage": "./resources/video-thumb.png"
+                        "url": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/resources/video.mp4",
+                        "previewImage": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/resources/video-thumb.png"
                     }
                 ]
             }
