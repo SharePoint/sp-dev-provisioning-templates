@@ -1,0 +1,324 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Workshop/training/event"
+                  DisplayName="Drone Product Training"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/droneproducttraining/top-drone-product-training.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">Drone Product Training</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/droneproducttraining</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Theme Name="">
+        {
+        "neutralPrimaryAlt":  "#8d8b8a",
+        "themeLighterAlt":  "#f2f9fa",
+        "black":  "#494847",
+        "themeTertiary":  "#5aa8af",
+        "primaryBackground":  "#ffffff",
+        "neutralQuaternaryAlt":  "#dadada",
+        "accent":  "#535C68",
+        "themePrimary":  "#17717A",
+        "neutralSecondary":  "#a3a2a0",
+        "themeLighter":  "#cbe7ea",
+        "themeDark":  "#12575d",
+        "neutralPrimary":  "#323130",
+        "neutralLighterAlt":  "#f8f8f8",
+        "neutralLighter":  "#f4f4f4",
+        "neutralDark":  "#605e5d",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralLight":  "#eaeaea",
+        "primaryText":  "#333333",
+        "themeDarker":  "#0d4045",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "themeDarkAlt":  "#15676e",
+        "white":  "#ffffff",
+        "bodyBackground":  "#ffffff",
+        "themeSecondary":  "#28828a",
+        "bodyText":  "#333333",
+        "disabledBackground":  "# f4f4f4",
+        "neutralTertiary":  "#bab8b7",
+        "themeLight":  "#a3d3d7",
+        "disabledText":  "#c8c8c8"
+        }
+      </pnp:Theme>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/__sitelogo__logo_drone_training_workshop.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" SearchScope="DefaultScope" />
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{BD598C0C-FDC9-480C-AD2A-2A523B77E084}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="CALENDAR" TabularView="FALSE" RecurrenceRowset="TRUE" DisplayName="Calendar" Url="{site}/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Month />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="EventType" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="Workspace" />
+                <FieldRef Name="MasterSeriesItemID" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+            </View>
+            <View Name="{C859958C-30BB-4E8E-A4C6-19F051C846D4}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Url="{site}/Lists/Events/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{A862CEF4-00D3-4F88-8FFB-86400BED5F60}" MobileView="TRUE" Type="HTML" RecurrenceRowset="TRUE" DisplayName="Current Events" Url="{site}/Lists/Events/MyItems.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Now />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
+            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" DisplayName="Start Time" />
+            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
+            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
+            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
+            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
+          </pnp:FieldRefs>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Utilizing recycled materials in drone components</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Washington State Convention Center, 705 Pike St, Seattle, WA 98101, United States</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">9/24/2020 10:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">9/24/2020 11:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">No</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Assembling hi-spec custom drones using CE components</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Washington State Convention Center, 705 Pike St, Seattle, WA 98101, United States</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">9/24/2020 1:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">9/24/2020 2:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">No</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">3D modeling of a high performing prop</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Washington State Convention Center, 705 Pike St, Seattle, WA 98101, United States</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">9/25/2020 10:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">9/25/2020 11:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">No</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Carbon and titan in light-weight drone models</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Washington State Convention Center, 705 Pike St, Seattle, WA 98101, United States</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">9/25/2020 1:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">9/25/2020 2:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">No</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+          <pnp:FieldDefaults>
+            <pnp:FieldDefault FieldName="Category" />
+          </pnp:FieldDefaults>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/SitePages/Home/36701-contoso8pro.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/workshop-002.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/workshop-003.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/droneproducttraining/32601-Meet_the_team-06.png" Folder="SiteAssets/SitePages/droneproducttraining" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/droneproducttraining/84739-Meet_the_team-02.png" Folder="SiteAssets/SitePages/droneproducttraining" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/droneproducttraining/47891-Meet_the_team-07.png" Folder="SiteAssets/SitePages/droneproducttraining" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/droneproducttraining/27018-Meet_the_team-05.png" Folder="SiteAssets/SitePages/droneproducttraining" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/droneproducttraining/94817-Meet_the_team-03.png" Folder="SiteAssets/SitePages/droneproducttraining" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/droneproducttraining/76433-Meet_the_team-04.png" Folder="SiteAssets/SitePages/droneproducttraining" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/36557-D1.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/94901-D2.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/workshop-001.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__sitelogo__logo_drone_training_workshop.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+      </pnp:Files>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;5f6ccdc9-dc57-4cf3-a212-cc92e67d0991&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="1a10365e-7e3c-4275-952b-0ea320feb435" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontSizeLarge&quot;&gt;&lt;span class=&quot;fontColorThemeDark&quot;&gt;&lt;strong&gt;DRONE PRODUCT TRAINING&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&#xA;&#xA;&lt;h2&gt;&lt;strong&gt;&lt;span class=&quot;fontSizeSuper&quot;&gt;Get trained by the experts&lt;/span&gt;&lt;/strong&gt;&lt;/h2&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontSizeXLarge&quot;&gt;Consumer Quadcopter training workshops are instructor-led classes that combine the best in quality, expertise, and convenience to increase your drone&amp;nbsp;knowledge. Learn the latest features across our product line up&amp;nbsp;or expand into new content areas like 3D modeling or how we utilize recycled materials in our drone components. Schedule a private training to get a new team up to speed or find a public class for yourself.&lt;/span&gt;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;79d4c046-e6b3-4939-a4f6-8285731b2929&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;RESERVE YOUR SEAT&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;fbddc309-4e98-4378-affb-715cf647645f&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="4" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;b0ea2277-20c2-4ba0-9322-3c11fddae46c&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;59e75f6b-645b-4644-aeb6-8ed5713d8b76&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;contoso8pro.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/36701-contoso8pro.png}&quot;,&quot;imgWidth&quot;:481,&quot;imgHeight&quot;:480,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/36701-contoso8pro.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/36701-contoso8pro.png}&quot;,&quot;width&quot;:481,&quot;height&quot;:480}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="2" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;2b0a996b-c257-4808-af6d-ea45931ed6fc&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;family&quot;}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;calendaragenda&quot;}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;education&quot;}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;mail&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Speakers&quot;,&quot;items[1].title&quot;:&quot;Agenda&quot;,&quot;items[2].title&quot;:&quot;Workshops&quot;,&quot;items[3].title&quot;:&quot;Contact&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[2].description&quot;:&quot;&quot;,&quot;items[3].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}#guest-speakers&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx?web=1#agenda&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx?web=1#featured-workshops&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx?web=1#contact&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;id&quot;: &quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;, &quot;instanceId&quot;: &quot;bf4bb74e-b195-4a8a-afd5-99450c20f8f6&quot;, &quot;title&quot;: &quot;Hero&quot;, &quot;description&quot;: &quot;Prominently display up to 5 pieces of content in a highly visual layout&quot;, &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;isFullWidth&quot;:true,&quot;layoutCategory&quot;:2,&quot;layout&quot;:2,&quot;content&quot;:[{&quot;id&quot;:&quot;23988c5b-f3c1-4852-a8b0-5d190e0df338&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;Each workshop features a hands-on project that teaches the latest capabilities skills as well as best practices for implementation.&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;featureText&quot;:&quot;learn&quot;,&quot;showFeatureText&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/{pageuniqueid:SitePages/Home.aspx}/driveItem/thumbnails/0/c2560x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:32767},&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/workshop-002.jpg}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Assets}/items/{fileuniqueid:SiteAssets/workshop-002.jpg}/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:1}},{&quot;id&quot;:&quot;abc2b446-291a-4a9e-8505-9b5270ad6266&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;Take part in hands-on training sessions with certified instructors who provide invaluable 1:1 interaction with class members.&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/{pageuniqueid:SitePages/Home.aspx}/driveItem/thumbnails/0/c1600x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:32767},&quot;featureText&quot;:&quot;GROW&quot;,&quot;image&quot;:{&quot;focalPosition&quot;:{&quot;x&quot;:48.347613219094249,&quot;y&quot;:49.75},&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/workshop-003.jpg}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.1/sites/m365x377533.sharepoint.com,{sitecollectionid},{siteid}/lists/{listid:Site Assets}/items/{fileuniqueid:SiteAssets/workshop-003.jpg}/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:640}},{&quot;id&quot;:&quot;84d19cd3-17ea-4247-8085-5f1daafa0957&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;25e5416b-50d2-4683-9fe4-771813e5731f&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;1ea2b1a5-db35-44bb-82ca-b20ee300486b&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Accelerate your learning.&quot;,&quot;content[1].title&quot;:&quot;Bring your ideas to life. &quot;,&quot;content[2].title&quot;:&quot;&quot;,&quot;content[3].title&quot;:&quot;&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;Continue reading&quot;,&quot;content[1].callToActionText&quot;:&quot;Continue reading&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/workshop-002.jpg&quot;,&quot;content[1].image.url&quot;:&quot;{site}/SiteAssets/workshop-003.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;content[1].previewImage.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;content[1].link&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/workshop-002.jpg}&quot;,&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:1},&quot;content[1].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/workshop-003.jpg}&quot;,&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:640},&quot;content[0].previewImage.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;,&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[1].previewImage.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;,&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;1762aec2-1b2e-447b-9f34-aa3147d67c62&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="51f3055d-3d3b-4e9f-b197-0dab42c444d2" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2&gt;&lt;strong&gt;&lt;span class=&quot;fontColorThemeDark&quot;&gt;&lt;span class=&quot;fontSizeSuper&quot;&gt;Guest Speakers&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/h2&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;92ae857e-174f-4618-adf8-155ddb062cc5&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Charlotte Walton&quot;,&quot;fileName&quot;:&quot;Meet_the_team-06.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/32601-Meet_the_team-06.png}&quot;,&quot;imgWidth&quot;:766,&quot;imgHeight&quot;:700,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;Executive Strategy Director, Contoso Electronics&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/droneproducttraining/32601-Meet_the_team-06.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/32601-Meet_the_team-06.png}&quot;,&quot;width&quot;:766,&quot;height&quot;:700}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;ac1f9d44-1a9b-430a-a6f4-09eb3aab5d59&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;a woman smiling for the camera&quot;,&quot;overlayText&quot;:&quot;Kat Larson&quot;,&quot;fileName&quot;:&quot;Meet_the_team-02.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/84739-Meet_the_team-02.png}&quot;,&quot;imgWidth&quot;:766,&quot;imgHeight&quot;:700,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;Creative Producer, Contoso Electronics&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/droneproducttraining/84739-Meet_the_team-02.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/84739-Meet_the_team-02.png}&quot;,&quot;width&quot;:766,&quot;height&quot;:700}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;57a0f2bd-8430-4e52-9851-ccebc54eeaa2&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;a person posing for the camera&quot;,&quot;overlayText&quot;:&quot;Kevin Sturgis&quot;,&quot;fileName&quot;:&quot;Meet_the_team-07.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/47891-Meet_the_team-07.png}&quot;,&quot;imgWidth&quot;:766,&quot;imgHeight&quot;:700,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;Executive Director of Innovation, Contoso Electronics&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/droneproducttraining/47891-Meet_the_team-07.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/47891-Meet_the_team-07.png}&quot;,&quot;width&quot;:766,&quot;height&quot;:700}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;0527f321-74e3-4ce4-8f56-e87ea907e7c1&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Erik Nason&quot;,&quot;fileName&quot;:&quot;Meet_the_team-05.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/27018-Meet_the_team-05.png}&quot;,&quot;imgWidth&quot;:766,&quot;imgHeight&quot;:700,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;Strategy Director, Fabrikam, Inc.&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/droneproducttraining/27018-Meet_the_team-05.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/27018-Meet_the_team-05.png}&quot;,&quot;width&quot;:766,&quot;height&quot;:700}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;ccaa7abb-8edf-4b0e-96de-bae3ad3a8127&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Robert Tolbert&quot;,&quot;fileName&quot;:&quot;Meet_the_team-03.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/94817-Meet_the_team-03.png}&quot;,&quot;imgWidth&quot;:766,&quot;imgHeight&quot;:700,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;Principal Researcher, Trey Research&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/droneproducttraining/94817-Meet_the_team-03.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/94817-Meet_the_team-03.png}&quot;,&quot;width&quot;:766,&quot;height&quot;:700}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;b46e5a29-d9c5-490e-bc33-5ad73e441007&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Katri Ahokas&quot;,&quot;fileName&quot;:&quot;Meet_the_team-04.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/76433-Meet_the_team-04.png}&quot;,&quot;imgWidth&quot;:766,&quot;imgHeight&quot;:700,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;Principal Designer, Contoso Electronics&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/droneproducttraining/76433-Meet_the_team-04.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/droneproducttraining/76433-Meet_the_team-04.png}&quot;,&quot;width&quot;:766,&quot;height&quot;:700}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;1c341be8-ad76-43c8-ad45-9f409c4a5c8e&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Spacer&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="8" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="d0d01a2b-6f95-4fca-b560-df37d78a8a32" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2&gt;&lt;strong&gt;&lt;span class=&quot;fontColorThemeDark&quot;&gt;&lt;span class=&quot;fontSizeSuper&quot;&gt;Agenda&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/h2&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="9" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;c7de7e4f-f3ae-4be0-9d68-b08e98d7598c&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;September 24th, 2020&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{{fileuniqueid:SiteAssets/36557-D1.png}}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:640,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/36557-D1.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{{fileuniqueid:SiteAssets/36557-D1.png}}&quot;,&quot;width&quot;:960,&quot;height&quot;:640}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;d178329f-d7bf-4ae6-916e-2231f66f77d2&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;September 25th, 2020&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{{fileuniqueid:SiteAssets/94901-D2.png}}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:640,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/94901-D2.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{{fileuniqueid:SiteAssets/94901-D2.png}}&quot;,&quot;width&quot;:960,&quot;height&quot;:640}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="10" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;20950edb-a15d-4876-99b6-54091b34b936&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="11" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;bd6d50ee-76f6-4eac-a708-c5c56b89186b&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="e3e53298-42ff-4258-9261-456fc20b18bf" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2&gt;&lt;strong&gt;&lt;span class=&quot;fontColorThemeDark&quot;&gt;&lt;span class=&quot;fontSizeSuper&quot;&gt;Featured workshops&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/h2&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;id&quot;: &quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;, &quot;instanceId&quot;: &quot;5ea636fb-cdf0-4900-8975-9b9e163fbf4a&quot;, &quot;title&quot;: &quot;Events&quot;, &quot;description&quot;: &quot;Events&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;dataSource&quot;:7,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:20}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;989dc62d-dfe8-4657-bb56-e54d52757494&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="4" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="12" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;89aba791-af26-4b32-acac-364e9f60bae0&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Image&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;a person standing in a room&quot;,&quot;overlayText&quot;:&quot;Certified workshops&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/workshop-001.jpg}&quot;,&quot;imgWidth&quot;:3360,&quot;imgHeight&quot;:2240,&quot;isFullWidth&quot;:true,&quot;fixAspectRatio&quot;:false,&quot;cropX&quot;:0,&quot;cropY&quot;:740,&quot;cropWidth&quot;:3360,&quot;cropHeight&quot;:1072,&quot;isOverlayTextEnabled&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/workshop-001.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/workshop-001.jpg}&quot;,&quot;width&quot;:3360,&quot;height&quot;:2240,&quot;cropX&quot;:0,&quot;cropY&quot;:740,&quot;cropWidth&quot;:3360,&quot;cropHeight&quot;:1072}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="13" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b5a6a08e-5000-4a0b-bd9e-1b28ba9e3d50" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2&gt;&lt;strong&gt;&lt;span class=&quot;fontColorThemeDark&quot;&gt;&lt;span class=&quot;fontSizeSuper&quot;&gt;Contact&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/h2&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="BingMap" JsonControlData="{&quot;id&quot;: &quot;e377ea37-9047-43b9-8cdb-a761be2f8e09&quot;, &quot;instanceId&quot;: &quot;e753cd05-5d17-40b6-9838-bc27d67f61ee&quot;, &quot;title&quot;: &quot;Bing Maps&quot;, &quot;description&quot;: &quot;Bing Maps&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;pushPins&quot;:[{&quot;location&quot;:{&quot;latitude&quot;:47.61178,&quot;longitude&quot;:-122.33168,&quot;altitude&quot;:0,&quot;altitudeReference&quot;:-1},&quot;defaultTitle&quot;:&quot;Washington State Convention Center&quot;,&quot;defaultAddress&quot;:&quot;Washington State Convention Center, 800 Convention Pl, Seattle, WA 98101, United States&quot;,&quot;title&quot;:&quot;Washington State Convention Center&quot;,&quot;address&quot;:&quot;800 Convention Pl, Seattle, WA 98101, United States&quot;}],&quot;maxNumberOfPushPins&quot;:1,&quot;shouldShowPushPinTitle&quot;:false,&quot;zoomLevel&quot;:13,&quot;mapType&quot;:&quot;road&quot;,&quot;center&quot;:{&quot;latitude&quot;:47.613775056035934,&quot;longitude&quot;:-122.3322551461891,&quot;altitude&quot;:0,&quot;altitudeReference&quot;:-1}}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="e377ea37-9047-43b9-8cdb-a761be2f8e09" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;8fbc8ead-357b-46e0-bd41-25c885d75c69&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:80}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="MicrosoftForms" JsonControlData="{&quot;id&quot;: &quot;b19b3b9e-8d13-4fec-a93c-401a091c0707&quot;, &quot;instanceId&quot;: &quot;295333ed-ae77-4db1-823d-8d902ad37f74&quot;, &quot;title&quot;: &quot;Microsoft Forms&quot;, &quot;description&quot;: &quot;Add a survey to collect responses or show results&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;displayType&quot;:1,&quot;allowShowResult&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;formTitle&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;formDesignPageURL&quot;:&quot;https://forms.office.com/Pages/DesignPage.aspx?auth_pvr=OrgId&amp;Fragment=FormId%3D9r8fdgtzUUKVjsQsvv28NJKapv2g0R9KhR7M0bAH8fNUMjZPOFk1VlNVTDNKRkFMN0Y2MVNEMk9YWS4u&quot;,&quot;formURL&quot;:&quot;https://forms.office.com/Pages/ResponsePage.aspx?id=9r8fdgtzUUKVjsQsvv28NJKapv2g0R9KhR7M0bAH8fNUMjZPOFk1VlNVTDNKRkFMN0Y2MVNEMk9YWS4u&quot;,&quot;inputURL&quot;:&quot;https://forms.office.com/Pages/ResponsePage.aspx?id=9r8fdgtzUUKVjsQsvv28NJKapv2g0R9KhR7M0bAH8fNUMjZPOFk1VlNVTDNKRkFMN0Y2MVNEMk9YWS4u&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="b19b3b9e-8d13-4fec-a93c-401a091c0707" Order="2" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
+      <pnp:Footer Enabled="true" Logo="{site}/SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" RemoveExistingNodes="false" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
+
