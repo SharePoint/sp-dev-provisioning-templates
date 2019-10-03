@@ -26,21 +26,21 @@
       }
     ],
     "displayInfo": {
-        "pageTemplateId": "0C827DDB-18E9-4709-896B-12B0C34C8E40",
+        "pageTemplateId": "system/pageTemplates/template-1",
         "descriptionParagraphs": [
-            "This template shows how a typical company brand site could look like in the SharePoint Online. It has example pages and content to get you started on updating the template based on your specific requirements.",
-            "This site could be associated to the enterprise portal or hub site, so that it is part of the main navigation with the other related sites in single consistent information architecture."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur."
         ],
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Contoso Landing Layout",
-                "url": "./full-layout-leadership-connection.png"
+                "altText": "The Landing Layout",
+                "url": "./full-layout-the-communications.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "Contoso Landing Preview",
-                "url": "./card-preview-contoso-landing.png"
+                "altText": "The Landing Preview",
+                "url": "./card-the-communications.jpg"
             }
         ],
         "detailItemCategories": [
@@ -48,28 +48,59 @@
                 "name": "Webparts",
                 "items": [
                     {
-                        "name": "Events",
-                        "description": "Compact layout",
-                        "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
-                    },
-                    {
-                        "name": "Group Calendar",
-                        "description": "Office 365 group calendar",
-                        "url": "https://support.office.com/en-us/article/use-the-group-calendar-web-part-eaf3c04d-5699-48cb-8b5e-3caa887d51ce"
-                    },
-                    {
-                        "name": "Highlighted Content",
-                        "description": "Sourced library, card view",
-                        "url": "https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd"
-                    },
-                    {
-                        "name": "Instagram",
-                        "badgeText": "Custom Web Part"
-                    },
-                    {
                         "name": "News",
-                        "description": "Carousel, top story layouts",
+                        "description": "Carousel, Side-by-side, List",
                         "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
+                    },
+                    {
+                        "name": "Quick Links",
+                        "description": "Filmstrip",
+                        "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                    },
+                    {
+                        "name": "Twitter",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-twitter-web-part-15db6b3b-d167-41dd-9875-2af64b44d820"
+                    },
+                    {
+                        "name": "Yammer",
+                        "description": "Conversations",
+                        "url": "https://support.office.com/en-us/article/use-a-yammer-web-part-in-sharepoint-online-a53cfa0c-3d09-42c8-a286-1038a81c59da"
+                    },
+                    {
+                        "name": "Image",
+                        "description": "Text over image",
+                        "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
+                    },
+                    {
+                        "name": "Countdown timer",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-countdown-timer-web-part-a13ffef8-0bf1-409e-be23-98af1d1736e7"
+                    },
+                    {
+                        "name": "Weather",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/show-the-weather-on-your-page-4a86540e-0846-4fc0-bad0-1a82fcd430fc"
+                    },
+                    {
+                        "name": "World clock",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-world-clock-web-part-aa2ede87-e331-44f1-a116-a5b8fc67fd04"
+                    },
+                    {
+                        "name": "Recent documents",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-recent-documents-web-part-8aa8c0f2-d2e3-43f9-90f5-fd6ddf0669c3"
+                    },
+                    {
+                        "name": "Sites",
+                        "description": "Compact",
+                        "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
+                    },                                                                               
+                    {
+                        "name": "Highlighted content",
+                        "description": "Grid",
+                        "url": "https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd"
                     }
                 ]
             },
@@ -77,18 +108,37 @@
                 "name": "Features",
                 "items": [
                     {
-                        "name": "Header background"
+                        "name": "Custom company theme",
+                        "url": "https://docs.microsoft.com/en-us/sharepoint/dev/general-development/how-to-deploy-a-custom-theme-in-sharepoint"
                     },
                     {
-                        "name": "Section background"
+                        "name": "Vertical section",
+                        "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
                     },
+                    {
+                        "name": "Section background",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Mega Menu",
+                        "url": "https://support.office.com/en-us/article/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca"
+                    },
+                    {
+                        "name": "Compact header",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Header background",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },                                 
+                    {
+                        "name": "Custom site logo",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
+                        "badgeText": ""
+                    },                        
                     {
                         "name": "Footer",
-                        "url": "https://support.office.com/en-us/article/change-the-look-of-your-sharepoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                    },
-                    {
-                        "name": "Custom logo",
-                        "badgeText": "Coming Soon"
+                        "url": "https://docs.microsoft.com/en-us/sharepoint/dev/features/site-footer"
                     }
                 ]
             },
@@ -96,7 +146,7 @@
                 "name": "Site Content",
                 "items": [
                     {
-                        "name": "New site collection using communication site template, unless applied on top of existing site"
+                        "name": "New site collection using communication site template"
                     },
                     {
                         "name": "Custom welcome page"
@@ -106,6 +156,9 @@
                     },
                     {
                         "name": "Sample image content used in the template"
+                    },
+                    {
+                        "name": "Sample documents used in the pages"
                     }
                 ]
             },

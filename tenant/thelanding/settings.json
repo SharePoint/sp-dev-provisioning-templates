@@ -35,12 +35,12 @@
                 {
                     "type": "fullpage",
                     "altText": "The Landing Layout",
-                    "url": "./full-layout-the-landing.png"
+                    "url": "./full-layout-thelanding.jpg"
                 },
                 {
                     "type": "cardpreview",
                     "altText": "The Landing Preview",
-                    "url": "./card-the-landing.png"
+                    "url": "./card-thelanding.jpg"
                 }
             ],
             "detailItemCategories": [
