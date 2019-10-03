@@ -1,88 +1,85 @@
-<div [pnpDetailsPageTemplateContext]="context" class="page-wrapper">
+<div [slbDetailsPageTemplateContext]="context" class="page-wrapper">
     <section class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-xl-5">
                 <h1>
-                    <pnp-package-title></pnp-package-title>
+                    <slb-package-title></slb-package-title>
                 </h1>
 
-                <div class="pnp-font-family-semibold pnp-font-size-smaller">
-                    <pnp-package-description></pnp-package-description>
+                <div class="slb-font-family-semibold slb-font-size-smaller">
+                    <slb-package-description></slb-package-description>
                 </div>
 
                 <div class="subsection template-info">
-                    <pnp-tab-group alignLabels="left">
-                        <ng-template pnpDisplayForCategory="Webparts" let-items="items">
-                            <pnp-tab label="Webparts">
+                    <slb-tab-group alignLabels="left">
+                        <ng-template slbDisplayForCategory="Webparts" let-items="items">
+                            <slb-tab label="Webparts">
                                 <div class="d-flex flex-wrap">
                                     <div class="w-50 pr-3 mt-3" *ngFor="let item of items">
-                                        <pnp-detail-item [item]="item"></pnp-detail-item>
+                                        <slb-detail-item [item]="item"></slb-detail-item>
                                     </div>
                                 </div>
-                            </pnp-tab>
+                            </slb-tab>
                         </ng-template>
 
-                        <ng-template pnpDisplayForCategory="Features" let-items="items">
-                            <pnp-tab label="Features">
+                        <ng-template slbDisplayForCategory="Features" let-items="items">
+                            <slb-tab label="Features">
                                 <div class="d-flex flex-wrap">
                                     <div class="w-50 pr-3 mt-3" *ngFor="let item of items">
-                                        <pnp-detail-item [item]="item"></pnp-detail-item>
+                                        <slb-detail-item [item]="item"></slb-detail-item>
                                     </div>
                                 </div>
-                            </pnp-tab>
+                            </slb-tab>
                         </ng-template>
 
-                        <ng-template pnpDisplayForCategory="Site Content" let-items="items">
-                            <pnp-tab label="Site Content">
+                        <ng-template slbDisplayForCategory="Site Content" let-items="items">
+                            <slb-tab label="Site Content">
                                 <ul class="mt-3">
                                     <li *ngFor="let item of items">
                                         {{ item.name }}
                                     </li>
                                 </ul>
-                            </pnp-tab>
+                            </slb-tab>
                         </ng-template>
 
-                        <ng-template pnpDisplayForCategory="Resources" let-items="items">
-                            <pnp-tab label="Resources">
+                        <ng-template slbDisplayForCategory="Resources" let-items="items">
+                            <slb-tab label="Resources">
                                 <div class="d-flex flex-wrap">
                                     <div class="w-50 pr-3 mt-3" *ngFor="let item of items">
-                                        <pnp-detail-item [item]="item"></pnp-detail-item>
+                                        <slb-detail-item [item]="item"></slb-detail-item>
                                     </div>
                                 </div>
-                            </pnp-tab>
+                            </slb-tab>
                         </ng-template>
-                    </pnp-tab-group>
+                    </slb-tab-group>
                 </div>
 
-                <div class="subsection pnp-font-size-smaller add-to-tenant-subsection">
-                    <pnp-sticky-header>
-                        <div pnpStickyHeaderContentClass="container-fluid stickied-header-content">
+                <div class="subsection slb-font-size-smaller add-to-tenant-subsection">
+                    <slb-sticky-header>
+                        <div slbStickyHeaderContentClass="container-fluid stickied-header-content">
                             <div class="d-flex w-100 align-items-center justify-content-between">
                                 <h1 class="m-0">
-                                    <pnp-package-title></pnp-package-title>
+                                    <slb-package-title></slb-package-title>
                                 </h1>
-                                <button pnp-cta-button>Add to your tenant</button>
+                                <button slb-cta-button slbAddToTenantButton>Add to your tenant</button>
                             </div>
                         </div>
-                    </pnp-sticky-header>
+                    </slb-sticky-header>
                 </div>
 
-                <div class="subsection" *ngIf="context.requiresTenantAdmin">
-                    You will need to be a tenant administrator to be able to deploy this solution
-                </div>
-                <div class="subsection" *ngIf="context.requiresSiteAdmin">
-                    You will need to be a tenant administrator to be able to deploy this solution
+                <div class="subsection">
+                    <slb-permission-message></slb-permission-message>
                 </div>
 
                 <div class="subsection">
                     <h4 class="mb-3">System Requirements</h4>
-                    <pnp-system-requirements-table class="w-100"></pnp-system-requirements-table>
+                    <slb-system-requirements-table class="w-100"></slb-system-requirements-table>
                 </div>
             </div>
 
             <div class="col-lg-6 col-xl-7 image-container">
                 <picture class="d-block animate-slide-left-fade-in">
-                    <img pnpTemplatePreviewImage class="w-100 box-shadow-elevation-1" />
+                    <img slbTemplatePreviewImage class="w-100 box-shadow-elevation-1" />
                 </picture>
             </div>
         </div>
