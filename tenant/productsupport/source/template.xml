@@ -1,0 +1,435 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Product Support"
+                  DisplayName="Product Support"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/leadershipconnection/top-leadership-connection.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">Product support</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/productmarketing</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSiteNoGroup" ProvisioningId="MAIN" Title="{parameter:SiteTitle}" Description="" Url="{hosturl}{parameter:SiteUrl}" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="STS#3" Scope="RootSite">
+      <pnp:Theme Name="">
+        {
+        "themeLight":  "#9edacb",
+        "themeTertiary":  "#51b69d",
+        "black":  "#494847",
+        "neutralSecondary":  "#a3a2a0",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "themeSecondary":  "#1c9375",
+        "themeDarker":  "#064a39",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralPrimaryAlt":  "#8d8b8a",
+        "neutralPrimary":  "#323130",
+        "themeDark":  "#08654e",
+        "themeLighter":  "#c9ebe3",
+        "neutralTertiary":  "#bab8b7",
+        "accent":  "#596275",
+        "neutralQuaternaryAlt":  "#dadada",
+        "themeLighterAlt":  "#f1faf8",
+        "white":  "#ffffff",
+        "neutralLighter":  "#f4f4f4",
+        "neutralLight":  "#eaeaea",
+        "neutralDark":  "#605e5d",
+        "themeDarkAlt":  "#0a775c",
+        "neutralLighterAlt":  "#f8f8f8",
+        "themePrimary":  "#0b8466"
+        }
+      </pnp:Theme>
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Home" Url="{site}" />
+            <pnp:NavigationNode Title="Calendar" Url="https://outlook.office365.com/" IsExternal="true" />
+            <pnp:NavigationNode Title="Documents" Url="{site}/Shared Documents/Forms/ContosoWork Guides.aspx" />
+            <pnp:NavigationNode Title="Customer scripts" Url="{site}">
+              <pnp:NavigationNode Title="Consumer products" Url="{site}" />
+              <pnp:NavigationNode Title="Enterprise products" Url="{site}" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Product Support OneNote" Url="{site}" />
+            <pnp:NavigationNode Title="Recent" Url="" IsExternal="true">
+              <pnp:NavigationNode Title="Scripts" Url="{site}/Scripts/Forms/AllItems.aspx" />
+              <pnp:NavigationNode Title="Product Imagery" Url="{site}/Product Imagery/Forms/AllItems.aspx" />
+              <pnp:NavigationNode Title="Products" Url="{site}/Lists/Products/All Products.aspx" />
+            </pnp:NavigationNode>
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/productsupport_logo.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="Scripts/Contoso Falcon Customer Script.pdf" Folder="Scripts" Overwrite="true" Level="Published" />
+        <pnp:File Src="Scripts/Contoso Flex Customer Script.pdf" Folder="Scripts" Overwrite="true" Level="Published" />
+        <pnp:File Src="Scripts/Contoso Mark8 Controller Customer Script.pdf" Folder="Scripts" Overwrite="true" Level="Published" />
+        <pnp:File Src="Scripts/Contoso Mark8 Customer Script.pdf" Folder="Scripts" Overwrite="true" Level="Published" />
+        <pnp:File Src="Scripts/Contoso Quad Customer Script.pdf" Folder="Scripts" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/productmarketing/SKYPE15_Peter_001.jpg" Folder="SiteAssets/SitePages/productmarketing" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Did-someone-say-new-swag-/product-swag.jpg" Folder="SiteAssets/SitePages/Did-someone-say-new-swag-" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/You-re-invited!/ckturistando-HTCQCvwV9XY-unsplash.jpg" Folder="SiteAssets/SitePages/You-re-invited!" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/New-team-lead/AdobeStock_151993709.jpeg" Folder="SiteAssets/SitePages/New-team-lead" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Holiday-schedule/calendar-appointment-agenda-schedule-planner-PM6UKJQ.jpg" Folder="SiteAssets/SitePages/Holiday-schedule" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Contoso Annual Report [Draft].docx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Contoso Annual Report.docx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Contoso Company Goals Q1 - Q4.docx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Contoso Five Year Vision.docx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Contoso NextGen Camera Product Planning.docx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/contoso_marketing_facts.pptx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/contoso-timeline.pptx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Corporate Giving Press Release.docx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/European Backpacking Trip.xlsx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Financial Reporting.xlsx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/Potential Australia Exp..pptx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Shared Documents/QT300 Accessories Specs.xlsx" Folder="Shared%20Documents" Overwrite="true" Level="Published" />
+        <pnp:File Src="Product Imagery/AerialGimbal.png" Folder="Product%20Imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Product Imagery/Contoso4.png" Folder="Product%20Imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Product Imagery/ContosoElite.png" Folder="Product%20Imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Product Imagery/ContosoFalcon.png" Folder="Product%20Imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Product Imagery/EagleAir.png" Folder="Product%20Imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Product Imagery/Mark8.png" Folder="Product%20Imagery" Overwrite="true" Level="Published" />
+        <pnp:File Src="Product Imagery/Mark8-remotecontroller.png" Folder="Product%20Imagery" Overwrite="true" Level="Published" />
+      </pnp:Files>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/productsupport_logo.jpg" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:SiteFields>
+        <Field Type="Choice" DisplayName="Career Category" Required="FALSE" Format="Dropdown" StaticName="CareerCategory" Name="CareerCategory" ID="{107f7270-0461-4bec-bf23-ac632ec9b290}" SourceID="{0b33001b-8c9b-4fdf-9c4f-c1e09dffbd03}" AllowDeletion="TRUE">
+          <Default>Career Guide</Default>
+          <CHOICES>
+            <CHOICE>Career Guide</CHOICE>
+            <CHOICE>Promotions</CHOICE>
+            <CHOICE>Feedback</CHOICE>
+            <CHOICE>Referrals</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Choice" DisplayName="Work Tools" Required="FALSE" Format="Dropdown" StaticName="WorkTools" Name="WorkTools" ID="{de35eeae-f0d1-4fea-a992-ab36d395f88e}" SourceID="{0b33001b-8c9b-4fdf-9c4f-c1e09dffbd03}" AllowDeletion="TRUE">
+          <Default>Connect Tool</Default>
+          <CHOICES>
+            <CHOICE>Connect Tool</CHOICE>
+            <CHOICE>Paystub</CHOICE>
+            <CHOICE>TAR</CHOICE>
+            <CHOICE>Stock</CHOICE>
+            <CHOICE>Rewards</CHOICE>
+            <CHOICE>Job Search</CHOICE>
+            <CHOICE>Employment Verification</CHOICE>
+          </CHOICES>
+        </Field>
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0100B609FEFDEFAA484299C6DE254182E666" Name="ContosoHR" Description="custom list content type" Group="Custom Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="false" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" UpdateChildren="false" />
+            <pnp:FieldRef ID="107f7270-0461-4bec-bf23-ac632ec9b290" Name="CareerCategory" UpdateChildren="false" />
+            <pnp:FieldRef ID="de35eeae-f0d1-4fea-a992-ab36d395f88e" Name="WorkTools" UpdateChildren="false" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Documents" Description="Modified base document library to illustrate SharePoint site scripting capabilities - Fall 2018" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" ContentTypesEnabled="true" EnableAttachments="false" ListExperience="NewExperience" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0100B609FEFDEFAA484299C6DE254182E666" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{6445BDF1-9CF8-48D9-A989-64D285330F69}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{5242BFF9-C5B0-4FED-A035-92CD14B3919B}" DefaultView="TRUE" Type="HTML" DisplayName="Contoso@Work Guides" Url="{site}/Shared Documents/Forms/ContosoWork Guides.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Title" />
+                  <FieldRef Name="CareerCategory" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="ID" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="CareerCategory" />
+                <FieldRef Name="WorkTools" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">100</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{585d452c-20a1-46f7-a0ef-3b6b035711db}" Type="Note" DisplayName="KeyPoints" Name="MediaServiceKeyPoints" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="FALSE" ShowInNewForm="FALSE" ShowInDisplayForm="TRUE" ShowInEditForm="TRUE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Documents}}" StaticName="MediaServiceKeyPoints" ColName="ntext2" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="107f7270-0461-4bec-bf23-ac632ec9b290" Name="CareerCategory" DisplayName="Career Category" />
+            <pnp:FieldRef ID="de35eeae-f0d1-4fea-a992-ab36d395f88e" Name="WorkTools" DisplayName="Work Tools" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Scripts" Description="" TemplateType="101" Url="Scripts" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{DAAB2D70-B07D-42F0-B3EB-47DE519015B8}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Scripts/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Product Imagery" Description="" TemplateType="101" Url="Product Imagery" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{DAAB2D70-B07D-42F0-B3EB-47DE519015B8}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Scripts/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Products" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Products" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Products/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Products/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Products/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{3AA06870-D181-4A99-AA66-C0EE0D6708E6}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Products/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Attachments" />
+                <FieldRef Name="RetailCategory" />
+                <FieldRef Name="Specguide" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+            <View Name="{3CC2FD17-3EA5-4F24-AF8E-09923AA2CA99}" DefaultView="TRUE" Type="HTML" DisplayName="All Products" Url="{site}/Lists/Products/All Products.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="LinkTitle" Ascending="TRUE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="PhotoSubmission" />
+                <FieldRef Name="RetailCategory" />
+                <FieldRef Name="Specguide" />
+                <FieldRef Name="CustomerRating" />
+                <FieldRef Name="ReleaseDate" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="Retail Category" FillInChoice="FALSE" Format="Dropdown" Name="RetailCategory" Title="Retail Category" Type="Choice" ID="{6f35006c-4d87-414a-8788-5171356ae262}" SourceID="{{listid:Products}}" StaticName="RetailCategory" ColName="nvarchar4" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Consumer</CHOICE>
+                <CHOICE>Enterprise</CHOICE>
+              </CHOICES>
+              <Default>Consumer</Default>
+            </Field>
+            <Field DisplayName="Spec guide" Format="Hyperlink" Name="Specguide" Title="Spec guide" Type="URL" ID="{8ec2b8b5-ed59-48c6-8548-f9ef7a1e7714}" SourceID="{{listid:Products}}" StaticName="Specguide" ColName="nvarchar7" RowOrdinal="0" ColName2="nvarchar8" RowOrdinal2="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&#xA;  &quot;$schema&quot;: &quot;https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json&quot;,&#xA;  &quot;elmType&quot;: &quot;img&quot;,&#xA;  &quot;attributes&quot;: {&#xA;    &quot;src&quot;: &quot;[$PhotoSubmission]&quot;&#xA;  },&#xA;  &quot;style&quot;: {&#xA;    &quot;width&quot;: &quot;90%&quot;,&#xA;    &quot;max-height&quot;: &quot;120px&quot;,&#xA;    &quot;margin-left&quot;: &quot;0px&quot;,&#xA;    &quot;margin-right&quot;: &quot;24px&quot;,&#xA;    &quot;display&quot;: &quot;inline-block&quot;&#xA;  }&#xA;}" DisplayName="Product image" Format="Dropdown" MaxLength="255" Name="PhotoSubmission" Title="Product image" Type="Text" ID="{ef374fa2-e271-494a-bf79-8202e0482995}" Version="17" StaticName="PhotoSubmission" SourceID="{{listid:Products}}" ColName="nvarchar5" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;style&quot;:{&quot;position&quot;:&quot;absolute&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;padding&quot;:&quot;0 4px&quot;}},{&quot;elmType&quot;:&quot;div&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&amp;&amp;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[999,0]},{&quot;operator&quot;:&quot;&gt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]}]},&quot;sp-field-dashedBorderRight&quot;,&quot;&quot;]}},&quot;style&quot;:{&quot;min-height&quot;:&quot;inherit&quot;,&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding-left&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;+&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;*&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;/&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;-&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;abs&quot;,&quot;operands&quot;:[0]},{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},{&quot;operator&quot;:&quot;abs&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},0,&quot;@currentField&quot;]}]},0]}]},999]},100]},&quot;%&quot;]},0]}}},{&quot;elmType&quot;:&quot;div&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&amp;&amp;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]}]},&quot;sp-css-backgroundColor-errorBackground sp-css-borderTop-errorBorder&quot;,&quot;sp-css-backgroundColor-warningBackground50 sp-css-borderTop-warningBorder&quot;]}},&quot;style&quot;:{&quot;min-height&quot;:&quot;inherit&quot;,&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;width&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;+&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;*&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;/&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},{&quot;operator&quot;:&quot;abs&quot;,&quot;operands&quot;:[0]},{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,999]},999,{&quot;operator&quot;:&quot;abs&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]}]},999]},100]},&quot;%&quot;]},{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,999]},&quot;100%&quot;,{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},&quot;0%&quot;,{&quot;operator&quot;:&quot;+&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;*&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;/&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;-&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},999]},100]},&quot;%&quot;]}]}]}]}}},{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;min-height&quot;:&quot;inherit&quot;,&quot;box-sizing&quot;:&quot;border-box&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&amp;&amp;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[999,0]},{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]}]},&quot;sp-field-dashedBorderRight&quot;,&quot;&quot;]}}}],&quot;templateId&quot;:&quot;DatabarNumber&quot;}" DisplayName="Call volume" Format="Dropdown" Name="CustomerRating" Percentage="FALSE" Title="Call volume" Type="Number" ID="{83e2b716-87bc-4ade-9270-ab7c7f513a14}" Version="7" StaticName="CustomerRating" SourceID="{{listid:Products}}" ColName="float1" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;padding&quot;:&quot;0 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]},{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@now&quot;]}]}]},&quot;sp-css-backgroundColor-blueBackground37&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]},{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@now&quot;]}]}]},&quot;sp-css-backgroundColor-successBackground&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]},{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@now&quot;]}]}]},&quot;sp-css-backgroundColor-blockingBackground50&quot;,&quot;&quot;]}]}]}]}},&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;templateId&quot;:&quot;BgColorDate&quot;}" DisplayName="Release Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" Name="ReleaseDate" Title="Release Date" Type="DateTime" ID="{897ec153-f67a-4475-9f99-b7311e492f07}" Version="3" StaticName="ReleaseDate" SourceID="{{listid:Products}}" ColName="datetime1" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:DataRows>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Mark8</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Consumer</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Mark8 v.0419</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">2/1/2020</pnp:DataValue>
+              <pnp:DataValue FieldName="CustomerRating">1201</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Product Imagery/Mark8.png</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Eagle Air</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Enterprise</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Eagle Air v.0919</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">8/24/2016</pnp:DataValue>
+              <pnp:DataValue FieldName="CustomerRating">423</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Product Imagery/EagleAir.png</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Mark8 controller</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Consumer</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Mark8 Controller v.0419</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">2/1/2020</pnp:DataValue>
+              <pnp:DataValue FieldName="CustomerRating">812</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Product Imagery/Mark8-remotecontroller.png</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Gimbal Case</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Consumer</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Gimbal Aerial case v.0919</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">8/1/2018</pnp:DataValue>
+              <pnp:DataValue FieldName="CustomerRating">398</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Product Imagery/AerialGimbal.png</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Contoso Quad</pnp:DataValue>
+              <pnp:DataValue FieldName="RetailCategory">Enterprise</pnp:DataValue>
+              <pnp:DataValue FieldName="Specguide">{hosturl}{site}, Contoso Quad v.0318</pnp:DataValue>
+              <pnp:DataValue FieldName="ReleaseDate">2/9/2019</pnp:DataValue>
+              <pnp:DataValue FieldName="CustomerRating">36</pnp:DataValue>
+              <pnp:DataValue FieldName="PhotoSubmission">{hosturl}{site}/Product Imagery/Contoso4.png</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnVerticalSection" VerticalSectionEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;67c4279f-84b6-45fc-9b12-7c9b5b2e68bc&quot;, &quot;title&quot;: &quot;List&quot;, &quot;description&quot;: &quot;Add a list&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:false,&quot;selectedListId&quot;:&quot;{listid:Products}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Lists/Products&quot;,&quot;webRelativeListUrl&quot;:&quot;/Lists/Products&quot;,&quot;webpartHeightKey&quot;:4,&quot;selectedViewId&quot;:&quot;{viewid:Products,All Products}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;,&quot;hideCommandBar&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Products recently released&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;8ea37f69-bc98-4b4c-ba5b-0b0a15b1daf9&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Create a call to action banner with a clickable button&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/productmarketing/SKYPE15_Peter_001.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1.4641000000000006,&quot;focalPosition&quot;:{&quot;x&quot;:18.75,&quot;y&quot;:44.078947368421048}},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;CONNECT ON TEAMS »&quot;,&quot;overlayText.text&quot;:&quot;Report an issue.&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/productmarketing/SKYPE15_Peter_001.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;https://teams.microsoft.com/l/team/19:f84120b0541f40d89140f207e67e3d4a%40thread.skype/conversations?groupId={sitecollectionconnectedoffice365groupid}&amp;tenantId=761fbff6-730b-4251-958e-c42cbefdbc34&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="News" JsonControlData="{&quot;id&quot;: &quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;, &quot;instanceId&quot;: &quot;3edbf493-1190-4816-b1fc-bf0bf6988882&quot;, &quot;title&quot;: &quot;News&quot;, &quot;description&quot;: &quot;Display recent news.&quot;, &quot;dataVersion&quot;: &quot;1.11&quot;, &quot;properties&quot;: {&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:true,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:true,&quot;showAuthor&quot;:true,&quot;showDate&quot;:false},&quot;layoutId&quot;:&quot;GridNews&quot;,&quot;prefetchCount&quot;:4,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;templateId&quot;:&quot;GridNews&quot;,&quot;propsLastEdited&quot;:&quot;2019-09-18T21:03:29.164Z&quot;,&quot;compactMode&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Team announcements&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;ef1147f9-e3f4-4844-b4fe-ab7e6c1f3a10&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="2" Column="2" />
+                <pnp:CanvasControl WebPartType="GroupCalendar" JsonControlData="{&quot;id&quot;: &quot;6676088b-e28e-4a90-b9cb-d0d0303cd2eb&quot;, &quot;instanceId&quot;: &quot;dc5ef402-175a-4337-be97-21239c933d0b&quot;, &quot;title&quot;: &quot;Group calendar&quot;, &quot;description&quot;: &quot;Display a calendar from one of your groups&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;selectedGroupId&quot;:&quot;{sitecollectionconnectedoffice365groupid}&quot;,&quot;selectedGroupName&quot;:&quot;Product support&quot;,&quot;selectedGroupEmail&quot;:&quot;&quot;,&quot;accessType&quot;:&quot;public&quot;,&quot;showPerPage&quot;:4,&quot;timeSpanLimitInMonth&quot;:6}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="6676088b-e28e-4a90-b9cb-d0d0303cd2eb" Order="3" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="ContentRollup" JsonControlData="{&quot;id&quot;: &quot;daf0b71c-6de8-4ef7-b511-faae7c388708&quot;, &quot;instanceId&quot;: &quot;307869fc-c0d5-4e3a-ae2d-d32cf42df27f&quot;, &quot;title&quot;: &quot;Highlighted content&quot;, &quot;description&quot;: &quot;Dynamically display content based on location, type, and filtering&quot;, &quot;dataVersion&quot;: &quot;2.4&quot;, &quot;properties&quot;: {&quot;displayMaps&quot;:{&quot;1&quot;:{&quot;headingText&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;headingUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;title&quot;:{&quot;sources&quot;:[&quot;UserName&quot;,&quot;Title&quot;]},&quot;personImageUrl&quot;:{&quot;sources&quot;:[&quot;ProfileImageSrc&quot;]},&quot;name&quot;:{&quot;sources&quot;:[&quot;Name&quot;]},&quot;initials&quot;:{&quot;sources&quot;:[&quot;Initials&quot;]},&quot;itemUrl&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]},&quot;activity&quot;:{&quot;sources&quot;:[&quot;ModifiedDate&quot;]},&quot;previewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;,&quot;PictureThumbnailURL&quot;]},&quot;iconUrl&quot;:{&quot;sources&quot;:[&quot;IconUrl&quot;]},&quot;accentColor&quot;:{&quot;sources&quot;:[&quot;AccentColor&quot;]},&quot;cardType&quot;:{&quot;sources&quot;:[&quot;CardType&quot;]},&quot;tipActionLabel&quot;:{&quot;sources&quot;:[&quot;TipActionLabel&quot;]},&quot;tipActionButtonIcon&quot;:{&quot;sources&quot;:[&quot;TipActionButtonIcon&quot;]},&quot;className&quot;:{&quot;sources&quot;:[&quot;ClassName&quot;]}},&quot;2&quot;:{&quot;column1&quot;:{&quot;heading&quot;:&quot;&quot;,&quot;sources&quot;:[&quot;FileType&quot;],&quot;width&quot;:34},&quot;column2&quot;:{&quot;heading&quot;:&quot;Title&quot;,&quot;sources&quot;:[&quot;Title&quot;],&quot;linkUrls&quot;:[&quot;WebPath&quot;],&quot;width&quot;:250},&quot;column3&quot;:{&quot;heading&quot;:&quot;Modified&quot;,&quot;sources&quot;:[&quot;ModifiedDate&quot;],&quot;width&quot;:100},&quot;column4&quot;:{&quot;heading&quot;:&quot;Modified By&quot;,&quot;sources&quot;:[&quot;Name&quot;],&quot;width&quot;:150}},&quot;3&quot;:{&quot;id&quot;:{&quot;sources&quot;:[&quot;UniqueID&quot;]},&quot;edit&quot;:{&quot;sources&quot;:[&quot;edit&quot;]},&quot;DefaultEncodingURL&quot;:{&quot;sources&quot;:[&quot;DefaultEncodingURL&quot;]},&quot;FileExtension&quot;:{&quot;sources&quot;:[&quot;FileExtension&quot;]},&quot;FileType&quot;:{&quot;sources&quot;:[&quot;FileType&quot;]},&quot;Path&quot;:{&quot;sources&quot;:[&quot;Path&quot;]},&quot;PictureThumbnailURL&quot;:{&quot;sources&quot;:[&quot;PictureThumbnailURL&quot;]},&quot;PreviewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;]},&quot;SiteID&quot;:{&quot;sources&quot;:[&quot;SiteID&quot;]},&quot;SiteTitle&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;Title&quot;:{&quot;sources&quot;:[&quot;Title&quot;]},&quot;UniqueID&quot;:{&quot;sources&quot;:[&quot;UniqueID&quot;]},&quot;WebId&quot;:{&quot;sources&quot;:[&quot;WebId&quot;]},&quot;WebPath&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]}},&quot;4&quot;:{&quot;headingText&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;headingUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;title&quot;:{&quot;sources&quot;:[&quot;UserName&quot;,&quot;Title&quot;]},&quot;personImageUrl&quot;:{&quot;sources&quot;:[&quot;ProfileImageSrc&quot;]},&quot;name&quot;:{&quot;sources&quot;:[&quot;Name&quot;]},&quot;initials&quot;:{&quot;sources&quot;:[&quot;Initials&quot;]},&quot;itemUrl&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]},&quot;activity&quot;:{&quot;sources&quot;:[&quot;ModifiedDate&quot;]},&quot;previewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;,&quot;PictureThumbnailURL&quot;]},&quot;iconUrl&quot;:{&quot;sources&quot;:[&quot;IconUrl&quot;]},&quot;accentColor&quot;:{&quot;sources&quot;:[&quot;AccentColor&quot;]},&quot;cardType&quot;:{&quot;sources&quot;:[&quot;CardType&quot;]},&quot;tipActionLabel&quot;:{&quot;sources&quot;:[&quot;TipActionLabel&quot;]},&quot;tipActionButtonIcon&quot;:{&quot;sources&quot;:[&quot;TipActionButtonIcon&quot;]},&quot;className&quot;:{&quot;sources&quot;:[&quot;ClassName&quot;]}}},&quot;query&quot;:{&quot;contentLocation&quot;:4,&quot;contentTypes&quot;:[1],&quot;sortType&quot;:1,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;documentTypes&quot;:[99],&quot;advancedQueryText&quot;:&quot;&quot;},&quot;templateId&quot;:4,&quot;maxItemsPerPage&quot;:8,&quot;hideWebPartWhenEmpty&quot;:false,&quot;sites&quot;:[],&quot;queryMode&quot;:&quot;Basic&quot;,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;dataProviderId&quot;:&quot;List&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;lastListId&quot;:&quot;{listid:Scripts}&quot;,&quot;listId&quot;:&quot;{listid:Scripts}&quot;,&quot;listTitle&quot;:&quot;Scripts&quot;,&quot;caml&quot;:&quot;&lt;View Scope=\&quot;RecursiveAll\&quot;&gt;&lt;Query&gt;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&lt;OrderBy&gt;&lt;FieldRef Name=\&quot;Modified\&quot; Ascending=\&quot;false\&quot; /&gt;&lt;/OrderBy&gt;&lt;/Query&gt;&lt;ViewFields&gt;&lt;FieldRef Name=\&quot;Editor\&quot; /&gt;&lt;FieldRef Name=\&quot;FileLeafRef\&quot; /&gt;&lt;FieldRef Name=\&quot;File_x0020_Type\&quot; /&gt;&lt;FieldRef Name=\&quot;ID\&quot; /&gt;&lt;FieldRef Name=\&quot;Modified\&quot; /&gt;&lt;FieldRef Name=\&quot;Title\&quot; /&gt;&lt;FieldRef Name=\&quot;UniqueID\&quot; /&gt;&lt;FieldRef Name=\&quot;_ShortcutUrl\&quot; /&gt;&lt;/ViewFields&gt;&lt;RowLimit Paged=\&quot;false\&quot;&gt;8&lt;/RowLimit&gt;&lt;/View&gt;&quot;,&quot;isDefaultDocumentLibrary&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Customer scripts&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="daf0b71c-6de8-4ef7-b511-faae7c388708" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="QuickChart" JsonControlData="{&quot;id&quot;: &quot;91a50c94-865f-4f5c-8b4e-e49659e69772&quot;, &quot;instanceId&quot;: &quot;ef456160-0507-44fe-a0db-d64caeef9b2c&quot;, &quot;title&quot;: &quot;Quick chart&quot;, &quot;description&quot;: &quot;Show your data visually in a bar or pie chart&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;data&quot;:[{&quot;id&quot;:&quot;7CFFD4B0-436E-430D-94C5-A4F9D22DB3FE&quot;,&quot;label&quot;:&quot;Sunday&quot;,&quot;value&quot;:&quot;55&quot;,&quot;valueNumber&quot;:55},{&quot;id&quot;:&quot;07cf8642-da64-469d-8098-8e9d73fb7f2e&quot;,&quot;label&quot;:&quot;Monday&quot;,&quot;value&quot;:&quot;29&quot;,&quot;valueNumber&quot;:29},{&quot;id&quot;:&quot;12cfa23f-678a-49b3-88a9-c699a7ca4a4b&quot;,&quot;label&quot;:&quot;Tuesday&quot;,&quot;value&quot;:&quot;22&quot;,&quot;valueNumber&quot;:22},{&quot;id&quot;:&quot;9eec90bb-4925-41bc-af24-c71163c21ec8&quot;,&quot;label&quot;:&quot;Wednesday&quot;,&quot;value&quot;:&quot;31&quot;,&quot;valueNumber&quot;:31},{&quot;id&quot;:&quot;0eb2e0d7-3040-469f-8bc9-b6b1fac0877a&quot;,&quot;label&quot;:&quot;Thursday&quot;,&quot;value&quot;:&quot;25&quot;,&quot;valueNumber&quot;:25},{&quot;id&quot;:&quot;3a2a2a96-3670-43bb-80c2-95cdebd37786&quot;,&quot;label&quot;:&quot;Friday&quot;,&quot;value&quot;:&quot;36&quot;,&quot;valueNumber&quot;:36},{&quot;id&quot;:&quot;9a6bf703-7393-41c9-9c7b-7fa87168df92&quot;,&quot;label&quot;:&quot;Saturday&quot;,&quot;value&quot;:&quot;62&quot;,&quot;valueNumber&quot;:62}],&quot;type&quot;:0,&quot;isInitialState&quot;:false,&quot;dataSourceType&quot;:0,&quot;listItemOrderBy&quot;:0,&quot;xAxisLabel&quot;:&quot;Response time by weekday&quot;,&quot;yAxisLabel&quot;:&quot;First response time in seconds&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;First response time&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="91a50c94-865f-4f5c-8b4e-e49659e69772" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickChart" JsonControlData="{&quot;id&quot;: &quot;91a50c94-865f-4f5c-8b4e-e49659e69772&quot;, &quot;instanceId&quot;: &quot;9bdaa8c8-7762-474b-81e5-b836fac82e1a&quot;, &quot;title&quot;: &quot;Quick chart&quot;, &quot;description&quot;: &quot;Show your data visually in a bar or pie chart&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;data&quot;:[{&quot;id&quot;:&quot;7CFFD4B0-436E-430D-94C5-A4F9D22DB3FE&quot;,&quot;label&quot;:&quot;Jan&quot;,&quot;value&quot;:&quot;9280&quot;,&quot;valueNumber&quot;:9280},{&quot;id&quot;:&quot;4b9935af-0c78-455a-b38a-a4f9bcbb60ac&quot;,&quot;label&quot;:&quot;Feb&quot;,&quot;value&quot;:&quot;8103&quot;,&quot;valueNumber&quot;:8103},{&quot;id&quot;:&quot;df32ba4c-035b-454f-aa7f-622a1ade9ac0&quot;,&quot;label&quot;:&quot;Mar&quot;,&quot;value&quot;:&quot;10623&quot;,&quot;valueNumber&quot;:10623},{&quot;id&quot;:&quot;d514cbe3-3734-4c4a-a03c-f8d8ed094629&quot;,&quot;label&quot;:&quot;Apr&quot;,&quot;value&quot;:&quot;10789&quot;,&quot;valueNumber&quot;:10789},{&quot;id&quot;:&quot;50a6b70e-ab5a-464c-ac6a-c02479d82119&quot;,&quot;label&quot;:&quot;May&quot;,&quot;value&quot;:&quot;12423&quot;,&quot;valueNumber&quot;:12423},{&quot;id&quot;:&quot;7a073a03-e06f-4853-b76e-c8b6be6af9c1&quot;,&quot;label&quot;:&quot;Jun&quot;,&quot;value&quot;:&quot;10023&quot;,&quot;valueNumber&quot;:10023},{&quot;id&quot;:&quot;4a2b8f70-51ce-4490-860f-c4b2b1ebe091&quot;,&quot;label&quot;:&quot;Jul&quot;,&quot;value&quot;:&quot;11856&quot;,&quot;valueNumber&quot;:11856},{&quot;id&quot;:&quot;6dbaf53c-6c2b-4856-9387-ba00c5440c55&quot;,&quot;label&quot;:&quot;Aug&quot;,&quot;value&quot;:&quot;9898&quot;,&quot;valueNumber&quot;:9898},{&quot;id&quot;:&quot;dfde2ff5-c12f-43fc-891a-d96429a7b547&quot;,&quot;label&quot;:&quot;Sep&quot;,&quot;value&quot;:&quot;14563&quot;,&quot;valueNumber&quot;:14563},{&quot;id&quot;:&quot;a3b23daf-f70a-4b03-9ecd-b45b1e7ba725&quot;,&quot;label&quot;:&quot;Oct&quot;,&quot;value&quot;:&quot;13256&quot;,&quot;valueNumber&quot;:13256},{&quot;id&quot;:&quot;d7cf3463-d8ef-4231-b9ef-922e3418ec6b&quot;,&quot;label&quot;:&quot;Nov&quot;,&quot;value&quot;:&quot;12549&quot;,&quot;valueNumber&quot;:12549},{&quot;id&quot;:&quot;70d1b023-94ad-4a5a-a3b8-30f2decefd46&quot;,&quot;label&quot;:&quot;Dec&quot;,&quot;value&quot;:&quot;13989&quot;,&quot;valueNumber&quot;:13989}],&quot;type&quot;:0,&quot;isInitialState&quot;:false,&quot;dataSourceType&quot;:0,&quot;listItemOrderBy&quot;:0,&quot;xAxisLabel&quot;:&quot;Call volume by month&quot;,&quot;yAxisLabel&quot;:&quot;Call volume&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Call volume &amp; average response time by month&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="91a50c94-865f-4f5c-8b4e-e49659e69772" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Did-someone-say-new-swag-.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Did someone say new swag?" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Did-someone-say-new-swag-/product-swag.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="7719fc11-afef-417a-8ae1-da06de19137f" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="The new shirts are in! Come by my office to pick yours up. I have both men and women's in an assortment of sizes.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="team announcement" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="You're-invited!.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="You're invited!" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/You-re-invited!/ckturistando-HTCQCvwV9XY-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="a9fb3315-bd8f-4ebe-b49b-1dfc5ec4f835" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Mark your calendar, we have a fun one for the whole family this year! Come one, come all to the Washington State Fair." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="team announcement" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="New-team-lead.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Welcome our newest team member" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/New-team-lead/AdobeStock_151993709.jpeg}&amp;ext=jpeg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="579d1c07-4d08-4e57-8df2-d005b81e6cb2" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="We’re proud to welcome Daisy Phillips as our newest team member. Daisy&amp;nbsp;has been with the company over 4 years and is now making the switch from customer call support to product.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="tem announcement" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Holiday-schedule.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Holiday schedule" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Holiday-schedule/calendar-appointment-agenda-schedule-planner-PM6UKJQ.jpg}&amp;ext=jpg">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="5ef13ab2-53b1-4314-90ba-a7f15bd1fe11" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Thank you for your patience and flexibility over the last few weeks. The holiday schedule is now available for review.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="team announcement" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Standard" BackgroundEmphasis="Strong" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
