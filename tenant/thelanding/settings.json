@@ -35,12 +35,12 @@
               {
                   "type": "fullpage",
                   "altText": "The Landing Layout",
-                  "url": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/full-layout-the-landing.png"
+                  "url": "./full-layout-the-landing.png"
               },
               {
                   "type": "cardpreview",
                   "altText": "The Landing Preview",
-                  "url": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/top-the-landing.png"
+                  "url": "./top-the-landing.png"
               }
           ],
           "detailItemCategories": [
@@ -112,16 +112,16 @@
               {
                   "name": "Resources",
                   "items": [
-                      {
-                          "name": "Walkthrough",
-                          "url": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/resources/walkthrough.docx"
-                      },
-                      {
-                          "name": "Video",
-                          "url": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/resources/video.mp4",
-                          "previewImage": "https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/thelanding/resources/video-thumb.png"
-                      }
-                  ]
+                    {
+                        "name": "Walkthrough",
+                        "url": "./resources/walkthrough.docx"
+                    },
+                    {
+                        "name": "Video",
+                        "url": "./resources/video.mp4",
+                        "previewImage": "./resources/video-thumb.png"
+                    }
+                ]
               }
           ],
           "systemRequirements": [
