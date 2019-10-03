@@ -1,0 +1,143 @@
+{
+  "categories": [
+    "ORGANIZATION"
+  ],
+  "packageFile": "flysafeconference.pnp",
+  "abstract": "This template is an example of a home site.",
+  "sortOrder": 300,
+  "promoted": "false",
+  "sortOrderPromoted": 0,
+  "preview": "true",
+  "forceNewSite":"false",  
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
+  "visible": "true",
+  "metadata": {
+    "properties": [
+      {
+        "name": "SiteTitle",
+        "caption": "Site Title",
+        "description": "Title for your site"
+      },
+      {
+        "name": "SiteUrl",
+        "caption": "Site URL",
+        "description": "Relative URL to be used for the site",
+        "editor": "SiteUrl"
+      }
+    ],
+    "displayInfo": {
+        "pageTemplateId": "0C827DDB-18E9-4709-896B-12B0C34C8E40",
+        "descriptionParagraphs": [
+            "This template shows how a typical company brand site could look like in the SharePoint Online. It has example pages and content to get you started on updating the template based on your specific requirements.",
+            "This site could be associated to the enterprise portal or hub site, so that it is part of the main navigation with the other related sites in single consistent information architecture."
+        ],
+        "previewImages": [
+            {
+                "type": "fullpage",
+                "altText": "Contoso Landing Layout",
+                "url": "./full-layout-leadership-connection.png"
+            },
+            {
+                "type": "cardpreview",
+                "altText": "Contoso Landing Preview",
+                "url": "./card-preview-contoso-landing.png"
+            }
+        ],
+        "detailItemCategories": [
+            {
+                "name": "Webparts",
+                "items": [
+                    {
+                        "name": "Events",
+                        "description": "Compact layout",
+                        "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
+                    },
+                    {
+                        "name": "Group Calendar",
+                        "description": "Office 365 group calendar",
+                        "url": "https://support.office.com/en-us/article/use-the-group-calendar-web-part-eaf3c04d-5699-48cb-8b5e-3caa887d51ce"
+                    },
+                    {
+                        "name": "Highlighted Content",
+                        "description": "Sourced library, card view",
+                        "url": "https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd"
+                    },
+                    {
+                        "name": "Instagram",
+                        "badgeText": "Custom Web Part"
+                    },
+                    {
+                        "name": "News",
+                        "description": "Carousel, top story layouts",
+                        "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
+                    }
+                ]
+            },
+            {
+                "name": "Features",
+                "items": [
+                    {
+                        "name": "Header background"
+                    },
+                    {
+                        "name": "Section background"
+                    },
+                    {
+                        "name": "Footer",
+                        "url": "https://support.office.com/en-us/article/change-the-look-of-your-sharepoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Custom logo",
+                        "badgeText": "Coming Soon"
+                    }
+                ]
+            },
+            {
+                "name": "Site Content",
+                "items": [
+                    {
+                        "name": "New site collection using communication site template, unless applied on top of existing site"
+                    },
+                    {
+                        "name": "Custom welcome page"
+                    },
+                    {
+                        "name": "7 news articles with example content"
+                    },
+                    {
+                        "name": "Sample image content used in the template"
+                    }
+                ]
+            },
+            {
+                "name": "Resources",
+                "items": [
+                    {
+                        "name": "Walkthrough",
+                        "url": "./resources/walkthrough.docx"
+                    },
+                    {
+                        "name": "Video",
+                        "url": "./resources/video.mp4",
+                        "previewImage": "./resources/video-thumb.png"
+                    }
+                ]
+            }
+        ],
+        "systemRequirements": [
+            {
+                "name": "OS",
+                "value": "SharePoint"
+            },
+            {
+                "name": "Permission Required",
+                "value": "Tenant Admin"
+            },
+            {
+                "name": "Site Language",
+                "value": "English"
+            }
+        ]
+    }
+  }
+}

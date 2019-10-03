@@ -1,0 +1,241 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema"
+                  Author="John White"
+                  Generator="Human being"
+                  Version="1.0"
+                  Description="Contoso Brand"
+                  DisplayName="Contoso Brand"
+                  ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/contosobrand/top-contoso-brand.png">
+
+  <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteTitle">Contoso Brand</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/ContosoBrand</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Sequence ID="sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" Owner="{CurrentUserLoginName}">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+  <pnp:Templates ID="SITE-TEMPLATES">
+    <pnp:ProvisioningTemplate ID="MAIN-TEMPLATE" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Theme Name="">
+        {
+        "neutralPrimaryAlt":  "#8d8b8a",
+        "themeLighterAlt":  "#f2f9fa",
+        "black":  "#494847",
+        "themeTertiary":  "#5aa8af",
+        "primaryBackground":  "#ffffff",
+        "neutralQuaternaryAlt":  "#dadada",
+        "accent":  "#535C68",
+        "themePrimary":  "#17717A",
+        "neutralSecondary":  "#a3a2a0",
+        "themeLighter":  "#cbe7ea",
+        "themeDark":  "#12575d",
+        "neutralPrimary":  "#323130",
+        "neutralLighterAlt":  "#f8f8f8",
+        "neutralLighter":  "#f4f4f4",
+        "neutralDark":  "#605e5d",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralLight":  "#eaeaea",
+        "primaryText":  "#333333",
+        "themeDarker":  "#0d4045",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "themeDarkAlt":  "#15676e",
+        "white":  "#ffffff",
+        "bodyBackground":  "#ffffff",
+        "themeSecondary":  "#28828a",
+        "bodyText":  "#333333",
+        "disabledBackground":  "# f4f4f4",
+        "neutralTertiary":  "#bab8b7",
+        "themeLight":  "#a3d3d7",
+        "disabledText":  "#c8c8c8"
+        }
+      </pnp:Theme>
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" Title="{parameter:SiteTitle}" SiteLogo="{hosturl}{site}/SiteAssets/__sitelogo__sitelogo_brand.png" AlternateCSS="" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="The Contoso Brand" Url="http://linkless.header/" IsExternal="true">
+              <pnp:NavigationNode Title="Story" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Strategy" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Strategic initiatives" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Identity" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Core elements" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Resources" Url="http://linkless.header/" IsExternal="true" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Marketing Expression" Url="http://linkless.header/" IsExternal="true">
+              <pnp:NavigationNode Title="Accessibility" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Advertising" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Cobranding" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Email" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Events" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Partnerships and people" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Presentations" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Social Media" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Web" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Video" Url="http://linkless.header/" IsExternal="true" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Help" Url="http://linkless.header/" IsExternal="true">
+              <pnp:NavigationNode Title="Ask a question" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Request a brand review" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Guidelines" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="FAQs" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Legal guidance" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Other resources" Url="http://linkless.header/" IsExternal="true" />
+            </pnp:NavigationNode>
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/SitePages/Welcome-to-the-Contoso-Electronics-brand-site/27904-meet-the-team-header.png" Folder="SiteAssets/SitePages/Welcome-to-the-Contoso-Electronics-brand-site" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ContosoBrand/1695924816drone-product-images.gif" Folder="SiteAssets/SitePages/ContosoBrand" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ContosoBrand/5408-IC-FINDPHOTOS.png" Folder="SiteAssets/SitePages/ContosoBrand" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ContosoBrand/23128-IC-GUIDELINES.png" Folder="SiteAssets/SitePages/ContosoBrand" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ContosoBrand/19590-IC-PRESENTPOWERFULLY.png" Folder="SiteAssets/SitePages/ContosoBrand" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/the-importance/28918-branding-news.png" Folder="SiteAssets/SitePages/the-importance" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Why-simplicity-matters/43076-posters-newsbanner.png" Folder="SiteAssets/SitePages/Why-simplicity-matters" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Why-simplicity-matters/poster-patti-quote.png" Folder="SiteAssets/SitePages/Why-simplicity-matters" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Storytelling-brings-our-brand-to-life-in-powerful-ways/21372-man-with-drone-in-a-warehouse-PMQEJ35.jpg" Folder="SiteAssets/SitePages/Storytelling-brings-our-brand-to-life-in-powerful-ways" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+        <pnp:File Src="SiteAssets/__sitelogo__sitelogo_brand.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+      </pnp:Files>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Welcome to the Contoso Electronics brand site" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn" BackgroundEmphasis="Neutral">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;ca1d2bcf-2d2f-4598-8f2f-5747822f4de8&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;id&quot;: &quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;, &quot;instanceId&quot;: &quot;d5ddc083-760d-4362-b9a8-d66a4b81b175&quot;, &quot;title&quot;: &quot;Hero&quot;, &quot;description&quot;: &quot;Prominently display up to 5 pieces of content in a highly visual layout&quot;, &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;layoutCategory&quot;:2,&quot;layout&quot;:1,&quot;content&quot;:[{&quot;id&quot;:&quot;6d06fe69-9180-4b89-82c4-2c7480516ffa&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoBrand/1695924816drone-product-images.gif}&quot;,&quot;imageUrl&quot;:&quot;{site}/SiteAssets/SitePages/ContosoBrand/1695924816drone-product-images.gif&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:1},&quot;description&quot;:&quot;Just in time for the holiday. Explore the new product and marketing images available. &quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;featureText&quot;:&quot;photography&quot;,&quot;showFeatureText&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;imageUrl&quot;:&quot;{hosturl}/_api/v2.0/sharePoint:{site}#:/driveItem/thumbnails/0/c1600x99999/content?preferNoRedirect=true&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:32767},&quot;upperCaseCallToAction&quot;:false},{&quot;id&quot;:&quot;fc98e9cf-7d70-4ba0-b9a8-4f5260d1e1d5&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;cf10f03e-4cb9-49ef-86ff-0ebda19102c3&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;e3500124-cb11-400e-bab7-02cb73ad7351&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;f82cd70e-a78d-48e7-adcd-1a07c16c66c8&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false}],&quot;isFullWidth&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;New Mark8 photos&quot;,&quot;content[1].title&quot;:&quot;&quot;,&quot;content[2].title&quot;:&quot;&quot;,&quot;content[3].title&quot;:&quot;&quot;,&quot;content[4].title&quot;:&quot;&quot;,&quot;content[0].alternateText&quot;:&quot;&quot;,&quot;content[1].alternateText&quot;:&quot;&quot;,&quot;content[2].alternateText&quot;:&quot;&quot;,&quot;content[3].alternateText&quot;:&quot;&quot;,&quot;content[4].alternateText&quot;:&quot;&quot;,&quot;content[0].callToActionText&quot;:&quot;Browse photos&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoBrand/1695924816drone-product-images.gif&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}#&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}#&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoBrand/1695924816drone-product-images.gif}&quot;,&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:1},&quot;content[0].previewImage.url&quot;:{&quot;renderWidthRatio&quot;:0.58,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="News" JsonControlData="{&quot;id&quot;: &quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;, &quot;instanceId&quot;: &quot;850dc7f0-3783-4c72-83c4-172fa3c32ef4&quot;, &quot;title&quot;: &quot;News&quot;, &quot;description&quot;: &quot;Display recent news.&quot;, &quot;dataVersion&quot;: &quot;1.11&quot;, &quot;properties&quot;: {&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:false,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:true,&quot;showAuthor&quot;:true,&quot;showDate&quot;:true},&quot;layoutId&quot;:&quot;NewsHub&quot;,&quot;prefetchCount&quot;:12,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;propsLastEdited&quot;:&quot;2019-09-16T23:24:12.353Z&quot;,&quot;templateId&quot;:&quot;NewsHub&quot;,&quot;compactMode&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0d8d5f97-0b3c-4ebc-91fc-194b69092eec&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;f35fc98d-0db1-42ca-a0ec-e49b11207f54&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="4" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="ThreeColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;a3a91521-8427-445d-b2a1-e5b9892f0752&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;47b4dc20-24cf-44ee-aa81-fef07cae88e6&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;IC-FINDPHOTOS.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoBrand/5408-IC-FINDPHOTOS.png}&quot;,&quot;imgWidth&quot;:760,&quot;imgHeight&quot;:180,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoBrand/5408-IC-FINDPHOTOS.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoBrand/5408-IC-FINDPHOTOS.png}&quot;,&quot;width&quot;:760,&quot;height&quot;:180}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="9167cd6e-072d-4d4f-a5cb-206a86591f64" Order="3" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;Find photos&lt;/strong&gt;&lt;/h4&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;Photography is a visual element that greatly impacts our customer's understanding and impression of the Contoso Brand.&amp;nbsp;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;18d85404-dbff-441b-8714-a0cdaf5a396f&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="4" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;6b41e113-b4aa-4a95-9bbb-6f7e1e8f66f9&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="5" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;a47da7ac-f4c4-4c16-9bd6-91886b3c68b0&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;5c132c89-6bf4-42ee-ac7d-3df192dc09b7&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;IC-GUIDELINES.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoBrand/23128-IC-GUIDELINES.png}&quot;,&quot;imgWidth&quot;:760,&quot;imgHeight&quot;:180,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoBrand/23128-IC-GUIDELINES.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoBrand/23128-IC-GUIDELINES.png}&quot;,&quot;width&quot;:760,&quot;height&quot;:180}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="2" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="31845e54-8c87-4cc2-aa1c-ca8a76a20e4d" Order="3" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;Get guidelines&lt;/strong&gt;&lt;/h4&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;Quickly find the details you need to design for any offering.&amp;nbsp;They're downloadable PDFs, so you can save and print them for easy access.&amp;nbsp;&amp;nbsp;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;b05e8444-07b5-4166-bf81-0f54ebcc62cc&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="4" Column="2" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;b3abe66f-3455-4143-bdc2-97a98416b9c0&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="3" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;bc1f3d81-6e19-4abf-bb53-8636147b0660&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;IC-PRESENTPOWERFULLY.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoBrand/19590-IC-PRESENTPOWERFULLY.png}&quot;,&quot;imgWidth&quot;:760,&quot;imgHeight&quot;:180,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoBrand/19590-IC-PRESENTPOWERFULLY.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoBrand/19590-IC-PRESENTPOWERFULLY.png}&quot;,&quot;width&quot;:760,&quot;height&quot;:180}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="2" Column="3" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="74e932f4-1b67-4be9-becb-42bf7a2e9a05" Order="3" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 style=&quot;text-align:center;&quot;&gt;&lt;strong&gt;Present powerfully&lt;/strong&gt;&lt;/h4&gt;&#xA;&#xA;&lt;p style=&quot;text-align:center;&quot;&gt;Quickly find the details you need to design for any offering.&amp;nbsp;They're downloadable PDFs, so you can save and print them for easy access.&amp;nbsp;&amp;nbsp;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;63a01cb0-ac0a-4597-b660-39979b523870&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="4" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;e72a59b9-5116-4cf2-82ab-33597ff0d2cc&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1dab43a1-3e11-4f19-9fbf-9fd417173144" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3 style=&quot;margin-left:40px;&quot;&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;strong&gt;These creative principles define our brand identity:&lt;/strong&gt;&lt;/span&gt;&lt;/h3&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="ba7df033-7603-4d9a-b153-82d5e0c94ff7" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;strong&gt;Keep it simple&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;Create clean, open, timeless designs.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;strong&gt;Make it personal&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;Tailor experiences to the ways that people really think, live, and act.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;strong&gt;Think universal&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;Being inclusive makes it better for all. Make it accessible, inviting, and easy to understand.&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="50fabeb4-f6e5-40f8-95b4-a168878866b0" Order="1" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;strong&gt;Create delight&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;Evoke wonder and discovery.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;strong&gt;Details matter&lt;/strong&gt;&lt;/span&gt;&lt;br&gt;&#xA;Achieve the highest levels of quality and craft. As with our products, every detail matters. Each moment is an opportunity to elevate quality.​​​​​​&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;281da99b-5fe4-4c32-a998-f975ba8056a0&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:false,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Welcome-to-the-Contoso-Electronics-brand-site/27904-meet-the-team-header.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso electronics" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="the-importance.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The importance of branding at Contoso" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="b70cb3aa-82b7-48f7-ac1a-37d9b07672a7" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="At the heart of branding at Contoso is the promise that is made by us to our customers. The brand promise tells them who we are, what we believe in, and what unique value we provide.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/the-importance/28918-branding-news.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso brand" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Why-simplicity-matters.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Why simplicity matters" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Why-simplicity-matters/poster-patti-quote.png}&amp;ext=png">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="24c38b2a-70af-4a42-bd90-95ae1c331af3" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="In order to give customers fresh and clear experiences with their brand, companies need to focus on simplifying their customer experiences. Those efforts will drive innovation and growth for their business." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Why-simplicity-matters/43076-posters-newsbanner.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso brand" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PageName="Storytelling-brings-our-brand-to-life-in-powerful-ways.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Storytelling brings our brand to life in powerful ways" ThumbnailUrl="">
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="ffb66782-9254-46b9-8ac3-f2ad61268034" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Stories touch our hearts by revealing something about people, brands, products, and companies—in a way that rational business messaging never could." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Storytelling-brings-our-brand-to-life-in-powerful-ways/21372-man-with-drone-in-a-warehouse-PMQEJ35.jpg" TranslateX="48.8872403560831" TranslateY="42.2222222222222" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso brand" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
+          </pnp:Security>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Compact" BackgroundEmphasis="Strong" />
+      <pnp:Footer Enabled="true" Logo="{site}/SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" RemoveExistingNodes="true" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
