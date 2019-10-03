@@ -2,7 +2,7 @@
 
 It's THE landing!
 
-![Full layout](./top-the-landing.png)
+![Full layout](./card-the-landing.png)
 
 You can easily extend the by doing following:
 
