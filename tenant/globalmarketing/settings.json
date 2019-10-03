@@ -23,6 +23,17 @@
         "caption": "Site URL",
         "description": "Relative URL to be used for the site",
         "editor": "SiteUrl"
+      },
+      {
+        "name": "CommunicationsSiteTitle",
+        "caption": "Site Title for the Communications site",
+        "description": "Title for your site"
+      },
+      {
+        "name": "CommunicationsSiteUrl",
+        "caption": "Site URL for the Communications site",
+        "description": "Relative URL to be used for the site",
+        "editor": "SiteUrl"
       }
     ],
     "displayInfo": {
