@@ -117,6 +117,7 @@
       </pnp:Lists>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnVerticalSection" VerticalSectionEmphasis="Neutral">
               <pnp:Controls>
@@ -153,9 +154,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Taking flight: Student mentorship opportunities at Contoso">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso works" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -167,9 +168,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso works" AlternativeText="" />
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Templates/News-post.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="News post">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -181,9 +182,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Communicating-Product-Value.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Communicating Product Value">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Communicating-Product-Value-1-/product-value.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -195,9 +196,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Communicating-Product-Value-1-/product-value.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="The-importance-of-branding-at-Contoso.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The importance of branding at Contoso">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/The-importance-of-branding-at-Contoso/importance-of-branding.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso works" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -209,9 +210,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/The-importance-of-branding-at-Contoso/importance-of-branding.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso works" AlternativeText="" />
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="New-401K-Packets-Available-Now.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New 401K Packets Available Now">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/New-401K-Packets-Available-Now/401k-packets.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso works" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -223,9 +224,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/New-401K-Packets-Available-Now/401k-packets.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso works" AlternativeText="" />
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Contoso-Mark-8--See-the-world-through-a-whole-new-perspective.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso Mark 8: See the world through a whole new perspective">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -237,7 +238,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
     </pnp:ProvisioningTemplate>
