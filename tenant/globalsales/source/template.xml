@@ -147,6 +147,7 @@
       </pnp:Lists>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth">
               <pnp:Controls>
@@ -201,12 +202,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Nominate-a-project-for-the-2019-sales-leadership-award.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Nominate a project for the 2019 sales leadership award" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Nominate-a-project-for-the-2019-sales-leadership-award/sales-leadership-award.png}&amp;ext=png">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="global sales" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -218,12 +216,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="global sales" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Templates/news-post-template.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="news post template" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -235,12 +230,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="How-to-calibrate-your-own-strengths-and-weaknesses.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="How to calibrate your own strengths and weaknesses" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/How-to-calibrate-your-own-strengths-and-weaknesses/linkedin-sales-navigator-Kfzfd8ksE10-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -252,12 +244,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="What's-the-difference-between-customer-support-and-customer-engagement.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="What's the difference between customer support and customer engagement" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/What-s-the-difference-between-customer-support-and-customer-engagement/mature-businesspeople-working-in-the-lobby-of-an-2DBLPYU.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="ACCOUNT LEADERSHIP" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -274,12 +263,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="ACCOUNT LEADERSHIP" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="How-to-be-an-Ethical-Influencer.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="How to be an Ethical Influencer" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/How-to-be-an-Ethical-Influencer/ethical-influencer.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="ACCOUNT LEADERSHIP" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -291,12 +277,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="ACCOUNT LEADERSHIP" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="How-machine-learning-can-drive-retail-sales.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="How machine learning can drive retail sales" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/How-machine-learning-can-drive-retail-sales/mchine-learning.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -308,12 +291,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="5-best-tips-for-salespeople.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="5 best tips for salespeople" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/5-best-tips-for-salespeople/5tips.png}&amp;ext=png">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -325,12 +305,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Marketing--New-VPN-Connection-Procedure.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Marketing: New VPN Connection Procedure" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/newpage/vpn-procedure.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="operations" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -342,12 +319,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="operations" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Changes-in-Denver-legislation-to-be-incorporated-before-new-product-launch.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Changes in Denver legislation to be incorporated before new product launch" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Changes-in-Denver-legislation-to-be-incorporated-before-new-product-launch/dane-deaner-334260-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="operations" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -359,12 +333,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="operations" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Q4--Consumer-usage.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Q4: Consumer usage" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Q4--Consumer-usage/consumer-usage.png}&amp;ext=png">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -376,12 +347,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Communicating-Product-Value.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Communicating Product Value" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Communicating-Product-Value/contoso-homesite.png}&amp;ext=png">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -393,12 +361,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="One-Million-Drones-Sold-in-2018.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="One Million Drones Sold in 2018" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/One-Million-Drones-Sold-in-2018/1million-drones.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -410,12 +375,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Contoso-Eagle-launch-and-the-future.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso Eagle launch and the future" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Contoso-Eagle-launch-and-the-future/contoso-eagle-launch.png}&amp;ext=png">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -427,10 +389,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;Katie@M365x377533.onmicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Katie Swanson&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|katie@m365x377533.onmicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
     </pnp:ProvisioningTemplate>
@@ -507,6 +465,7 @@
       </pnp:Files>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth">
               <pnp:Controls>
@@ -556,12 +515,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Templates/generic-news-post.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="generic news post" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -573,12 +529,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Sales-person-of-the-month.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Sales person of the month" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Sales-person-of-the-month/sales-person-adele.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -590,12 +543,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="5-(best)-tips-for-our-sales-staff.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="5 (best) tips for our sales staff" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/5--best--tips-for-our-sales-staff/christiann-koepke-0jPuWm8_9wY-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -607,12 +557,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Q4--Consumer-usage.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Q4: Consumer usage" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Q4--Consumer-usage/consumer-usage.png}&amp;ext=png">
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="GLOBAL SALES" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -624,12 +571,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="GLOBAL SALES" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="What's-the-difference-between-customer-support-and-customer-engagement.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="What's the difference between customer support and customer engagement" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/What-s-the-difference-between-customer-support-and-customer-engagement/jared-sluyter-342883-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="leadership" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -641,12 +585,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="leadership" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Nominate-a-project-for-the-2019-sales-leadership-award.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Nominate a project for the 2019 sales leadership award" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Nominate-a-project-for-the-2019-sales-leadership-award/sales-leadership-award.png}&amp;ext=png">
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -658,12 +599,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="One-million-drones-sold-in-2018.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="One million drones sold in 2018" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/One-million-drones-sold-in-2018/kevin-chow-176761-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail news" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -675,12 +613,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail news" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Retail-store-opening-and-closing-procedure.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Retail store opening and closing procedure" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Retail-store-opening-and-closing-procedure/alexandre-godreau-7YlHU_ZPS34-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -692,12 +627,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Store-design-responsibilites.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Store design responsibilities" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Store-design-responsibilites/roman-bozhko-OXXsAafHDeo-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -709,12 +641,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Functions-of-customer-service.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Functions of customer service" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Functions-of-customer-service/retail_258493796.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -726,12 +655,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Why-customer-service-is-the-new-marketing.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Why customer service is the new marketing" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Why-customer-service-is-the-new-marketing/AdobeStock_194825087.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -743,10 +669,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
       <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
@@ -913,6 +835,7 @@
       </pnp:Files>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnRight">
               <pnp:Controls>
@@ -947,12 +870,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="5-(best)-tips-for-our-sales-staff.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="5 (best) tips for our sales staff" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/5--best--tips-for-our-sales-staff/christiann-koepke-0jPuWm8_9wY-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -964,12 +884,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="retail operations" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Sales-person-of-the-month.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Sales person of the month" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Sales-person-of-the-month/product-swag.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="Consumer retail" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -981,12 +898,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="Consumer retail" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Retail-store-opening-and-closing-procedure.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Retail store opening and closing procedure" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Retail-store-opening-and-closing-procedure/alexandre-godreau-7YlHU_ZPS34-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="consumer retail" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -998,12 +912,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="consumer retail" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Functions-of-customer-service.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Functions of customer service" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Functions-of-customer-service/71217-retail_258493796.jpeg" TranslateX="50.2609992542878" TranslateY="40.4444444444444" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -1015,10 +926,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Functions-of-customer-service/71217-retail_258493796.jpeg" TranslateX="50.2609992542878" TranslateY="40.4444444444444" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
       <pnp:Header Layout="Standard" BackgroundEmphasis="Strong" />
