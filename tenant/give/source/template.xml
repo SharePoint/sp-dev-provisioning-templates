@@ -90,6 +90,7 @@
       </pnp:Files>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth">
               <pnp:Controls>
@@ -195,12 +196,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="A-Task-Force-for-Change.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="A Task Force for Change" ThumbnailUrl="">
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -213,12 +211,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Replacing-What-Is-Used.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Replacing What Is Used" ThumbnailUrl="">
+          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -231,12 +226,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Why-I-donate-to-charities.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso employee giving program" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Why-I-donate-to-charities/Contoso_givingprogram.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/FamilyDIY3.jpg" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="give" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -248,12 +240,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/FamilyDIY3.jpg" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="give" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Community-Spotlight-Music-Mania.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Our commitment to sustainability" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Community-Spotlight-Music-Mania/rodion-kutsaev-101716-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/Picnic4.png" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="give" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -265,12 +254,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/Picnic4.png" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="give" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="How-to-make-your-volunteer-hours-count-.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The driving force behind our mission" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/How-to-make-your-volunteer-hours-count-/Contoso_volunteers.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/drone-1080844_1920.jpg" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="give" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -282,12 +268,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/drone-1080844_1920.jpg" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="give" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Empowering-first-responder-organizations.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Empowering first responder organizations" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Empowering-first-responder-organizations/contoso-firstresponder.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="give" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -299,10 +282,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="give" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
       <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
