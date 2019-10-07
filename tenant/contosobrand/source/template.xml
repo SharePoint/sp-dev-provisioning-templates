@@ -109,6 +109,7 @@
       </pnp:Files>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Welcome to the Contoso Electronics brand site" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Welcome-to-the-Contoso-Electronics-brand-site/27904-meet-the-team-header.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso electronics" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn" BackgroundEmphasis="Neutral">
               <pnp:Controls>
@@ -177,12 +178,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Welcome-to-the-Contoso-Electronics-brand-site/27904-meet-the-team-header.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso electronics" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="the-importance.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The importance of branding at Contoso" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/the-importance/28918-branding-news.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso brand" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -194,12 +192,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/the-importance/28918-branding-news.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso brand" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Why-simplicity-matters.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Why simplicity matters" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Why-simplicity-matters/poster-patti-quote.png}&amp;ext=png">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Why-simplicity-matters/43076-posters-newsbanner.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso brand" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -211,12 +206,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Why-simplicity-matters/43076-posters-newsbanner.png" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso brand" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Storytelling-brings-our-brand-to-life-in-powerful-ways.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Storytelling brings our brand to life in powerful ways" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Storytelling-brings-our-brand-to-life-in-powerful-ways/21372-man-with-drone-in-a-warehouse-PMQEJ35.jpg" TranslateX="48.8872403560831" TranslateY="42.2222222222222" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso brand" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -228,10 +220,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Storytelling-brings-our-brand-to-life-in-powerful-ways/21372-man-with-drone-in-a-warehouse-PMQEJ35.jpg" TranslateX="48.8872403560831" TranslateY="42.2222222222222" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso brand" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
       <pnp:Header Layout="Compact" BackgroundEmphasis="Strong" />
