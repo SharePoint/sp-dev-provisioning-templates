@@ -327,6 +327,7 @@
       </pnp:Lists>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth">
               <pnp:Controls>
@@ -367,30 +368,21 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="2018.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Leadership Accountability Principles" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/2018/75815-kevin-erdvig-761293-unsplash.jpg" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn" />
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/2018/75815-kevin-erdvig-761293-unsplash.jpg" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Ask.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="2018 Contoso Electronics goals" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Ask/11157-GettyImages-903151382.png" TranslateX="41.3927576601671" TranslateY="47.1111111111111" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn" />
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Ask/11157-GettyImages-903151382.png" TranslateX="41.3927576601671" TranslateY="47.1111111111111" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Singapore-building-u.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Singapore building update, August 2019" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Singapore-building-u/49162-12891-artist_rendering.jpg" TranslateX="49.5958853783982" TranslateY="65.5555555555556" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="leadership connection" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|pattif@contoso.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;PattiF@contoso.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Patti Fernandez&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;President&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|pattif@contoso.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft" BackgroundEmphasis="Soft">
               <pnp:Controls>
@@ -473,12 +465,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Singapore-building-u/49162-12891-artist_rendering.jpg" TranslateX="49.5958853783982" TranslateY="65.5555555555556" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="leadership connection" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|pattif@contoso.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;PattiF@contoso.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Patti Fernandez&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;President&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|pattif@contoso.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Miriam Graham, Contoso's new Chief Marketing Officer" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/65017-CLO17_azure_004.jpg" TranslateX="49.9118165784832" TranslateY="31.140350877193" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="welcome to contoso" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|pattif@contoso.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;PattiF@contoso.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Patti Fernandez&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;President&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|pattif@contoso.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -511,12 +500,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/65017-CLO17_azure_004.jpg" TranslateX="49.9118165784832" TranslateY="31.140350877193" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="welcome to contoso" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|pattif@contoso.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;PattiF@contoso.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Patti Fernandez&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;President&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|pattif@contoso.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Contoso-Eagle-launch-and-the-future.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso Eagle launch and the future" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Eagle-CX-Pro-and-the-future---July-2018/19566-GettyImages-903151382.png" TranslateX="54" TranslateY="44.6666666666667" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="leadership connection" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|pattif@contoso.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;PattiF@contoso.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Patti Fernandez&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;President&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|pattif@contoso.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -535,12 +521,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Eagle-CX-Pro-and-the-future---July-2018/19566-GettyImages-903151382.png" TranslateX="54" TranslateY="44.6666666666667" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="leadership connection" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;i:0#.f|membership|pattif@contoso.com&quot;,&#xD;&#xA;    &quot;upn&quot;: &quot;PattiF@contoso.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Patti Fernandez&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;President&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;i:0#.f|membership|pattif@contoso.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Contoso-Leadership-team.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Meet the Contoso Leadership team" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Contoso-Leadership-team/86857-meet-the-team-footer.jpg" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso leadership" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -638,10 +621,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Contoso-Leadership-team/86857-meet-the-team-footer.jpg" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso leadership" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
       <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
