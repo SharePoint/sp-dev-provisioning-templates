@@ -112,6 +112,7 @@
       </pnp:Lists>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -186,12 +187,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="President's-Keynote-Speech--August-2019.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="President's Keynote Speech: August 2019" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/President-s-Keynote-Speech--August-2019/23395-Contoso-BuildingFacade-1920x1080.png" TranslateX="49.3019838354151" TranslateY="30" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="CONTOSO NEWS" AlternativeText=""  />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -203,10 +201,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/President-s-Keynote-Speech--August-2019/23395-Contoso-BuildingFacade-1920x1080.png" TranslateX="49.3019838354151" TranslateY="30" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="CONTOSO NEWS" AlternativeText=""  />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Have-Your-Say--Time-Is-Running-Out-To-Comment-On-Proposed-FAA-Rules.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="Have Your Say: Time Is Running Out To Comment On Proposed FAA Rules" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Have-Your-Say--Time-Is-Running-Out-To-Comment-On-Proposed-FAA-Rules/drone.jpg}&amp;ext=jpg">
           <pnp:FieldValues>
@@ -220,6 +214,7 @@
           </pnp:FieldValues>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Building-an-ecosystem-for-responsible-drone-use-and-development-on-Microsoft-Azure.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="Building an ecosystem for responsible drone use and development on Microsoft Azure" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Building-an-ecosystem-for-responsible-drone-use-and-development-on-Microsoft-Azure/matthew-brodeur-214573-unsplash.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Our-Three-Steps-to-Improve-the-New-User-Experience/83930-Drone.jpg" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="CONTOSO NEWS" AlternativeText=""  />
           <pnp:FieldValues>
             <pnp:FieldValue Key="_OriginalSourceUrl" Value="https://azure.microsoft.com/en-us/blog/building-an-ecosystem-for-responsible-drone-use-and-development-on-microsoft-azure/"/>
             <pnp:FieldValue Key="_OriginalSourceSiteId" Value="00000000-0000-0000-0000-000000000000"/>
@@ -242,12 +237,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Our-Three-Steps-to-Improve-the-New-User-Experience/83930-Drone.jpg" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="CONTOSO NEWS" AlternativeText=""  />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Safety-Training.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Taking flight: Student mentorship opportunities at Contoso" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Safety-Training/6441-GettyImages-705001819.jpg" TranslateX="49.5590828924162" TranslateY="55.2631578947368" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso news" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -259,12 +251,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Safety-Training/6441-GettyImages-705001819.jpg" TranslateX="49.5590828924162" TranslateY="55.2631578947368" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="contoso news" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Update-to-Washington-Drone-Laws.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Update to Washington Drone Laws" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Update-to-Washington-Drone-Laws/27424-azis-pradana-300290-unsplash-scrubbed.jpg" LayoutType="ColorBlock" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -276,12 +265,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Update-to-Washington-Drone-Laws/27424-azis-pradana-300290-unsplash-scrubbed.jpg" LayoutType="ColorBlock" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Our-Three-Steps-to-Improve-the-New-User-Experience(1).aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Our Three Steps to Improve the New User Experience" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Our-Three-Steps-to-Improve-the-New-User-Experience-1-/713859611-771.jpg}&amp;ext=jpg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="CONTOSO NEWS" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -293,12 +279,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="CONTOSO NEWS" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Miriam Graham, Contoso's new Chief Marketing Officer" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/37867-miriamgraham.jpeg" TranslateX="49.582338902148" TranslateY="33.7777777777778" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText=""  />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -331,12 +314,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/37867-miriamgraham.jpeg" TranslateX="49.582338902148" TranslateY="33.7777777777778" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText=""  />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Singapore-building-update,-August-2019.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Singapore building update, August 2019" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Singapore-building-update--August-2019/88758-building-update.jpeg" TranslateX="50.2386634844869" TranslateY="66.2222222222222" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="leadership connection" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft" BackgroundEmphasis="Neutral">
               <pnp:Controls>
@@ -412,12 +392,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Singapore-building-update--August-2019/88758-building-update.jpeg" TranslateX="50.2386634844869" TranslateY="66.2222222222222" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="leadership connection" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Communicating-Product-Value.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Communicating Product Value" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Communicating-Product-Value/product-value.png}&amp;ext=png">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="global marketing" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
               <pnp:Controls>
@@ -429,12 +406,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="global marketing" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Templates/News-title.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="News title" ThumbnailUrl="">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -446,12 +420,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="One-Million-Drones-Sold-in-2018.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="One Million Drones Sold in 2018" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/One-Million-Drones-Sold-in-2018/1million-drones.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -463,12 +434,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Taking flight: Student mentorship opportunities at Contoso" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -480,12 +448,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="New-benefits-options-for-your-family.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="New benefits options for your family" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/New-benefits-options-for-your-family/new-beneifts-family.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -497,12 +462,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Open-Door-Policy.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Open Door Policy" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Open-Door-Policy/open-door-policy.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -514,12 +476,9 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PageName="Changes-to-Medical-Benefits.aspx" PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Changes to Medical Benefits" ThumbnailUrl="{hosturl}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Changes-to-Medical-Benefits/changes-to-medical-benefits.jpeg}&amp;ext=jpeg">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -531,10 +490,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
-          <pnp:Security>
-            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false" />
-          </pnp:Security>
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
       <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
