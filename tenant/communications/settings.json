@@ -2,6 +2,11 @@
   "categories": [
     "ORGANIZATION"
   ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK",
+    "ODP"
+  ],
   "packageFile": "communications.pnp",
   "abstract": "This template is an example of a home site.",
   "sortOrder": 300,
