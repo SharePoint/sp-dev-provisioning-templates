@@ -1,5 +1,8 @@
 {
   "categories": [],
+  "platforms": [
+    "ODP"
+  ],
   "packageFile": "template.pnp",
   "abstract": "This is a sample solution for testing ODP integration.",
   "sortOrder": 0,

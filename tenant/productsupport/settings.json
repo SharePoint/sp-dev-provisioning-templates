@@ -2,6 +2,10 @@
   "categories": [
     "ORGANIZATION"
   ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
   "packageFile": "productsupport.pnp",
   "abstract": "This template is an example of a home site.",
   "sortOrder": 300,

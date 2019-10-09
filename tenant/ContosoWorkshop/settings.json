@@ -2,6 +2,10 @@
   "categories": [
     "TEAM"
   ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
   "packageFile": "ContosoWorkshop.pnp",
   "abstract": "This template shows how a workshop centric site could look like in SharePoint Online.",  
   "sortOrder": 400,

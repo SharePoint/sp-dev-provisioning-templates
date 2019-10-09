@@ -2,6 +2,10 @@
   "categories": [
     "SOLUTION"
   ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
   "packageFile": "O365CL.pnp",
   "abstract": "Help your organization get more from Microsoft services by implementing the Microsoft 365 learning pathways. This digital, customizable, learning solution streams on-demand content for Microsoft 365 services right to your end users.",
   "sortOrder": 100,

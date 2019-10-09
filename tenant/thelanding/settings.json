@@ -2,6 +2,10 @@
     "categories": [
         "ORGANIZATION"
     ],
+    "platforms": [
+        "SPPNP",
+        "LOOKBOOK"
+      ],
     "packageFile": "thelanding.pnp",
     "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur.",
     "sortOrder": 300,

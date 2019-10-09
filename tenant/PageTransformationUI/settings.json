@@ -2,6 +2,10 @@
   "categories": [
     "SOLUTION"
   ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
   "packageFile": "modernization.pnp",
   "abstract": "The Page Transformation UI solution makes it possible for end users to request a modern version of a wiki or web part page. The generated modern page will have a page banner web part on top of the page which will allow the user to keep the generated page or discard it.",
   "sortOrder": 0,

@@ -2,7 +2,11 @@
     "categories": [
         "ORGANIZATION"
     ],
-    "packageFile": "contosoworks.pnp",
+    "platforms": [
+        "SPPNP",
+        "LOOKBOOK"
+      ],
+        "packageFile": "contosoworks.pnp",
     "abstract": "This template is an example of a home site.",
     "sortOrder": 300,
     "promoted": "false",

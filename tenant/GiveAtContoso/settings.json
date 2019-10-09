@@ -2,6 +2,10 @@
   "categories": [
     "COMMUNITY"
   ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
   "packageFile": "GiveAtContoso.pnp",
   "abstract": "This template shows what a human resources giving campaign site could look like.",
   "sortOrder": 600,

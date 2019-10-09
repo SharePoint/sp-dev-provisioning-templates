@@ -2,6 +2,10 @@
   "categories": [
     "ORGANIZATION"
   ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
   "packageFile": "give.pnp",
   "abstract": "This template is an example of a home site.",
   "sortOrder": 300,

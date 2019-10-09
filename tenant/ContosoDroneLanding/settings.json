@@ -2,6 +2,10 @@
   "categories": [
     "ORGANIZATION"
   ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
   "packageFile": "ContosoDroneLanding.pnp",
   "abstract": "See how you can setup a welcome site using the communication site template and webparts.",
   "sortOrder": 900,

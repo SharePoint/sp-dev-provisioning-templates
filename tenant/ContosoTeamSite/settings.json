@@ -3,6 +3,10 @@
     "ORGANIZATION",
     "DEPARTMENT"
   ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
   "packageFile": "ContosoTeamSite.pnp",
   "abstract": "This template is an example of enabling collaboration at a team level.  It has many parts including news, files, and team calendar.",
   "sortOrder": 300,
