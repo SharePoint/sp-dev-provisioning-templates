@@ -43,6 +43,7 @@
         {"id": "m365x617361.onmicrosoft.com", "tenantName": "m365x617361.onmicrosoft.com", "referenceOwner": "3Sharp"},
         {"id": "m365x013060.onmicrosoft.com", "tenantName": "m365x013060.onmicrosoft.com", "referenceOwner": "3Sharp"},
         {"id": "m365x906828.onmicrosoft.com", "tenantName": "m365x906828.onmicrosoft.com", "referenceOwner": "3Sharp"},
-        {"id": "m365x096570.onmicrosoft.com", "tenantName": "m365x096570.onmicrosoft.com", "referenceOwner": "3Sharp"}
+        {"id": "m365x096570.onmicrosoft.com", "tenantName": "m365x096570.onmicrosoft.com", "referenceOwner": "3Sharp"},
+        {"id": "msignite2019a.onmicrosoft.com", "tenantName": "msignite2019a.onmicrosoft.com", "referenceOwner": "Ignite Demos"}
     ]
 }
