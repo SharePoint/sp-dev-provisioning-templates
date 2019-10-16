@@ -1,18 +1,13 @@
-# The Landing
+# Mark8 Project Team
 
-It's THE landing!
-
-![Full layout](./top-the-landing.png)
-
-You can easily extend the by doing following:
-
-- Do some edits
+Using Planner and PowerBi along with other project-related web parts, this team site is all about the project -- from planning and progress, to tracking results.  
 
 ## Template content
 
 Template contains following structures and assets:
 
-- TBD
+- Complex welcome page with out-of-the-box web parts
+- Example images and Office documents
 
 **Notice** - If applied on top of existing communication site, welcome page content will be overridden.
 
@@ -20,7 +15,7 @@ Template contains following structures and assets:
 
 Below picture shows the expected layout from this template.
 
-![Full layout](./full-layout-the-landing.png)
+![Full layout](./full-layout-mark8projectteam.jpg)
 
 **Note** - There might be small differences between the screenshot from the [SharePoint look book](https://spdesign.azurewebsites.net) and the end results of the template. Template automation will get you as close as possible given certain API level limitations. Templates are also designed to be as independent as possible, which has resulted some compromises on the implementation.
 
