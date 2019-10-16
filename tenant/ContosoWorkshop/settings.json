@@ -3,8 +3,7 @@
     "TEAM"
   ],
   "platforms": [
-    "SPPNP",
-    "LOOKBOOK"
+    "SPPNP"
   ],
   "packageFile": "ContosoWorkshop.pnp",
   "abstract": "This template shows how a workshop centric site could look like in SharePoint Online.",  

@@ -7,7 +7,7 @@
     "LOOKBOOK"
   ],
   "packageFile": "theperspective.pnp",
-  "abstract": "This template is an example of a home site.",
+  "abstract": "Designed to offer news and personalized content, this site also includes videos to inspire even more engagement.",
   "sortOrder": 300,
   "promoted": "false",
   "sortOrderPromoted": 0,
@@ -32,8 +32,7 @@
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
         "descriptionParagraphs": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur."
+            "Designed to offer news and personalized content, this site also includes videos to inspire even more engagement."
         ],
         "previewImages": [
             {
@@ -57,39 +56,29 @@
                         "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
                     },
                     {
-                        "name": "Quick Links",
-                        "description": "Filmstrip",
-                        "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
-                    },
-                    {
-                        "name": "Twitter",
+                        "name": "Call to action",
                         "description": "",
-                        "url": "https://support.office.com/en-us/article/use-the-twitter-web-part-15db6b3b-d167-41dd-9875-2af64b44d820"
+                        "url": "https://support.office.com/en-us/article/use-the-call-to-action-web-part-e9917310-7543-4fc4-8f3f-d78e46074c00"
                     },
                     {
-                        "name": "Yammer",
-                        "description": "Conversations",
-                        "url": "https://support.office.com/en-us/article/use-a-yammer-web-part-in-sharepoint-online-a53cfa0c-3d09-42c8-a286-1038a81c59da"
-                    },
-                    {
-                        "name": "Image",
-                        "description": "Text over image",
-                        "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
-                    },
-                    {
-                        "name": "Countdown timer",
+                        "name": "Stream",
                         "description": "",
-                        "url": "https://support.office.com/en-us/article/use-the-countdown-timer-web-part-a13ffef8-0bf1-409e-be23-98af1d1736e7"
+                        "url": "https://support.office.com/en-us/article/use-the-stream-web-part-b97fa87c-1337-4271-a059-17f0d2b26e8b"
+                    },
+                    {
+                        "name": "Text",
+                        "description": "Custom RTE formatting",
+                        "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
+                    },
+                    {
+                        "name": "Hero",
+                        "description": "One layer",
+                        "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
                     },
                     {
                         "name": "Weather",
                         "description": "",
                         "url": "https://support.office.com/en-us/article/show-the-weather-on-your-page-4a86540e-0846-4fc0-bad0-1a82fcd430fc"
-                    },
-                    {
-                        "name": "World clock",
-                        "description": "",
-                        "url": "https://support.office.com/en-us/article/use-the-world-clock-web-part-aa2ede87-e331-44f1-a116-a5b8fc67fd04"
                     },
                     {
                         "name": "Recent documents",
@@ -100,12 +89,12 @@
                         "name": "Sites",
                         "description": "Compact",
                         "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
-                    },                                                                               
+                    }, 
                     {
-                        "name": "Highlighted content",
-                        "description": "Grid",
-                        "url": "https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd"
-                    }
+                        "name": "Events",
+                        "description": "Compact",
+                        "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
+                    }  
                 ]
             },
             {
