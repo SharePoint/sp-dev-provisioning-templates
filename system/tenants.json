@@ -44,6 +44,7 @@
         {"id": "m365x013060.onmicrosoft.com", "tenantName": "m365x013060.onmicrosoft.com", "referenceOwner": "3Sharp"},
         {"id": "m365x906828.onmicrosoft.com", "tenantName": "m365x906828.onmicrosoft.com", "referenceOwner": "3Sharp"},
         {"id": "m365x096570.onmicrosoft.com", "tenantName": "m365x096570.onmicrosoft.com", "referenceOwner": "3Sharp"},
-        {"id": "msignite2019a.onmicrosoft.com", "tenantName": "msignite2019a.onmicrosoft.com", "referenceOwner": "Ignite Demos"}
+        {"id": "msignite2019a.onmicrosoft.com", "tenantName": "msignite2019a.onmicrosoft.com", "referenceOwner": "Ignite Demos"},
+        {"id": "m365x007024.onmicrosoft.com", "tenantName": "m365x007024.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"}
     ]
 }

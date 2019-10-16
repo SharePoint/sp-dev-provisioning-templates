@@ -3,8 +3,7 @@
     "COMMUNITY"
   ],
   "platforms": [
-    "SPPNP",
-    "LOOKBOOK"
+    "SPPNP"
   ],
   "packageFile": "LiveAtContoso.pnp",
   "abstract": "This template shows what a typical employee Human Resources site could look like in SharePoint Online.",

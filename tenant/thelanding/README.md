@@ -1,18 +1,15 @@
 # The Landing
 
-It's THE landing!
-
-![Full layout](./card-the-landing.png)
-
-You can easily extend the by doing following:
-
-- Do some edits
+This communication site is designed to be the place where your employees can find the news and resources they need, plus personalized content tailored just for them.  
 
 ## Template content
 
 Template contains following structures and assets:
 
-- TBD
+- Demo structure for home site of the portal
+- Custom welcome page structure
+- 6 additional sample modern pages and news articles
+- Sample images and Office documents
 
 **Notice** - If applied on top of existing communication site, welcome page content will be overridden.
 
@@ -20,7 +17,7 @@ Template contains following structures and assets:
 
 Below picture shows the expected layout from this template.
 
-![Full layout](./full-layout-the-landing.png)
+![Full layout](./full-layout-thelanding.jpg)
 
 **Note** - There might be small differences between the screenshot from the [SharePoint look book](https://spdesign.azurewebsites.net) and the end results of the template. Template automation will get you as close as possible given certain API level limitations. Templates are also designed to be as independent as possible, which has resulted some compromises on the implementation.
 

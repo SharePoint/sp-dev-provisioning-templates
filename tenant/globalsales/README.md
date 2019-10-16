@@ -1,18 +1,15 @@
-# The Landing
+# Global Sales
 
-It's THE landing!
-
-![Full layout](./top-the-landing.png)
-
-You can easily extend the by doing following:
-
-- Do some edits
+This Sales hub site makes it easy to discover related content such as news and other site activities. It also demonstrates common navigation and branding that carries across associated sites. 
 
 ## Template content
 
 Template contains following structures and assets:
 
-- TBD
+- Main global marketing site collection marked as a hub
+- Two additional communication site collection associated to the hub
+- Numerous example modern pages and news articles
+- Numerous sample Office documents 
 
 **Notice** - If applied on top of existing communication site, welcome page content will be overridden.
 
@@ -20,7 +17,7 @@ Template contains following structures and assets:
 
 Below picture shows the expected layout from this template.
 
-![Full layout](./full-layout-the-landing.png)
+![Full layout](./full-layout-globalsales.jpg)
 
 **Note** - There might be small differences between the screenshot from the [SharePoint look book](https://spdesign.azurewebsites.net) and the end results of the template. Template automation will get you as close as possible given certain API level limitations. Templates are also designed to be as independent as possible, which has resulted some compromises on the implementation.
 

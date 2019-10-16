@@ -1,18 +1,15 @@
 # The Perspective
 
-It's THE Perspective!
-
-![Full layout](./top-the-perspective.png)
-
-You can easily extend the by doing following:
-
-- Do some edits
+Designed to offer news and personalized content, this site also includes videos to inspire even more engagement. 
 
 ## Template content
 
 Template contains following structures and assets:
 
-- TBD
+- Custom welcome page designs
+- Sample page template for news articles
+- 12 sample news articles
+- Example images
 
 **Notice** - If applied on top of existing communication site, welcome page content will be overridden.
 
@@ -20,7 +17,7 @@ Template contains following structures and assets:
 
 Below picture shows the expected layout from this template.
 
-![Full layout](./full-layout-the-perspective.png)
+![Full layout](./full-layout-perspective.jpg)
 
 **Note** - There might be small differences between the screenshot from the [SharePoint look book](https://spdesign.azurewebsites.net) and the end results of the template. Template automation will get you as close as possible given certain API level limitations. Templates are also designed to be as independent as possible, which has resulted some compromises on the implementation.
 
