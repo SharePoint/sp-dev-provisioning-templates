@@ -2,73 +2,97 @@
     <section class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-xl-5">
-                <h1>
+                <div class="h7 text-uppercase mb-8px">
                     <slb-package-title></slb-package-title>
-                </h1>
+                </div>
 
-                <div class="slb-font-family-semibold slb-font-size-smaller">
+                <h4 class="mb-32px">
+                    <slb-site-descriptor></slb-site-descriptor>
+                </h4>
+
+                <div>
                     <slb-package-description></slb-package-description>
                 </div>
 
                 <div class="subsection template-info">
-                    <slb-tab-group alignLabels="left">
-                        <ng-template slbDisplayForCategory="Webparts" let-items="items">
-                            <slb-tab label="Webparts">
-                                <div class="d-flex flex-wrap">
-                                    <div class="w-50 pr-3 mt-3" *ngFor="let item of items">
-                                        <slb-detail-item [item]="item"></slb-detail-item>
-                                    </div>
-                                </div>
-                            </slb-tab>
-                        </ng-template>
+                    <slb-expandable-panel *slbDisplayForCategory="'Features'; let items=items">
+                        <slb-expandable-panel-header>
+                            Site features
+                        </slb-expandable-panel-header>
 
-                        <ng-template slbDisplayForCategory="Features" let-items="items">
-                            <slb-tab label="Features">
-                                <div class="d-flex flex-wrap">
-                                    <div class="w-50 pr-3 mt-3" *ngFor="let item of items">
-                                        <slb-detail-item [item]="item"></slb-detail-item>
-                                    </div>
-                                </div>
-                            </slb-tab>
-                        </ng-template>
+                        <div class="mt-16px mb-24px">
+                            <ul class="list-unstyled">
+                                <li *ngFor="let item of items">
+                                    <slb-detail-item [item]="item"></slb-detail-item>
+                                </li>
+                            </ul>
+                        </div>
+                    </slb-expandable-panel>
 
-                        <ng-template slbDisplayForCategory="Site Content" let-items="items">
-                            <slb-tab label="Site Content">
-                                <ul class="mt-3">
-                                    <li *ngFor="let item of items">
-                                        {{ item.name }}
-                                    </li>
-                                </ul>
-                            </slb-tab>
-                        </ng-template>
+                    <slb-expandable-panel *slbDisplayForCategory="'Webparts'; let items=items">
+                        <slb-expandable-panel-header>
+                            Web parts used
+                        </slb-expandable-panel-header>
 
-                        <ng-template slbDisplayForCategory="Resources" let-items="items">
-                            <slb-tab label="Resources">
-                                <div class="d-flex flex-wrap">
-                                    <div class="w-50 pr-3 mt-3" *ngFor="let item of items">
-                                        <slb-detail-item [item]="item"></slb-detail-item>
-                                    </div>
-                                </div>
-                            </slb-tab>
-                        </ng-template>
-                    </slb-tab-group>
+                        <div class="mt-16px mb-24px">
+                            <ul class="list-unstyled">
+                                <li *ngFor="let item of items">
+                                    <slb-detail-item [item]="item"></slb-detail-item>
+                                </li>
+                            </ul>
+                        </div>
+                    </slb-expandable-panel>
+
+                    <slb-expandable-panel *slbDisplayForCategory="'Site Content'; let items=items">
+                        <slb-expandable-panel-header>
+                            Content included
+                        </slb-expandable-panel-header>
+
+                        <div class="mt-16px mb-24px">
+                            <p>Adding this design to your tenant will create the following content:</p>
+
+                            <ul class="mt-16px site-content-list">
+                                <li *ngFor="let item of items">
+                                    {{ item.name }}
+                                </li>
+                            </ul>
+                        </div>
+                    </slb-expandable-panel>
                 </div>
 
                 <div class="subsection slb-font-size-smaller add-to-tenant-subsection">
                     <slb-sticky-header>
                         <div slbStickyHeaderContentClass="container-fluid stickied-header-content">
                             <div class="d-flex w-100 align-items-center justify-content-between">
-                                <h1 class="m-0">
+                                <h4 class="m-0">
                                     <slb-package-title></slb-package-title>
-                                </h1>
+                                </h4>
                                 <button slb-cta-button slbAddToTenantButton>Add to your tenant</button>
                             </div>
                         </div>
                     </slb-sticky-header>
+
+                    <div class="mt-16px">
+                        <slb-permission-message></slb-permission-message>
+                    </div>
                 </div>
 
-                <div class="subsection">
-                    <slb-permission-message></slb-permission-message>
+                <div class="subsection" *slbDisplayForCategory="'Resources'; let items=items">
+                    <h4>Resources</h4>
+
+                    <p>
+                        Whether you're starting from scratch or you've installed this example on your tenant, here
+                        are some resources to help you create and personalize your site.
+                    </p>
+
+                    <div *ngFor="let item of items">
+                        <a [href]="item.url">
+                            {{ item.name }}
+                            <p>
+                                {{ item.description }}
+                            </p>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="subsection">
