@@ -32,6 +32,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "",
         "descriptionParagraphs": [
             "Here's a team site that's all about communicating and engaging with your teams through news, resources, conversations, and people."
         ],

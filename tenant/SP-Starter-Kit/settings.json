@@ -38,6 +38,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "",
         "descriptionParagraphs": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur.",
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur."

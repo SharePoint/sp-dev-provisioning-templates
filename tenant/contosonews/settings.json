@@ -31,6 +31,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "Company and organization news",
         "descriptionParagraphs": [
             "This communication site uses multiple news sources and news layouts to highlight stories and events from all levels of your company's organizations."
         ],

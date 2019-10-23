@@ -31,6 +31,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "Product info, metrics, resources",
         "descriptionParagraphs": [
             "his team site is a great resource for your team that supports customers. It includes information on product releases, documents with customer scripts, and charts to visually track metrics."
         ],

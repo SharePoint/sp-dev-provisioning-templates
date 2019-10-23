@@ -42,6 +42,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "Branded news, resources, and events",
         "descriptionParagraphs": [
             "SharePoint Hubs let you organize your intranet and drive consistent branding. For example, the header, footer, and custom logo on this marketing hub site carry over to associated sites."
         ],

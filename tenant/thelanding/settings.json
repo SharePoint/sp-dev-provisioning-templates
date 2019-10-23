@@ -31,6 +31,7 @@
         ],
         "displayInfo": {
             "pageTemplateId": "system/pageTemplates/template-1",
+            "siteDescriptor": "News, resources, personalized content",
             "descriptionParagraphs": [
                 "This communication site is designed to be the place where your employees can find the news and resources they need, plus personalized content tailored just for them."
             ],

@@ -42,6 +42,7 @@
         ],
         "displayInfo": {
             "pageTemplateId": "system/pageTemplates/template-1",
+            "siteDescriptor": "Employee-focused news, resources",
             "descriptionParagraphs": [
                 "Besides hub news, events, contacts and other resources, this example of a Human Resources hub site features a custom PowerApp for time off requests from employees."
             ],

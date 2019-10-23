@@ -31,6 +31,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "Brand guidelines and resources",
         "descriptionParagraphs": [
             "This page is a resource for employees that includes company guidelines and assets so they can apply the right branding across their deliverables."
         ],

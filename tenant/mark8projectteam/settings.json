@@ -31,6 +31,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "",
         "descriptionParagraphs": [
             "Using Planner and PowerBi along with other project-related web parts, this team site is all about the project -- from planning and progress, to tracking results. "
         ],

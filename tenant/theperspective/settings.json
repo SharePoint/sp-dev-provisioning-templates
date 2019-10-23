@@ -31,6 +31,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "News, video, personalized content",
         "descriptionParagraphs": [
             "Designed to offer news and personalized content, this site also includes videos to inspire even more engagement."
         ],
