@@ -7,7 +7,7 @@
     "LOOKBOOK"
   ],
   "packageFile": "productsupport.pnp",
-  "abstract": "his team site is a great resource for your team that supports customers. It includes information on product releases, documents with customer scripts, and charts to visually track metrics.",
+  "abstract": "This team site brings together announcements and information for employees on the front lines of your retail services. Product info, news, and training resources are included.",
   "sortOrder": 300,
   "promoted": "false",
   "sortOrderPromoted": 0,
@@ -31,9 +31,9 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteDescriptor": "Product info, metrics, resources",
+        "siteDescriptor": "Announcements, news, and training resources",
         "descriptionParagraphs": [
-            "his team site is a great resource for your team that supports customers. It includes information on product releases, documents with customer scripts, and charts to visually track metrics."
+            "This team site brings together announcements and information for employees on the front lines of your retail services. Product info, news, and training resources are included."
         ],
         "previewImages": [
             {

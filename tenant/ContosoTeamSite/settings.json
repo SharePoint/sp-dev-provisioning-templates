@@ -4,7 +4,8 @@
     "DEPARTMENT"
   ],
   "platforms": [
-    "SPPNP"
+    "SPPNP",
+    "LOOKBOOK"
   ],
   "packageFile": "ContosoTeamSite.pnp",
   "abstract": "This template is an example of enabling collaboration at a team level.  It has many parts including news, files, and team calendar.",
@@ -32,10 +33,9 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteDescriptor": "",
+        "siteDescriptor": "Announcements, news, collaboration",
         "descriptionParagraphs": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur."
+            "This template is an example of enabling collaboration at a team level.  It has many parts including news, files, and team calendar."
         ],
         "previewImages": [
             {
