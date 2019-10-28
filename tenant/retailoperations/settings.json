@@ -1,0 +1,186 @@
+{
+  "categories": [
+    "DEPARTMENT"
+  ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
+  "packageFile": "retailoperations.pnp",
+  "abstract": "This Sales hub site makes it easy to discover related content such as news and other site activities. It also demonstrates common navigation and branding that carries across associated sites.",
+  "sortOrder": 300,
+  "promoted": "false",
+  "sortOrderPromoted": 0,
+  "preview": "true",
+  "forceNewSite":"false",  
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
+  "visible": "true",
+  "metadata": {
+    "properties": [
+      {
+        "name": "SiteTitle",
+        "caption": "Site Title",
+        "description": "Title for your site"
+      },
+      {
+        "name": "SiteUrl",
+        "caption": "Site URL",
+        "description": "Relative URL to be used for the site",
+        "editor": "SiteUrl"
+      }
+    ],
+    "displayInfo": {
+        "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "News, activity, discovery ",
+        "descriptionParagraphs": [
+            "This Sales hub site makes it easy to discover related content such as news and other site activities. It also demonstrates common navigation and branding that carries across associated sites."
+        ],
+        "previewImages": [
+            {
+                "type": "fullpage",
+                "altText": "The Landing Layout",
+                "url": "./full-layout-globalsales.jpg"
+            },
+            {
+                "type": "cardpreview",
+                "altText": "The Landing Preview",
+                "url": "./card-globalsales.jpg"
+            }
+        ],
+        "detailItemCategories": [
+            {
+                "name": "Webparts",
+                "items": [
+                    {
+                        "name": "Hero",
+                        "description": "Full width",
+                        "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
+                    },
+                    {
+                        "name": "Quick Links",
+                        "description": "Button, icon on left, no outline, center alignment, two lines",
+                        "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                    },
+                    {
+                        "name": "News",
+                        "description": "Side-by-side, List",
+                        "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
+                    },
+                    {
+                        "name": "Text",
+                        "description": "Custom RTE formatting",
+                        "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
+                    },
+                    {
+                        "name": "Sites",
+                        "description": "Compact",
+                        "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
+                    }, 
+                    {
+                        "name": "Events",
+                        "description": "Compact",
+                        "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
+                    },
+                    {
+                        "name": "Highlighted content",
+                        "description": "List",
+                        "url": "https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd"
+                    },
+                    {
+                        "name": "Stream",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-stream-web-part-b97fa87c-1337-4271-a059-17f0d2b26e8b"
+                    },
+                    {
+                        "name": "People",
+                        "description": "Compact",
+                        "url": "https://support.office.com/en-us/article/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05"
+                    }
+                ]
+            },
+            {
+                "name": "Features",
+                "items": [
+                    {
+                        "name": "Custom company theme",
+                        "url": "https://docs.microsoft.com/en-us/sharepoint/dev/general-development/how-to-deploy-a-custom-theme-in-sharepoint"
+                    },
+                    {
+                        "name": "Section background",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Hub level mega menu",
+                        "url": "https://support.office.com/en-us/article/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca"
+                    },
+                    {
+                        "name": "Compact header",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Header background",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },                                 
+                    {
+                        "name": "Custom site logo",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
+                        "badgeText": ""
+                    },                        
+                    {
+                        "name": "Footer",
+                        "url": "https://docs.microsoft.com/en-us/sharepoint/dev/features/site-footer"
+                    }
+                ]
+            },
+            {
+                "name": "Site Content",
+                "items": [
+                    {
+                        "name": "New site collection using communication site template"
+                    },
+                    {
+                        "name": "Custom welcome page"
+                    },
+                    {
+                        "name": "7 news articles with example content"
+                    },
+                    {
+                        "name": "Sample image content used in the template"
+                    },
+                    {
+                        "name": "Sample documents used in the pages"
+                    }
+                ]
+            },
+            {
+                "name": "Resources",
+                "items": [
+                    {
+                        "name": "Walkthrough",
+                        "url": "./resources/walkthrough.docx"
+                    },
+                    {
+                        "name": "Video",
+                        "url": "./resources/video.mp4",
+                        "previewImage": "./resources/video-thumb.png"
+                    }
+                ]
+            }
+        ],
+        "systemRequirements": [
+            {
+                "name": "OS",
+                "value": "SharePoint"
+            },
+            {
+                "name": "Permission Required",
+                "value": "Tenant Admin"
+            },
+            {
+                "name": "Site Language",
+                "value": "English"
+            }
+        ]
+    }
+  }
+}
