@@ -4,20 +4,24 @@
 }
 
 .image-container {
-    margin-top: 48px;
+    margin-top: 64px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .image-container {
         margin-top: 0;
     }
 }
 
-.add-to-tenant-subsection h1 {
+.add-to-tenant-subsection h4 {
     display: none;
 }
 
-ul {
+.site-content-list {
     margin-bottom: 0;
     padding-inline-start: 30px;
+}
+
+li:not(:first-child) {
+    margin-top: 20px;
 }

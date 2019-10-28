@@ -1,18 +1,12 @@
-# The Landing
+# Drone Product Training
 
-It's THE landing!
-
-![Full layout](./top-the-landing.png)
-
-You can easily extend the by doing following:
-
-- Do some edits
+This communication site starts with a call to action button, and with its clean and visual layout it leads the reader to understand the benefits of growth and learning experiences. 
 
 ## Template content
 
 Template contains following structures and assets:
 
-- TBD
+- Custom welcome page with example structure using out-of-the-box web parts
 
 **Notice** - If applied on top of existing communication site, welcome page content will be overridden.
 
@@ -20,7 +14,7 @@ Template contains following structures and assets:
 
 Below picture shows the expected layout from this template.
 
-![Full layout](./full-layout-the-landing.png)
+![Full layout](./full-layout-droneproducttraining.jpg)
 
 **Note** - There might be small differences between the screenshot from the [SharePoint look book](https://spdesign.azurewebsites.net) and the end results of the template. Template automation will get you as close as possible given certain API level limitations. Templates are also designed to be as independent as possible, which has resulted some compromises on the implementation.
 

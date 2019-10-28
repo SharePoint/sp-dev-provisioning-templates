@@ -1,0 +1,7 @@
+{
+    "platforms": [
+        {"id": "SPPNP", "displayName": "Provisioning Service"},
+        {"id": "LOOKBOOK", "displayName": "SharePoint Look Book"},
+        {"id": "ODP", "displayName": "Office Developer Platform"}
+    ]
+}

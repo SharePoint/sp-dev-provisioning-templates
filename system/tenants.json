@@ -38,6 +38,15 @@
         {"id": "M365x632197.onmicrosoft.com", "tenantName": "M365x632197.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
         {"id": "M365x324632.onmicrosoft.com", "tenantName": "M365x324632.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
         {"id": "m365x841593.onmicrosoft.com", "tenantName": "m365x841593.onmicrosoft.com", "referenceOwner": "Radhika - MSFT"},
-        {"id": "m365pnp.onmicrosoft.com", "tenantName": "m365pnp.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"}        
+        {"id": "m365pnp.onmicrosoft.com", "tenantName": "m365pnp.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
+        {"id": "m365x124918.onmicrosoft.com", "tenantName": "m365x124918.onmicrosoft.com", "referenceOwner": "3Sharp"},
+        {"id": "m365x617361.onmicrosoft.com", "tenantName": "m365x617361.onmicrosoft.com", "referenceOwner": "3Sharp"},
+        {"id": "m365x013060.onmicrosoft.com", "tenantName": "m365x013060.onmicrosoft.com", "referenceOwner": "3Sharp"},
+        {"id": "m365x906828.onmicrosoft.com", "tenantName": "m365x906828.onmicrosoft.com", "referenceOwner": "3Sharp"},
+        {"id": "m365x096570.onmicrosoft.com", "tenantName": "m365x096570.onmicrosoft.com", "referenceOwner": "3Sharp"},
+        {"id": "msignite2019a.onmicrosoft.com", "tenantName": "msignite2019a.onmicrosoft.com", "referenceOwner": "Ignite Demos"},
+        {"id": "m365x007024.onmicrosoft.com", "tenantName": "m365x007024.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
+        {"id": "autolabeltest1.onmicrosoft.com", "tenantName": "autolabeltest1.onmicrosoft.com", "referenceOwner": "Adriana Wood - MSFT"},
+        {"id": "contosoelectronics002a.onmicrosoft.com", "tenantName": "contosoelectronics002a.onmicrosoft.com", "referenceOwner": "Katie Swanson - MSFT"}
     ]
 }
