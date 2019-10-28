@@ -169,7 +169,7 @@
         "systemRequirements": [
             {
                 "name": "SharePoint version",
-                "value": "SharePoint"
+                "value": "SharePoint Online"
             },
             {
                 "name": "Permission Required",
