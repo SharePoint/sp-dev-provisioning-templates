@@ -25,10 +25,9 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteDescriptor": "",
+        "siteDescriptor": "Awareness, adoption, process",
         "descriptionParagraphs": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vulputate eros. Nam iaculis feugiat risus, id molestie justo consectetur."
+            "If you’re working with freelancers or running a freelancer program in your organization, the Microsoft 365 freelance communications site template provides a great starting point for driving awareness, increasing engagement, and streamlining communication flow with your internal stakeholders and freelancers.  The Microsoft 365 freelance communications site template is a SharePoint Online communication site template that you can install in your organization and easily customize to jump-start your freelance program efforts."
         ],
         "previewImages": [
             {
