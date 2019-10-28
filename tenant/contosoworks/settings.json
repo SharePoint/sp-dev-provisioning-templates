@@ -179,7 +179,7 @@
             ],
             "systemRequirements": [
                 {
-                    "name": "OS",
+                    "name": "SharePoint version",
                     "value": "SharePoint"
                 },
                 {

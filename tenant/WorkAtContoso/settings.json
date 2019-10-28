@@ -2,9 +2,7 @@
   "categories": [
     "COMMUNITY"
   ],
-  "platforms": [
-    "SPPNP"
-  ],
+  "platforms": [],
   "packageFile": "WorkAtContoso.pnp",
   "abstract": "This template shows what a typical work-oriented hub site could look like in SharePoint Online. It is designed to aggregate content and news from the associated site collections to show all relevant information from a single location.",
   "sortOrder": 700,
@@ -198,22 +196,12 @@
             },
             {
                 "name": "Resources",
-                "items": [
-                    {
-                        "name": "Walkthrough",
-                        "url": "./resources/walkthrough.docx"
-                    },
-                    {
-                        "name": "Video",
-                        "url": "./resources/video.mp4",
-                        "previewImage": "./resources/video-thumb.png"
-                    }
-                ]
+                "items": []
             }
         ],
         "systemRequirements": [
             {
-                "name": "OS",
+                "name": "SharePoint version",
                 "value": "SharePoint"
             },
             {

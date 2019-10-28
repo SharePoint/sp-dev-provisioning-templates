@@ -2,9 +2,7 @@
   "categories": [
     "TEAM"
   ],
-  "platforms": [
-    "SPPNP"
-  ],
+  "platforms": [],
   "packageFile": "BrandAtContoso.pnp",
   "abstract": "This template shows how a typical company brand site could look like in the SharePoint Online.",
   "sortOrder": 200,
@@ -168,22 +166,12 @@
             },
             {
                 "name": "Resources",
-                "items": [
-                    {
-                        "name": "Walkthrough",
-                        "url": "./resources/walkthrough.docx"
-                    },
-                    {
-                        "name": "Video",
-                        "url": "./resources/video.mp4",
-                        "previewImage": "./resources/video-thumb.png"
-                    }
-                ]
+                "items": []
             }
         ],
         "systemRequirements": [
             {
-                "name": "OS",
+                "name": "SharePoint version",
                 "value": "SharePoint"
             },
             {

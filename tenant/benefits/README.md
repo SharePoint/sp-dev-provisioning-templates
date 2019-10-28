@@ -1,32 +1,28 @@
-# The Landing
+# Benefits site
 
-It's THE landing!
-
-![Full layout](./top-the-landing.png)
-
-You can easily extend the by doing following:
-
-- Do some edits
+This site brings together all of the information your employees need to understand and access their benefits, including top tasks and events.
 
 ## Template content
 
 Template contains following structures and assets:
 
-- TBD
+- Custom welcome page build using out-of-the-box web part
+- 2 articles with example content
+- 4 news articles with example content
+- Example Office documents
+- Example list
 
-**Notice** - If applied on top of existing communication site, welcome page content will be overridden.
+**Notice** - If applied on top of existing site, welcome page content will be overridden.
 
 ## Full layout
 
 Below picture shows the expected layout from this template.
 
-![Full layout](./full-layout-the-landing.png)
-
-**Note** - There might be small differences between the screenshot from the [SharePoint look book](https://spdesign.azurewebsites.net) and the end results of the template. Template automation will get you as close as possible given certain API level limitations. Templates are also designed to be as independent as possible, which has resulted some compromises on the implementation.
+![Full layout](./full-layout-benefits.jpg)
 
 ## Prerequisites
 
 Here are current prerequisites for making this solution work in your tenant.
 
-- You will need to be a site collection administrator to be able to deploy this solution with permissions to create new site collections, unless you apply it on top of an existing site
+- You will need to be a tenant administrator to be able to deploy this template
 - Automatic end-to-end provisioning has only be tested with English tenants

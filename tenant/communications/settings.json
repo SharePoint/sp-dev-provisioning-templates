@@ -40,12 +40,12 @@
             {
                 "type": "fullpage",
                 "altText": "The Landing Layout",
-                "url": "./full-layout-the-communications.jpg"
+                "url": "./full-layout-communications.jpg"
             },
             {
                 "type": "cardpreview",
                 "altText": "The Landing Preview",
-                "url": "./card-the-communications.jpg"
+                "url": "./card-communications.jpg"
             }
         ],
         "detailItemCategories": [
@@ -115,25 +115,13 @@
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
                     },
                     {
-                        "name": "Mega Menu",
-                        "url": "https://support.office.com/en-us/article/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca"
-                    },
-                    {
-                        "name": "Compact header",
-                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                    },
-                    {
-                        "name": "Header background",
-                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                    },                                 
+                        "name": "Hub connected theme",
+                        "url": "https://docs.microsoft.com/en-us/sharepoint/planning-hub-sites"
+                    },                  
                     {
                         "name": "Custom site logo",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
                         "badgeText": ""
-                    },                        
-                    {
-                        "name": "Footer",
-                        "url": "https://docs.microsoft.com/en-us/sharepoint/dev/features/site-footer"
                     }
                 ]
             },
@@ -159,22 +147,12 @@
             },
             {
                 "name": "Resources",
-                "items": [
-                    {
-                        "name": "Walkthrough",
-                        "url": "./resources/walkthrough.docx"
-                    },
-                    {
-                        "name": "Video",
-                        "url": "./resources/video.mp4",
-                        "previewImage": "./resources/video-thumb.png"
-                    }
-                ]
+                "items": []
             }
         ],
         "systemRequirements": [
             {
-                "name": "OS",
+                "name": "SharePoint version",
                 "value": "SharePoint"
             },
             {

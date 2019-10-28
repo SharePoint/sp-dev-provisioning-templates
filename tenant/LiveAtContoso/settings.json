@@ -2,9 +2,7 @@
   "categories": [
     "COMMUNITY"
   ],
-  "platforms": [
-    "SPPNP"
-  ],
+  "platforms": [],
   "packageFile": "LiveAtContoso.pnp",
   "abstract": "This template shows what a typical employee Human Resources site could look like in SharePoint Online.",
   "sortOrder": 500,
@@ -168,22 +166,12 @@
             },
             {
                 "name": "Resources",
-                "items": [
-                    {
-                        "name": "Walkthrough",
-                        "url": "./resources/walkthrough.docx"
-                    },
-                    {
-                        "name": "Video",
-                        "url": "./resources/video.mp4",
-                        "previewImage": "./resources/video-thumb.png"
-                    }
-                ]
+                "items": []
             }
         ],
         "systemRequirements": [
             {
-                "name": "OS",
+                "name": "SharePoint version",
                 "value": "SharePoint"
             },
             {

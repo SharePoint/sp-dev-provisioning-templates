@@ -2,9 +2,7 @@
   "categories": [
     "DEPARTMENT"
   ],
-  "platforms": [
-    "SPPNP"
-  ],
+  "platforms": [],
   "packageFile": "MarketingLanding.pnp",
   "abstract": "This template is designed to demonstrate how a typical marketing site could look like in the SharePoint Online. It has a relatively simple structure with some example pages and content to get you started on updating the template based on your specific requirements.",
   "sortOrder": 20,
@@ -168,22 +166,12 @@
             },
             {
                 "name": "Resources",
-                "items": [
-                    {
-                        "name": "Walkthrough",
-                        "url": "./resources/walkthrough.docx"
-                    },
-                    {
-                        "name": "Video",
-                        "url": "./resources/video.mp4",
-                        "previewImage": "./resources/video-thumb.png"
-                    }
-                ]
+                "items": []
             }
         ],
         "systemRequirements": [
             {
-                "name": "OS",
+                "name": "SharePoint version",
                 "value": "SharePoint"
             },
             {

@@ -1,6 +1,6 @@
-# Retail team site
+# Team communication site
 
-This team site brings together announcements and information for employees on the front lines of your retail services. Product info, news, and training resources are included.
+Here's a team site that's all about communicating and engaging with your teams through news, resources, conversations, and people.
 
 ## Template content
 
@@ -8,7 +8,8 @@ Template contains following structures and assets:
 
 - Custom welcome page build using out-of-the-box web part
 - 2 articles with example content
-- 9 news articles with example content
+- 1 news articles with example content
+- Example Office documents
 
 **Notice** - If applied on top of existing site, welcome page content will be overridden.
 
@@ -16,7 +17,7 @@ Template contains following structures and assets:
 
 Below picture shows the expected layout from this template.
 
-![Full layout](./full-layout-retail.jpg)
+![Full layout](./full-layout-communications.jpg)
 
 ## Prerequisites
 

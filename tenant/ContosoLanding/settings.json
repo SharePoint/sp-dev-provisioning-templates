@@ -2,9 +2,7 @@
   "categories": [
     "ORGANIZATION"
   ],
-  "platforms": [
-    "SPPNP"
-  ],
+  "platforms": [],
   "packageFile": "ContosoLanding.pnp",
   "abstract": "See how you can setup a welcome site using the communication site template and webparts.",
   "sortOrder": 1000,
@@ -168,22 +166,12 @@
             },
             {
                 "name": "Resources",
-                "items": [
-                    {
-                        "name": "Walkthrough",
-                        "url": "./resources/walkthrough.docx"
-                    },
-                    {
-                        "name": "Video",
-                        "url": "./resources/video.mp4",
-                        "previewImage": "./resources/video-thumb.png"
-                    }
-                ]
+                "items": []
             }
         ],
         "systemRequirements": [
             {
-                "name": "OS",
+                "name": "SharePoint version",
                 "value": "SharePoint"
             },
             {
