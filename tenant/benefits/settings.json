@@ -39,12 +39,12 @@
             "previewImages": [
                 {
                     "type": "fullpage",
-                    "altText": "The Landing Layout",
+                    "altText": "Benefits site layout",
                     "url": "./full-layout-benefits.jpg"
                 },
                 {
                     "type": "cardpreview",
-                    "altText": "The Landing Preview",
+                    "altText": "Benefits site preview",
                     "url": "./card-benefits.jpg"
                 }
             ],
@@ -91,7 +91,7 @@
                             "name": "People",
                             "description": "Compact",
                             "url": "https://support.office.com/en-us/article/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05"
-                        }                        
+                        }
                     ]
                 },
                 {
@@ -120,12 +120,12 @@
                         {
                             "name": "Header background",
                             "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                        },                                 
+                        },
                         {
                             "name": "Custom site logo",
                             "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
                             "badgeText": ""
-                        },                        
+                        },
                         {
                             "name": "Footer",
                             "url": "https://docs.microsoft.com/en-us/sharepoint/dev/features/site-footer"
@@ -136,19 +136,19 @@
                     "name": "Site Content",
                     "items": [
                         {
-                            "name": "New site collection using communication site template"
+                            "name": "Custom welcome page build using out-of-the-box web part"
                         },
                         {
-                            "name": "Custom welcome page"
+                            "name": "2 articles with example content"
                         },
                         {
-                            "name": "7 news articles with example content"
+                            "name": "4 news articles with example content"
                         },
                         {
-                            "name": "Sample image content used in the template"
+                            "name": "Example Office documents"
                         },
                         {
-                            "name": "Sample documents used in the pages"
+                            "name": "Example list"
                         }
                     ]
                 },
@@ -163,11 +163,11 @@
                     "value": "SharePoint Online"
                 },
                 {
-                    "name": "Permission Required",
+                    "name": "Permission required",
                     "value": "Tenant Admin"
                 },
                 {
-                    "name": "Site Language",
+                    "name": "Site language",
                     "value": "English"
                 }
             ]

@@ -38,12 +38,12 @@
             "previewImages": [
                 {
                     "type": "fullpage",
-                    "altText": "The Landing Layout",
+                    "altText": "The Landing layout",
                     "url": "./full-layout-thelanding.jpg"
                 },
                 {
                     "type": "cardpreview",
-                    "altText": "The Landing Preview",
+                    "altText": "The Landing preview",
                     "url": "./card-thelanding.jpg"
                 }
             ],
@@ -100,7 +100,7 @@
                             "name": "Sites",
                             "description": "Compact",
                             "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
-                        },                                                                               
+                        },
                         {
                             "name": "Highlighted content",
                             "description": "Grid",
@@ -134,12 +134,12 @@
                         {
                             "name": "Header background",
                             "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                        },                                 
+                        },
                         {
                             "name": "Custom site logo",
                             "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
                             "badgeText": ""
-                        },                        
+                        },
                         {
                             "name": "Footer",
                             "url": "https://docs.microsoft.com/en-us/sharepoint/dev/features/site-footer"
@@ -150,19 +150,16 @@
                     "name": "Site Content",
                     "items": [
                         {
-                            "name": "New site collection using communication site template"
+                            "name": "Demo structure for home site of the portal"
                         },
                         {
-                            "name": "Custom welcome page"
+                            "name": "Custom welcome page structure"
                         },
                         {
-                            "name": "7 news articles with example content"
+                            "name": "6 additional sample modern pages and news articles"
                         },
                         {
-                            "name": "Sample image content used in the template"
-                        },
-                        {
-                            "name": "Sample documents used in the pages"
+                            "name": "Sample images and Office documents"
                         }
                     ]
                 },
@@ -187,11 +184,11 @@
                     "value": "SharePoint Online"
                 },
                 {
-                    "name": "Permission Required",
+                    "name": "Permission required",
                     "value": "Tenant Admin"
                 },
                 {
-                    "name": "Site Language",
+                    "name": "Site language",
                     "value": "English"
                 }
             ]

@@ -12,8 +12,8 @@
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview": "true",
-  "forceNewSite":"false",  
-  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
+  "forceNewSite":"false",
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
   "visible": "true",
   "metadata": {
     "properties": [
@@ -38,12 +38,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "The Landing Layout",
+                "altText": "Mark8 Project Team layout",
                 "url": "./full-layout-mark8projectteam.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "The Landing Preview",
+                "altText": "Mark8 Project Team preview",
                 "url": "./card-mark8projectteam.jpg"
             }
         ],
@@ -90,7 +90,7 @@
                         "name": "Group Calendar",
                         "description": "",
                         "url": "https://support.office.com/en-us/article/use-the-group-calendar-web-part-eaf3c04d-5699-48cb-8b5e-3caa887d51ce"
-                    },                                                                             
+                    },
                     {
                         "name": "Highlighted content",
                         "description": "Most recent docs custom filter",
@@ -120,7 +120,7 @@
                     {
                         "name": "Header background",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                    },                                 
+                    },
                     {
                         "name": "Custom site logo",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
@@ -132,19 +132,10 @@
                 "name": "Site Content",
                 "items": [
                     {
-                        "name": "New site collection using communication site template"
+                        "name": "Complex welcome page with out-of-the-box web parts"
                     },
                     {
-                        "name": "Custom welcome page"
-                    },
-                    {
-                        "name": "7 news articles with example content"
-                    },
-                    {
-                        "name": "Sample image content used in the template"
-                    },
-                    {
-                        "name": "Sample documents used in the pages"
+                        "name": "Example images and Office documents"
                     }
                 ]
             },
@@ -159,11 +150,11 @@
                 "value": "SharePoint Online"
             },
             {
-                "name": "Permission Required",
+                "name": "Permission required",
                 "value": "Tenant Admin"
             },
             {
-                "name": "Site Language",
+                "name": "Site language",
                 "value": "English"
             }
         ]

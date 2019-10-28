@@ -13,8 +13,8 @@
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview": "true",
-  "forceNewSite":"false",  
-  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
+  "forceNewSite":"false",
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
   "visible": "true",
   "metadata": {
     "properties": [
@@ -39,12 +39,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "The Landing Layout",
+                "altText": "Team communication site layout",
                 "url": "./full-layout-communications.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "The Landing Preview",
+                "altText": "Team communication site preview",
                 "url": "./card-communications.jpg"
             }
         ],
@@ -117,7 +117,7 @@
                     {
                         "name": "Hub connected theme",
                         "url": "https://docs.microsoft.com/en-us/sharepoint/planning-hub-sites"
-                    },                  
+                    },
                     {
                         "name": "Custom site logo",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
@@ -129,19 +129,16 @@
                 "name": "Site Content",
                 "items": [
                     {
-                        "name": "New site collection using communication site template"
+                        "name": "Custom welcome page build using out-of-the-box web part"
                     },
                     {
-                        "name": "Custom welcome page"
+                        "name": "2 articles with example content"
                     },
                     {
-                        "name": "7 news articles with example content"
+                        "name": "1 news articles with example content"
                     },
                     {
-                        "name": "Sample image content used in the template"
-                    },
-                    {
-                        "name": "Sample documents used in the pages"
+                        "name": "Example Office documents"
                     }
                 ]
             },
@@ -156,11 +153,11 @@
                 "value": "SharePoint Online"
             },
             {
-                "name": "Permission Required",
+                "name": "Permission required",
                 "value": "Tenant Admin"
             },
             {
-                "name": "Site Language",
+                "name": "Site language",
                 "value": "English"
             }
         ]

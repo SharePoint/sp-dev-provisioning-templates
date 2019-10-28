@@ -12,8 +12,8 @@
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview": "true",
-  "forceNewSite":"false",  
-  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
+  "forceNewSite":"false",
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
   "visible": "true",
   "metadata": {
     "properties": [
@@ -38,12 +38,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "The Landing Layout",
+                "altText": "Contoso News layout",
                 "url": "./full-layout-contosonews.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "The Landing Preview",
+                "altText": "Contoso News preview",
                 "url": "./card-contosonews.jpg"
             }
         ],
@@ -121,12 +121,12 @@
                     {
                         "name": "Header background",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                    },                                 
+                    },
                     {
                         "name": "Custom site logo",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
                         "badgeText": ""
-                    },                        
+                    },
                     {
                         "name": "Footer",
                         "url": "https://docs.microsoft.com/en-us/sharepoint/dev/features/site-footer"
@@ -137,19 +137,10 @@
                 "name": "Site Content",
                 "items": [
                     {
-                        "name": "New site collection using communication site template"
+                        "name": "Custom welcome page demonstrating different web part capabilities"
                     },
                     {
-                        "name": "Custom welcome page"
-                    },
-                    {
-                        "name": "7 news articles with example content"
-                    },
-                    {
-                        "name": "Sample image content used in the template"
-                    },
-                    {
-                        "name": "Sample documents used in the pages"
+                        "name": "16 additional modern pages which some are news"
                     }
                 ]
             },
@@ -164,11 +155,11 @@
                 "value": "SharePoint Online"
             },
             {
-                "name": "Permission Required",
+                "name": "Permission required",
                 "value": "Tenant Admin"
             },
             {
-                "name": "Site Language",
+                "name": "Site language",
                 "value": "English"
             }
         ]

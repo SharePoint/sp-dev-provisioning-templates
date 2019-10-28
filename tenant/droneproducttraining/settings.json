@@ -12,8 +12,8 @@
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview": "true",
-  "forceNewSite":"false",  
-  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
+  "forceNewSite":"false",
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
   "visible": "true",
   "metadata": {
     "properties": [
@@ -38,12 +38,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "The Landing Layout",
+                "altText": "Drone Product Training layout",
                 "url": "./full-layout-droneproducttraining.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "The Landing Preview",
+                "altText": "Drone Product Training preview",
                 "url": "./card-droneproducttraining.jpg"
             }
         ],
@@ -116,12 +116,12 @@
                     {
                         "name": "Header background",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                    },                                 
+                    },
                     {
                         "name": "Custom site logo",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
                         "badgeText": ""
-                    },  
+                    },
                     {
                         "name": "Anchor linked sections",
                         "url": "https://support.office.com/en-us/article/create-and-use-modern-pages-on-a-sharepoint-site-b3d46deb-27a6-4b1e-87b8-df851e503dec#bkmk_pageanchors"
@@ -136,19 +136,7 @@
                 "name": "Site Content",
                 "items": [
                     {
-                        "name": "New site collection using communication site template"
-                    },
-                    {
-                        "name": "Custom welcome page"
-                    },
-                    {
-                        "name": "7 news articles with example content"
-                    },
-                    {
-                        "name": "Sample image content used in the template"
-                    },
-                    {
-                        "name": "Sample documents used in the pages"
+                        "name": "Custom welcome page with example structure using out-of-the-box web parts"
                     }
                 ]
             },
@@ -163,11 +151,11 @@
                 "value": "SharePoint Online"
             },
             {
-                "name": "Permission Required",
+                "name": "Permission required",
                 "value": "Tenant Admin"
             },
             {
-                "name": "Site Language",
+                "name": "Site language",
                 "value": "English"
             }
         ]

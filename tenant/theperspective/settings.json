@@ -12,8 +12,8 @@
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview": "true",
-  "forceNewSite":"false",  
-  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",  
+  "forceNewSite":"false",
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
   "visible": "true",
   "metadata": {
     "properties": [
@@ -38,12 +38,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "The Landing Layout",
+                "altText": "The Perspective layout",
                 "url": "./full-layout-theperspective.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "The Landing Preview",
+                "altText": "The Perspective preview",
                 "url": "./card-theperspective.jpg"
             }
         ],
@@ -90,12 +90,12 @@
                         "name": "Sites",
                         "description": "Compact",
                         "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
-                    }, 
+                    },
                     {
                         "name": "Events",
                         "description": "Compact",
                         "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
-                    }  
+                    }
                 ]
             },
             {
@@ -124,12 +124,12 @@
                     {
                         "name": "Header background",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                    },                                 
+                    },
                     {
                         "name": "Custom site logo",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
                         "badgeText": ""
-                    },                        
+                    },
                     {
                         "name": "Footer",
                         "url": "https://docs.microsoft.com/en-us/sharepoint/dev/features/site-footer"
@@ -139,21 +139,18 @@
             {
                 "name": "Site Content",
                 "items": [
-                    {
-                        "name": "New site collection using communication site template"
-                    },
-                    {
-                        "name": "Custom welcome page"
-                    },
-                    {
-                        "name": "7 news articles with example content"
-                    },
-                    {
-                        "name": "Sample image content used in the template"
-                    },
-                    {
-                        "name": "Sample documents used in the pages"
-                    }
+                  {
+                    "name": "Custom welcome page designs"
+                  },
+                  {
+                    "name": "Sample page template for news articles"
+                  },
+                  {
+                    "name": "12 sample news articles"
+                  },
+                  {
+                    "name": "Example images"
+                  }
                 ]
             },
             {
@@ -167,11 +164,11 @@
                 "value": "SharePoint Online"
             },
             {
-                "name": "Permission Required",
+                "name": "Permission required",
                 "value": "Tenant Admin"
             },
             {
-                "name": "Site Language",
+                "name": "Site language",
                 "value": "English"
             }
         ]

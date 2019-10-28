@@ -9,7 +9,7 @@
   "promoted": "true",
   "sortOrderPromoted": 10,
   "preview": "false",
-  "forceNewSite":"false",  
+  "forceNewSite":"false",
   "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
   "visible": "true",
   "metadata": {
@@ -98,7 +98,7 @@
                         "name": "Sites",
                         "description": "Compact",
                         "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
-                    },                                                                               
+                    },
                     {
                         "name": "Highlighted content",
                         "description": "Grid",
@@ -132,12 +132,12 @@
                     {
                         "name": "Header background",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                    },                                 
+                    },
                     {
                         "name": "Custom site logo",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
                         "badgeText": ""
-                    },                        
+                    },
                     {
                         "name": "Footer",
                         "url": "https://docs.microsoft.com/en-us/sharepoint/dev/features/site-footer"
@@ -175,11 +175,11 @@
                 "value": "SharePoint Online"
             },
             {
-                "name": "Permission Required",
+                "name": "Permission required",
                 "value": "Tenant Admin"
             },
             {
-                "name": "Site Language",
+                "name": "Site language",
                 "value": "English"
             }
         ]
