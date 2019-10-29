@@ -556,7 +556,7 @@
               </CHOICES>
             </Field>
           </pnp:Fields>
-          <pnp:DataRows UpdateBehavior="Overwrite">
+          <pnp:DataRows KeyColumn="Title" UpdateBehavior="Overwrite">
             <pnp:DataRow>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
               <pnp:DataValue FieldName="Title">New Year's Eve</pnp:DataValue>
@@ -565,7 +565,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="Title">	Martin Luther King Day</pnp:DataValue>
+              <pnp:DataValue FieldName="Title">Martin Luther King Day</pnp:DataValue>
               <pnp:DataValue FieldName="rlsy">1/21/2019 12:00 AM</pnp:DataValue>
               <pnp:DataValue FieldName="bxkv">1/20/2020 12:00 AM</pnp:DataValue>
             </pnp:DataRow>
