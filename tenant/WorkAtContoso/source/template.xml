@@ -172,80 +172,6 @@
           <pnp:ContentTypeBindings>
             <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
           </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{7FF4BBC1-43D7-41E7-8F9E-F18F28ED8FE1}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="CALENDAR" TabularView="FALSE" RecurrenceRowset="TRUE" DisplayName="Calendar" Url="/sites/portal/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=44">
-              <Query>
-                <Where>
-                  <DateRangesOverlap>
-                    <FieldRef Name="EventDate" />
-                    <FieldRef Name="EndDate" />
-                    <FieldRef Name="RecurrenceID" />
-                    <Value Type="DateTime">
-                      <Month />
-                    </Value>
-                  </DateRangesOverlap>
-                </Where>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="fRecurrence" />
-                <FieldRef Name="EventType" />
-                <FieldRef Name="WorkspaceLink" />
-                <FieldRef Name="Title" />
-                <FieldRef Name="Location" />
-                <FieldRef Name="Description" />
-                <FieldRef Name="Workspace" />
-                <FieldRef Name="MasterSeriesItemID" />
-                <FieldRef Name="fAllDayEvent" />
-              </ViewFields>
-            </View>
-            <View Name="{3D82A43A-7FB9-44CF-AD79-6391D9F79A6A}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=44">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="EventDate" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="fRecurrence" />
-                <FieldRef Name="WorkspaceLink" />
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="Location" />
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="fAllDayEvent" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{91888699-A7B0-4DB8-8DEA-D820A3C43D27}" MobileView="TRUE" Type="HTML" RecurrenceRowset="TRUE" DisplayName="Current Events" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=44">
-              <Query>
-                <Where>
-                  <DateRangesOverlap>
-                    <FieldRef Name="EventDate" />
-                    <FieldRef Name="EndDate" />
-                    <FieldRef Name="RecurrenceID" />
-                    <Value Type="DateTime">
-                      <Now />
-                    </Value>
-                  </DateRangesOverlap>
-                </Where>
-                <OrderBy>
-                  <FieldRef Name="EventDate" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="fRecurrence" />
-                <FieldRef Name="WorkspaceLink" />
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="Location" />
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="fAllDayEvent" />
-              </ViewFields>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
           <pnp:FieldRefs>
             <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
             <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" DisplayName="Start Time" />
@@ -258,7 +184,7 @@
           <pnp:FieldDefaults>
             <pnp:FieldDefault FieldName="Category" />
           </pnp:FieldDefaults>
-          <pnp:DataRows KeyColumn="Title" UpdateBehavior="Overwrite">
+          <pnp:DataRows KeyColumn="EventDate" UpdateBehavior="Overwrite">
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">SharePoint Conference North America</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">true</pnp:DataValue>
