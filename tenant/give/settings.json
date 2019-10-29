@@ -31,19 +31,19 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteDescriptor": "Information and call-to-actions for charitable giving",
+        "siteDescriptor": "Informational and calls-to-action",
         "descriptionParagraphs": [
             "This communication site provides information about your company giving program with news, call-to-actions, metrics, and stories to inspire."
         ],
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Give layout",
+                "altText": "Charitable site layout",
                 "url": "./full-layout-give.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "Give preview",
+                "altText": "Charitable site preview",
                 "url": "./card-give.jpg"
             }
         ],

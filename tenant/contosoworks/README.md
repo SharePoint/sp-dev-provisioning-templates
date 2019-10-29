@@ -1,6 +1,6 @@
-# Contoso Works
+# Human resources hub
 
-Besides hub news, events, contacts and other resources, this example of a Human Resources hub site features a custom PowerApp for time off requests from employees. 
+Besides hub news, events, contacts and other resources, this example of a Human Resources hub site features a custom PowerApp for time off requests from employees.
 
 ## Template content
 

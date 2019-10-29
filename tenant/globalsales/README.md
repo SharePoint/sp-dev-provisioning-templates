@@ -1,6 +1,6 @@
-# Global Sales
+# Global sales hub
 
-This Sales hub site makes it easy to discover related content such as news and other site activities. It also demonstrates common navigation and branding that carries across associated sites. 
+This Sales hub site makes it easy to discover related content such as news and other site activities. It also demonstrates common navigation and branding that carries across associated sites.
 
 ## Template content
 
@@ -9,7 +9,7 @@ Template contains following structures and assets:
 - Main global marketing site collection marked as a hub
 - Two additional communication site collection associated to the hub
 - Numerous example modern pages and news articles
-- Numerous sample Office documents 
+- Numerous sample Office documents
 
 **Notice** - If applied on top of existing communication site, welcome page content will be overridden.
 

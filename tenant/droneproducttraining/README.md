@@ -1,6 +1,6 @@
-# Drone Product Training
+# Workshop training site
 
-This communication site starts with a call to action button, and with its clean and visual layout it leads the reader to understand the benefits of growth and learning experiences. 
+This communication site starts with a call to action button, and with its clean and visual layout it leads the reader to understand the benefits of growth and learning experiences.
 
 ## Template content
 

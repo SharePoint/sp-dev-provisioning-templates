@@ -1,4 +1,4 @@
-# Team Site
+# Collaboration team site
 
 This template is an example of enabling collaboration at a team level.  It has many parts including news, files, and team calendar.
 

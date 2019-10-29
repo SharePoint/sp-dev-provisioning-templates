@@ -3,7 +3,7 @@
                   Generator="Human being"
                   Version="1.0"
                   Description="Organizational News"
-                  DisplayName="Contoso News"
+                  DisplayName="News site"
                   ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/contosonews/top-contoso-news.png">
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">

@@ -38,12 +38,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Global Sales layout",
+                "altText": "Global sales hub layout",
                 "url": "./full-layout-globalsales.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "Global Sales preview",
+                "altText": "Global sales hub preview",
                 "url": "./card-globalsales.jpg"
             }
         ],
