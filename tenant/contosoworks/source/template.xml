@@ -3,7 +3,7 @@
                   Generator="Human being"
                   Version="1.0"
                   Description="Hub Site"
-                  DisplayName="Contoso Works"
+                  DisplayName="Human resources hub"
                   ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/theperspective/top-contoso-works.png">
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
