@@ -33,12 +33,12 @@
             {
                 "type": "fullpage",
                 "altText": "Microsoft 365 learning pathways",
-                "url": "./o365cl-frontpage.png"
+                "url": "./M365LP-frontpage.png"
             },
             {
                 "type": "cardpreview",
                 "altText": "Microsoft 365 learning pathways",
-                "url": "./o365cl-frontpage.png"
+                "url": "./M365LP-frontpage.png"
             }
         ],
         "detailItemCategories": [
