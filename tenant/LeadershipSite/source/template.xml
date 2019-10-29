@@ -527,7 +527,7 @@
             <Field Type="URL" DisplayName="Picture" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Image" ID="{0c48aac5-17ed-498a-9d6b-ca64d0c377dc}" SourceID="{{listid:Leadership}}" StaticName="Picture" Name="Picture" ColName="nvarchar12" RowOrdinal="0" ColName2="nvarchar13" RowOrdinal2="0" />
             <Field Type="Note" DisplayName="Notes" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" RichTextMode="Compatible" IsolateStyles="FALSE" Sortable="FALSE" ID="{f345dc54-6941-4aa7-9a6c-35f05ab1a00b}" SourceID="{{listid:Leadership}}" StaticName="Notes" Name="Notes" ColName="ntext2" RowOrdinal="0" />
           </pnp:Fields>
-          <pnp:DataRows>
+          <pnp:DataRows KeyColumn="Title" UpdateBehavior="Overwrite">
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Lynne Robbins</pnp:DataValue>
               <pnp:DataValue FieldName="JobTitle">Chief Executive Officer</pnp:DataValue>
