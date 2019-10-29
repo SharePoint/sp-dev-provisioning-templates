@@ -49,12 +49,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Global Marketing layout",
+                "altText": "Global marketing hub layout",
                 "url": "./full-layout-globalmarketing.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "Global Marketing preview",
+                "altText": "Global marketing hub preview",
                 "url": "./card-globalmarketing.jpg"
             }
         ],

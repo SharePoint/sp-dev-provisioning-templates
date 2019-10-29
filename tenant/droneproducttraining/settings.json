@@ -38,12 +38,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Drone Product Training layout",
+                "altText": "Workshop training site layout",
                 "url": "./full-layout-droneproducttraining.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "Drone Product Training preview",
+                "altText": "Workshop training site preview",
                 "url": "./card-droneproducttraining.jpg"
             }
         ],

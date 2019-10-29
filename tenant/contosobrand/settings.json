@@ -38,12 +38,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Contoso Brand layout",
+                "altText": "Branding site layout",
                 "url": "./full-layout-contosobrand.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "Contoso Brand preview",
+                "altText": "Branding site preview",
                 "url": "./card-contosobrand.jpg"
             }
         ],

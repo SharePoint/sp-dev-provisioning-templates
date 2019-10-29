@@ -1,4 +1,4 @@
-# Give
+# Charitable site
 
 This communication site provides information about your company giving program with news, call-to-actions, metrics, and stories to inspire.
 

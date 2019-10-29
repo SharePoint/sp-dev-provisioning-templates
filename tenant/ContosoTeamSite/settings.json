@@ -1,7 +1,6 @@
 {
   "categories": [
-    "ORGANIZATION",
-    "DEPARTMENT"
+    "TEAM"
   ],
   "platforms": [
     "SPPNP",
@@ -40,12 +39,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Contoso Team Site layout",
+                "altText": "Collaboration team site layout",
                 "url": "./full-layout-team.png"
             },
             {
                 "type": "cardpreview",
-                "altText": "Contoso Team Site preview",
+                "altText": "Collaboration team site preview",
                 "url": "./top-team.png"
             }
         ],
