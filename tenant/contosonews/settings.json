@@ -38,12 +38,12 @@
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Contoso News layout",
+                "altText": "News site layout",
                 "url": "./full-layout-contosonews.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "Contoso News preview",
+                "altText": "News site preview",
                 "url": "./card-contosonews.jpg"
             }
         ],

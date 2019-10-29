@@ -1,6 +1,6 @@
-# Contoso News
+# News site
 
-This communication site uses multiple news sources and news layouts to highlight stories and events from all levels of your company's organizations. 
+This communication site uses multiple news sources and news layouts to highlight stories and events from all levels of your company's organizations.
 
 ## Template content
 

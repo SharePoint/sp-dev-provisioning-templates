@@ -165,17 +165,7 @@
                 },
                 {
                     "name": "Resources",
-                    "items": [
-                        {
-                            "name": "Walkthrough",
-                            "url": "./resources/walkthrough.docx"
-                        },
-                        {
-                            "name": "Video",
-                            "url": "./resources/video.mp4",
-                            "previewImage": "./resources/video-thumb.png"
-                        }
-                    ]
+                    "items": []
                 }
             ],
             "systemRequirements": [

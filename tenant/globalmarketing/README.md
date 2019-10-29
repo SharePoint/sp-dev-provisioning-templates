@@ -1,6 +1,6 @@
-# Global Marketing Hub
+# Global marketing hub
 
-SharePoint Hubs let you organize your intranet and drive consistent branding. For example, the header, footer, and custom logo on this marketing hub site carry over to associated sites. 
+SharePoint Hubs let you organize your intranet and drive consistent branding. For example, the header, footer, and custom logo on this marketing hub site carry over to associated sites.
 
 ## Template content
 
@@ -9,7 +9,7 @@ Template contains following structures and assets:
 - Main global marketing site collection marked as a hub
 - Additional communications site collection associated to the hub
 - Numerous example modern pages and news articles
-- Numerous sample Office documents 
+- Numerous sample Office documents
 
 **Notice** - If applied on top of existing communication site, welcome page content will be overridden.
 

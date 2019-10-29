@@ -49,12 +49,12 @@
             "previewImages": [
                 {
                     "type": "fullpage",
-                    "altText": "Contoso Works layout",
+                    "altText": "Human resources hub layout",
                     "url": "./full-layout-contosoworks.jpg"
                 },
                 {
                     "type": "cardpreview",
-                    "altText": "Contoso Works preview",
+                    "altText": "Human resources hub preview",
                     "url": "./card-contosoworks.jpg"
                 }
             ],
@@ -161,17 +161,7 @@
                 },
                 {
                     "name": "Resources",
-                    "items": [
-                        {
-                            "name": "Walkthrough",
-                            "url": "./resources/walkthrough.docx"
-                        },
-                        {
-                            "name": "Video",
-                            "url": "./resources/video.mp4",
-                            "previewImage": "./resources/video-thumb.png"
-                        }
-                    ]
+                    "items": []
                 }
             ],
             "systemRequirements": [

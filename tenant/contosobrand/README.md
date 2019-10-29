@@ -1,6 +1,6 @@
-# Contoso Brand
+# Branding site
 
-This page is a resource for employees that includes company guidelines and assets so they can apply the right branding across their deliverables. 
+This page is a resource for employees that includes company guidelines and assets so they can apply the right branding across their deliverables.
 
 ## Template content
 
