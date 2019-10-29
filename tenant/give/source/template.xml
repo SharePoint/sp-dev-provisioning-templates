@@ -2,8 +2,8 @@
                   Author="John White"
                   Generator="Human being"
                   Version="1.0"
-                  Description="Give"
-                  DisplayName="Give"
+                  Description="Informational and calls-to-action"
+                  DisplayName="Charitable site"
                   ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/give/top-give.png">
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
