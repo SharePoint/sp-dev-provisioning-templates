@@ -188,50 +188,8 @@
           </pnp:FieldRefs>
         </pnp:ListInstance>
         <pnp:ListInstance Title="Scripts" Description="" TemplateType="101" Url="Scripts" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0">
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{DAAB2D70-B07D-42F0-B3EB-47DE519015B8}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Scripts/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="FileLeafRef" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="DocIcon" />
-                <FieldRef Name="LinkFilename" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
         </pnp:ListInstance>
         <pnp:ListInstance Title="Product Imagery" Description="" TemplateType="101" Url="Product Imagery" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0">
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{DAAB2D70-B07D-42F0-B3EB-47DE519015B8}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Scripts/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="FileLeafRef" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="DocIcon" />
-                <FieldRef Name="LinkFilename" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
         </pnp:ListInstance>
         <pnp:ListInstance Title="Products" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/Products" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Products/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Products/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Products/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
@@ -288,7 +246,7 @@
             <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;style&quot;:{&quot;position&quot;:&quot;absolute&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;padding&quot;:&quot;0 4px&quot;}},{&quot;elmType&quot;:&quot;div&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&amp;&amp;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[999,0]},{&quot;operator&quot;:&quot;&gt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]}]},&quot;sp-field-dashedBorderRight&quot;,&quot;&quot;]}},&quot;style&quot;:{&quot;min-height&quot;:&quot;inherit&quot;,&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding-left&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;+&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;*&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;/&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;-&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;abs&quot;,&quot;operands&quot;:[0]},{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},{&quot;operator&quot;:&quot;abs&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},0,&quot;@currentField&quot;]}]},0]}]},999]},100]},&quot;%&quot;]},0]}}},{&quot;elmType&quot;:&quot;div&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&amp;&amp;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]}]},&quot;sp-css-backgroundColor-errorBackground sp-css-borderTop-errorBorder&quot;,&quot;sp-css-backgroundColor-warningBackground50 sp-css-borderTop-warningBorder&quot;]}},&quot;style&quot;:{&quot;min-height&quot;:&quot;inherit&quot;,&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;width&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;+&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;*&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;/&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},{&quot;operator&quot;:&quot;abs&quot;,&quot;operands&quot;:[0]},{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,999]},999,{&quot;operator&quot;:&quot;abs&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]}]},999]},100]},&quot;%&quot;]},{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,999]},&quot;100%&quot;,{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;=&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},&quot;0%&quot;,{&quot;operator&quot;:&quot;+&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;*&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;/&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;-&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]},999]},100]},&quot;%&quot;]}]}]}]}}},{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;min-height&quot;:&quot;inherit&quot;,&quot;box-sizing&quot;:&quot;border-box&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;?&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&amp;&amp;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[0,0]},{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[999,0]},{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,0]}]},&quot;sp-field-dashedBorderRight&quot;,&quot;&quot;]}}}],&quot;templateId&quot;:&quot;DatabarNumber&quot;}" DisplayName="Call volume" Format="Dropdown" Name="CustomerRating" Percentage="FALSE" Title="Call volume" Type="Number" ID="{83e2b716-87bc-4ade-9270-ab7c7f513a14}" Version="7" StaticName="CustomerRating" SourceID="{{listid:Products}}" ColName="float1" RowOrdinal="0" />
             <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;padding&quot;:&quot;0 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&lt;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]},{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@now&quot;]}]}]},&quot;sp-css-backgroundColor-blueBackground37&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]},{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@now&quot;]}]}]},&quot;sp-css-backgroundColor-successBackground&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;&gt;&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@currentField&quot;]}]},{&quot;operator&quot;:&quot;Date()&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;toDateString()&quot;,&quot;operands&quot;:[&quot;@now&quot;]}]}]},&quot;sp-css-backgroundColor-blockingBackground50&quot;,&quot;&quot;]}]}]}]}},&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;templateId&quot;:&quot;BgColorDate&quot;}" DisplayName="Release Date" FriendlyDisplayFormat="Disabled" Format="DateOnly" Name="ReleaseDate" Title="Release Date" Type="DateTime" ID="{897ec153-f67a-4475-9f99-b7311e492f07}" Version="3" StaticName="ReleaseDate" SourceID="{{listid:Products}}" ColName="datetime1" RowOrdinal="0" />
           </pnp:Fields>
-          <pnp:DataRows>
+          <pnp:DataRows KeyColumn="Title" UpdateBehavior="Overwrite">
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Mark8</pnp:DataValue>
               <pnp:DataValue FieldName="RetailCategory">Consumer</pnp:DataValue>
