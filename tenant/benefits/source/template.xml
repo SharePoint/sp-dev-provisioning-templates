@@ -71,99 +71,13 @@
       </pnp:Navigation>
       <pnp:Lists>
         <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{BD598C0C-FDC9-480C-AD2A-2A523B77E084}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="CALENDAR" TabularView="FALSE" RecurrenceRowset="TRUE" DisplayName="Calendar" Url="{site}/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=47">
-              <Query>
-                <Where>
-                  <DateRangesOverlap>
-                    <FieldRef Name="EventDate" />
-                    <FieldRef Name="EndDate" />
-                    <FieldRef Name="RecurrenceID" />
-                    <Value Type="DateTime">
-                      <Month />
-                    </Value>
-                  </DateRangesOverlap>
-                </Where>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="fRecurrence" />
-                <FieldRef Name="EventType" />
-                <FieldRef Name="WorkspaceLink" />
-                <FieldRef Name="Title" />
-                <FieldRef Name="Location" />
-                <FieldRef Name="Description" />
-                <FieldRef Name="Workspace" />
-                <FieldRef Name="MasterSeriesItemID" />
-                <FieldRef Name="fAllDayEvent" />
-              </ViewFields>
-            </View>
-            <View Name="{C859958C-30BB-4E8E-A4C6-19F051C846D4}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Url="{site}/Lists/Events/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="EventDate" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="fRecurrence" />
-                <FieldRef Name="WorkspaceLink" />
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="Location" />
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="fAllDayEvent" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-            <View Name="{A862CEF4-00D3-4F88-8FFB-86400BED5F60}" MobileView="TRUE" Type="HTML" RecurrenceRowset="TRUE" DisplayName="Current Events" Url="{site}/Lists/Events/MyItems.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
-              <Query>
-                <Where>
-                  <DateRangesOverlap>
-                    <FieldRef Name="EventDate" />
-                    <FieldRef Name="EndDate" />
-                    <FieldRef Name="RecurrenceID" />
-                    <Value Type="DateTime">
-                      <Now />
-                    </Value>
-                  </DateRangesOverlap>
-                </Where>
-                <OrderBy>
-                  <FieldRef Name="EventDate" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="fRecurrence" />
-                <FieldRef Name="WorkspaceLink" />
-                <FieldRef Name="LinkTitle" />
-                <FieldRef Name="Location" />
-                <FieldRef Name="EventDate" />
-                <FieldRef Name="EndDate" />
-                <FieldRef Name="fAllDayEvent" />
-              </ViewFields>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
-          <pnp:FieldRefs>
-            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
-            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" DisplayName="Start Time" />
-            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
-            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Description" DisplayName="Description" />
-            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
-            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
-            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
-          </pnp:FieldRefs>
-          <pnp:DataRows UpdateBehavior="Overwrite">
+          <pnp:DataRows KeyColumn="EventDate" UpdateBehavior="Overwrite">
             <pnp:DataRow>
-              <pnp:DataValue FieldName="Title">News Year's Day</pnp:DataValue>
+              <pnp:DataValue FieldName="Title">New Year's Day</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
               <pnp:DataValue FieldName="EventDate">12/31/2018 4:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">7/1/2019 4:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">1/1/2019 4:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
@@ -271,7 +185,7 @@
               </CHOICES>
             </Field>
           </pnp:Fields>
-          <pnp:DataRows UpdateBehavior="Overwrite">
+          <pnp:DataRows KeyColumn="rlsy" UpdateBehavior="Overwrite">
             <pnp:DataRow>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
               <pnp:DataValue FieldName="Title">New Year's Eve</pnp:DataValue>
@@ -305,22 +219,22 @@
         </pnp:ListInstance>
       </pnp:Lists>
       <pnp:Files>
-        <pnp:File Src="SiteAssets/SitePages/hr-live/new-employees.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/hr-live/MSCares_530x335.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/hr-live/401k.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/hr-live/anti-virus.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/hr-live/22976656703013113770blake-barlow-1499544-unsplash.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/Open-Door-Policy/86180-NorWood-9930.jpg" Folder="SiteAssets/SitePages/Open-Door-Policy" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/Changes-to-Medical-Benefits/96567-bonnie-kittle-122261-unsplash.jpg" Folder="SiteAssets/SitePages/Changes-to-Medical-Benefits" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/New-401K-Packets-Available-Now!/61837-401k-packets.png" Folder="SiteAssets/SitePages/New-401K-Packets-Available-Now!" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/Benefits/98611-benefits-header@2x.png" Folder="SiteAssets/SitePages/Benefits" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/Benefits/4170393417humphrey-muleba-1119283-unsplash.jpg" Folder="SiteAssets/SitePages/Benefits" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/Benefits/57599004leonides-ruvalcabar--JsZ6o5nIhs-unsplash.jpg" Folder="SiteAssets/SitePages/Benefits" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/Benefits/1721222032logan-isbell-F5b7_OD4IMA-unsplash.jpg" Folder="SiteAssets/SitePages/Benefits" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/hr-live/365342698flu-shot.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/hr-live/827812388helloquence-5fNmWej4tAA-unsplash.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
-        <pnp:File Src="SiteAssets/__sitelogo__logo_benefits.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+        <pnp:File Src="SiteAssets/SitePages/hr-live/new-employees.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/hr-live/MSCares_530x335.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/hr-live/401k.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/hr-live/anti-virus.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/hr-live/22976656703013113770blake-barlow-1499544-unsplash.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Open-Door-Policy/86180-NorWood-9930.jpg" Folder="SiteAssets/SitePages/Open-Door-Policy" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Changes-to-Medical-Benefits/96567-bonnie-kittle-122261-unsplash.jpg" Folder="SiteAssets/SitePages/Changes-to-Medical-Benefits" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/New-401K-Packets-Available-Now!/61837-401k-packets.png" Folder="SiteAssets/SitePages/New-401K-Packets-Available-Now!" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Benefits/98611-benefits-header@2x.png" Folder="SiteAssets/SitePages/Benefits" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Benefits/4170393417humphrey-muleba-1119283-unsplash.jpg" Folder="SiteAssets/SitePages/Benefits" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Benefits/57599004leonides-ruvalcabar--JsZ6o5nIhs-unsplash.jpg" Folder="SiteAssets/SitePages/Benefits" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Benefits/1721222032logan-isbell-F5b7_OD4IMA-unsplash.jpg" Folder="SiteAssets/SitePages/Benefits" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/hr-live/365342698flu-shot.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/hr-live/827812388helloquence-5fNmWej4tAA-unsplash.jpg" Folder="SiteAssets/SitePages/hr-live" Overwrite="false" Level="Published" />
+        <pnp:File Src="SiteAssets/__footerlogo__ContosoElectronics_slab_white.png" Folder="SiteAssets" Overwrite="false" Level="Draft" />
+        <pnp:File Src="SiteAssets/__sitelogo__logo_benefits.png" Folder="SiteAssets" Overwrite="false" Level="Draft" />
       </pnp:Files>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
