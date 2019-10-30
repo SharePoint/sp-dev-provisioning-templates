@@ -64,28 +64,23 @@
                         "name": "Learning Pathways",
                         "description": "Custom",
                         "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_addwebpart"
-                    },
-                    {
-                        "name": "Learning Pathways Admin",
-                        "description": "Custom",
-                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_addwebpart"
-                    }                    
+                    }
                 ]
             },
             {
                 "name": "Features",
                 "items": [
                     {
-                        "name": "Customizable, flexible content",
-                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_addwebpart"
+                        "name": "On-demand, custom training from Microsoft",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/#on-demand-custom-training-from-microsoft"
                     },
                     {
-                        "name": "Build your own playlists",
+                        "name": "Customizable Learning Experience",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_overview"
+                    },
+                    {
+                        "name": "Build a custom playlist",
                         "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_createnewplaylist"
-                    },
-                    {
-                        "name": "Always up-to-date content",
-                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_exploresite"
                     }
                 ]
             },
@@ -96,16 +91,10 @@
                         "name": "New site collection using communication site template"
                     },
                     {
-                        "name": "Custom welcome page"
+                        "name": "Admin success center"
                     },
                     {
-                        "name": "12 articles with predefined solution content"
-                    },
-                    {
-                        "name": "Custom web part to present dynamically content"
-                    },
-                    {
-                        "name": "Custom web part for administrative operations"
+                        "name": "Custom web part presenting dynamic content "
                     }
                 ]
             },
@@ -146,7 +135,11 @@
             },
             {
                 "name": "Other",
-                "value": "Tenant app catalog"
+                "value": "Tenant app catalog exists"
+            },
+            {
+                "name": "Other",
+                "value": "Tenant app catalog administrator"
             }            
         ]
     }
