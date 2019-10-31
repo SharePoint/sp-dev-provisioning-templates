@@ -102,16 +102,12 @@
                 "name": "Resources",
                 "items": [
                     {
+                        "name": "Microsoft 365 learning pathways prerequisites – READ THIS",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_provision"
+                    },                    
+                    {
                         "name": "Microsoft 365 learning pathways documentation",
                         "url": "https://aka.ms/CLO365Docs"
-                    },
-                    {
-                        "name": "Microsoft 365 learning pathways ReadMe",
-                        "url": "https://github.com/SharePoint/sp-starter-kit"
-                    },
-                    {
-                        "name": "Provision Microsoft 365 learning pathways guidance",
-                        "url": "https://github.com/SharePoint/sp-starter-kit"
                     },
                     {
                         "name": "Microsoft 365 learning pathways license",
