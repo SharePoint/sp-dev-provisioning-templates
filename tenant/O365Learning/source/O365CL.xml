@@ -1,0 +1,566 @@
+﻿<?xml version="1.0"?>
+<pnp:Provisioning Author="Microsoft" Generator="SharePoint PnP" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/O365Learning/o365cl-frontpage.png?token=AHGyU3GQfO1AHGdeRz0BsC8dtf3jCDNrks5cJhkTwA%3D%3D" DisplayName="Microsoft 365 learning pathways" Description="Microsoft 365 learning pathways" xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.14.1910.1, Culture=neutral, PublicKeyToken=null">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteUrl">/sites/O365CL</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Tenant>
+    <pnp:AppCatalog>
+      <pnp:Package Src="customlearning.sppkg" Action="UploadAndPublish" Overwrite="true" />
+    </pnp:AppCatalog>
+    <pnp:ContentDeliveryNetwork />
+    <pnp:StorageEntities>
+      <pnp:StorageEntity Key="MicrosoftCustomLearningCdn" Value="https://pnp.github.io/custom-learning-office-365/learningpathways/" Description="CDN source for Microsoft Content" />
+      <pnp:StorageEntity Key="MicrosoftCustomLearningSite" Value="{parameter:SiteUrl}" Description="Custom Learning Site Collection" />
+      <pnp:StorageEntity Key="MicrosoftCustomLearningTelemetryOn" Value="true" Description="Custom Learning Telemetry Collection" />
+    </pnp:StorageEntities>
+  </pnp:Tenant>
+  <pnp:Templates ID="CONTAINER-DUMMY-cca63457-adcc-4ed9-b369-51b33b5f1905">
+    <pnp:ProvisioningTemplate ID="CUSTOMLEARNING" Version="0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/SiteAssets/__sitelogo__CLO365_Sitelogo.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" MembersCanShare="true" SearchScope="DefaultScope" />
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Home" Url="{site}">
+              <pnp:NavigationNode Title="Admin Success Center" Url="{site}/SitePages/Learning pathways Admin Success Center.aspx" />
+              <pnp:NavigationNode Title="Learning pathways administration" Url="{site}/SitePages/CustomLearningAdmin.aspx" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Microsoft 365 training" Url="{site}/SitePages/Get-started-with-Microsoft-365.aspx">
+              <pnp:NavigationNode Title="Get started with Microsoft Teams" Url="{site}/SitePages/Get-started-with-Microsoft-Teams.aspx" />
+              <pnp:NavigationNode Title="Get started with OneDrive" Url="{site}/SitePages/Get-started-with-OneDrive.aspx" />
+              <pnp:NavigationNode Title="Get started with SharePoint" Url="{site}/SitePages/Get-started-with-SharePoint.aspx" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Ask questions and get help" Url="{site}/SitePages/Ask-questions-and-get-help.aspx">
+              <pnp:NavigationNode Title="Training events calendar" Url="{site}/SitePages/Training events calendar.aspx" />
+              <pnp:NavigationNode Title="Microsoft technical community" Url="https://techcommunity.microsoft.com/" IsExternal="true" />
+              <pnp:NavigationNode Title="Feedback forum" Url="https://go.microsoft.com/fwlink/?linkid=2109552" IsExternal="true" />
+            </pnp:NavigationNode>
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Lists>
+        <pnp:ListInstance Title="CustomAssets" Description="Microsoft Custom Learning - Custom Assets" DocumentTemplate="" TemplateType="100" Url="Lists/CustomAssets" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/CustomAssets/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/CustomAssets/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/CustomAssets/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=46" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{1F599670-6C82-4093-AD95-DAECE888F9BB}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/CustomAssets/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="CDN" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="JSONData" Type="Note" Required="FALSE" ID="{68346e2c-4088-426a-852c-1a8eb5d1b4e9}" SourceID="{{listid:CustomAssets}}" StaticName="JSONData" Name="JSONData" ColName="ntext2" RowOrdinal="0" Version="1" />
+            <Field DisplayName="CDN" Type="Text" Required="FALSE" ID="{b16430fc-0a86-4a3d-a7ce-e0e85389d064}" SourceID="{{listid:CustomAssets}}" StaticName="CDN" Name="CDN" ColName="nvarchar4" RowOrdinal="0" Version="1" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="CustomConfig" Description="Microsoft Custom Learning - Custom Config" DocumentTemplate="" TemplateType="100" Url="Lists/CustomConfig" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/CustomConfig/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/CustomConfig/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/CustomConfig/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=46" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{523E10D9-1503-443D-A5D1-A907D859B52F}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/CustomConfig/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="CDN" />
+                <FieldRef Name="JSONData" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="JSONData" Type="Note" Required="FALSE" ID="{0e7c5894-4ce4-4348-bf88-c38242ba573f}" SourceID="{{listid:CustomConfig}}" StaticName="JSONData" Name="JSONData" ColName="ntext2" RowOrdinal="0" Version="1" />
+            <Field DisplayName="CDN" Type="Text" Required="FALSE" ID="{60f173f6-d6fd-4206-9f1e-dd315c691042}" SourceID="{{listid:CustomConfig}}" StaticName="CDN" Name="CDN" ColName="nvarchar4" RowOrdinal="0" Version="1" />
+          </pnp:Fields>
+          <pnp:Security>
+            <pnp:BreakRoleInheritance CopyRoleAssignments="false" ClearSubscopes="false">
+              <pnp:RoleAssignment Principal="{associatedownergroupid}" RoleDefinition="Full Control" />
+              <pnp:RoleAssignment Principal="{associatedvisitorgroupid}" RoleDefinition="Contribute" />
+              <pnp:RoleAssignment Principal="{associatedmembergroupid}" RoleDefinition="Edit" />
+            </pnp:BreakRoleInheritance>
+          </pnp:Security>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="CustomPlaylists" Description="Microsoft Custom Learning - Custom Playlists" DocumentTemplate="" TemplateType="100" Url="Lists/CustomPlaylists" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/CustomPlaylists/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/CustomPlaylists/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/CustomPlaylists/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=46" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{0EDF12AA-B8FF-4077-A83F-9A4B7A246A86}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/CustomPlaylists/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="CDN" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field DisplayName="JSONData" Type="Note" Required="FALSE" ID="{1d95f212-47ef-4ff3-b4c7-11ca341c7c49}" SourceID="{{listid:CustomPlaylists}}" StaticName="JSONData" Name="JSONData" ColName="ntext2" RowOrdinal="0" Version="1" />
+            <Field DisplayName="CDN" Type="Text" Required="FALSE" ID="{6f142b0d-688a-485e-8855-ad368f8b5b60}" SourceID="{{listid:CustomPlaylists}}" StaticName="CDN" Name="CDN" ColName="nvarchar4" RowOrdinal="0" Version="1" />
+          </pnp:Fields>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{4E1D66E3-031D-4942-AB12-402575840781}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="CALENDAR" TabularView="FALSE" RecurrenceRowset="TRUE" DisplayName="Calendar" Url="{site}/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Month />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="EventType" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="Workspace" />
+                <FieldRef Name="MasterSeriesItemID" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+            </View>
+            <View Name="{85C7D53C-C1FA-47AC-955E-6F6AE6D39BCE}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Url="{site}/Lists/Events/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{845C212F-AA3F-49C3-BFC2-CF5C598D2D32}" MobileView="TRUE" Type="HTML" RecurrenceRowset="TRUE" DisplayName="Current Events" Url="{site}/Lists/Events/MyItems.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Now />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
+            <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" DisplayName="Start Time" />
+            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
+            <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
+            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
+            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
+          </pnp:FieldRefs>
+          <pnp:DataRows KeyColumn="Title" UpdateBehavior="Overwrite">
+            <pnp:DataRow Key="Microsoft Ignite">
+              <pnp:DataValue FieldName="Title">Microsoft Ignite</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Orange County Convention Center, Orange County, Florida, United States</pnp:DataValue>
+              <pnp:DataValue FieldName="ContentTypeId">0x010200B41A4C00AF5CBF46AF89F83E32487111</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2019-11-04T00:00:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2019-11-08T23:59:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="Description">&lt;p&gt;Get the latest insights and skills from technology leaders and practitioners shaping the future of cloud, data, business intelligence, teamwork, and productivity. Immerse yourself with the latest tools, tech, and experiences that matter, and hear the latest updates and ideas directly from the experts.&lt;/p&gt;
+</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">True</pnp:DataValue>
+              <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
+              <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
+              <pnp:DataValue FieldName="Workspace">https://ignite.microsoft.com, https://ignite.microsoft.com</pnp:DataValue>
+              <pnp:DataValue FieldName="Duration">10713540</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow Key="European SharePoint Conference">
+              <pnp:DataValue FieldName="Title">European SharePoint Conference</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">Prague, Czech Republic</pnp:DataValue>
+              <pnp:DataValue FieldName="ContentTypeId">0x010200B41A4C00AF5CBF46AF89F83E32487111</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2019-12-02T16:00:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2019-12-05T16:00:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="Description">&lt;p&gt;ESPC is Europe’s leading online community, providing&amp;#160;&lt;a href="https&amp;#58;//www.sharepointeurope.com/resource-centre/"&gt;educational resources&lt;/a&gt;&amp;#160;and encouraging collaboration.&lt;/p&gt;
+
+&lt;p&gt;Each year ESPC gathers SharePoint, Office 365 &amp;amp; Azure experts from around the world in one European location for the largest conference of its kind.&lt;em&gt;&amp;#160;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Our mission – to empower you and the community to professional success.&lt;/p&gt;
+</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">False</pnp:DataValue>
+              <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
+              <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
+              <pnp:DataValue FieldName="Workspace">https://www.sharepointeurope.com/, https://www.sharepointeurope.com/</pnp:DataValue>
+              <pnp:DataValue FieldName="Duration">7693200</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+          <pnp:FieldDefaults>
+            <pnp:FieldDefault FieldName="Category" />
+          </pnp:FieldDefaults>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="1" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{FB820439-2DCC-4171-9136-02F1FDC1A053}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/SiteAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="MediaServiceAutoTags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceAutoTags" ColName="nvarchar13" RowOrdinal="0" />
+            <Field ID="{67aff0cf-8e19-43f2-9987-be89075e1467}" Type="Note" DisplayName="MediaServiceOCR" Name="MediaServiceOCR" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceOCR" ColName="ntext2" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+          <pnp:Folders>
+            <pnp:Folder Name="SitePages" ContentTypeID="0x0120">
+              <pnp:Folder Name="CLO365_HeroHome" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="CLO365_HeroHome" />
+                  <pnp:Property Key="Title" Value="CLO365_HeroHome" />
+                  <pnp:Property Key="Order" Value="700" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Training-events-calendar" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Training-events-calendar" />
+                  <pnp:Property Key="Title" Value="Training-events-calendar" />
+                  <pnp:Property Key="Order" Value="1800" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Get-started-with-SharePoint" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Get-started-with-SharePoint" />
+                  <pnp:Property Key="Title" Value="Get-started-with-SharePoint" />
+                  <pnp:Property Key="Order" Value="2000" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Ask-questions-and-get-help" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Ask-questions-and-get-help" />
+                  <pnp:Property Key="Title" Value="Ask-questions-and-get-help" />
+                  <pnp:Property Key="Order" Value="2200" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Start-with-Six-Simple-Steps" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Start-with-Six-Simple-Steps" />
+                  <pnp:Property Key="Title" Value="Start-with-Six-Simple-Steps" />
+                  <pnp:Property Key="Order" Value="2500" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Recommended-Playlists" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Recommended-Playlists" />
+                  <pnp:Property Key="Title" Value="Recommended-Playlists" />
+                  <pnp:Property Key="Order" Value="2700" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="SitePages" />
+                <pnp:Property Key="Title" Value="SitePages" />
+                <pnp:Property Key="Order" Value="600" />
+              </pnp:Properties>
+            </pnp:Folder>
+          </pnp:Folders>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:ApplicationLifecycleManagement>
+        <pnp:Apps>
+          <pnp:App AppId="{apppackageid:Microsoft 365 learning pathways}" Action="Install" />
+        </pnp:Apps>
+      </pnp:ApplicationLifecycleManagement>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/Six_Simple_Steps.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Six_Simple_Steps.jpg" />
+        <pnp:File Src="SiteAssets/Office_Training.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Office_Training.jpg" />
+        <pnp:File Src="SiteAssets/Recommended_Playlists.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Recommended_Playlists.jpg" />
+        <pnp:File Src="SiteAssets/Get_Started_with_Teams.png" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Get_Started_with_Teams.png" />
+        <pnp:File Src="SiteAssets/SitePages/CLO365_HeroHome/677581477ask-questions.jpg" Folder="SiteAssets/SitePages/CLO365_HeroHome" Overwrite="true" Level="Published" TargetFileName="677581477ask-questions.jpg" />
+        <pnp:File Src="SiteAssets/Ask_Questions.png" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Ask_Questions.png" />
+        <pnp:File Src="SiteAssets/Get_More_Training.png" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Get_More_Training.png" />
+        <pnp:File Src="SiteAssets/Contact_Helpdesk.png" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Contact_Helpdesk.png" />
+        <pnp:File Src="SiteAssets/Join_the_Community.png" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Join_the_Community.png" />
+        <pnp:File Src="SiteAssets/Get_Started_with_OneDrive.png" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Get_Started_with_OneDrive.png" />
+        <pnp:File Src="SiteAssets/Ask_Questions_Get_Help.png" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Ask_Questions_Get_Help.png" />
+        <pnp:File Src="SiteAssets/Get_Started_with_SharePoint.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Get_Started_with_SharePoint.jpg" />
+        <pnp:File Src="SiteAssets/In_Person_Training.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="In_Person_Training.jpg" />
+        <pnp:File Src="SiteAssets/Make_Difference_Become_a_Champion.png" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="Make_Difference_Become_a_Champion.png" />
+        <pnp:File Src="SiteAssets/SitePages/Training-events-calendar/2816-In_Person_Training.jpg" Folder="SiteAssets/SitePages/Training-events-calendar" Overwrite="true" Level="Published" TargetFileName="2816-In_Person_Training.jpg" />
+        <pnp:File Src="SiteAssets/SitePages/Get-started-with-SharePoint/3878-Get_Started_with_SharePoint.jpg" Folder="SiteAssets/SitePages/Get-started-with-SharePoint" Overwrite="true" Level="Published" TargetFileName="3878-Get_Started_with_SharePoint.jpg" />
+        <pnp:File Src="SiteAssets/SitePages/Ask-questions-and-get-help/27550-677581477ask-questions.jpg" Folder="SiteAssets/SitePages/Ask-questions-and-get-help" Overwrite="true" Level="Published" TargetFileName="27550-677581477ask-questions.jpg" />
+        <pnp:File Src="SiteAssets/SitePages/Training-events-calendar/32745-In_Person_Training.jpg" Folder="SiteAssets/SitePages/Training-events-calendar" Overwrite="true" Level="Published" TargetFileName="32745-In_Person_Training.jpg" />
+        <pnp:File Src="SiteAssets/SitePages/Start-with-Six-Simple-Steps/25482-Six_Simple_Steps.jpg" Folder="SiteAssets/SitePages/Start-with-Six-Simple-Steps" Overwrite="true" Level="Published" TargetFileName="25482-Six_Simple_Steps.jpg" />
+        <pnp:File Src="SiteAssets/SitePages/Recommended-Playlists/40579-Recommended_Playlists.jpg" Folder="SiteAssets/SitePages/Recommended-Playlists" Overwrite="true" Level="Published" TargetFileName="40579-Recommended_Playlists.jpg" />
+        <pnp:File Src="SiteAssets/__sitelogo__CLO365_Sitelogo.png" Folder="SiteAssets" Overwrite="true" Level="Published" TargetFileName="__sitelogo__CLO365_Sitelogo.png" />
+        <pnp:File Src="SiteAssets/SitePages/CLO365_HeroHome/677581477ask-questions.jpg" Folder="SiteAssets/SitePages/CLO365_HeroHome" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/Six_Simple_Steps.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/Office_Training.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/Recommended_Playlists.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/Get_Started_with_Teams.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/Get_Started_with_OneDrive.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Get-started-with-SharePoint/3878-Get_Started_with_SharePoint.jpg" Folder="SiteAssets/SitePages/Get-started-with-SharePoint" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Ask-questions-and-get-help/27550-677581477ask-questions.jpg" Folder="SiteAssets/SitePages/Ask-questions-and-get-help" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Training-events-calendar/32745-In_Person_Training.jpg" Folder="SiteAssets/SitePages/Training-events-calendar" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Start-with-Six-Simple-Steps/25482-Six_Simple_Steps.jpg" Folder="SiteAssets/SitePages/Start-with-Six-Simple-Steps" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/Make_Difference_Become_a_Champion.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Recommended-Playlists/40579-Recommended_Playlists.jpg" Folder="SiteAssets/SitePages/Recommended-Playlists" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__sitelogo__CLO365_Sitelogo.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+      </pnp:Files>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="" PageName="Home.aspx" LCID="0">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;id&quot;: &quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;, &quot;instanceId&quot;: &quot;688cb93d-ee6c-406a-8f6f-07aae4f48b8c&quot;, &quot;title&quot;: &quot;Hero&quot;, &quot;description&quot;: &quot;Hero&quot;, &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;properties&quot;: {&quot;layoutCategory&quot;:1,&quot;layout&quot;:5,&quot;content&quot;:[{&quot;id&quot;:&quot;e38b7aa6-a9cd-47eb-9ef2-efb5f7084bcf&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/Six_Simple_Steps.jpg}&quot;,&quot;imageUrl&quot;:&quot;{site}/_layouts/15/getpreview.ashx?resolution=4&amp;guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/Six_Simple_Steps.jpg}&amp;clientType=modernWebPart&quot;,&quot;widthFactor&quot;:0.5,&quot;minCanvasWidth&quot;:1},&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;{pageuniqueid:SitePages/Start-with-Six-Simple-Steps.aspx}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?resolution=4&amp;guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={pageuniqueid:SitePages/Start-with-Six-Simple-Steps.aspx}&amp;clientType=modernWebPart&quot;,&quot;minCanvasWidth&quot;:32767},&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;8adee762-0dc5-48fd-94ef-eb391e8ec58f&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/Office_Training.jpg}&quot;,&quot;imageUrl&quot;:&quot;https://eastus1-mediap.svc.ms/transform/thumbnail?provider=spo&amp;inputFormat=jpg&amp;cs=UEFHRVN8U1BP&amp;docid=https%3A%2F%2Fvnextday.sharepoint.com%2F_api%2Fv2.0%2Fsites%2Fvnextday.sharepoint.com%2C{sitecollectionid}%2C{siteid}%2Flists%2F{listid:Site Assets}%2Fitems%2F{fileuniqueid:SiteAssets/Office_Training.jpg}%2FdriveItem&amp;w=300&amp;oauth_token=bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSIsImtpZCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSJ9.eyJhdWQiOiJodHRwczovL2Vhc3R1czEtbWVkaWFwLnN2Yy5tcyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2Y5NDQzYzE4LTY1MzItNDUzOS1hM2E1LTlkMDQzYzY0ZDU2OS8iLCJpYXQiOjE1NDgyNjUwNTAsIm5iZiI6MTU0ODI2NTA1MCwiZXhwIjoxNTQ4MjY4OTUwLCJhY3IiOiIxIiwiYWlvIjoiQVNRQTIvOEtBQUFBRHlOblhKWmt5RTkxY3ZqUjh6YVZzNnQ2ZHpDVThTSE82Q2hSOEdlMzgxND0iLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6Ik9mZmljZSAzNjUgU2hhcmVQb2ludCBPbmxpbmUiLCJhcHBpZCI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMCIsImFwcGlkYWNyIjoiMiIsImF1dGhfdGltZSI6MTU0ODI2NTMzMiwiZmFtaWx5X25hbWUiOiJLcmVicyIsImdpdmVuX25hbWUiOiJQZXRlciIsImlwYWRkciI6IjE2Ny4yMjAuMi4yNyIsIm5hbWUiOiJQZXRlciBLcmVicyAodk5leHQpIiwib2lkIjoiMjM0ZjVkM2EtM2E4Zi00ZWJkLThiYTYtNzdmYjRjMzc3YzE1IiwicHVpZCI6IjEwMDMwMDAwQUY0OTc1RTMiLCJzY3AiOiJTaXRlcy5tYW5hZ2UuQWxsIiwic3ViIjoiaWwzNnFtQUZBdEQwN3lqQlF6bnpEb0Q1b2k0WFVFTDdwaTNUOFR0Zm9ZcyIsInRpZCI6ImY5NDQzYzE4LTY1MzItNDUzOS1hM2E1LTlkMDQzYzY0ZDU2OSIsInVuaXF1ZV9uYW1lIjoicGV0ZXJrQHZOZXh0RGF5Lm9ubWljcm9zb2Z0LmNvbSIsInVwbiI6InBldGVya0B2TmV4dERheS5vbm1pY3Jvc29mdC5jb20iLCJ1dGkiOiJDV0htSjh5YjdrV3pCRHdPVjhIUEFBIiwidmVyIjoiMS4wIn0.HWZQIZALhuKumEJtb_CLIMzwEvXtfhXDfTQNFDxSu_WCuNiZQ6_l6N4Lrmn5t9M6VoTOenEMfz0l4GdCm02aOhFAp-YSy7QmAsAJ6XwcQqCYYufaxHbHn280Q7MY-_ER_C3dL8aZEmm1EsuTMMU9v5xakpoocc_i9YPdf1_qCusZ8qqctLMeT4dx0at66AdXVv4j486ZDZFX8F4lLVcu_ALgRUjUHVwo28uBDTXCyRa3UIESOqChRCN6noNHyO_m7dMAMuY5hSxqjF87J0WelhtmU-iMUVvkmieKxfooHLm0v-QBjCP8vaV9nkA4Zj3BpDcpY-_9pITLxObzqfJ5hQ&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:640},&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;{pageuniqueid:SitePages/Get-started-with-Microsoft-365.aspx}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?resolution=4&amp;guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={pageuniqueid:SitePages/Get-started-with-Microsoft-365.aspx}&amp;clientType=modernWebPart&quot;,&quot;minCanvasWidth&quot;:32767},&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;cc618d86-dc33-4742-9df0-e2f714df1f78&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/Recommended_Playlists.jpg}&quot;,&quot;imageUrl&quot;:&quot;https://eastus1-mediap.svc.ms/transform/thumbnail?provider=spo&amp;inputFormat=jpg&amp;cs=UEFHRVN8U1BP&amp;docid=https%3A%2F%2Fvnextday.sharepoint.com%2F_api%2Fv2.0%2Fsites%2Fvnextday.sharepoint.com%2C{sitecollectionid}%2C{siteid}%2Flists%2F{listid:Site Assets}%2Fitems%2F{fileuniqueid:SiteAssets/Recommended_Playlists.jpg}%2FdriveItem&amp;w=300&amp;oauth_token=bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCIsImtpZCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCJ9.eyJhdWQiOiJodHRwczovL2Vhc3R1czEtbWVkaWFwLnN2Yy5tcyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2Y5NDQzYzE4LTY1MzItNDUzOS1hM2E1LTlkMDQzYzY0ZDU2OS8iLCJpYXQiOjE1NDk4MTkxMzYsIm5iZiI6MTU0OTgxOTEzNiwiZXhwIjoxNTQ5ODIzMDM2LCJhY3IiOiIxIiwiYWlvIjoiQVNRQTIvOEtBQUFBNDBNYmQ3VGptUDJzWUlYcDBEMTRHaUx6NU9vVExoKzNjT2dnM296ZWJaMD0iLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6Ik9mZmljZSAzNjUgU2hhcmVQb2ludCBPbmxpbmUiLCJhcHBpZCI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMCIsImFwcGlkYWNyIjoiMiIsImF1dGhfdGltZSI6MTU0OTgxNTU0MywiZmFtaWx5X25hbWUiOiJLcmVicyIsImdpdmVuX25hbWUiOiJQZXRlciIsImlwYWRkciI6IjY3LjE4NS4xNTYuMjM1IiwibmFtZSI6IlBldGVyIEtyZWJzICh2TmV4dCkiLCJvaWQiOiIyMzRmNWQzYS0zYThmLTRlYmQtOGJhNi03N2ZiNGMzNzdjMTUiLCJwdWlkIjoiMTAwMzAwMDBBRjQ5NzVFMyIsInNjcCI6IlNpdGVzLm1hbmFnZS5BbGwiLCJzdWIiOiJpbDM2cW1BRkF0RDA3eWpCUXpuekRvRDVvaTRYVUVMN3BpM1Q4VHRmb1lzIiwidGlkIjoiZjk0NDNjMTgtNjUzMi00NTM5LWEzYTUtOWQwNDNjNjRkNTY5IiwidW5pcXVlX25hbWUiOiJwZXRlcmtAdk5leHREYXkub25taWNyb3NvZnQuY29tIiwidXBuIjoicGV0ZXJrQHZOZXh0RGF5Lm9ubWljcm9zb2Z0LmNvbSIsInV0aSI6InlIcE4wR2o1NFVTb0xnQkFKNzVmQUEiLCJ2ZXIiOiIxLjAifQ.JDy_m7jHbylSPsRZ7B12oDauIuASvNIgelieUBY5d3hXFc4_dS_jDEBum4VkTbcXXDZZSKesnIrSI1OXonPKJA6Pd0TIhzdr-yaZvUmmpD7Mq_1b2Z6XhL54FLGus9HNpMrSV0e3GdcfjuEJfbvqG117zgiBpW5F9Z8SIGY9KPGDHY2m_RdJq1h0Ceg94VuUX-Ux_4NlSutUK2vQZMXlVQUw4xNRs1ZwL0cZ3GfyAUHrJWzjWQ6Oh-OKMzCy65-ihaSvBHFr841SfvNTaUVBJTjROhKEugvCnnjKu4giP1Xf6_d-IvPP5hod3mIX7ZQfrMgUktBnnQAiZ7-P92tVXg&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:640},&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;{pageuniqueid:SitePages/Recommended-Playlists.aspx}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?resolution=4&amp;guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={pageuniqueid:SitePages/Recommended-Playlists.aspx}&amp;clientType=modernWebPart&quot;,&quot;minCanvasWidth&quot;:32767},&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;a1098565-46ce-45a3-ad6f-e2c350cd2ddc&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/Get_Started_with_Teams.png}&quot;,&quot;imageUrl&quot;:&quot;https://eastus1-mediap.svc.ms/transform/thumbnail?provider=spo&amp;inputFormat=png&amp;cs=UEFHRVN8U1BP&amp;docid=https%3A%2F%2Fvnextday.sharepoint.com%2F_api%2Fv2.0%2Fsites%2Fvnextday.sharepoint.com%2C{sitecollectionid}%2C{siteid}%2Flists%2F{listid:Site Assets}%2Fitems%2F{fileuniqueid:SiteAssets/Get_Started_with_Teams.png}%2FdriveItem&amp;w=300&amp;oauth_token=bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCIsImtpZCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCJ9.eyJhdWQiOiJodHRwczovL2Vhc3R1czEtbWVkaWFwLnN2Yy5tcyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2Y5NDQzYzE4LTY1MzItNDUzOS1hM2E1LTlkMDQzYzY0ZDU2OS8iLCJpYXQiOjE1NDk4MTkxMzYsIm5iZiI6MTU0OTgxOTEzNiwiZXhwIjoxNTQ5ODIzMDM2LCJhY3IiOiIxIiwiYWlvIjoiQVNRQTIvOEtBQUFBNDBNYmQ3VGptUDJzWUlYcDBEMTRHaUx6NU9vVExoKzNjT2dnM296ZWJaMD0iLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6Ik9mZmljZSAzNjUgU2hhcmVQb2ludCBPbmxpbmUiLCJhcHBpZCI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMCIsImFwcGlkYWNyIjoiMiIsImF1dGhfdGltZSI6MTU0OTgxNTU0MywiZmFtaWx5X25hbWUiOiJLcmVicyIsImdpdmVuX25hbWUiOiJQZXRlciIsImlwYWRkciI6IjY3LjE4NS4xNTYuMjM1IiwibmFtZSI6IlBldGVyIEtyZWJzICh2TmV4dCkiLCJvaWQiOiIyMzRmNWQzYS0zYThmLTRlYmQtOGJhNi03N2ZiNGMzNzdjMTUiLCJwdWlkIjoiMTAwMzAwMDBBRjQ5NzVFMyIsInNjcCI6IlNpdGVzLm1hbmFnZS5BbGwiLCJzdWIiOiJpbDM2cW1BRkF0RDA3eWpCUXpuekRvRDVvaTRYVUVMN3BpM1Q4VHRmb1lzIiwidGlkIjoiZjk0NDNjMTgtNjUzMi00NTM5LWEzYTUtOWQwNDNjNjRkNTY5IiwidW5pcXVlX25hbWUiOiJwZXRlcmtAdk5leHREYXkub25taWNyb3NvZnQuY29tIiwidXBuIjoicGV0ZXJrQHZOZXh0RGF5Lm9ubWljcm9zb2Z0LmNvbSIsInV0aSI6InlIcE4wR2o1NFVTb0xnQkFKNzVmQUEiLCJ2ZXIiOiIxLjAifQ.JDy_m7jHbylSPsRZ7B12oDauIuASvNIgelieUBY5d3hXFc4_dS_jDEBum4VkTbcXXDZZSKesnIrSI1OXonPKJA6Pd0TIhzdr-yaZvUmmpD7Mq_1b2Z6XhL54FLGus9HNpMrSV0e3GdcfjuEJfbvqG117zgiBpW5F9Z8SIGY9KPGDHY2m_RdJq1h0Ceg94VuUX-Ux_4NlSutUK2vQZMXlVQUw4xNRs1ZwL0cZ3GfyAUHrJWzjWQ6Oh-OKMzCy65-ihaSvBHFr841SfvNTaUVBJTjROhKEugvCnnjKu4giP1Xf6_d-IvPP5hod3mIX7ZQfrMgUktBnnQAiZ7-P92tVXg&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:640},&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;{pageuniqueid:SitePages/Get-started-with-Microsoft-Teams.aspx}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?resolution=4&amp;guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={pageuniqueid:SitePages/Get-started-with-Microsoft-Teams.aspx}&amp;clientType=modernWebPart&quot;,&quot;minCanvasWidth&quot;:32767},&quot;upperCaseCallToAction&quot;:true},{&quot;id&quot;:&quot;9d2f7147-4b93-478a-8e2a-c1d7d20356b2&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/CLO365_HeroHome/677581477ask-questions.jpg}&quot;,&quot;imageUrl&quot;:&quot;https://eastus1-mediap.svc.ms/transform/thumbnail?provider=spo&amp;inputFormat=jpg&amp;cs=UEFHRVN8U1BP&amp;docid=https%3A%2F%2Fvnextday.sharepoint.com%2F_api%2Fv2.0%2Fsites%2Fvnextday.sharepoint.com%2C{sitecollectionid}%2C{siteid}%2Flists%2F{listid:Site Assets}%2Fitems%2F{fileuniqueid:SiteAssets/SitePages/CLO365_HeroHome/677581477ask-questions.jpg}%2FdriveItem&amp;w=300&amp;oauth_token=bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCIsImtpZCI6Ii1zeE1KTUxDSURXTVRQdlp5SjZ0eC1DRHh3MCJ9.eyJhdWQiOiJodHRwczovL2Vhc3R1czEtbWVkaWFwLnN2Yy5tcyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2Y5NDQzYzE4LTY1MzItNDUzOS1hM2E1LTlkMDQzYzY0ZDU2OS8iLCJpYXQiOjE1NTAwNzc1NDYsIm5iZiI6MTU1MDA3NzU0NiwiZXhwIjoxNTUwMDgxNDQ2LCJhY3IiOiIxIiwiYWlvIjoiNDJKZ1lOaTJwWnFYWDYyc3pxVThWZDcxWFp2QUtRK3g3NGRYdU84TnVNMjVJNFdmY1FrQSIsImFtciI6WyJwd2QiXSwiYXBwX2Rpc3BsYXluYW1lIjoiT2ZmaWNlIDM2NSBTaGFyZVBvaW50IE9ubGluZSIsImFwcGlkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwiYXBwaWRhY3IiOiIyIiwiYXV0aF90aW1lIjoxNTQ5NDAwNzAyLCJmYW1pbHlfbmFtZSI6IkJhdWVyIiwiZ2l2ZW5fbmFtZSI6IlN0ZWZhbiIsImlwYWRkciI6IjgwLjEwOC4yMDAuMjU0IiwibmFtZSI6IlN0ZWZhbiBCYXVlciAodk5leHQpIiwib2lkIjoiZDc0Yzg5MTctNDkwYy00ODFmLWIwN2UtY2FmNjVhMjY2Mzg3IiwicHVpZCI6IjEwMDMyMDAwMzZCRjk4RTkiLCJzY3AiOiJTaXRlcy5tYW5hZ2UuQWxsIiwic2lnbmluX3N0YXRlIjpbImttc2kiXSwic3ViIjoiVmJCb3BsY0pPUUVtZjRVRFZuYUhhRUEzWWNSSzBtVlhyREE0azAzbWtwQSIsInRpZCI6ImY5NDQzYzE4LTY1MzItNDUzOS1hM2E1LTlkMDQzYzY0ZDU2OSIsInVuaXF1ZV9uYW1lIjoic3RlZmFuYkB2TmV4dERheS5vbm1pY3Jvc29mdC5jb20iLCJ1cG4iOiJzdGVmYW5iQHZOZXh0RGF5Lm9ubWljcm9zb2Z0LmNvbSIsInV0aSI6ImVVY21FYzhzSUVlUm53cFVYd0xyQUEiLCJ2ZXIiOiIxLjAifQ.ZbQBgTSQFbnak7yIw5xoOQETTn_c1lezOXZ_fBIpmyQ4nQbNwAZBNe_0F9OZ1yMXcpkruN4RpuO5p8A2E3jmrH4zOj_8Uy5E0YwNW8i6rLYae144vuqyqBYAS1f5KID0iG-Wkgq8CQ2A_HxH6mj7mCpQAa_jTwiyuYgDqNXEfpI_fhEwZghP5xDtNHUk72kw9yTMmxw3DjoxAuRMZne5BlqrDC-89ZAcfxWacMIvdlnjGhg7_17jX6niyy1Cf3QzUZRzE3WWDwJg92ExsuDzbDkqAch7rTirGfhCEK_u_BZH3uBaRnaB7ZGMeVHfScEbaM887qBF5KlYf-VblwSpaQ&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:640},&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;{pageuniqueid:SitePages/Ask-questions-and-get-help.aspx}&quot;,&quot;imageUrl&quot;:&quot;{hosturl}{site}/_layouts/15/getpreview.ashx?resolution=5&amp;guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={pageuniqueid:SitePages/Ask-questions-and-get-help.aspx}&amp;clientType=modernWebPart&quot;,&quot;minCanvasWidth&quot;:32767,&quot;widthFactor&quot;:0.25},&quot;upperCaseCallToAction&quot;:true}],&quot;isFullWidth&quot;:true,&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;useLegacyFourTileStyle&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Start with six simple steps&quot;,&quot;content[1].title&quot;:&quot;Microsoft 365 training&quot;,&quot;content[2].title&quot;:&quot;Recommended playlists&quot;,&quot;content[3].title&quot;:&quot;Get started with Microsoft Teams&quot;,&quot;content[4].title&quot;:&quot;Ask questions and get help&quot;,&quot;content[0].alternateText&quot;:&quot;Start with six simple steps&quot;,&quot;content[1].alternateText&quot;:&quot;Office 365 trainng&quot;,&quot;content[2].alternateText&quot;:&quot;Recommended playlists&quot;,&quot;content[3].alternateText&quot;:&quot;Learn about Teams&quot;,&quot;content[4].alternateText&quot;:&quot;Office lobby with couches&quot;,&quot;content[0].callToActionText&quot;:&quot;LEARN MORE&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/Six_Simple_Steps.jpg&quot;,&quot;content[1].image.url&quot;:&quot;{site}/SiteAssets/Office_Training.jpg&quot;,&quot;content[2].image.url&quot;:&quot;{site}/SiteAssets/Recommended_Playlists.jpg&quot;,&quot;content[3].image.url&quot;:&quot;{site}/SiteAssets/Get_Started_with_Teams.png&quot;,&quot;content[4].image.url&quot;:&quot;{site}/SiteAssets/SitePages/CLO365_HeroHome/677581477ask-questions.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}/SitePages/Start-with-Six-Simple-Steps.aspx&quot;,&quot;content[1].previewImage.url&quot;:&quot;{site}/SitePages/Get-started-with-Microsoft-365.aspx&quot;,&quot;content[2].previewImage.url&quot;:&quot;{site}/SitePages/Recommended-Playlists.aspx&quot;,&quot;content[3].previewImage.url&quot;:&quot;{site}/SitePages/Get-started-with-Microsoft-Teams.aspx&quot;,&quot;content[4].previewImage.url&quot;:&quot;{site}/SitePages/Ask-questions-and-get-help.aspx&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}/SitePages/Start-with-Six-Simple-Steps.aspx&quot;,&quot;content[1].link&quot;:&quot;{site}/SitePages/Get-started-with-Microsoft-365.aspx&quot;,&quot;content[2].link&quot;:&quot;{site}/SitePages/Recommended-Playlists.aspx&quot;,&quot;content[3].link&quot;:&quot;{site}/SitePages/Get-started-with-Microsoft-Teams.aspx&quot;,&quot;content[4].link&quot;:&quot;{site}/SitePages/Ask-questions-and-get-help.aspx&quot;,&quot;content[0].callToActionLink&quot;:&quot;https://go.microsoft.com/fwlink/?linkid=841917&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/Six_Simple_Steps.jpg}&quot;,&quot;renderWidthRatio&quot;:0.5,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:1},&quot;content[1].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/Office_Training.jpg}&quot;,&quot;renderWidthRatio&quot;:0.25,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:640},&quot;content[2].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/Recommended_Playlists.jpg}&quot;,&quot;renderWidthRatio&quot;:0.25,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:640},&quot;content[3].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/Get_Started_with_Teams.png}&quot;,&quot;renderWidthRatio&quot;:0.25,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:640},&quot;content[4].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/CLO365_HeroHome/677581477ask-questions.jpg}&quot;,&quot;renderWidthRatio&quot;:0.25,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:640},&quot;content[0].previewImage.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Start-with-Six-Simple-Steps.aspx}&quot;,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[1].previewImage.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Get-started-with-Microsoft-365.aspx}&quot;,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[2].previewImage.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Recommended-Playlists.aspx}&quot;,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[3].previewImage.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Get-started-with-Microsoft-Teams.aspx}&quot;,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;content[4].previewImage.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Ask-questions-and-get-help.aspx}&quot;,&quot;renderWidthRatio&quot;:0.25,&quot;renderWidthRatioThreshold&quot;:640,&quot;minCanvasWidth&quot;:32767},&quot;heroLayoutComponentId&quot;:{&quot;minCanvasWidth&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;maxCanvasWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;4c4f0166-aaf7-4f6c-bb83-f4e56beb1aec&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a button with  your own label and a link on your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Get started with the  Admin Success Center&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}/SitePages/Learning%20pathways%20Admin%20Success%20Center.aspx&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="NewsReel" JsonControlData="{&quot;id&quot;: &quot;a5df8fdf-b508-4b66-98a6-d83bc2597f63&quot;, &quot;instanceId&quot;: &quot;cbf87628-bbd8-4633-9caa-454c8e923c77&quot;, &quot;title&quot;: &quot;News&quot;, &quot;description&quot;: &quot;News&quot;, &quot;dataVersion&quot;: &quot;1.11&quot;, &quot;properties&quot;: {&quot;showChrome&quot;:true,&quot;layoutId&quot;:&quot;GridNews&quot;,&quot;prefetchCount&quot;:4,&quot;newsDataSourceProp&quot;:1,&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true},&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:true,&quot;showAuthor&quot;:true,&quot;showDate&quot;:true}}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;ef1147f9-e3f4-4844-b4fe-ab7e6c1f3a10&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="a5df8fdf-b508-4b66-98a6-d83bc2597f63" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;id&quot;: &quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;, &quot;instanceId&quot;: &quot;17a94ee0-f6f9-4afb-84ae-fe90d864b58b&quot;, &quot;title&quot;: &quot;Events&quot;, &quot;description&quot;: &quot;Events&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;dataSource&quot;:7,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:20}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Events&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="3" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Microsoft 365 training" ThumbnailUrl="" PageName="Get-started-with-Microsoft-365.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/Office_Training.jpg" TranslateX="55.9743384121892" TranslateY="1.31578947368421" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;141d4ab7-b6ca-4bf4-ac59-25b7bf93642d&quot;, &quot;instanceId&quot;: &quot;d9002755-a26d-40d4-906a-f477cc7513da&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webpartMode&quot;:&quot;Full&quot;,&quot;defaultFilter&quot;:&quot;&quot;,&quot;defaultCategory&quot;:&quot;&quot;,&quot;defaultSubCategory&quot;:&quot;&quot;,&quot;defaultPlaylist&quot;:&quot;&quot;,&quot;defaultAsset&quot;:&quot;&quot;,&quot;defaultCDN&quot;:&quot;Default&quot;,&quot;title&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="141d4ab7-b6ca-4bf4-ac59-25b7bf93642d" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Get started with Microsoft Teams" ThumbnailUrl="" PageName="Get-started-with-Microsoft-Teams.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/Get_Started_with_Teams.png" TranslateX="50.7911392405063" TranslateY="25" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;141d4ab7-b6ca-4bf4-ac59-25b7bf93642d&quot;, &quot;instanceId&quot;: &quot;7a65e70d-41b7-4b7f-8900-316250bf3bf9&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webpartMode&quot;:&quot;Full&quot;,&quot;defaultCategory&quot;:&quot;&quot;,&quot;defaultSubCategory&quot;:&quot;02354a27-0675-4f67-9c32-f616ce5b3bf3&quot;,&quot;defaultPlaylist&quot;:&quot;&quot;,&quot;defaultFilter&quot;:&quot;subcategory&quot;}, &quot;serverProcessedContent&quot;: {}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="141d4ab7-b6ca-4bf4-ac59-25b7bf93642d" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Get started with OneDrive" ThumbnailUrl="" PageName="Get-started-with-OneDrive.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/Get_Started_with_OneDrive.png" TranslateX="48.4116022099448" TranslateY="32.8947368421053" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;141d4ab7-b6ca-4bf4-ac59-25b7bf93642d&quot;, &quot;instanceId&quot;: &quot;9679d10e-a9a1-4212-a720-cb183ddf2360&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webpartMode&quot;:&quot;Full&quot;,&quot;defaultFilter&quot;:&quot;Sub-Category&quot;,&quot;defaultCategory&quot;:&quot;&quot;,&quot;defaultSubCategory&quot;:&quot;4ee4d22a-7d53-48bb-9a14-adf34d01cd75&quot;,&quot;defaultPlaylist&quot;:&quot;&quot;,&quot;defaultAsset&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="141d4ab7-b6ca-4bf4-ac59-25b7bf93642d" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Get started with SharePoint" ThumbnailUrl="" PageName="Get-started-with-SharePoint.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Get-started-with-SharePoint/3878-Get_Started_with_SharePoint.jpg" TranslateX="50.9144111192392" TranslateY="25.4385964912281" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;141d4ab7-b6ca-4bf4-ac59-25b7bf93642d&quot;, &quot;instanceId&quot;: &quot;31c12964-f1aa-4613-82bf-1a6b87f2ec15&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webpartMode&quot;:&quot;Full&quot;,&quot;defaultFilter&quot;:&quot;Sub-Category&quot;,&quot;defaultCategory&quot;:&quot;&quot;,&quot;defaultSubCategory&quot;:&quot;e5e2ae74-20ff-4626-937d-df4ff3405f29&quot;,&quot;defaultPlaylist&quot;:&quot;&quot;,&quot;defaultAsset&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="141d4ab7-b6ca-4bf4-ac59-25b7bf93642d" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Ask questions and get help" ThumbnailUrl="" PageName="Ask-questions-and-get-help.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Ask-questions-and-get-help/27550-677581477ask-questions.jpg" TranslateX="50.0365764447696" TranslateY="28.5087719298246" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="02cb5a42-5610-4fe3-b945-7a89c085949a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Note to Administrator: For the icons with text in [brackets], change the text and add links&amp;nbsp;to the resources available in your organization. The Join the Community link is already active and links to a Microsoft resource." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;f4852f26-8501-4af9-af03-ef6662efac37&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Image&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;Ask questions&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;a9a3b331-6d3f-443e-be31-23edc25b23ad&quot;,&quot;imgWidth&quot;:300,&quot;imgHeight&quot;:215,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;[Add your link here: Join our user community to ask questions]&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/Ask_Questions.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;a9a3b331-6d3f-443e-be31-23edc25b23ad&quot;,&quot;width&quot;:300,&quot;height&quot;:215}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;071cd5d1-ddcb-4029-9b6c-60e3d811dc21&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Image&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;Get more training&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;080ef3e0-38ce-4584-9ed9-d0c6b1fb24ea&quot;,&quot;imgWidth&quot;:300,&quot;imgHeight&quot;:215,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false,&quot;cropX&quot;:0,&quot;cropY&quot;:0,&quot;cropWidth&quot;:300,&quot;cropHeight&quot;:215}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;[Add your link here: See our internal training schedule for options near you]&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/Get_More_Training.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;080ef3e0-38ce-4584-9ed9-d0c6b1fb24ea&quot;,&quot;width&quot;:300,&quot;height&quot;:215,&quot;cropX&quot;:0,&quot;cropY&quot;:0,&quot;cropWidth&quot;:300,&quot;cropHeight&quot;:215}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;f21c697f-9ecd-46e6-9090-a99c60fc8bc1&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Image&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;Contact Helpdesk&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;b44d15f0-479a-4728-92e8-251f09195d4e&quot;,&quot;imgWidth&quot;:300,&quot;imgHeight&quot;:215,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;[Add your link here: Talk to Helpdesk to get a technical issue resolved]&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/Contact_Helpdesk.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;b44d15f0-479a-4728-92e8-251f09195d4e&quot;,&quot;width&quot;:300,&quot;height&quot;:215}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;e1391f5b-d899-49df-aa45-941bc427b4e0&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Image&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;Join the community&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;1b681799-d5f1-4c54-9b61-b0d3647ee021&quot;,&quot;imgWidth&quot;:300,&quot;imgHeight&quot;:215,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:false,&quot;cropX&quot;:0,&quot;cropY&quot;:0,&quot;cropWidth&quot;:300,&quot;cropHeight&quot;:215}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;Join the public Office 365 Champions Community to learn from others&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/Join_the_Community.png&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://aka.ms/O365Champions&quot;},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;1b681799-d5f1-4c54-9b61-b0d3647ee021&quot;,&quot;width&quot;:300,&quot;height&quot;:215,&quot;cropX&quot;:0,&quot;cropY&quot;:0,&quot;cropWidth&quot;:300,&quot;cropHeight&quot;:215}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="2" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Training events calendar" ThumbnailUrl="" PageName="Training events calendar.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Training-events-calendar/32745-In_Person_Training.jpg" TranslateX="49.3782004389173" TranslateY="12.719298245614" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="bc24bc54-4b8e-4de3-bd72-46296ae02da2" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Note to Administrator: Add your organization's training events&amp;nbsp;calendar or resources to this page. If you don't have any scheduled training events or don't need to link to additional training resources, you can delete this page from the navigation." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;id&quot;: &quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;, &quot;instanceId&quot;: &quot;fdfb055f-1703-40e7-8de1-dc1445d6d11e&quot;, &quot;title&quot;: &quot;Events&quot;, &quot;description&quot;: &quot;Events&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;dataSource&quot;:7,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:20}, &quot;serverProcessedContent&quot;: {}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="2" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="SingleWebPartAppPage" Title="CustomLearningAdmin" ThumbnailUrl="" PageName="CustomLearningAdmin.aspx" LCID="0">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;c6062b6a-f22c-4475-897b-25081673c54a&quot;, &quot;instanceId&quot;: &quot;348833df-c891-41b9-8b72-b5317e8d2444&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways administration&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways administration&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {}, &quot;serverProcessedContent&quot;: {}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c6062b6a-f22c-4475-897b-25081673c54a" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="SingleWebPartAppPage" Title="CustomLearningViewer" ThumbnailUrl="" PageName="CustomLearningViewer.aspx" LCID="0">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;141d4ab7-b6ca-4bf4-ac59-25b7bf93642d&quot;, &quot;instanceId&quot;: &quot;27103031-c881-4271-a840-e5450b6ffa02&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webpartMode&quot;:&quot;Full&quot;,&quot;defaultFilter&quot;:&quot;&quot;,&quot;defaultCategory&quot;:&quot;&quot;,&quot;defaultSubCategory&quot;:&quot;&quot;,&quot;defaultPlaylist&quot;:&quot;&quot;,&quot;defaultAsset&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="141d4ab7-b6ca-4bf4-ac59-25b7bf93642d" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Start with six simple steps" ThumbnailUrl="" PageName="Start-with-Six-Simple-Steps.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Start-with-Six-Simple-Steps/25482-Six_Simple_Steps.jpg" TranslateX="56.6203365032919" TranslateY="14.0350877192982" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;141d4ab7-b6ca-4bf4-ac59-25b7bf93642d&quot;, &quot;instanceId&quot;: &quot;8d3bec3f-84be-45a9-a089-a79f90661626&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webpartMode&quot;:&quot;Full&quot;,&quot;defaultFilter&quot;:&quot;Playlist&quot;,&quot;defaultCategory&quot;:&quot;&quot;,&quot;defaultSubCategory&quot;:&quot;&quot;,&quot;defaultPlaylist&quot;:&quot;959166d8-1cb7-4315-af20-541598ebecaa&quot;,&quot;defaultAsset&quot;:&quot;365-378767af-7ac3-4d68-9d0f-709b6948a76b&quot;}, &quot;serverProcessedContent&quot;: {}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="141d4ab7-b6ca-4bf4-ac59-25b7bf93642d" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumnFullWidth" />
+            <pnp:Section Order="3" Type="OneColumn" />
+            <pnp:Section Order="4" Type="OneColumn" />
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Make a difference. Become a Champion" ThumbnailUrl="" PageName="Become-a-Champion.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/Make_Difference_Become_a_Champion.png" TranslateX="50.4464285714286" TranslateY="10.9649122807018" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="124cea43-f732-4c93-884d-4f55cab48713" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;Microsoft provides a free Office 365 Champions Program to support the Champion role worldwide. This program provides an online community, monthly community calls, and content to help drive&amp;nbsp;adoption across a variety of services in Office 365.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;This program is open to everyone. We recommend that, at a minimum, anyone running a Champions Program in their organization become a member to get access to Champions Program training materials.&amp;nbsp;&amp;nbsp;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Sign up today &lt;/strong&gt;to become a part of the worldwide community at&amp;nbsp;&lt;a href=&quot;https://aka.ms/O365Champions&quot;&gt;https://aka.ms/O365Champions&lt;/a&gt;.&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xA;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Recommended playlists" ThumbnailUrl="" PageName="Recommended-Playlists.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Recommended-Playlists/40579-Recommended_Playlists.jpg" TranslateX="55.3035844915874" TranslateY="16.2280701754386" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;141d4ab7-b6ca-4bf4-ac59-25b7bf93642d&quot;, &quot;instanceId&quot;: &quot;6e0123d4-0505-4c35-a1d3-1b2424682ae9&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webpartMode&quot;:&quot;Full&quot;,&quot;defaultFilter&quot;:&quot;Sub-Category&quot;,&quot;defaultCategory&quot;:&quot;&quot;,&quot;defaultSubCategory&quot;:&quot;07aa7fb7-a187-4a04-a044-f881626a8cba&quot;,&quot;defaultPlaylist&quot;:&quot;&quot;,&quot;defaultAsset&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="141d4ab7-b6ca-4bf4-ac59-25b7bf93642d" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Learning pathways Admin Success Center" ThumbnailUrl="" PageName="Learning pathways Admin Success Center.aspx" LCID="0">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Learning-pathways-Admin-Success-Center/70569-OFC18_FirstLine_UrbanStudio_127.jpg" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="664c6469-fe3a-42a3-a34d-fcc37a9152a5" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Welcome to the Microsoft 365 learning pathways Admin Success Center. The Admin Success Center provides the guidance and resources to help you plan, customize, drive adoption, and measure the impact of your learning pathways deployment.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;141d4ab7-b6ca-4bf4-ac59-25b7bf93642d&quot;, &quot;instanceId&quot;: &quot;6633f09b-f235-4715-a5ca-ab383a98bfb7&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways Web Part&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webpartMode&quot;:&quot;Full&quot;,&quot;defaultFilter&quot;:&quot;Sub-Category&quot;,&quot;defaultCategory&quot;:&quot;&quot;,&quot;defaultSubCategory&quot;:&quot;281c0108-6e20-4fc3-9459-ba267857498e&quot;,&quot;defaultPlaylist&quot;:&quot;&quot;,&quot;defaultAsset&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;defaultCDN&quot;:&quot;Default&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="141d4ab7-b6ca-4bf4-ac59-25b7bf93642d" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;141d4ab7-b6ca-4bf4-ac59-25b7bf93642d&quot;, &quot;instanceId&quot;: &quot;12f082ed-c58e-408f-bafd-bd172abb66ac&quot;, &quot;title&quot;: &quot;Microsoft 365 learning pathways&quot;, &quot;description&quot;: &quot;Microsoft 365 learning pathways Web Part&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;webpartMode&quot;:&quot;Full&quot;,&quot;defaultFilter&quot;:&quot;Sub-Category&quot;,&quot;defaultCategory&quot;:&quot;&quot;,&quot;defaultSubCategory&quot;:&quot;be8fd6ef-4399-41c9-ad5a-b09410ac49b5&quot;,&quot;defaultPlaylist&quot;:&quot;&quot;,&quot;defaultAsset&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;defaultCDN&quot;:&quot;Default&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="141d4ab7-b6ca-4bf4-ac59-25b7bf93642d" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;d3beb69e-4ea7-4572-b4cf-c6f7b2bd0c22&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;560\&quot; height=\&quot;315\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE42hMy?pid=ocpVideo0-innerdiv-oneplayer&amp;postJsllMsg=true&amp;maskLevel=20&amp;market=en-us\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;560\&quot; height=\&quot;315\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE42hMy?pid=ocpVideo0-innerdiv-oneplayer&amp;postJsllMsg=true&amp;maskLevel=20&amp;market=en-us\&quot; frameborder=\&quot;0\&quot; allowfullscreen=\&quot;\&quot;&gt;&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;Welcome to Microsoft 365 learning pathways&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;61afbd6a-2e6c-4046-a4d0-f31390b3b9da&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/CustomLearningAdmin.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:1,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;adminalogo32&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:2,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;previewlink&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:3,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;accountmanagement&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:4,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;help&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:3,&quot;id&quot;:5,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;f7be4f99-3054-43c6-8ebf-fc8ee62217be&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Quick links for learning pathways&quot;,&quot;items[0].title&quot;:&quot;Learning pathways administration&quot;,&quot;items[1].title&quot;:&quot;Learning pathways documentation&quot;,&quot;items[2].title&quot;:&quot;Feedback and Support&quot;,&quot;items[3].title&quot;:&quot;Adoption Resources&quot;,&quot;items[4].title&quot;:&quot;Downloadable Adoption Kit&quot;,&quot;items[0].description&quot;:&quot;&quot;,&quot;items[1].description&quot;:&quot;&quot;,&quot;items[2].description&quot;:&quot;&quot;,&quot;items[3].description&quot;:&quot;&quot;,&quot;items[4].description&quot;:&quot;&quot;,&quot;items[0].altText&quot;:&quot;&quot;,&quot;items[1].altText&quot;:&quot;&quot;,&quot;items[2].altText&quot;:&quot;&quot;,&quot;items[3].altText&quot;:&quot;&quot;,&quot;items[4].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;items[4].image.url&quot;:&quot;{site}/SiteAssets/SitePages/Microsoft-365-learning-pathways-Success-Center/github_logo.jpg&quot;,&quot;items[3].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[4].rawPreviewImageUrl&quot;:&quot;https://avatars2.githubusercontent.com/u/31443929?s=400&amp;v=4&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/CustomLearningAdmin.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/office365/customlearning/&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/office365/customlearning/feedback&quot;,&quot;items[3].sourceItem.url&quot;:&quot;https://resources.techcommunity.microsoft.com/adoption&quot;,&quot;items[4].sourceItem.url&quot;:&quot;https://teamworktools.azurewebsites.net/m365lp/m365lpadoptionkit.zip&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="2" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Standard" />
+      <pnp:Footer Enabled="true" Logo="" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+  <pnp:Sequence ID="CUSTOMLEARNING-sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection d4p1:type="pnp:CommunicationSite" Title="Microsoft 365 learning pathways" Description="" ProvisioningId="O365CLSite" IsHubSite="false" Url="{parameter:SiteUrl}" Owner="{CurrentUserLoginName}" SiteDesign="Topic" AllowFileSharingForGuestUsers="false" Language="1033" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="CUSTOMLEARNING" />
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+</pnp:Provisioning>
