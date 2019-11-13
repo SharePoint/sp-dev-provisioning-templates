@@ -225,15 +225,15 @@
                     "items": [
                         {
                             "name": "Introduction to SharePoint Starter Kit",
+                            "url": "https://www.youtube.com/watch?v=Gq10EyEuS2U"
+                        },
+                        {
+                            "name": "SharePoint Starter Kit at GitHub",
+                            "url": "https://github.com/SharePoint/sp-starter-kit"
+                        },
+                        {
+                            "name": "SharePoint Starter Kit introduction",
                             "url": "https://github.com/SharePoint/sp-starter-kit/blob/master/README.md"
-                        },
-                        {
-                            "name": "SharePoint Starter Kit at GitHub",
-                            "url": "https://github.com/SharePoint/sp-starter-kit"
-                        },
-                        {
-                            "name": "SharePoint Starter Kit at GitHub",
-                            "url": "https://github.com/SharePoint/sp-starter-kit"
                         }
                     ]
                 }

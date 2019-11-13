@@ -3,7 +3,8 @@
     "SOLUTION"
   ],
   "platforms": [
-    "SPPNP"
+    "SPPNP",
+    "LOOKBOOK"
   ],
   "packageFile": "O365CL.pnp",
   "abstract": "Help your organization get more from Microsoft services by implementing the Microsoft 365 learning pathways. This digital, customizable, learning solution streams on-demand content for Microsoft 365 services right to your end users.",
@@ -33,12 +34,12 @@
             {
                 "type": "fullpage",
                 "altText": "Microsoft 365 learning pathways",
-                "url": "./o365cl-frontpage.png"
+                "url": "./M365LP-frontpage.png"
             },
             {
                 "type": "cardpreview",
                 "altText": "Microsoft 365 learning pathways",
-                "url": "./o365cl-frontpage.png"
+                "url": "./M365LP-frontpage.png"
             }
         ],
         "detailItemCategories": [
@@ -64,28 +65,23 @@
                         "name": "Learning Pathways",
                         "description": "Custom",
                         "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_addwebpart"
-                    },
-                    {
-                        "name": "Learning Pathways Admin",
-                        "description": "Custom",
-                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_addwebpart"
-                    }                    
+                    }
                 ]
             },
             {
                 "name": "Features",
                 "items": [
                     {
-                        "name": "Customizable, flexible content",
-                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_addwebpart"
+                        "name": "On-demand, custom training from Microsoft",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/#on-demand-custom-training-from-microsoft"
                     },
                     {
-                        "name": "Build your own playlists",
+                        "name": "Customizable Learning Experience",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_overview"
+                    },
+                    {
+                        "name": "Build a custom playlist",
                         "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_createnewplaylist"
-                    },
-                    {
-                        "name": "Always up-to-date content",
-                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_exploresite"
                     }
                 ]
             },
@@ -96,16 +92,10 @@
                         "name": "New site collection using communication site template"
                     },
                     {
-                        "name": "Custom welcome page"
+                        "name": "Admin success center"
                     },
                     {
-                        "name": "12 articles with predefined solution content"
-                    },
-                    {
-                        "name": "Custom web part to present dynamically content"
-                    },
-                    {
-                        "name": "Custom web part for administrative operations"
+                        "name": "Custom web part presenting dynamic content "
                     }
                 ]
             },
@@ -113,16 +103,12 @@
                 "name": "Resources",
                 "items": [
                     {
+                        "name": "Microsoft 365 learning pathways prerequisites – READ THIS",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_provision"
+                    },                    
+                    {
                         "name": "Microsoft 365 learning pathways documentation",
                         "url": "https://aka.ms/CLO365Docs"
-                    },
-                    {
-                        "name": "Microsoft 365 learning pathways ReadMe",
-                        "url": "https://github.com/SharePoint/sp-starter-kit"
-                    },
-                    {
-                        "name": "Provision Microsoft 365 learning pathways guidance",
-                        "url": "https://github.com/SharePoint/sp-starter-kit"
                     },
                     {
                         "name": "Microsoft 365 learning pathways license",
@@ -146,7 +132,11 @@
             },
             {
                 "name": "Other",
-                "value": "Tenant app catalog"
+                "value": "Tenant app catalog exists"
+            },
+            {
+                "name": "Other",
+                "value": "Tenant app catalog administrator"
             }            
         ]
     }
