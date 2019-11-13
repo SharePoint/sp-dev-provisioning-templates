@@ -33,7 +33,7 @@
           <pnp:StructuralNavigation RemoveExistingNodes="false" />
         </pnp:GlobalNavigation>
         <pnp:CurrentNavigation NavigationType="StructuralLocal">
-          <pnp:StructuralNavigation RemoveExistingNodes="false">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
             <pnp:NavigationNode Title="{res:NavigationNode_0_1031_Title}" Url="{site}" />
             <pnp:NavigationNode Title="{res:NavigationNode_0_2002_Title}" Url="{site}/_layouts/15/groupstatus.aspx?Target=CONVERSATIONS&amp;Source=QuickLaunch" IsExternal="true" />
             <pnp:NavigationNode Title="{res:NavigationNode_0_2003_Title}" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
