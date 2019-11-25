@@ -16,12 +16,12 @@
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" HubSiteTitle="Global Marketing" HubSiteLogoUrl="{hosturl}{parameter:SiteUrl}/SiteAssets/__hubLogo__logo_global_marketing.png" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Language="1033" Title="{parameter:SiteTitle}" HubSiteTitle="Global Marketing" HubSiteLogoUrl="{hosturl}{parameter:SiteUrl}/SiteAssets/__hubLogo__logo_global_marketing.png" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>
       </pnp:SiteCollection>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSiteNoGroup" ProvisioningId="COMMUNICATIONS" Title="{parameter:CommunicationsSiteTitle}" Description="" Url="{hosturl}{parameter:CommunicationsSiteUrl}" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSiteNoGroup" ProvisioningId="COMMUNICATIONS" Language="1033" Title="{parameter:CommunicationsSiteTitle}" Description="" Url="{hosturl}{parameter:CommunicationsSiteUrl}" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="COMMUNICATIONS-TEMPLATE"/>
         </pnp:Templates>

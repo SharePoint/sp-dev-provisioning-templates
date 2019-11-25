@@ -14,7 +14,7 @@
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSiteNoGroup" ProvisioningId="MAIN" Title="{parameter:SiteTitle}" Description="" Url="{hosturl}{parameter:SiteUrl}" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSiteNoGroup" ProvisioningId="MAIN" Language="1033" Title="{parameter:SiteTitle}" Description="" Url="{hosturl}{parameter:SiteUrl}" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>

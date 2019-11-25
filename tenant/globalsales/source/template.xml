@@ -18,17 +18,17 @@
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="GLOBALSALES" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" HubSiteTitle="Global Sales" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="GLOBALSALES" SiteDesign="Topic" Language="1033" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" HubSiteTitle="Global Sales" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>
       </pnp:SiteCollection>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="RETAILOPERATIONS" SiteDesign="Topic" Title="{parameter:RetailOperationsSiteTitle}" Description="" Url="{parameter:RetailOperationsSiteUrl}" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="RETAILOPERATIONS" SiteDesign="Topic" Language="1033" Title="{parameter:RetailOperationsSiteTitle}" Description="" Url="{parameter:RetailOperationsSiteUrl}" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="RETAIL-OPERATIONS-TEMPLATE"/>
         </pnp:Templates>
       </pnp:SiteCollection>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSiteNoGroup" ProvisioningId="CONSUMERRETAIL" Title="{parameter:ConsumerRetailSiteTitle}" Description="" Url="{hosturl}{parameter:ConsumerRetailSiteUrl}" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSiteNoGroup" ProvisioningId="CONSUMERRETAIL" Title="{parameter:ConsumerRetailSiteTitle}" Language="1033" Description="" Url="{hosturl}{parameter:ConsumerRetailSiteUrl}" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="CONSUMER-RETAIL-TEMPLATE"/>
         </pnp:Templates>

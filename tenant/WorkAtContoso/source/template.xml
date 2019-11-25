@@ -20,7 +20,7 @@
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Language="1033" Title="{parameter:SiteTitle}" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>
@@ -30,12 +30,12 @@
           <pnp:ProvisioningTemplateReference ID="TEAM-TEMPLATE"/>
         </pnp:Templates>
       </pnp:SiteCollection>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="LIVE" SiteDesign="Topic" Title="{parameter:LiveSiteTitle}" Description="" Url="{parameter:LiveSiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="LIVE" SiteDesign="Topic" Language="1033" Title="{parameter:LiveSiteTitle}" Description="" Url="{parameter:LiveSiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="LIVE-TEMPLATE"/>
         </pnp:Templates>
       </pnp:SiteCollection>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="GIVE" SiteDesign="Topic" Title="{parameter:GiveSiteTitle}" Description="" Url="{parameter:GiveSiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="GIVE" SiteDesign="Topic" Language="1033" Title="{parameter:GiveSiteTitle}" Description="" Url="{parameter:GiveSiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="GIVE-TEMPLATE"/>
         </pnp:Templates>
