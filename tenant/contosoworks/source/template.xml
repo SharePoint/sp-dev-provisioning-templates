@@ -16,12 +16,12 @@
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Title="{parameter:SiteTitle}" HubSiteTitle="Contoso HR" HubSiteLogoUrl="{hosturl}{parameter:SiteUrl}/SiteAssets/__hubLogo__logo_hr.png" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="MAIN" SiteDesign="Topic" Language="1033" Title="{parameter:SiteTitle}" HubSiteTitle="Contoso HR" HubSiteLogoUrl="{hosturl}{parameter:SiteUrl}/SiteAssets/__hubLogo__logo_hr.png" Description="" Url="{parameter:SiteUrl}" IsHubSite="true" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>
       </pnp:SiteCollection>
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="BENEFITS" SiteDesign="Topic" Title="{parameter:BenefitsSiteTitle}" Description="" Url="{parameter:BenefitsSiteUrl}" Owner="{CurrentUserLoginName}">
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" ProvisioningId="BENEFITS" SiteDesign="Topic" Language="1033" Title="{parameter:BenefitsSiteTitle}" Description="" Url="{parameter:BenefitsSiteUrl}" Owner="{CurrentUserLoginName}">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="BENEFITS-TEMPLATE"/>
         </pnp:Templates>
