@@ -11,6 +11,17 @@
   "preview":"false",
   "visible": "false",
   "metadata": {
-    "properties": []
+    "properties": [
+      {
+        "name": "SiteTitle",
+        "caption": "Site title",
+        "description": "The title of the target site"
+      },
+      {
+          "name": "SiteAlias",
+          "caption": "Alias for the team site",
+          "description": "The alias for the team site collection that will be created"
+      }
+    ]
   }
 }
