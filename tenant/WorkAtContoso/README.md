@@ -21,7 +21,7 @@ The template contains following structures and assets:
 
 Subsite collections use the same templates, which you can also provision seperately from this service.
 
-**Note:** If this template is applied on top of an existing communication site, the welcome page content will be overridden.
+**Note:** If this template is applied on top of an existing communication site, the welcome page content will be overwritten.
 
 ## Full layout
 
