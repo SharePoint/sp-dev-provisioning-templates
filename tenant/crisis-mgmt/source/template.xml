@@ -1,4 +1,4 @@
-<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema" Author="John White" Generator="Human being" Version="1.0" Description="Announcements, news, and calls-to-action" DisplayName=Crisis Management" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/give/top-give.png">
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema" Author="John White" Generator="Human being" Version="1.0" Description="Announcements, news, and calls-to-action" DisplayName="Crisis Communications" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/site/give/top-give.png">
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
