@@ -3,7 +3,8 @@
     "ORGANIZATION"
   ],
   "platforms": [
-    "SPPNP"
+    "SPPNP",
+    "LOOKBOOK"
   ],
   "packageFile": "crisis-mgmt.pnp",
   "abstract": "Change agents, from virus outbreaks like COVID-19 to unexpected weather emergencies, highlight the importance of establishing and keeping open the lines of communication. The goal: to ensure everyone stays briefed on the situation and any business impacts. To address crises, meetings move online, daily guidance email updates get sent, and dedicated sites emerge to consolidate news, related resources and topical Q&A.",
