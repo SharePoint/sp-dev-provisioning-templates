@@ -3,7 +3,8 @@
     "ORGANIZATION"
   ],
   "platforms": [
-    "SPPNP"
+    "SPPNP",
+    "LOOKBOOK"
   ],
   "packageFile": "crisis-mgmt.pnp",
   "abstract": "Change agents, from virus outbreaks like COVID-19 to unexpected weather emergencies, highlight the importance of establishing and keeping open the lines of communication. The goal: to ensure everyone stays briefed on the situation and any business impacts. To address crises, meetings move online, daily guidance email updates get sent, and dedicated sites emerge to consolidate news, related resources and topical Q&A.",
@@ -30,10 +31,10 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteDescriptor": "Informational and calls-to-action",
+        "siteDescriptor": "Announcements, news, resources, communities and calls-to-action",
         "descriptionParagraphs": [
-            "Change agents, from virus outbreaks like COVID-19 to unexpected weather emergencies, highlight the importance of establishing and keeping open the lines of communication. The goal: to ensure everyone stays briefed on the situation and any business impacts.",
-            "To address crises, meetings move online, daily guidance email updates get sent, and dedicated sites emerge to consolidate news, related resources and topical Q&A."
+            "Keep people informed, engaged, and moving forward during crises from extreme weather events to health & safety emergencies. This template creates a central resource for leaders and communicators to share important news and announcements. A single source of truth where people can stay up-to-date. And a place to connect people across the organization.",
+            "Protip: The site includes a Yammer Conversations web part. Connect it to a Yammer community where people can share knowledge and experience, ask questions and get answers. See <a href=\"https:\/\/https://aka.ms/Yammer/Blog/DifficultTimes\">https://aka.ms/Yammer/Blog/DifficultTimes<a> for more information."
         ],
         "previewImages": [
             {
