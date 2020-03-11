@@ -1,5 +1,5 @@
-## Prerequisites are not fulfilled
+## Provisioning could not be completed
 
-Current configuration of your SharePoint Online tenant does not satisfy some of the pre-requirements to provision the selected package.
+The configuration of your tenant does not satisfy the requirements of the selected template.
 
-Here are further details about the missing prerequisites:
+Here are the details of missing prerequisites:

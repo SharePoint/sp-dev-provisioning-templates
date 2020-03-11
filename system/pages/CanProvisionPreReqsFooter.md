@@ -1,1 +1,1 @@
-Please address the findings and try again.
+Please address the missing prerequisites, then try again.

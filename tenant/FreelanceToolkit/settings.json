@@ -3,7 +3,8 @@
     "SOLUTION"
   ],
   "platforms": [
-    "SPPNP"
+    "SPPNP",
+    "LOOKBOOK"
   ],
   "packageFile": "M365FreelanceCommsSite.pnp",
   "abstract": "If you’re working with freelancers or running a freelancer program in your organization, the Microsoft 365 freelance communications site template provides a great starting point for driving awareness, increasing engagement, and streamlining communication flow with your internal stakeholders and freelancers.  The Microsoft 365 freelance communications site template is a SharePoint Online communication site template that you can install in your organization and easily customize to jump-start your freelance program efforts.",
@@ -82,7 +83,7 @@
                     },
                     {
                         "name": "Custom site logo",
-                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
+                        "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b",
                         "badgeText": ""
                     }
                 ]
