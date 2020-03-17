@@ -187,12 +187,12 @@
     },
     "preRequirements": [
 	    {
-		    "assemblyName": "Assembly 1",
-		    "typeName": "Type 1"
+		    "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
+		    "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.LearningPathwaysPreReq"
 	    },
 	    {
-		    "assemblyName": "Assembly 2",
-		    "typeName": "Team 2"
+		    "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
+		    "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.TestPreReq"
 	    }
     ] 
   }
