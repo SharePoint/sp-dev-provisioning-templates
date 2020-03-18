@@ -1,0 +1,1 @@
+In order to being able to use this template, you need to provision the [Microsoft Learning Pathways](https://{rootSite}/details/0b1c27b2-4bb9-4a2c-8e9c-e5bfce2842a2) solution, first.
