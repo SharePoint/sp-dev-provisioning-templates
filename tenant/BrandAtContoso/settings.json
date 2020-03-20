@@ -190,11 +190,6 @@
 		    "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
             "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.LearningPathwaysPreReq",
             "preRequirementContent": "tenant/BrandAtContoso/prerequirement-learning-pathways.md"
-	    },
-	    {
-		    "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
-		    "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.TestPreReq",
-            "preRequirementContent": "tenant/BrandAtContoso/prerequirement-test.md"
 	    }
     ] 
   }
