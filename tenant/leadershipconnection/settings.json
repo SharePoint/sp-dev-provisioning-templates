@@ -7,7 +7,7 @@
     "LOOKBOOK"
   ],
   "packageFile": "leadershipconnection.pnp",
-  "abstract": "This leadership site provides insight into the goals and priorities of the leadership team, and inspires engagement with events and conservations.",
+  "abstract": "This leadership site provides insight into the goals and priorities of the leadership team, and inspires engagement with events and conversations.",
   "sortOrder": 300,
   "promoted": "false",
   "sortOrderPromoted": 0,
@@ -33,7 +33,7 @@
         "pageTemplateId": "system/pageTemplates/template-1",
         "siteDescriptor": "Leadership news, events, engagement",
         "descriptionParagraphs": [
-            "This leadership site provides insight into the goals and priorities of the leadership team, and inspires engagement with events and conservations.."
+            "This leadership site provides insight into the goals and priorities of the leadership team, and inspires engagement with events and conversations."
         ],
         "previewImages": [
             {
