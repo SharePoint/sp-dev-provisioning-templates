@@ -1,0 +1,144 @@
+{
+  "categories": [
+    "SOLUTION"
+  ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
+  "packageFile": "M365LP.pnp",
+  "abstract": "Help your organization get more from Microsoft services by implementing the Microsoft 365 learning pathways. This digital, customizable, learning solution streams on-demand content for Microsoft 365 services right to your end users.",
+  "sortOrder": 100,
+  "promoted": "false",
+  "sortOrderPromoted": 0,
+  "preview":"true",
+  "forceNewSite":"true",
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
+  "visible": "true",
+  "metadata": {
+    "properties": [
+      {
+        "name":"SiteUrl",
+        "caption":"Microsoft 365 learning pathways site URL",
+        "description":"URL for the Microsoft 365 learning pathways site (default is /sites/M365LP)",
+        "editor": "SiteUrl"
+      }
+    ],
+    "displayInfo": {
+        "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "Training, Learning, Adoption",
+        "descriptionParagraphs": [
+            "Help your organization get more from Microsoft services by implementing the Microsoft 365 learning pathways. This digital, customizable, learning solution streams on-demand content for Microsoft 365 services right to your end users."
+        ],
+        "previewImages": [
+            {
+                "type": "fullpage",
+                "altText": "Microsoft 365 learning pathways",
+                "url": "./M365LP-frontpage.png"
+            },
+            {
+                "type": "cardpreview",
+                "altText": "Microsoft 365 learning pathways",
+                "url": "./M365LP-frontpage.png"
+            }
+        ],
+        "detailItemCategories": [
+            {
+                "name": "Webparts",
+                "items": [
+                    {
+                        "name": "Hero",
+                        "description": "Full width, 5 tiles",
+                        "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
+                    },                    
+                    {
+                        "name": "News",
+                        "description": "Side-by-side",
+                        "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
+                    },
+                    {
+                        "name": "Events",
+                        "description": "Filmstrip",
+                        "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
+                    },
+                    {
+                        "name": "Learning Pathways",
+                        "description": "Custom",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_addwebpart"
+                    }
+                ]
+            },
+            {
+                "name": "Features",
+                "items": [
+                    {
+                        "name": "On-demand, custom training from Microsoft",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/#on-demand-custom-training-from-microsoft"
+                    },
+                    {
+                        "name": "Customizable Learning Experience",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_overview"
+                    },
+                    {
+                        "name": "Build a custom playlist",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_createnewplaylist"
+                    }
+                ]
+            },
+            {
+                "name": "Site Content",
+                "items": [
+                    {
+                        "name": "New site collection using communication site template"
+                    },
+                    {
+                        "name": "Admin success center"
+                    },
+                    {
+                        "name": "Custom web part presenting dynamic content "
+                    }
+                ]
+            },
+            {
+                "name": "Resources",
+                "items": [
+                    {
+                        "name": "Microsoft 365 learning pathways prerequisites – READ THIS",
+                        "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_provision"
+                    },                    
+                    {
+                        "name": "Microsoft 365 learning pathways documentation",
+                        "url": "https://aka.ms/CLO365Docs"
+                    },
+                    {
+                        "name": "Microsoft 365 learning pathways license",
+                        "url": "https://github.com/pnp/custom-learning-office-365/blob/master/LICENSE"
+                    }                    
+                ]
+            }
+        ],
+        "systemRequirements": [
+            {
+                "name": "SharePoint version",
+                "value": "SharePoint Online"
+            },
+            {
+                "name": "Permission required",
+                "value": "Tenant Admin"
+            },       
+            {
+                "name": "Site language",
+                "value": "English"
+            },
+            {
+                "name": "Other",
+                "value": "Tenant app catalog exists"
+            },
+            {
+                "name": "Other",
+                "value": "Tenant app catalog administrator"
+            }            
+        ]
+    }
+  }
+}
