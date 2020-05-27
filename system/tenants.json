@@ -33,6 +33,7 @@
         {"id": "schouenborg.onmicrosoft.com", "tenantName": "schouenborg.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
         {"id": "ngocloud.onmicrosoft.com", "tenantName": "ngocloud.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
         {"id": "M365x432245.onmicrosoft.com", "tenantName": "M365x432245.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
+        {"id": "m365x127860.onmicrosoft.com", "tenantName": "m365x127860.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
         {"id": "wstw365.onmicrosoft.com", "tenantName": "wstw365.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
         {"id": "O365competency.onmicrosoft.com", "tenantName": "O365competency.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
         {"id": "kbworks.onmicrosoft.com", "tenantName": "kbworks.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
