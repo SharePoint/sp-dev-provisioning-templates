@@ -71,6 +71,7 @@
         {"id": "msignite2019a.onmicrosoft.com", "tenantName": "msignite2019a.onmicrosoft.com", "referenceOwner": "Ignite Demos"},
         {"id": "m365x007024.onmicrosoft.com", "tenantName": "m365x007024.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
         {"id": "autolabeltest1.onmicrosoft.com", "tenantName": "autolabeltest1.onmicrosoft.com", "referenceOwner": "Adriana Wood - MSFT"},
-        {"id": "contosoelectronics002a.onmicrosoft.com", "tenantName": "contosoelectronics002a.onmicrosoft.com", "referenceOwner": "Katie Swanson - MSFT"}
+        {"id": "contosoelectronics002a.onmicrosoft.com", "tenantName": "contosoelectronics002a.onmicrosoft.com", "referenceOwner": "Katie Swanson - MSFT"},
+        {"id": "a830edad9050849829E20051016.onmicrosoft.com", "tenantName": "a830edad9050849829E20051016.onmicrosoft.com", "referenceOwner": "eDog Tests"}
     ]
 }
