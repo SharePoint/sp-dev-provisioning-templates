@@ -1,7 +1,9 @@
 {
   "categories": [
+    "DEPARTMENT"
   ],
   "platforms": [
+    "LOOKBOOK"
   ],
   "packageFile": "flysafeconference.pnp",
   "abstract": "With a countdown timer and attention-grabbing images, this site generates excitement and engagement for upcoming events.",
@@ -11,7 +13,7 @@
   "preview": "true",
   "forceNewSite":"false",
   "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
-  "visible": "false",
+  "visible": "true",
   "metadata": {
     "properties": [
       {
@@ -28,6 +30,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
+        "siteTitle": "Fly Safe Conference - Site",
         "siteDescriptor": "Event-focused, highly visual",
         "descriptionParagraphs": [
             "With a countdown timer and attention-grabbing images, this site generates excitement and engagement for upcoming events."
