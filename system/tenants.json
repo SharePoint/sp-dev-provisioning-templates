@@ -46,6 +46,8 @@
         {"id": "sulava.onmicrosoft.com", "tenantName": "sulava.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
         {"id": "tornbloms.onmicrosoft.com", "tenantName": "tornbloms.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
         {"id": "eduqclab.onmicrosoft.com", "tenantName": "eduqclab.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
+        {"id": "frankegrouptest.onmicrosoft.com", "tenantName": "frankegrouptest.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
+        {"id": "frankegroup.onmicrosoft.com", "tenantName": "frankegroup.onmicrosoft.com", "referenceOwner": "Learning Pathways multi-lingual"},
         {"id": "m365x948412.onmicrosoft.com", "tenantName": "m365x948412.onmicrosoft.com", "referenceOwner": "Brad McCabe - MSFT"},
         {"id": "m365x883318.onmicrosoft.com", "tenantName": "m365x883318.onmicrosoft.com", "referenceOwner": "Brad McCabe - MSFT"},
         {"id": "m365x975759.onmicrosoft.com", "tenantName": "m365x975759.onmicrosoft.com", "referenceOwner": "Brad McCabe - MSFT"},
