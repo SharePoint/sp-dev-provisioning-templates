@@ -1,6 +1,7 @@
 {
+  "templateId": "", 	
   "categories": [
-    "TEAM"
+      "TEAM"
   ],
   "platforms": [
     "SPPNP",

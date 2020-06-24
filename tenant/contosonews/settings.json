@@ -1,6 +1,7 @@
 {
+  "templateId": "", 	
   "categories": [
-    "ORGANIZATION"
+      "ORGANIZATION"
   ],
   "platforms": [
     "SPPNP",
