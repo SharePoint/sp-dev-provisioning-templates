@@ -4,6 +4,7 @@
         {"id": "DEPARTMENT", "displayName": "Department"},
         {"id": "TEAM", "displayName": "Team"},
         {"id": "COMMUNITY", "displayName": "Community"},
-        {"id": "SOLUTION", "displayName": "Solutions"}
+        {"id": "SOLUTION", "displayName": "Solutions"},
+        {"id": "EDU", "displayName": "Education"}
     ]
 }

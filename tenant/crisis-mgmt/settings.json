@@ -1,0 +1,164 @@
+{
+  "templateId": "8F8337D2-B1F6-4A84-91A4-9081F841F0F6", 	
+  "categories": [
+    "ORGANIZATION"
+  ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
+  "packageFile": "crisis-mgmt.pnp",
+  "abstract": "Change agents, from virus outbreaks like COVID-19 to unexpected weather emergencies, highlight the importance of establishing and keeping open the lines of communication. The goal: to ensure everyone stays briefed on the situation and any business impacts. To address crises, meetings move online, daily guidance email updates get sent, and dedicated sites emerge to consolidate news, related resources and topical Q&A.",
+  "sortOrder": 300,
+  "promoted": "false",
+  "sortOrderPromoted": 0,
+  "preview": "false",
+  "forceNewSite":"false",
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
+  "visible": "true",
+  "metadata": {
+    "properties": [
+      {
+        "name": "SiteTitle",
+        "caption": "Site Title",
+        "description": "Title for your site"
+      },
+      {
+        "name": "SiteUrl",
+        "caption": "Site URL",
+        "description": "Relative URL to be used for the site",
+        "editor": "SiteUrl"
+      }
+    ],
+    "displayInfo": {
+        "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "Announcements, news, resources, communities and calls-to-action",
+        "descriptionParagraphs": [
+            "Keep people informed, engaged, and moving forward during crises from extreme weather events to health & safety emergencies. This template creates a central resource for leaders and communicators to share important news and announcements. A single source of truth where people can stay up-to-date. And a place to connect people across the organization.",
+            "Protip: The site includes a Yammer Conversations web part. Connect it to a Yammer community where people can share knowledge and experience, ask questions and get answers. See https://aka.ms/Yammer/Blog/DifficultTimes for more information."
+        ],
+        "previewImages": [
+            {
+                "type": "fullpage",
+                "altText": "Charitable site layout",
+                "url": "./full-layout-crisis-management.jpg"
+            },
+            {
+                "type": "cardpreview",
+                "altText": "Charitable site preview",
+                "url": "./card-crisis-management.jpg"
+            }
+        ],
+        "detailItemCategories": [
+            {
+                "name": "Webparts",
+                "items": [
+                    {
+                        "name": "Hero",
+                        "description": "Full width, 4 tiles",
+                        "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
+                    },
+                    {
+                        "name": "Text",
+                        "description": "Custom RTE formatting",
+                        "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
+                    },
+                    {
+                        "name": "Button",
+                        "description": "Left alignment",
+                        "url": "https://support.office.com/en-us/article/use-the-button-web-part-d2e37c48-11e8-45b9-8d9e-abdaa97c2a7a"
+                    },
+                    {
+                        "name": "Image",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
+                    },
+                    {
+                        "name": "Text",
+                        "description": "Custom RTE formatting",
+                        "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
+                    },
+                    {
+                        "name": "Button",
+                        "description": "Center alignment",
+                        "url": "https://support.office.com/en-us/article/use-the-button-web-part-d2e37c48-11e8-45b9-8d9e-abdaa97c2a7a"
+                    },
+                    {
+                        "name": "Hero",
+                        "description": "1 column 1 Layer,  Full width 1 tile",
+                        "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
+                    },
+                    {
+                        "name": "News",
+                        "description": "Side-by-side",
+                        "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
+                    }
+                ]
+            },
+            {
+                "name": "Features",
+                "items": [
+                    {
+                        "name": "Custom company theme",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Section background",
+                        "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-sharepoint-modern-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
+                    },
+                    {
+                        "name": "Mega Menu",
+                        "url": "https://support.office.com/en-us/article/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca"
+                    },
+                    {
+                        "name": "Compact header",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Header background",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Custom site logo",
+                        "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b",
+                        "badgeText": ""
+                    },
+                    {
+                        "name": "Footer",
+                        "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b"
+                    }
+                ]
+            },
+            {
+                "name": "Site Content",
+                "items": [
+                    {
+                        "name": "Custom welcome page build using out-of-the-box web part"
+                    },
+                    {
+                        "name": "4 news articles with example content"
+                    }
+                ]
+            },
+            {
+                "name": "Resources",
+                "items": []
+            }
+        ],
+        "systemRequirements": [
+            {
+                "name": "SharePoint version",
+                "value": "SharePoint Online"
+            },
+            {
+                "name": "Permission required",
+                "value": "Tenant Admin"
+            },
+            {
+                "name": "Site language",
+                "value": "English"
+            }
+        ]
+    }
+  }
+}
