@@ -1,0 +1,334 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema" Author="John White" Generator="Human being" Version="1.0" Description="Project based team site." DisplayName="Mark8 Project Team" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/LeadershipSite/top-exec.png">
+    <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
+        <pnp:Parameters>
+            <pnp:Parameter Key="SiteTitle">Mark8 - Custom Search</pnp:Parameter>
+            <pnp:Parameter Key="SiteUrl">/sites/CustomSearch</pnp:Parameter>
+        </pnp:Parameters>
+    </pnp:Preferences>
+    <pnp:Tenant>
+        <pnp:AppCatalog>
+            <pnp:Package Src="pnp-modern-search-parts.sppkg" Action="UploadAndPublish" Overwrite="true" />
+        </pnp:AppCatalog>
+    </pnp:Tenant>
+    <pnp:Sequence ID="sequence">
+        <pnp:SiteCollections>
+            <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:TeamSiteNoGroup" ProvisioningId="MAIN" Title="{parameter:SiteTitle}" Language="1033" Description="" Url="{hosturl}{parameter:SiteUrl}" IsHubSite="false" Owner="{CurrentUserLoginName}">
+                <pnp:Templates>
+                    <pnp:ProvisioningTemplateReference ID="MODERN-SEARCH-TEMPLATE"/>
+                </pnp:Templates>
+            </pnp:SiteCollection>
+        </pnp:SiteCollections>
+    </pnp:Sequence>
+    <pnp:Templates ID="SITE-TEMPLATES">
+        <pnp:ProvisioningTemplate ID="MODERN-SEARCH-TEMPLATE" Version="1" BaseSiteTemplate="STS#3" Scope="RootSite">
+            <pnp:Theme Name="">
+        {
+        "themeLight":  "#b2b9cb",
+        "themeTertiary":  "#727c97",
+        "black":  "#494847",
+        "neutralSecondary":  "#a3a2a0",
+        "neutralTertiaryAlt":  "#c8c8c8",
+        "themeSecondary":  "#414b66",
+        "themeDarker":  "#1b202e",
+        "neutralQuaternary":  "#d0d0d0",
+        "neutralPrimaryAlt":  "#8d8b8a",
+        "neutralPrimary":  "#323130",
+        "themeDark":  "#252b3e",
+        "themeLighter":  "#d4d8e3",
+        "neutralTertiary":  "#bab8b7",
+        "accent":  "#17717A",
+        "neutralQuaternaryAlt":  "#dadada",
+        "themeLighterAlt":  "#f4f5f8",
+        "white":  "#ffffff",
+        "neutralLighter":  "#f4f4f4",
+        "neutralLight":  "#eaeaea",
+        "neutralDark":  "#605e5d",
+        "themeDarkAlt":  "#2b3349",
+        "neutralLighterAlt":  "#f8f8f8",
+        "themePrimary":  "#303952"
+        }
+            </pnp:Theme>
+            <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+                <pnp:GlobalNavigation NavigationType="Structural">
+                    <pnp:StructuralNavigation RemoveExistingNodes="true" />
+                </pnp:GlobalNavigation>
+                <pnp:CurrentNavigation NavigationType="StructuralLocal">
+                    <pnp:StructuralNavigation RemoveExistingNodes="true">
+                        <pnp:NavigationNode Title="Home" Url="{site}" />
+                        <pnp:NavigationNode Title="Team Calendar" Url="{site}" IsExternal="true" />
+                        <pnp:NavigationNode Title="Mark8 Teams channel" Url="{site}" />
+                        <pnp:NavigationNode Title="Mark 8 Planner board" Url="{site}" IsExternal="true" />
+                        <pnp:NavigationNode Title="Mark8 OneNote" Url="{site}/_layouts/15/groupstatus.aspx?Target=NOTEBOOK" IsExternal="true" />
+                        <pnp:NavigationNode Title="Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
+                        <pnp:NavigationNode Title="Areas of focus" Url="{site}" />
+                        <pnp:NavigationNode Title="Design guidelines" Url="{site}" />
+                        <pnp:NavigationNode Title="Subject matter experts" Url="{site}" />
+                        <pnp:NavigationNode Title="Operation analytics" Url="{site}/SitePages/Website-analytics.aspx" />
+                    </pnp:StructuralNavigation>
+                </pnp:CurrentNavigation>
+            </pnp:Navigation>
+            <pnp:WebSettings SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" SearchCenterUrl="~site/SitePages/Search.aspx" RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/sitelogo.jpg" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
+            <pnp:ApplicationLifecycleManagement>
+                <pnp:Apps>
+                    <!-- PnP Modern Search -->
+                    <pnp:App AppId="{apppackageid:PnP Modern Search - Search Web Parts}" Action="Install" />
+                </pnp:Apps>
+            </pnp:ApplicationLifecycleManagement>
+            <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+            <pnp:Lists>
+                <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=44" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+                    <pnp:ContentTypeBindings>
+                        <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+                        <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+                    </pnp:ContentTypeBindings>
+                </pnp:ListInstance>
+                <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+                    <pnp:ContentTypeBindings>
+                        <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
+                    </pnp:ContentTypeBindings>
+                    <pnp:FieldRefs>
+                        <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
+                        <pnp:FieldRef ID="64cd368d-2f95-4bfc-a1f9-8d4324ecb007" Name="EventDate" Required="true" DisplayName="Start Time" />
+                        <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
+                        <pnp:FieldRef ID="9da97a8a-1da5-4a77-98d3-4bc10456e700" Name="Description" DisplayName="Description" />
+                        <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
+                        <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
+                        <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
+                    </pnp:FieldRefs>
+                    <pnp:DataRows KeyColumn="Title" UpdateBehavior="Overwrite">
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName="Title">European product launch</pnp:DataValue>
+                            <pnp:DataValue FieldName="Category">Product</pnp:DataValue>
+                            <pnp:DataValue FieldName="Location">Contoso London </pnp:DataValue>
+                            <pnp:DataValue FieldName="EventDate">2020-02-17T00:00:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="EndDate">2020-02-17T23:59:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="fAllDayEvent">True</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName="Title">Team off-site</pnp:DataValue>
+                            <pnp:DataValue FieldName="Category">Mark8 Team events</pnp:DataValue>
+                            <pnp:DataValue FieldName="Location">Disney World, 30927 Tulip Ave, Eustis, FL 32736, United States</pnp:DataValue>
+                            <pnp:DataValue FieldName="EventDate">2020-01-03T20:00:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="EndDate">2020-01-04T01:00:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="fAllDayEvent">False</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName="Title">Website: design review [v1]</pnp:DataValue>
+                            <pnp:DataValue FieldName="EventDate">2020-01-20T21:00:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="EndDate">2020-01-20T22:00:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="fAllDayEvent">False</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName="Title">FlySafe European Conference</pnp:DataValue>
+                            <pnp:DataValue FieldName="Category">Corporate events</pnp:DataValue>
+                            <pnp:DataValue FieldName="EventDate">2020-01-27T00:00:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="EndDate">2020-01-29T23:59:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="fAllDayEvent">True</pnp:DataValue>
+                        </pnp:DataRow>
+                        <pnp:DataRow>
+                            <pnp:DataValue FieldName="Title">VIP event [NA]</pnp:DataValue>
+                            <pnp:DataValue FieldName="Location">Contoso HQ</pnp:DataValue>
+                            <pnp:DataValue FieldName="EventDate">2020-03-03T02:00:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="EndDate">2020-03-03T05:00:00Z</pnp:DataValue>
+                            <pnp:DataValue FieldName="fAllDayEvent">False</pnp:DataValue>
+                        </pnp:DataRow>
+                    </pnp:DataRows>
+                    <pnp:FieldDefaults>
+                        <pnp:FieldDefault FieldName="Category" />
+                    </pnp:FieldDefaults>
+                </pnp:ListInstance>
+                <pnp:ListInstance Title="Documents" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" ListExperience="NewExperience" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+                    <pnp:ContentTypeBindings>
+                        <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+                        <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+                    </pnp:ContentTypeBindings>
+                    <pnp:Views>
+                        <View Name="{6445BDF1-9CF8-48D9-A989-64D285330F69}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+                            <Query>
+                                <OrderBy>
+                                    <FieldRef Name="FileLeafRef" />
+                                </OrderBy>
+                            </Query>
+                            <ViewFields>
+                                <FieldRef Name="DocIcon" />
+                                <FieldRef Name="LinkFilename" />
+                                <FieldRef Name="Modified" />
+                                <FieldRef Name="Editor" />
+                            </ViewFields>
+                            <RowLimit Paged="TRUE">30</RowLimit>
+                            <JSLink>clienttemplates.js</JSLink>
+                        </View>
+                    </pnp:Views>
+                    <pnp:Fields>
+                        <Field ID="{585d452c-20a1-46f7-a0ef-3b6b035711db}" Type="Note" DisplayName="KeyPoints" Name="MediaServiceKeyPoints" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Documents}}" StaticName="MediaServiceKeyPoints" ColName="ntext5" RowOrdinal="0" />
+                        <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Documents}}" StaticName="MediaServiceAutoTags" ColName="nvarchar14" RowOrdinal="0" />
+                        <Field ID="{67aff0cf-8e19-43f2-9987-be89075e1467}" Type="Note" DisplayName="Extracted Text" Name="MediaServiceOCR" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Documents}}" StaticName="MediaServiceOCR" ColName="ntext6" RowOrdinal="0" />
+                    </pnp:Fields>
+                    <pnp:FieldRefs>
+                        <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+                        <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+                    </pnp:FieldRefs>
+                    <pnp:Folders>
+                        <pnp:Folder Name="General" ContentTypeID="0x0120">
+                        </pnp:Folder>
+                        <pnp:Folder Name="Design" ContentTypeID="0x0120">
+                        </pnp:Folder>
+                        <pnp:Folder Name="Digital Assets Web" ContentTypeID="0x0120">
+                        </pnp:Folder>
+                        <pnp:Folder Name="Go to Market Plan" ContentTypeID="0x0120">
+                        </pnp:Folder>
+                        <pnp:Folder Name="Research and Development" ContentTypeID="0x0120">
+                            <pnp:Folder Name="Backup" ContentTypeID="0x0120">
+                            </pnp:Folder>
+                            <pnp:Folder Name="Assets" ContentTypeID="0x0120">
+                                <pnp:Folder Name="TownHall" ContentTypeID="0x0120">
+                                </pnp:Folder>
+                                <pnp:Folder Name="PowerBI" ContentTypeID="0x0120">
+                                </pnp:Folder>
+                            </pnp:Folder>
+                            <pnp:Folder Name="Mark 8 Images" ContentTypeID="0x0120">
+                            </pnp:Folder>
+                        </pnp:Folder>
+                        <pnp:Folder Name="Mark8 Website" ContentTypeID="0x0120">
+                        </pnp:Folder>
+                        <pnp:Folder Name="Product" ContentTypeID="0x0120">
+                        </pnp:Folder>
+                        <pnp:Folder Name="Research" ContentTypeID="0x0120">
+                        </pnp:Folder>
+                        <pnp:Folder Name="Consumer" ContentTypeID="0x0120">
+                        </pnp:Folder>
+                    </pnp:Folders>
+                </pnp:ListInstance>
+            </pnp:Lists>
+            <pnp:Files>
+                <pnp:File Src="Shared Documents/Mark8 Website/Web_hero_landing.png" Folder="Shared Documents/Mark8 Website" Overwrite="true" Level="Published" TargetFileName="Web_hero_landing.png" />
+                <pnp:File Src="Shared Documents/Design/ELEVATOR-PITCH.jpg" Folder="Shared Documents/Design" Overwrite="true" Level="Published" TargetFileName="ELEVATOR-PITCH.jpg" />
+                <pnp:File Src="Shared Documents/Design/MARK8-ElevatorPitch.pptx" Folder="Shared Documents/Design" Overwrite="true" Level="Published" TargetFileName="MARK8-ElevatorPitch.pptx" />
+                <pnp:File Src="Shared Documents/MARK8-EuropeanProductLaunch.pptx" Folder="Shared Documents" Overwrite="true" Level="Published" TargetFileName="MARK8-EuropeanProductLaunch.pptx" />
+                <pnp:File Src="Shared Documents/Design/ELEVATOR-PITCH.pdf" Folder="Shared Documents/Design" Overwrite="true" Level="Published" TargetFileName="ELEVATOR-PITCH.pdf" />
+                <pnp:File Src="Shared Documents/Design/ELEVATOR-PITCH 1.jpg" Folder="Shared Documents/Design" Overwrite="true" Level="Published" TargetFileName="ELEVATOR-PITCH 1.jpg" />
+                <pnp:File Src="Shared Documents/Mark8-MarketingCampaign.docx" Folder="Shared Documents" Overwrite="true" Level="Published" TargetFileName="Mark8-MarketingCampaign.docx" />
+                <pnp:File Src="Shared Documents/MARK8_workback.xlsx" Folder="Shared Documents" Overwrite="true" Level="Published" TargetFileName="MARK8_workback.xlsx" />
+                <pnp:File Src="Shared Documents/Design/XT1050 Marketing Collateral Timelines_V2.docx" Folder="Shared Documents/Design" Overwrite="true" Level="Published" TargetFileName="XT1050 Marketing Collateral Timelines_V2.docx" />
+                <pnp:File Src="Shared Documents/Design/bearing-44DDF-stress-test.xlsx" Folder="Shared Documents/Design" Overwrite="true" Level="Published" TargetFileName="bearing-44DDF-stress-test.xlsx" />
+                <pnp:File Src="Shared Documents/Design/XT1050 Usability test 2.3.docx" Folder="Shared Documents/Design" Overwrite="true" Level="Published" TargetFileName="XT1050 Usability test 2.3.docx" />
+                <pnp:File Src="Shared Documents/Campaign Sales Data.xlsx" Folder="Shared Documents" Overwrite="true" Level="Published" TargetFileName="Campaign Sales Data.xlsx" />
+                <pnp:File Src="Shared Documents/Design/Usability Testing Priorities.docx" Folder="Shared Documents/Design" Overwrite="true" Level="Published" TargetFileName="Usability Testing Priorities.docx" />
+                <pnp:File Src="Shared Documents/Digital Assets Web/Product Launch.pptx" Folder="Shared Documents/Digital Assets Web" Overwrite="true" Level="Published" TargetFileName="Product Launch.pptx" />
+                <pnp:File Src="Shared Documents/Research and Development/Contoso Quadcopter Camera.docx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Contoso Quadcopter Camera.docx" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 Performance Overview.docx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Mark 8 Performance Overview.docx" />
+                <pnp:File Src="Shared Documents/Design/marketing-initiatives-FY17.xlsx" Folder="Shared Documents/Design" Overwrite="true" Level="Published" TargetFileName="marketing-initiatives-FY17.xlsx" />
+                <pnp:File Src="Shared Documents/Research and Development/Engine Perf.xlsx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Engine Perf.xlsx" />
+                <pnp:File Src="Shared Documents/Research and Development/Manufacturing and delivery plan.docx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Manufacturing and delivery plan.docx" />
+                <pnp:File Src="Shared Documents/Research and Development/R and D Presentation.pptx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="R and D Presentation.pptx" />
+                <pnp:File Src="Shared Documents/Research and Development/Word Editor Demo.docx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Word Editor Demo.docx" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 - FAQ.docx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Mark 8 - FAQ.docx" />
+                <pnp:File Src="Shared Documents/Research and Development/CR -227 Camera briefing.docx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="CR -227 Camera briefing.docx" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 Performance chart.xlsx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Mark 8 Performance chart.xlsx" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 Parts and Spec List.xlsx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Mark 8 Parts and Spec List.xlsx" />
+                <pnp:File Src="Shared Documents/Research and Development/aerialshot.jpg" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="aerialshot.jpg" />
+                <pnp:File Src="Shared Documents/Research and Development/Building the Contoso Mark 8.pptx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Building the Contoso Mark 8.pptx" />
+                <pnp:File Src="Shared Documents/Research and Development/Contoso Research and Development Spend Analysis.xlsx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Contoso Research and Development Spend Analysis.xlsx" />
+                <pnp:File Src="Shared Documents/Research and Development/Creating the Contoso Mark 8.pptx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Creating the Contoso Mark 8.pptx" />
+                <pnp:File Src="Shared Documents/Research and Development/mark8itsawesome.png" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="mark8itsawesome.png" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 Controller specs.xlsx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Mark 8 Controller specs.xlsx" />
+                <pnp:File Src="Shared Documents/Research and Development/Adventure Works Copter Camera Overview.docx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Adventure Works Copter Camera Overview.docx" />
+                <pnp:File Src="Shared Documents/Research and Development/Marketing Deck v1.pptx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Marketing Deck v1.pptx" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 Pilot Program.pptx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Mark 8 Pilot Program.pptx" />
+                <pnp:File Src="Shared Documents/Go to Market Plan/X1050 GTM Plan.pptx" Folder="Shared Documents/Go to Market Plan" Overwrite="true" Level="Published" TargetFileName="X1050 GTM Plan.pptx" />
+                <pnp:File Src="Shared Documents/Go to Market Plan/X1050 Product Roadmap.xlsx" Folder="Shared Documents/Go to Market Plan" Overwrite="true" Level="Published" TargetFileName="X1050 Product Roadmap.xlsx" />
+                <pnp:File Src="Shared Documents/Go to Market Plan/Contoso Purchasing Data - Q1 KJ copy.xlsx" Folder="Shared Documents/Go to Market Plan" Overwrite="true" Level="Published" TargetFileName="Contoso Purchasing Data - Q1 KJ copy.xlsx" />
+                <pnp:File Src="Shared Documents/Research and Development/Building the Contoso Mark 8 (ProPlus).pptx" Folder="Shared Documents/Research and Development" Overwrite="true" Level="Published" TargetFileName="Building the Contoso Mark 8 (ProPlus).pptx" />
+                <pnp:File Src="Shared Documents/Go to Market Plan/Pricing Guidelines for X1050.docx" Folder="Shared Documents/Go to Market Plan" Overwrite="true" Level="Published" TargetFileName="Pricing Guidelines for X1050.docx" />
+                <pnp:File Src="Shared Documents/Go to Market Plan/Fabrikam3DPrinterBrochure.pptx" Folder="Shared Documents/Go to Market Plan" Overwrite="true" Level="Published" TargetFileName="Fabrikam3DPrinterBrochure.pptx" />
+                <pnp:File Src="Shared Documents/Go to Market Plan/Contoso Marketing Principles.pptx" Folder="Shared Documents/Go to Market Plan" Overwrite="true" Level="Published" TargetFileName="Contoso Marketing Principles.pptx" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 Images/samuel-schwendener-226132.jpg" Folder="Shared Documents/Research and Development/Mark 8 Images" Overwrite="true" Level="Published" TargetFileName="samuel-schwendener-226132.jpg" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 Images/jakob-owens-153168.jpg" Folder="Shared Documents/Research and Development/Mark 8 Images" Overwrite="true" Level="Published" TargetFileName="jakob-owens-153168.jpg" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 Images/dose-media-368248.jpg" Folder="Shared Documents/Research and Development/Mark 8 Images" Overwrite="true" Level="Published" TargetFileName="dose-media-368248.jpg" />
+                <pnp:File Src="Shared Documents/Research and Development/Mark 8 Images/imkirk-media-215248.jpg" Folder="Shared Documents/Research and Development/Mark 8 Images" Overwrite="true" Level="Published" TargetFileName="imkirk-media-215248.jpg" />
+                <pnp:File Src="Shared Documents/Research and Development/Assets/TownHall/townhall.htm" Folder="Shared Documents/Research and Development/Assets/TownHall" Overwrite="true" Level="Published" TargetFileName="townhall.htm" />
+                <pnp:File Src="Shared Documents/Research and Development/Assets/TownHall/analytics.htm" Folder="Shared Documents/Research and Development/Assets/TownHall" Overwrite="true" Level="Published" TargetFileName="analytics.htm" />
+                <pnp:File Src="Shared Documents/Research and Development/Assets/PowerBI/Contoso Q2 Division Sales.pbix" Folder="Shared Documents/Research and Development/Assets/PowerBI" Overwrite="true" Level="Published" TargetFileName="Contoso Q2 Division Sales.pbix" />
+                <pnp:File Src="Shared Documents/Research and Development/Assets/PowerBI/Operations Analytics.pbix" Folder="Shared Documents/Research and Development/Assets/PowerBI" Overwrite="true" Level="Published" TargetFileName="Operations Analytics.pbix" />
+                <pnp:File Src="Shared Documents/Go to Market Plan/MARK8-ElevatorPitch.pptx" Folder="Shared Documents/Go to Market Plan" Overwrite="true" Level="Published" TargetFileName="MARK8-ElevatorPitch.pptx" />
+                <pnp:File Src="Shared Documents/Product/Contoso Falcon Customer Script.pdf" Folder="Shared Documents/Product" Overwrite="true" Level="Published" TargetFileName="Contoso Falcon Customer Script.pdf" />
+                <pnp:File Src="Shared Documents/Product/Contoso Mark8 Controller Customer Script Copy.pdf" Folder="Shared Documents/Product" Overwrite="true" Level="Published" TargetFileName="Contoso Mark8 Controller Customer Script Copy.pdf" />
+                <pnp:File Src="Shared Documents/Product/Contoso Flex Customer Script.pdf" Folder="Shared Documents/Product" Overwrite="true" Level="Published" TargetFileName="Contoso Flex Customer Script.pdf" />
+                <pnp:File Src="Shared Documents/Product/Contoso Mark8 Customer Script.pdf" Folder="Shared Documents/Product" Overwrite="true" Level="Published" TargetFileName="Contoso Mark8 Customer Script.pdf" />
+                <pnp:File Src="Shared Documents/Product/Contoso Quad Customer Script.pdf" Folder="Shared Documents/Product" Overwrite="true" Level="Published" TargetFileName="Contoso Quad Customer Script.pdf" />
+                <pnp:File Src="SiteAssets/SitePages/Mark8ProjectTeam2/62473480mark8_countdown_bg.jpg" Folder="SiteAssets/SitePages/Mark8ProjectTeam2" Overwrite="true" Level="Published" />
+                <pnp:File Src="SiteAssets/SitePages/Mark8ProjectTeam2/27297drone-3.png" Folder="SiteAssets/SitePages/Mark8ProjectTeam2" Overwrite="true" Level="Published" />
+                <pnp:File Src="SiteAssets/SitePages/Mark8ProjectTeam2/76755drone-01.png" Folder="SiteAssets/SitePages/Mark8ProjectTeam2" Overwrite="true" Level="Published" />
+                <pnp:File Src="SiteAssets/SitePages/Mark8ProjectTeam2/71984drone-2.png" Folder="SiteAssets/SitePages/Mark8ProjectTeam2" Overwrite="true" Level="Published" />
+                <pnp:File Src="SiteAssets/SitePages/Mark8ProjectTeam2/planner.png" Folder="SiteAssets/SitePages/Mark8ProjectTeam2" Overwrite="true" Level="Published" />
+                <pnp:File Src="SiteAssets/SitePages/Mark8ProjectTeam2/powerbi.png" Folder="SiteAssets/SitePages/Mark8ProjectTeam2" Overwrite="true" Level="Published" />
+                <pnp:File Src="SiteAssets/SitePages/Website-analytics/9575-powerbi.png" Folder="SiteAssets/SitePages/Website-analytics" Overwrite="true" Level="Published" />
+                <pnp:File Src="Shared Documents/Design/ELEVATOR-PITCH.pdf" Folder="Shared Documents/Design" Overwrite="true" Level="Published" />
+                <pnp:File Src="SiteAssets/sitelogo.jpg" Folder="SiteAssets" Overwrite="true" Level="Published" />
+            </pnp:Files>
+            <pnp:ClientSidePages>
+                <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="HeaderlessSearchResults" EnableComments="false" Title="Search" ThumbnailUrl="" PageName="Search.aspx">
+                    <pnp:Sections>
+                        <pnp:Section Order="1" Type="TwoColumnLeft">
+                            <pnp:Controls>
+                                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;9d441773-f735-46a3-9ca0-9e2eb4bef203&quot;, &quot;instanceId&quot;: &quot;1526ad6d-a779-4c59-ba43-d6ba4b003478&quot;, &quot;title&quot;: &quot;Search Verticals&quot;, &quot;description&quot;: &quot;Allows you to search by search verticals&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;verticals&quot;:[{&quot;key&quot;:&quot;64db0487-0b73-4ffa-b250-d7869d85b7fe&quot;,&quot;queryTemplate&quot;:&quot;{searchTerms} ((path:\&quot;{\\Site.URL}/Shared%20Documents\&quot; IsContainer:0 contentclass:STS_ListItem_DocumentLibrary -FileType:pbix -FileType:htm -FileType:pptx) OR (path:\&quot;{\\Site.URL}/SiteAssets\&quot; FileType:png -powerbi -planner))&quot;,&quot;resultSourceId&quot;:&quot;8413cd39-2156-4e00-b54d-11efd9abdb89&quot;,&quot;tabName&quot;:&quot;Design Material&quot;,&quot;iconName&quot;:&quot;ImagePixel&quot;,&quot;sortIdx&quot;:1},{&quot;key&quot;:&quot;afb855dc-7808-4366-a320-4a73be69a979&quot;,&quot;queryTemplate&quot;:&quot;{searchTerms} path:{Site.URL} fileextension:ppt*&quot;,&quot;resultSourceId&quot;:&quot;8413cd39-2156-4e00-b54d-11efd9abdb89&quot;,&quot;tabName&quot;:&quot;Presentations&quot;,&quot;iconName&quot;:&quot;PowerPointLogo&quot;,&quot;sortIdx&quot;:2},{&quot;key&quot;:&quot;9da0e1d9-4765-42ff-b562-cf7796d408f6&quot;,&quot;queryTemplate&quot;:&quot;{searchTerms} path:{Site.URL} contentclass:STS_ListItem_Events&quot;,&quot;resultSourceId&quot;:&quot;8413cd39-2156-4e00-b54d-11efd9abdb89&quot;,&quot;tabName&quot;:&quot;Events&quot;,&quot;iconName&quot;:&quot;Calendar&quot;,&quot;sortIdx&quot;:3}],&quot;showCounts&quot;:true,&quot;searchResultsDataSourceReference&quot;:&quot;WebPart.42ad2740-3c60-49cf-971a-c44e33511b93.361f9fe5-3175-4a28-85b7-fc8cb41489d2:searchResultsWebPart&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="9d441773-f735-46a3-9ca0-9e2eb4bef203" Order="1" Column="1" />
+                                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;42ad2740-3c60-49cf-971a-c44e33511b93&quot;, &quot;instanceId&quot;: &quot;361f9fe5-3175-4a28-85b7-fc8cb41489d2&quot;, &quot;title&quot;: &quot;Search Results&quot;, &quot;description&quot;: &quot;Displays search results&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;queryTemplate&quot;:&quot;{searchTerms} path:{site}&quot;,&quot;sortList&quot;:[{&quot;sortField&quot;:&quot;EventsRollUpStartDate&quot;,&quot;sortDirection&quot;:2,&quot;sortIdx&quot;:1},{&quot;sortField&quot;:&quot;LastModifiedTime&quot;,&quot;sortDirection&quot;:2,&quot;sortIdx&quot;:2}],&quot;selectedProperties&quot;:&quot;Title,Path,Created,Filename,SiteLogo,PreviewUrl,PictureThumbnailURL,ServerRedirectedPreviewURL,ServerRedirectedURL,HitHighlightedSummary,FileType,contentclass,ServerRedirectedEmbedURL,DefaultEncodingURL,owstaxidmetadataalltagsinfo,Author,AuthorOWSUSER,SPSiteUrl,SiteTitle,IsContainer,IsListItem,HtmlFileType,UniqueID,SiteId,WebId,NormSiteID,NormListID,NormUniqueID,EventDateOWSDATE,EndDateOWSDATE,CategoryOWSCHCS,LocationOWSTEXT&quot;,&quot;enableQueryRules&quot;:false,&quot;includeOneDriveResults&quot;:false,&quot;maxResultsCount&quot;:8,&quot;showBlank&quot;:false,&quot;showResultsCount&quot;:false,&quot;webPartTitle&quot;:&quot;&quot;,&quot;enableLocalization&quot;:true,&quot;useDefaultSearchQuery&quot;:false,&quot;resultTypes&quot;:[{&quot;uniqueId&quot;:&quot;28389745-a8dc-468a-8acd-80c1a19406b7&quot;,&quot;property&quot;:&quot;contentclass&quot;,&quot;operator&quot;:&quot;contains&quot;,&quot;value&quot;:&quot;STS_ListItem_Events&quot;,&quot;inlineTemplateContent&quot;:&quot;&lt;style&gt;\r\n    .eventContainer {\r\n\t\tpadding-left: 20px;\r\n\t\tpadding-right: 20px;\r\n\t\tpadding-top: 16px;\r\n\t\tpadding-bottom: 16px;\r\n\t}\r\n\t.eventTitle {\r\n\t\ttext-decoration: none;\r\n\t\tcolor: inherit;\r\n\t}\r\n\t.eventMain {\r\n\t\tborder-top: solid 1px;\r\n\t\tborder-top-color: {{@root.themeVariant.palette.themeLighter}};\r\n\t\theight: 200px;\r\n\t}\r\n&lt;/style&gt;\r\n\r\n&lt;div class=\&quot;eventMain\&quot;&gt;\r\n\t&lt;div class=\&quot;ms-bgColor-neutralLight eventContainer\&quot;&gt;\r\n\t\t&lt;div class=\&quot;ms-font-xl ms-fontWeight-regular\&quot;&gt;\t\t\r\n\t\t&lt;a href=\&quot;{{Path}}\&quot; class=\&quot;eventTitle\&quot;&gt;{{Title}}&lt;/a&gt;\r\n\t\t&lt;/div&gt;\r\n\t\t&lt;div class=\&quot;ms-font-l ms-fontWeight-semibold\&quot;&gt;\r\n\t\t\t{{getDate EventDateOWSDATE 'LL'}} -  {{getDate EndDateOWSDATE 'LL'}}\r\n\t\t&lt;/div&gt;\r\n\t&lt;/div&gt;\r\n\t&lt;div class=\&quot;eventContainer\&quot;&gt;\r\n\t\t&lt;div class=\&quot;ms-font-s\&quot;&gt;\r\n\t\t\t{{CategoryOWSCHCS}}\r\n\t\t&lt;/div&gt;\r\n\t\t&lt;div&gt;\r\n\t\t\t{{LocationOWSTEXT}}\r\n\t\t&lt;/div&gt;\r\n\t&lt;/div&gt;\r\n&lt;/div&gt;\r\n&quot;,&quot;externalTemplateUrl&quot;:null,&quot;sortIdx&quot;:1}],&quot;useExternalRefinersDisplay&quot;:false,&quot;useExternalPaginationDisplay&quot;:false,&quot;selectedPage&quot;:1,&quot;appliedRefiners&quot;:[],&quot;refinersConfiguration&quot;:[],&quot;sortableFields&quot;:[],&quot;synonymList&quot;:[],&quot;searchQueryLanguage&quot;:-1,&quot;templateParameters&quot;:{&quot;detailsListColumns&quot;:[{&quot;name&quot;:&quot;Title&quot;,&quot;value&quot;:&quot;Title&quot;,&quot;useHandlebarsExpr&quot;:false,&quot;minWidth&quot;:&quot;80&quot;,&quot;maxWidth&quot;:&quot;300&quot;,&quot;enableSorting&quot;:true,&quot;isMultiline&quot;:false,&quot;isResizable&quot;:true,&quot;isResultItemLink&quot;:true},{&quot;name&quot;:&quot;Created&quot;,&quot;value&quot;:&quot;{{getDate Created 'LL'}}&quot;,&quot;useHandlebarsExpr&quot;:true,&quot;minWidth&quot;:&quot;80&quot;,&quot;maxWidth&quot;:&quot;120&quot;,&quot;enableSorting&quot;:false,&quot;isMultiline&quot;:false,&quot;isResizable&quot;:false,&quot;isResultItemLink&quot;:false},{&quot;name&quot;:&quot;Summary&quot;,&quot;value&quot;:&quot;{{getSummary HitHighlightedSummary}}&quot;,&quot;useHandlebarsExpr&quot;:true,&quot;minWidth&quot;:&quot;80&quot;,&quot;maxWidth&quot;:&quot;300&quot;,&quot;enableSorting&quot;:false,&quot;isMultiline&quot;:true,&quot;isResizable&quot;:false,&quot;isResultItemLink&quot;:false}],&quot;showFileIcon&quot;:true,&quot;enablePreview&quot;:true,&quot;isCompact&quot;:false},&quot;enableQueryModifier&quot;:true,&quot;selectedLayout&quot;:1,&quot;defaultSearchQuery&quot;:&quot;&quot;,&quot;useSearchVerticals&quot;:true,&quot;searchVerticalDataSourceReference&quot;:&quot;WebPart.9d441773-f735-46a3-9ca0-9e2eb4bef203.1526ad6d-a779-4c59-ba43-d6ba4b003478:searchVerticals&quot;,&quot;showPaging&quot;:true,&quot;paginationDataSourceReference&quot;:&quot;WebPart.8745e454-5d73-4819-bad9-a00a88bf8428.46314ee8-1a85-4d58-bb55-6e78ee868a07:paginationWebPart&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {&quot;queryKeywords&quot;:&quot;PageContext:SearchData:searchQuery&quot;}, &quot;dynamicDataValues&quot;: {}}" ControlId="42ad2740-3c60-49cf-971a-c44e33511b93" Order="2" Column="1" />
+                                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;8745e454-5d73-4819-bad9-a00a88bf8428&quot;, &quot;instanceId&quot;: &quot;46314ee8-1a85-4d58-bb55-6e78ee868a07&quot;, &quot;title&quot;: &quot;Search Pagination&quot;, &quot;description&quot;: &quot;Displays the pagination for the search results&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;searchResultsDataSourceReference&quot;:&quot;WebPart.42ad2740-3c60-49cf-971a-c44e33511b93.361f9fe5-3175-4a28-85b7-fc8cb41489d2:searchResultsWebPart&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8745e454-5d73-4819-bad9-a00a88bf8428" Order="3" Column="1" />
+                                <pnp:CanvasControl WebPartType="Text" ControlId="91b77f27-45d1-402f-a9db-633aa8c83a7e" Order="1" Column="2">
+                                    <pnp:CanvasControlProperties>
+                                        <pnp:CanvasControlProperty Key="Text" Value="&lt;a href=&quot;{site}&quot; data-cke-saved-href=&quot;{sitecollection}&quot; data-interception=&quot;on&quot; title=&quot;Mark 8&quot;&gt;Go back&lt;/a&gt;" />
+                                    </pnp:CanvasControlProperties>
+                                </pnp:CanvasControl>
+                                <pnp:CanvasControl WebPartType="Text" ControlId="7aae128a-0ade-4e91-afec-ce884fc0c405" Order="2" Column="2">
+                                    <pnp:CanvasControlProperties>
+                                        <pnp:CanvasControlProperty Key="Text" Value="&lt;h4&gt;Welcome to Mark 8 Project Search&lt;/h4&gt;&lt;p&gt;This is your one stop shop for materials and happenings around the Mark 8 Project.&lt;/p&gt;&lt;p&gt;Let us know if you need anything and you can find us in person in Building F on the main campus.&lt;/p&gt;" />
+                                    </pnp:CanvasControlProperties>
+                                </pnp:CanvasControl>
+                            </pnp:Controls>
+                        </pnp:Section>
+                    </pnp:Sections>
+                </pnp:ClientSidePage>
+                <pnp:ClientSidePage PageName="Home.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="">
+                    <pnp:Header Type="Default" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+                    <pnp:Sections>
+                        <pnp:Section Order="1" Type="OneColumnVerticalSection" VerticalSectionEmphasis="Soft">
+                            <pnp:Controls>
+                                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;560d2a0b-d2b5-4927-aee4-d0ab332fc78f&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Mark8ProjectTeam2/planner.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/planner.png}&quot;,&quot;width&quot;:&quot;1181&quot;,&quot;height&quot;:&quot;829&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;planner.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/planner.png}&quot;,&quot;imgWidth&quot;:1181,&quot;imgHeight&quot;:829,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}}" Order="1" Column="1" />
+                                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;62cac389-787f-495d-beca-e11786162ef4&quot;, &quot;instanceId&quot;: &quot;a62371cc-6f2f-43cd-acb5-81f098807d03&quot;, &quot;title&quot;: &quot;Countdown Timer&quot;, &quot;description&quot;: &quot;This web part is used to allow a site admin to count down/up to an important event.&quot;, &quot;dataVersion&quot;: &quot;2.1&quot;, &quot;properties&quot;: {&quot;showButton&quot;:true,&quot;countDate&quot;:&quot;Fri Feb 28 2020 00:00:00 GMT-0800 (Pacific Standard Time)&quot;,&quot;description&quot;:&quot;–––\nPowerful and Foldable for Aerial Adventure. \nMark8, the adventure unfolds.\n–––&quot;,&quot;countDirection&quot;:&quot;COUNT_DOWN&quot;,&quot;dateDisplay&quot;:&quot;DAY_HOUR_MINUTE_SECOND&quot;,&quot;buttonText&quot;:&quot;READ CHECK-IN REPORT&quot;,&quot;backgroundImage&quot;:{&quot;focalPosition&quot;:{&quot;x&quot;:50,&quot;y&quot;:50},&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/62473480mark8_countdown_bg.jpg}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;zoomRatio&quot;:1,&quot;widthFactor&quot;:0.9125},&quot;backgroundOverlay&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;opacity&quot;:40,&quot;useLightText&quot;:true}}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;CONTOSO\nMARK8 PRODUCT LAUNCH\nSee the world through\na new perspective. &quot;},&quot;imageSources&quot;:{&quot;backgroundImage.url&quot;:&quot;{site}/SiteAssets/SitePages/Mark8ProjectTeam2/62473480mark8_countdown_bg.jpg&quot;},&quot;links&quot;:{&quot;buttonURL&quot;:&quot;{site}#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="62cac389-787f-495d-beca-e11786162ef4" Order="1" Column="2" />
+                                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;id&quot;: &quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;, &quot;instanceId&quot;: &quot;48cc493d-af2f-475b-818b-86cad1a930c5&quot;, &quot;title&quot;: &quot;Events&quot;, &quot;description&quot;: &quot;Display upcoming events&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;dataSource&quot;:7,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:20,&quot;layoutId&quot;:&quot;Flex&quot;,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Project milestones&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0447e11d-bed9-4898-b600-8dbcd95e9cc2&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="2" Column="2" />
+                                <pnp:CanvasControl WebPartType="GroupCalendar" JsonControlData="{&quot;id&quot;: &quot;6676088b-e28e-4a90-b9cb-d0d0303cd2eb&quot;, &quot;instanceId&quot;: &quot;dec64cc3-1d36-468b-a934-9c31d85b4be2&quot;, &quot;title&quot;: &quot;Group calendar&quot;, &quot;description&quot;: &quot;Display a calendar from one of your groups&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;selectedGroupId&quot;:&quot;{sitecollectionconnectedoffice365groupid}&quot;,&quot;selectedGroupName&quot;:&quot;Mark8 Project Team&quot;,&quot;selectedGroupEmail&quot;:&quot;&quot;,&quot;accessType&quot;:&quot;public&quot;,&quot;showPerPage&quot;:3,&quot;timeSpanLimitInMonth&quot;:6}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="6676088b-e28e-4a90-b9cb-d0d0303cd2eb" Order="3" Column="2" />
+                                <pnp:CanvasControl WebPartType="ContentRollup" JsonControlData="{&quot;id&quot;: &quot;daf0b71c-6de8-4ef7-b511-faae7c388708&quot;, &quot;instanceId&quot;: &quot;4a67a1d8-80e9-4ce2-8410-1e1938b7b588&quot;, &quot;title&quot;: &quot;Highlighted content&quot;, &quot;description&quot;: &quot;Dynamically display content based on location, type, and filtering&quot;, &quot;dataVersion&quot;: &quot;2.4&quot;, &quot;properties&quot;: {&quot;displayMaps&quot;:{&quot;1&quot;:{&quot;headingText&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;headingUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;title&quot;:{&quot;sources&quot;:[&quot;UserName&quot;,&quot;Title&quot;]},&quot;personImageUrl&quot;:{&quot;sources&quot;:[&quot;ProfileImageSrc&quot;]},&quot;name&quot;:{&quot;sources&quot;:[&quot;Name&quot;]},&quot;initials&quot;:{&quot;sources&quot;:[&quot;Initials&quot;]},&quot;itemUrl&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]},&quot;activity&quot;:{&quot;sources&quot;:[&quot;ModifiedDate&quot;]},&quot;previewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;,&quot;PictureThumbnailURL&quot;]},&quot;iconUrl&quot;:{&quot;sources&quot;:[&quot;IconUrl&quot;]},&quot;accentColor&quot;:{&quot;sources&quot;:[&quot;AccentColor&quot;]},&quot;cardType&quot;:{&quot;sources&quot;:[&quot;CardType&quot;]},&quot;tipActionLabel&quot;:{&quot;sources&quot;:[&quot;TipActionLabel&quot;]},&quot;tipActionButtonIcon&quot;:{&quot;sources&quot;:[&quot;TipActionButtonIcon&quot;]},&quot;className&quot;:{&quot;sources&quot;:[&quot;ClassName&quot;]}},&quot;2&quot;:{&quot;column1&quot;:{&quot;heading&quot;:&quot;&quot;,&quot;sources&quot;:[&quot;FileType&quot;],&quot;width&quot;:34},&quot;column2&quot;:{&quot;heading&quot;:&quot;Title&quot;,&quot;sources&quot;:[&quot;Title&quot;],&quot;linkUrls&quot;:[&quot;WebPath&quot;],&quot;width&quot;:250},&quot;column3&quot;:{&quot;heading&quot;:&quot;Modified&quot;,&quot;sources&quot;:[&quot;ModifiedDate&quot;],&quot;width&quot;:100},&quot;column4&quot;:{&quot;heading&quot;:&quot;Modified By&quot;,&quot;sources&quot;:[&quot;Name&quot;],&quot;width&quot;:150}},&quot;3&quot;:{&quot;id&quot;:{&quot;sources&quot;:[&quot;UniqueID&quot;]},&quot;edit&quot;:{&quot;sources&quot;:[&quot;edit&quot;]},&quot;DefaultEncodingURL&quot;:{&quot;sources&quot;:[&quot;DefaultEncodingURL&quot;]},&quot;FileExtension&quot;:{&quot;sources&quot;:[&quot;FileExtension&quot;]},&quot;FileType&quot;:{&quot;sources&quot;:[&quot;FileType&quot;]},&quot;Path&quot;:{&quot;sources&quot;:[&quot;Path&quot;]},&quot;PictureThumbnailURL&quot;:{&quot;sources&quot;:[&quot;PictureThumbnailURL&quot;]},&quot;PreviewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;]},&quot;SiteID&quot;:{&quot;sources&quot;:[&quot;SiteID&quot;]},&quot;SiteTitle&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;Title&quot;:{&quot;sources&quot;:[&quot;Title&quot;]},&quot;UniqueID&quot;:{&quot;sources&quot;:[&quot;UniqueID&quot;]},&quot;WebId&quot;:{&quot;sources&quot;:[&quot;WebId&quot;]},&quot;WebPath&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]}},&quot;4&quot;:{&quot;headingText&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;headingUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;title&quot;:{&quot;sources&quot;:[&quot;UserName&quot;,&quot;Title&quot;]},&quot;personImageUrl&quot;:{&quot;sources&quot;:[&quot;ProfileImageSrc&quot;]},&quot;name&quot;:{&quot;sources&quot;:[&quot;Name&quot;]},&quot;initials&quot;:{&quot;sources&quot;:[&quot;Initials&quot;]},&quot;itemUrl&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]},&quot;activity&quot;:{&quot;sources&quot;:[&quot;ModifiedDate&quot;]},&quot;previewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;,&quot;PictureThumbnailURL&quot;]},&quot;iconUrl&quot;:{&quot;sources&quot;:[&quot;IconUrl&quot;]},&quot;accentColor&quot;:{&quot;sources&quot;:[&quot;AccentColor&quot;]},&quot;cardType&quot;:{&quot;sources&quot;:[&quot;CardType&quot;]},&quot;tipActionLabel&quot;:{&quot;sources&quot;:[&quot;TipActionLabel&quot;]},&quot;tipActionButtonIcon&quot;:{&quot;sources&quot;:[&quot;TipActionButtonIcon&quot;]},&quot;className&quot;:{&quot;sources&quot;:[&quot;ClassName&quot;]}}},&quot;query&quot;:{&quot;contentLocation&quot;:1,&quot;contentTypes&quot;:[1],&quot;sortType&quot;:1,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;}],&quot;documentTypes&quot;:[99]},&quot;templateId&quot;:1,&quot;maxItemsPerPage&quot;:6,&quot;hideWebPartWhenEmpty&quot;:false,&quot;sites&quot;:[],&quot;queryMode&quot;:&quot;Basic&quot;,&quot;layoutId&quot;:&quot;Card&quot;,&quot;dataProviderId&quot;:&quot;Search&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Activity&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{hosturl}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;62680648-d047-46ec-81e0-475ee78e482d&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="daf0b71c-6de8-4ef7-b511-faae7c388708" Order="4" Column="2" />
+                            </pnp:Controls>
+                        </pnp:Section>
+                        <pnp:Section Order="2" Type="TwoColumn">
+                            <pnp:Controls>
+                                <pnp:CanvasControl WebPartType="ImageGallery" JsonControlData="{&quot;id&quot;: &quot;af8be689-990e-492a-81f7-ba3e4cd3ed9c&quot;, &quot;instanceId&quot;: &quot;77420ea4-8a6a-4604-bd33-cfeffeccafae&quot;, &quot;title&quot;: &quot;Image gallery&quot;, &quot;description&quot;: &quot;Spotlight your favorite images in a gallery&quot;, &quot;dataVersion&quot;: &quot;1.7&quot;, &quot;properties&quot;: {&quot;layout&quot;:2,&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:false,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true},&quot;gridSettings&quot;:{&quot;imageSize&quot;:2,&quot;imageCropping&quot;:1,&quot;imageAspectRatio&quot;:3,&quot;lightbox&quot;:false},&quot;imageSourceType&quot;:1,&quot;isRecursive&quot;:false,&quot;isCdnEnabledForList&quot;:false,&quot;hasDynamicModeEnabled&quot;:false,&quot;maxImagesCount&quot;:10,&quot;images&quot;:[{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/27297drone-3.png}&quot;,&quot;isInList&quot;:true,&quot;title&quot;:null,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/76755drone-01.png}&quot;,&quot;isInList&quot;:true,&quot;title&quot;:null,&quot;imageTileWidth&quot;:300},{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/71984drone-2.png}&quot;,&quot;isInList&quot;:true,&quot;title&quot;:null,&quot;imageTileWidth&quot;:300}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Mark8 Product Imagery&quot;,&quot;images[0].description&quot;:&quot;&quot;,&quot;images[1].description&quot;:&quot;&quot;,&quot;images[2].description&quot;:&quot;&quot;,&quot;images[0].altText&quot;:&quot;&quot;,&quot;images[1].altText&quot;:&quot;&quot;,&quot;images[2].altText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;images[0].url&quot;:&quot;{site}/SiteAssets/SitePages/Mark8ProjectTeam2/27297drone-3.png&quot;,&quot;images[1].url&quot;:&quot;{site}/SiteAssets/SitePages/Mark8ProjectTeam2/76755drone-01.png&quot;,&quot;images[2].url&quot;:&quot;{site}/SiteAssets/SitePages/Mark8ProjectTeam2/71984drone-2.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;images[0].url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/27297drone-3.png}&quot;,&quot;fixedwidth&quot;:&quot;300&quot;},&quot;images[1].url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/76755drone-01.png}&quot;,&quot;fixedwidth&quot;:&quot;300&quot;},&quot;images[2].url&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/71984drone-2.png}&quot;,&quot;fixedwidth&quot;:&quot;300&quot;}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="af8be689-990e-492a-81f7-ba3e4cd3ed9c" Order="1" Column="1" />
+                                <pnp:CanvasControl WebPartType="DocumentEmbed" JsonControlData="{&quot;id&quot;: &quot;b7dd04e1-19ce-4b24-9132-b60a1c2b910d&quot;, &quot;instanceId&quot;: &quot;2f970013-fdc2-4232-a389-84c441c23564&quot;, &quot;title&quot;: &quot;File viewer&quot;, &quot;description&quot;: &quot;Display a document or other file on your page. You can show a file from most applications including Word, Excel, PowerPoint, Visio, PDF, 3D, and others&quot;, &quot;dataVersion&quot;: &quot;1.4&quot;, &quot;properties&quot;: {&quot;authorName&quot;:&quot;Katie Swanson&quot;,&quot;chartitem&quot;:&quot;&quot;,&quot;endrange&quot;:&quot;&quot;,&quot;excelSettingsType&quot;:&quot;&quot;,&quot;file&quot;:&quot;{hosturl}{site}/Shared%20Documents/ELEVATOR-PITCH.pdf&quot;,&quot;listId&quot;:&quot;{listid:Documents}&quot;,&quot;modifiedAt&quot;:&quot;2019-09-12T20:44:41Z&quot;,&quot;photoUrl&quot;:&quot;/_layouts/15/userphoto.aspx?size=S&amp;accountname=Katie%40M365x377533.onmicrosoft.com&quot;,&quot;rangeitem&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;startPage&quot;:1,&quot;startrange&quot;:&quot;&quot;,&quot;tableitem&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:Shared Documents/Design/ELEVATOR-PITCH.pdf}&quot;,&quot;wdallowinteractivity&quot;:true,&quot;wdhidegridlines&quot;:true,&quot;wdhideheaders&quot;:true,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;webAbsoluteUrl&quot;:&quot;{hosturl}{site}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;annotation&quot;:&quot;Mark8 Product Specs&quot;,&quot;title&quot;:&quot;ELEVATOR-PITCH&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;serverRelativeUrl&quot;:&quot;{site}/Shared%20Documents/Design/ELEVATOR-PITCH.pdf&quot;,&quot;wopiurl&quot;:&quot;{site}/Shared%20Documents/Design/ELEVATOR-PITCH.pdf&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="b7dd04e1-19ce-4b24-9132-b60a1c2b910d" Order="2" Column="1" />
+                                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;aeaceaab-5cfa-4381-8656-dfc4e85d57a4&quot;, &quot;title&quot;: &quot;Document library&quot;, &quot;description&quot;: &quot;Add a document library&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:true,&quot;selectedListId&quot;:&quot;{listid:Documents}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Shared Documents&quot;,&quot;webRelativeListUrl&quot;:&quot;/Shared Documents&quot;,&quot;webpartHeightKey&quot;:4,&quot;selectedViewId&quot;:&quot;{viewid:Documents,All Documents}&quot;,&quot;selectedFolderPath&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Documents&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="2" />
+                            </pnp:Controls>
+                        </pnp:Section>
+                        <pnp:Section Order="3" Type="OneColumn">
+                            <pnp:Controls>
+                                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;instanceId&quot;:&quot;c2ccdf83-a819-4657-b1a4-4f8fb0c83b1c&quot;,&quot;title&quot;:&quot;Image&quot;,&quot;description&quot;:&quot;Show an image on your page&quot;,&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Mark8ProjectTeam2/powerbi.png&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:null},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/powerbi.png}&quot;,&quot;width&quot;:&quot;1180&quot;,&quot;height&quot;:&quot;699&quot;}}},&quot;dataVersion&quot;:&quot;1.8&quot;,&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Mark8ProjectTeam2/powerbi.png}&quot;,&quot;imgWidth&quot;:1180,&quot;imgHeight&quot;:699,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}}" Order="1" Column="1" />
+                            </pnp:Controls>
+                        </pnp:Section>
+                    </pnp:Sections>
+                </pnp:ClientSidePage>
+                <pnp:ClientSidePage PageName="navigation-page.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="navigation page" ThumbnailUrl="">
+                    <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="fpo" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+                </pnp:ClientSidePage>
+                <pnp:ClientSidePage PageName="Website-analytics.aspx" PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Website analytics" ThumbnailUrl="">
+                    <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="consumer" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+                    <pnp:Sections>
+                        <pnp:Section Order="1" Type="OneColumn">
+                            <pnp:Controls>
+                                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;560d2a0b-d2b5-4927-aee4-d0ab332fc78f&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Image&quot;, &quot;dataVersion&quot;: &quot;1.8&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;powerbi.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Website-analytics/9575-powerbi.png}&quot;,&quot;imgWidth&quot;:1202,&quot;imgHeight&quot;:716,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;captionText&quot;:&quot;&quot;},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Website-analytics/9575-powerbi.png&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;&quot;},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Website-analytics/9575-powerbi.png}&quot;,&quot;width&quot;:1202,&quot;height&quot;:716}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                            </pnp:Controls>
+                        </pnp:Section>
+                    </pnp:Sections>
+                </pnp:ClientSidePage>
+            </pnp:ClientSidePages>
+            <pnp:Header Layout="Compact" BackgroundEmphasis="Strong" />
+        </pnp:ProvisioningTemplate>
+    </pnp:Templates>
+</pnp:Provisioning>
