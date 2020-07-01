@@ -1,18 +1,19 @@
 {
-  "templateId": "7f9b9ca7-715a-4595-9e1e-4a12a87a02a6", 	    
+  "templateId": "44dc3585-9140-4183-81fc-bdb057f71ac1", 	
   "categories": [
-    "DEPARTMENT"
+    "EDU"
   ],
   "platforms": [
     "LOOKBOOK"
   ],
-  "packageFile": "flysafeconference.pnp",
-  "abstract": "With a countdown timer and attention-grabbing images, this site generates excitement and engagement for upcoming events.",
+  "packageFile": "pineviewportal.pnp",
+  "abstract": "Pineview EDU portal.",
   "sortOrder": 300,
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview": "true",
   "forceNewSite":"false",
+  "forceExistingSite":"false",
   "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
   "visible": "true",
   "metadata": {
@@ -31,21 +32,21 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteTitle": "Fly Safe Conference - Site",
-        "siteDescriptor": "Event-focused, highly visual",
+        "siteTitle": "Pineview EDU - Site",
+        "siteDescriptor": "EDU, portal",
         "descriptionParagraphs": [
-            "With a countdown timer and attention-grabbing images, this site generates excitement and engagement for upcoming events."
+            "Pineview EDU portal."
         ],
         "previewImages": [
             {
                 "type": "fullpage",
-                "altText": "Fly Safe Conference layout",
-                "url": "./full-layout-flysafeconference.jpg"
+                "altText": "Pineview preview",
+                "url": "./full-layout-pineview.jpg"
             },
             {
                 "type": "cardpreview",
-                "altText": "Fly Safe Conference preview",
-                "url": "./card-flysafeconference.jpg"
+                "altText": "Pineview preview",
+                "url": "./card-pineview.jpg"
             }
         ],
         "detailItemCategories": [
@@ -152,7 +153,7 @@
             },
             {
                 "name": "Permission required",
-                "value": "Tenant Admin"
+                "value": "Site Collection Administrator"
             },
             {
                 "name": "Site language",
