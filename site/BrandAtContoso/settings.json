@@ -11,6 +11,7 @@
   "sortOrderPromoted": 0,
   "preview": "false",
   "forceNewSite":"false",
+  "forceExistingSite":"true",
   "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
   "visible": "true",
   "metadata": {
