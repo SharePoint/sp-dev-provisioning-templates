@@ -6,8 +6,8 @@
   "platforms": [
     "LOOKBOOK"
   ],
-  "packageFile": "staffsite.pnp",
-  "abstract": "Pineview EDU portal.",
+  "packageFile": "educlass.pnp",
+  "abstract": "EDU Class.",
   "sortOrder": 300,
   "promoted": "false",
   "sortOrderPromoted": 0,
@@ -27,21 +27,21 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteTitle": "Staff Site",
-        "siteDescriptor": "Staff Site",
+        "siteTitle": "EDU Class",
+        "siteDescriptor": "Class Site",
         "descriptionParagraphs": [
-            "Staff EDU site."
+            "Class EDU site."
         ],
         "previewImages": [
             {
                 "type": "fullpage",
                 "altText": "Staff site preview",
-                "url": "./full-layout-staff.jpg"
+                "url": "./full-layout-class.jpg"
             },
             {
                 "type": "cardpreview",
                 "altText": "Staff site preview",
-                "url": "./card-staff.jpg"
+                "url": "./card-class.jpg"
             }
         ],
         "detailItemCategories": [
