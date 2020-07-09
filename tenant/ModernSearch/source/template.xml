@@ -2,7 +2,7 @@
     <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
         <pnp:Parameters>
             <pnp:Parameter Key="SiteTitle">Mark8 - Custom Search</pnp:Parameter>
-            <pnp:Parameter Key="SiteUrl">/sites/CustomSearch3</pnp:Parameter>
+            <pnp:Parameter Key="SiteUrl">/sites/CustomSearch</pnp:Parameter>
         </pnp:Parameters>
     </pnp:Preferences>
     <pnp:Tenant>
