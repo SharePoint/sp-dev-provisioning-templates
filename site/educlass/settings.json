@@ -17,12 +17,7 @@
   "matchingSiteBaseTemplateId":"GROUP#0",
   "visible": "true",
   "metadata": {
-    "properties": [
-      {
-        "name": "SiteTitle",
-        "caption": "Site Title",
-        "description": "Title for your site (will be removed from this template soon)"
-      },        
+    "properties": [     
       {
         "name": "SiteUrl",
         "caption": "Site URL",
