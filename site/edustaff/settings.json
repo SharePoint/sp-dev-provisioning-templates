@@ -19,7 +19,7 @@
   "metadata": {
     "properties": [
       {
-        "name": "SiteUrl",
+        "name": "TargetSiteUrl",
         "caption": "Site URL",
         "description": "Relative URL to existing site to which template is applied.",
         "editor": "SiteUrl"
@@ -27,7 +27,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteTitle": "Staff Site",
+        "siteTitle": "Edu Staff",
         "siteDescriptor": "Staff Site",
         "descriptionParagraphs": [
             "Staff EDU site."
