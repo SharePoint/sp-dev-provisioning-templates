@@ -1,14 +1,14 @@
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema" Author="John White" Generator="Human being" Version="1.0" Description="Example site to manage brand assets" DisplayName="Brand @ Contoso" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/BrandAtContoso/top-brand.png">
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
-      <pnp:Parameter Key="SiteTitle">EDU Class</pnp:Parameter>
       <pnp:Parameter Key="SiteUrl">/sites/educlass4</pnp:Parameter>
+      <pnp:Parameter Key="SiteTitle">EDU Class</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
     <pnp:SiteCollections>
       <!-- The following sequence entry is correct. We are aware it is not matching the BaseSiteTemplate reference of the ProvisioningTemplate tag. -->
-      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" Url="{parameter:SiteUrl}" ProvisioningId="MAIN" Language="1033" Title="{parameter:SiteTitle}" Description="" Owner="{CurrentUserLoginName}" IsHubSite="false" >
+      <pnp:SiteCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="pnp:CommunicationSite" Url="{parameter:SiteUrl}" ProvisioningId="MAIN" Language="1033" Title="{parameter:SiteTitle}" Description="" Owner="{CurrentUserLoginName}" IsHubSite="false">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="MAIN-TEMPLATE"/>
         </pnp:Templates>
