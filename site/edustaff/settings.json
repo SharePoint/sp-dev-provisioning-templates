@@ -19,7 +19,7 @@
   "metadata": {
     "properties": [
       {
-        "name": "TargetSiteUrl",
+        "name": "SiteUrl",
         "caption": "Site URL",
         "description": "Relative URL to existing site to which template is applied.",
         "editor": "SiteUrl"
