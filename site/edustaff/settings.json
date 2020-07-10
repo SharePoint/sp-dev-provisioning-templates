@@ -19,11 +19,6 @@
   "metadata": {
     "properties": [
       {
-        "name": "SiteTitle",
-        "caption": "Site Title",
-        "description": "Title for your site (will be removed from this template soon)"
-      },           
-      {
         "name": "SiteUrl",
         "caption": "Site URL",
         "description": "Relative URL to existing site to which template is applied.",
