@@ -1,0 +1,163 @@
+{
+  "categories": [
+    "TEAM"
+  ],
+  "platforms": [
+    "SPPNP",
+    "LOOKBOOK"
+  ],
+  "packageFile": "modernsearch.pnp",
+  "abstract": "Using a customized search page in a site.",
+  "sortOrder": 300,
+  "promoted": "false",
+  "sortOrderPromoted": 0,
+  "preview": "true",
+  "forceNewSite":"false",
+  "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
+  "visible": "true",
+  "metadata": {
+    "properties": [
+      {
+        "name": "SiteTitle",
+        "caption": "Site Title",
+        "description": "Title for your site"
+      },
+      {
+        "name": "SiteUrl",
+        "caption": "Site URL",
+        "description": "Relative URL to be used for the site",
+        "editor": "SiteUrl"
+      }
+    ],
+    "displayInfo": {
+        "pageTemplateId": "system/pageTemplates/template-1",
+        "siteDescriptor": "Planning, progress, tracking",
+        "descriptionParagraphs": [
+            "Using Planner and PowerBi along with other project-related web parts, this team site is all about the project -- from planning and progress, to tracking results. "
+        ],
+        "previewImages": [
+            {
+                "type": "fullpage",
+                "altText": "Mark8 Project Team layout",
+                "url": "./full-layout-mark8projectteam.jpg"
+            },
+            {
+                "type": "cardpreview",
+                "altText": "Mark8 Project Team preview",
+                "url": "./card-mark8projectteam.jpg"
+            }
+        ],
+        "detailItemCategories": [
+            {
+                "name": "Webparts",
+                "items": [
+                    {
+                        "name": "Planner",
+                        "description": "Board display",
+                        "url": "https://support.office.com/en-us/article/use-the-planner-web-part-a1e4ada8-8817-4e57-8e65-1bf546808843"
+                    },
+                    {
+                        "name": "Image Gallery",
+                        "description": "Grid, 4x3",
+                        "url": "https://support.office.com/en-us/article/use-the-image-gallery-web-part-bbcbe560-14a7-4369-8ef5-3255845e3bfd"
+                    },
+                    {
+                        "name": "File viewer",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-file-viewer-web-part-e53a9602-e7b3-4fff-9126-de2f18d1900c"
+                    },
+                    {
+                        "name": "Document Library",
+                        "description": "Command bar off",
+                        "url": "https://support.office.com/en-us/article/use-the-document-library-web-part-a9dfecc3-2050-4528-9f00-2c5afc5731b0"
+                    },
+                    {
+                        "name": "PowerBi report",
+                        "description": "16:9 display, Navigation Pane off",
+                        "url": "https://support.office.com/en-us/article/use-the-power-bi-web-part-32d8b85f-094d-4152-8e3b-df641ccf3968"
+                    },
+                    {
+                        "name": "Countdown timer",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-countdown-timer-web-part-a13ffef8-0bf1-409e-be23-98af1d1736e7"
+                    },
+                    {
+                        "name": "Events",
+                        "description": "Compact",
+                        "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
+                    },
+                    {
+                        "name": "Group Calendar",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-group-calendar-web-part-eaf3c04d-5699-48cb-8b5e-3caa887d51ce"
+                    },
+                    {
+                        "name": "Highlighted content",
+                        "description": "Most recent docs custom filter",
+                        "url": "https://support.office.com/en-us/article/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd"
+                    }
+                ]
+            },
+            {
+                "name": "Features",
+                "items": [
+                    {
+                        "name": "Custom company theme",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Vertical section",
+                        "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
+                    },
+                    {
+                        "name": "Section background",
+                        "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-sharepoint-modern-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
+                    },
+                    {
+                        "name": "Compact header",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Header background",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                    },
+                    {
+                        "name": "Custom site logo",
+                        "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b",
+                        "badgeText": ""
+                    }
+                ]
+            },
+            {
+                "name": "Site Content",
+                "items": [
+                    {
+                        "name": "Complex welcome page with out-of-the-box web parts"
+                    },
+                    {
+                        "name": "Example images and Office documents"
+                    }
+                ]
+            },
+            {
+                "name": "Resources",
+                "items": []
+            }
+        ],
+        "systemRequirements": [
+            {
+                "name": "SharePoint version",
+                "value": "SharePoint Online"
+            },
+            {
+                "name": "Permission required",
+                "value": "Tenant Admin"
+            },
+            {
+                "name": "Site language",
+                "value": "English"
+            }
+        ]
+    }
+  }
+}
