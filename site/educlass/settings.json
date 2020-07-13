@@ -31,7 +31,7 @@
         "siteTitle": "Class home page",
         "siteDescriptor": "Class resources, updates, engaging content",
         "descriptionParagraphs": [
-            "This template serves as an engaging home base for a class. Students can find links to resources, highlighted documents and class events. This template is designed to be used with a Class team in Microsoft Teams. Learn how you can create a Class team or use an existing one at https://aka.ms/usewithteams"
+            "This template serves as an engaging home base for a class. Students can find links to resources, highlighted documents and class events. This template is designed to be used with a Class team in Microsoft Teams. Learn how you can create a Class team or use an existing one at <a href='https://aka.ms/usewithteams'>aka.ms/usewithteams</a>."
         ],
         "previewImages": [
             {

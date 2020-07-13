@@ -35,7 +35,7 @@
         "siteDescriptor": "Announcements, news, resources, communities and calls-to-action",
         "descriptionParagraphs": [
             "Keep people informed, engaged, and moving forward during crises from extreme weather events to health & safety emergencies. This template creates a central resource for leaders and communicators to share important news and announcements. A single source of truth where people can stay up-to-date. And a place to connect people across the organization.",
-            "Protip: The site includes a Yammer Conversations web part. Connect it to a Yammer community where people can share knowledge and experience, ask questions and get answers. See https://aka.ms/Yammer/Blog/DifficultTimes for more information."
+            "Protip: The site includes a Yammer Conversations web part. Connect it to a Yammer community where people can share knowledge and experience, ask questions and get answers. See <a href='https://aka.ms/Yammer/Blog/DifficultTimes'>aka.ms/Yammer/Blog/DifficultTimes</a> for more information."
         ],
         "previewImages": [
             {
