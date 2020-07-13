@@ -22,7 +22,7 @@
       {
         "name": "SiteUrl",
         "caption": "Site URL",
-        "description": "Relative URL to existing site to which template is applied.",
+        "description": "Provide the URL of your existing SharePoint <Class/Staff> site. If you don't have one, create a team site first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>",
         "editor": "SiteUrl"
       }
     ],
@@ -35,8 +35,8 @@
         ],
         "provisionMessages": {
             "provisionPageTitle": "Great choice!",
-            "provisionPageSubTitle": "We just need a bit of information before we start provisioning",
-            "provisionPageText": "The following settings are used for your example site. You can keep them as is, or change them to suit your needs." 
+            "provisionPageSubTitle": "We just need some information before we add this template to your team site.",
+            "provisionPageText": "The following information will be used for your site. The Site URL must be an URL of an existing team site. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>" 
         },
         "previewImages": [
             {
