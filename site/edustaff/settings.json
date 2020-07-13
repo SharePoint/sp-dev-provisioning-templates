@@ -22,7 +22,7 @@
       {
         "name": "SiteUrl",
         "caption": "Site URL",
-        "description": "Provide the URL of your existing SharePoint &lt;Class/Staff&gt; site. If you don't have one, create a team site first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>",
+        "description": "<nowrap>Provide the URL of your existing SharePoint &lt;Class/Staff&gt; site. If you don't have one, create a team site first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a></nowrap>",
         "editor": "SiteUrl"
       }
     ],
