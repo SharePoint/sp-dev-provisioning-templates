@@ -33,10 +33,10 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteTitle": "EDU Portal",
-        "siteDescriptor": "EDU, portal",
+        "siteTitle": "School central",
+        "siteDescriptor": "School resources, events, news",
         "descriptionParagraphs": [
-            "Pineview EDU portal."
+            "This template serves as an internal landing page for your school where students and teachers can learn about school-wide resources, events, and news."
         ],
         "previewImages": [
             {
@@ -55,44 +55,39 @@
                 "name": "Webparts",
                 "items": [
                     {
-                        "name": "Image",
-                        "description": "Full width",
-                        "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
-                    },
-                    {
-                        "name": "Countdown timer",
-                        "description": "Full width",
-                        "url": "https://support.office.com/en-us/article/use-the-countdown-timer-web-part-a13ffef8-0bf1-409e-be23-98af1d1736e7"
-                    },
-                    {
-                        "name": "Text",
-                        "description": "Custom RTE formatting",
-                        "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
-                    },
-                    {
-                        "name": "Events",
-                        "description": "Filmstrip",
-                        "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
-                    },
-                    {
                         "name": "Hero",
-                        "description": "Full width, 2 tiles",
+                        "description": "Full width, 5 tiles",
                         "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
                     },
                     {
+                        "name": "Quick Links",
+                        "description": "Compact layout",
+                        "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                    },                                     
+                    {
                         "name": "Image",
                         "description": "",
-                        "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
+                        "url": "https://support.microsoft.com/en-us/office/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
                     },
                     {
                         "name": "Text",
-                        "description": "Custom RTE formatting + emojis as icons",
-                        "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
+                        "description": "",
+                        "url": "https://support.microsoft.com/en-us/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801#:~:text=%20To%20use%20the%20Text%20web%20part%3A%20,5%20Use%20s%EF%BB%BF%EF%BB%BFtrikethrough%206%20I%EF%BB%BFndent%20text%20More%20"
                     },
                     {
                         "name": "Button",
                         "description": "Left aligned",
-                        "url": "https://support.office.com/en-us/article/use-the-button-web-part-d2e37c48-11e8-45b9-8d9e-abdaa97c2a7a"
+                        "url": "https://support.microsoft.com/en-us/office/use-the-button-web-part-d2e37c48-11e8-45b9-8d9e-abdaa97c2a7a"
+                    },                    
+                    {
+                        "name": "News",
+                        "description": "Side-by-side layout, 4 news posts",
+                        "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
+                    },                    
+                    {
+                        "name": "Events",
+                        "description": "Film strip layout, 4 events",
+                        "url": "https://support.microsoft.com/en-us/office/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
                     }
                 ]
             },
@@ -100,12 +95,8 @@
                 "name": "Features",
                 "items": [
                     {
-                        "name": "Custom company theme",
+                        "name": "Custom theme",
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                    },
-                    {
-                        "name": "Vertical section",
-                        "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
                     },
                     {
                         "name": "Section background",
@@ -114,10 +105,6 @@
                     {
                         "name": "Mega Menu",
                         "url": "https://support.office.com/en-us/article/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca"
-                    },
-                    {
-                        "name": "Compact header",
-                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
                     },
                     {
                         "name": "Header background",
@@ -138,7 +125,10 @@
                 "name": "Site Content",
                 "items": [
                     {
-                        "name": "Custom welcome page build with out-of-the-box web parts"
+                        "name": "Example welcome page with out-of-the-box web parts"
+                    },
+                    {
+                        "name": "Example news articles and pages demonstrating different modern page designs"
                     }
                 ]
             },
@@ -154,7 +144,7 @@
             },
             {
                 "name": "Permission required",
-                "value": "Site Collection Administrator"
+                "value": "Site owner"
             },
             {
                 "name": "Site language",
