@@ -4,7 +4,8 @@
     "EDU"
   ],
   "platforms": [
-    "LOOKBOOK"
+    "LOOKBOOK",
+    "SPPNP"
   ],
   "packageFile": "edustaff.pnp",
   "abstract": "Pineview EDU portal.",
@@ -21,7 +22,7 @@
       {
         "name": "SiteUrl",
         "caption": "Site URL",
-        "description": "Relative URL to existing site to which template is applied.",
+        "description": "<nowrap>Provide the URL of your existing SharePoint &lt;Class/Staff&gt; site. If you don't have one, create a team site first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a></nowrap>",
         "editor": "SiteUrl"
       }
     ],
@@ -32,6 +33,11 @@
         "descriptionParagraphs": [
             "Staff EDU site."
         ],
+        "provisionMessages": {
+            "provisionPageTitle": "Great choice!",
+            "provisionPageSubTitle": "We just need some information before we add this template to your team site.",
+            "provisionPageText": "The following information will be used for your site. The Site URL must be an URL of an existing team site. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>" 
+        },
         "previewImages": [
             {
                 "type": "fullpage",
