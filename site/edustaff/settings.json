@@ -4,7 +4,8 @@
     "EDU"
   ],
   "platforms": [
-    "LOOKBOOK"
+    "LOOKBOOK",
+    "SPPNP"
   ],
   "packageFile": "edustaff.pnp",
   "abstract": "Pineview EDU portal.",
@@ -32,6 +33,11 @@
         "descriptionParagraphs": [
             "Staff EDU site."
         ],
+        "provisionMessages": {
+            "provisionPageTitle": "Great choice!",
+            "provisionPageSubTitle": "We just need a bit of information before we start provisioning",
+            "provisionPageText": "The following settings are used for your example site. You can keep them as is, or change them to suit your needs." 
+        },
         "previewImages": [
             {
                 "type": "fullpage",
