@@ -4,7 +4,8 @@
     "EDU"
   ],
   "platforms": [
-    "LOOKBOOK"
+    "LOOKBOOK",
+    "SPPNP"
   ],
   "packageFile": "educlass.pnp",
   "abstract": "EDU Class.",
@@ -17,12 +18,7 @@
   "matchingSiteBaseTemplateId":"GROUP#0",
   "visible": "true",
   "metadata": {
-    "properties": [
-      {
-        "name": "SiteTitle",
-        "caption": "Site Title",
-        "description": "Title for your site (will be removed from this template soon)"
-      },        
+    "properties": [     
       {
         "name": "SiteUrl",
         "caption": "Site URL",
@@ -32,10 +28,10 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteTitle": "EDU Class",
-        "siteDescriptor": "Class Site",
+        "siteTitle": "Class home page",
+        "siteDescriptor": "Class resources, updates, engaging content",
         "descriptionParagraphs": [
-            "Class EDU site."
+            "This template serves as an engaging home base for a class. Students can find links to resources, highlighted documents and class events. This template is designed to be used with a Class team in Microsoft Teams. Learn how you can create a Class team or use an existing one at <a href='https://aka.ms/usewithteams'>aka.ms/usewithteams</a>."
         ],
         "previewImages": [
             {
@@ -54,44 +50,39 @@
                 "name": "Webparts",
                 "items": [
                     {
-                        "name": "Image",
-                        "description": "Full width",
-                        "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
-                    },
-                    {
-                        "name": "Countdown timer",
-                        "description": "Full width",
-                        "url": "https://support.office.com/en-us/article/use-the-countdown-timer-web-part-a13ffef8-0bf1-409e-be23-98af1d1736e7"
-                    },
-                    {
                         "name": "Text",
-                        "description": "Custom RTE formatting",
+                        "description": "",
                         "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
                     },
                     {
+                        "name": "Highlighted content",
+                        "description": "",
+                        "url": "https://support.microsoft.com/en-ie/office/use-the-highlighted-content-web-part-e34199b0-ff1a-47fb-8f4d-dbcaed329efd"
+                    },   
+                    {
+                        "name": "Quick Links",
+                        "description": "Button layout",
+                        "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                    },      
+                    {
                         "name": "Events",
-                        "description": "Filmstrip",
+                        "description": "Compact layout",
                         "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
+                    },                                                   
+                    {
+                        "name": "News",
+                        "description": "Side-by-side layout, 4 news posts",
+                        "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
                     },
                     {
-                        "name": "Hero",
-                        "description": "Full width, 2 tiles",
-                        "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
+                        "name": "Stream",
+                        "description": "",
+                        "url": "https://support.microsoft.com/en-us/office/use-the-stream-web-part-b97fa87c-1337-4271-a059-17f0d2b26e8b#:~:text=%20Use%20the%20Stream%20web%20part%20%201,paste%20the%20video%20or%20channel%20address.%20More%20"
                     },
                     {
                         "name": "Image",
                         "description": "",
                         "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
-                    },
-                    {
-                        "name": "Text",
-                        "description": "Custom RTE formatting + emojis as icons",
-                        "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
-                    },
-                    {
-                        "name": "Button",
-                        "description": "Left aligned",
-                        "url": "https://support.office.com/en-us/article/use-the-button-web-part-d2e37c48-11e8-45b9-8d9e-abdaa97c2a7a"
                     }
                 ]
             },
@@ -103,20 +94,8 @@
                         "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
                     },
                     {
-                        "name": "Vertical section",
-                        "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
-                    },
-                    {
                         "name": "Section background",
                         "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-sharepoint-modern-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
-                    },
-                    {
-                        "name": "Mega Menu",
-                        "url": "https://support.office.com/en-us/article/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca"
-                    },
-                    {
-                        "name": "Compact header",
-                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
                     },
                     {
                         "name": "Header background",
@@ -126,10 +105,6 @@
                         "name": "Custom site logo",
                         "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b",
                         "badgeText": ""
-                    },
-                    {
-                        "name": "Footer",
-                        "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b"
                     }
                 ]
             },
@@ -137,7 +112,10 @@
                 "name": "Site Content",
                 "items": [
                     {
-                        "name": "Custom welcome page build with out-of-the-box web parts"
+                        "name": "Example welcome page with out-of-the-box web parts"
+                    },
+                    {
+                        "name": "Example news articles and pages demonstrating different modern page designs"
                     }
                 ]
             },
@@ -153,7 +131,7 @@
             },
             {
                 "name": "Permission required",
-                "value": "Site Collection Administrator"
+                "value": "Site owner"
             },
             {
                 "name": "Site language",
