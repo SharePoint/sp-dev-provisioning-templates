@@ -1,0 +1,234 @@
+{
+    "templateId": "75E60A32-9849-4ED4-B83E-B2B08983AD19",
+    "categories": [
+        "SOLUTION"
+    ],
+    "platforms": [
+        "SPPNP",
+        "LOOKBOOK"
+    ],
+    "packageFile": "NEO.pnp",
+    "abstract": "Streamline and refine your new employee onboarding process with pre-built templates that cover Pre-onboarding, Corporate-level onboarding, and Departmental-level onboarding scenarios. This digital solution offers 4 different site templates that contain pre-populated content that can be customized to align with the goals of your organization.",
+    "sortOrder": 100,
+    "promoted": "false",
+    "sortOrderPromoted": 0,
+    "preview": "true",
+    "forceNewSite": "true",
+    "matchingSiteBaseTemplateId": "SITEPAGEPUBLISHING#0",
+    "visible": "true",
+    "metadata": {
+        "properties": [
+            {
+                "name": "Company",
+                "caption": "Company Name",
+                "description": "The name of your company"
+            },
+            {
+                "name": "NewEmployeeOnboardingUrl",
+                "caption": "The onboarding hub url",
+                "description": "The tenant relative url of the New Employee Onboarding hub",
+                "editor": "SiteUrl"
+            },
+            {
+                "name": "NewEmployeePreOnboardingUrl",
+                "caption": "The pre-onboarding url",
+                "description": "The tenant relative url of the pre-onboarding site",
+                "editor": "SiteUrl"
+            },
+            {
+                "name": "NewEmployeeSalesOnboardingUrl",
+                "caption": "The sales onboarding url",
+                "description": "The tenant relative url of the sales onboarding site",
+                "editor": "SiteUrl"
+            },
+            {
+                "name": "NewEmployeeEngineeringOnboardingUrl",
+                "caption": "The engineering onboarding url",
+                "description": "The tenant relative url of the engineering onboarding site",
+                "editor": "SiteUrl"
+            }
+        ],
+        "displayInfo": {
+            "pageTemplateId": "system/pageTemplates/template-1",
+            "siteDescriptor": "Connect, Engage, Inform",
+            "descriptionParagraphs": [
+                "Streamline and refine your new employee onboarding process with pre-built templates that cover Pre-onboarding, Corporate-level onboarding, and Departmental-level onboarding scenarios. This digital solution offers 4 different site templates that contain pre-populated content that can be customized to align with the goals of your organization."
+            ],
+            "previewImages": [
+                {
+                    "type": "fullpage",
+                    "altText": "New Employee Onboarding Hub",
+                    "url": "./NEO-lookbook-frontpage.png"
+                },
+                {
+                    "type": "cardpreview",
+                    "altText": "New Employee Onboarding Hub",
+                    "url": "./NEO-lookbook-frontpage.png"
+                }
+            ],
+            "detailItemCategories": [
+                {
+                    "name": "Webparts",
+                    "items": [
+                        {
+                            "name": "Hero",
+                            "description": "Full width, 5 tiles",
+                            "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
+                        },
+                        {
+                            "name": "Twitter",
+                            "description": "",
+                            "url": "https://support.office.com/en-us/article/use-the-twitter-web-part-15db6b3b-d167-41dd-9875-2af64b44d820"
+                        },
+                        {
+                            "name": "Text",
+                            "description": "Custom RTE formatting",
+                            "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
+                        },
+                        {
+                            "name": "Embed",
+                            "description": "",
+                            "url": "https://support.microsoft.com/en-us/office/add-content-to-your-page-using-the-embed-web-part-721f3b2f-437f-45ef-ac4e-df29dba74de8"
+                        },
+                        {
+                            "name": "Image",
+                            "description": "Text over image",
+                            "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
+                        },
+                        {
+                            "name": "Call to action",
+                            "description": "",
+                            "url": "https://support.office.com/en-us/article/use-the-call-to-action-web-part-e9917310-7543-4fc4-8f3f-d78e46074c00"
+                        },
+                        {
+                            "name": "Quick Links",
+                            "description": "Filmstrip",
+                            "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                        },
+                        {
+                            "name": "People",
+                            "description": "",
+                            "url": "https://support.microsoft.com/en-us/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05"
+                        },
+                        {
+                            "name": "YouTube",
+                            "description": "",
+                            "url": "https://support.microsoft.com/en-us/office/use-the-youtube-web-part-c14fa2c1-71dc-4e52-94b6-b4876742382f"
+                        },
+                        {
+                            "name": "List",
+                            "description": "",
+                            "url": "https://support.microsoft.com/en-us/office/use-the-list-web-part-ef0a1b80-f8b3-443d-b04a-1e76c70b5537"
+                        },
+                        {
+                            "name": "World clock",
+                            "description": "",
+                            "url": "https://support.office.com/en-us/article/use-the-world-clock-web-part-aa2ede87-e331-44f1-a116-a5b8fc67fd04"
+                        },
+                        {
+                            "name": "Bing maps",
+                            "description": "",
+                            "url": "https://support.microsoft.com/en-ie/office/use-the-bing-maps-web-part-c0e3f2f6-dc0d-49df-9308-1bf7c888e794"
+                        },
+                        {
+                            "name": "Sites",
+                            "description": "Compact",
+                            "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
+                        }
+                    ]
+                },
+                {
+                    "name": "Features",
+                    "items": [
+                        {
+                            "name": "Custom company theme",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Vertical section",
+                            "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
+                        },
+                        {
+                            "name": "Section background",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Hub level Mega Menu",
+                            "url": "https://support.office.com/en-us/article/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca"
+                        },
+                        {
+                            "name": "Compact header",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Header background",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Custom site logo",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
+                            "badgeText": ""
+                        },
+                        {
+                            "name": "Footer",
+                            "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b"
+                        }
+                    ]
+                },
+                {
+                    "name": "Site Content",
+                    "items": [
+                        {
+                            "name": "Pre-onboarding site, Corporate onboarding site, and two Departmental onboarding sites"
+                        },
+                        {
+                            "name": "Custom and pre-populated home pages for each site"
+                        },
+                        {
+                            "name": "Configured hub site for Corporate onboarding and associated sites for Departmental onboarding"
+                        },
+                        {
+                            "name": "New employee checklist built on SharePoint Lists to help new hires onboard successfully"
+                        },
+                        {
+                            "name": "Example content for the People web part, Yammer web part, News web part, and Quick links web part"
+                        },
+                        {
+                            "name": "Pre-written FAQs for each site"
+                        },
+                        {
+                            "name": "Recommendations for creating social and engaging experiences, like including a welcome video using the YouTube web part on the Pre-onboarding site"
+                        }
+                    ]
+                },
+                {
+                    "name": "Resources",
+                    "items": [
+                        {
+                            "name": "Learn how to add a sample tenant from the Look book",
+                            "url": "https://docs.microsoft.com/en-us/sharepoint/add-sample-site"
+                        },
+                        {
+                            "name": "Step-by-step instructions to provision and customize the NEO hub",
+                            "url": "https://docs.microsoft.com/sharepoint/provision-neo-hub"
+                        }
+                    ]
+                }
+            ],
+            "systemRequirements": [
+                {
+                    "name": "SharePoint version",
+                    "value": "SharePoint Online"
+                },
+                {
+                    "name": "Permission required",
+                    "value": "Tenant Admin"
+                },
+                {
+                    "name": "Site language",
+                    "value": "English"
+                }
+            ]
+        }
+    }
+}
