@@ -9,7 +9,7 @@
   ],
   "packageFile": "eduportal.pnp",
   "abstract": "EDU portal.",
-  "sortOrder": 300,
+  "sortOrder": 100,
   "promoted": "false",
   "sortOrderPromoted": 0,
   "preview": "true",
@@ -38,6 +38,11 @@
         "descriptionParagraphs": [
             "This template serves as an internal landing page for your school where students and teachers can learn about school-wide resources, events, and news."
         ],
+        "provisionMessages": {
+            "provisionPageTitle": "Great choice!",
+            "provisionPageSubTitle": "We just need a bit of information before we start provisioning.",
+            "provisionPageText": "The following settings are used for your site. You can keep them as is, or change them to suit your needs." 
+        },        
         "previewImages": [
             {
                 "type": "fullpage",
@@ -134,7 +139,16 @@
             },
             {
                 "name": "Resources",
-                "items": []
+                "items": [
+                    {
+                        "name": "School central documentation",
+                        "url": "https://go.microsoft.com/fwlink/?linkid=2135285"
+                    },                    
+                    {
+                        "name": "SharePoint site templates for schools & universities overview",
+                        "url": "https://go.microsoft.com/fwlink/?linkid=2135144"
+                    }               
+                ]
             }
         ],
         "systemRequirements": [

@@ -1,9 +1,8 @@
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema" Author="John White" Generator="Human being" Version="1.0" Description="Example site to manage brand assets" DisplayName="Brand @ Contoso" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/BrandAtContoso/top-brand.png">
-
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
-      <pnp:Parameter Key="SiteTitle">EDU Portal</pnp:Parameter>
-      <pnp:Parameter Key="SiteUrl">/sites/eduportal</pnp:Parameter>
+      <pnp:Parameter Key="SiteTitle">School central</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/schoolcentral</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
