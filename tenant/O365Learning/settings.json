@@ -21,7 +21,7 @@
       {
         "name":"SiteUrl",
         "caption":"Microsoft 365 learning pathways site URL",
-        "description":"URL for the Microsoft 365 learning pathways site (default is /sites/O365CL)",
+        "description":"URL for the Microsoft 365 learning pathways site (default is /sites/M365LP)",
         "editor": "SiteUrl"
       }
     ],
