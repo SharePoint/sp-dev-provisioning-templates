@@ -22,7 +22,7 @@
       {
         "name": "SiteUrl",
         "caption": "Site URL",
-        "description": "<nowrap>Provide the URL of your existing SharePoint Staff site. If you don't have one, create a team site first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a></nowrap>",
+        "description": "<nowrap>Provide the URL of your existing Staff or Professional Learning Community (PLC) site. If you don't have one, create a Staff or PLC team first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a></nowrap>",
         "editor": "FullSiteUrl"
       }
     ],
@@ -36,7 +36,7 @@
         "provisionMessages": {
             "provisionPageTitle": "Great choice!",
             "provisionPageSubTitle": "We just need some information before we add this template to your team site.",
-            "provisionPageText": "The following information will be used for your site. The Site URL must be an URL of an existing team site. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>" 
+            "provisionPageText": "The following information will be used for your site. You must provide the URL of an existing Staff or Professional Learning Community (PLC) team site. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>"
         },
         "previewImages": [
             {
