@@ -23,7 +23,7 @@
         "name": "SiteUrl",
         "caption": "Site URL",
         "description": "<nowrap>Provide the URL of your existing SharePoint Staff site. If you don't have one, create a team site first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a></nowrap>",
-        "editor": "SiteUrl"
+        "editor": "FullSiteUrl"
       }
     ],
     "displayInfo": {
