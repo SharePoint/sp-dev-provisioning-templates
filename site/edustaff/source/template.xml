@@ -58,7 +58,7 @@
         </pnp:GlobalNavigation>
         <pnp:CurrentNavigation NavigationType="StructuralLocal">
           <pnp:StructuralNavigation RemoveExistingNodes="true">
-            <pnp:NavigationNode Title="Dashboard" Url="{site}" />
+            <pnp:NavigationNode Title="Home Page" Url="{site}" />
             <pnp:NavigationNode Title="Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
             <pnp:NavigationNode Title="Notebook" Url="{site}/_layouts/15/groupstatus.aspx?target=NOTEBOOK" />
           </pnp:StructuralNavigation>
@@ -79,6 +79,8 @@
         <pnp:File Src="SiteAssets/SitePages/Helping-students-with-disabilities-reach-their-full-potential/84420.png" Folder="SiteAssets/SitePages/Helping-students-with-disabilities-reach-their-full-potential" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Lesson-plan-templates/279-Person-working-with-laptop-and-notepad.jpg" Folder="SiteAssets/SitePages/Lesson-plan-templates" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Report-templates-for-your-students/21146-Student-writing-in-class--close-up.jpg" Folder="SiteAssets/SitePages/Report-templates-for-your-students" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__siteIcon__.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Helping-students-with-disabilities-reach-their-full-potential/21658-Man-taking-adhesive-note-from-a-glass-wall-in-an-office.jpg" Folder="SiteAssets/SitePages/Helping-students-with-disabilities-reach-their-full-potential" Overwrite="true" Level="Published" />
       </pnp:Files>
       <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
       <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
