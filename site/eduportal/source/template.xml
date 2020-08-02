@@ -211,7 +211,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Registration for extracurricular activities open" ThumbnailUrl="" PageName="Registration-for-extracurricular-activities-open.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Registration for extracurricular activities open" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Registration-for-extracurricular-activities-open/34052-Young-girl-playing-the-violin.jpg}&amp;ext=jpg" PageName="Registration-for-extracurricular-activities-open.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/SiteAssets/SitePages/Registration-for-extracurricular-activities-open/34052-Young-girl-playing-the-violin.jpg" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="TEXT ABOVE TITLE" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -235,7 +235,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New athletics director appointed" ThumbnailUrl="" PageName="New-athletics-director.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New athletics director appointed" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/New-athletics-director/20911-Young-soccer-players-in-action.jpg}&amp;ext=jpg" PageName="New-athletics-director.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/SiteAssets/SitePages/New-athletics-director/20911-Young-soccer-players-in-action.jpg" TranslateX="49.8781478472786" TranslateY="10.6666666666667" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="TEXT ABOVE TITLE" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;PattiF@M365EDU245790.OnMicrosoft.com&quot;,&#xD;&#xA;    &quot;email&quot;: &quot;PattiF@M365EDU245790.OnMicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Patti Fernandez&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;Principal&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;PattiF@M365EDU245790.OnMicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -311,7 +311,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Alumni give back to Pineview's art program" ThumbnailUrl="" PageName="Alumni-give-back-to-Pineview.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Alumni give back to Pineview's art program" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Alumni-give-back-to-Pineview/6294-Colorful-pastel-sticks.jpg}&amp;ext=jpg" PageName="Alumni-give-back-to-Pineview.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/SiteAssets/SitePages/Alumni-give-back-to-Pineview/6294-Colorful-pastel-sticks.jpg" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;CaraC@M365EDU245790.OnMicrosoft.com&quot;,&#xD;&#xA;    &quot;email&quot;: &quot;CaraC@M365EDU245790.OnMicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Cara Coleman&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;Teacher&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;CaraC@M365EDU245790.OnMicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
