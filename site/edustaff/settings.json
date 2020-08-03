@@ -12,7 +12,7 @@
   "sortOrder": 200,
   "promoted": "false",
   "sortOrderPromoted": 0,
-  "preview": "true",
+  "preview": "false",
   "forceNewSite":"false",
   "forceExistingSite":"true",
   "matchingSiteBaseTemplateId":"GROUP#0",
