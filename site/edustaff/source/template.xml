@@ -83,7 +83,7 @@
         <pnp:File Src="SiteAssets/SitePages/Helping-students-with-disabilities-reach-their-full-potential/21658-Man-taking-adhesive-note-from-a-glass-wall-in-an-office.jpg" Folder="SiteAssets/SitePages/Helping-students-with-disabilities-reach-their-full-potential" Overwrite="true" Level="Published" />
       </pnp:Files>
       <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
-      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <!-- <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" /> -->
       <pnp:Lists>
         <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" ImageUrl="/_layouts/15/images/itevent.png?rev=44" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
