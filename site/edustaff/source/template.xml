@@ -2,7 +2,7 @@
 
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
-      <pnp:Parameter Key="SiteUrl"></pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">[Replace with your site URL]</pnp:Parameter>
       <pnp:Parameter Key="SiteTitle">Staff Site</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
