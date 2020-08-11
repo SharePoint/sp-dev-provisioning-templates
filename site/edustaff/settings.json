@@ -55,7 +55,7 @@
                 "name": "Webparts",
                 "items": [
                     {
-                        "name": "Quick LInks",
+                        "name": "Quick Links",
                         "description": "Button layout",
                         "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
                     },
