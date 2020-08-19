@@ -1,1 +1,1 @@
-In order to being able to use this template, you need to provision the [Microsoft Learning Pathways](https://lookbook.microsoft.com/details/3df8bd55-b872-4c9d-88e3-6b2f05344239) solution, first.
+Your tenant does not meet the prerequisites for installing the SharePoint Success Site. [Install](https://docs.microsoft.com/en-us/office365/customlearning/) Microsoft 365 learning pathways, or [update](https://github.com/pnp/custom-learning-office-365) your tenant's version of Microsoft 365 learning pathways to the most up to date version.
