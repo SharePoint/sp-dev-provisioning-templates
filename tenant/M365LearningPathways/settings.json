@@ -8,7 +8,7 @@
     "LOOKBOOK"
   ],
   "packageFile": "M365LP.pnp",
-  "abstract": "Help your organization get more from Microsoft services by implementing the Microsoft 365 learning pathways. This digital, customizable, learning solution streams on-demand content for Microsoft 365 services right to your end users.",
+  "abstract": "This is TEST template for Learning Pathways",
   "sortOrder": 100,
   "promoted": "false",
   "sortOrderPromoted": 0,
@@ -27,9 +27,9 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteDescriptor": "Training, Learning, Adoption",
+        "siteDescriptor": "TEST TEST TEST TEST",
         "descriptionParagraphs": [
-            "Help your organization get more from Microsoft services by implementing the Microsoft 365 learning pathways. This digital, customizable, learning solution streams on-demand content for Microsoft 365 services right to your end users."
+            "This is a TEST template."
         ],
         "previewImages": [
             {
