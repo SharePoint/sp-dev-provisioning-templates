@@ -12,7 +12,7 @@
   "sortOrder": 200,
   "promoted": "false",
   "sortOrderPromoted": 0,
-  "preview": "true",
+  "preview": "false",
   "forceNewSite":"false",
   "forceExistingSite":"true",
   "matchingSiteBaseTemplateId":"GROUP#0",
@@ -22,8 +22,8 @@
       {
         "name": "SiteUrl",
         "caption": "Site URL",
-        "description": "<nowrap>Provide the URL of your existing SharePoint Staff site. If you don't have one, create a team site first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a></nowrap>",
-        "editor": "SiteUrl"
+        "description": "<nowrap>Provide the URL of your existing Staff or Professional Learning Community (PLC) site. If you don't have one, create a Staff or PLC team first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a></nowrap>",
+        "editor": "FullSiteUrl"
       }
     ],
     "displayInfo": {
@@ -31,12 +31,12 @@
         "siteTitle": "Staff home page",
         "siteDescriptor": "Time-saving links, documents, actions",
         "descriptionParagraphs": [
-            "This template serves as a time-saving home base for a team of staff members. Staff members can find links to resources, highlighted documents, and news. This template is designed to be used with a Staff team or Professional Learning Community (PLC) team in Microsoft Teams. <a href='https://aka.ms/usewithteams'>Learn how you can create a Staff team or a PLC team, or use an existing one</a>."
+            "This template serves as a time-saving home base for a team of staff members. Staff members can find links to resources, highlighted documents, and news. This template is designed to be used with a Staff team or Professional Learning Community (PLC) team in Microsoft Teams. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn how you can create a Staff team or a PLC team, or use an existing one</a>."
         ],
         "provisionMessages": {
             "provisionPageTitle": "Great choice!",
             "provisionPageSubTitle": "We just need some information before we add this template to your team site.",
-            "provisionPageText": "The following information will be used for your site. The Site URL must be an URL of an existing team site. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>" 
+            "provisionPageText": "The following information will be used for your site. You must provide the URL of an existing Staff or Professional Learning Community (PLC) team site. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>"
         },
         "previewImages": [
             {
@@ -55,7 +55,7 @@
                 "name": "Webparts",
                 "items": [
                     {
-                        "name": "Quick LInks",
+                        "name": "Quick Links",
                         "description": "Button layout",
                         "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
                     },
@@ -134,7 +134,7 @@
                     },                    
                     {
                         "name": "SharePoint site templates for schools & universities overview",
-                        "url": "https://go.microsoft.com/fwlink/?linkid=2135144"
+                        "url": "https://go.microsoft.com/fwlink/?linkid=2137908"
                     }     
                 ]
             }

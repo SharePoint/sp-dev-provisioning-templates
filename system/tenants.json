@@ -65,5 +65,7 @@
         {"id": "a830edad9050849829E20051016.onmicrosoft.com", "tenantName": "a830edad9050849829E20051016.onmicrosoft.com", "referenceOwner": "eDog Tests"},
         {"id": "m365edu245790.onmicrosoft.com", "tenantName": "m365edu245790.onmicrosoft.com", "referenceOwner": "EDU test"},
         {"id": "koenzomers.onmicrosoft.com", "tenantName": "koenzomers.onmicrosoft.com", "referenceOwner": "Koen Zomers"}
+        {"id": "m365edu838705.onmicrosoft.com", "tenantName": "m365edu838705.onmicrosoft.com", "referenceOwner": "EDU Test"},
+        {"id": "m365edu245790.onmicrosoft.com", "tenantName": "m365edu245790.onmicrosoft.com", "referenceOwner": "EDU Test"}
     ]
 }

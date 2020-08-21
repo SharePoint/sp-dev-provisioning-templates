@@ -12,7 +12,7 @@
   "sortOrder": 100,
   "promoted": "false",
   "sortOrderPromoted": 0,
-  "preview": "true",
+  "preview": "false",
   "forceNewSite":"false",
   "forceExistingSite":"false",
   "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
@@ -33,7 +33,7 @@
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteTitle": "School central",
+        "siteTitle": "School home page",
         "siteDescriptor": "School resources, events, news",
         "descriptionParagraphs": [
             "This template serves as an internal landing page for your school where students and teachers can learn about school-wide resources, events, and news."
@@ -141,7 +141,7 @@
                 "name": "Resources",
                 "items": [
                     {
-                        "name": "School central documentation",
+                        "name": "School home page documentation",
                         "url": "https://go.microsoft.com/fwlink/?linkid=2135285"
                     },                    
                     {

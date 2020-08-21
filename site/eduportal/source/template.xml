@@ -1,8 +1,8 @@
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema" Author="John White" Generator="Human being" Version="1.0" Description="Example site to manage brand assets" DisplayName="Brand @ Contoso" ImagePreviewUrl="https://raw.githubusercontent.com/SharePoint/sp-dev-provisioning-templates/master/tenant/BrandAtContoso/top-brand.png">
   <pnp:Preferences Author="John Black" Version="1.0" Generator="Human being :-)">
     <pnp:Parameters>
-      <pnp:Parameter Key="SiteTitle">School central</pnp:Parameter>
-      <pnp:Parameter Key="SiteUrl">/sites/schoolcentral</pnp:Parameter>
+      <pnp:Parameter Key="SiteTitle">School home page</pnp:Parameter>
+      <pnp:Parameter Key="SiteUrl">/sites/schoolhomepage</pnp:Parameter>
     </pnp:Parameters>
   </pnp:Preferences>
   <pnp:Sequence ID="sequence">
@@ -117,7 +117,7 @@
         <pnp:File Src="SiteAssets/SitePages/Alumni-give-back-to-Pineview/6294-Colorful-pastel-sticks.jpg" Folder="SiteAssets/SitePages/Alumni-give-back-to-Pineview" Overwrite="true" Level="Published" />
       </pnp:Files>
       <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/logo_staff.png" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="false" />
-      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <!-- <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="1033" ShowWeeks="false" Time24="false" TimeZone="13" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" /> -->
       <pnp:Lists>
         <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" ImageUrl="/_layouts/15/images/itevent.png?rev=44" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
@@ -211,7 +211,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Registration for extracurricular activities open" ThumbnailUrl="" PageName="Registration-for-extracurricular-activities-open.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Registration for extracurricular activities open" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Registration-for-extracurricular-activities-open/34052-Young-girl-playing-the-violin.jpg}&amp;ext=jpg" PageName="Registration-for-extracurricular-activities-open.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/SiteAssets/SitePages/Registration-for-extracurricular-activities-open/34052-Young-girl-playing-the-violin.jpg" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="TEXT ABOVE TITLE" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -235,7 +235,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New athletics director appointed" ThumbnailUrl="" PageName="New-athletics-director.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New athletics director appointed" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/New-athletics-director/20911-Young-soccer-players-in-action.jpg}&amp;ext=jpg" PageName="New-athletics-director.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/SiteAssets/SitePages/New-athletics-director/20911-Young-soccer-players-in-action.jpg" TranslateX="49.8781478472786" TranslateY="10.6666666666667" LayoutType="ColorBlock" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="TEXT ABOVE TITLE" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;PattiF@M365EDU245790.OnMicrosoft.com&quot;,&#xD;&#xA;    &quot;email&quot;: &quot;PattiF@M365EDU245790.OnMicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Patti Fernandez&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;Principal&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;PattiF@M365EDU245790.OnMicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -311,7 +311,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Alumni give back to Pineview's art program" ThumbnailUrl="" PageName="Alumni-give-back-to-Pineview.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Alumni give back to Pineview's art program" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Alumni-give-back-to-Pineview/6294-Colorful-pastel-sticks.jpg}&amp;ext=jpg" PageName="Alumni-give-back-to-Pineview.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/SiteAssets/SitePages/Alumni-give-back-to-Pineview/6294-Colorful-pastel-sticks.jpg" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="[&#xD;&#xA;  {&#xD;&#xA;    &quot;id&quot;: &quot;CaraC@M365EDU245790.OnMicrosoft.com&quot;,&#xD;&#xA;    &quot;email&quot;: &quot;CaraC@M365EDU245790.OnMicrosoft.com&quot;,&#xD;&#xA;    &quot;name&quot;: &quot;Cara Coleman&quot;,&#xD;&#xA;    &quot;role&quot;: &quot;Teacher&quot;&#xD;&#xA;  }&#xD;&#xA;]" AuthorByLine="[&#xD;&#xA;  &quot;CaraC@M365EDU245790.OnMicrosoft.com&quot;&#xD;&#xA;]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">

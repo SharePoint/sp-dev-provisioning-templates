@@ -1,0 +1,1 @@
+Your tenant does not meet the prerequisites for installing the SharePoint Success Site. [Install](https://docs.microsoft.com/en-us/office365/customlearning/) Microsoft 365 learning pathways, or [update](https://github.com/pnp/custom-learning-office-365) your tenant's version of Microsoft 365 learning pathways to the most up to date version.

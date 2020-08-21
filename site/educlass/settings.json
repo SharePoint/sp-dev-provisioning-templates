@@ -12,7 +12,7 @@
   "sortOrder": 300,
   "promoted": "false",
   "sortOrderPromoted": 0,
-  "preview": "true",
+  "preview": "false",
   "forceNewSite":"false",
   "forceExistingSite":"true",
   "matchingSiteBaseTemplateId":"GROUP#0",
@@ -22,8 +22,8 @@
       {
         "name": "SiteUrl",
         "caption": "Site URL",
-        "description": "<nowrap>Provide the URL of your existing SharePoint Staff site. If you don't have one, create a team site first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a></nowrap>",
-        "editor": "SiteUrl"
+        "description": "<nowrap>Provide the URL of your existing Class site. If you don't have one, create a Class team first. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a></nowrap>",
+        "editor": "FullSiteUrl"
       }
     ],
     "displayInfo": {
@@ -31,12 +31,12 @@
         "siteTitle": "Class home page",
         "siteDescriptor": "Class resources, updates, engaging content",
         "descriptionParagraphs": [
-            "This template serves as an engaging home base for a class. Students can find links to resources, highlighted documents and class events. This template is designed to be used with a Class team in Microsoft Teams. <a href='https://aka.ms/usewithteams'>Learn how you can create a Class team or use an existing one</a>."
+            "This template serves as an engaging home base for a class. Students can find links to resources, highlighted documents and class events. This template is designed to be used with a Class team in Microsoft Teams. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn how you can create a Class team or use an existing one</a>."
         ],
         "provisionMessages": {
             "provisionPageTitle": "Great choice!",
             "provisionPageSubTitle": "We just need some information before we add this template to your team site.",
-            "provisionPageText": "The following information will be used for your site. The Site URL must be an URL of an existing team site. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>" 
+            "provisionPageText": "The following information will be used for your site. You must provide the URL of an existing Class team site. <a href='https://go.microsoft.com/fwlink/?linkid=2135144'>Learn more.</a>" 
         },
         "previewImages": [
             {
@@ -133,7 +133,7 @@
                     },                    
                     {
                         "name": "SharePoint site templates for schools & universities overview",
-                        "url": "https://go.microsoft.com/fwlink/?linkid=2135144"
+                        "url": "https://go.microsoft.com/fwlink/?linkid=2137908"
                     }     
                 ]
             }
