@@ -23,13 +23,19 @@
         "caption":"Microsoft 365 learning pathways site URL",
         "description":"URL for the Microsoft 365 learning pathways site (default is /sites/M365LP)",
         "editor": "SiteUrl"
+      },
+      {
+        "name":"CdnUrl",
+        "caption":"Microsoft 365 learning pathways content CDN URL",
+        "description":"Source for Microsoft 365 learning pathways content"
       }
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteDescriptor": "TEST TEST TEST TEST",
+        "siteDescriptor": "Microsoft 365 learning pathways [TEST]",
         "descriptionParagraphs": [
-            "This is a TEST template."
+            "This is a TEST template.",
+            "To test content from staging set CdnUrl to https://microsoft.github.io/customlearning_staging/learningpathways/."
         ],
         "previewImages": [
             {
