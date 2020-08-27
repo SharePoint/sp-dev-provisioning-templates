@@ -26,16 +26,16 @@
       },
       {
         "name":"CdnUrl",
-        "caption":"Microsoft 365 learning pathways content CDN URL",
-        "description":"Source for Microsoft 365 learning pathways content"
+        "caption":"Source for Microsoft 365 learning pathways content",
+        "description":"Content CDN URL must end with a slash character (leave blank for public CDN)"
       }
     ],
     "displayInfo": {
         "pageTemplateId": "system/pageTemplates/template-1",
-        "siteDescriptor": "Microsoft 365 learning pathways [TEST]",
+        "siteDescriptor": "Microsoft 365 learning pathways [for preview testing only]",
         "descriptionParagraphs": [
-            "This is a TEST template.",
-            "To test content from staging set CdnUrl to https://microsoft.github.io/customlearning_staging/learningpathways/."
+            "This is the M365LP TEST template.",
+            "To load content from staging, set CDN URL to https://microsoft.github.io/customlearning_staging/learningpathways/ (include trailing slash)."
         ],
         "previewImages": [
             {
