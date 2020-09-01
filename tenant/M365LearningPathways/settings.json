@@ -27,7 +27,7 @@
       {
         "name":"CdnUrl",
         "caption":"Source for Microsoft 365 learning pathways content",
-        "description":"Content CDN URL (leave as-is for public CDN)"
+        "description":"Content CDN URL. Leave as-is for public CDN, or replace with https://microsoft.github.io/customlearning_staging/learningpathways/ (include trailing slash) for preview content."
       }
     ],
     "displayInfo": {
