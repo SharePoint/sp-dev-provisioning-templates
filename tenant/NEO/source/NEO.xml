@@ -66,73 +66,6 @@
           </pnp:StructuralNavigation>
         </pnp:CurrentNavigation>
       </pnp:Navigation>
-      <pnp:Lists>
-        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
-          <pnp:PropertyBagEntries>
-            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="1" Overwrite="false" />
-          </pnp:PropertyBagEntries>
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{6587546B-D64B-4CA6-AEF1-BC8277711BBF}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/SiteAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="FileLeafRef" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="DocIcon" />
-                <FieldRef Name="LinkFilename" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
-          <pnp:Fields>
-            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceAutoTags" ColName="nvarchar13" RowOrdinal="0" />
-          </pnp:Fields>
-          <pnp:FieldRefs>
-            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
-            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
-          </pnp:FieldRefs>
-          <pnp:Folders>
-            <pnp:Folder Name="SitePages" ContentTypeID="0x0120">
-              <pnp:Folder Name="Welcome" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Welcome" />
-                  <pnp:Property Key="Order" Value="1000" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Home" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Home" />
-                  <pnp:Property Key="Order" Value="1400" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Our-Values" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Our-Values" />
-                  <pnp:Property Key="Order" Value="3600" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Our-Leadership" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Our-Leadership" />
-                  <pnp:Property Key="Order" Value="3800" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Properties>
-                <pnp:Property Key="FileLeafRef" Value="SitePages" />
-                <pnp:Property Key="Order" Value="200" />
-              </pnp:Properties>
-            </pnp:Folder>
-          </pnp:Folders>
-        </pnp:ListInstance>
-      </pnp:Lists>
       <pnp:Files>
         <pnp:File Src="SiteAssets/SitePages/Home/888651967GettyImages-1167777577.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
           <pnp:Properties>
@@ -1102,7 +1035,7 @@
         </pnp:CurrentNavigation>
       </pnp:Navigation>
       <pnp:Lists>
-        <pnp:ListInstance Title="New hire checklist" Description="Corporate new hire checklist" DocumentTemplate="" OnQuickLaunch="false" TemplateType="100" Url="Lists/New hire checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/New hire checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/New hire checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/New hire checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+        <pnp:ListInstance Title="New hire checklist" Description="Corporate new hire checklist" DocumentTemplate="" TemplateType="100" Url="Lists/New hire checklist" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/New hire checklist/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/New hire checklist/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/New hire checklist/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
             <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
@@ -1123,22 +1056,23 @@
                 <FieldRef Name="Link" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
               <CustomFormatter><![CDATA[{"additionalRowClass":{"operator":":","operands":[{"operator":"==","operands":[{"operator":"%","operands":["@rowIndex",2]},0]},"sp-css-backgroundColor-neutralBackground",{"operator":":","operands":[{"operator":"==","operands":[{"operator":"%","operands":["@rowIndex",2]},1]},"sp-css-backgroundColor-noFill",""]}]},"rowClassTemplateId":"BgColorAlternateRows"}]]></CustomFormatter>
             </View>
           </pnp:Views>
           <pnp:Fields>
-            <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" StaticName="Title" DisplayName="Topic" />
-            <Field Type="Note" DisplayName="Task name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{10c7b608-1a05-4e33-8b6d-edcf72b3c28f}" SourceID="{{listid:New hire checklist}}" StaticName="Task_x0020_name" Name="Task_x0020_name" ColName="ntext2" RowOrdinal="0" Version="1" />
+            <Field DisplayName="Task name" Format="Dropdown" MaxLength="255" Name="Task_x0020_name" Title="Task name" Type="Text" ID="{10c7b608-1a05-4e33-8b6d-edcf72b3c28f}" Version="7" StaticName="Task_x0020_name" SourceID="{{listid:New hire checklist}}" ColName="nvarchar15" RowOrdinal="0" />
             <Field Name="_x0077_wl7" DisplayName="Complete by" Type="Text" ID="{83966e32-9a52-4016-9edd-6cf6e4ba550d}" SourceID="{{listid:New hire checklist}}" StaticName="_x0077_wl7" ColName="nvarchar4" RowOrdinal="0" Version="3" />
             <Field Name="rgwr" DisplayName="Notes" Type="Text" ID="{17f40689-f3e6-4df1-9f88-8e800a0c0d14}" SourceID="{{listid:New hire checklist}}" StaticName="rgwr" ColName="nvarchar5" RowOrdinal="0" Version="2" />
             <Field Name="ehxz" DisplayName="Resource" Type="Text" ID="{8f1d7d01-1e20-492d-8fd6-bb084810d674}" SourceID="{{listid:New hire checklist}}" StaticName="ehxz" ColName="nvarchar6" RowOrdinal="0" Version="2" />
             <Field Type="URL" DisplayName="Link" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{6492b4fb-eb53-4b92-9e39-f6e1e238ec42}" SourceID="{{listid:New hire checklist}}" StaticName="Link" Name="Link" ColName="nvarchar7" RowOrdinal="0" ColName2="nvarchar8" RowOrdinal2="0" />
+            <Field DisplayName="Task image" Format="Image" Name="Task_x0020_image" Title="Task image" Type="URL" ID="{2bd53acf-7418-4b1a-9417-6c3bc079b7e8}" Version="4" StaticName="Task_x0020_image" SourceID="{{listid:New hire checklist}}" ColName="nvarchar9" RowOrdinal="0" ColName2="nvarchar10" RowOrdinal2="0" />
           </pnp:Fields>
           <pnp:DataRows UpdateBehavior="Overwrite">
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Culture</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassF504067DAE7C404DA9412950B7B8BE36"&gt;New employee orientation&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">New employee orientation</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 1</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Attend the virtual new employee orientation</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Live Event</pnp:DataValue>
@@ -1146,7 +1080,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassEA3D536EAC9A4A63922F8568F44ACCFC"&gt;Profile set up&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Profile set up</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Set up your profile, including a photo, in Office 365</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Office profile (in Office 365)</pnp:DataValue>
@@ -1154,7 +1088,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass4EB45E7A874D4C6FB2CC6E41388DE243"&gt;Printer set up&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Printer set up</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Find the closest printer. Add the printer to Windows.  Print a test job. Go to the printer. Tap your badge to release the job you sent.  TEST THIS before you need it ;-)</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1162,7 +1096,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass845DC9FB034545BBA06971890ABACB47"&gt;New hire Yammer community&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">New hire Yammer community</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Join new hire Yammer community</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">New hire Yammer community</pnp:DataValue>
@@ -1170,7 +1104,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassD7D78535E55444BA80773946F75AF70F"&gt;Security&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Security</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Take the security training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1178,7 +1112,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass7108C309AA9D4EB09A28C3AC37103236"&gt;Office 365 getting started&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Office 365 getting started</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete the Office 365 getting started training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Office 365 getting started training playlist</pnp:DataValue>
@@ -1186,7 +1120,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass1D8D3844602F446E8717F1390760BC2E"&gt;Install productivity apps on your phone&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Install productivity apps on your phone</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Install the Office, OneDrive, SharePoint, Yammer, Teams, and OneNote on your phone</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Install productivity apps on your phone</pnp:DataValue>
@@ -1194,7 +1128,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Administrative</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass6FC80D329AEE4A87A9DD8734B6AA176E"&gt;Direct deposit&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Direct deposit</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Set up direct deposit</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1202,7 +1136,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Administrative</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassB681C879B24148E684DE3BDD295FB986"&gt;Business cards&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Business cards</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Order your business cards</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Business cards</pnp:DataValue>
@@ -1210,7 +1144,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass865092A9E1E7485884E73986BF4F70C7"&gt;Benefits&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Benefits</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Take the benefits training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1218,7 +1152,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">HR</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassB2F92ABCBBD84E1289D57B05666E12C7"&gt;Benefits sign up&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Benefits sign up</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Be sure to sign up for your benefits within 30 days. Make this a priority to complete within week one</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Benefits sign up site</pnp:DataValue>
@@ -1226,7 +1160,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Finances</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassAA95E11C02F145849511793150928458"&gt;Corporate credit card&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Corporate credit card</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Apply for corporate credit card. Make this a priority to complete within week one. Apply for corporate credit card membership rewards (fee is your personal expense)</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Corporate credit card site</pnp:DataValue>
@@ -1234,7 +1168,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassA6AD4F38B75D4CCE8415CB1D2A6CCEC4"&gt;Manager 1&amp;#58;1&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Manager 1:1</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Meet with your manager. Identify with your manager key internal partners you should meet with over the coming weeks and months</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Manager 1:1</pnp:DataValue>
@@ -1242,7 +1176,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass423B2252C94A4C6A97BEFCDDB9386F22"&gt;Introduction&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Introduction</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Write a short bio and provide to your manager so they can introduce you to the team</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1250,7 +1184,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassDA846B541F4E432D8EBCEBA4A09ACDE6"&gt;Culture and values&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Culture and values</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 4</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Take the culture and values training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1258,7 +1192,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass482F8CD9822244169C8E1AD4440A6855"&gt;Expense reporting&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Expense reporting</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 4</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete expense reporting policy training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Expense reporting</pnp:DataValue>
@@ -1266,7 +1200,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Administrative</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassAA6650F6471D449D9A6F446F516C275B"&gt;Expense app&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Expense app</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 4</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Get the Expenses app from the App Store. Set the interim approver to your admin.</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Expense app</pnp:DataValue>
@@ -1274,7 +1208,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass4EFBA0E2A584484BB7C96D1FCF9CE9A1"&gt;IT guidelines and policies&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">IT guidelines and policies</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 5</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete IT and guidelines policy training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">IT guidelines and policies</pnp:DataValue>
@@ -1282,7 +1216,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassB28C95272D604CB6B3E36E67827DFA24"&gt;Onboarding buddy 1&amp;#58;1&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Onboarding buddy 1:1</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 5</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Meet with your onboarding buddy. Set up a meeting cadence for the next 4-6 weeks</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Onboarding buddy 1:1</pnp:DataValue>
@@ -1290,7 +1224,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass993749A0F6BE4327A2C9084D24AE7466"&gt;VPN set up&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">VPN set up</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Day 5</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Ensure VPN is set up and working</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">VPN is set up and working urayrh s</pnp:DataValue>
@@ -1298,7 +1232,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass132FAA86B76147F1A7EA772E21B05934"&gt;CEO connection&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">CEO connection</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Follow the CEO on Yammer and Twitter</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">CEO connection</pnp:DataValue>
@@ -1306,7 +1240,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassDCF6F0AB44CB4E9FA6F640A28A1CCC56"&gt;Manager 1&amp;#58;1&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Manager 1:1</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Meet with your manager. Agree on your priorities over the next 30-60-90 days</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Manager 1:1</pnp:DataValue>
@@ -1314,7 +1248,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassC87FC6562BA4441585BA866CF12F69B7"&gt;Internal business partners&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Internal business partners</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Meet with one or two internal business partners in week two</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1322,7 +1256,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassDDD8F20031824590B34E596EFDD7792A"&gt;Onboarding buddy 1&amp;#58;1&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Onboarding buddy 1:1</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Meet with your onboarding buddy</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Onboarding buddy 1:1</pnp:DataValue>
@@ -1330,7 +1264,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass2EE0466FAE3C44EB9E41629844B619DB"&gt;Yammer groups&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Yammer groups</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Browse and join relevant Yammer communities. Review what communities your manager and team members are part of and consider joining</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Yammer groups</pnp:DataValue>
@@ -1338,7 +1272,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassA19539BEE0D547F3859DBC9741C346EC"&gt;Travel&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Travel</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete training about how to book business travel</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1346,7 +1280,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass76C31BEC4AA84FD6B277D8C28F69ECFD"&gt;Technology&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Technology</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete training about the different tools and systems used at the company</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1354,7 +1288,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassC3D0D514CD8547E1A255F1227DD28E0E"&gt;Confidential information policy&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Confidential information policy</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete confidential information policy training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Complete confidential information policy training playlip</pnp:DataValue>
@@ -1362,7 +1296,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassEDA9A9313BE448FFA0E1AB81F02650BA"&gt;Department training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Department training</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete the department business overview, culture and processes training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Department training - memos, all hands, annual plan, townhalls</pnp:DataValue>
@@ -1370,7 +1304,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Community</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass3180CB5BC9BA4FE183711A67454BDCF3"&gt;Employee resource groups and social clubs&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Employee resource groups and social clubs</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Review and join relevant employee resource groups and social clubs</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Employee resource groups and social clubs listing</pnp:DataValue>
@@ -1378,7 +1312,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass1FF04C0E837E42D5B20B2458D59F35D6"&gt;Standards of business conduct&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Standards of business conduct</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete the standards of business conduct training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Standards of business conduct</pnp:DataValue>
@@ -1386,7 +1320,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass1062D4F008AE4EB8A6032A324B8E7C19"&gt;Compliance&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Compliance</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete compliance trainings</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Compliance playlist</pnp:DataValue>
@@ -1394,7 +1328,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassBF48EB50D6D14994957D52189136D07E"&gt;Guidelines and policies&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Guidelines and policies</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete the guidelines and policies training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Complete the guidelines and policies training pleeklipolici</pnp:DataValue>
@@ -1402,7 +1336,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassEB7E331C450447D7AB78E8DE7743F50E"&gt;Profession and discipline training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Profession and discipline training</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete profession and discipline training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1410,7 +1344,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass37B5910EF7FB444DBDAB22804F48560E"&gt;Ethics&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Ethics</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 4</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete ethics trainings</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Ethics playlist</pnp:DataValue>
@@ -1418,7 +1352,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassD175FD4660F4493C82A789D0D04FD852"&gt;Performance management and rewards&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Performance management and rewards</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 4</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete the Performance management and rewards training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1426,7 +1360,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassB6056CA71FAB4E6F87F99F91E9458EE9"&gt;Virtual live event&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Virtual live event</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 4</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Attend the monthly virtual live event to meet company leaders and connect with your cohort</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Onboarding Team</pnp:DataValue>
@@ -1434,7 +1368,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Development</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass6C8A23A2B1D0486A9D9E74761EA5361C"&gt;Personal development plan&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Personal development plan</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Week 4</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete your development plan and set your priorities for the year</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">HR System</pnp:DataValue>
@@ -1442,7 +1376,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass4B504BA0C9D545A2840F571EBDF2190F"&gt;Skip manager&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Skip manager</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Have a 1:1 with your skip manager (manager's manager)</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1450,7 +1384,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassDA05948E41F241AEAE1F185C135CB19D"&gt;Onboarding buddy 1&amp;#58;1&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Onboarding buddy 1:1</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Leverage your buddy! Besides asking onboarding questions, try requesting feedback or discuss how to be successful on the team</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1458,7 +1392,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass572DE7CEE84242F0A4D8F102DDAD51BA"&gt;Virtual live event&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Virtual live event</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Attend the monthly virtual live event to meet company leaders and connect with your cohort</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Onboarding Team</pnp:DataValue>
@@ -1466,7 +1400,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass4C01D279C6B94A649CE843BA15B61778"&gt;Internal business partners&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Internal business partners</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Meet with three or four internal business partners in month two</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1474,7 +1408,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass6CB96C5656434B3BBD76D1C1C2C2A30D"&gt;Profession and discipline training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Profession and discipline training</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete the profession and discipline training</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1482,7 +1416,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Feedback</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass9A93D473849F45CCA306A2F913A28D29"&gt;New employee onboarding survey&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">New employee onboarding survey</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Month 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Complete the new employee onboarding survey to tell us how we did and help us improve the process.</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz">Onboarding Team</pnp:DataValue>
@@ -1490,7 +1424,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass07D76763D6FD431DA1916AFA05AB2F99"&gt;Virtual live event&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Virtual live event</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Month 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Attend the monthly virtual live event to meet company leaders and connect with your cohort</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1498,7 +1432,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClass72F01599D3354A7D9CE7956BCC7FE9A3"&gt;Onboarding buddy 1&amp;#58;1&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Onboarding buddy 1:1</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Month 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Leverage your buddy! Besides asking onboarding questions, try requesting feedback or discuss how to be successful on the team</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1506,7 +1440,7 @@
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
-              <pnp:DataValue FieldName="Task_x0020_name">&lt;div class="ExternalClassAF856F9EE008415D8A55F2B7FF466C1B"&gt;Internal business partners&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Internal business partners</pnp:DataValue>
               <pnp:DataValue FieldName="_x0077_wl7">Month 3</pnp:DataValue>
               <pnp:DataValue FieldName="rgwr">Meet with three or four internal business partners in month three</pnp:DataValue>
               <pnp:DataValue FieldName="ehxz" />
@@ -1514,86 +1448,35 @@
             </pnp:DataRow>
           </pnp:DataRows>
         </pnp:ListInstance>
-        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
-          <pnp:PropertyBagEntries>
-            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="1" Overwrite="false" />
-          </pnp:PropertyBagEntries>
+        <pnp:ListInstance Title="NewHireQuestionnaire" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/NewHireQuestionnaire" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/NewHireQuestionnaire/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/NewHireQuestionnaire/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/NewHireQuestionnaire/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
             <pnp:ContentTypeBinding ContentTypeID="0x0120" />
           </pnp:ContentTypeBindings>
           <pnp:Views>
-            <View Name="{CE3EE70D-BDEE-4649-B9B9-2B3B95F51160}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/SiteAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+            <View Name="{F11B0C28-6B76-4FFA-B51E-E5D76EB62F2B}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/NewHireQuestionnaire/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
               <Query>
                 <OrderBy>
-                  <FieldRef Name="FileLeafRef" />
+                  <FieldRef Name="ID" />
                 </OrderBy>
               </Query>
               <ViewFields>
-                <FieldRef Name="DocIcon" />
-                <FieldRef Name="LinkFilename" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
+                <FieldRef Name="Question" />
+                <FieldRef Name="Active" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
               <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+              <ViewData />
             </View>
           </pnp:Views>
           <pnp:Fields>
-            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceAutoTags" ColName="nvarchar13" RowOrdinal="0" />
-            <Field ID="{5e0382d1-eb43-4590-a609-575845fa9af9}" Type="Text" DisplayName="Location" Name="MediaServiceLocation" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceLocation" ColName="nvarchar17" RowOrdinal="0" />
-            <Field ID="{67aff0cf-8e19-43f2-9987-be89075e1467}" Type="Note" DisplayName="Extracted Text" Name="MediaServiceOCR" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceOCR" ColName="ntext4" RowOrdinal="0" />
+            <Field AppendOnly="FALSE" DisplayName="Question" Format="Dropdown" IsolateStyles="FALSE" Name="Question" RichText="FALSE" RichTextMode="Compatible" Title="Question" Type="Note" ID="{3807967f-ec17-4a2d-8c79-a833112972fc}" SourceID="{{listid:NewHireQuestionnaire}}" StaticName="Question" ColName="ntext2" RowOrdinal="0" />
+            <Field DisplayName="Active" Format="Dropdown" Name="Active" Title="Active" Type="Boolean" ID="{f93308ee-7cc3-4a02-bb1d-ca1de1391a28}" SourceID="{{listid:NewHireQuestionnaire}}" StaticName="Active" ColName="bit1" RowOrdinal="0">
+              <Default>1</Default>
+            </Field>
           </pnp:Fields>
-          <pnp:FieldRefs>
-            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
-            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
-          </pnp:FieldRefs>
-          <pnp:Folders>
-            <pnp:Folder Name="SitePages" ContentTypeID="0x0120">
-              <pnp:Folder Name="ContosoNewEmployeeOnboarding" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="ContosoNewEmployeeOnboarding" />
-                  <pnp:Property Key="Order" Value="1800" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Our-story" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Our-story" />
-                  <pnp:Property Key="Title" Value="Our-story" />
-                  <pnp:Property Key="Order" Value="2800" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Office-Locations" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Office-Locations" />
-                  <pnp:Property Key="Order" Value="3400" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Our-leadership" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Our-leadership" />
-                  <pnp:Property Key="Order" Value="4600" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Our-teams" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Our-teams" />
-                  <pnp:Property Key="Title" Value="Our-teams" />
-                  <pnp:Property Key="Order" Value="5700" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Resource-groups" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Resource-groups" />
-                  <pnp:Property Key="Order" Value="6500" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Properties>
-                <pnp:Property Key="FileLeafRef" Value="SitePages" />
-                <pnp:Property Key="Order" Value="100" />
-              </pnp:Properties>
-            </pnp:Folder>
-          </pnp:Folders>
         </pnp:ListInstance>
       </pnp:Lists>
       <pnp:Files>
@@ -2052,6 +1935,34 @@
             <pnp:Property Key="Order" Value="10600" />
           </pnp:Properties>
         </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/93995-bg-wave-white-bottom.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x0101007AAD40B02FBEA64C89620EFF6A9FCD18" />
+            <pnp:Property Key="FileLeafRef" Value="93995-bg-wave-white-bottom.png" />
+            <pnp:Property Key="Order" Value="10700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Our-story/28286-Golfer-s-gloved-hand-teeing-up.jpg" Folder="SiteAssets/SitePages/Our-story" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x0101007AAD40B02FBEA64C89620EFF6A9FCD18" />
+            <pnp:Property Key="FileLeafRef" Value="28286-Golfer-s-gloved-hand-teeing-up.jpg" />
+            <pnp:Property Key="Order" Value="10800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/96936-bg-wave-white-bottom.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x0101007AAD40B02FBEA64C89620EFF6A9FCD18" />
+            <pnp:Property Key="FileLeafRef" Value="96936-bg-wave-white-bottom.png" />
+            <pnp:Property Key="Order" Value="10900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/27514-96936-bg-wave-white-bottom.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x0101007AAD40B02FBEA64C89620EFF6A9FCD18" />
+            <pnp:Property Key="FileLeafRef" Value="27514-96936-bg-wave-white-bottom.png" />
+            <pnp:Property Key="Order" Value="11200" />
+          </pnp:Properties>
+        </pnp:File>
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/613871963GettyImages-742257561.jpg" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/149248851Contoso-BuildingFacade-1920x1080.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/355220929GettyImages-665222088.jpg" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
@@ -2061,7 +1972,7 @@
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/27135-resource-group.jpg" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37324-networking.jpg" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/59918-yammer-communities.jpg" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37981-bg-wave.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/96936-bg-wave-white-bottom.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-townhall.jpg" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-training.jpg" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-neo.jpg" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
@@ -2071,7 +1982,7 @@
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/43963-yammer-02.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/15265-yammer-03.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/86775-yammer-04.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/28715-bg-wave-white.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/ContosoNewEmployeeOnboarding/2288-bg-wave-white.png" Folder="SiteAssets/SitePages/ContosoNewEmployeeOnboarding" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Our-story/96267-49162-12891-artist_rendering.jpg" Folder="SiteAssets/SitePages/Our-story" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Our-story/ariel-captures_19.jpg" Folder="SiteAssets/SitePages/Our-story" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Our-story/ariel-captures_25.jpg" Folder="SiteAssets/SitePages/Our-story" Overwrite="true" Level="Published" />
@@ -2123,7 +2034,7 @@
             </pnp:Section>
             <pnp:Section Order="3" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
               <pnp:Controls>
-                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;a9d5fd7b-5bec-4345-831e-2b362334a8bf&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;bg-wave-white.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/58172-bg-wave-white.png}&quot;,&quot;imgWidth&quot;:2124,&quot;imgHeight&quot;:512,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:1669}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/58172-bg-wave-white.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/58172-bg-wave-white.png}&quot;,&quot;width&quot;:2124,&quot;height&quot;:512}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;a9d5fd7b-5bec-4345-831e-2b362334a8bf&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;bg-wave-white.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/58172-bg-wave-white.png}&quot;,&quot;imgWidth&quot;:2124,&quot;imgHeight&quot;:512,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:1568}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/58172-bg-wave-white.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/58172-bg-wave-white.png}&quot;,&quot;width&quot;:2124,&quot;height&quot;:512}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="4" Type="ThreeColumn" BackgroundEmphasis="Strong">
@@ -2133,20 +2044,20 @@
                     <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;strong&gt;BUILD CONNECTIONS&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;Meet new people now&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;As part of your onboarding journey, we want to connect you to your new network right away.&amp;nbsp;&lt;/p&gt;" />
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
-                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;cfa70dea-cb5b-49d4-9637-c6ea6e03411f&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Meet your onboarding buddy&quot;,&quot;fileName&quot;:&quot;onboarding buddy.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/86424-onboarding-buddy.jpg}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:540,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/86424-onboarding-buddy.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/86424-onboarding-buddy.jpg}&quot;,&quot;width&quot;:960,&quot;height&quot;:540}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;cfa70dea-cb5b-49d4-9637-c6ea6e03411f&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Meet your onboarding buddy&quot;,&quot;fileName&quot;:&quot;onboarding buddy.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/86424-onboarding-buddy.jpg}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:540,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:372.049}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/86424-onboarding-buddy.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/86424-onboarding-buddy.jpg}&quot;,&quot;width&quot;:960,&quot;height&quot;:540}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
                 <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;27279f29-7272-4b66-8276-973142832158&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;a group of people sitting at a table&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Your first 1:1 with your manager&quot;,&quot;fileName&quot;:&quot;manager one-on-one.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/66448-manager-one-on-one.jpg}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:540,&quot;isFullWidth&quot;:false,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/66448-manager-one-on-one.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/66448-manager-one-on-one.jpg}&quot;,&quot;width&quot;:960,&quot;height&quot;:540}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="3" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="5" Type="ThreeColumn" BackgroundEmphasis="Strong">
               <pnp:Controls>
                 <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;24211d57-c6c4-49bb-8c80-020773f8b626&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;a group of people posing for the camera&quot;,&quot;overlayText&quot;:&quot;Join an employee resource group&quot;,&quot;fileName&quot;:&quot;resource group.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/27135-resource-group.jpg}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:540,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/27135-resource-group.jpg&quot;},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://{fqdn}{site}/SitePages/Resource-groups.aspx&quot;},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/27135-resource-group.jpg}&quot;,&quot;width&quot;:960,&quot;height&quot;:540}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
-                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;b70c9898-81f8-4bc4-a81d-f3a62b010eb4&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Attend a networking event&quot;,&quot;fileName&quot;:&quot;networking.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37324-networking.jpg}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:540,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37324-networking.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37324-networking.jpg}&quot;,&quot;width&quot;:960,&quot;height&quot;:540}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;b70c9898-81f8-4bc4-a81d-f3a62b010eb4&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Attend a networking event&quot;,&quot;fileName&quot;:&quot;networking.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37324-networking.jpg}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:540,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:372.049}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37324-networking.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37324-networking.jpg}&quot;,&quot;width&quot;:960,&quot;height&quot;:540}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
                 <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;dae3ced6-6984-4ffb-8265-56521a9ad149&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;Find communities on Yammer&quot;,&quot;fileName&quot;:&quot;yammer communities.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/59918-yammer-communities.jpg}&quot;,&quot;imgWidth&quot;:960,&quot;imgHeight&quot;:540,&quot;isFullWidth&quot;:false,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isOverlayTextEnabled&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/59918-yammer-communities.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/59918-yammer-communities.jpg}&quot;,&quot;width&quot;:960,&quot;height&quot;:540}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="3" />
               </pnp:Controls>
             </pnp:Section>
-            <pnp:Section Order="6" Type="OneColumnFullWidth">
+            <pnp:Section Order="6" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
               <pnp:Controls>
-                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;d9d4aa63-7aa2-4520-829a-7da0600dc4eb&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;bg-wave.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37981-bg-wave.png}&quot;,&quot;imgWidth&quot;:2124,&quot;imgHeight&quot;:512,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:1228}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37981-bg-wave.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/37981-bg-wave.png}&quot;,&quot;width&quot;:2124,&quot;height&quot;:512}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;d1e1acb9-c66a-4b9c-a20e-5451adb28be7&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image or picture on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;bg-wave-white-bottom.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/96936-bg-wave-white-bottom.png}}&quot;,&quot;imgWidth&quot;:2124,&quot;imgHeight&quot;:512,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:1568}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/96936-bg-wave-white-bottom.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/96936-bg-wave-white-bottom.png}}&quot;,&quot;width&quot;:2124,&quot;height&quot;:512}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="7" Type="TwoColumnRight">
@@ -2158,7 +2069,7 @@
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
                 <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;8b474655-b961-44c7-ab5d-fa7f0a0f6cfc&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="1" />
-                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;468656e4-1035-41f5-ad82-2c34c7b28583&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:8,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:7,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:6,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:3,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:4,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:5,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:2,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:1,&quot;altText&quot;:&quot;&quot;}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:true,&quot;showIcon&quot;:false},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;title&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Set up direct deposit »&quot;,&quot;items[1].title&quot;:&quot;Financial planning resources »&quot;,&quot;items[2].title&quot;:&quot;Expense report process »&quot;,&quot;items[3].title&quot;:&quot;Corporate Credit Card »&quot;,&quot;items[4].title&quot;:&quot;List of paydays »&quot;,&quot;items[5].title&quot;:&quot;Travel reimbursement »&quot;,&quot;items[6].title&quot;:&quot;Travel expense policy »&quot;,&quot;items[7].title&quot;:&quot;Travel expense FAQs »&quot;,&quot;items[0].description&quot;:&quot;To set up or change your direct deposit details, go to the direct deposit tool&quot;,&quot;items[1].description&quot;:&quot;\nWhether you're ready to start saving, grow your current savings, or focus on retirement&quot;,&quot;items[2].description&quot;:&quot;Find expense report tools and other information about submitting expense reports.&quot;,&quot;items[3].description&quot;:&quot;Find out your responsibilities when using any authorized corporate credit card&quot;,&quot;items[4].description&quot;:&quot;Find the full list of the 2020 paydays for Salary/Exempt employees&quot;,&quot;items[5].description&quot;:&quot;Learn the global policy about company travel reimbursement procedures&quot;,&quot;items[6].description&quot;:&quot;Learn the global policy about company travel expense procedures&quot;,&quot;items[7].description&quot;:&quot;We have you covered. Use this tool to learn, plan, and book your journey.​​​&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[4].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[5].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[6].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[7].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;468656e4-1035-41f5-ad82-2c34c7b28583&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:8,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:7,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:6,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:3,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:4,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:5,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:2,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:1,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:true,&quot;showIcon&quot;:false},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;title&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Set up direct deposit »&quot;,&quot;items[1].title&quot;:&quot;Financial planning resources »&quot;,&quot;items[2].title&quot;:&quot;Expense report process »&quot;,&quot;items[3].title&quot;:&quot;Corporate Credit Card »&quot;,&quot;items[4].title&quot;:&quot;List of paydays »&quot;,&quot;items[5].title&quot;:&quot;Travel reimbursement »&quot;,&quot;items[6].title&quot;:&quot;Travel expense policy »&quot;,&quot;items[7].title&quot;:&quot;Travel expense FAQs »&quot;,&quot;items[0].description&quot;:&quot;To set up or change your direct deposit details, go to the direct deposit tool&quot;,&quot;items[1].description&quot;:&quot;\nWhether you're ready to start saving, grow your current savings, or focus on retirement&quot;,&quot;items[2].description&quot;:&quot;Find expense report tools and other information about submitting expense reports.&quot;,&quot;items[3].description&quot;:&quot;Find out your responsibilities when using any authorized corporate credit card&quot;,&quot;items[4].description&quot;:&quot;Find the full list of the 2020 paydays for Salary/Exempt employees&quot;,&quot;items[5].description&quot;:&quot;Learn the global policy about company travel reimbursement procedures&quot;,&quot;items[6].description&quot;:&quot;Learn the global policy about company travel expense procedures&quot;,&quot;items[7].description&quot;:&quot;We have you covered. Use this tool to learn, plan, and book your journey.​​​&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[4].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[5].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[6].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[7].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="2" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="8" Type="OneColumn">
@@ -2175,7 +2086,7 @@
                     <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;span class=&quot;fontColorThemePrimary&quot;&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;strong&gt;CURATED RESOURCES&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;Live events and training&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;We hold a live event every week for our new hires. We want to help you get involved in your new workplace, learn about the company, and meet your new team members. We've curated these resources specifically for our new team members.&amp;nbsp;&lt;/p&gt;" />
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
-                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;a923bb34-e975-4226-9e5c-b032e4217c72&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-townhall.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-neo.jpg}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.JPG&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-pradeep.jpg}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.JPG&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:5,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-training.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2}},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-troubleshooting.jpg}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.JPG&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Grid&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:700,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;LIVE EVENT: June Town Hall with Patti &quot;,&quot;items[1].title&quot;:&quot;LIVE EVENT: Welcome to Contoso&quot;,&quot;items[2].title&quot;:&quot;LIVE EVENT: Top of mind with Pradeep Gupta, Head of R&amp;D&quot;,&quot;items[3].title&quot;:&quot;Webinar: Product Training 101&quot;,&quot;items[4].title&quot;:&quot;Webinar: Advance product training &quot;},&quot;imageSources&quot;:{&quot;items[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-townhall.jpg&quot;,&quot;items[3].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-training.jpg&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-neo.jpg&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-pradeep.jpg&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[4].sourceItem.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-troubleshooting.jpg&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;},&quot;customMetadata&quot;:{&quot;items[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-townhall.jpg}&quot;,&quot;fixedWidth&quot;:700},&quot;items[3].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-training.jpg}&quot;,&quot;fixedWidth&quot;:700}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;a923bb34-e975-4226-9e5c-b032e4217c72&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-townhall.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2,&quot;minCanvasWidth&quot;:1},&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-neo.jpg}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.JPG&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:1},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-pradeep.jpg}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.JPG&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:1},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Home.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:1,&quot;id&quot;:5,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;image&quot;:{&quot;guids&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-training.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;imageFit&quot;:2,&quot;minCanvasWidth&quot;:1},&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-troubleshooting.jpg}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.JPG&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:1}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Grid&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:700,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;LIVE EVENT: June Town Hall with Patti &quot;,&quot;items[1].title&quot;:&quot;LIVE EVENT: Welcome to Contoso&quot;,&quot;items[2].title&quot;:&quot;LIVE EVENT: Top of mind with Pradeep Gupta, Head of R&amp;D&quot;,&quot;items[3].title&quot;:&quot;Webinar: Product Training 101&quot;,&quot;items[4].title&quot;:&quot;Webinar: Advance product training &quot;},&quot;imageSources&quot;:{&quot;items[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-townhall.jpg&quot;,&quot;items[3].image.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-training.jpg&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-neo.jpg&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-pradeep.jpg&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[4].sourceItem.url&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-troubleshooting.jpg&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;},&quot;customMetadata&quot;:{&quot;items[0].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-townhall.jpg}&quot;,&quot;minCanvasWidth&quot;:1,&quot;fixedWidth&quot;:700},&quot;items[3].image.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/live-event-training.jpg}&quot;,&quot;minCanvasWidth&quot;:1,&quot;fixedWidth&quot;:700}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="2" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="10" Type="OneColumn">
@@ -2212,12 +2123,12 @@
             </pnp:Section>
             <pnp:Section Order="13" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
               <pnp:Controls>
-                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;6a1be032-7725-40eb-b89d-f86516c45f17&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;bg-wave-white.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/28715-bg-wave-white.png}&quot;,&quot;imgWidth&quot;:2124,&quot;imgHeight&quot;:512,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/28715-bg-wave-white.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/28715-bg-wave-white.png}&quot;,&quot;width&quot;:2124,&quot;height&quot;:512}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;6a1be032-7725-40eb-b89d-f86516c45f17&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Show an image on your page&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;96936-bg-wave-white-bottom.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/2288-bg-wave-white.png}&quot;,&quot;imgWidth&quot;:2124,&quot;imgHeight&quot;:512,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:1568}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/ContosoNewEmployeeOnboarding/2288-bg-wave-white.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/ContosoNewEmployeeOnboarding/2288-bg-wave-white.png}&quot;,&quot;width&quot;:2124,&quot;height&quot;:512}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="14" Type="OneColumn" BackgroundEmphasis="Strong">
               <pnp:Controls>
-                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;2fd12bcf-2451-4157-b8f4-95418439a366&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;2fd12bcf-2451-4157-b8f4-95418439a366&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space to your page&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:28}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="15" Type="OneColumn" BackgroundEmphasis="Strong">
@@ -2564,7 +2475,7 @@
           </pnp:Sections>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Our teams" ThumbnailUrl="" PageName="Our-teams.aspx">
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/our-teams/77076-ariel-captures_19.jpg" LayoutType="FullWidthImage" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="who we are" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Organization-structure/77076-ariel-captures_19.jpg" LayoutType="FullWidthImage" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="who we are" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -2574,7 +2485,7 @@
                     <pnp:CanvasControlProperty Key="Text" Value="&lt;p style=&quot;text-align:center;&quot;&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;b&gt;CONTOSO ELECTRONICS&lt;/b&gt;&lt;/span&gt;​​​​​​​&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center;&quot;&gt;At Contoso we never forget that teams are first made up of individuals who have different perspectives that are necessary to drive innovation and industry growth. Every team at Contoso contributes the over all customer-impact we are able to make as an organization. We consider our success a reflection of the investments we make in our people. Explore&amp;nbsp;the team pages for each department to learn more about how the business works, what each team is responsible for and how your new role fits in with the company mission and vision.&amp;nbsp;&lt;/p&gt;" />
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
-                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;57fa8fa0-f98b-4ea2-9173-d1c53bd59df7&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Our-teams.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Our-teams.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Our-teams.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Our-teams.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:1,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Customer Service →&quot;,&quot;items[1].title&quot;:&quot;Engineering →&quot;,&quot;items[2].title&quot;:&quot;Marketing →&quot;,&quot;items[3].title&quot;:&quot;Sales →&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Our-teams.aspx#customer-service&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Our-teams.aspx#engineering&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Our-teams.aspx#marketing&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Our-teams.aspx#sales&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;57fa8fa0-f98b-4ea2-9173-d1c53bd59df7&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Add links to important documents and pages.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Our-teams.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Our-teams.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Our-teams.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Our-teams.aspx}&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:3,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:1,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Customer Service →&quot;,&quot;items[1].title&quot;:&quot;Engineering →&quot;,&quot;items[2].title&quot;:&quot;Marketing →&quot;,&quot;items[3].title&quot;:&quot;Sales →&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Organization-structure.aspx#customer-service&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Organization-structure.aspx#engineering&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Organization-structure.aspx#marketing&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Organization-structure.aspx#sales&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="1" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="2" Type="ThreeColumn" BackgroundEmphasis="Soft">
@@ -2599,7 +2510,7 @@
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
                 <pnp:CanvasControl WebPartType="Sites" JsonControlData="{&quot;id&quot;: &quot;7cba020c-5ccb-42e8-b6fc-75b3149aba7b&quot;, &quot;instanceId&quot;: &quot;e4f12806-2b68-4693-b733-b1ee8f9dc15e&quot;, &quot;title&quot;: &quot;Sites&quot;, &quot;description&quot;: &quot;Showcase hub sites or add links to other sites&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;sites&quot;:[{&quot;Acronym&quot;:&quot;Eo&quot;,&quot;BannerColor&quot;:&quot;#303952&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;{siteid}&quot;,&quot;IndexId&quot;:17628612500063,&quot;ExchangeId&quot;:&quot;SPO_N2UzNTVhNDktOTE2My00MjcyLTlhYjQtM2FjNDA3NGMzM2FmLGM2YjEyZTY3LWExNmMtNGQ5My1iYTA1LTlhOTRkNjM0MjZhNCwwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDA_01MPDEDMIAAAAAAAAAAAAAAAAAAAAAAAAA&quot;,&quot;Source&quot;:&quot;Users&quot;,&quot;SiteId&quot;:&quot;7e355a49-9163-4272-9ab4-3ac4074c33af&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}},{&quot;Acronym&quot;:&quot;CP&quot;,&quot;BannerColor&quot;:&quot;#303952&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;da989460-8362-4cd1-8a0a-b37e09c61b06&quot;,&quot;IndexId&quot;:17629219957860,&quot;ExchangeId&quot;:&quot;SPO_MTY4ZTgzZmUtM2RiZS00ODhlLThhMzctODE4MGNhMjA3YTk2LGRhOTg5NDYwLTgzNjItNGNkMS04YTBhLWIzN2UwOWM2MWIwNiwwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDA_01Q2AA4FQAAAAAAAAAAAAAAAAAAAAAAAAA&quot;,&quot;Source&quot;:&quot;Users&quot;,&quot;SiteId&quot;:&quot;168e83fe-3dbe-488e-8a37-8180ca207a96&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}}],&quot;sourceType&quot;:2,&quot;itemCount&quot;:8,&quot;hideWebPartWhenEmpty&quot;:false,&quot;layoutId&quot;:&quot;CompactGrid&quot;,&quot;dataProviderId&quot;:&quot;SitesDataProvider&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;sites[0].Title&quot;:&quot;Engineering onboarding&quot;,&quot;sites[1].Title&quot;:&quot;Contoso Pre-Boarding&quot;},&quot;imageSources&quot;:{&quot;sites[0].BannerImageUrl&quot;:&quot;/sites/Engineeringnewhiresite/SiteAssets/__sitelogo__logo_mark8.png&quot;,&quot;sites[1].BannerImageUrl&quot;:&quot;/sites/ContosoPre-Boarding/SiteAssets/__sitelogo__logo_mark8.png&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;sites[0].Url&quot;:&quot;/sites/Engineeringnewhiresite&quot;,&quot;sites[1].Url&quot;:&quot;/sites/ContosoPre-Boarding&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7cba020c-5ccb-42e8-b6fc-75b3149aba7b" Order="3" Column="3" />
-                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;c740e322-3476-4204-a263-973213267ddd&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Create a call to action banner with a clickable button&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Our-teams/microsoftteams.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;link to channel »&quot;,&quot;overlayText.text&quot;:&quot;Connect on Teams&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/Organization-structure/microsoftteams.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;{site}/SitePages/Our-teams.aspx#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="4" Column="3" />
+                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;c740e322-3476-4204-a263-973213267ddd&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Create a call to action banner with a clickable button&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Our-teams/microsoftteams.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;link to channel »&quot;,&quot;overlayText.text&quot;:&quot;Connect on Teams&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/Organization-structure/microsoftteams.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;{site}/SitePages/Organization-structure.aspx#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="4" Column="3" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="3" Type="TwoColumnRight" BackgroundEmphasis="Soft">
@@ -2642,7 +2553,7 @@
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
                 <pnp:CanvasControl WebPartType="Sites" JsonControlData="{&quot;id&quot;: &quot;7cba020c-5ccb-42e8-b6fc-75b3149aba7b&quot;, &quot;instanceId&quot;: &quot;adc16db3-b228-4a9f-84e3-71b4d0aeb1c6&quot;, &quot;title&quot;: &quot;Sites&quot;, &quot;description&quot;: &quot;Showcase hub sites or add links to other sites&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;sites&quot;:[{&quot;Acronym&quot;:&quot;Eo&quot;,&quot;BannerColor&quot;:&quot;#303952&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;{siteid}&quot;,&quot;IndexId&quot;:17628612500063,&quot;ExchangeId&quot;:&quot;SPO_N2UzNTVhNDktOTE2My00MjcyLTlhYjQtM2FjNDA3NGMzM2FmLGM2YjEyZTY3LWExNmMtNGQ5My1iYTA1LTlhOTRkNjM0MjZhNCwwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDA_01MPDEDMIAAAAAAAAAAAAAAAAAAAAAAAAA&quot;,&quot;Source&quot;:&quot;Users&quot;,&quot;SiteId&quot;:&quot;7e355a49-9163-4272-9ab4-3ac4074c33af&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}},{&quot;Acronym&quot;:&quot;CP&quot;,&quot;BannerColor&quot;:&quot;#303952&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;da989460-8362-4cd1-8a0a-b37e09c61b06&quot;,&quot;IndexId&quot;:17629219957860,&quot;ExchangeId&quot;:&quot;SPO_MTY4ZTgzZmUtM2RiZS00ODhlLThhMzctODE4MGNhMjA3YTk2LGRhOTg5NDYwLTgzNjItNGNkMS04YTBhLWIzN2UwOWM2MWIwNiwwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDA_01Q2AA4FQAAAAAAAAAAAAAAAAAAAAAAAAA&quot;,&quot;Source&quot;:&quot;Users&quot;,&quot;SiteId&quot;:&quot;168e83fe-3dbe-488e-8a37-8180ca207a96&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}}],&quot;sourceType&quot;:2,&quot;itemCount&quot;:8,&quot;hideWebPartWhenEmpty&quot;:false,&quot;layoutId&quot;:&quot;CompactGrid&quot;,&quot;dataProviderId&quot;:&quot;SitesDataProvider&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;sites[0].Title&quot;:&quot;Engineering onboarding&quot;,&quot;sites[1].Title&quot;:&quot;Contoso Pre-Boarding&quot;},&quot;imageSources&quot;:{&quot;sites[0].BannerImageUrl&quot;:&quot;/sites/Engineeringnewhiresite/SiteAssets/__sitelogo__logo_mark8.png&quot;,&quot;sites[1].BannerImageUrl&quot;:&quot;/sites/ContosoPre-Boarding/SiteAssets/__sitelogo__logo_mark8.png&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;sites[0].Url&quot;:&quot;/sites/Engineeringnewhiresite&quot;,&quot;sites[1].Url&quot;:&quot;/sites/ContosoPre-Boarding&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7cba020c-5ccb-42e8-b6fc-75b3149aba7b" Order="3" Column="3" />
-                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;31efd8a8-09d4-49a6-8038-92f4b15ba5e3&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Create a call to action banner with a clickable button&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Our-teams/microsoftteams.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;link to channel »&quot;,&quot;overlayText.text&quot;:&quot;Connect on Teams&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/Organization-structure/microsoftteams.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;{site}/SitePages/Our-teams.aspx#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="4" Column="3" />
+                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;31efd8a8-09d4-49a6-8038-92f4b15ba5e3&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Create a call to action banner with a clickable button&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Our-teams/microsoftteams.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;link to channel »&quot;,&quot;overlayText.text&quot;:&quot;Connect on Teams&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/Organization-structure/microsoftteams.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;{site}/SitePages/Organization-structure.aspx#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="4" Column="3" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="5" Type="TwoColumnRight">
@@ -2685,7 +2596,7 @@
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
                 <pnp:CanvasControl WebPartType="Sites" JsonControlData="{&quot;id&quot;: &quot;7cba020c-5ccb-42e8-b6fc-75b3149aba7b&quot;, &quot;instanceId&quot;: &quot;0b406d63-6cd1-4cc3-8131-757050d99c76&quot;, &quot;title&quot;: &quot;Sites&quot;, &quot;description&quot;: &quot;Showcase hub sites or add links to other sites&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;sites&quot;:[{&quot;Acronym&quot;:&quot;Eo&quot;,&quot;BannerColor&quot;:&quot;#303952&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;{siteid}&quot;,&quot;IndexId&quot;:17628612500063,&quot;ExchangeId&quot;:&quot;SPO_N2UzNTVhNDktOTE2My00MjcyLTlhYjQtM2FjNDA3NGMzM2FmLGM2YjEyZTY3LWExNmMtNGQ5My1iYTA1LTlhOTRkNjM0MjZhNCwwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDA_01MPDEDMIAAAAAAAAAAAAAAAAAAAAAAAAA&quot;,&quot;Source&quot;:&quot;Users&quot;,&quot;SiteId&quot;:&quot;7e355a49-9163-4272-9ab4-3ac4074c33af&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}},{&quot;Acronym&quot;:&quot;CP&quot;,&quot;BannerColor&quot;:&quot;#303952&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;da989460-8362-4cd1-8a0a-b37e09c61b06&quot;,&quot;IndexId&quot;:17629219957860,&quot;ExchangeId&quot;:&quot;SPO_MTY4ZTgzZmUtM2RiZS00ODhlLThhMzctODE4MGNhMjA3YTk2LGRhOTg5NDYwLTgzNjItNGNkMS04YTBhLWIzN2UwOWM2MWIwNiwwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDA_01Q2AA4FQAAAAAAAAAAAAAAAAAAAAAAAAA&quot;,&quot;Source&quot;:&quot;Users&quot;,&quot;SiteId&quot;:&quot;168e83fe-3dbe-488e-8a37-8180ca207a96&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}}],&quot;sourceType&quot;:2,&quot;itemCount&quot;:8,&quot;hideWebPartWhenEmpty&quot;:false,&quot;layoutId&quot;:&quot;CompactGrid&quot;,&quot;dataProviderId&quot;:&quot;SitesDataProvider&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;sites[0].Title&quot;:&quot;Engineering onboarding&quot;,&quot;sites[1].Title&quot;:&quot;Contoso Pre-Boarding&quot;},&quot;imageSources&quot;:{&quot;sites[0].BannerImageUrl&quot;:&quot;/sites/Engineeringnewhiresite/SiteAssets/__sitelogo__logo_mark8.png&quot;,&quot;sites[1].BannerImageUrl&quot;:&quot;/sites/ContosoPre-Boarding/SiteAssets/__sitelogo__logo_mark8.png&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;sites[0].Url&quot;:&quot;/sites/Engineeringnewhiresite&quot;,&quot;sites[1].Url&quot;:&quot;/sites/ContosoPre-Boarding&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7cba020c-5ccb-42e8-b6fc-75b3149aba7b" Order="3" Column="3" />
-                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;ddf7322d-9035-400e-96e3-2a2f4501d10c&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Create a call to action banner with a clickable button&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Our-teams/microsoftteams.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;link to channel »&quot;,&quot;overlayText.text&quot;:&quot;Connect on Teams&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/Organization-structure/microsoftteams.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;{site}/SitePages/Our-teams.aspx#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="4" Column="3" />
+                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;ddf7322d-9035-400e-96e3-2a2f4501d10c&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Create a call to action banner with a clickable button&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Our-teams/microsoftteams.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;link to channel »&quot;,&quot;overlayText.text&quot;:&quot;Connect on Teams&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/Organization-structure/microsoftteams.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;{site}/SitePages/Organization-structure.aspx#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="4" Column="3" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="7" Type="TwoColumnRight" BackgroundEmphasis="Soft">
@@ -2728,7 +2639,7 @@
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
                 <pnp:CanvasControl WebPartType="Sites" JsonControlData="{&quot;id&quot;: &quot;7cba020c-5ccb-42e8-b6fc-75b3149aba7b&quot;, &quot;instanceId&quot;: &quot;bd70d1b5-15f2-4c7c-b1d8-9f5e4cad635f&quot;, &quot;title&quot;: &quot;Sites&quot;, &quot;description&quot;: &quot;Showcase hub sites or add links to other sites&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;sites&quot;:[{&quot;Acronym&quot;:&quot;Eo&quot;,&quot;BannerColor&quot;:&quot;#303952&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;{siteid}&quot;,&quot;IndexId&quot;:17628612500063,&quot;ExchangeId&quot;:&quot;SPO_N2UzNTVhNDktOTE2My00MjcyLTlhYjQtM2FjNDA3NGMzM2FmLGM2YjEyZTY3LWExNmMtNGQ5My1iYTA1LTlhOTRkNjM0MjZhNCwwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDA_01MPDEDMIAAAAAAAAAAAAAAAAAAAAAAAAA&quot;,&quot;Source&quot;:&quot;Users&quot;,&quot;SiteId&quot;:&quot;7e355a49-9163-4272-9ab4-3ac4074c33af&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}},{&quot;Acronym&quot;:&quot;CP&quot;,&quot;BannerColor&quot;:&quot;#303952&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;da989460-8362-4cd1-8a0a-b37e09c61b06&quot;,&quot;IndexId&quot;:17629219957860,&quot;ExchangeId&quot;:&quot;SPO_MTY4ZTgzZmUtM2RiZS00ODhlLThhMzctODE4MGNhMjA3YTk2LGRhOTg5NDYwLTgzNjItNGNkMS04YTBhLWIzN2UwOWM2MWIwNiwwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDA_01Q2AA4FQAAAAAAAAAAAAAAAAAAAAAAAAA&quot;,&quot;Source&quot;:&quot;Users&quot;,&quot;SiteId&quot;:&quot;168e83fe-3dbe-488e-8a37-8180ca207a96&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}}],&quot;sourceType&quot;:2,&quot;itemCount&quot;:8,&quot;hideWebPartWhenEmpty&quot;:false,&quot;layoutId&quot;:&quot;CompactGrid&quot;,&quot;dataProviderId&quot;:&quot;SitesDataProvider&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;sites[0].Title&quot;:&quot;Engineering onboarding&quot;,&quot;sites[1].Title&quot;:&quot;Contoso Pre-Boarding&quot;},&quot;imageSources&quot;:{&quot;sites[0].BannerImageUrl&quot;:&quot;/sites/Engineeringnewhiresite/SiteAssets/__sitelogo__logo_mark8.png&quot;,&quot;sites[1].BannerImageUrl&quot;:&quot;/sites/ContosoPre-Boarding/SiteAssets/__sitelogo__logo_mark8.png&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;sites[0].Url&quot;:&quot;/sites/Engineeringnewhiresite&quot;,&quot;sites[1].Url&quot;:&quot;/sites/ContosoPre-Boarding&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7cba020c-5ccb-42e8-b6fc-75b3149aba7b" Order="3" Column="3" />
-                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;5dc44a4b-890e-4a59-9ae7-76fb5f4375b4&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Create a call to action banner with a clickable button&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Our-teams/microsoftteams.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;link to channel »&quot;,&quot;overlayText.text&quot;:&quot;Connect on Teams&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/Organization-structure/microsoftteams.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;{site}/SitePages/Our-teams.aspx#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="4" Column="3" />
+                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;5dc44a4b-890e-4a59-9ae7-76fb5f4375b4&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Create a call to action banner with a clickable button&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Our-teams/microsoftteams.jpg}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;link to channel »&quot;,&quot;overlayText.text&quot;:&quot;Connect on Teams&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;{site}/SiteAssets/SitePages/Organization-structure/microsoftteams.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;{site}/SitePages/Organization-structure.aspx#&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="4" Column="3" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="9" Type="TwoColumnRight">
@@ -2838,7 +2749,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-      </pnp:ClientSidePages>
+      </pnp:ClientSidePages>      
       <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" />
       <pnp:Footer Enabled="true" Logo="" />
     </pnp:ProvisioningTemplate>
@@ -3297,113 +3208,6 @@
               <pnp:DataValue FieldName="Link" />
             </pnp:DataRow>
           </pnp:DataRows>
-        </pnp:ListInstance>
-        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
-          <pnp:PropertyBagEntries>
-            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="1" Overwrite="false" />
-          </pnp:PropertyBagEntries>
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{EB01F9AE-852C-42FD-9340-43B5CFECBC6A}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/SiteAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="FileLeafRef" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="DocIcon" />
-                <FieldRef Name="LinkFilename" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
-          <pnp:Fields>
-            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceAutoTags" ColName="nvarchar13" RowOrdinal="0" />
-            <Field ID="{67aff0cf-8e19-43f2-9987-be89075e1467}" Type="Note" DisplayName="Extracted Text" Name="MediaServiceOCR" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceOCR" ColName="ntext4" RowOrdinal="0" />
-          </pnp:Fields>
-          <pnp:FieldRefs>
-            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
-            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
-          </pnp:FieldRefs>
-          <pnp:Folders>
-            <pnp:Folder Name="SitePages" ContentTypeID="0x0120">
-              <pnp:Folder Name="New-hire-introduction" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="New-hire-introduction" />
-                  <pnp:Property Key="Order" Value="1200" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="About-Adele-Vance" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="About-Adele-Vance" />
-                  <pnp:Property Key="Title" Value="About-Adele-Vance" />
-                  <pnp:Property Key="Order" Value="1500" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="About-Chris Cline" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="About-Chris Cline" />
-                  <pnp:Property Key="Title" Value="About-Chris Cline" />
-                  <pnp:Property Key="Order" Value="1700" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="About-Pradeep" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="About-Pradeep" />
-                  <pnp:Property Key="Title" Value="About-Pradeep" />
-                  <pnp:Property Key="Order" Value="1900" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="About-Grady" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="About-Grady" />
-                  <pnp:Property Key="Title" Value="About-Grady" />
-                  <pnp:Property Key="Order" Value="2100" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Home" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Home" />
-                  <pnp:Property Key="Order" Value="2900" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Getting-started" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Getting-started" />
-                  <pnp:Property Key="Order" Value="3400" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Our-Leadership" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Our-Leadership" />
-                  <pnp:Property Key="Order" Value="3900" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Who-we-are" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Who-we-are" />
-                  <pnp:Property Key="Order" Value="4900" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Priorities" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Priorities" />
-                  <pnp:Property Key="Title" Value="Priorities" />
-                  <pnp:Property Key="Order" Value="5500" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Properties>
-                <pnp:Property Key="FileLeafRef" Value="SitePages" />
-                <pnp:Property Key="Order" Value="100" />
-              </pnp:Properties>
-            </pnp:Folder>
-          </pnp:Folders>
         </pnp:ListInstance>
       </pnp:Lists>
       <pnp:Files>
@@ -4866,116 +4670,6 @@
           <pnp:Webhooks>
             <pnp:Webhook ServerNotificationUrl="https://6-southcentralus1.pushp.svc.ms/notifications?token=w2-22a49087-a028-4241-b575-ce1428377274" ExpiresInDays="1" />
           </pnp:Webhooks>
-        </pnp:ListInstance>
-        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
-          <pnp:PropertyBagEntries>
-            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="1" Overwrite="false" />
-          </pnp:PropertyBagEntries>
-          <pnp:ContentTypeBindings>
-            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
-            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
-          </pnp:ContentTypeBindings>
-          <pnp:Views>
-            <View Name="{548FD89D-F930-4AB1-AAD5-0DE382441DA1}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/SiteAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
-              <Query>
-                <OrderBy>
-                  <FieldRef Name="FileLeafRef" />
-                </OrderBy>
-              </Query>
-              <ViewFields>
-                <FieldRef Name="DocIcon" />
-                <FieldRef Name="LinkFilename" />
-                <FieldRef Name="Modified" />
-                <FieldRef Name="Editor" />
-              </ViewFields>
-              <RowLimit Paged="TRUE">30</RowLimit>
-              <JSLink>clienttemplates.js</JSLink>
-            </View>
-          </pnp:Views>
-          <pnp:Fields>
-            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceAutoTags" ColName="nvarchar14" RowOrdinal="0" />
-            <Field ID="{5e0382d1-eb43-4590-a609-575845fa9af9}" Type="Text" DisplayName="Location" Name="MediaServiceLocation" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceLocation" ColName="nvarchar17" RowOrdinal="0" />
-            <Field ID="{67aff0cf-8e19-43f2-9987-be89075e1467}" Type="Note" DisplayName="Extracted Text" Name="MediaServiceOCR" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceOCR" ColName="ntext4" RowOrdinal="0" />
-          </pnp:Fields>
-          <pnp:FieldRefs>
-            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
-            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
-          </pnp:FieldRefs>
-          <pnp:Folders>
-            <pnp:Folder Name="SitePages" ContentTypeID="0x0120">
-              <pnp:Folder Name="Salesonboarding" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Salesonboarding" />
-                  <pnp:Property Key="Order" Value="200" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="New-hire-introduction" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="New-hire-introduction" />
-                  <pnp:Property Key="Order" Value="700" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="About--Adele-Vance" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="About--Adele-Vance" />
-                  <pnp:Property Key="Title" Value="About--Adele-Vance" />
-                  <pnp:Property Key="Order" Value="900" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="About--Pradeep-Gupta" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="About--Pradeep-Gupta" />
-                  <pnp:Property Key="Order" Value="1100" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="About--Chris-Cline" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="About--Chris-Cline" />
-                  <pnp:Property Key="Order" Value="1300" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="About--Grady-Archie" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="About--Grady-Archie" />
-                  <pnp:Property Key="Order" Value="1500" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="page-template" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="page-template" />
-                  <pnp:Property Key="Order" Value="2300" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Our-Leadership" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Our-Leadership" />
-                  <pnp:Property Key="Order" Value="3000" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Who-we-are" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Who-we-are" />
-                  <pnp:Property Key="Order" Value="3800" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Our-priorities" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Our-priorities" />
-                  <pnp:Property Key="Order" Value="4100" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Folder Name="Getting-Started" ContentTypeID="0x0120">
-                <pnp:Properties>
-                  <pnp:Property Key="FileLeafRef" Value="Getting-Started" />
-                  <pnp:Property Key="Order" Value="4300" />
-                </pnp:Properties>
-              </pnp:Folder>
-              <pnp:Properties>
-                <pnp:Property Key="FileLeafRef" Value="SitePages" />
-                <pnp:Property Key="Order" Value="100" />
-              </pnp:Properties>
-            </pnp:Folder>
-          </pnp:Folders>
         </pnp:ListInstance>
       </pnp:Lists>
       <pnp:Files>
