@@ -171,15 +171,14 @@
                     "value": "Tenant app catalog administrator"
                 }
             ]
-        }
-    },
-    "preRequirements": [
-	    {
-		"assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
-		"typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.LearningPathwaysPreReq",
-		"configuration": "{ 'minVersion': 3 }",
-		"preRequirementContent": "site/BrandAtContoso/prerequirement-learning-pathways.md"
-	    }
-    ] 
-  }
+        },
+        "preRequirements": [
+            {
+            "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
+            "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.LearningPathwaysPreReq",
+            "configuration": "{ 'minVersion': 3 }",
+            "preRequirementContent": "site/BrandAtContoso/prerequirement-learning-pathways.md"
+            }
+        ] 
+    }
 }
