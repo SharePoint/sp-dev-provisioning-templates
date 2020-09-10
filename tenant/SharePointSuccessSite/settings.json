@@ -174,11 +174,12 @@
         }
     },
     "preRequirements": [
-        {
-            "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
-            "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.LearningPathwaysPreReq",
-            "configuration": "{ 'minVersion': 4 }",
-            "preRequirementContent": "tenant/SharePointSuccessSite/prerequirement-learning-pathways.md"
-        }
-    ]
+	    {
+		"assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
+		"typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.LearningPathwaysPreReq",
+		"configuration": "{ 'minVersion': 3 }",
+		"preRequirementContent": "site/BrandAtContoso/prerequirement-learning-pathways.md"
+	    }
+    ] 
+  }
 }
