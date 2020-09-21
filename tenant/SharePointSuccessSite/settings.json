@@ -176,7 +176,7 @@
             {
             "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
             "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.LearningPathwaysPreReq",
-            "configuration": "{ 'minVersion': 3 }",
+            "configuration": "{ 'minVersion': 4 }",
             "preRequirementContent": "site/BrandAtContoso/prerequirement-learning-pathways.md"
             }
         ] 
