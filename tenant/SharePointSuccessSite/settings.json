@@ -8,7 +8,7 @@
         "LOOKBOOK"
     ],
     "packageFile": "SharePointSuccessSite.pnp",
-    "abstract": "Help your organization get more from SharePoint by enabling site owners to create high-quality and engaging sites that follow your organization’s site creation and usage guidelines. This customizable, communication site streams on-demand content curated by Microsoft right to end users through the Microsoft 365 learning pathways solution. M365 learning pathways allows you to hide and show Microsoft maintained content as well as upload your own custom playlists for training purposes.     If you need to, install or update your current version of M365 learning pathways as a prerequisite to provisioning the SharePoint Success Site. Finally, customize the theme and content of your SharePoint Success Site to fit the needs of your organization.",
+    "abstract": "Get more from SharePoint by learning to create high-quality and engaging sites that follow your organization’s site creation and usage guidelines. This customizable communication site streams on-demand content curated by Microsoft right to end users through the Microsoft 365 learning pathways solution. M365 learning pathways allows you to hide and show Microsoft-maintained content as well as design your own custom playlists. If you need to, install or update your current version of M365 learning pathways before provisioning the SharePoint Success Site. Finally, customize the theme and content of your SharePoint Success Site to fit the needs of your organization.",
     "sortOrder": 700,
     "promoted": "false",
     "sortOrderPromoted": 0,
@@ -29,7 +29,7 @@
             "pageTemplateId": "system/pageTemplates/template-1",
             "siteDescriptor": "Inspire, Train, Adopt",
             "descriptionParagraphs": [
-                "Help your organization get more from SharePoint by enabling site owners to create high-quality and engaging sites that follow your organization’s site creation and usage guidelines. This customizable, communication site streams on-demand content curated by Microsoft right to end users through the Microsoft 365 learning pathways solution. M365 learning pathways allows you to hide and show Microsoft maintained content as well as upload your own custom playlists for training purposes.     If you need to, install or update your current version of M365 learning pathways as a prerequisite to provisioning the SharePoint Success Site. Finally, customize the theme and content of your SharePoint Success Site to fit the needs of your organization."
+                "Get more from SharePoint by learning to create high-quality and engaging sites that follow your organization’s site creation and usage guidelines. This customizable communication site streams on-demand content curated by Microsoft right to end users through the Microsoft 365 learning pathways solution. M365 learning pathways allows you to hide and show Microsoft-maintained content as well as design your own custom playlists. If you need to, install or update your current version of M365 learning pathways before provisioning the SharePoint Success Site. Finally, customize the theme and content of your SharePoint Success Site to fit the needs of your organization."
             ],
             "previewImages": [
                 {
@@ -176,8 +176,8 @@
             {
             "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
             "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.LearningPathwaysPreReq",
-            "configuration": "{ 'minVersion': 3 }",
-            "preRequirementContent": "site/BrandAtContoso/prerequirement-learning-pathways.md"
+            "configuration": "{ 'minVersion': 4 }",
+            "preRequirementContent": "tenant/SharePointSuccessSite/prerequirement-learning-pathways.md"
             }
         ] 
     }
