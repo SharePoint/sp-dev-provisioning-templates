@@ -28,6 +28,12 @@
         "name":"CdnUrl",
         "caption":"Source for Microsoft 365 learning pathways content",
         "description":"Content CDN URL. Leave as-is for public CDN, or replace with https://microsoft.github.io/customlearning_staging/learningpathways/ (include trailing slash) for preview content."
+      },
+      {
+          "name":"Telemetry",
+          "caption":"Improve learning pathways by sending usage telemetry to Microsoft?",
+          "description":"Microsoft uses this data to help improve future Microsoft 365 learning pathways solutions. To learn more about Microsoft privacy policies see https://go.microsoft.com/fwlink/?LinkId=521839.",
+          "editor": "Boolean"
       }
     ],
     "displayInfo": {
