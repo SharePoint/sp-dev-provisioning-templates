@@ -24,11 +24,11 @@
         "description":"URL for the Microsoft 365 learning pathways site (default is /sites/M365LP)",
         "editor": "SiteUrl"
       },
-      {
-        "name":"CdnUrl",
-        "caption":"Source for Microsoft 365 learning pathways content",
-        "description":"Content CDN URL. Leave as-is for public CDN, or replace with https://microsoft.github.io/customlearning_staging/learningpathways/ (include trailing slash) for preview content."
-      },
+//   {
+//     "name":"CdnUrl",
+//     "caption":"Source for Microsoft 365 learning pathways content",
+//     "description":"Content CDN URL. Leave as-is for staging CDN, or replace with https://pnp.github.io/customlearning_staging/learningpathways/ (include trailing slash) for preview content."
+//   },
       {
           "name":"Telemetry",
           "caption":"Improve learning pathways by sending usage telemetry to Microsoft?",
@@ -39,8 +39,9 @@
         "pageTemplateId": "system/pageTemplates/template-1",
         "siteDescriptor": "M365 learning pathways [for preview testing only]",
         "descriptionParagraphs": [
-            "This is the M365 learning pathways TEST template.",
-            "To load content from staging, set CDN URL to https://microsoft.github.io/customlearning_staging/learningpathways/ (include trailing slash) when provisioning."
+            "This is the M365 learning pathways INSIDERS template.",
+            "!!Pre-release code and content!!"
+            // "To load content from staging, set CDN URL to https://microsoft.github.io/customlearning_staging/learningpathways/ (include trailing slash) when provisioning."
         ],
         "previewImages": [
             {
