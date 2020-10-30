@@ -8,7 +8,7 @@
     "LOOKBOOK"
   ],
   "packageFile": "M365LP.pnp",
-  "abstract": "This is TEST template for Learning Pathways",
+  "abstract": "This is the INSIDERS TEST template for Learning Pathways",
   "sortOrder": 100,
   "promoted": "false",
   "sortOrderPromoted": 0,
@@ -31,8 +31,8 @@
 //   },
       {
           "name":"Telemetry",
-          "caption":"Improve learning pathways by sending usage telemetry to Microsoft?",
-          "description":"Microsoft uses this data to help improve future Microsoft 365 learning pathways solutions. To learn more about Microsoft privacy policies see https://go.microsoft.com/fwlink/?LinkId=521839."
+          "caption":"Improve learning pathways by sending usage data to Microsoft?",
+          "description":"Microsoft uses this data to help improve future Microsoft 365 learning pathways solutions. To learn more about Microsoft privacy policies see <a href=\"https://go.microsoft.com/fwlink/?LinkId=521839\">https://go.microsoft.com/fwlink/?LinkId=521839</a>."
       }
     ],
     "displayInfo": {
