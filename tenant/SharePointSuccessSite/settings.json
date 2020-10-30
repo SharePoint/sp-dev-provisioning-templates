@@ -8,11 +8,11 @@
         "LOOKBOOK"
     ],
     "packageFile": "SharePointSuccessSite.pnp",
-    "abstract": "Get more from SharePoint by learning to create high-quality and engaging sites that follow your organization’s site creation and usage guidelines. This customizable communication site streams on-demand content curated by Microsoft right to end users through the Microsoft 365 learning pathways solution. M365 learning pathways allows you to hide and show Microsoft-maintained content as well as design your own custom playlists. If you need to, install or update your current version of M365 learning pathways before provisioning the SharePoint Success Site. Finally, customize the theme and content of your SharePoint Success Site to fit the needs of your organization.",
+    "abstract": "Help new SharePoint Site owners in your organization understand how to use SharePoint to create engaging sites that result in specific business outcomes. Site owners will learn how to quickly create high-quality sites by reviewing Microsoft-curated and up-to-date content in a customizable training site.",
     "sortOrder": 700,
     "promoted": "false",
     "sortOrderPromoted": 0,
-    "preview": "true",
+    "preview": "false",
     "forceNewSite": "true",
     "matchingSiteBaseTemplateId": "SITEPAGEPUBLISHING#0",
     "visible": "true",
@@ -20,8 +20,8 @@
         "properties": [
             {
                 "name": "SiteUrl",
-                "caption": "The SharePoint Success Site url",
-                "description": "The tenant relative url of the SharePoint Success Site",
+                "caption": "The SharePoint Success Site URL",
+                "description": "The tenant relative URL of the SharePoint Success Site",
                 "editor": "SiteUrl"
             }
         ],
@@ -29,7 +29,8 @@
             "pageTemplateId": "system/pageTemplates/template-1",
             "siteDescriptor": "Inspire, Train, Adopt",
             "descriptionParagraphs": [
-                "Get more from SharePoint by learning to create high-quality and engaging sites that follow your organization’s site creation and usage guidelines. This customizable communication site streams on-demand content curated by Microsoft right to end users through the Microsoft 365 learning pathways solution. M365 learning pathways allows you to hide and show Microsoft-maintained content as well as design your own custom playlists. If you need to, install or update your current version of M365 learning pathways before provisioning the SharePoint Success Site. Finally, customize the theme and content of your SharePoint Success Site to fit the needs of your organization."
+                "Help new SharePoint site owners in your organization to create engaging sites that acheive specific business outcomes, share <a href='https://docs.microsoft.com/en-us/sharepoint/overview-sss#success-stories'>inspirational, real-life success stories</a> from other site owners inside your organization, and learn from up-to-date SharePoint content and video from Microsoft. The SharePoint Success Site contains pre-populated content that you can customize to display your organization's <a href='https://docs.microsoft.com/en-us/sharepoint/sites-usage-guidelines'>site creation and usage guidelines</a>. Update both content and theme to fit the needs of your organization.",
+                "The SharePoint Success Site includes content curated by Microsoft using the <a href='https://lookbook.microsoft.com/details/3df8bd55-b872-4c9d-88e3-6b2f05344239'>Microsoft 365 learning pathways</a> solution, which also can be <a href='https://docs.microsoft.com/en-us/office365/customlearning/custom_accessadmin'>customized with learning experiences of your own</a>. If needed, install or update your current version of <strong>M365 learning pathways</strong> before provisioning the SharePoint Success Site."
             ],
             "previewImages": [
                 {
@@ -40,7 +41,7 @@
                 {
                     "type": "cardpreview",
                     "altText": "SharePoint Success Site",
-                    "url": "./SharePointSuccess-lookbook-frontpage.jpg"
+                    "url": "./SSS-responsive_1920x1080.jpg"
                 }
             ],
             "detailItemCategories": [
@@ -53,34 +54,44 @@
                             "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
                         },
                         {
-                            "name": "Text",
-                            "description": "Custom RTE formatting",
-                            "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
-                        },
-                        {
-                            "name": "Learning Pathways",
-                            "description": "Microsoft Learning Pathways",
+                            "name": "Microsoft 365 learning pathways",
+                            "description": "Custom",
                             "url": "https://docs.microsoft.com/en-us/office365/customlearning/custom_addwebpart"
                         },
                         {
-                            "name": "Image",
-                            "description": "Text over image",
-                            "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
+                            "name": "People",
+                            "description": "People web part",
+                            "url": "https://support.microsoft.com/en-us/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05"
                         },
                         {
-                            "name": "Call to action",
-                            "description": "",
-                            "url": "https://support.office.com/en-us/article/use-the-call-to-action-web-part-e9917310-7543-4fc4-8f3f-d78e46074c00"
+                            "name": "Yammer conversations",
+                            "description": "Yammer group, topic, user or home feed",
+                            "url": "https://support.microsoft.com/en-us/office/use-a-yammer-web-part-in-sharepoint-online-a53cfa0c-3d09-42c8-a286-1038a81c59da"
+                        },
+                        {
+                            "name": "Button",
+                            "description": "Center alignment",
+                            "url": "https://support.microsoft.com/en-us/office/use-the-button-web-part-d2e37c48-11e8-45b9-8d9e-abdaa97c2a7a"
                         },
                         {
                             "name": "Quick Links",
-                            "description": "Filmstrip",
+                            "description": "List, descriptions shown, icons to the left",
                             "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
                         },
                         {
-                            "name": "People",
-                            "description": "",
-                            "url": "https://support.microsoft.com/en-us/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05"
+                            "name": "Call to action",
+                            "description": "Button on home page",
+                            "url": "https://support.office.com/en-us/article/use-the-call-to-action-web-part-e9917310-7543-4fc4-8f3f-d78e46074c00"
+                        },
+                        {
+                            "name": "Text",
+                            "description": "Custom RTE formatting",
+                            "url": "https://support.microsoft.com/en-us/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
+                        },
+                        {
+                            "name": "Microsoft forms",
+                            "description": "Poll",
+                            "url": "https://support.microsoft.com/en-us/office/use-the-microsoft-forms-web-part-d4b4d3ce-7860-41e4-8a98-76380efe7256"
                         }
                     ]
                 },
@@ -106,7 +117,6 @@
                         {
                             "name": "Custom site logo",
                             "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818",
-                            "badgeText": ""
                         },
                         {
                             "name": "Footer",
@@ -127,7 +137,7 @@
                             "name": "Pre-populated “Get inspired” page that helps new site owners see what’s possible with SharePoint by providing examples of popular site solutions and reading success stories from colleagues"
                         },
                         {
-                            "name": "Pre-populated and Microsoft-maintained content feed when you provision the M365 learning pathways solution and customize the M365 learning pathways web part"
+                            "name": "Pre-populated, Microsoft-maintained, and customizable content feed displayed in the M365 learning pathways solution and in the M365 learning pathways web part"
                         }
                     ]
                 },
@@ -135,16 +145,20 @@
                     "name": "Resources",
                     "items": [
                         {
-                            "name": "Learn how to add a sample tenant from the Look book",
-                            "url": "https://docs.microsoft.com/en-us/sharepoint/add-sample-site"
+                            "name": "Overview of the SharePoint Success Site",
+                            "url": "https://docs.microsoft.com/sharepoint/overview-sss"
                         },
                         {
-                            "name": "Step-by-step instructions to provision and customize the SharePoint Success Site",
+                            "name": "Provision the SharePoint Success Site — READ THIS",
                             "url": "https://docs.microsoft.com/sharepoint/provision-sss"
                         },
                         {
-                            "name": "SharePoint Success Site prerequisites – READ THIS",
-                            "url": "https://docs.microsoft.com/sharepoint/provision-sss#step-one:-provision-the-sharepoint-success-site"
+                            "name": "Customize and share the SharePoint Success Site",
+                            "url": "https://docs.microsoft.com/sharepoint/customize-sss"
+                        },
+                        {
+                            "name": "Learn how to add a sample tenant from the SharePoint look book",
+                            "url": "https://docs.microsoft.com/en-us/sharepoint/add-sample-site"
                         }
                     ]
                 }
