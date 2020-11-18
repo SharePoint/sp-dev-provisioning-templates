@@ -190,7 +190,7 @@
             {
             "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
             "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.LearningPathwaysPreReq",
-            "configuration": "{ 'minVersion': 4 }",
+            "configuration": "{ 'minVersion': 4, 'checkSitePackage': false }",
             "preRequirementContent": "tenant/SharePointSuccessSite/prerequirement-learning-pathways.md"
             }
         ] 
