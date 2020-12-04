@@ -31,7 +31,7 @@
             "descriptionParagraphs": [
                 "Help new SharePoint site owners in your organization to create engaging sites that acheive specific business outcomes, share <a href='https://docs.microsoft.com/en-us/sharepoint/overview-sss#success-stories'>inspirational, real-life success stories</a> from other site owners inside your organization, and learn from up-to-date SharePoint content and video from Microsoft. The SharePoint Success Site contains pre-populated content that you can customize to display your organization's <a href='https://docs.microsoft.com/en-us/sharepoint/sites-usage-guidelines'>site creation and usage guidelines</a>. Update both content and theme to fit the needs of your organization.",
                 "The SharePoint Success Site includes content curated by Microsoft using the <a href='https://lookbook.microsoft.com/details/3df8bd55-b872-4c9d-88e3-6b2f05344239'>Microsoft 365 learning pathways</a> solution, which also can be <a href='https://docs.microsoft.com/en-us/office365/customlearning/custom_accessadmin'>customized with learning experiences of your own</a>. If needed, install or update your current version of <strong>M365 learning pathways</strong> before provisioning the SharePoint Success Site.",
-                "<strong style='background-color:#038387; color: white; padding: .1rem .3rem; font-size: .8rem;'>READ ME ➜</strong>: <a href='https://docs.microsoft.com/en-us/sharepoint/provision-sss-lookbook'>How to provision the SharePoint Success Site from look book</a>"
+                "<strong style='background-color:#038387; color: white; padding: .1rem .3rem; font-size: .8rem;'>VIDEO ➜</strong> Before you start, <a href='https://youtu.be/HZjxBAKVnJs'>watch our provisioning instructions video</a>."
             ],
             "previewImages": [
                 {
@@ -150,16 +150,16 @@
                             "url": "https://docs.microsoft.com/sharepoint/overview-sss"
                         },
                         {
-                            "name": "Provision the SharePoint Success Site — READ THIS",
-                            "url": "https://docs.microsoft.com/sharepoint/provision-sss"
+                            "name": "Provision the SharePoint Success Site from the look book",
+                            "url": "https://docs.microsoft.com/sharepoint/provision-sss-lookbook"
                         },
                         {
                             "name": "Customize and share the SharePoint Success Site",
                             "url": "https://docs.microsoft.com/sharepoint/customize-sss"
                         },
                         {
-                            "name": "Learn how to add a sample tenant from the SharePoint look book",
-                            "url": "https://docs.microsoft.com/en-us/sharepoint/add-sample-site"
+                            "name": "How to provision the SharePoint Success Site (VIDEO)",
+                            "url": "https://youtu.be/HZjxBAKVnJs"
                         }
                     ]
                 }
