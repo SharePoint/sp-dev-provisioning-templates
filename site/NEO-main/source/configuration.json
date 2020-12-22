@@ -1,0 +1,7 @@
+{
+    "$schema": "https://aka.ms/sppnp-extract-configuration-schema",    
+    "pages": {
+        "includeAllClientSidePages": true
+    },
+    "persistAssetFiles": true
+}
