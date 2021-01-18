@@ -1,171 +1,199 @@
 {
-    "templateId": "8fefcc9a-7ca4-457f-bd10-acee3ae63b63", 	
+    "templateId": "8fefcc9a-7ca4-457f-bd10-acee3ae63b63",
     "categories": [
         "SOLUTION"
     ],
     "platforms": [
-      "LOOKBOOK",
-      "SPPNP"
+        "LOOKBOOK",
+        "SPPNP"
     ],
     "packageFile": "template.pnp",
-    "abstract": "Pre-onboarding site.",
+    "abstract": "Pre-onboarding.",
     "sortOrder": 100,
     "promoted": "false",
     "sortOrderPromoted": 0,
     "preview": "true",
-    "forceNewSite":"true",
-    "forceExistingSite":"false",
-    "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
+    "forceNewSite": "true",
+    "forceExistingSite": "false",
+    "matchingSiteBaseTemplateId": "SITEPAGEPUBLISHING#0",
     "visible": "true",
     "metadata": {
-      "properties": [
-        {
-          "name": "SiteTitle",
-          "caption": "Site Title",
-          "description": "Title for your site"
-        },
-        {
-          "name": "SiteUrl",
-          "caption": "Site URL",
-          "description": "Relative URL to be used for the site",
-          "editor": "SiteUrl"
+        "properties": [
+            {
+                "name": "SiteTitle",
+                "caption": "Site Title",
+                "description": "Title for your site"
+            },
+            {
+                "name": "SiteUrl",
+                "caption": "Site URL",
+                "description": "Relative URL to be used for the site",
+                "editor": "SiteUrl"
+            }
+        ],
+        "displayInfo": {
+            "pageTemplateId": "system/pageTemplates/template-1",
+            "siteTitle": "Pre-onboarding",
+            "siteDescriptor": "Welcome new hires before their first day",
+            "descriptionParagraphs": [
+                "Use the Pre-onboarding site to welcome new employees as soon as the job offer has been accepted. Connect and inform new hires on what to expect on their first day of work by customizing pre-populated site content and pages to fit the needs of your organization.",
+                "Consider using the Corporate onboarding site template and the Departmental site template to create an end-to-end new hire experience.",
+                "<a href='#'>Learn more about the Corporate onboarding site</a>.",
+                "<a href='#'>Learn more about the Departmental onboarding site</a>."
+            ],
+            "provisionMessages": {
+                "provisionPageTitle": "Great choice!",
+                "provisionPageSubTitle": "We just need a bit of information before we start provisioning.",
+                "provisionPageText": "The following settings are used for your site. You can keep them as is, or change them to suit your needs."
+            },
+            "previewImages": [
+                {
+                    "type": "fullpage",
+                    "altText": "EDU Portal preview",
+                    "url": "./layout-neo-pre-onboarding.jpg"
+                },
+                {
+                    "type": "cardpreview",
+                    "altText": "EDU Portal preview",
+                    "url": "./card-neo-pre-onboarding.jpg"
+                }
+            ],
+            "detailItemCategories": [
+                {
+                    "name": "Webparts",
+                    "items": [
+                        {
+                            "name": "Hero",
+                            "description": "Full width, 5 tiles",
+                            "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
+                        },
+                        {
+                            "name": "Twitter",
+                            "description": "",
+                            "url": "https://support.office.com/en-us/article/use-the-twitter-web-part-15db6b3b-d167-41dd-9875-2af64b44d820"
+                        },
+                        {
+                            "name": "Text",
+                            "description": "Custom RTE formatting",
+                            "url": "https://support.microsoft.com/en-us/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801#:~:text=%20To%20use%20the%20Text%20web%20part%3A%20,5%20Use%20s%EF%BB%BF%EF%BB%BFtrikethrough%206%20I%EF%BB%BFndent%20text%20More%20"
+                        },
+                        {
+                            "name": "Image",
+                            "description": "Text over image",
+                            "url": "https://support.microsoft.com/en-us/office/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
+                        },
+                        {
+                            "name": "Quick Links",
+                            "description": "Filmstrip",
+                            "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                        },
+                        {
+                            "name": "People",
+                            "description": "",
+                            "url": "https://support.microsoft.com/en-us/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05"
+                        },
+                        {
+                            "name": "Bing maps",
+                            "description": "",
+                            "url": "https://support.microsoft.com/en-ie/office/use-the-bing-maps-web-part-c0e3f2f6-dc0d-49df-9308-1bf7c888e794"
+                        },
+                        {
+                            "name": "YouTube",
+                            "description": "",
+                            "url": "https://support.microsoft.com/en-us/office/use-the-youtube-web-part-c14fa2c1-71dc-4e52-94b6-b4876742382f"
+                        },
+                        {
+                            "name": "Sites",
+                            "description": "Compact",
+                            "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
+                        }
+                    ]
+                },
+                {
+                    "name": "Features",
+                    "items": [
+                        {
+                            "name": "Custom company theme",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Vertical Section",
+                            "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
+                        },
+                        {
+                            "name": "Section background",
+                            "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-sharepoint-modern-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
+                        },
+                        {
+                            "name": "Compact Header",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Header background",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Custom site logo",
+                            "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b",
+                            "badgeText": ""
+                        },
+                        {
+                            "name": "Footer",
+                            "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b"
+                        }
+                    ]
+                },
+                {
+                    "name": "Site Content",
+                    "items": [
+                        {
+                            "name": "Custom and pre-populated home page"
+                        },
+                        {
+                            "name": "Pre-populated pages that connect new hires to company mission and culture"
+                        },
+                        {
+                            "name": "A page specifically designed to prepare new hires for their first day"
+                        },
+                        {
+                            "name": "Example content for the People web part, Yammer web part, YouTube web part, and Quick links web part"
+                        },
+                        {
+                            "name": "Pre-written new hire FAQs page"
+                        },
+                        {
+                            "name": "Recommendations for creating social and engaging experiences"
+                        }
+                    ]
+                },
+                {
+                    "name": "Resources",
+                    "items": [
+                        {
+                            "name": "Learn how to add a sample tenant from the look book",
+                            "url": "https://docs.microsoft.com/en-us/sharepoint/add-sample-site"
+                        },
+                        {
+                            "name": "Step-by-step instructions to provision and customize New employee onboarding sites",
+                            "url": "https://docs.microsoft.com/sharepoint/provision-neo-hub"
+                        }
+                    ]
+                }
+            ],
+            "systemRequirements": [
+                {
+                    "name": "SharePoint version",
+                    "value": "SharePoint Online"
+                },
+                {
+                    "name": "Permission required",
+                    "value": "Site owner"
+                },
+                {
+                    "name": "Site language",
+                    "value": "English"
+                }
+            ]
         }
-      ],
-      "displayInfo": {
-          "pageTemplateId": "system/pageTemplates/template-1",
-          "siteTitle": "Pre-onboarding site",
-          "siteDescriptor": "Lorem Ipsum, Lorem Ipsum, Lorem Ipsum",
-          "descriptionParagraphs": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          ],
-          "provisionMessages": {
-              "provisionPageTitle": "Great choice!",
-              "provisionPageSubTitle": "We just need a bit of information before we start provisioning.",
-              "provisionPageText": "The following settings are used for your site. You can keep them as is, or change them to suit your needs." 
-          },        
-          "previewImages": [
-              {
-                  "type": "fullpage",
-                  "altText": "EDU Portal preview",
-                  "url": "./layout-neo-pre-onboarding.jpg"
-              },
-              {
-                  "type": "cardpreview",
-                  "altText": "EDU Portal preview",
-                  "url": "./card-neo-pre-onboarding.jpg"
-              }
-          ],
-          "detailItemCategories": [
-              {
-                  "name": "Webparts",
-                  "items": [
-                      {
-                          "name": "Hero",
-                          "description": "Full width, 5 tiles",
-                          "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
-                      },
-                      {
-                          "name": "Quick Links",
-                          "description": "Compact layout",
-                          "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
-                      },                                     
-                      {
-                          "name": "Image",
-                          "description": "",
-                          "url": "https://support.microsoft.com/en-us/office/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
-                      },
-                      {
-                          "name": "Text",
-                          "description": "",
-                          "url": "https://support.microsoft.com/en-us/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801#:~:text=%20To%20use%20the%20Text%20web%20part%3A%20,5%20Use%20s%EF%BB%BF%EF%BB%BFtrikethrough%206%20I%EF%BB%BFndent%20text%20More%20"
-                      },
-                      {
-                          "name": "Button",
-                          "description": "Left aligned",
-                          "url": "https://support.microsoft.com/en-us/office/use-the-button-web-part-d2e37c48-11e8-45b9-8d9e-abdaa97c2a7a"
-                      },                    
-                      {
-                          "name": "News",
-                          "description": "Side-by-side layout, 4 news posts",
-                          "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
-                      },                    
-                      {
-                          "name": "Events",
-                          "description": "Film strip layout, 4 events",
-                          "url": "https://support.microsoft.com/en-us/office/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
-                      }
-                  ]
-              },
-              {
-                  "name": "Features",
-                  "items": [
-                      {
-                          "name": "Custom theme",
-                          "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                      },
-                      {
-                          "name": "Section background",
-                          "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-sharepoint-modern-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
-                      },
-                      {
-                          "name": "Mega Menu",
-                          "url": "https://support.office.com/en-us/article/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca"
-                      },
-                      {
-                          "name": "Header background",
-                          "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                      },
-                      {
-                          "name": "Custom site logo",
-                          "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b",
-                          "badgeText": ""
-                      },
-                      {
-                          "name": "Footer",
-                          "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b"
-                      }
-                  ]
-              },
-              {
-                  "name": "Site Content",
-                  "items": [
-                      {
-                          "name": "Example welcome page with out-of-the-box web parts"
-                      },
-                      {
-                          "name": "Example news articles and pages demonstrating different modern page designs"
-                      }
-                  ]
-              },
-              {
-                  "name": "Resources",
-                  "items": [
-                      {
-                          "name": "School home page documentation",
-                          "url": "https://go.microsoft.com/fwlink/?linkid=2135285"
-                      },                    
-                      {
-                          "name": "SharePoint site templates for schools & universities overview",
-                          "url": "https://go.microsoft.com/fwlink/?linkid=2135144"
-                      }               
-                  ]
-              }
-          ],
-          "systemRequirements": [
-              {
-                  "name": "SharePoint version",
-                  "value": "SharePoint Online"
-              },
-              {
-                  "name": "Permission required",
-                  "value": "Site owner"
-              },
-              {
-                  "name": "Site language",
-                  "value": "English"
-              }
-          ]
-      }
     }
-  }
-  
+}
