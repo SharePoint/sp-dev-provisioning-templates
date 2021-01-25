@@ -10,10 +10,10 @@
     <pnp:ProvisioningTemplate ID="TEMPLATE-fec44a4261024707b2f963d28b1803df" Version="0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
         <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
         <pnp:GlobalNavigation NavigationType="Structural">
-          <pnp:StructuralNavigation RemoveExistingNodes="false" />
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
         </pnp:GlobalNavigation>
         <pnp:CurrentNavigation NavigationType="StructuralLocal">
-          <pnp:StructuralNavigation RemoveExistingNodes="false">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
             <pnp:NavigationNode Title="Getting started »" Url="{site}/SitePages/Getting-started.aspx" />
             <pnp:NavigationNode Title="Meet the team" Url="http://linkless.header/" IsExternal="true">
               <pnp:NavigationNode Title="PEOPLE" Url="http://linkless.header/" IsExternal="true">
@@ -188,6 +188,384 @@
             <Field DisplayName="Resource" Format="Dropdown" MaxLength="255" Name="Resource" Title="Resource" Type="Text" ID="{48997674-765b-4ba1-a7b2-d6182e2374e0}" SourceID="{{listid:New Hire Checklist}}" StaticName="Resource" ColName="nvarchar6" RowOrdinal="0" CustomFormatter="" Version="2" />
             <Field DisplayName="Link" Format="Hyperlink" Name="Link" Title="Link" Type="URL" ID="{a9f7ed33-253e-411b-b05e-878bbd0caa40}" SourceID="{{listid:New Hire Checklist}}" StaticName="Link" ColName="nvarchar7" RowOrdinal="0" ColName2="nvarchar8" RowOrdinal2="0" />
           </pnp:Fields>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Culture</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">New employee orientation</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 1</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass3FE29E36015241E78A86B8D1BA78E0BA"&gt;Attend the virtual new employee orientation&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Live Event</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Profile set up</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass202BFC241F5B4B21985DCCEE5C2A82E4"&gt;Set up your profile, including a photo, in Office 365&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Office profile (in Office 365)</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Printer set up</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass96C20D6F470040A1B70732A95D7EEAA0"&gt;Find the closest printer. Add the printer to Windows.  Print a test job. Go to the printer. Tap your badge to release the job you sent.  TEST THIS before you need it ;-)&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">New hire Yammer community</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass5E0E2A976CAE47BD95B27BEFD3DD0559"&gt;Join new hire Yammer community&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">New hire Yammer community</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Security</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass2F317623569240EA8E7282D76A7943B4"&gt;Take the security training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Office 365 getting started</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassDB2062644A944A989E2D6696F5F577A5"&gt;Complete the Office 365 getting started training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Office 365 getting started training playlist</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Install productivity apps on your phone</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassA478102F549A4DCCA1CAE57FF9C130B9"&gt;Install the Office, OneDrive, SharePoint, Yammer, Teams, and OneNote on your phone&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Install productivity apps on your phone</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Administrative</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Direct deposit</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass17F3B761494A42149AF9B62D7801B782"&gt;Set up direct deposit&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Administrative</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Business cards</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass8135CFC01C1744B4899B9F39147FA972"&gt;Order your business cards&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Business cards</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Benefits</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass6D7642C9A9954E6C818D0FA5E3A49170"&gt;Take the benefits training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">HR</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Benefits sign up</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassE3C11A869EC847EC949F65041ACF4846"&gt;Be sure to sign up for your benefits within 30 days. Make this a priority to complete within week one&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Benefits sign up site</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Finances</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Corporate credit card</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass690C59F10D934AD8BC61CA8282C83694"&gt;Apply for corporate credit card. Make this a priority to complete within week one. Apply for corporate credit card membership rewards (fee is your personal expense)&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Corporate credit card site</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Manager 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass9E8D60E0A25C483A972557E5DECF3EA8"&gt;Meet with your manager. Identify with your manager key internal partners you should meet with over the coming weeks and months&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Manager 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Introduction</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass234E2FCEC5C7455EA037BA24258660AC"&gt;Write a short bio and provide to your manager so they can introduce you to the team&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Culture and values</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 4</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass36D1A5F8E955457CB092EB87575D8D2B"&gt;Take the culture and values training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Expense reporting</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 4</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassDDCF346D95564EC4AB00F9AEC23A2C08"&gt;Complete expense reporting policy training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Expense reporting</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Administrative</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Expense app</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 4</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassC98AF1C52A134290A58EEFC755908248"&gt;Get the Expenses app from the App Store. Set the interim approver to your admin.&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Expense app</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">IT guidelines and policies</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 5</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass52D19882649E48A28B62220E4114160B"&gt;Complete IT and guidelines policy training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">IT guidelines and policies</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 5</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass035F595086964FA3995B78CF17C5BE45"&gt;Meet with your onboarding buddy. Set up a meeting cadence for the next 4-6 weeks&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">VPN set up</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Day 5</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassD60CC810103A42BCAB82F9646703A4C1"&gt;Ensure VPN is set up and working&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">VPN is set up and working urayrh s</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">CEO connection</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass19D0C4CA0E7F441CB9A5D85FA1CFFC2E"&gt;Follow the CEO on Yammer and Twitter&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">CEO connection</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Manager 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassC4A91D485D954D6ABD73342E9E084734"&gt;Meet with your manager. Agree on your priorities over the next 30-60-90 days&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Manager 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Internal business partners</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass7A59A1FF38304B26997457FAB11EEAB2"&gt;Meet with one or two internal business partners in week two&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass7F128DE4B0034FC9B255F2CE04C5A39E"&gt;Meet with your onboarding buddy&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Yammer groups</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass686909B541A44EEAB4CA6253F5E9179F"&gt;Browse and join relevant Yammer communities. Review what communities your manager and team members are part of and consider joining&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Yammer groups</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Travel</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass58775B700B5D407EB68C38035995B10D"&gt;Complete training about how to book business travel&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassE3BFF1A2EC0B4680A840F55AFFBC7AF8"&gt;Complete training about the different tools and systems used at the company&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Confidential information policy</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassEF3DFC94A2F14FE981ED69A1BA22ED57"&gt;Complete confidential information policy training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Complete confidential information policy training playlip</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Department training</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass9EB48820660544B1B30A49E046A6A11F"&gt;Complete the department business overview, culture and processes training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Department training - memos, all hands, annual plan, townhalls</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Community</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Employee resource groups and social clubs</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassDF9E4A6597B947E182C677E9B4EA9C0D"&gt;Review and join relevant employee resource groups and social clubs&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Employee resource groups and social clubs listing</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Standards of business conduct</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassF1A7070BC1D14F8F8878F184319B2C7F"&gt;Complete the standards of business conduct training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Standards of business conduct</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Compliance</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassDC30B0D2E45441B88DB0981538F06AF3"&gt;Complete compliance trainings&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Compliance playlist</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Guidelines and policies</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass49DB6CD6BD0844299369E637A024E207"&gt;Complete the guidelines and policies training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Complete the guidelines and policies training pleeklipolici</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Profession and discipline training</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass65DAB2AEA1144855A82F7C882D96C6A6"&gt;Complete profession and discipline training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Ethics</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 4</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassE942E4EF4E644A1DBA45C923112E89C7"&gt;Complete ethics trainings&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Ethics playlist</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Performance management and rewards</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 4</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass0EB2B100F4A645DD84BAC7C4253D907E"&gt;Complete the Performance management and rewards training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Virtual live event</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 4</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass7F43BD44EB37400A859E8A8590195872"&gt;Attend the monthly virtual live event to meet company leaders and connect with your cohort&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Onboarding Team</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Development</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Personal development plan</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Week 4</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassD2FBC23B1F384A5886E5289C9F1D6ABD"&gt;Complete your development plan and set your priorities for the year&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">HR System</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Skip manager</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassA8786DA66B8A4037A502504DB33B97EC"&gt;Have a 1&amp;#58;1 with your skip manager (manager's manager)&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass66EFA0631B444C5CAF9C46E834B7145A"&gt;Leverage your buddy! Besides asking onboarding questions, try requesting feedback or discuss how to be successful on the team&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Virtual live event</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass82B56A72B4B14A9E81BA5E054DC0C60D"&gt;Attend the monthly virtual live event to meet company leaders and connect with your cohort&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Onboarding Team</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Internal business partners</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass6903A2DFDDA441B68481416B1323E317"&gt;Meet with three or four internal business partners in month two&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Profession and discipline training</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass4B6CA8A632DC414D81DB6E524580D58D"&gt;Complete the profession and discipline training&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Feedback</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">New employee onboarding survey</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Month 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass8739C9E18F3645F69E3F6CB63E8949E8"&gt;Complete the new employee onboarding survey to tell us how we did and help us improve the process.&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g">Onboarding Team</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Virtual live event</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Month 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass6A7E95327F4141CEB43C13F513C2B641"&gt;Attend the monthly virtual live event to meet company leaders and connect with your cohort&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Month 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClass46D6E94D1F3744EB90E83C9CD13C3AAD"&gt;Leverage your buddy! Besides asking onboarding questions, try requesting feedback or discuss how to be successful on the team&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="p6ns">Internal business partners</pnp:DataValue>
+              <pnp:DataValue FieldName="ttyb">Month 3</pnp:DataValue>
+              <pnp:DataValue FieldName="Notes">&lt;div class="ExternalClassE7D9B3FD51204FB0BCC60623C4383661"&gt;Meet with three or four internal business partners in month three&lt;/div&gt;</pnp:DataValue>
+              <pnp:DataValue FieldName="yx0g" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+          </pnp:DataRows>
         </pnp:ListInstance>
       </pnp:Lists>
       <pnp:Files>

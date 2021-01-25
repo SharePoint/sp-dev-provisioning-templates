@@ -10,10 +10,10 @@
     <pnp:ProvisioningTemplate ID="TEMPLATE-81dd6aa713304dd8b2af3e9ce0016787" Version="0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
       <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
         <pnp:GlobalNavigation NavigationType="Structural">
-          <pnp:StructuralNavigation RemoveExistingNodes="false" />
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
         </pnp:GlobalNavigation>
         <pnp:CurrentNavigation NavigationType="StructuralLocal">
-          <pnp:StructuralNavigation RemoveExistingNodes="false">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
             <pnp:NavigationNode Title="Welcome »" Url="{site}/SitePages/Welcome.aspx" />
             <pnp:NavigationNode Title="Contoso 101" Url="http://linkless.header/" IsExternal="true">
               <pnp:NavigationNode Title="What we do" Url="http://linkless.header/" IsExternal="true" />

@@ -10,10 +10,10 @@
     <pnp:ProvisioningTemplate ID="TEMPLATE-b205d51c8e294b9da0da78cb50f0db53" Version="0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
       <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
         <pnp:GlobalNavigation NavigationType="Structural">
-          <pnp:StructuralNavigation RemoveExistingNodes="false" />
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
         </pnp:GlobalNavigation>
         <pnp:CurrentNavigation NavigationType="StructuralLocal">
-          <pnp:StructuralNavigation RemoveExistingNodes="false">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
             <pnp:NavigationNode Title="Start here" Url="http://linkless.header/" IsExternal="true">
               <pnp:NavigationNode Title="Onboarding activities" Url="http://linkless.header/" IsExternal="true">
                 <pnp:NavigationNode Title="Start your journey here »" Url="{site}/SitePages/Start-here.aspx" />
@@ -224,6 +224,384 @@
             <Field DisplayName="Task image" Format="Image" Name="Task_x0020_image" Title="Task image" Type="URL" ID="{2bd53acf-7418-4b1a-9417-6c3bc079b7e8}" Version="4" StaticName="Task_x0020_image" SourceID="{{listid:New hire checklist}}" ColName="nvarchar10" RowOrdinal="0" ColName2="nvarchar11" RowOrdinal2="0" />
             <Field Name="s8hr" DisplayName="Text" Type="Text" ID="{262db922-c825-4653-baf8-c02b235f5554}" SourceID="{{listid:New hire checklist}}" StaticName="s8hr" ColName="nvarchar12" RowOrdinal="0" Version="1" />
           </pnp:Fields>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Culture</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">New employee orientation</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 1</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Attend the virtual new employee orientation</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Live Event</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Profile set up</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Set up your profile, including a photo, in Office 365</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Office profile (in Office 365)</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Printer set up</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Find the closest printer. Add the printer to Windows.  Print a test job. Go to the printer. Tap your badge to release the job you sent.  TEST THIS before you need it ;-)</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">New hire Yammer community</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Join new hire Yammer community</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">New hire Yammer community</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Security</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Take the security training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Office 365 getting started</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete the Office 365 getting started training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Office 365 getting started training playlist</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Install productivity apps on your phone</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Install the Office, OneDrive, SharePoint, Yammer, Teams, and OneNote on your phone</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Install productivity apps on your phone</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Administrative</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Direct deposit</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Set up direct deposit</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Administrative</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Business cards</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Order your business cards</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Business cards</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Benefits</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Take the benefits training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">HR</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Benefits sign up</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Be sure to sign up for your benefits within 30 days. Make this a priority to complete within week one</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Benefits sign up site</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Finances</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Corporate credit card</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Apply for corporate credit card. Make this a priority to complete within week one. Apply for corporate credit card membership rewards (fee is your personal expense)</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Corporate credit card site</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Manager 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Meet with your manager. Identify with your manager key internal partners you should meet with over the coming weeks and months</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Manager 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Introduction</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Write a short bio and provide to your manager so they can introduce you to the team</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Culture and values</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 4</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Take the culture and values training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Expense reporting</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 4</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete expense reporting policy training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Expense reporting</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Administrative</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Expense app</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 4</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Get the Expenses app from the App Store. Set the interim approver to your admin.</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Expense app</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">IT guidelines and policies</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 5</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete IT and guidelines policy training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">IT guidelines and policies</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 5</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Meet with your onboarding buddy. Set up a meeting cadence for the next 4-6 weeks</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">VPN set up</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Day 5</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Ensure VPN is set up and working</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">VPN is set up and working urayrh s</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">CEO connection</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Follow the CEO on Yammer and Twitter</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">CEO connection</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Manager 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Meet with your manager. Agree on your priorities over the next 30-60-90 days</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Manager 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Internal business partners</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Meet with one or two internal business partners in week two</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Meet with your onboarding buddy</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Yammer groups</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Browse and join relevant Yammer communities. Review what communities your manager and team members are part of and consider joining</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Yammer groups</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Travel</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete training about how to book business travel</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Technology</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete training about the different tools and systems used at the company</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Confidential information policy</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete confidential information policy training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Complete confidential information policy training playlip</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Department training</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete the department business overview, culture and processes training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Department training - memos, all hands, annual plan, townhalls</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Community</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Employee resource groups and social clubs</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Review and join relevant employee resource groups and social clubs</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Employee resource groups and social clubs listing</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Standards of business conduct</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete the standards of business conduct training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Standards of business conduct</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Compliance</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete compliance trainings</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Compliance playlist</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Guidelines and policies</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete the guidelines and policies training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Complete the guidelines and policies training pleeklipolici</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Profession and discipline training</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete profession and discipline training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Ethics</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 4</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete ethics trainings</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Ethics playlist</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Performance management and rewards</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 4</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete the Performance management and rewards training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Virtual live event</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 4</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Attend the monthly virtual live event to meet company leaders and connect with your cohort</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Onboarding Team</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Development</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Personal development plan</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Week 4</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete your development plan and set your priorities for the year</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">HR System</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Skip manager</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Have a 1:1 with your skip manager (manager's manager)</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Leverage your buddy! Besides asking onboarding questions, try requesting feedback or discuss how to be successful on the team</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Virtual live event</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Attend the monthly virtual live event to meet company leaders and connect with your cohort</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Onboarding Team</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Internal business partners</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Meet with three or four internal business partners in month two</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Training</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Profession and discipline training</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Month 2</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete the profession and discipline training</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Feedback</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">New employee onboarding survey</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Month 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Complete the new employee onboarding survey to tell us how we did and help us improve the process.</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz">Onboarding Team</pnp:DataValue>
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Virtual live event</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Month 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Attend the monthly virtual live event to meet company leaders and connect with your cohort</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Onboarding buddy 1:1</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Month 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Leverage your buddy! Besides asking onboarding questions, try requesting feedback or discuss how to be successful on the team</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Connections</pnp:DataValue>
+              <pnp:DataValue FieldName="Task_x0020_name">Internal business partners</pnp:DataValue>
+              <pnp:DataValue FieldName="_x0077_wl7">Month 3</pnp:DataValue>
+              <pnp:DataValue FieldName="rgwr">Meet with three or four internal business partners in month three</pnp:DataValue>
+              <pnp:DataValue FieldName="ehxz" />
+              <pnp:DataValue FieldName="Link" />
+            </pnp:DataRow>
+          </pnp:DataRows>          
         </pnp:ListInstance>
         <pnp:ListInstance Title="NewHireQuestionnaire" Description="" DocumentTemplate="" TemplateType="100" Url="Lists/NewHireQuestionnaire" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/NewHireQuestionnaire/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/NewHireQuestionnaire/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/NewHireQuestionnaire/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>
