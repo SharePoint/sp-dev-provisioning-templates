@@ -708,7 +708,7 @@
             </pnp:Section>
           </pnp:Sections>
           <pnp:FieldValues>
-            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About--Adele-Vance/97958-GettyImages-828219910.jpg}" />
+            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About-Adele-Vance/97958-GettyImages-828219910.jpg}" />
           </pnp:FieldValues>           
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="About: Chris Cline" ThumbnailUrl="" PageName="About-Chris Cline.aspx">
@@ -726,7 +726,7 @@
             </pnp:Section>
           </pnp:Sections>
           <pnp:FieldValues>
-            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About--Chris-Cline/16163-GettyImages-910802554.jpg}" />
+            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About-Chris-Cline/16163-GettyImages-910802554.jpg}" />
           </pnp:FieldValues>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="About: Pradeep Gupta" ThumbnailUrl="" PageName="About-Pradeep.aspx">
@@ -744,7 +744,7 @@
             </pnp:Section>
           </pnp:Sections>
           <pnp:FieldValues>
-            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About--Pradeep-Gupta/42342-GettyImages-944138400.jpg}" />
+            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About-Pradeep/42342-GettyImages-944138400.jpg}" />
           </pnp:FieldValues>            
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="About: Grady Archie" ThumbnailUrl="" PageName="About-Grady Archie.aspx">
@@ -762,7 +762,7 @@
             </pnp:Section>
           </pnp:Sections>
           <pnp:FieldValues>
-            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About--Grady-Archie/88869-AdobeStock_201685181.jpeg}" />
+            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About-Grady/88869-AdobeStock_201685181.jpeg}" />
           </pnp:FieldValues>          
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" EnableComments="false" Title="Image and title area" ThumbnailUrl="" PageName="Templates/Site-page-template.aspx">
