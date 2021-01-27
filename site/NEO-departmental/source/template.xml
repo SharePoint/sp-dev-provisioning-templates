@@ -726,7 +726,7 @@
             </pnp:Section>
           </pnp:Sections>
           <pnp:FieldValues>
-            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About-Chris-Cline/16163-GettyImages-910802554.jpg}" />
+            <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About-Chris Cline/16163-GettyImages-910802554.jpg}" />
           </pnp:FieldValues>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="About: Pradeep Gupta" ThumbnailUrl="" PageName="About-Pradeep.aspx">
