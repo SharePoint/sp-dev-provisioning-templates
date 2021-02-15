@@ -197,7 +197,7 @@
                 },
                 {
                     "name": "Permission required",
-                    "value": "Site owner"
+                    "value": "Tenant Admin"
                 },
                 {
                     "name": "Site language",

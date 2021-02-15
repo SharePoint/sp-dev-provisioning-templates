@@ -196,8 +196,8 @@
                   "value": "SharePoint Online"
               },
               {
-                  "name": "Permission required",
-                  "value": "Site owner"
+                "name": "Permission required",
+                "value": "Tenant Admin"
               },
               {
                   "name": "Site language",
