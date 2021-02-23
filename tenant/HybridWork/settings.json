@@ -1,0 +1,199 @@
+{
+    "templateId": "388a159f-475b-4557-9088-c9073a26c576", 	
+    "categories": [
+        "SOLUTION"
+    ],
+    "platforms": [
+      "LOOKBOOK",
+      "SPPNP"
+    ],
+    "packageFile": "HybridWork.pnp",
+    "abstract": "Workplace Transformation site",
+    "sortOrder": 100,
+    "promoted": "false",
+    "sortOrderPromoted": 0,
+    "preview": "true",
+    "forceNewSite":"true",
+    "forceExistingSite":"false",
+    "matchingSiteBaseTemplateId":"SITEPAGEPUBLISHING#0",
+    "visible": "true",
+    "metadata": {
+      "properties": [
+        {
+          "name": "SiteUrl",
+          "caption": "Site URL",
+          "description": "Relative URL to be used for the site",
+          "editor": "SiteUrl"
+        }
+      ],
+      "displayInfo": {
+          "pageTemplateId": "system/pageTemplates/template-1",
+          "siteTitle": "Workplace Transformation site",
+          "siteDescriptor": "Inform, guide, engage",
+          "descriptionParagraphs": [
+              "Help your organization implement and manage change initiatives such as new processes, systems, or mergers and acquisitions. This template is pre-populated with several fully designed pages, and news templates to inspire your change management project.",
+              "This template’s content centers on helping organization’s adopt hybrid workplace skills and habits using research insights from <a href='https://www.microsoft.com/en-us/research/lab/microsoft-research-cambridge/'>Microsoft’s Research lab</a> and can be customized to meet the needs of any organization change management project.",
+              "Learn more about Microsoft’s research on <a href='https://www.microsoft.com/en-us/microsoft-365/blog/2020/07/08/future-work-good-challenging-unknown/'>working from home so far</a>, and <a href='https://www.microsoft.com/en-us/research/theme/future-of-work/'>what the future will bring</a>.",
+              "Review the Workplace transformation site provisioning and <a href='https://docs.microsoft.com/en-us/SharePoint/change-management-template'>customization guidance</a>. Consider using <a href='https://docs.microsoft.com/en-us/office365/customlearning/custom_addwebpart'>Microsoft 365 Learning pathways</a> to embed Microsoft-curated <a href='https://support.microsoft.com/office/hybrid-workplace-guides-884b5a0e-ab1d-40a1-8c60-f8e46fb014f3'>hybrid work training content</a> or other related training.",
+          ],
+          "provisionMessages": {
+              "provisionPageTitle": "Great choice!",
+              "provisionPageSubTitle": "We just need a bit of information before we start provisioning.",
+              "provisionPageText": "The following settings are used for your site. You can keep them as is, or change them to suit your needs." 
+          },        
+          "previewImages": [
+              {
+                  "type": "fullpage",
+                  "altText": "Hybrid work site",
+                  "url": "./layout-hybridwork-main.jpg"
+              },
+              {
+                  "type": "cardpreview",
+                  "altText": "Hybrid work site",
+                  "url": "./card-hybridwork-main.jpg"
+              }
+          ],
+          "detailItemCategories": [
+              {
+                  "name": "Webparts",
+                  "items": [
+                      {
+                        "name": "Text",
+                        "description": "Custom RTE formatting",
+                        "url": "https://support.office.com/en-us/article/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
+                      },
+                      {
+                        "name": "Embed",
+                        "description": "",
+                        "url": "https://support.microsoft.com/en-us/office/add-content-to-your-page-using-the-embed-web-part-721f3b2f-437f-45ef-ac4e-df29dba74de8"
+                      },
+                      {
+                        "name": "Image",
+                        "description": "Text over image",
+                        "url": "https://support.office.com/en-us/article/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
+                      },
+                      {
+                        "name": "Call to action",
+                        "description": "",
+                        "url": "https://support.office.com/en-us/article/use-the-call-to-action-web-part-e9917310-7543-4fc4-8f3f-d78e46074c00"
+                      },
+                      {
+                        "name": "Quick Links",
+                        "description": "Filmstrip",
+                        "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                      },
+                      {
+                        "name": "Button",
+                        "description": "",
+                        "url": "https://support.microsoft.com/en-us/office/use-the-button-web-part-d2e37c48-11e8-45b9-8d9e-abdaa97c2a7a"
+                      },
+                      {
+                        "name": "People",
+                        "description": "",
+                        "url": "https://support.microsoft.com/en-us/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05"
+                      },
+                      {
+                        "name": "List",
+                        "description": "",
+                        "url": "https://support.microsoft.com/en-us/office/use-the-list-web-part-ef0a1b80-f8b3-443d-b04a-1e76c70b5537"
+                      },
+                      {
+                        "name": "Events",
+                        "description": "",
+                        "url": "https://support.microsoft.com/en-us/office/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
+                      },
+                      {
+                        "name": "News",
+                        "description": "",
+                        "url": "https://support.microsoft.com/en-us/office/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
+                      }
+                  ]
+              },
+              {
+                  "name": "Features",
+                  "items": [
+                      {
+                          "name": "Custom company theme",
+                          "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                      },
+                      {
+                        "name": "Header background",
+                        "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                      },                      
+                      {
+                          "name": "Custom site logo",
+                          "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b",
+                          "badgeText": ""
+                      },
+                      {
+                          "name": "Footer",
+                          "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b"
+                      }
+                  ]
+              },
+              {
+                  "name": "Site Content",
+                  "items": [
+                      {
+                          "name": "Custom home page using out-of-the-box web parts"
+                      },
+                      {
+                          "name": "11 customizable pages, related to hybrid work, using out-of-the-box web parts"
+                      },
+                      {
+                          "name": "Custom illustrations throughout the sites and pages"
+                      },
+                      {
+                          "name": "Hybrid work check list in the form of a Microsoft List "
+                      },
+                      {
+                          "name": "2 news templates"
+                      },
+                      {
+                          "name": "4 news articles with example content"
+                      },
+                      {
+                          "name": "4 quick tip guides"
+                      },
+                      {
+                          "name": "Custom illustration of “A week in the hybrid workplace”"
+                      },
+                      {
+                          "name": "Hybrid workplace tips"
+                      },
+                      {
+                          "name": "Pre-populated FAQ section"
+                      },
+                      {
+                          "name": "Managers- only page with pre-populated quick tips for managing remote workers"
+                      },
+                      {
+                          "name": "Champions page that helps recruit and engage new change champions"
+                      },
+                      {
+                          "name": "A message from our CEO page that helps endorse change management projects"
+                      },
+                      {
+                          "name": "Provisioning and customization guidance"
+                      }
+                  ]
+              }
+          ],
+          "systemRequirements": [
+              {
+                  "name": "SharePoint version",
+                  "value": "SharePoint Online"
+              },
+              {
+                "name": "Permission required",
+                "value": "Tenant Admin"
+              },
+              {
+                  "name": "Site language",
+                  "value": "English"
+              }
+          ]
+      }
+    }
+  }
+  
