@@ -8,7 +8,41 @@
   </pnp:Preferences>
   <pnp:Templates ID="CONTAINER-DUMMY-dcf685d8-462f-4d40-ae61-e67f8971a4b4">
     <pnp:ProvisioningTemplate ID="TEMPLATE-fec44a4261024707b2f963d28b1803df" Version="0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
-        <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/__sitelogo__logo_mark8.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" SearchScope="DefaultScope" />
+      <pnp:Theme Name="">
+          {
+          "neutralPrimaryAlt":  "#2f2f2f",
+          "themeLighterAlt":  "#f4f5f8",
+          "black":  "#000000",
+          "themeTertiary":  "#727c97",
+          "primaryBackground":  "#ffffff",
+          "neutralQuaternaryAlt":  "#e1dfdd",
+          "accent":  "#17717A",
+          "themePrimary":  "#303952",
+          "neutralSecondary":  "#373737",
+          "themeLighter":  "#d4d8e3",
+          "themeDark":  "#252b3e",
+          "neutralPrimary":  "#000000",
+          "neutralLighterAlt":  "#faf9f8",
+          "neutralLighter":  "#f3f2f1",
+          "neutralDark":  "#151515",
+          "neutralQuaternary":  "#d0d0d0",
+          "neutralLight":  "#edebe9",
+          "primaryText":  "#000000",
+          "themeDarker":  "#1b202e",
+          "neutralTertiaryAlt":  "#c8c6c4",
+          "themeDarkAlt":  "#2b3349",
+          "white":  "#ffffff",
+          "bodyBackground":  "#ffffff",
+          "themeSecondary":  "#414b66",
+          "bodyText":  "#000000",
+          "disabledBackground":  "#f4f4f4",
+          "neutralTertiary":  "#595959",
+          "themeLight":  "#b2b9cb",
+          "disabledText":  "#c8c8c8"
+          }
+      </pnp:Theme>
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
         <pnp:GlobalNavigation NavigationType="Structural">
           <pnp:StructuralNavigation RemoveExistingNodes="true" />
         </pnp:GlobalNavigation>
@@ -549,7 +583,7 @@
               <pnp:DataValue FieldName="ehxz" />
               <pnp:DataValue FieldName="Link" />
             </pnp:DataRow>
-          </pnp:DataRows>          
+          </pnp:DataRows>
         </pnp:ListInstance>
       </pnp:Lists>
       <pnp:Files>
@@ -580,7 +614,7 @@
         <pnp:File Src="SiteAssets/SitePages/Our-Leadership/39622-Meet_the_team-01.png" Folder="SiteAssets/SitePages/Our-Leadership" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Who-we-are/microsoftteams.jpg" Folder="SiteAssets/SitePages/Who-we-are" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Priorities/2032242651GettyImages-90788818.jpg" Folder="SiteAssets/SitePages/Priorities" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/__sitelogo__logo_mark8.png" Folder="SiteAssets" Overwrite="true" Level="Published" />        
+        <pnp:File Src="SiteAssets/__sitelogo__logo_mark8.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
       </pnp:Files>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home-new" ThumbnailUrl="" PageName="Home.aspx">
@@ -709,7 +743,7 @@
           </pnp:Sections>
           <pnp:FieldValues>
             <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About-Adele-Vance/97958-GettyImages-828219910.jpg}" />
-          </pnp:FieldValues>           
+          </pnp:FieldValues>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="About: Chris Cline" ThumbnailUrl="" PageName="About-Chris Cline.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="hello! i'm a new team member" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
@@ -745,7 +779,7 @@
           </pnp:Sections>
           <pnp:FieldValues>
             <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About-Pradeep/42342-GettyImages-944138400.jpg}" />
-          </pnp:FieldValues>            
+          </pnp:FieldValues>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="About: Grady Archie" ThumbnailUrl="" PageName="About-Grady Archie.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="hello! i'm a new team member" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
@@ -763,7 +797,7 @@
           </pnp:Sections>
           <pnp:FieldValues>
             <pnp:FieldValue Key="BannerImageUrl" Value="{hosturl}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/About-Grady/88869-AdobeStock_201685181.jpeg}" />
-          </pnp:FieldValues>          
+          </pnp:FieldValues>
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" EnableComments="false" Title="Image and title area" ThumbnailUrl="" PageName="Templates/Site-page-template.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/Getting-started/workplace-setup-bg.jpg" TranslateX="49.3162393162393" TranslateY="46.4912280701754" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="onboarding page template" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
@@ -1384,7 +1418,8 @@
   </pnp:Templates>
   <pnp:Sequence ID="TENANTSEQUENCE">
     <pnp:SiteCollections>
-      <pnp:SiteCollection d4p1:type="pnp:CommunicationSite" Title="{parameter:SiteTitle}" Description="" IsHubSite="false" Url="{parameter:SiteUrl}" Owner="{CurrentUserLoginName}" Language="1033" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+      <pnp:SiteCollection d4p1:type="pnp:CommunicationSite" Title="{parameter:SiteTitle}" Description="" IsHubSite="false" Url="{parameter:SiteUrl}" Owner="{CurrentUserLoginName}" Language="1033"
+        xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="TEMPLATE-fec44a4261024707b2f963d28b1803df" />
         </pnp:Templates>
