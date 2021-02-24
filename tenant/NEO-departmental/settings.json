@@ -8,7 +8,7 @@
         "SPPNP"
     ],
     "packageFile": "template.pnp",
-    "abstract": "Departmental onboarding",
+    "abstract": "New employee departmental onboarding site",
     "sortOrder": 100,
     "promoted": "false",
     "sortOrderPromoted": 0,
@@ -33,7 +33,7 @@
         ],
         "displayInfo": {
             "pageTemplateId": "system/pageTemplates/template-1",
-            "siteTitle": "Departmental onboarding",
+            "siteTitle": "New employee departmental onboarding site",
             "siteDescriptor": "Connect new employees with the department or region they work for",
             "descriptionParagraphs": [
                 "Set new hires up for success by connecting them to teams within their division or region. Share departmental announcements and news, welcome new hires, and build community and culture among workgroups by customizing the Department onboarding site to fit the needs of your organization.",

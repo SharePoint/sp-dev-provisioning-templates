@@ -8,7 +8,7 @@
       "SPPNP"
     ],
     "packageFile": "template.pnp",
-    "abstract": "Corporate onboarding site.",
+    "abstract": "New employee corporate onboarding site",
     "sortOrder": 100,
     "promoted": "false",
     "sortOrderPromoted": 0,
@@ -33,7 +33,7 @@
       ],
       "displayInfo": {
           "pageTemplateId": "system/pageTemplates/template-1",
-          "siteTitle": "Corporate onboarding site",
+          "siteTitle": "New employee corporate onboarding site",
           "siteDescriptor": "Engage and inform new employees",
           "descriptionParagraphs": [
               "Streamline and refine your new employee onboarding process by creating a new employee landing experience that connects new hires to resources, people, culture, and access a new hire onboarding checklist. The Corporate site comes with pre-populated content and pages that can be customized to align with your organization new employee onboarding processes.",
