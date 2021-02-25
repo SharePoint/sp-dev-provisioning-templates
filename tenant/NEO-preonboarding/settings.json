@@ -8,7 +8,7 @@
         "SPPNP"
     ],
     "packageFile": "template.pnp",
-    "abstract": "Pre-onboarding.",
+    "abstract": "New employee pre-onboarding site",
     "sortOrder": 100,
     "promoted": "false",
     "sortOrderPromoted": 0,
@@ -33,7 +33,7 @@
         ],
         "displayInfo": {
             "pageTemplateId": "system/pageTemplates/template-1",
-            "siteTitle": "Pre-onboarding",
+            "siteTitle": "New employee pre-onboarding site",
             "siteDescriptor": "Welcome new hires before their first day",
             "descriptionParagraphs": [
                 "Use the Pre-onboarding site to welcome new employees as soon as the job offer has been accepted. Connect and inform new hires on what to expect on their first day of work by customizing pre-populated site content and pages to fit the needs of your organization.",

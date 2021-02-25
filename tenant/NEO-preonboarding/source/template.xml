@@ -8,6 +8,40 @@
   </pnp:Preferences>
   <pnp:Templates ID="CONTAINER-DUMMY-b977f7ff-0ad9-4177-817f-6c8ba7aa40ce">
     <pnp:ProvisioningTemplate ID="TEMPLATE-81dd6aa713304dd8b2af3e9ce0016787" Version="0" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{hosturl}{site}/SiteAssets/__sitelogo__logo_mark8.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" SearchScope="DefaultScope" />
+      <pnp:Theme Name="">
+          {
+          "neutralPrimaryAlt":  "#2f2f2f",
+          "themeLighterAlt":  "#f4f5f8",
+          "black":  "#000000",
+          "themeTertiary":  "#727c97",
+          "primaryBackground":  "#ffffff",
+          "neutralQuaternaryAlt":  "#e1dfdd",
+          "accent":  "#17717A",
+          "themePrimary":  "#303952",
+          "neutralSecondary":  "#373737",
+          "themeLighter":  "#d4d8e3",
+          "themeDark":  "#252b3e",
+          "neutralPrimary":  "#000000",
+          "neutralLighterAlt":  "#faf9f8",
+          "neutralLighter":  "#f3f2f1",
+          "neutralDark":  "#151515",
+          "neutralQuaternary":  "#d0d0d0",
+          "neutralLight":  "#edebe9",
+          "primaryText":  "#000000",
+          "themeDarker":  "#1b202e",
+          "neutralTertiaryAlt":  "#c8c6c4",
+          "themeDarkAlt":  "#2b3349",
+          "white":  "#ffffff",
+          "bodyBackground":  "#ffffff",
+          "themeSecondary":  "#414b66",
+          "bodyText":  "#000000",
+          "disabledBackground":  "#f4f4f4",
+          "neutralTertiary":  "#595959",
+          "themeLight":  "#b2b9cb",
+          "disabledText":  "#c8c8c8"
+          }
+      </pnp:Theme>
       <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
         <pnp:GlobalNavigation NavigationType="Structural">
           <pnp:StructuralNavigation RemoveExistingNodes="true" />
@@ -684,7 +718,8 @@
   </pnp:Templates>
   <pnp:Sequence ID="TENANTSEQUENCE">
     <pnp:SiteCollections>
-      <pnp:SiteCollection d4p1:type="pnp:CommunicationSite" Title="{parameter:SiteTitle}" Description="Start onboarding to the company even before you officially join. Get ready for your first day, watch the welcome video from our CEO and connect with future colleagues." IsHubSite="false" Url="{parameter:SiteUrl}" Owner="{CurrentUserLoginName}" Language="1033" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+      <pnp:SiteCollection d4p1:type="pnp:CommunicationSite" Title="{parameter:SiteTitle}" Description="Start onboarding to the company even before you officially join. Get ready for your first day, watch the welcome video from our CEO and connect with future colleagues." IsHubSite="false" Url="{parameter:SiteUrl}" Owner="{CurrentUserLoginName}" Language="1033"
+        xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <pnp:Templates>
           <pnp:ProvisioningTemplateReference ID="TEMPLATE-81dd6aa713304dd8b2af3e9ce0016787" />
         </pnp:Templates>
