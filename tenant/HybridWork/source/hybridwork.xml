@@ -20,37 +20,37 @@
         </pnp:FooterLinks>
       </pnp:Footer>    
       <pnp:Theme Name="">
-        {
-        "neutralPrimaryAlt":  "#2f2f2f",
-        "themeLighterAlt":  "#f4f5f8",
-        "black":  "#000000",
-        "themeTertiary":  "#727c97",
-        "primaryBackground":  "#ffffff",
-        "neutralQuaternaryAlt":  "#e1dfdd",
-        "accent":  "#17717A",
-        "themePrimary":  "#303952",
-        "neutralSecondary":  "#373737",
-        "themeLighter":  "#d4d8e3",
-        "themeDark":  "#252b3e",
-        "neutralPrimary":  "#000000",
-        "neutralLighterAlt":  "#faf9f8",
-        "neutralLighter":  "#f3f2f1",
-        "neutralDark":  "#151515",
-        "neutralQuaternary":  "#d0d0d0",
-        "neutralLight":  "#edebe9",
-        "primaryText":  "#000000",
-        "themeDarker":  "#1b202e",
-        "neutralTertiaryAlt":  "#c8c6c4",
-        "themeDarkAlt":  "#2b3349",
-        "white":  "#ffffff",
-        "bodyBackground":  "#ffffff",
-        "themeSecondary":  "#414b66",
-        "bodyText":  "#000000",
-        "disabledBackground":  "#f4f4f4",
-        "neutralTertiary":  "#595959",
-        "themeLight":  "#b2b9cb",
-        "disabledText":  "#c8c8c8"
-        }
+      {
+          "neutralPrimaryAlt": "#2f2f2f",
+          "themeLighterAlt": "#f3f3f8",
+          "black": "#000000",
+          "themeTertiary": "#6d6d98",
+          "primaryBackground": "#FFFFFF",
+          "neutralQuaternaryAlt": "#d3d3d3",
+          "accent": "#D4145A",
+          "themePrimary": "#2c2c54",
+          "neutralSecondary": "#373737",
+          "themeLighter": "#d2d2e4",
+          "themeDark": "#212140",
+          "neutralPrimary": "#000000",
+          "neutralLighterAlt": "#f1f1f1",
+          "neutralLighter": "#ededed",
+          "neutralDark": "#151515",
+          "neutralQuaternary": "#cacaca",
+          "neutralLight": "#e3e3e3",
+          "primaryText": "#000000",
+          "themeDarker": "#D4145A",
+          "neutralTertiaryAlt": "#c2c2c2",
+          "themeDarkAlt": "#27274c",
+          "white": "#ffffff",
+          "bodyBackground": "#FFFFFF",
+          "themeSecondary": "#3c3c69",
+          "bodyText": "#000000",
+          "disabledBackground": "# f4f4f4",
+          "neutralTertiary": "#595959",
+          "themeLight": "#aeaecc",
+          "disabledText": "#c8c8c8"
+      }
       </pnp:Theme>      
       <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
         <pnp:GlobalNavigation NavigationType="Structural">
