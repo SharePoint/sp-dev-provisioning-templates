@@ -45,12 +45,12 @@
               {
                   "type": "fullpage",
                   "altText": "Hybrid work site",
-                  "url": "./layout-hybridwork-main.jpg"
+                  "url": "./hybridwork-lookbook-thumb-compressed.jpg"
               },
               {
                   "type": "cardpreview",
                   "altText": "Hybrid work site",
-                  "url": "./card-hybridwork-main.jpg"
+                  "url": "./hybridwork-lookbook-thumb-compressed.jpg"
               }
           ],
           "detailItemCategories": [
