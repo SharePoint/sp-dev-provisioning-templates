@@ -63,6 +63,7 @@
         {"id": "m365edu838705.onmicrosoft.com", "tenantName": "m365edu838705.onmicrosoft.com", "referenceOwner": "EDU Test"},
         {"id": "koenzomers.onmicrosoft.com", "tenantName": "koenzomers.onmicrosoft.com", "referenceOwner": "Koen Zomers"},
         {"id": "M365x781559.onmicrosoft.com", "tenantName": "M365x781559.onmicrosoft.com", "referenceOwner": "Matt Wolodarsky"},
-        {"id": "M365x021028.onmicrosoft.com", "tenantName": "M365x021028.onmicrosoft.com", "referenceOwner": "Mike Hollinshead"}
+        {"id": "M365x021028.onmicrosoft.com", "tenantName": "M365x021028.onmicrosoft.com", "referenceOwner": "Mike Hollinshead"},
+        {"id": "M365x059021.onmicrosoft.com", "tenantName": "M365x059021.onmicrosoft.com", "referenceOwner": "Katie Swanson"}
     ]
 }
