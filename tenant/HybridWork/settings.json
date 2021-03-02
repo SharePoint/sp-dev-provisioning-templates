@@ -45,12 +45,12 @@
               {
                   "type": "fullpage",
                   "altText": "Hybrid work site",
-                  "url": "./layout-hybridwork-main.jpg"
+                  "url": "./hybridwork-lookbook-thumb-compressed.jpg"
               },
               {
                   "type": "cardpreview",
                   "altText": "Hybrid work site",
-                  "url": "./card-hybridwork-main.jpg"
+                  "url": "./hybridwork-lookbook-thumb-compressed.jpg"
               }
           ],
           "detailItemCategories": [
@@ -175,6 +175,15 @@
                       },
                       {
                           "name": "Provisioning and customization guidance"
+                      }
+                  ]
+              },
+              {
+                  "name": "Resources",
+                  "items": [
+                      {
+                          "name": "Workplace Transformation site content",
+                          "url": "https://github.com/SharePoint/sp-dev-provisioning-templates/raw/master/tenant/HybridWork/WorkplaceTransformation-sitecontents.pdf"
                       }
                   ]
               }
