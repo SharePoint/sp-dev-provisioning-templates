@@ -12,7 +12,7 @@
     "sortOrder": 100,
     "promoted": "false",
     "sortOrderPromoted": 0,
-    "preview": "true",
+    "preview": "false",
     "forceNewSite": "true",
     "forceExistingSite": "false",
     "matchingSiteBaseTemplateId": "SITEPAGEPUBLISHING#0",
@@ -38,8 +38,8 @@
             "descriptionParagraphs": [
                 "Use the Pre-onboarding site to welcome new employees as soon as the job offer has been accepted. Connect and inform new hires on what to expect on their first day of work by customizing pre-populated site content and pages to fit the needs of your organization.",
                 "Consider using the Corporate onboarding site template and the Departmental site template to create an end-to-end new hire experience.",
-                "<a href='#'>Learn more about the Corporate onboarding site</a>.",
-                "<a href='#'>Learn more about the Departmental onboarding site</a>."
+                "<a href='https://docs.microsoft.com/en-us/sharepoint/provision-neo-hub'>Learn more about the Corporate onboarding site</a>.",
+                "<a href='https://docs.microsoft.com/en-us/sharepoint/provision-neo-hub'>Learn more about the Departmental onboarding site</a>."
             ],
             "provisionMessages": {
                 "provisionPageTitle": "Great choice!",
