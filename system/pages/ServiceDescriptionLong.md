@@ -71,7 +71,7 @@ The Service has been designed by the SharePoint engineering and built by the Sha
 
 **Is the service code open-source?**
 
-Code used by the service will be released as an open-source sample later 2019. Provisioning uses the PnP Provisioning Engine, which is already open-sourced and available using code or PowerShell.
+Code used by the service is open-source and available in [this GitHub repository](https://github.com/SharePoint/sp-provisioning-service/). Provisioning uses the PnP Provisioning Engine, which is open-sourced too and available using code or PowerShell. The source code of the PnP Provisioning Service is available [here](https://github.com/pnp/PnP-Sites-Core).
 
 **I identified an issue on the service - where to report it?**
 
