@@ -1,0 +1,1060 @@
+﻿<?xml version="1.0"?>
+<pnp:Provisioning Author="Microsoft" 
+                  Generator="SharePoint PnP" 
+                  ImagePreviewUrl="" 
+                  DisplayName="SharePoint Syntex Content Center" 
+                  Description="SharePoint Syntex Content Center" 
+                  xmlns:pnp="http://schemas.dev.office.com/PnP/2021/03/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.7.64.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteUrl">/sites/SyntexContentCenter</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Templates ID="CONTAINER-DUMMY-cca63457-adcc-4ed9-b369-51b33b5f1905">
+    <pnp:ProvisioningTemplate ID="CONTENTCENTER" Version="0" BaseSiteTemplate="CONTENTCTR#0" Scope="RootSite">
+      <!-- Add template here -->
+
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/SiteAssets/__sitelogo__Asset 1.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" />
+      <pnp:Theme Name="">
+          {
+              "neutralPrimaryAlt": "#2f2f2f",
+              "themeLighterAlt": "#f2f9fa",
+              "black": "#000000",
+              "themeTertiary": "#5aa8af",
+              "primaryBackground": "#ffffff",
+              "neutralQuaternaryAlt": "#e1dfdd",
+              "accent": "#535C68",
+              "themePrimary": "#17717a",
+              "neutralSecondary": "#373737",
+              "themeLighter": "#cbe7ea",
+              "themeDark": "#12575d",
+              "neutralPrimary": "#000000",
+              "neutralLighterAlt": "#faf9f8",
+              "neutralLighter": "#f3f2f1",
+              "neutralDark": "#151515",
+              "neutralQuaternary": "#d0d0d0",
+              "neutralLight": "#edebe9",
+              "primaryText": "#000000",
+              "themeDarker": "#0d4045",
+              "neutralTertiaryAlt": "#c8c6c4",
+              "themeDarkAlt": "#15676e",
+              "white": "#ffffff",
+              "bodyBackground": "#ffffff",
+              "themeSecondary": "#28828a",
+              "bodyText": "#000000",
+              "disabledBackground": "# f4f4f4",
+              "neutralTertiary": "#595959",
+              "themeLight": "#a3d3d7",
+              "disabledText": "#c8c8c8"
+          }
+      </pnp:Theme>
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Home" Url="{site}/SitePages/Home.aspx" />
+            <pnp:NavigationNode Title="Libraries" Url="{site}/_layouts/15/viewlsts.aspx?BaseType=1" IsExternal="true" />
+            <pnp:NavigationNode Title="Pages" Url="{site}/SitePages/Forms/ByAuthor.aspx" />
+            <pnp:NavigationNode Title="Models" Url="{site}/Model/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Training files" Url="{site}/Sample/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Files" Url="{site}/Prime/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Additional resources" Url="http://linkless.header/" IsExternal="true">
+              <pnp:NavigationNode Title="Licensing and set up" Url="https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/syntex-licensing" IsExternal="true" />
+              <pnp:NavigationNode Title="SharePoint Syntex learning path" Url="https://docs.microsoft.com/en-us/learn/paths/syntex-get-started/" IsExternal="true" />
+              <pnp:NavigationNode Title="SharePoint Syntex blog" Url="https://aka.ms/SharePointSyntex/blog" IsExternal="true" />
+              <pnp:NavigationNode Title="Import a sample document understanding model" Url="https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model" IsExternal="true" />
+              <pnp:NavigationNode Title="Learn about model usage analytics" Url="https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/model-usage-analytics" IsExternal="true" />
+              <pnp:NavigationNode Title="Run a trial of SharePoint Syntex" Url="https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/trial-syntex" IsExternal="true" />
+              <pnp:NavigationNode Title="Leveraging term store taxonomy" Url="https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/leverage-term-store-taxonomy" IsExternal="true" />
+              <pnp:NavigationNode Title="SharePoint Syntex roadmap" Url="https://www.microsoft.com/en-us/microsoft-365/roadmap?rtc=1&amp;filters=SharePoint%20Syntex" IsExternal="true" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Site contents" Url="{site}/_layouts/15/viewlsts.aspx" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Model usage" Description="" DocumentTemplate="" TemplateType="1331" Url="ModelUsage" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="d0262d7f-791d-42b5-a90a-a7bea68231fb" ContentTypesEnabled="true" DefaultDisplayFormUrl="{site}/ModelUsage/DispForm.aspx" DefaultEditFormUrl="{site}/ModelUsage/EditForm.aspx" DefaultNewFormUrl="{site}/ModelUsage/NewForm.aspx" ImageUrl="/_layouts/15/images/itrl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{04847A09-467B-4DA7-A1AA-7108B0853886}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/ModelUsage/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="ModelUsageModelName" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="ModelUsageTargetListUrl" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="ModelUsageModelName" />
+                <FieldRef Name="ModelUsageClassifiedItemCount" />
+                <FieldRef Name="ModelUsageNotProcessedItemCount" />
+                <FieldRef Name="ModelUsageAverageConfidenceScore" />
+                <FieldRef Name="ModelUsageTargetListUrl" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{4d05eab8-962d-4830-81ef-1cfaae832c86}" Name="ModelUsageModeItemID" DisplayName="Model ID" Type="Lookup" List="{listid:Models}" ShowField="ID" RelationshipDeleteBehavior="Restrict" Required="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" EnforceUniqueValues="FALSE" LinkToItem="TRUE" Indexed="TRUE" ColName="int1" RowOrdinal="0" StaticName="ModelUsageModeItemID" SourceID="{{listid:Model usage}}" />
+            <Field ID="{8b7a3e10-591f-403d-830a-2eba4806e8e4}" Name="ModelUsageModelVersion" DisplayName="Model Version" Type="Text" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="FALSE" LinkToItem="TRUE" ColName="nvarchar4" StaticName="ModelUsageModelVersion" SourceID="{{listid:Model usage}}" />
+            <Field ID="{2693a299-9b41-4eb6-a9b9-dd6861494bd2}" Name="ModelUsageTargetWebID" DisplayName="Target Web ID" Type="Guid" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="FALSE" EnforceUniqueValues="FALSE" LinkToItem="TRUE" Indexed="TRUE" ColName="uniqueidentifier1" StaticName="ModelUsageTargetWebID" SourceID="{{listid:Model usage}}" />
+            <Field ID="{81321db4-5b91-4b92-8c4d-8792eab58598}" Name="ModelUsageTargetSiteID" DisplayName="Target Site ID" Type="Guid" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="FALSE" EnforceUniqueValues="FALSE" LinkToItem="TRUE" ColName="uniqueidentifier2" StaticName="ModelUsageTargetSiteID" SourceID="{{listid:Model usage}}" />
+            <Field ID="{1176d1e4-4661-4da1-993f-16c2047872b6}" Name="ModelUsageTargetListID" DisplayName="Target List ID" Type="Guid" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="FALSE" EnforceUniqueValues="FALSE" LinkToItem="TRUE" ColName="uniqueidentifier3" StaticName="ModelUsageTargetListID" SourceID="{{listid:Model usage}}" />
+            <Field ID="{4a994f6e-0e06-487d-93f7-1ebc5d25c1fa}" Name="ModelUsageModelName" DisplayName="Model Name" Type="Text" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="FALSE" EnforceUniqueValues="FALSE" LinkToItem="TRUE" ColName="nvarchar5" StaticName="ModelUsageModelName" SourceID="{{listid:Model usage}}" />
+            <Field ID="{8da4bc0b-ed47-4e15-b1bf-b2a17448d1e4}" Name="ModelUsageClassifiedItemCount" DisplayName="Classified Item Count" Type="Integer" ShowInNewForm="FALSE" ShowInEditForm="FALSE" LinkToItem="TRUE" ColName="int2" StaticName="ModelUsageClassifiedItemCount" SourceID="{{listid:Model usage}}" />
+            <Field ID="{d23689e6-11cc-4ef8-bee8-4b82938ca03d}" Name="ModelUsageNotProcessedItemCount" DisplayName="Not Processed Item Count" Type="Integer" ShowInNewForm="FALSE" ShowInEditForm="FALSE" LinkToItem="TRUE" ColName="int3" StaticName="ModelUsageNotProcessedItemCount" SourceID="{{listid:Model usage}}" />
+            <Field ID="{f5474fb8-1680-4916-81c0-1bf73c3a6a10}" Name="ModelUsageAverageConfidenceScore" DisplayName="Average Confidence Score" Type="Number" Percentage="TRUE" Decimals="4" ShowInNewForm="FALSE" ShowInEditForm="FALSE" LinkToItem="TRUE" ColName="float1" StaticName="ModelUsageAverageConfidenceScore" SourceID="{{listid:Model usage}}" />
+            <Field ID="{65e659c3-4924-4552-8f0b-9a0946e358f3}" Name="ModelUsageTargetListUrl" DisplayName="Target List Url" Type="Note" Required="TRUE" ShowInNewForm="TRUE" ShowInEditForm="FALSE" EnforceUniqueValues="FALSE" LinkToItem="TRUE" ColName="ntext2" StaticName="ModelUsageTargetListUrl" SourceID="{{listid:Model usage}}" />
+            <Field ID="{63a03c4b-4827-44e6-a25f-fbf6b404a187}" Name="ModelUsagePublicationType" DisplayName="Publication Type" Type="Integer" ShowInNewForm="FALSE" ShowInEditForm="FALSE" EnforceUniqueValues="FALSE" LinkToItem="TRUE" ColName="int4" StaticName="ModelUsagePublicationType" SourceID="{{listid:Model usage}}" />
+            <Field ID="{e7d9cfcf-d9bd-4e7b-b17e-09b87feec941}" Name="ModelUsageModelType" DisplayName="Model Type" Type="Integer" ShowInNewForm="TRUE" ShowInEditForm="FALSE" ColName="int5" StaticName="ModelUsageModelType" SourceID="{{listid:Model usage}}" />
+          </pnp:Fields>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title" />
+              <pnp:DataValue FieldName="ModelUsageModelName">Operations Guides.classifier</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageClassifiedItemCount">24</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageNotProcessedItemCount">1</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageAverageConfidenceScore">0.9925</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageTargetListUrl">https://contoso.sharepoint.com/sites/processingcenter/operationsguides</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title" />
+              <pnp:DataValue FieldName="ModelUsageModelName">Manufacturing Invoices.classifier</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageClassifiedItemCount">189</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageNotProcessedItemCount">5</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageAverageConfidenceScore">0.9875</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageTargetListUrl">https://contoso.sharepoint.com/sites/processingcenter/manufacturing</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title" />
+              <pnp:DataValue FieldName="ModelUsageModelName">Services Contracts.classifier</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageClassifiedItemCount">23</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageNotProcessedItemCount">1</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageAverageConfidenceScore">0.9975</pnp:DataValue>
+              <pnp:DataValue FieldName="ModelUsageTargetListUrl">https://contoso.sharepoint.com/sites/contractcenter/vendorcontracts</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="1" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{6577EB85-2FBB-4CD2-8AE4-26A11D89B05C}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/SiteAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{d1cff744-ba61-4189-94d6-97d0a9eb4f6a}" Type="Text" DisplayName="Tags" Name="MediaServiceAutoTags" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceAutoTags" ColName="nvarchar13" RowOrdinal="0" />
+            <Field ID="{67aff0cf-8e19-43f2-9987-be89075e1467}" Type="Note" DisplayName="Extracted Text" Name="MediaServiceOCR" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceOCR" ColName="ntext5" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+          <pnp:Folders>
+            <pnp:Folder Name="SitePages" ContentTypeID="0x0120">
+              <pnp:Folder Name="Home" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Home" />
+                  <pnp:Property Key="Order" Value="200" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Syntex-in-6-simple-steps" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Syntex-in-6-simple-steps" />
+                  <pnp:Property Key="Order" Value="1100" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Learn-about-model-types" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Learn-about-model-types" />
+                  <pnp:Property Key="Order" Value="1900" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Streamline-everyday-processes-and-tasks" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Streamline-everyday-processes-and-tasks" />
+                  <pnp:Property Key="Order" Value="2100" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="SitePages" />
+                <pnp:Property Key="Order" Value="100" />
+              </pnp:Properties>
+            </pnp:Folder>
+          </pnp:Folders>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://northcentralus0.pushnp.svc.ms/notifications?token=df9fd493-45a2-4ccf-ba05-5b0a97c13b2a" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/SitePages/Home/3656803952Group 12191.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3656803952Group 12191.png" />
+            <pnp:Property Key="Order" Value="300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/3501272435Group 12163.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3501272435Group 12163.png" />
+            <pnp:Property Key="Order" Value="400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/2320958437Group 12165.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2320958437Group 12165.png" />
+            <pnp:Property Key="Order" Value="500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/2280826649Group 12165.svg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2280826649Group 12165.svg" />
+            <pnp:Property Key="Order" Value="600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/4112422272Group 12165.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="4112422272Group 12165.png" />
+            <pnp:Property Key="Order" Value="700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/2190449321Group 631896.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2190449321Group 631896.png" />
+            <pnp:Property Key="Order" Value="800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/3195355610Group 631896.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3195355610Group 631896.png" />
+            <pnp:Property Key="Order" Value="900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/3791861238Group 631897.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3791861238Group 631897.png" />
+            <pnp:Property Key="Order" Value="1000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/37650642181042703872.jpg" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="37650642181042703872.jpg" />
+            <pnp:Property Key="Order" Value="1200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/3740807277-Group-631897.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3740807277-Group-631897.png" />
+            <pnp:Property Key="Order" Value="1300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/2345948231-Group-631897.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2345948231-Group-631897.png" />
+            <pnp:Property Key="Order" Value="1400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/963385492-Group-631897.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="963385492-Group-631897.png" />
+            <pnp:Property Key="Order" Value="1500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/3167911437-Group-631897.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3167911437-Group-631897.png" />
+            <pnp:Property Key="Order" Value="1600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/944098738-Group-631897.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="944098738-Group-631897.png" />
+            <pnp:Property Key="Order" Value="1700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/772401792-Group-631897.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="772401792-Group-631897.png" />
+            <pnp:Property Key="Order" Value="1800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/2673736575-lookbook-model-types-x400.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2673736575-lookbook-model-types-x400.png" />
+            <pnp:Property Key="Order" Value="2000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/3640791882-Screen-Shot-2021-09-23-at-1.43.42-PM.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3640791882-Screen-Shot-2021-09-23-at-1.43.42-PM.png" />
+            <pnp:Property Key="Order" Value="2200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/2540279459-Group-631903.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2540279459-Group-631903.png" />
+            <pnp:Property Key="Order" Value="2300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/3054880970Group 631903.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3054880970Group 631903.png" />
+            <pnp:Property Key="Order" Value="2400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/3753132100-Group-3467049.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3753132100-Group-3467049.png" />
+            <pnp:Property Key="Order" Value="2500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/453689609-Group-3467062.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="453689609-Group-3467062.png" />
+            <pnp:Property Key="Order" Value="2600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/774301915-Group-3467063.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="774301915-Group-3467063.png" />
+            <pnp:Property Key="Order" Value="2700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/2760401404-image-36.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2760401404-image-36.png" />
+            <pnp:Property Key="Order" Value="2800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/2813616501-new.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2813616501-new.png" />
+            <pnp:Property Key="Order" Value="2900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/2241989242-newnew.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2241989242-newnew.png" />
+            <pnp:Property Key="Order" Value="3000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/1361505346-Group-3467063.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="1361505346-Group-3467063.png" />
+            <pnp:Property Key="Order" Value="3100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/1864842146-MicrosoftTeams-image--4-.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="1864842146-MicrosoftTeams-image--4-.png" />
+            <pnp:Property Key="Order" Value="3200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/1992111033-MicrosoftTeams-image--5-.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="1992111033-MicrosoftTeams-image--5-.png" />
+            <pnp:Property Key="Order" Value="3300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/29330367-Group-3467057.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="29330367-Group-3467057.png" />
+            <pnp:Property Key="Order" Value="3400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/1582569402-Group-3467057.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="1582569402-Group-3467057.png" />
+            <pnp:Property Key="Order" Value="3500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/1075544405-Group-3467060.svg" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="1075544405-Group-3467060.svg" />
+            <pnp:Property Key="Order" Value="3600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/2570176316-Group-3467060.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2570176316-Group-3467060.png" />
+            <pnp:Property Key="Order" Value="3700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/2890040151-Group-3467060.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2890040151-Group-3467060.png" />
+            <pnp:Property Key="Order" Value="3800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/3123856842-Group-3467060.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3123856842-Group-3467060.png" />
+            <pnp:Property Key="Order" Value="3900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/130116461-Group-3467060.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="130116461-Group-3467060.png" />
+            <pnp:Property Key="Order" Value="4000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/3532916296-Group-3467056.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3532916296-Group-3467056.png" />
+            <pnp:Property Key="Order" Value="4100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/910915891-Group-3467062.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="910915891-Group-3467062.png" />
+            <pnp:Property Key="Order" Value="4200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/2711663070-Group-3467062.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="2711663070-Group-3467062.png" />
+            <pnp:Property Key="Order" Value="4300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/3862518044-Group-3467064.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3862518044-Group-3467064.png" />
+            <pnp:Property Key="Order" Value="4400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/4010892209-Group-3467066.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="4010892209-Group-3467066.png" />
+            <pnp:Property Key="Order" Value="4500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/1277592163-Group-3467068.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="1277592163-Group-3467068.png" />
+            <pnp:Property Key="Order" Value="4600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/3878540199-Group-3467068.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3878540199-Group-3467068.png" />
+            <pnp:Property Key="Order" Value="4700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/4205381681-Group-3467068.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="4205381681-Group-3467068.png" />
+            <pnp:Property Key="Order" Value="4800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/3589446107-Group-3467068.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="3589446107-Group-3467068.png" />
+            <pnp:Property Key="Order" Value="4900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/125850436-Group-3467069.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="125850436-Group-3467069.png" />
+            <pnp:Property Key="Order" Value="5000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Introduction-to-SharePoint-Syntex/511582616.jpg" Folder="SiteAssets/SitePages/Introduction-to-SharePoint-Syntex" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="511582616.jpg" />
+            <pnp:Property Key="Order" Value="5200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__sitelogo__Asset 1.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100C847B406E14D21429940B249B9132CE8" />
+            <pnp:Property Key="FileLeafRef" Value="__sitelogo__Asset 1.png" />
+            <pnp:Property Key="Order" Value="5300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/4112422272Group 12165.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/1361505346-Group-3467063.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Learn-about-model-types/1992111033-MicrosoftTeams-image--5-.png" Folder="SiteAssets/SitePages/Learn-about-model-types" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Syntex-in-6-simple-steps/2241989242-newnew.png" Folder="SiteAssets/SitePages/Syntex-in-6-simple-steps" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/125850436-Group-3467069.png" Folder="SiteAssets/SitePages/Streamline-everyday-processes-and-tasks" Overwrite="true" Level="Published" />
+      </pnp:Files>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" Title="Home" ThumbnailUrl="" PageName="Home.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;id&quot;: &quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;, &quot;instanceId&quot;: &quot;76eec753-2134-46bd-a64c-1d2ef38fb898&quot;, &quot;title&quot;: &quot;Hero&quot;, &quot;description&quot;: &quot;Prominently display up to 5 pieces of content with links, images, pictures, or photos in a highly visual layout.&quot;, &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;isFullWidth&quot;:true,&quot;layoutCategory&quot;:1,&quot;layout&quot;:5,&quot;content&quot;:[{&quot;id&quot;:&quot;be743cd3-ffcc-4586-bbb4-379f6c0575d5&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;8e6bb82b-8dde-4b42-97c4-16ef331de105&quot;,&quot;imageUrl&quot;:&quot;https://{fqdn}/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/8e6bb82b-8dde-4b42-97c4-16ef331de105/driveItem/thumbnails/0/c2560x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;,&quot;widthFactor&quot;:0.5,&quot;minCanvasWidth&quot;:32767},&quot;upperCaseCallToAction&quot;:false,&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;id&quot;:&quot;8bfc8544-5392-4975-8c63-58caec4c32c2&quot;,&quot;resolvedUrl&quot;:&quot;https://{fqdn}{site}/SiteAssets/SitePages/Introduction-to-SharePoint-Syntex/511582616.jpg&quot;,&quot;imageUrl&quot;:&quot;https://{fqdn}/_vti_bin/afdcache.ashx/authitem{site}/SiteAssets/SitePages/Introduction-to-SharePoint-Syntex/511582616.jpg?_oat_=1638926385_db8aa3b8376e90cc09bea46bea3b0796014de86fefd545eeb62074de6d62c648&amp;P1=1638871732&amp;P2=-362945797&amp;P3=1&amp;P4=Cg5WmcDGhXbD2sVcPXcv3YyuF8fa5vyoni2E4knSukNyST2RirOzH6HkB2a35RgufGgDNVHHowRLurF6JTTuLCpCdF1Zueh16%2fE%2bVVciqh31YWZ%2b74oUVOEQ0KYTxiCLx4foB3ys0HQzmDx6NPD5%2fK5Vj4b9emSiroE4eoPvUMcuEXosnZBJaRNHriIQTeoLSwKw5AnV2tQZEQvoTniXXP3w0ShoniX4U49YsRYKARQjc%2fNXG4s%2f%2fFz%2bY25miRCZ1pEGhIe642z4j%2fa8divJnvcKOpz9Bsep9h4gzxdTbkQ2mNBFj2yxqbEXeOY3HBnA%2f2%2f4l0bY9BNq1spSOlysng%3d%3d&amp;width=960&quot;,&quot;widthFactor&quot;:0.5,&quot;minCanvasWidth&quot;:1}},{&quot;id&quot;:&quot;29fb8231-d073-415e-bb14-4ab9e9acf21b&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:5,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:2,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;a8fb8099-0438-4632-b716-27ea426f4033&quot;,&quot;imageUrl&quot;:&quot;https://{fqdn}/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/a8fb8099-0438-4632-b716-27ea426f4033/driveItem/thumbnails/0/c960x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:32767},&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;imageUrl&quot;:&quot;https://media.akamai.odsp.cdn.office.net/northcentralus1-mediap.svc.ms/transform/thumbnail?provider=url&amp;inputFormat=jpg&amp;docid=https%3A%2F%2Fcdn.hubblecontent.osi.office.net%2Fm365content%2Fpublish%2F5f8e6f3d-46c3-481e-a06a-8f2804c0506b%2F769731455.jpg&amp;w=400&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:32767}},{&quot;id&quot;:&quot;41c77d5d-2408-4aea-a64d-d04e58c5e39e&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;4f0f88d8-bafb-4d4b-bca7-addd2af85bd9&quot;,&quot;imageUrl&quot;:&quot;https://{fqdn}/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/4f0f88d8-bafb-4d4b-bca7-addd2af85bd9/driveItem/thumbnails/0/c960x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:32767},&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;imageUrl&quot;:&quot;https://media.akamai.odsp.cdn.office.net/northcentralus1-mediap.svc.ms/transform/thumbnail?provider=url&amp;inputFormat=jpg&amp;docid=https%3A%2F%2Fcdn.hubblecontent.osi.office.net%2Fm365content%2Fpublish%2Ff3b9ab9b-ccfa-4158-9bea-27ba470aed7e%2F812964464.jpg&amp;w=400&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:640}},{&quot;id&quot;:&quot;09c30a9b-f23f-456b-b1c5-ac13c2cf32d4&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;imageUrl&quot;:&quot;https://{fqdn}/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/17a7546c-114f-444d-b7cd-64b29fe23adb/driveItem/thumbnails/0/c960x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;17a7546c-114f-444d-b7cd-64b29fe23adb&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:32767},&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;imageUrl&quot;:&quot;https://media.akamai.odsp.cdn.office.net/northcentralus1-mediap.svc.ms/transform/thumbnail?provider=url&amp;inputFormat=jpg&amp;docid=https%3A%2F%2Fcdn.hubblecontent.osi.office.net%2Fm365content%2Fpublish%2F44ef4a98-729c-4e13-8de9-7fa33c0b2adf%2F117833159.jpg&amp;w=400&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:640}},{&quot;id&quot;:&quot;e476c110-46bb-4b55-9ae4-e8f9c93a6895&quot;,&quot;type&quot;:&quot;Web Page&quot;,&quot;color&quot;:5,&quot;description&quot;:&quot;&quot;,&quot;showDescription&quot;:false,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:2,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:true,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;id&quot;:&quot;b142b8ae-cb33-4b22-bf3a-1bd73dde2d48&quot;,&quot;imageUrl&quot;:&quot;https://{fqdn}/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/b142b8ae-cb33-4b22-bf3a-1bd73dde2d48/driveItem/thumbnails/0/c960x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;,&quot;widthFactor&quot;:0.25,&quot;minCanvasWidth&quot;:32767}}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Get started with SharePoint Syntex&quot;,&quot;content[1].title&quot;:&quot;Streamline everyday processes and tasks&quot;,&quot;content[2].title&quot;:&quot;Learn about model types&quot;,&quot;content[3].title&quot;:&quot;SharePoint Syntex in 6 simple steps&quot;,&quot;content[4].title&quot;:&quot;Manage compliance &quot;,&quot;content[0].callToActionText&quot;:&quot;Start here&quot;,&quot;content[1].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[2].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[3].callToActionText&quot;:&quot;Learn more&quot;,&quot;content[4].callToActionText&quot;:&quot;Learn more&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/Introduction-to-SharePoint-Syntex/511582616.jpg&quot;,&quot;content[1].image.url&quot;:&quot;https://cdn.hubblecontent.osi.office.net/m365content/publish/5f8e6f3d-46c3-481e-a06a-8f2804c0506b/769731455.jpg&quot;,&quot;content[2].image.url&quot;:&quot;https://cdn.hubblecontent.osi.office.net/m365content/publish/f3b9ab9b-ccfa-4158-9bea-27ba470aed7e/812964464.jpg&quot;,&quot;content[3].image.url&quot;:&quot;https://cdn.hubblecontent.osi.office.net/m365content/publish/44ef4a98-729c-4e13-8de9-7fa33c0b2adf/117833159.jpg&quot;,&quot;content[0].previewImage.url&quot;:&quot;https://{fqdn}/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/8e6bb82b-8dde-4b42-97c4-16ef331de105/driveItem/thumbnails/0/c2560x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;,&quot;content[1].previewImage.url&quot;:&quot;/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/a8fb8099-0438-4632-b716-27ea426f4033/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;,&quot;content[2].previewImage.url&quot;:&quot;/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/4f0f88d8-bafb-4d4b-bca7-addd2af85bd9/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;,&quot;content[3].previewImage.url&quot;:&quot;/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/17a7546c-114f-444d-b7cd-64b29fe23adb/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;,&quot;content[4].previewImage.url&quot;:&quot;/_api/v2.1/sites/{fqdn},{sitecollectionid},{siteid}/lists/{listid:Site Pages}/items/b142b8ae-cb33-4b22-bf3a-1bd73dde2d48/driveItem/thumbnails/0/c400x99999/content?preferNoRedirect=true&amp;prefer=extendCacheMaxAge&amp;clientType=modernWebPart&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}/SitePages/Introduction-to-SharePoint-Syntex.aspx&quot;,&quot;content[1].link&quot;:&quot;{site}/SitePages/Streamline-everyday-processes-and-tasks.aspx&quot;,&quot;content[2].link&quot;:&quot;{site}/SitePages/Learn-about-model-types.aspx&quot;,&quot;content[3].link&quot;:&quot;{site}/SitePages/Syntex-in-6-simple-steps.aspx&quot;,&quot;content[4].link&quot;:&quot;{site}/SitePages/Manage-compliance-risks.aspx&quot;,&quot;content[0].callToActionLink&quot;:&quot;{site}/SitePages/Introduction-to-SharePoint-Syntex.aspx&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;content[0].image.siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;content[0].image.webId&quot;:&quot;{siteid}&quot;,&quot;content[0].image.listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;content[0].image.id&quot;:&quot;8bfc8544-5392-4975-8c63-58caec4c32c2&quot;,&quot;content[0].image.widthFactor&quot;:0.5,&quot;heroLayoutThreshold&quot;:640,&quot;content[0].image.minCanvasWidth&quot;:1},&quot;content[1].image.url&quot;:{&quot;content[1].image.widthFactor&quot;:0.25,&quot;heroLayoutThreshold&quot;:640,&quot;content[1].image.minCanvasWidth&quot;:32767},&quot;content[2].image.url&quot;:{&quot;content[2].image.widthFactor&quot;:0.25,&quot;heroLayoutThreshold&quot;:640,&quot;content[2].image.minCanvasWidth&quot;:640},&quot;content[3].image.url&quot;:{&quot;content[3].image.widthFactor&quot;:0.25,&quot;heroLayoutThreshold&quot;:640,&quot;content[3].image.minCanvasWidth&quot;:640},&quot;content[0].previewImage.url&quot;:{&quot;content[0].previewImage.siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;content[0].previewImage.webId&quot;:&quot;{siteid}&quot;,&quot;content[0].previewImage.listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;content[0].previewImage.id&quot;:&quot;8e6bb82b-8dde-4b42-97c4-16ef331de105&quot;,&quot;content[0].previewImage.widthFactor&quot;:0.5,&quot;heroLayoutThreshold&quot;:640,&quot;content[0].previewImage.minCanvasWidth&quot;:32767},&quot;content[1].previewImage.url&quot;:{&quot;content[1].previewImage.siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;content[1].previewImage.webId&quot;:&quot;{siteid}&quot;,&quot;content[1].previewImage.listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;content[1].previewImage.id&quot;:&quot;a8fb8099-0438-4632-b716-27ea426f4033&quot;,&quot;content[1].previewImage.widthFactor&quot;:0.25,&quot;heroLayoutThreshold&quot;:640,&quot;content[1].previewImage.minCanvasWidth&quot;:32767},&quot;content[2].previewImage.url&quot;:{&quot;content[2].previewImage.siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;content[2].previewImage.webId&quot;:&quot;{siteid}&quot;,&quot;content[2].previewImage.listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;content[2].previewImage.id&quot;:&quot;4f0f88d8-bafb-4d4b-bca7-addd2af85bd9&quot;,&quot;content[2].previewImage.widthFactor&quot;:0.25,&quot;heroLayoutThreshold&quot;:640,&quot;content[2].previewImage.minCanvasWidth&quot;:32767},&quot;content[3].previewImage.url&quot;:{&quot;content[3].previewImage.siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;content[3].previewImage.webId&quot;:&quot;{siteid}&quot;,&quot;content[3].previewImage.listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;content[3].previewImage.id&quot;:&quot;17a7546c-114f-444d-b7cd-64b29fe23adb&quot;,&quot;content[3].previewImage.widthFactor&quot;:0.25,&quot;heroLayoutThreshold&quot;:640,&quot;content[3].previewImage.minCanvasWidth&quot;:32767},&quot;content[4].previewImage.url&quot;:{&quot;content[4].previewImage.siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;content[4].previewImage.webId&quot;:&quot;{siteid}&quot;,&quot;content[4].previewImage.listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;content[4].previewImage.id&quot;:&quot;b142b8ae-cb33-4b22-bf3a-1bd73dde2d48&quot;,&quot;content[4].previewImage.widthFactor&quot;:0.25,&quot;heroLayoutThreshold&quot;:640,&quot;content[4].previewImage.minCanvasWidth&quot;:32767},&quot;heroLayoutComponentId&quot;:{&quot;heroLayoutThreshold&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;carouselLayoutMaxWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;510f0643-2f68-447b-891b-d10f8c950926&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="TwoColumnRight" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="eee8e325-f4ea-40e5-8602-2e467c9bee67" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Welcome to the SharePoint Syntex sample content center!&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="047cf39b-f3c2-45e6-8b95-e6e489a7d23d" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;Learn how SharePoint Syntex can help your organization best achieve its goals. Imagine working more effectively with your content and the data within it to create stronger business processes.&lt;br&gt;​​​​​​​&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Get an overview of SharePoint Syntex and see what you can do&lt;/li&gt;&lt;li&gt;Learn about different types of content understanding models and their use cases&lt;/li&gt;&lt;li&gt;Review our page about&amp;nbsp;how to get started and take the interactive tour&lt;/li&gt;&lt;/ul&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;fd664237-9e9a-416a-aa5c-8ca8d18a28c9&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;0ef383b4-3b0f-4340-9b10-d0abe9e432eb&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Hero" JsonControlData="{&quot;id&quot;: &quot;c4bd7b2f-7b6e-4599-8485-16504575f590&quot;, &quot;instanceId&quot;: &quot;8684dd6d-c16e-420b-9c76-86ac05af9f5c&quot;, &quot;title&quot;: &quot;Hero&quot;, &quot;description&quot;: &quot;Prominently display up to 5 pieces of content with links, images, pictures, or photos in a highly visual layout.&quot;, &quot;dataVersion&quot;: &quot;1.5&quot;, &quot;properties&quot;: {&quot;heroLayoutThreshold&quot;:640,&quot;carouselLayoutMaxWidth&quot;:639,&quot;isFullWidth&quot;:true,&quot;layoutCategory&quot;:2,&quot;layout&quot;:1,&quot;content&quot;:[{&quot;id&quot;:&quot;d5653aa4-eb6a-4372-8d15-28fc6650c0d8&quot;,&quot;type&quot;:&quot;UrlLink&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;See how to build document understanding models in the models library. When you're done with the tour, you can go to the models library and enable a pretrained sample model to see in more detail how all these pieces work together.&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:3,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:true,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:true,&quot;featureText&quot;:&quot;Demo&quot;,&quot;showFeatureText&quot;:true,&quot;previewImage&quot;:{&quot;zoomRatio&quot;:1,&quot;imageUrl&quot;:&quot;&quot;,&quot;minCanvasWidth&quot;:32767},&quot;image&quot;:{&quot;zoomRatio&quot;:1,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;id&quot;:&quot;{A054914E-7410-4EAE-947A-EB4D0ED18250}&quot;,&quot;imageUrl&quot;:&quot;https://{fqdn}/_vti_bin/afdcache.ashx/authitem{site}/SiteAssets/SitePages/Home/4112422272Group%2012165.png?_oat_=1638946509_1b248c2626b4b089148f8e4095a9796c506d9f40590bdf3252e2d2ecb699e74e&amp;P1=1638870544&amp;P2=-362945797&amp;P3=1&amp;P4=Z1vobJ0UKS0PhVJGYm6r2WgeJ%2fZ4BHUGArmv3XKbVU33y5JarIqYLdlz7wg4ii817N48lDSEoP3VzH8brwzNCZHGXBwu0u4fc73P1a8tUHnFFeqp4U8kNOzdHFvdDGqNT%2fwUxdFBOdGAO9A3I93%2fI%2fkcfZ0d7RhFH8AUrkRpO7uteNZ9TkZ6h%2fvdtCYlQSpMXzLtsw4Obg9zHqiw6TsxaDgtSgGu75BIs7sut7uxKtZMC7hEUBozQSTSy6IC%2f2PAlo0Q0vjecj5o%2bXfyeEwhUXU6hmSA%2bT8LzO64QsxmDbiTMc7ElIyU9NSU5nbCEJpkFPdS%2bFVvg1PJ3LRlSoQZ1g%3d%3d&amp;width=960&quot;,&quot;widthFactor&quot;:0.58,&quot;minCanvasWidth&quot;:1},&quot;upperCaseCallToAction&quot;:false},{&quot;id&quot;:&quot;c765cdab-73e8-4cae-baee-ec97449d1fa2&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;e4ca0255-9a83-4d08-aba8-2ab564ffa1cd&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;0133c918-58c4-4781-9224-8971e3dfdd9d&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false},{&quot;id&quot;:&quot;5bd0c42d-4ddc-455a-b28e-263a87898016&quot;,&quot;type&quot;:&quot;Image&quot;,&quot;color&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;showDescription&quot;:true,&quot;showTitle&quot;:true,&quot;alternateText&quot;:&quot;&quot;,&quot;imageDisplayOption&quot;:0,&quot;isDefaultImage&quot;:false,&quot;showCallToAction&quot;:false,&quot;isDefaultImageLoaded&quot;:false,&quot;isCustomImageLoaded&quot;:false,&quot;showFeatureText&quot;:false}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;content[0].title&quot;:&quot;Take a tour of how to create a document understanding model&quot;,&quot;content[0].callToActionText&quot;:&quot;Demo how to create a model&quot;},&quot;imageSources&quot;:{&quot;content[0].image.url&quot;:&quot;{site}/SiteAssets/SitePages/Home/4112422272Group%2012165.png&quot;,&quot;content[0].previewImage.url&quot;:&quot;{site}/_layouts/15/training.aspx/tour&quot;},&quot;links&quot;:{&quot;content[0].link&quot;:&quot;{site}/_layouts/15/training.aspx/tour&quot;},&quot;customMetadata&quot;:{&quot;content[0].image.url&quot;:{&quot;content[0].image.siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;content[0].image.webId&quot;:&quot;{siteid}&quot;,&quot;content[0].image.listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;content[0].image.id&quot;:&quot;{A054914E-7410-4EAE-947A-EB4D0ED18250}&quot;,&quot;content[0].image.widthFactor&quot;:0.58,&quot;heroLayoutThreshold&quot;:640,&quot;content[0].image.minCanvasWidth&quot;:1},&quot;content[0].previewImage.url&quot;:{&quot;heroLayoutThreshold&quot;:640,&quot;content[0].previewImage.minCanvasWidth&quot;:32767},&quot;heroLayoutComponentId&quot;:{&quot;heroLayoutThreshold&quot;:640},&quot;carouselLayoutComponentId&quot;:{&quot;carouselLayoutMaxWidth&quot;:639}},&quot;componentDependencies&quot;:{&quot;heroLayoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselLayoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c4bd7b2f-7b6e-4599-8485-16504575f590" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;1b908173-4019-45f3-8b1b-4a85d6d68e27&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="8" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;8a2dc97a-e296-4b37-834a-6c601b3c5ff0&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="71548d66-5074-4612-a369-2c649a9b33e7" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 style=&quot;text-align:center;&quot;&gt;Additional resources&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;86a6904c-5ca6-467e-a041-086a072a3c91&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Show a collection of links in a variety of layouts with options for icons, images, and audience targeting.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;education&quot;}},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;work&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:5,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;giftboxopen&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:8,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;nav2dmapview&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;import&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:6,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;admin&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;stackedcolumnchart2&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:7,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;tag&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:1,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0,&quot;title&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Get started with SharePoint Syntex learning path&quot;,&quot;items[1].title&quot;:&quot;Scenarios and use cases&quot;,&quot;items[2].title&quot;:&quot;Run a trial of SharePoint Syntex&quot;,&quot;items[3].title&quot;:&quot;SharePoint Syntex roadmap&quot;,&quot;items[4].title&quot;:&quot;Import a sample document understanding model&quot;,&quot;items[5].title&quot;:&quot;Set up &amp; licensing &quot;,&quot;items[6].title&quot;:&quot;Learn about model usage analytics&quot;,&quot;items[7].title&quot;:&quot;Leveraging term store taxonomy&quot;},&quot;imageSources&quot;:{&quot;items[0].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/learn/achievements/get-started-with-sharepoint-syntex-social.png&quot;,&quot;items[1].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[2].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[3].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[4].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[6].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[7].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/learn/paths/syntex-get-started/&quot;,&quot;items[1].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/adoption-scenarios&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/trial-syntex&quot;,&quot;items[3].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us/microsoft-365/roadmap?rtc=1&amp;filters=SharePoint%20Syntex&quot;,&quot;items[4].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model&quot;,&quot;items[5].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/set-up-content-understanding&quot;,&quot;items[6].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/model-usage-analytics&quot;,&quot;items[7].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/leverage-term-store-taxonomy&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;},&quot;customMetadata&quot;:{&quot;items[0].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[0].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[1].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[1].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[2].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[2].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[3].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[3].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[4].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[4].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[6].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[6].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[7].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[7].rawPreviewImageMinCanvasWidth&quot;:32767}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;fd36db64-3b4d-424b-8fc6-ac98fce4efb6&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="4" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="9" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;e7516e4a-43f2-4914-a85e-e92b11066474&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="e8f8dcf6-9e7b-41a6-adf6-acb3911a9d6e" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Your SharePoint Syntex content center gives&amp;nbsp;you model usage analytics to provide more information about how your models are being used. The following graphs are for demonstration purposes only. They show&amp;nbsp;a roll-up of usage analytics data provided in the classification by model and classification by library charts." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;id&quot;: &quot;1cdd65b9-90a3-4495-9a13-16461dda3482&quot;, &quot;instanceId&quot;: &quot;e2446737-7b44-44c8-9d0d-4079d8b0b054&quot;, &quot;title&quot;: &quot;***Model Usage Analytics&quot;, &quot;description&quot;: &quot;***Webpart to show model usage Analytics in Content Center&gt;&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="1cdd65b9-90a3-4495-9a13-16461dda3482" Order="3" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="10" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;b1e4c58c-3b17-49e7-81e6-4d6881e83115&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="e2c91caa-362c-458d-9aba-32c6844d07c9" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Any models you train or import are saved in the&amp;nbsp;&lt;strong&gt;Models&lt;i&gt;&amp;nbsp;&lt;/i&gt;&lt;/strong&gt;library and can be accessed there or in the list below. You can manage your custom built&amp;nbsp;models here once you have purchased the full product." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;49f1c0b3-1d0c-42d4-9d33-587c9679c777&quot;, &quot;title&quot;: &quot;Model&quot;, &quot;description&quot;: &quot;&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:true,&quot;webRelativeListUrl&quot;:&quot;Model&quot;,&quot;webpartHeightKey&quot;:2,&quot;hideCommandBar&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Models&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="3" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Learn about model types" ThumbnailUrl="" PageName="Learn-about-model-types.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://cdn.hubblecontent.osi.office.net/m365content/publish/c65747d0-493c-411b-8fc4-8e7f3254d330/1180183363.jpg" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="Get started" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;32a5680c-2b92-4350-b28f-b026238e1494&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="03966b3e-32e2-47ef-adc7-a793ffd24039" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Overview&lt;br&gt;&lt;br&gt;&lt;/h3&gt;&lt;p&gt;SharePoint Syntex lets you create models to identify, classify, and extract the information you need. Models have value in helping to resolve business issues for search, business processes, compliance, and many others.&lt;/p&gt;&lt;p&gt;You can choose from three&amp;nbsp;types of models:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Document understanding model&lt;/li&gt;&lt;li&gt;Form processing model&lt;/li&gt;&lt;li&gt;Prebuilt model&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Models are generally used for the same purpose, but key differences will affect which one you choose to use.&amp;nbsp;(If you're using&amp;nbsp;the content center provided with this preview, you won't be able to create a&amp;nbsp;form processing model or a prebuilt model.)&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;fb9ca88d-f11b-4b61-a29b-fc28a561e84e&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:24}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;4e0526f4-c353-450d-8744-94493feb664c&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;Group 3467063.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;6a02d2d5-3a7a-4a22-9a07-42ace74ab25a&quot;,&quot;imgWidth&quot;:1637,&quot;imgHeight&quot;:735,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:574}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Learn-about-model-types/1361505346-Group-3467063.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;6a02d2d5-3a7a-4a22-9a07-42ace74ab25a&quot;,&quot;imgWidth&quot;:1637,&quot;imgHeight&quot;:735}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="2" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;ead6d53b-e676-4011-b133-83b75f9f54bb&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;a0915e93-fa08-494f-8bcc-c61d46ed1927&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="TwoColumnRight" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="202803b4-2f2b-4a9e-869d-d00290832e16" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Document understanding models&lt;br&gt;​​​​​​​&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview&quot;&gt;Document understanding models&lt;/a&gt; use&amp;nbsp;AI to automatically classify documents within a SharePoint document library and, if you choose, to extract specific information from these documents. Document understanding models are created in a content center and classify and extract information from unstructured documents.&lt;/p&gt;&lt;p&gt;Unstructured documents might include statements of work, contracts, business letters, legal documents, product testing reports, project documents, or any text-based content that isn't structured like a form.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;12ce80d7-9915-45a3-9953-0fe8dc194060&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CSu7\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CSu7\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;6a9c5d9c-b1fe-44a5-bce9-1e04ff70dfe9&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="TwoColumnRight" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="4cd87ceb-268e-491e-b52f-f2738620b5b0" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Form processing models&lt;br&gt;​​​​​​​&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview&quot;&gt;Form processing models&lt;/a&gt; focus on identifying and extracting information from structured and semi-structured documents. Form processing models use machine learning technology from Microsoft Power Apps AI Builder (uses AI Builder credits). AI capabilities identify and extract necessary information, helping automate business processes.&lt;/p&gt;&lt;p&gt;Structured or semi-structured documents might include purchase orders, invoices, billing statements, expense forms, work orders, or tax forms, all of which have specific structures that look more like a form.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;d4b3aa20-21d3-4948-9654-d5e9ea466ba5&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4GnhN\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4GnhN\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="8" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;a76b6b4b-5e64-4287-a594-7a8aa01af27d&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="9" Type="TwoColumnRight" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="9c7e358c-3fae-45cd-ad1e-915ae5bb45b3" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Prebuilt models&lt;br&gt;​​​​​​​&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/prebuilt-models&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/prebuilt-models&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/prebuilt-models&quot;&gt;Prebuilt models&lt;/a&gt; are a new addition to SharePoint Syntex. These&amp;nbsp;models&amp;nbsp;are&amp;nbsp;pre-trained to recognize documents and the components in documents. They&amp;nbsp;also work&amp;nbsp;on image files and PDF files. You can immediately apply prebuilt models to libraries as they are. They don't need additional training or labeling, and no training file is needed.&lt;/p&gt;&lt;p&gt;You can customize a prebuilt model, review it to see how it works on your documents, and customize the names to match your documents or naming convention. You can also turn off suggested components that aren't applicable.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;f0fd163e-4ebc-437b-887d-7f1f88648630&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;MicrosoftTeams-image (5).png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;6d9891ae-1478-4088-87d5-4a3aff80aa17&quot;,&quot;imgWidth&quot;:2732,&quot;imgHeight&quot;:1536,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isAspectRatioLockedOnLoad&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Learn-about-model-types/1992111033-MicrosoftTeams-image--5-.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;6d9891ae-1478-4088-87d5-4a3aff80aa17&quot;,&quot;imgWidth&quot;:2732,&quot;imgHeight&quot;:1536}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="10" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;22b362b5-f7d3-4d23-9dd3-65247b70cefc&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="11" Type="ThreeColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;8a210e2b-3df8-4b81-ba01-102e1d1dfbbe&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="e16901a5-21bb-4b89-b362-5e58ba52a449" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3 style=&quot;text-align:center;&quot;&gt;Additional resources&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="12" Type="ThreeColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;a2f4afb7-9237-460b-b76f-aad2477d1e35&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Right&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more about form processing&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;28a3d258-2b7d-4c1e-85ae-c2f26bbf75f6&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more about document understanding&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;fbf53b94-34c3-4b0c-a964-f64dcbb0acf2&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Compare different model types&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="1" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="13" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;db3e816c-d6f0-455c-b001-5dda8cb5efb2&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="SharePoint Syntex in 6 simple steps" ThumbnailUrl="" PageName="Syntex-in-6-simple-steps.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://cdn.hubblecontent.osi.office.net/m365content/publish/029d8418-ec13-4d72-8062-9f33886799c2/1167637919.jpg" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="get started" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="9a15c26a-932e-477f-8eab-3e647072f28b" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;sup&gt;STEP 1&lt;/sup&gt;&lt;/span&gt;&lt;br&gt;Start with a content center&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="50189196-6d25-44f9-aead-f9b4ca97cbb2" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;A content center is a special SharePoint site that enables you to create, train, and manage models. You can also view and track which models are applied to which document libraries.&lt;/p&gt;&lt;p&gt;You can either use a default content center or create a new content center, or you can use the content center provided with this preview. If you use the provided content center, you can create and test models but won't be able to apply the models to a document library.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;30fdc2df-491b-4260-9d32-7e1e9ea246b6&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more about content centers&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;34491e04-2b9e-4606-ae33-ed5b7283f57a&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CPSF\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CPSF\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;0cb5303c-120e-4142-a075-69dfff326883&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;28806537-a948-4843-b6a0-8a9d253f4508&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;08e8adbb-11e3-41b0-9b6f-d73f31253c22&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CL0R\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CL0R\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="e925e803-0e69-40a8-bcb5-3d682b9c5890" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;sup&gt;STEP 2&lt;/sup&gt;&lt;/span&gt;&lt;br&gt;Create and train a classifier&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="a30e73a9-6fd0-4a97-9097-91e872fca56d" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="A &lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier&quot; target=&quot;_blank&quot; data-interception=&quot;off&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier&quot;&gt;classifier&lt;/a&gt;&amp;nbsp;is a type of document understanding model that identifies the document type and then classifies it accordingly. You'll add an &lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview&quot;&gt;explanation&lt;/a&gt;&amp;nbsp;as part of your classifier model to describe what will be either classified or extracted.&lt;br&gt;&lt;br&gt;To jump-start your understanding of how to create your own models, you can &lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model&quot;&gt;import a sample model&lt;/a&gt;. The sample model lets you examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;89c9616a-9769-4a38-b7ab-291f5e5d43cb&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more about classifiers&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/create-a-classifier&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;e81d2b46-4fce-40ab-84a8-89315c2b758b&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="71faa47d-b4d0-4e0e-8421-3885b94e5e5e" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;sup&gt;STEP 3&lt;/sup&gt;&lt;/span&gt;&lt;br&gt;Create and train an extractor&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="4761757a-f9b6-4f18-93cc-49709adc345a" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;An &lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor&quot;&gt;extractor&lt;/a&gt;&amp;nbsp;is a part of a document understanding model that pulls the information from your documents. You can create an extractor before or after you've created your document understanding model. You'll create an extractor for each part in a document that you want to extract.&lt;/p&gt;&lt;p&gt;As part of your extractor, you can&amp;nbsp;add an &lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview&quot;&gt;explanation&lt;/a&gt;&amp;nbsp;that describes what information will be extracted.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;3cff810e-146c-4998-95a1-aeb43d8c5321&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn how to create and train an extractor&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;154a6d8f-53e3-41b8-a5d2-eaa1f29c6b9d&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CL2G\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CL2G\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;b21f6453-0286-4549-b9f8-91a2386ad6f6&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;9f7f3fb6-dbe6-4211-864e-936fc5d2b317&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;a screenshot of a social media post&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;newnew.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a736bdc6-53ea-4c86-9ba1-66e7701f46ed&quot;,&quot;imgWidth&quot;:1367,&quot;imgHeight&quot;:771,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Syntex-in-6-simple-steps/2241989242-newnew.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;a736bdc6-53ea-4c86-9ba1-66e7701f46ed&quot;,&quot;imgWidth&quot;:1367,&quot;imgHeight&quot;:771}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="7f7cb23c-6fc3-4a2d-a975-c5b8d163852e" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;sup&gt;STEP 4&lt;/sup&gt;&lt;/span&gt;&lt;br&gt;Test your model&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="52d12ce5-fe0a-4dcc-a67c-d7e932e7eee1" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="You can test your model on &lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model&quot;&gt;example files&lt;/a&gt;&amp;nbsp;it hasn’t seen before. This is a useful step to evaluate the readiness of your model before applying it to a document library. You'll use this information to help see how effective your classifier model is in identifying the appropriate documents.&lt;br&gt;​​​​​​​" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;02a49416-5778-4350-b958-c3be4713bdf7&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn how to test your model&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier#test-your-model&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="8" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;7b5753ae-9607-4a25-a7bb-bc2dbd5440a5&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="9" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="da98b124-a7c4-4516-8d49-526be2bef7ec" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;sup&gt;STEP 5&lt;/sup&gt;&lt;/span&gt;&lt;br&gt;Apply your model to a document library&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1c746b26-cce2-46b6-8d32-b9d12763d84d" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;You'll need to apply your model to the document library so&amp;nbsp;you can begin uploading documents to the site and see the results. The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has extractors, the view displays columns for the data you are extracting from each file or folder.&lt;/p&gt;&lt;p&gt;If you're using the content center provided with this preview, won't be able to apply the models to a document library.&lt;br&gt;​​​​​​​&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;396e1bab-b04f-408d-9d5e-3bee99e08ef9&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn how to apply your model to a document library&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;a91528e0-0bca-4a42-af2e-a96e7267eb61&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;2b3adf4e-4ce2-4011-98c1-c9fd772a50b2&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CSoL\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4CSoL\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="2" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="10" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;ca625833-d067-49ba-bda3-c8321baf874a&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="11" Type="TwoColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;5763d557-e0e3-4bb9-bd83-bcca671c9b3a&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4GnhX\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4GnhX\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="657e11a1-43ba-45fc-89ff-df3e29b2bb65" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;&lt;sup&gt;STEP 6&lt;/sup&gt;&lt;/span&gt;&lt;br&gt;Monitor how your model is doing&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="6f9c21b9-d139-4eb6-bd4b-aa44ea8fdfeb" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="You can use model usage analytics in the content center to provide information about how your model is being used and how it is performing. Analytics data includes classification by model, classification by library, and model usage.&lt;br&gt;​​​​​​​" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;a5e87769-79db-4196-bb28-d690eb5ef097&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more about model analytics&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Introduction to SharePoint Syntex" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Introduction-to-SharePoint-Syntex/511582616.jpg}&amp;ext=jpg" PageName="Introduction-to-SharePoint-Syntex.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://{fqdn}{site}/SiteAssets/SitePages/Introduction-to-SharePoint-Syntex/511582616.jpg" LayoutType="ColorBlock" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="Get started" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;58762b04-a512-4d61-9453-05b15e7c07fe&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="02a8ac77-82d4-4c3a-87fc-55c92f6f5b7b" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;blockquote&gt;&lt;p&gt;What if you had a way to read and organize your content, giving you more time to focus on your organization? With only&amp;nbsp;the limited time you have in a day – and with thousands of documents circulating throughout your organization in just a week, how can&amp;nbsp;you make real sense of the information efficiently and profitably?&lt;/p&gt;&lt;/blockquote&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d93e1fb9-fcf3-4bbc-8485-18cf25739f87&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;20f9b68e-beba-4ade-9bdc-6f8826b1e944&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="59d18c15-2459-46b9-8860-e7aad7cf915d" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;SharePoint Syntex uses AI and machine learning to organize your content. It's a content understanding, processing, and compliance service that automatically and thoughtfully organizes and classifies documents and forms in your SharePoint library – transforming your content&amp;nbsp;into knowledge.&lt;/p&gt;&lt;p&gt;AI and machine learning help you better understand your content by accurately and efficiently classifying and extracting relevant information. Rather than clicking and sorting through hundreds&amp;nbsp;or even thousands of files, SharePoint Syntex extracts data for you, streamlining the search and discovery process. This returns valuable time to you and your team. You can not only dive deeper into your content to truly understand it, now you can also increase document insight and control.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;View this video to learn more about SharePoint Syntex.&lt;/strong&gt;​​​​​​​&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;0ea6bc32-db79-48e1-a288-0410e7a2f7d2&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;20d0df9d-90ab-4b7f-a620-0ec9c8be3ee7&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe id=\&quot;inlineFrameExample\&quot; title=\&quot;Inline Frame Example\&quot; width=\&quot;840\&quot; height=\&quot;470\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4GJXS\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe id=\&quot;inlineFrameExample\&quot; title=\&quot;Inline Frame Example\&quot; width=\&quot;840\&quot; height=\&quot;470\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4GJXS\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="4" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d87aaff3-1e47-4872-a515-243d580bbd36&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="5" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;be6bfdb0-1de1-4e1b-be58-252f686818e1&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="6e68aea8-99ec-4d3a-ae79-5a86609865bd" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 style=&quot;text-align:center;&quot;&gt;Additional resources&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="TwoColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;5b59aa2a-11f1-44a4-b93d-b2bc22ec984a&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Right&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Get SharePoint Syntex training&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/en-us/learn/paths/syntex-get-started/&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;96e9e2d0-00fe-4cb5-8286-2837d9576f2c&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more about SharePoint Syntex&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;0cbce060-e16a-4d4d-966f-63430d56d5be&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Streamline everyday processes and tasks" ThumbnailUrl="" PageName="Streamline-everyday-processes-and-tasks.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://cdn.hubblecontent.osi.office.net/m365content/publish/d5cf2b17-e236-4dd8-8506-7fbefa01321b/469642294.jpg" LayoutType="FullWidthImage" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="Get started" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;194d6285-8ac5-4c04-9f45-bfdb78409e20&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="918749a0-7b09-4b80-9320-7f933e7d474a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Upgrade your flow of work with SharePoint Syntex​​​​​​​&lt;br&gt;​​​​​​​&lt;/h3&gt;&lt;p&gt;With SharePoint Syntex, you can take what is manual and turn it into something automated and streamlined for your organization.&lt;/p&gt;&lt;p&gt;You'll&amp;nbsp;teach SharePoint Syntex to read your documents the way you do and recognize important information. In doing so, you can create more organized and efficient processes for how your organization handles this information, what it learns from it, and what it does with it.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;d5b6544f-8105-4d4c-8e26-d7efe82dec65&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RWJUR0\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RWJUR0\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;bfa3aecf-a1fa-4dbd-b29e-06cc51653e86&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="06dbad10-14cb-444f-a37a-8a86209c834d" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3 style=&quot;text-align:center;&quot;&gt;SharePoint Syntex helps you make the most of your documents by automatically classifying&amp;nbsp;files and extracting&amp;nbsp;information&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;2cd54422-0275-44b2-aa78-cc0b5adf93ce&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;Group 3467069.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;63a57c0b-a898-404e-803d-12cfc8525c5e&quot;,&quot;imgWidth&quot;:6300,&quot;imgHeight&quot;:2712,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Streamline-everyday-processes-and-tasks/125850436-Group-3467069.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;63a57c0b-a898-404e-803d-12cfc8525c5e&quot;,&quot;imgWidth&quot;:6300,&quot;imgHeight&quot;:2712}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;0f3d5861-d083-4019-a3a4-7df1bd228eed&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn" BackgroundEmphasis="Neutral">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;249ade15-7346-4b84-bbd3-b86968d1ac5f&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="84a3d5fc-08c0-4d32-b089-583fe73703cf" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 style=&quot;text-align:center;&quot;&gt;See these example scenarios to prompt ideas about how you can use SharePoint Syntex&lt;br&gt;to streamline everyday processes and tasks in your organization.&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;2d61e9d2-984b-4e95-aa98-5a6b699e28b2&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;ca516f6f-c493-4160-8f30-52b995a3b1a0&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Show a collection of links in a variety of layouts with options for icons, images, and audience targeting.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:7,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;workflow&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:5,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;analyticsreport&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;unlock&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;trackers&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:6,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;robot&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;formlibrary&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;stackedcolumnchart2&quot;}}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:1,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:3,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0,&quot;https://docs&quot;:{&quot;microsoft&quot;:{}}}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Simplify visa renewal process&quot;,&quot;items[1].title&quot;:&quot;Improve data processing to provide insights and analytics&quot;,&quot;items[2].title&quot;:&quot;Capture information from previously inaccessible documents&quot;,&quot;items[3].title&quot;:&quot;Avoid risk with records management &amp; document governance processes&quot;,&quot;items[4].title&quot;:&quot;Automate order processing&quot;,&quot;items[5].title&quot;:&quot;Track data from invoices with form processing&quot;,&quot;items[6].title&quot;:&quot;Track information from contracts with document understanding&quot;},&quot;imageSources&quot;:{&quot;items[0].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[1].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[2].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[3].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[4].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;,&quot;items[5].rawPreviewImageUrl&quot;:&quot;https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png&quot;},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/adoption-scenarios#scenario-simplify-visa-renewal-process&quot;,&quot;items[1].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/adoption-scenarios#scenario-improve-data-processing-to-provide-insights-and-analytics&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/adoption-scenarios#scenario-capture-information-from-previously-inaccessible-documents&quot;,&quot;items[3].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/adoption-scenarios#scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex&quot;,&quot;items[4].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/adoption-scenarios#scenario-automate-order-processing&quot;,&quot;items[5].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/adoption-scenarios#scenario-track-data-from-invoices-with-form-processing&quot;,&quot;items[6].sourceItem.url&quot;:&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/adoption-scenarios#scenario-track-information-from-contracts-with-document-understanding&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;},&quot;customMetadata&quot;:{&quot;items[0].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[0].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[1].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[1].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[2].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[2].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[3].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[3].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[4].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[4].rawPreviewImageMinCanvasWidth&quot;:32767},&quot;items[5].rawPreviewImageUrl&quot;:{&quot;imageWidth&quot;:100,&quot;items[5].rawPreviewImageMinCanvasWidth&quot;:32767}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="4" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d6eba16b-ea9c-4f8c-8d96-e383aaffe6fe&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="5" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="7c3924eb-e529-41b4-aeca-58526330a2bd" Order="6" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="With SharePoint Syntex, you can apply other tools and components of Microsoft 365 to create an array of automated document management solutions for your organization. To learn&amp;nbsp;about a real end-to-end document management solution using SharePoint Syntex and components of Microsoft 365, see &lt;a title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/solution-manage-contracts-in-microsoft-365&quot; data-interception=&quot;on&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/solution-manage-contracts-in-microsoft-365&quot; href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/solution-manage-contracts-in-microsoft-365&quot;&gt;Manage contracts using a Microsoft 365 solution&lt;/a&gt;.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;5039a78c-3f8c-45bf-bf32-f5c0bd04eab9&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="7" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;6b71eff6-027b-4dc7-a7dc-8e466b3a9350&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="517a90fa-ae49-439f-96d6-2b162815b8d1" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 style=&quot;text-align:center;&quot;&gt;Learn more about how to streamline your process&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;6c452b90-18af-4446-a922-1da7a11953ff&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;View full documentation&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;0a44c656-beba-4f55-8706-3d1e2df6430a&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="4" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Manage compliance" ThumbnailUrl="" PageName="Manage-compliance-risks.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://cdn.hubblecontent.osi.office.net/m365content/publish/490fbc6f-d976-4f2d-9edc-7652f8b6b59a/155007647.jpg" LayoutType="FullWidthImage" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="Get started" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d2be50fc-9602-4e38-abe8-cfbf8bca5974&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="dbc6ae64-f044-4de1-bf24-e99034a6a3b4" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Overview&lt;br&gt;​​​​​​​&lt;/h3&gt;&lt;p&gt;Maintaining compliance and data governance is critical today. Your customers and clients need to trust that the data and information your business captures is used in a secure and thoughtful way. Having a full, clear view into your content landscape is essential to achieve this. Knowing exactly where information is taken from and how it is categorized sets up your organization for compliance success. SharePoint Syntex helps you reduce risks and ensure your information is safe.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;fcbe96e3-4bf9-4629-820b-3aa3656da409&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:48}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;26992fac-5f62-4038-a1d7-d1258c24dda7&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="TwoColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="31063dbf-3b1e-4153-a430-88ef98d2fa0a" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Retention labels&lt;br&gt;​​​​​​​&lt;/h3&gt;&lt;p&gt;Retention labels give you the option to apply retention settings to your documents. Retention settings are policies defining how documents are kept or deleted. Retention labels enforce who can delete documents and when they can delete them.&lt;/p&gt;&lt;p&gt;For retention labels to be available to apply to your document understanding and form processing models, they need to be created and published in the &lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-365/compliance/create-apply-retention-labels?view=o365-worldwide#how-to-create-and-publish-retention-labels&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/en-us/microsoft-365/compliance/create-apply-retention-labels?view=o365-worldwide#how-to-create-and-publish-retention-labels&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/en-us/microsoft-365/compliance/create-apply-retention-labels?view=o365-worldwide#how-to-create-and-publish-retention-labels&quot;&gt;Microsoft 365 Compliance Center&lt;/a&gt;.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;0aba23c1-f134-4a57-8fa8-3af9f09dc7a9&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more about retention labels&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;f716fe06-262f-46f7-b540-846cafbca69e&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4GydO\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE4GydO\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;fc6c033c-0526-4137-b3ab-2a36540df442&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="TwoColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="3444ffe7-8030-4df5-96fe-c414e9d73cea" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;Sensitivity&amp;nbsp;labels&lt;br&gt;​​​​​​​&lt;/h3&gt;&lt;p&gt;Sensitivity labels let you apply encryption, sharing, and conditional access policies to the documents that your models identify. SharePoint Syntex models honor the label order rules and do not overwrite an existing label that was manually applied by a user to the file.&lt;/p&gt;&lt;p&gt;For sensitivity labels to be available to apply to your document understanding models, they need to be created and published in the &lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-365/business-video/create-sensitivity-labels&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/en-us/microsoft-365/business-video/create-sensitivity-labels&quot; data-interception=&quot;on&quot; title=&quot;https://docs.microsoft.com/en-us/microsoft-365/business-video/create-sensitivity-labels&quot;&gt;Microsoft 365 Compliance Center&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Sensitivity labels currently aren't available for form processing models.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;775d240f-655b-42f0-a07a-b28cf5c7d0d8&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Left&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Learn more about sensitivity labels&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;83d097f8-e792-4445-b060-a61b634d91f7&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE3VRGT?autoplay=false\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RE3VRGT?autoplay=false\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;b2fdb928-0b57-4675-9bde-859560e4203f&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Standard" ShowSiteTitle="false" ShowSiteNavigation="false" />
+      
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+  <pnp:Sequence ID="CONTENTCENTER-sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection d4p1:type="pnp:ClassicSite" 
+                          Title="Content Center" 
+                          Description="" 
+                          ProvisioningId="ContentCenterSite" 
+                          Url="{parameter:SiteUrl}" 
+                          Owner="{CurrentUserLoginName}" 
+                          TimeZoneId="0" 
+                          WebTemplate="CONTENTCTR#0" 
+                          Language="1033" 
+                          xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="CONTENTCENTER" />
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+</pnp:Provisioning>

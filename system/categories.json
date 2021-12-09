@@ -5,6 +5,7 @@
         {"id": "TEAM", "displayName": "Team"},
         {"id": "COMMUNITY", "displayName": "Community"},
         {"id": "SOLUTION", "displayName": "Solutions"},
-        {"id": "EDU", "displayName": "Schools"}
+        {"id": "EDU", "displayName": "Schools"},
+        {"id": "SYNTEX", "displayName": "SharePoint Syntex"}
     ]
 }

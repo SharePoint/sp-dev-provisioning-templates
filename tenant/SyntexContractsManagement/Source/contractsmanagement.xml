@@ -1,0 +1,608 @@
+﻿<?xml version="1.0"?>
+<pnp:Provisioning Author="Microsoft" 
+                  Generator="SharePoint PnP" 
+                  ImagePreviewUrl="" 
+                  DisplayName="SharePoint Syntex Contracts Management" 
+                  Description="SharePoint Syntex Contracts Management" 
+                  xmlns:pnp="http://schemas.dev.office.com/PnP/2021/03/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.7.64.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c">
+    <pnp:Parameters>
+      <pnp:Parameter Key="SiteUrl">/sites/ContractsManagement</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Templates ID="CONTAINER-DUMMY-cca63457-adcc-4ed9-b369-51b33b5f1905">
+    <pnp:ProvisioningTemplate ID="CONTRACTSMANAGEMENT" Version="0" BaseSiteTemplate="CONTENTCTR#0" Scope="RootSite">
+      <!-- Add tepmlate here -->
+
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/SiteAssets/__sitelogo__CST.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" />
+      <pnp:Theme Name="Purple"></pnp:Theme>
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="Regions" Url="{site}/Regions/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Templates" Url="{site}/Templates/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Contract requests" Url="{site}/Lists/Requests/AllItems.aspx" />
+            <pnp:NavigationNode Title="Clients" Url="{site}/Lists/Clients/AllItems.aspx" />
+            <pnp:NavigationNode Title="Models" Url="{site}/Model/Forms/AllItems.aspx" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Clients" Description="List of clients" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Clients" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Clients/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Clients/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Clients/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.gif?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{ED025949-738F-4E69-A99A-B75F27207F4B}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Clients/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="Location" Format="Dropdown" Name="Location" Title="Location" Type="Location" ID="{296ed7ad-65af-4690-9c23-4971b4748f1e}" Version="2" StaticName="Location" SourceID="{{listid:Clients}}" ColName="ntext2" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Location: Country/Region" StaticName="296ed7ad-65af-4690-9c23-4971b4748f1eCountryOrRegion" Name="CountryOrRegion" ID="{747b524d-efde-4c21-b086-bbd6df3dee40}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="296ed7ad-65af-4690-9c23-4971b4748f1e" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Clients}}" ColName="nvarchar4" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Location: State" StaticName="296ed7ad-65af-4690-9c23-4971b4748f1eState" Name="State" ID="{43cf439b-c811-4e02-9a1b-a0f065e675d0}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="296ed7ad-65af-4690-9c23-4971b4748f1e" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Clients}}" ColName="nvarchar5" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Location: City" StaticName="296ed7ad-65af-4690-9c23-4971b4748f1eCity" Name="City" ID="{52333aad-9c62-4506-88b1-d3eba3840ca3}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="296ed7ad-65af-4690-9c23-4971b4748f1e" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Clients}}" ColName="nvarchar6" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Location: Postal Code" StaticName="296ed7ad-65af-4690-9c23-4971b4748f1ePostalCode" Name="PostalCode" ID="{01ddfbb5-c672-488d-b83d-bbfabc46a841}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="296ed7ad-65af-4690-9c23-4971b4748f1e" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Clients}}" ColName="nvarchar7" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Location: Street" StaticName="296ed7ad-65af-4690-9c23-4971b4748f1eStreet" Name="Street" ID="{f18ee83e-9c7b-4903-9426-cf1458b56aca}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="296ed7ad-65af-4690-9c23-4971b4748f1e" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Clients}}" ColName="nvarchar8" RowOrdinal="0" />
+            <Field Type="Geolocation" DisplayName="Location: Coordinates" StaticName="296ed7ad-65af-4690-9c23-4971b4748f1eGeoLoc" Name="GeoLoc" ID="{2d7f08b6-c533-4d4a-9889-13112c6afb23}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="296ed7ad-65af-4690-9c23-4971b4748f1e" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Clients}}" ColName="geography1" RowOrdinal="0" />
+            <Field Type="Text" DisplayName="Location: Name" StaticName="296ed7ad-65af-4690-9c23-4971b4748f1eDispName" Name="DispName" ID="{0112d1a2-5031-483d-880f-0b327c991d1b}" ShowInViewForms="TRUE" Required="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" FieldRef="296ed7ad-65af-4690-9c23-4971b4748f1e" ReadOnly="TRUE" Sealed="TRUE" AllowDeletion="TRUE" FromBaseType="TRUE" Filterable="TRUE" Sortable="TRUE" SourceID="{{listid:Clients}}" ColName="nvarchar9" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Adele Vance</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"Los Angeles, CA","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Allan Deyoung</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"Seattle, WA","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Christie Cline</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"San Diego, CA","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Diego Sicilliani</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"Salt Lake City, UT","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Emily Braun</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"Honolulu, HI","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Grady Archie</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"New York, NY","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Isaiah Langer</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"Atlanta, GA","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Lee Gu</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"Detroit, MI","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Lynne Robbins</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"Fort Lauderdale, FL","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Megan Bowen</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"Columbus, OH","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Pradeep Gupta</pnp:DataValue>
+              <pnp:DataValue FieldName="Location">{"DisplayName":"Boise, ID","EntityType":"Custom"}</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Regions" Description="" DocumentTemplate="{site}/Regions/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Regions" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Regions/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Regions/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Regions/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{0039F654-FC4F-4B21-B8E1-911FC3996BCE}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Regions/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
+          </pnp:FieldRefs>
+          <pnp:Folders>
+            <pnp:Folder Name="North America" ContentTypeID="0x0120">
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="North America" />
+                <pnp:Property Key="Order" Value="100" />
+              </pnp:Properties>
+            </pnp:Folder>
+            <pnp:Folder Name="South America" ContentTypeID="0x0120">
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="South America" />
+                <pnp:Property Key="Order" Value="200" />
+              </pnp:Properties>
+            </pnp:Folder>
+            <pnp:Folder Name="Europe" ContentTypeID="0x0120">
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="Europe" />
+                <pnp:Property Key="Order" Value="300" />
+              </pnp:Properties>
+            </pnp:Folder>
+            <pnp:Folder Name="Asia" ContentTypeID="0x0120">
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="Asia" />
+                <pnp:Property Key="Order" Value="400" />
+              </pnp:Properties>
+            </pnp:Folder>
+            <pnp:Folder Name="Africa" ContentTypeID="0x0120">
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="Africa" />
+                <pnp:Property Key="Order" Value="500" />
+              </pnp:Properties>
+            </pnp:Folder>
+          </pnp:Folders>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Templates" Description="" DocumentTemplate="{site}/Templates/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Templates" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Templates/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Templates/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Templates/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{62E7D408-6973-4F97-9EA9-04356DF3CB46}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Templates/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{585d452c-20a1-46f7-a0ef-3b6b035711db}" Type="Note" DisplayName="KeyPoints" Name="MediaServiceKeyPoints" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInNewForm="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInListSettings="FALSE" Viewable="FALSE" Json="FALSE" SourceID="{{listid:Templates}}" StaticName="MediaServiceKeyPoints" ColName="ntext6" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+          <pnp:Folders>
+            <pnp:Folder Name="Statements of work" ContentTypeID="0x0120">
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="Statements of work" />
+                <pnp:Property Key="Title" Value="Statements of work" />
+                <pnp:Property Key="Order" Value="2700" />
+              </pnp:Properties>
+            </pnp:Folder>
+            <pnp:Folder Name="Non Disclosure agreements" ContentTypeID="0x0120">
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="Non Disclosure agreements" />
+                <pnp:Property Key="Order" Value="2800" />
+              </pnp:Properties>
+            </pnp:Folder>
+            <pnp:Folder Name="Service agreements" ContentTypeID="0x0120">
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="Service agreements" />
+                <pnp:Property Key="Title" Value="Service agreements" />
+                <pnp:Property Key="Order" Value="2900" />
+              </pnp:Properties>
+            </pnp:Folder>
+          </pnp:Folders>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Contract requests" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Requests" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Requests/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Requests/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Requests/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.gif?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{182C3E52-1B5E-4647-AE83-6B39FF5DDCF5}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Requests/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Requestedby" />
+                <FieldRef Name="Department" />
+                <FieldRef Name="Typeofcontract" />
+                <FieldRef Name="Client" />
+                <FieldRef Name="Requireddate" />
+                <FieldRef Name="Status" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Description="Who is the one requesting this contract" DisplayName="Requested by" Format="Dropdown" IsModern="TRUE" List="UserInfo" Name="Requestedby" Required="TRUE" Title="Requested by" Type="User" UserDisplayOptions="NamePhoto" UserSelectionMode="0" UserSelectionScope="0" ID="{840e10be-d5c2-4bed-8de7-3d607407c41b}" SourceID="{{listid:Contract requests}}" StaticName="Requestedby" ColName="int1" RowOrdinal="0" />
+            <Field CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Marketing&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Legal&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Creative&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Engineering&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Sales&quot;]},&quot;&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;line-height&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;14px&quot;},&quot;attributes&quot;:{&quot;iconName&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Marketing&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Legal&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Creative&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Engineering&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Sales&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}]}]},&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Marketing&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Legal&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Creative&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Engineering&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Sales&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}]}]}}},{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Marketing&quot;]},&quot;sp-field-fontSizeSmall&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Legal&quot;]},&quot;sp-field-fontSizeSmall&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Creative&quot;]},&quot;sp-field-fontSizeSmall&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Engineering&quot;]},&quot;sp-field-fontSizeSmall&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Sales&quot;]},&quot;sp-field-fontSizeSmall&quot;,&quot;&quot;]}]}]}]}]}]}}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" Description="Which department is requesting this contract" DisplayName="Department" FillInChoice="FALSE" Format="Dropdown" IsModern="TRUE" Name="Department" Required="TRUE" Title="Department" Type="Choice" ID="{05aa4cea-42cd-4bed-8e50-26216aa21a32}" SourceID="{{listid:Contract requests}}" StaticName="Department" ColName="nvarchar4" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Marketing</CHOICE>
+                <CHOICE>Legal</CHOICE>
+                <CHOICE>Creative</CHOICE>
+                <CHOICE>Engineering</CHOICE>
+                <CHOICE>Sales</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Statement of work&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Policy change&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Nondisclosure Agreement&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Sales Agreement&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Service Agreement&quot;]},&quot;&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;line-height&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;14px&quot;},&quot;attributes&quot;:{&quot;iconName&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Statement of work&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Policy change&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Nondisclosure Agreement&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Sales Agreement&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Service Agreement&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}]}]},&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Statement of work&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Policy change&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Nondisclosure Agreement&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Sales Agreement&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Service Agreement&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}]}]}}},{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Statement of work&quot;]},&quot;sp-field-fontSizeSmall&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Policy change&quot;]},&quot;sp-field-fontSizeSmall&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Nondisclosure Agreement&quot;]},&quot;sp-field-fontSizeSmall&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Sales Agreement&quot;]},&quot;sp-field-fontSizeSmall&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Service Agreement&quot;]},&quot;sp-field-fontSizeSmall&quot;,&quot;&quot;]}]}]}]}]}]}}}]}],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" Description="What type of contract does your team need" DisplayName="Type of contract" FillInChoice="FALSE" Format="Dropdown" IsModern="TRUE" Name="Typeofcontract" Required="TRUE" Title="Type of contract" Type="Choice" ID="{0698d0b3-d20a-4d8c-b1aa-0f4c8bd9094f}" SourceID="{{listid:Contract requests}}" StaticName="Typeofcontract" ColName="nvarchar5" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Statement of work</CHOICE>
+                <CHOICE>Policy change</CHOICE>
+                <CHOICE>Nondisclosure Agreement</CHOICE>
+                <CHOICE>Sales Agreement</CHOICE>
+                <CHOICE>Service Agreement</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field Type="Lookup" DisplayName="Client" Required="FALSE" EnforceUniqueValues="FALSE" List="{listid:Clients}" ShowField="Title" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{c337d0c0-3270-4670-b86b-6f5939234ada}" SourceID="{{listid:Contract requests}}" StaticName="Client" Name="Client" ColName="int2" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" Description="When do you need this contract by" DisplayName="Required date" FriendlyDisplayFormat="Relative" Format="DateOnly" Name="Requireddate" Required="TRUE" Title="Required date" Type="DateTime" ID="{0b2b2ab0-3701-4777-9104-0b1874b412df}" Version="2" StaticName="Requireddate" SourceID="{{listid:Contract requests}}" ColName="datetime1" RowOrdinal="0" />
+            <Field CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Requested&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;In progress&quot;]},&quot;sp-css-backgroundColor-BgGold&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Created&quot;]},&quot;sp-css-backgroundColor-BgMintGreen&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;line-height&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;14px&quot;},&quot;attributes&quot;:{&quot;iconName&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Requested&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;In progress&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Created&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]},&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Requested&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;In progress&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Created&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}}},{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;@currentField&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Requested&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;In progress&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;Created&quot;]},&quot;sp-field-fontSizeSmall sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;@currentField&quot;,&quot;&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}}}]}],&quot;rulesOrder&quot;:[0,2,1,3,4],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" Description="What is the status of this request" DisplayName="Status" FillInChoice="FALSE" Format="Dropdown" IsModern="TRUE" Name="Status" Required="TRUE" Title="Status" Type="Choice" ID="{bda69d41-3cf4-4f9d-942c-ea6ace5990de}" SourceID="{{listid:Contract requests}}" StaticName="Status" ColName="nvarchar6" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Requested</CHOICE>
+                <CHOICE>In progress</CHOICE>
+                <CHOICE>Created</CHOICE>
+              </CHOICES>
+              <Default>Requested</Default>
+            </Field>
+          </pnp:Fields>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/__sitelogo__CST.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="__sitelogo__CST.png" />
+            <pnp:Property Key="Order" Value="100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__rectSitelogo__CST.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="__rectSitelogo__CST.png" />
+            <pnp:Property Key="Order" Value="200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Client-review-process/GettyImages-1124741564.jpg" Folder="SiteAssets/SitePages/Client-review-process" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-1124741564.jpg" />
+            <pnp:Property Key="Title" Value="1124741564" />
+            <pnp:Property Key="Order" Value="1100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Approval-process/GettyImages-1133505958.jpg" Folder="SiteAssets/SitePages/Approval-process" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-1133505958.jpg" />
+            <pnp:Property Key="Title" Value="1133505958" />
+            <pnp:Property Key="Order" Value="1300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Contract-documentation/GettyImages-607477457.jpg" Folder="SiteAssets/SitePages/Contract-documentation" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-607477457.jpg" />
+            <pnp:Property Key="Title" Value="607477457" />
+            <pnp:Property Key="Order" Value="1400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Create a contract management solution/GettyImages-1056327458.jpg" Folder="SiteAssets/SitePages/Create a contract management solution" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-1056327458.jpg" />
+            <pnp:Property Key="Title" Value="1056327458" />
+            <pnp:Property Key="Order" Value="1500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/GettyImages-1134244530.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-1134244530.jpg" />
+            <pnp:Property Key="Title" Value="1134244530" />
+            <pnp:Property Key="Order" Value="1600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Legal-review/GettyImages-1132121738.jpg" Folder="SiteAssets/SitePages/Legal-review" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-1132121738.jpg" />
+            <pnp:Property Key="Title" Value="1132121738" />
+            <pnp:Property Key="Order" Value="1700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/SitePages, Folder, Folder has 6 items, Private, New, Modified 12-6-2021, edited by Bruno6SitePages18 minutes ago.url" Folder="SiteAssets/SitePages" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="SitePages, Folder, Folder has 6 items, Private, New, Modified 12-6-2021, edited by Bruno6SitePages18 minutes ago.url" />
+            <pnp:Property Key="Order" Value="1800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Review the new-internal-review-process/1070958794.jpg" Folder="SiteAssets/SitePages/Review the new-internal-review-process" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="1070958794.jpg" />
+            <pnp:Property Key="Order" Value="2000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Policy-changes-for-Q4/939018692.jpg" Folder="SiteAssets/SitePages/Policy-changes-for-Q4" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="939018692.jpg" />
+            <pnp:Property Key="Order" Value="2200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Updated-guidelines-for-NDA-agreements/599104836.jpg" Folder="SiteAssets/SitePages/Updated-guidelines-for-NDA-agreements" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100E6A36CC8D76B524E92477CF730262029" />
+            <pnp:Property Key="FileLeafRef" Value="599104836.jpg" />
+            <pnp:Property Key="Order" Value="2400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="Templates/Service Proposal.docx" Folder="Templates" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x0101005926927ECE694E47968DC79CA147AC6A" />
+            <pnp:Property Key="FileLeafRef" Value="Service Proposal.docx" />
+            <pnp:Property Key="Order" Value="2400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="Templates/Statement of Work.docx" Folder="Templates" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x0101005926927ECE694E47968DC79CA147AC6A" />
+            <pnp:Property Key="FileLeafRef" Value="Statement of Work.docx" />
+            <pnp:Property Key="Order" Value="2500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="Templates/Healthcare update agreement.docx" Folder="Templates" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x0101005926927ECE694E47968DC79CA147AC6A" />
+            <pnp:Property Key="FileLeafRef" Value="Healthcare update agreement.docx" />
+            <pnp:Property Key="Order" Value="2600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/GettyImages-1134244530.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+      </pnp:Files>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" Title="Home" ThumbnailUrl="" PageName="Home.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="CallToAction" JsonControlData="{&quot;id&quot;: &quot;df8e44e7-edd5-46d5-90da-aca1539313b8&quot;, &quot;instanceId&quot;: &quot;9f9c3eee-88ea-4f3b-94a5-5c02c48166d0&quot;, &quot;title&quot;: &quot;Call to action&quot;, &quot;description&quot;: &quot;Add call to action text and an image paired with a clickable button.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;image&quot;:{&quot;itemInfo&quot;:{&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;c693d27d-4fae-448e-bc36-7b875aa65946&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;},&quot;zoomRatio&quot;:1},&quot;button&quot;:{},&quot;overlayText&quot;:{},&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;button.label&quot;:&quot;View tips and tricks&quot;,&quot;overlayText.text&quot;:&quot;Tips on how to extend your contracts management solution for your organization&quot;},&quot;imageSources&quot;:{&quot;image.url&quot;:&quot;https://{fqdn}{site}/SiteAssets/SitePages/Home/GettyImages-1134244530.jpg&quot;},&quot;links&quot;:{&quot;button.linkUrl&quot;:&quot;{site}/SitePages/Create%20a%20contract%20management%20solution.aspx&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="df8e44e7-edd5-46d5-90da-aca1539313b8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn" BackgroundEmphasis="Neutral">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="News" JsonControlData="{&quot;id&quot;: &quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;, &quot;instanceId&quot;: &quot;9dcc518e-2853-4b6c-92ab-b165964aab0d&quot;, &quot;title&quot;: &quot;News&quot;, &quot;description&quot;: &quot;Show news posts from one or more sites in a variety of layouts. You can filter news and target news to key audiences.&quot;, &quot;dataVersion&quot;: &quot;1.12&quot;, &quot;properties&quot;: {&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:false,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:false,&quot;showAuthor&quot;:true,&quot;showDate&quot;:true},&quot;layoutId&quot;:&quot;Hero&quot;,&quot;newsDataSourceProp&quot;:1,&quot;prefetchCount&quot;:4,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;filterKQLQuery&quot;:&quot;&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;templateId&quot;:&quot;Hero&quot;,&quot;propsLastEdited&quot;:&quot;2021-11-18T00:19:27.181Z&quot;,&quot;compactMode&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselHeroWrapperComponentId&quot;:&quot;67f38b9a-1ca4-427d-961d-732f70c1bdfe&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Soft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="480454a3-9db4-4f74-b1ba-97b4564b1e10" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 style=&quot;text-align:center;&quot;&gt;Request a contract to be drawn up for your team. A contract manager will get back to you&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;910fac55-a4ed-4f9d-9d40-4967183ae226&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Request a contract&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}/Lists/Requests/AllItems.aspx&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="2" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="TwoColumnLeft">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;e5f616d0-b4c5-4f2a-b8a6-20a0d7f33fc6&quot;, &quot;title&quot;: &quot;Document library&quot;, &quot;description&quot;: &quot;Show a document library from this site.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:true,&quot;selectedListId&quot;:&quot;{listid:Templates}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Templates&quot;,&quot;webRelativeListUrl&quot;:&quot;/Templates&quot;,&quot;webpartHeightKey&quot;:4,&quot;selectedViewId&quot;:&quot;{viewid:Templates,All Documents}&quot;,&quot;hideCommandBar&quot;:true,&quot;hideSeeAllButton&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Templates&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="SiteActivity" JsonControlData="{&quot;id&quot;: &quot;eb95c819-ab8f-4689-bd03-0c2d65d47b1f&quot;, &quot;instanceId&quot;: &quot;2b47231c-ca0e-4f68-8e7c-51420ab8b5a5&quot;, &quot;title&quot;: &quot;Site activity&quot;, &quot;description&quot;: &quot;Show site activity such as files uploaded or edited, lists created, and more.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;maxItems&quot;:&quot;3&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="eb95c819-ab8f-4689-bd03-0c2d65d47b1f" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;b6f8a2ec-ec50-4e48-82b9-8e30d180fbac&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Show a collection of links in a variety of layouts with options for icons, images, and audience targeting.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;ceeb42fa-18c5-419d-9e70-b744b3ca272e&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;578b0ff0-7953-4a96-8fc7-67a7fb1e75d5&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;edd7557b-4e77-460b-9771-0e08f972a222&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Pages}}&quot;,&quot;uniqueId&quot;:&quot;5c79bc85-6928-4b2c-ac0e-60d61d0ac431&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;pane_link_button&quot;:0}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Resources&quot;,&quot;items[0].title&quot;:&quot;Client review process&quot;,&quot;items[1].title&quot;:&quot;Approval process&quot;,&quot;items[2].title&quot;:&quot;Legal review&quot;,&quot;items[3].title&quot;:&quot;Contract documentation&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Client-review-process.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Approval-process.aspx&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Legal-review.aspx&quot;,&quot;items[3].sourceItem.url&quot;:&quot;{site}/SitePages/Contract-documentation.aspx&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Divider" JsonControlData="{&quot;id&quot;: &quot;2161a1c6-db61-4731-b97c-3cdb303f7cbb&quot;, &quot;instanceId&quot;: &quot;c4d7f0ff-5a50-4e46-b4c0-d2f36185de3f&quot;, &quot;title&quot;: &quot;Divider&quot;, &quot;description&quot;: &quot;Add a line to divide areas on your page.&quot;, &quot;dataVersion&quot;: &quot;1.1&quot;, &quot;properties&quot;: {&quot;length&quot;:100,&quot;weight&quot;:1}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="2161a1c6-db61-4731-b97c-3cdb303f7cbb" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="84f59ade-062c-4987-9099-3739454d3a16" Order="3" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 style=&quot;text-align:center;&quot;&gt;Questions? Reach out to our contract managers&amp;nbsp;&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;ae1444c0-50b3-49c1-b955-a007045ad22e&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;Display selected people and their profiles&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[{&quot;id&quot;:&quot;DebraB@M365x059021.OnMicrosoft.com&quot;,&quot;role&quot;:&quot;Administrative Assistant&quot;,&quot;description&quot;:&quot;&quot;},{&quot;id&quot;:&quot;PradeepG@M365x059021.OnMicrosoft.com&quot;,&quot;role&quot;:&quot;Accountant&quot;},{&quot;id&quot;:&quot;AdeleV@M365x059021.OnMicrosoft.com&quot;,&quot;role&quot;:&quot;Retail Manager&quot;}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Statements of work&quot;,&quot;persons[0].name&quot;:&quot;Debra Berger&quot;,&quot;persons[1].name&quot;:&quot;Pradeep Gupta&quot;,&quot;persons[2].name&quot;:&quot;Adele Vance&quot;,&quot;persons[0].email&quot;:&quot;DebraB@M365x059021.OnMicrosoft.com&quot;,&quot;persons[1].email&quot;:&quot;PradeepG@M365x059021.OnMicrosoft.com&quot;,&quot;persons[2].email&quot;:&quot;AdeleV@M365x059021.OnMicrosoft.com&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="LinkPreview" JsonControlData="{&quot;id&quot;: &quot;6410b3b6-d440-4663-8744-378976dc041e&quot;, &quot;instanceId&quot;: &quot;7f8830ca-6161-4115-8a19-5391e0f6f5f1&quot;, &quot;title&quot;: &quot;Link&quot;, &quot;description&quot;: &quot;Add a link with a rich preview such as an image or text brought in from the link content.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;url&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;imageURL&quot;:&quot;&quot;,&quot;linkPreviewComponentMode&quot;:2,&quot;previewContent&quot;:{}}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="6410b3b6-d440-4663-8744-378976dc041e" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;68070be7-7c14-4b30-b272-ed65e977b86d&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;Display selected people and their profiles&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[{&quot;id&quot;:&quot;JoniS@M365x059021.OnMicrosoft.com&quot;,&quot;role&quot;:&quot;Paralegal&quot;},{&quot;id&quot;:&quot;IrvinS@M365x059021.OnMicrosoft.com&quot;,&quot;role&quot;:&quot;Project Manager&quot;},{&quot;id&quot;:&quot;JohannaL@M365x059021.OnMicrosoft.com&quot;,&quot;role&quot;:&quot;Senior Engineer&quot;}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Non-disclosure agreements&quot;,&quot;persons[0].name&quot;:&quot;Joni Sherman&quot;,&quot;persons[1].name&quot;:&quot;Irvin Sayers&quot;,&quot;persons[2].name&quot;:&quot;Johanna Lorenz&quot;,&quot;persons[0].email&quot;:&quot;JoniS@M365x059021.OnMicrosoft.com&quot;,&quot;persons[1].email&quot;:&quot;IrvinS@M365x059021.OnMicrosoft.com&quot;,&quot;persons[2].email&quot;:&quot;JohannaL@M365x059021.OnMicrosoft.com&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="People" JsonControlData="{&quot;id&quot;: &quot;7f718435-ee4d-431c-bdbf-9c4ff326f46e&quot;, &quot;instanceId&quot;: &quot;41759b37-00bf-4f2c-b3a5-a28444676d85&quot;, &quot;title&quot;: &quot;People&quot;, &quot;description&quot;: &quot;Display selected people and their profiles&quot;, &quot;dataVersion&quot;: &quot;1.3&quot;, &quot;properties&quot;: {&quot;layout&quot;:1,&quot;persons&quot;:[{&quot;id&quot;:&quot;NestorW@M365x059021.OnMicrosoft.com&quot;,&quot;role&quot;:&quot;Director&quot;},{&quot;id&quot;:&quot;AllanD@M365x059021.OnMicrosoft.com&quot;,&quot;role&quot;:&quot;IT Admin&quot;},{&quot;id&quot;:&quot;PattiF@M365x059021.OnMicrosoft.com&quot;,&quot;role&quot;:&quot;President&quot;}]}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Service agreements&quot;,&quot;persons[0].name&quot;:&quot;Nestor Wilke&quot;,&quot;persons[1].name&quot;:&quot;Allan Deyoung&quot;,&quot;persons[2].name&quot;:&quot;Patti Fernandez&quot;,&quot;persons[0].email&quot;:&quot;NestorW@M365x059021.OnMicrosoft.com&quot;,&quot;persons[1].email&quot;:&quot;AllanD@M365x059021.OnMicrosoft.com&quot;,&quot;persons[2].email&quot;:&quot;PattiF@M365x059021.OnMicrosoft.com&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="7f718435-ee4d-431c-bdbf-9c4ff326f46e" Order="1" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="See updated guidelines for Non-Disclosure agreements" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Updated-guidelines-for-NDA-agreements/599104836.jpg}&amp;ext=jpg" PageName="Updated-guidelines-for-NDA-agreements.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://{fqdn}{site}/SiteAssets/SitePages/Updated-guidelines-for-NDA-agreements/599104836.jpg" TranslateX="56.654804270462634" TranslateY="32.89473684210527" LayoutType="CutInShape" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Confidential relationships with our clients is of utmost importance. Training on updated guidelines for our non-disclosure agreements&amp;nbsp;should be completed by the end of the month.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Learn about policy changes for Q4" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Policy-changes-for-Q4/939018692.jpg}&amp;ext=jpg" PageName="Policy-changes-for-Q4.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://{fqdn}{site}/SiteAssets/SitePages/Policy-changes-for-Q4/939018692.jpg" TranslateX="37.50889679715302" TranslateY="62.71929824561403" LayoutType="CutInShape" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="For Q4, we will be following a new set of policy changes. Emails will be sent in the next few weeks with more information." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Review the new internal review process" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/SitePages/Review the new-internal-review-process/1070958794.jpg}&amp;ext=jpg" PageName="Review the new-internal-review-process.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://{fqdn}{site}/SiteAssets/SitePages/Review the new-internal-review-process/1070958794.jpg" TranslateX="48.25622775800712" TranslateY="28.50877192982456" LayoutType="CutInShape" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="As of this past year, we have updated our internal review process. Please reach out to your team lead for more information." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Client review process" ThumbnailUrl="" PageName="Client-review-process.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://{fqdn}{site}/SiteAssets/SitePages/Client-review-process/GettyImages-1124741564.jpg" LayoutType="CutInShape" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="We have updated our review process for this upcoming quarter. Please review all of the following new updates." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Approval process" ThumbnailUrl="" PageName="Approval-process.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://{fqdn}{site}/SiteAssets/SitePages/Approval-process/GettyImages-1133505958.jpg" LayoutType="CutInShape" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="When managing contracts for your department, be sure to follow our guidelines for a smooth approval process. For more questions, please reach out to any of the contract managers in your organization.&amp;nbsp;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Legal review" ThumbnailUrl="" PageName="Legal-review.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://{fqdn}{site}/SiteAssets/SitePages/Legal-review/GettyImages-1132121738.jpg" LayoutType="CutInShape" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Every contract must go through a legal review. If you have not scheduled a review, please reach out to us so we can help you along the way." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Contract documentation" ThumbnailUrl="" PageName="Contract-documentation.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://{fqdn}{site}/SiteAssets/SitePages/Contract-documentation/GettyImages-607477457.jpg" LayoutType="CutInShape" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Be sure to fulfill all documentation requirements when creating a contract. All contracts must be approved by your lead and align to the correct format." />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="Create a contract management solution" ThumbnailUrl="" PageName="Create a contract management solution.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="https://{fqdn}{site}/SiteAssets/SitePages/Create a contract management solution/GettyImages-1056327458.jpg" LayoutType="FullWidthImage" ShowTopicHeader="true" ShowPublishDate="false" TopicHeader="Tips and tricks" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4&gt;A solution with SharePoint Syntex and Microsoft 365 components&lt;/h4&gt;&lt;p&gt;This site template is a great way to start aggregating your contracts. Utilizing SharePoint Syntex and Microsoft 365 provides you with a framework to help you plan and create a solution that fits your unique business needs.&lt;/p&gt;&lt;p&gt;Check out a few ways in which you can extend your contracts management solution.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="ContentEmbed" JsonControlData="{&quot;id&quot;: &quot;490d7c76-1824-45b2-9de3-676421c997fa&quot;, &quot;instanceId&quot;: &quot;fdf66f0d-6a16-42df-af02-829dec665dd3&quot;, &quot;title&quot;: &quot;Embed&quot;, &quot;description&quot;: &quot;Embed content from other sites such as Sway, YouTube, Vimeo, and more&quot;, &quot;dataVersion&quot;: &quot;1.2&quot;, &quot;properties&quot;: {&quot;embedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\n\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RWJUR0\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;cachedEmbedCode&quot;:&quot;&lt;iframe width=\&quot;640\&quot; height=\&quot;360\n\&quot; src=\&quot;https://www.microsoft.com/en-us/videoplayer/embed/RWJUR0\&quot;&gt;\n&lt;/iframe&gt;&quot;,&quot;shouldScaleWidth&quot;:true,&quot;tempState&quot;:{},&quot;thumbnailUrl&quot;:&quot;&quot;,&quot;webPartContentUrl&quot;:&quot;&quot;,&quot;cachedEmbedCodeThumbnail&quot;:&quot;&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="490d7c76-1824-45b2-9de3-676421c997fa" Order="1" Column="2" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Divider" JsonControlData="{&quot;id&quot;: &quot;2161a1c6-db61-4731-b97c-3cdb303f7cbb&quot;, &quot;instanceId&quot;: &quot;dd6c9665-9df9-48c4-b520-331714a07d64&quot;, &quot;title&quot;: &quot;Divider&quot;, &quot;description&quot;: &quot;Add a line to divide areas on your page.&quot;, &quot;dataVersion&quot;: &quot;1.1&quot;, &quot;properties&quot;: {&quot;length&quot;:100,&quot;weight&quot;:1}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="2161a1c6-db61-4731-b97c-3cdb303f7cbb" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="ThreeColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="77bdc8c6-d722-4501-acb8-7cd7b0b0e6b8" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;strong&gt;Tip 1 - Create models with SharePoint Syntex&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Creating a SharePoint Syntex&amp;nbsp;&lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-step1&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-step1&quot; data-interception=&quot;off&quot; title=&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-step1&quot; target=&quot;_blank&quot;&gt;document understanding model&lt;/a&gt;&amp;nbsp;and applying it to a document library will identify and classify all contract documents from the many files you receive. You will also&amp;nbsp;be able to quickly view several key elements in each of the contract files identified (for example,&amp;nbsp;&lt;em&gt;Client&lt;/em&gt;,&amp;nbsp;&lt;em&gt;Contractor&lt;/em&gt;, and&amp;nbsp;&lt;em&gt;Fee amount&lt;/em&gt;).&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview&quot; data-interception=&quot;off&quot; title=&quot;https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview&quot; target=&quot;_blank&quot;&gt;View more information&lt;/a&gt;&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="14a360e2-684d-4e9e-a80e-dedaeed1929d" Order="1" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;strong&gt;Tip 2&amp;nbsp;- Use Microsoft Teams&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Having a central Teams channel&amp;nbsp;additionally helps stakeholders review, communicate, and manage contracts. For this purpose, you can leverage&amp;nbsp;&lt;a data-cke-saved-href=&quot;https://docs.microsoft.com/en-us/microsoftteams/&quot; href=&quot;https://docs.microsoft.com/en-us/microsoftteams/&quot; target=&quot;_blank&quot; title=&quot;https://docs.microsoft.com/en-us/microsoftteams/&quot; data-interception=&quot;off&quot;&gt;Microsoft Teams&lt;/a&gt;&amp;nbsp;to set up a Teams channel.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-step2&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-step2&quot; data-interception=&quot;off&quot; title=&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-step2&quot; target=&quot;_blank&quot;&gt;View more information&lt;/a&gt;&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" ControlId="9b7de41a-af29-42b2-8376-c3819e872bad" Order="1" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;&lt;strong&gt;Tip 3&amp;nbsp;- Use Power Automate&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Create Power Automate flows for a &lt;a href=&quot;https://support.microsoft.com/en-us/office/create-a-flow-for-a-list-or-library-a9c3e03b-0654-46af-a254-20252e580d01&quot; data-cke-saved-href=&quot;https://support.microsoft.com/en-us/office/create-a-flow-for-a-list-or-library-a9c3e03b-0654-46af-a254-20252e580d01&quot; data-interception=&quot;off&quot; title=&quot;https://support.microsoft.com/en-us/office/create-a-flow-for-a-list-or-library-a9c3e03b-0654-46af-a254-20252e580d01&quot; target=&quot;_blank&quot;&gt;list or document library&lt;/a&gt; to process your contracts that your SharePoint Syntex model identifies and classifies.&amp;nbsp;You can&amp;nbsp;create a Power Automate flow to do actions like:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;After a contract has been classified by your SharePoint Syntex model, change the contract status to&amp;nbsp;&lt;strong&gt;In review&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;For approved contracts, post the contract information to a tab for payment processing.&lt;/li&gt;&lt;li&gt;For rejected contracts, notify the team for further analysis.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-step3&quot; data-cke-saved-href=&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-step3&quot; data-interception=&quot;off&quot; title=&quot;https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-step3&quot; target=&quot;_blank&quot;&gt;View more information&lt;/a&gt;&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Standard" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" ShowSiteTitle="false" ShowSiteNavigation="false" />
+
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+  <pnp:Sequence ID="CONTRACTSMANAGEMENT-sequence">
+    <pnp:SiteCollections>
+      <pnp:SiteCollection d4p1:type="pnp:ClassicSite" 
+                          Title="Contracts Management" 
+                          Description="" 
+                          ProvisioningId="ContractsManagementSite" 
+                          Url="{parameter:SiteUrl}" 
+                          Owner="{CurrentUserLoginName}" 
+                          TimeZoneId="0" 
+                          WebTemplate="CONTENTCTR#0" 
+                          Language="1033" 
+                          xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <pnp:Templates>
+          <pnp:ProvisioningTemplateReference ID="CONTRACTSMANAGEMENT" />
+        </pnp:Templates>
+      </pnp:SiteCollection>
+    </pnp:SiteCollections>
+  </pnp:Sequence>
+</pnp:Provisioning>

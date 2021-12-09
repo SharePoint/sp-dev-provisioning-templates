@@ -1,0 +1,142 @@
+{
+    "templateId": "0EFD2E19-C135-47D0-8D83-F9DF9B2CEB3C",
+    "categories": [
+        "SYNTEX"
+    ],
+    "platforms": [
+        "SPPNP",
+        "LOOKBOOK"
+    ],
+    "packageFile": "ContentCenter.pnp",
+    "abstract": "Use this site to learn more about SharePoint Syntex. We’ll introduce you to the tools you’ll need to create and train your own models. You can then use this site as a central content repository or as the control center for managing your own SharePoint Syntex models.",
+    "sortOrder": 200,
+    "promoted": "false",
+    "sortOrderPromoted": 0,
+    "preview": "true",
+    "forceNewSite": "true",
+    "matchingSiteBaseTemplateId": "CONTENTCTR#0",
+    "visible": "true",
+    "metadata": {
+        "properties": [
+            {
+                "name": "SiteUrl",
+                "caption": "The Content Center Site URL",
+                "description": "The tenant relative URL of the SharePoint Syntex Content Center site",
+                "editor": "SiteUrl"
+            }
+        ],
+        "displayInfo": {
+            "pageTemplateId": "system/pageTemplates/template-1",
+            "siteDescriptor": "CONTENT CENTER",
+            "descriptionParagraphs": [
+                "<b>Content intelligence for everyone!</b>",
+                "Use this site to learn more about SharePoint Syntex. We’ll introduce you to the tools you’ll need to create and train your own models. You can then use this site as a central content repository or as the control center for managing your own SharePoint Syntex models.",
+                "Models can be trained and evaluated using your own content. However, to apply the models to libraries, a license for SharePoint Syntex is required."
+            ],
+            "previewImages": [
+                {
+                    "type": "fullpage",
+                    "altText": "SharePoint Syntex Content Center",
+                    "url": "./contentcenter-lookbook-frontpage.png"
+                },
+                {
+                    "type": "cardpreview",
+                    "altText": "SharePoint Syntex Content Center",
+                    "url": "./contentcenter-lookbook-preview.png"
+                }
+            ],
+            "detailItemCategories": [
+                {
+                    "name": "Webparts",
+                    "items": [
+                        {
+                            "name": "Hero",
+                            "description": "Full width",
+                            "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
+                        },
+                        {
+                            "name": "Model analytics",
+                            "description": "",
+                            "url": "https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/model-usage-analytics"
+                        },                        
+                        {
+                            "name": "Quick Links",
+                            "description": "List, descriptions shown, icons to the left",
+                            "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                        },
+                        {
+                            "name": "Sites",
+                            "description": "Compact",
+                            "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
+                        }                        
+                    ]
+                },
+                {
+                    "name": "Features",
+                    "items": [
+                        {
+                            "name": "Custom theme (teal & purple)",
+                            "url": "https://support.microsoft.com/en-us/office/change-the-look-of-your-sharepoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Section background",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Compact header",
+                            "url": "https://support.microsoft.com/en-us/office/change-the-look-of-your-sharepoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        }
+                    ]
+                },
+                {
+                    "name": "Site Content",
+                    "items": [
+                        {
+                            "name": "Custom and pre-populated home page"
+                        },
+                        {
+                            "name": "Pre-populated pages to help users understand SharePoint Syntex capabilities and how to get started"
+                        },
+                        {
+                            "name": "Example content for model activity to illustrate how the data is visualized"
+                        },
+                        {
+                            "name": "Additional resources to learn more about SharePoint Syntex"
+                        }
+                    ]
+                },
+                {
+                    "name": "Resources",
+                    "items": [
+                        {
+                            "name": "Introduction to SharePoint Syntex",
+                            "url": "https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/document-understanding-overview"
+                        },
+                        {
+                            "name": "Licensing for SharePoint Syntex",
+                            "url": "https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/syntex-licensing"
+                        }
+                    ]
+                }
+            ],
+            "systemRequirements": [
+                {
+                    "name": "SharePoint version",
+                    "value": "SharePoint Online"
+                },
+                {
+                    "name": "Permission required",
+                    "value": "Tenant Admin"
+                },
+                {
+                    "name": "Site language",
+                    "value": "English"
+                },
+                {
+                    "name": "License",
+                    "value": "This template has limited functionality without a license. You can preview product capabilities and even train models. However, you will need to purchase a license to publish any models to libraries"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,180 @@
+{
+    "templateId": "A8FC15E1-2BBE-43B9-98A0-99D3A997589C",
+    "categories": [
+        "SYNTEX"
+    ],
+    "platforms": [
+        "SPPNP",
+        "LOOKBOOK"
+    ],
+    "packageFile": "ContractsManagement.pnp",
+    "abstract": "This SharePoint Syntex powered site is designed to help you jump-start your contract management needs. Use the Contracts Management site to let employees know about recent updates to agreements or policies, to give various departments an easy way to request a contract, and to provide a secure place to keep your organization’s contract templates.",
+    "sortOrder": 100,
+    "promoted": "false",
+    "sortOrderPromoted": 0,
+    "preview": "true",
+    "forceNewSite": "true",
+    "matchingSiteBaseTemplateId": "CONTENTCTR#0",
+    "visible": "true",
+    "metadata": {
+        "properties": [
+            {
+                "name": "SiteUrl",
+                "caption": "The Contacts Management Site URL",
+                "description": "The tenant relative URL of the SharePoint Syntex Contracts Management site",
+                "editor": "SiteUrl"
+            }
+        ],
+        "displayInfo": {
+            "pageTemplateId": "system/pageTemplates/template-1",
+            "siteDescriptor": "CONTRACTS MANAGEMENT",
+            "descriptionParagraphs": [
+                "<b>Syntex powered solutions to automate your contract needs</b>",
+                "This SharePoint Syntex powered site is designed to help you jump-start your contract management needs. Use the Contracts Management site to let employees know about recent updates to agreements or policies, to give various departments an easy way to request a contract, and to provide a secure place to keep your organization’s contract templates.",
+                "The site also lets employees use preconfigured sample models to extract and classify information from documents, and to perform advanced searches to quickly find metadata within your agreements."
+            ],
+            "previewImages": [
+                {
+                    "type": "fullpage",
+                    "altText": "SharePoint Syntex Contracts Management",
+                    "url": "./ContactsManagement-lookbook-frontpage.png"
+                },
+                {
+                    "type": "cardpreview",
+                    "altText": "SharePoint Syntex Contracts Management",
+                    "url": "./ContactsManagement-lookbook-preview.png"
+                }
+            ],
+            "detailItemCategories": [
+                {
+                    "name": "Webparts",
+                    "items": [
+                        {
+                            "name": "News",
+                            "description": "Tiles",
+                            "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
+                        },
+                        {
+                            "name": "Text",
+                            "description": "Custom RTE formatting",
+                            "url": "https://support.microsoft.com/en-us/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801"
+                        },
+                        {
+                            "name": "Button",
+                            "description": "Center alignment",
+                            "url": "https://support.microsoft.com/en-us/office/use-the-button-web-part-d2e37c48-11e8-45b9-8d9e-abdaa97c2a7a"
+                        },
+                        {
+                            "name": "Document library",
+                            "description": "Command bar off",
+                            "url": "https://support.office.com/en-us/article/use-the-document-library-web-part-a9dfecc3-2050-4528-9f00-2c5afc5731b0"
+                        },
+                        {
+                            "name": "Site activity",
+                            "description": "",
+                            "url": "https://support.office.com/en-us/article/use-the-site-activity-web-part-1fa91401-ac36-42b6-beba-bb8469d6cbfa"
+                        },
+                        {
+                            "name": "Quick Links",
+                            "description": "List, descriptions shown, icons to the left",
+                            "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                        },
+                        {
+                            "name": "People",
+                            "description": "People web part",
+                            "url": "https://support.microsoft.com/en-us/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05"
+                        }                        
+                    ]
+                },
+                {
+                    "name": "Features",
+                    "items": [
+                        {
+                            "name": "Out of the box purple theme",
+                            "url": "https://support.microsoft.com/en-us/office/change-the-look-of-your-sharepoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Section background",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Header background",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Custom site logo",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Footer",
+                            "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b"
+                        }
+                    ]
+                },
+                {
+                    "name": "Site Content",
+                    "items": [
+                        {
+                            "name": "Custom Syntex model applied to contract document library"
+                        },
+                        {
+                            "name": "Custom home page built using out-of-the-box web parts"
+                        },
+                        {
+                            "name": "Example news articles demonstrating modern page designs"
+                        },
+                        {
+                            "name": "Sample contract document templates"
+                        },
+                        {
+                            "name": "Custom pre-configured list for contract request"
+                        }
+                    ]
+                },
+                {
+                    "name": "Resources",
+                    "items": [
+                        {
+                            "name": "Introduction to SharePoint Syntex",
+                            "url": "https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/document-understanding-overview"
+                        },
+                        {
+                            "name": "Manage contracts using a Microsoft 365 solution",
+                            "url": "https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/solution-manage-contracts-in-microsoft-365"
+                        },
+                        {
+                            "name": "Licensing for SharePoint Syntex",
+                            "url": "https://docs.microsoft.com/en-us/microsoft-365/contentunderstanding/syntex-licensing"
+                        }
+                    ]
+                }
+            ],
+            "systemRequirements": [
+                {
+                    "name": "SharePoint version",
+                    "value": "SharePoint Online"
+                },
+                {
+                    "name": "Permission required",
+                    "value": "Tenant Admin"
+                },
+                {
+                    "name": "Site language",
+                    "value": "English"
+                },
+                {
+                    "name": "License",
+                    "value": "SharePoint Syntex"
+                }
+            ]
+        },
+        "preRequirements": [
+            {
+            "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
+            "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.SyntexLicenseCheck",
+            "configuration": "{ 'tenantLicense': true, 'userLicense': true }",
+            "preRequirementContent": "tenant/SyntexContractsManagement/prerequirement-SyntexContractsManagement.md"
+            }
+        ] 
+    }
+}
