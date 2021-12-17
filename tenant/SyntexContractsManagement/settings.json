@@ -175,6 +175,13 @@
             "configuration": "{ 'tenantLicense': true, 'userLicense': true }",
             "preRequirementContent": "tenant/SyntexContractsManagement/prerequirement-SyntexContractsManagement.md"
             }
+        ], 
+        "postActions": [
+            {
+            "assemblyName": "SharePointPnP.ProvisioningApp.PostActions",
+            "typeName": "SharePointPnP.ProvisioningApp.PostActions.SyntexPostAction",
+            "configuration": ""
+            }
         ] 
     }
 }
