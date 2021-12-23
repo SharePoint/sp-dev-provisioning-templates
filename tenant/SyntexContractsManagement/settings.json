@@ -37,12 +37,12 @@
                 {
                     "type": "fullpage",
                     "altText": "SharePoint Syntex Contracts Management",
-                    "url": "./ContactsManagement-lookbook-frontpage.png"
+                    "url": "./ContractsManagement-lookbook-frontpage.png"
                 },
                 {
                     "type": "cardpreview",
                     "altText": "SharePoint Syntex Contracts Management",
-                    "url": "./ContactsManagement-lookbook-preview.png"
+                    "url": "./ContractsManagement-lookbook-preview.png"
                 }
             ],
             "detailItemCategories": [
