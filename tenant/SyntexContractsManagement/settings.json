@@ -168,6 +168,14 @@
                 }
             ]
         },
+        "preRequirements": [
+            {
+            "assemblyName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements",
+            "typeName": "SharePointPnP.ProvisioningApp.ProvisioningPreRequirements.SyntexLicenseCheck",
+            "configuration": "{ 'tenantLicense': true, 'userLicense': true }",
+            "preRequirementContent": "tenant/SyntexContractsManagement/prerequirement-SyntexContractsManagement.md"
+            }
+        ], 
         "postActions": [
             {
             "assemblyName": "SharePointPnP.ProvisioningApp.PostActions",
