@@ -6,7 +6,7 @@ This SharePoint Syntex powered site is designed to help you jump-start your cont
 
 The site also lets employees use preconfigured sample models to extract and classify information from documents, and to perform advanced searches to quickly find metadata within your agreements.
 
-![SharePoint Syntex Contracts Management Site](./ContactsManagement-lookbook-preview.png)
+![SharePoint Syntex Contracts Management Site](./ContractsManagement-lookbook-preview.png)
 
 ## Prerequisites
 
