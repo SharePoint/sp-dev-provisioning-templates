@@ -21,6 +21,22 @@ This template contains following elements which will be provisioned:
 
 - A SharePoint Syntex Content Center site holding the SharePoint Syntex Content Center Site content
 
+## Manual deployment using PnP PowerShell
+
+This template can also be manually deployed using [PnP PowerShell](https://pnp.github.io/powershell/). First ensure you've PnP PowerShell installed via `Install-Module -Name PnP.PowerShell` and configured via `Register-PnPManagementShellAccess`. Once that's done you can use the `Deploy-Template` script specifying your tenant url and the url for the Syntex Contracts Management site that will be created:
+
+```PowerShell
+.\Deploy-Template.ps1 -TenantUrl https://contoso.sharepoint.com -SiteUrl "/sites/SyntexContentCenter"
+```
+
+The final output of this script will show the created site, you can copy that URL and start using your site:
+
+```PowerShell
+Title             Url
+-----             ---
+Content Center    https://contoso.sharepoint.com/sites/SyntexContentCenter
+```
+
 ## Disclaimer
 
 THIS CODE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
