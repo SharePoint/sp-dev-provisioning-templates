@@ -61,6 +61,6 @@ Start-Sleep -Seconds 15
 Write-Host "Performing post deployment steps..."
 Connect-PnPOnline -Url "$TenantUrl$SiteUrl" -Interactive
 Start-Sleep -Seconds 5
-Invoke-PnPSPRestMethod -Method Post -Url "/_api/machinelearning/models/SetupPrimedLibrary" -Content "{'primedLibraryName':'Sample Contract Library','packageName':'ContractsSitePackage.cmp'}"
+Invoke-PnPSPRestMethod -Method Post -Url "/_api/machinelearning/models/SetupPrimedLibrary" -Content "{'primedLibraryName':'Sample contracts library','packageName':'ContractsSitePackage.cmp'}"
 
 Write-Host "Provisioning complete!" -ForegroundColor Green
