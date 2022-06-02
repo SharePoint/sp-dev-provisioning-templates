@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2021/03/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.9.1.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-28A4F8E39D354D7296FDD08AC025B4B7">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-28A4F8E39D354D7296FDD08AC025B4B7" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/SiteAssets/__sitelogo__logo-ContosoPride.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" HorizontalQuickLaunch="true" SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" />
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="true" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
+            <pnp:NavigationNode Title="HOME" Url="{site}" />
+            <pnp:NavigationNode Title="ABOUT US" Url="http://linkless.header/" IsExternal="true">
+              <pnp:NavigationNode Title="Pride Leadership" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Executive Sponsors" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Current initiatives" Url="http://linkless.header/" IsExternal="true" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="RESOURCES" Url="http://linkless.header/" IsExternal="true">
+              <pnp:NavigationNode Title="Pride swag" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="All gender restroom map" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Contoso Allyship" Url="http://linkless.header/" IsExternal="true" />
+              <pnp:NavigationNode Title="Understanding pronouns" Url="http://linkless.header/" IsExternal="true" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="☆ BECOME A MEMBER ☆" Url="{site}" />
+            <pnp:NavigationNode Title="Learn how to customize your site »" Url="https://docs.microsoft.com/en-us/SharePoint/employee-resource-template" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/SitePages/Home/481857030-pride_divider.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="481857030-pride_divider.png" />
+            <pnp:Property Key="Order" Value="500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1114918184-pride_divider.svg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="1114918184-pride_divider.svg" />
+            <pnp:Property Key="Order" Value="600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/news posts/Ally-thumb.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="Ally-thumb.jpg" />
+            <pnp:Property Key="Order" Value="5400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/news posts/blackhistorymonth-thumb.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="blackhistorymonth-thumb.jpg" />
+            <pnp:Property Key="Order" Value="5500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/news posts/dayofvisibility-thumb.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="dayofvisibility-thumb.jpg" />
+            <pnp:Property Key="Order" Value="5600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/news posts/yellow-orange.png" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="yellow-orange.png" />
+            <pnp:Property Key="Order" Value="5700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/news posts/lgbtqPride_thumb.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="lgbtqPride_thumb.jpg" />
+            <pnp:Property Key="Order" Value="5800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-01.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-01.jpg" />
+            <pnp:Property Key="Order" Value="5900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-02.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-02.jpg" />
+            <pnp:Property Key="Order" Value="6000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-03.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-03.jpg" />
+            <pnp:Property Key="Order" Value="6100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-04.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-04.jpg" />
+            <pnp:Property Key="Order" Value="6200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-05.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-05.jpg" />
+            <pnp:Property Key="Order" Value="6300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-06.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-06.jpg" />
+            <pnp:Property Key="Order" Value="6400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-07.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-07.jpg" />
+            <pnp:Property Key="Order" Value="6500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-08.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-08.jpg" />
+            <pnp:Property Key="Order" Value="6600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-09.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-09.jpg" />
+            <pnp:Property Key="Order" Value="6700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-10.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-10.jpg" />
+            <pnp:Property Key="Order" Value="6800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-11.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-11.jpg" />
+            <pnp:Property Key="Order" Value="6900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-12.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-12.jpg" />
+            <pnp:Property Key="Order" Value="7000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-13.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-13.jpg" />
+            <pnp:Property Key="Order" Value="7100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-14.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-14.jpg" />
+            <pnp:Property Key="Order" Value="7200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-15.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-15.jpg" />
+            <pnp:Property Key="Order" Value="7300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-16.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-16.jpg" />
+            <pnp:Property Key="Order" Value="7400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-17.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-17.jpg" />
+            <pnp:Property Key="Order" Value="7500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-18.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-18.jpg" />
+            <pnp:Property Key="Order" Value="7600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-19.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-19.jpg" />
+            <pnp:Property Key="Order" Value="7700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-20.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-20.jpg" />
+            <pnp:Property Key="Order" Value="7800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-22.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-22.jpg" />
+            <pnp:Property Key="Order" Value="7900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-21.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-21.jpg" />
+            <pnp:Property Key="Order" Value="8000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-23.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-23.jpg" />
+            <pnp:Property Key="Order" Value="8100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-24.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-24.jpg" />
+            <pnp:Property Key="Order" Value="8200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-25.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-25.jpg" />
+            <pnp:Property Key="Order" Value="8300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/events/event-thumbnail-26.jpg" Folder="SiteAssets/_placeholder-images/events" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="event-thumbnail-26.jpg" />
+            <pnp:Property Key="Order" Value="8400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/pride_divider.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="pride_divider.png" />
+            <pnp:Property Key="Order" Value="8500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/site-thumbnail.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="site-thumbnail.jpg" />
+            <pnp:Property Key="Order" Value="8600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/_placeholder-images/logo_outandequal.png" Folder="SiteAssets/_placeholder-images" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="logo_outandequal.png" />
+            <pnp:Property Key="Order" Value="8700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__sitelogo__logo-ContosoPride.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="__sitelogo__logo-ContosoPride.png" />
+            <pnp:Property Key="Order" Value="9000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__rectSitelogo__logo-ContosoPride.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
+            <pnp:Property Key="FileLeafRef" Value="__rectSitelogo__logo-ContosoPride.png" />
+            <pnp:Property Key="Order" Value="9100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/481857030-pride_divider.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__sitelogo__logo-ContosoPride.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+      </pnp:Files>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="/_layouts/15/getpreview.ashx?path=%2Fsites%2FPRIDE-EmployeeResourceGroup%2FSiteAssets%2FSitePages%2FHome%2Fsite-thumbnail.jpg" PageName="Home.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;cd8a0ab3-ed79-4cf0-8ba9-573514166098&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;pride_divider.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:1391}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;efebeecc-9035-4ad6-9932-e17bcbeb8be8&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:40}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="ThreeColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" ControlId="3ff6cab1-f66c-4d81-874c-c5c4c0721fc9" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontColorBlueLight&quot;&gt;&lt;strong&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;CONTOSO PRIDE&lt;/span&gt;&lt;/strong&gt;&amp;nbsp;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;span class=&quot;fontSizeSuper&quot;&gt;A global LGBTQ+ employees &amp;amp; allies resource group&lt;/span&gt;&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;6286663b-dca8-45a5-a773-c5c3ca9f55d3&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;pride_divider.svg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="1019703e-b444-4959-8593-71941ddd7b0a" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4&gt;&lt;strong&gt;&lt;span class=&quot;fontColorBlueLight&quot;&gt;&lt;span class=&quot;fontSizeSmall&quot;&gt;OUR&amp;nbsp;MISSION&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;Support our employees by fostering career development, advancing equality, celebrating diversity, and championing Contoso’s involvement in the community.&lt;/span&gt;&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;51840893-4f42-437a-8054-4d34f0d4a528&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;53693da9-7586-4342-ab80-5c34864ea431&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;pride_divider.svg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="3" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="367a075f-1240-4115-8b9e-587088cddea3" Order="2" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4&gt;&lt;span class=&quot;fontColorBlueLight&quot;&gt;&lt;strong&gt;&lt;span class=&quot;fontSizeSmall&quot;&gt;OUR VISION&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;&lt;span class=&quot;fontSizeMediumPlus&quot;&gt;Reaching beyond boundaries to unite, advance, and promote the LGBTQ+ community.&lt;/span&gt;&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;3395afd1-b445-46f9-a2c9-8b18da9d1fa7&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;05af911f-1aab-4d1f-a877-36011fd0b7ea&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:40}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;0a3a2f9c-40de-49b9-aeaf-08c94992caf3&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="News" JsonControlData="{&quot;id&quot;: &quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;, &quot;instanceId&quot;: &quot;e88d6785-c1d9-4fb7-848e-cc691361322e&quot;, &quot;title&quot;: &quot;News&quot;, &quot;description&quot;: &quot;Show news posts from one or more sites in a variety of layouts. You can filter news and target news to key audiences.&quot;, &quot;dataVersion&quot;: &quot;1.12&quot;, &quot;properties&quot;: {&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:true,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:false,&quot;showAuthor&quot;:false,&quot;showDate&quot;:false},&quot;layoutId&quot;:&quot;GridNews&quot;,&quot;newsDataSourceProp&quot;:1,&quot;carouselHeroWrapperComponentId&quot;:&quot;&quot;,&quot;prefetchCount&quot;:4,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;renderItemsSliderValue&quot;:4,&quot;layoutComponentId&quot;:&quot;&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;filterKQLQuery&quot;:&quot;&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;propsLastEdited&quot;:&quot;2022-05-05T00:23:29.458Z&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Contoso Pride news&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{site}&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;7327e48f-fb8f-40df-b8df-48e5e10defe1&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;id&quot;: &quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;, &quot;instanceId&quot;: &quot;4875d48e-b6fa-4853-9c4e-5f4939d682d7&quot;, &quot;title&quot;: &quot;Events&quot;, &quot;description&quot;: &quot;Display upcoming events from your sites in a layout you choose.&quot;, &quot;dataVersion&quot;: &quot;1.4&quot;, &quot;properties&quot;: {&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;audienceTarget&quot;:false,&quot;showImage&quot;:true,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;dataSource&quot;:7,&quot;sites&quot;:[],&quot;maxItemsPerPage&quot;:20,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Upcoming events&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="4" Column="1" />
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;c83e3aae-115e-4678-98d0-1160e9e3ac3f&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="5" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;a3201a16-09a6-469c-838a-fbe0918a1313&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:24}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="7" Type="ThreeColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;67e523e6-8fd9-4aa3-b624-91e4cb40c0e9&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;pride_divider.svg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="f1415d4b-fa36-4ddc-9786-a4d3de6a1495" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4&gt;&lt;span class=&quot;fontColorBlueLight&quot;&gt;&lt;span class=&quot;fontSizeSmall&quot;&gt;&lt;strong&gt;CONNECT&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;3c89b00b-2519-41a7-bc68-187839e2ee20&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Show a collection of links to content such as documents, images, videos, and more in a variety of layouts with options for icons, images, and audience targeting.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;4a03f0e6-1cba-44c8-b2a0-9956d553adfd&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;navigatebackmirrored&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;4a03f0e6-1cba-44c8-b2a0-9956d553adfd&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;navigateforward&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;4a03f0e6-1cba-44c8-b2a0-9956d553adfd&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;navigateforward&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;iconPicker&quot;:&quot;navigateforward&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Contoso Pride on Yammer&quot;,&quot;items[1].title&quot;:&quot;Contoso Pride on Teams&quot;,&quot;items[2].title&quot;:&quot;Contoso Pride Newsletter&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;127026d7-b2ce-425c-aa37-935bd4d0f1b5&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;pride_divider.svg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="be4fd453-35ce-4b15-a41b-5791fe1f51d9" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4&gt;&lt;span class=&quot;fontColorBlueLight&quot;&gt;&lt;span class=&quot;fontSizeSmall&quot;&gt;&lt;strong&gt;BECOME A MEMBER&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;​​​​​​​&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;2f6b7661-4716-4339-a856-5ea978f89dd2&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Show a collection of links to content such as documents, images, videos, and more in a variety of layouts with options for icons, images, and audience targeting.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;4a03f0e6-1cba-44c8-b2a0-9956d553adfd&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;navigatebackmirrored&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;4a03f0e6-1cba-44c8-b2a0-9956d553adfd&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;navigateforward&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;4a03f0e6-1cba-44c8-b2a0-9956d553adfd&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;navigateforward&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;iconPicker&quot;:&quot;navigateforward&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Join Contoso Pride today&quot;,&quot;items[1].title&quot;:&quot;Find local events&quot;,&quot;items[2].title&quot;:&quot;Find your local chapter&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="2" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;d4ccdc15-7fc8-4c2f-a2f2-ce8f4065ebed&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;pride_divider.svg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="3" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="b03b9843-d5cc-420a-997e-b80fc314444f" Order="2" Column="3">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4&gt;&lt;span class=&quot;fontColorBlueLight&quot;&gt;&lt;strong&gt;&lt;span class=&quot;fontSizeSmall&quot;&gt;RESOURCES&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;​​​​​​​&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;id&quot;: &quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;, &quot;instanceId&quot;: &quot;c57dfe96-8a8d-48ff-9c32-374affb230aa&quot;, &quot;title&quot;: &quot;Quick links&quot;, &quot;description&quot;: &quot;Show a collection of links to content such as documents, images, videos, and more in a variety of layouts with options for icons, images, and audience targeting.&quot;, &quot;dataVersion&quot;: &quot;2.2&quot;, &quot;properties&quot;: {&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;4a03f0e6-1cba-44c8-b2a0-9956d553adfd&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;navigateforward&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;4a03f0e6-1cba-44c8-b2a0-9956d553adfd&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;navigatebackmirrored&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;guids&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;,&quot;uniqueId&quot;:&quot;4a03f0e6-1cba-44c8-b2a0-9956d553adfd&quot;},&quot;itemType&quot;:0,&quot;fileExtension&quot;:&quot;.ASPX&quot;,&quot;progId&quot;:null},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;navigateforward&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;hideWebPartWhenEmpty&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;iconPicker&quot;:&quot;navigateforward&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;All gender restroom map&quot;,&quot;items[1].title&quot;:&quot;Allyship &amp; Inclusion at Contoso&quot;,&quot;items[2].title&quot;:&quot;Contoso Pride FAQs&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[1].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;,&quot;items[2].sourceItem.url&quot;:&quot;{site}/SitePages/Home.aspx&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="3" Column="3" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="8" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;dbaef2c3-9541-4789-b58d-20be313ad2a6&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:24}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="9" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;fb2b0516-cf43-4dc4-abbf-4c06fa8d2a96&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="10" Type="OneColumnFullWidth">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;732a2147-f1cf-4261-bf53-76897792dca0&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:1051}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;https://{fqdn}{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="true" Overwrite="true" Title="Contoso Pride news template" ThumbnailUrl="/_layouts/15/getpreview.ashx?path=%2Fsites%2FPRIDE-EmployeeResourceGroup%2FShared%20Documents%2F_placeholder-images%2Fevents%2Fevent-thumbnail-26.jpg" PageName="Templates/Contoso-Pride-page-template.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="employee resource group" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;f135167a-f2eb-4a44-b682-b7a84a845dd6&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;D206AED8-0612-4E56-A45C-E1F3B97DD7EC&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:1408,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;D206AED8-0612-4E56-A45C-E1F3B97DD7EC&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumnRight" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;601bdb58-ce3c-4dff-81f3-814cd5bfbb7b&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2&gt;&lt;span class=&quot;fontSizeXxLargePlus&quot;&gt;You can write a great heading for your news post&lt;/span&gt;&lt;/h2&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;560a2100-c37d-4dda-b294-4293c483ae72&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:32}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="005a660b-7d95-44ef-a8c6-a80a02a8aa64" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLarge&quot;&gt;We wanted to give you not only a site template as a resource, but also pack it full of templates to kick-start your communications. If you want further information on how to create a page template, we have you covered here in our Microsoft's docs: &lt;a href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; data-cke-saved-href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; target=&quot;_blank&quot; data-interception=&quot;off&quot; title=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot;&gt;Page templates in SharePoint&lt;/a&gt;. This section is a great way to introduce your readers to the news content. Pro tip: Duplicate this section and use it for section headings to break up content or to provide a clear indication of a shift in subject matter.&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d34a2d5f-c794-4f14-9330-234254050d02&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="TwoColumnRight" />
+            <pnp:Section Order="5" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;5fadc9f0-600e-4c19-adc8-6973fbf949f4&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="9c062ab7-4923-48df-b022-60d6722dcf65" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;Working together to create change at Pride&lt;/span&gt;&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;17d16f45-ea67-4bd9-8ed3-9e0e6940e944&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="37bb56b5-59d2-4be1-b476-13dedbd78693" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;LGBTQI+ people have many dimensions to their identities and are affected by issues that some may consider unrelated to LGBTQI+ communities. Learn from those who are actively working together across groups to drive change for everyone.&lt;/p&gt;&lt;p&gt;Work to protect trans lives, create racial justice, mitigate the impact of COVID-19, expand environmental equity, increase Indigenous visibility, and so much more. LGBTQI+ communities at Contoso and beyond invite everyone to join us in our call for justice and equity, as we highlight how societal issues that are often seen as separate and unrelated, impact us all.&amp;nbsp;The challenges we face are hard to solve. But by working together, we can make an impact in bringing about change for all. Discover how some Contoso&amp;nbsp;employees and activists who inspire us are creating change.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="International transgender day of visibility" ThumbnailUrl="/_layouts/15/getpreview.ashx?path=%2Fsites%2FPRIDE-EmployeeResourceGroup%2FSiteAssets%2F_placeholder-images%2Fnews%20posts%2Fdayofvisibility-thumb.jpg" PageName="International-Transgender-Day-of-Visibility.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Pride" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;f135167a-f2eb-4a44-b682-b7a84a845dd6&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;rainbow divider&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:2171,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumnRight" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;601bdb58-ce3c-4dff-81f3-814cd5bfbb7b&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2&gt;&lt;span class=&quot;fontSizeXxLargePlus&quot;&gt;You can write a great heading for your news post&lt;/span&gt;&lt;/h2&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;560a2100-c37d-4dda-b294-4293c483ae72&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:32}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="005a660b-7d95-44ef-a8c6-a80a02a8aa64" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLarge&quot;&gt;We wanted to give you not only a site template as a resource, but also pack it full of templates to kick-start your communications. If you want further information on how to create a page template, we have you covered here in our Microsoft's docs: &lt;a href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; data-cke-saved-href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; target=&quot;_blank&quot; data-interception=&quot;off&quot; title=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot;&gt;Page templates in SharePoint&lt;/a&gt;. This section is a great way to introduce your readers to the news content. Pro tip: Duplicate this section and use it for section headings to break up content or to provide a clear indication of a shift in subject matter.&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d34a2d5f-c794-4f14-9330-234254050d02&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="TwoColumnRight" />
+            <pnp:Section Order="5" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;5fadc9f0-600e-4c19-adc8-6973fbf949f4&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="9c062ab7-4923-48df-b022-60d6722dcf65" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;Working together to create change at Pride&lt;/span&gt;&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;17d16f45-ea67-4bd9-8ed3-9e0e6940e944&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="37bb56b5-59d2-4be1-b476-13dedbd78693" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;LGBTQI+ people have many dimensions to their identities and are affected by issues that some may consider unrelated to LGBTQI+ communities. Learn from those who are actively working together across groups to drive change for everyone.&lt;/p&gt;&lt;p&gt;Work to protect trans lives, create racial justice, mitigate the impact of COVID-19, expand environmental equity, increase Indigenous visibility, and so much more. LGBTQI+ communities at Contoso and beyond invite everyone to join us in our call for justice and equity, as we highlight how societal issues that are often seen as separate and unrelated, impact us all.&amp;nbsp;The challenges we face are hard to solve. But by working together, we can make an impact in bringing about change for all. Discover how some Contoso&amp;nbsp;employees and activists who inspire us are creating change.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="LGBTQ+ communities of color celebrate black history month" ThumbnailUrl="/_layouts/15/getpreview.ashx?path=%2Fsites%2FPRIDE-EmployeeResourceGroup%2FSiteAssets%2F_placeholder-images%2Fnews%20posts%2Fblackhistorymonth-thumb.jpg" PageName="LGBTQ-Communities-of-Color.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Pride" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;f135167a-f2eb-4a44-b682-b7a84a845dd6&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;rainbow divider&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:2171,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumnRight" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;601bdb58-ce3c-4dff-81f3-814cd5bfbb7b&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2&gt;&lt;span class=&quot;fontSizeXxLargePlus&quot;&gt;You can write a great heading for your news post&lt;/span&gt;&lt;/h2&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;560a2100-c37d-4dda-b294-4293c483ae72&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:32}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="005a660b-7d95-44ef-a8c6-a80a02a8aa64" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLarge&quot;&gt;We wanted to give you not only a site template as a resource, but also pack it full of templates to kick-start your communications. If you want further information on how to create a page template, we have you covered here in our Microsoft's docs: &lt;a href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; data-cke-saved-href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; target=&quot;_blank&quot; data-interception=&quot;off&quot; title=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot;&gt;Page templates in SharePoint&lt;/a&gt;. This section is a great way to introduce your readers to the news content. Pro tip: Duplicate this section and use it for section headings to break up content or to provide a clear indication of a shift in subject matter.&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d34a2d5f-c794-4f14-9330-234254050d02&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="TwoColumnRight" />
+            <pnp:Section Order="5" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;5fadc9f0-600e-4c19-adc8-6973fbf949f4&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="9c062ab7-4923-48df-b022-60d6722dcf65" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;Working together to create change at Pride&lt;/span&gt;&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;17d16f45-ea67-4bd9-8ed3-9e0e6940e944&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="37bb56b5-59d2-4be1-b476-13dedbd78693" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;LGBTQI+ people have many dimensions to their identities and are affected by issues that some may consider unrelated to LGBTQI+ communities. Learn from those who are actively working together across groups to drive change for everyone.&lt;/p&gt;&lt;p&gt;Work to protect trans lives, create racial justice, mitigate the impact of COVID-19, expand environmental equity, increase Indigenous visibility, and so much more. LGBTQI+ communities at Contoso and beyond invite everyone to join us in our call for justice and equity, as we highlight how societal issues that are often seen as separate and unrelated, impact us all.&amp;nbsp;The challenges we face are hard to solve. But by working together, we can make an impact in bringing about change for all. Discover how some Contoso&amp;nbsp;employees and activists who inspire us are creating change.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="An annual LGBTQ+ pride celebration" ThumbnailUrl="/_layouts/15/getpreview.ashx?path=%2Fsites%2FPRIDE-EmployeeResourceGroup%2FSiteAssets%2F_placeholder-images%2Fnews%20posts%2FlgbtqPride_thumb.jpg" PageName="An-Annual-LGBT-Pride-Celebration.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Pride" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;f135167a-f2eb-4a44-b682-b7a84a845dd6&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:1888,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:4000,&quot;height&quot;:32}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumnRight" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;601bdb58-ce3c-4dff-81f3-814cd5bfbb7b&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2&gt;&lt;span class=&quot;fontSizeXxLargePlus&quot;&gt;You can write a great heading for your news post&lt;/span&gt;&lt;/h2&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;560a2100-c37d-4dda-b294-4293c483ae72&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:32}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="005a660b-7d95-44ef-a8c6-a80a02a8aa64" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLarge&quot;&gt;We wanted to give you not only a site template as a resource, but also pack it full of templates to kick-start your communications. If you want further information on how to create a page template, we have you covered here in our Microsoft's docs: &lt;a href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; data-cke-saved-href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; target=&quot;_blank&quot; data-interception=&quot;off&quot; title=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot;&gt;Page templates in SharePoint&lt;/a&gt;. This section is a great way to introduce your readers to the news content. Pro tip: Duplicate this section and use it for section headings to break up content or to provide a clear indication of a shift in subject matter.&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d34a2d5f-c794-4f14-9330-234254050d02&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="TwoColumnRight" />
+            <pnp:Section Order="5" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;5fadc9f0-600e-4c19-adc8-6973fbf949f4&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="9c062ab7-4923-48df-b022-60d6722dcf65" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;Working together to create change at Pride&lt;/span&gt;&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;17d16f45-ea67-4bd9-8ed3-9e0e6940e944&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="37bb56b5-59d2-4be1-b476-13dedbd78693" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;LGBTQI+ people have many dimensions to their identities and are affected by issues that some may consider unrelated to LGBTQI+ communities. Learn from those who are actively working together across groups to drive change for everyone.&lt;/p&gt;&lt;p&gt;Work to protect trans lives, create racial justice, mitigate the impact of COVID-19, expand environmental equity, increase Indigenous visibility, and so much more. LGBTQI+ communities at Contoso and beyond invite everyone to join us in our call for justice and equity, as we highlight how societal issues that are often seen as separate and unrelated, impact us all.&amp;nbsp;The challenges we face are hard to solve. But by working together, we can make an impact in bringing about change for all. Discover how some Contoso&amp;nbsp;employees and activists who inspire us are creating change.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Supporting transgender and gender diverse people in the workplace" ThumbnailUrl="/_layouts/15/getpreview.ashx?path=%2Fsites%2FPRIDE-EmployeeResourceGroup%2FSiteAssets%2F_placeholder-images%2Fnews%20posts%2FAlly-thumb.jpg" PageName="Supporting-Transgender-and-Gender-Diverse-People-in-the-Workplace.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Pride" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;id&quot;: &quot;d1d91016-032f-456d-98a4-721247c305e8&quot;, &quot;instanceId&quot;: &quot;f135167a-f2eb-4a44-b682-b7a84a845dd6&quot;, &quot;title&quot;: &quot;Image&quot;, &quot;description&quot;: &quot;Add an image, picture or photo to your page including text overlays and ability to crop and resize images.&quot;, &quot;dataVersion&quot;: &quot;1.9&quot;, &quot;properties&quot;: {&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;rainbow divider&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueId&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;imgWidth&quot;:4000,&quot;imgHeight&quot;:32,&quot;isFullWidth&quot;:true,&quot;alignment&quot;:&quot;Center&quot;,&quot;resizeCoefficient&quot;:1,&quot;resizeDesiredWidth&quot;:2171,&quot;fixAspectRatio&quot;:false}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/481857030-pride_divider.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{{listid:Site Assets}}&quot;,&quot;uniqueid&quot;:&quot;d206aed8-0612-4e56-a45c-e1f3b97dd7ec&quot;,&quot;width&quot;:&quot;4000&quot;,&quot;height&quot;:&quot;32&quot;}}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="TwoColumnRight" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;601bdb58-ce3c-4dff-81f3-814cd5bfbb7b&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="1212fc8d-dd6b-408a-8d5d-9f1cc787efbb" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2&gt;&lt;span class=&quot;fontSizeXxLargePlus&quot;&gt;You can write a great heading for your news post&lt;/span&gt;&lt;/h2&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;560a2100-c37d-4dda-b294-4293c483ae72&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:32}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="005a660b-7d95-44ef-a8c6-a80a02a8aa64" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLarge&quot;&gt;We wanted to give you not only a site template as a resource, but also pack it full of templates to kick-start your communications. If you want further information on how to create a page template, we have you covered here in our Microsoft's docs: &lt;a href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; data-cke-saved-href=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot; target=&quot;_blank&quot; data-interception=&quot;off&quot; title=&quot;https://support.microsoft.com/en-us/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873&quot;&gt;Page templates in SharePoint&lt;/a&gt;. This section is a great way to introduce your readers to the news content. Pro tip: Duplicate this section and use it for section headings to break up content or to provide a clear indication of a shift in subject matter.&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Strong">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;d34a2d5f-c794-4f14-9330-234254050d02&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="TwoColumnRight" />
+            <pnp:Section Order="5" Type="TwoColumnRight">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;5fadc9f0-600e-4c19-adc8-6973fbf949f4&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="9c062ab7-4923-48df-b022-60d6722dcf65" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3&gt;&lt;span class=&quot;fontSizeXxxLarge&quot;&gt;Working together to create change at Pride&lt;/span&gt;&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;17d16f45-ea67-4bd9-8ed3-9e0e6940e944&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
+                <pnp:CanvasControl WebPartType="Text" ControlId="37bb56b5-59d2-4be1-b476-13dedbd78693" Order="2" Column="2">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;LGBTQI+ people have many dimensions to their identities and are affected by issues that some may consider unrelated to LGBTQI+ communities. Learn from those who are actively working together across groups to drive change for everyone.&lt;/p&gt;&lt;p&gt;Work to protect trans lives, create racial justice, mitigate the impact of COVID-19, expand environmental equity, increase Indigenous visibility, and so much more. LGBTQI+ communities at Contoso and beyond invite everyone to join us in our call for justice and equity, as we highlight how societal issues that are often seen as separate and unrelated, impact us all.&amp;nbsp;The challenges we face are hard to solve. But by working together, we can make an impact in bringing about change for all. Discover how some Contoso&amp;nbsp;employees and activists who inspire us are creating change.&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Compact" BackgroundEmphasis="Strong" ShowSiteTitle="false" ShowSiteNavigation="false" />
+      <pnp:Footer Enabled="false" Logo="" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

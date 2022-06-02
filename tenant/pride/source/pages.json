@@ -1,0 +1,36 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/provisioning/201909/extract-configuration.schema.json",
+    "persistAssetFiles": true,
+    "handlers": [
+        "Lists",
+        "Pages",
+        "Navigation",
+        "SiteFooter",
+        "SiteHeader",
+        "WebSettings",
+        "Theme"
+    ],
+    "siteFooter": {
+        "removeExistingNodes": true
+    },
+    "pages": {
+        "excludeAuthorInformation": true,
+        "includeAllClientSidePages": true
+    },
+    "navigation": {
+        "removeExistingNodes": true
+    },
+    "lists": {
+        "includeHiddenLists": false,
+        "lists": [
+            {
+                "title": "Site Assets",
+                "includeItems": true,
+                "query": {
+                    "includeAttachments": true,
+                    "pageSize": 100
+                }
+            }
+        ]
+    }
+}
