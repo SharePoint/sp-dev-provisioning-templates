@@ -49,12 +49,12 @@
                 {
                     "type": "fullpage",
                     "altText": "Template preview",
-                    "url": "./pride.jpg"
+                    "url": "./pride.png"
                 },
                 {
                     "type": "cardpreview",
                     "altText": "Template preview",
-                    "url": "./pride.jpg"
+                    "url": "./pride.png"
                 }
             ],
             "detailItemCategories": [
