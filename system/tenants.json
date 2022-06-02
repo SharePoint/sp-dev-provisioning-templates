@@ -56,7 +56,6 @@
         {"id": "mikeamm.onmicrosoft.com", "tenantName": "mikeamm.onmicrosoft.com", "referenceOwner": "Mike Ammerlaan - MSFT"},
         {"id": "m365pnp.onmicrosoft.com", "tenantName": "m365pnp.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
         {"id": "msignite2019a.onmicrosoft.com", "tenantName": "msignite2019a.onmicrosoft.com", "referenceOwner": "Ignite Demos"},
-        {"id": "m365x007024.onmicrosoft.com", "tenantName": "m365x007024.onmicrosoft.com", "referenceOwner": "Vesa Juvonen - MSFT"},
         {"id": "contosoelectronics002a.onmicrosoft.com", "tenantName": "contosoelectronics002a.onmicrosoft.com", "referenceOwner": "Katie Swanson - MSFT"},
         {"id": "a830edad9050849829E20051016.onmicrosoft.com", "tenantName": "a830edad9050849829E20051016.onmicrosoft.com", "referenceOwner": "eDog Tests"},
         {"id": "m365edu245790.onmicrosoft.com", "tenantName": "m365edu245790.onmicrosoft.com", "referenceOwner": "EDU test"},
@@ -73,6 +72,7 @@
         {"id": "m365x563576.onmicrosoft.com", "tenantName": "m365x563576.onmicrosoft.com", "referenceOwner": "Sean - MSFT"},
         {"id": "m365x728555.onmicrosoft.com", "tenantName": "m365x728555.onmicrosoft.com", "referenceOwner": "James - MSFT"},
         {"id": "M365x27714432.onmicrosoft.com", "tenantName": "M365x27714432.onmicrosoft.com", "referenceOwner": "Kristen - MSFT"},
-        {"id": "M365x705733.onmicrosoft.com", "tenantName": "M365x705733.onmicrosoft.com", "referenceOwner": "Kristen - MSFT"}
+        {"id": "M365x705733.onmicrosoft.com", "tenantName": "M365x705733.onmicrosoft.com", "referenceOwner": "Kristen - MSFT"},
+        {"id": "M365x417362.onmicrosoft.com", "tenantName": "M365x417362.onmicrosoft.com", "referenceOwner": "Mike Hollinshead - MSFT"}
     ]
 }
