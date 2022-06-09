@@ -73,6 +73,7 @@
         {"id": "m365x728555.onmicrosoft.com", "tenantName": "m365x728555.onmicrosoft.com", "referenceOwner": "James - MSFT"},
         {"id": "M365x27714432.onmicrosoft.com", "tenantName": "M365x27714432.onmicrosoft.com", "referenceOwner": "Kristen - MSFT"},
         {"id": "M365x705733.onmicrosoft.com", "tenantName": "M365x705733.onmicrosoft.com", "referenceOwner": "Kristen - MSFT"},
-        {"id": "M365x417362.onmicrosoft.com", "tenantName": "M365x417362.onmicrosoft.com", "referenceOwner": "Mike Hollinshead - MSFT"}
+        {"id": "M365x417362.onmicrosoft.com", "tenantName": "M365x417362.onmicrosoft.com", "referenceOwner": "Mike Hollinshead - MSFT"},
+        {"id": "m365x43937344.onmicrosoft.com", "tenantName": "m365x43937344.onmicrosoft.com", "referenceOwner": "Vesa Juvonen"}
     ]
 }
