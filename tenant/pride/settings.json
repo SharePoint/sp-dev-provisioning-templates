@@ -8,7 +8,7 @@
         "SPPNP"
     ],
     "packageFile": "pride.pnp",
-    "abstract": "A global LGBTQ+ employees & allies resource group",
+    "abstract": " LGBTQ+ Employee Resource Group",
     "sortOrder": 650,
     "promoted": "false",
     "sortOrderPromoted": 0,
@@ -33,8 +33,8 @@
         ],
         "displayInfo": {
             "pageTemplateId": "system/pageTemplates/template-1",
-            "siteTitle": "Unite, advance, and promote your LGBTQ+ community ",
-            "siteDescriptor": "Embrace the diversity and inclusiveness in your company.",
+            "siteTitle": "LGBTQ+ Employee Resource Group",
+            "siteDescriptor": "A GLOBAL LGBTQ+ EMPLOYEES & ALLIES RESOURCE GROUP",
             "descriptionParagraphs": [
                 "Use the LGBTQ+ Employee Resource Group site template to quickly create a communication site to uplift employee resource groups, support the career growth of people in your organization, and to help advance equality and allyship for all.",
                 "This template features content focused on an LGBTQ+ employee resource group but can be adapted to fit a variety of other employee groups at your organization.",
