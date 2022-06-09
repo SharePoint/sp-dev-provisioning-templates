@@ -1,6 +1,0 @@
-<pnp:Preferences Generator="PnP.Framework, Version=1.9.1.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />   
-   <pnp:Parameters>
-      <pnp:Parameter Key="SiteUrl">/sites/pride</pnp:Parameter>
-      <pnp:Parameter Key="SiteTitle">Pride</pnp:Parameter>
-    </pnp:Parameters>
-</pnp:Preferences>
