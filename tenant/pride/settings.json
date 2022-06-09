@@ -33,12 +33,12 @@
         ],
         "displayInfo": {
             "pageTemplateId": "system/pageTemplates/template-1",
-            "siteTitle": "A global LGBTQ+ employees & allies resource group",
+            "siteTitle": "Unite, advance, and promote your LGBTQ+ community ",
             "siteDescriptor": "Embrace the diversity and inclusiveness in your company.",
             "descriptionParagraphs": [
-                "To be define as a text.",
-                "Next line in text.",
-                "<a href='https://docs.microsoft.com/en-us/sharepoint/employee-resource-template'>Overview of the LGBTQ+ Employee Resource Group site template</a>."
+                "Use the LGBTQ+ Employee Resource Group site template to quickly create a communication site to uplift employee resource groups, support the career growth of people in your organization, and to help advance equality and allyship for all.",
+                "This template features content focused on an LGBTQ+ employee resource group but can be adapted to fit a variety of other employee groups at your organization.",
+                "More details can be found in this article - <a href='https://docs.microsoft.com/en-us/sharepoint/employee-resource-template'>Overview of the LGBTQ+ Employee Resource Group site template</a>."
             ],
             "provisionMessages": {
                 "provisionPageTitle": "Great choice!",
@@ -123,22 +123,16 @@
                     "name": "Site Content",
                     "items": [
                         {
-                            "name": "Custom and pre-populated home page"
+                            "name": "Home page – The landing page features a unique theme, colorful images, and more inspirational content that is relevant and engaging. Content here is inspired by a LGBTQ+ employee resource group but can be adapted to other types of groups. Customize the Text, News, Events, and Quick Links web parts to make this site your own. "
                         },
                         {
-                            "name": "Pre-populated pages that connect new hires to company mission, culture, and leadership team"
+                            "name": "Page template – A page template with a unique theme can be found in the site’s contents to help create news posts and pages for the site more quickly."
                         },
                         {
-                            "name": "New employee checklist built on Microsoft Lists to help new hires onboard successfully"
+                            "name": "News web part – Pre-populated news posts were created using the page template. "
                         },
                         {
-                            "name": "Example content for the People web part, Yammer web part, News web part, and Quick links web part"
-                        },
-                        {
-                            "name": "Pre-written new employee FAQs page"
-                        },
-                        {
-                            "name": "Recommendations for creating social and engaging experiences"
+                            "name": "Events web part – Pre-populated events from different employee resource groups highlight more opportunities to learn and practice allyship."
                         }
                     ]
                 },
