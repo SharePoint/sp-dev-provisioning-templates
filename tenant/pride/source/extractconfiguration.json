@@ -46,7 +46,9 @@
                         "fAllDayEvent",
                         "fRecurrence",
                         "Category",
-                        "Duration"
+                        "Duration",
+                        "BannerUrl",
+                        "BannerImageUrl"
                     ]
                 }
             }

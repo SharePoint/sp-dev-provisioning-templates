@@ -8,11 +8,11 @@
         "SPPNP"
     ],
     "packageFile": "pride.pnp",
-    "abstract": "A global LGBTQ+ employees & allies resource group",
+    "abstract": "LGBTQ+ Employee Resource Group",
     "sortOrder": 650,
     "promoted": "false",
     "sortOrderPromoted": 0,
-    "preview": "true",
+    "preview": "false",
     "forceNewSite": "true",
     "forceExistingSite": "false",
     "matchingSiteBaseTemplateId": "SITEPAGEPUBLISHING#0",
@@ -33,12 +33,12 @@
         ],
         "displayInfo": {
             "pageTemplateId": "system/pageTemplates/template-1",
-            "siteTitle": "A global LGBTQ+ employees & allies resource group",
-            "siteDescriptor": "Embrace the diversity and inclusiveness in your company.",
+            "siteTitle": "LGBTQ+ Employee Resource Group",
+            "siteDescriptor": "A GLOBAL LGBTQ+ EMPLOYEES & ALLIES RESOURCE GROUP",
             "descriptionParagraphs": [
-                "To be define as a text.",
-                "Next line in text.",
-                "<a href='https://lookbook.microsoft.com/details/8fefcc9a-7ca4-457f-bd10-acee3ae63b63'>Reference to any public documentation or announcement</a>."
+                "Use the LGBTQ+ Employee Resource Group site template to quickly create a communication site to uplift employee resource groups, support the career growth of people in your organization, and to help advance equality and allyship for all.",
+                "This template features content focused on an LGBTQ+ employee resource group but can be adapted to fit a variety of other employee groups at your organization.",
+                "More details can be found in this article - <a href='https://docs.microsoft.com/en-us/sharepoint/employee-resource-template'>Overview of the LGBTQ+ Employee Resource Group site template</a>."
             ],
             "provisionMessages": {
                 "provisionPageTitle": "Great choice!",
@@ -62,11 +62,6 @@
                     "name": "Webparts",
                     "items": [
                         {
-                            "name": "Hero",
-                            "description": "Full width, 5 tiles",
-                            "url": "https://support.office.com/en-us/article/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645"
-                        },
-                        {
                             "name": "Text",
                             "description": "Custom RTE formatting",
                             "url": "https://support.microsoft.com/en-us/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801#:~:text=%20To%20use%20the%20Text%20web%20part%3A%20,5%20Use%20s%EF%BB%BF%EF%BB%BFtrikethrough%206%20I%EF%BB%BFndent%20text%20More%20"
@@ -75,46 +70,26 @@
                             "name": "Image",
                             "description": "Text over image",
                             "url": "https://support.microsoft.com/en-us/office/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
-                        },                                                
+                        },     
                         {
-                            "name": "Call to action",
-                            "description": "",
-                            "url": "https://support.office.com/en-us/article/use-the-call-to-action-web-part-e9917310-7543-4fc4-8f3f-d78e46074c00"
+                            "name": "News",
+                            "description": "Carousel, Side-by-side",
+                            "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
                         },
                         {
+                            "name": "Events",
+                            "description": "Filmstrip layout",
+                            "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
+                        },       
+                        {
                             "name": "Quick Links",
-                            "description": "Filmstrip",
+                            "description": "List",
                             "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
                         },
                         {
-                            "name": "People",
-                            "description": "",
-                            "url": "https://support.microsoft.com/en-us/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05"
-                        },
-                        {
-                            "name": "YouTube",
-                            "description": "",
-                            "url": "https://support.microsoft.com/en-us/office/use-the-youtube-web-part-c14fa2c1-71dc-4e52-94b6-b4876742382f"
-                        },
-                        {
-                            "name": "List",
-                            "description": "",
-                            "url": "https://support.microsoft.com/en-us/office/use-the-list-web-part-ef0a1b80-f8b3-443d-b04a-1e76c70b5537"
-                        },
-                        {
-                            "name": "World Clock",
-                            "description": "",
-                            "url": "https://support.office.com/en-us/article/use-the-world-clock-web-part-aa2ede87-e331-44f1-a116-a5b8fc67fd04"
-                        },                                                              
-                        {
-                            "name": "Bing maps",
-                            "description": "",
-                            "url": "https://support.microsoft.com/en-ie/office/use-the-bing-maps-web-part-c0e3f2f6-dc0d-49df-9308-1bf7c888e794"
-                        },
-                        {
-                            "name": "Sites",
-                            "description": "Compact",
-                            "url": "https://support.office.com/en-us/article/use-the-sites-web-part-93cbd17b-0bf8-4355-9f32-cc90e0443e6d"
+                            "name": "Spacer",
+                            "description": "Section background",
+                            "url": "https://support.office.com/en-us/article/add-vertical-space-to-a-page-with-the-spacer-web-part-7e6ae288-1634-44e2-bc4c-7fb4042ee905"
                         }
                     ]
                 },
@@ -124,10 +99,6 @@
                         {
                             "name": "Custom company theme",
                             "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
-                        },
-                        {
-                            "name": "Vertical Section",
-                            "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
                         },
                         {
                             "name": "Section background",
@@ -145,10 +116,6 @@
                             "name": "Custom site logo",
                             "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b",
                             "badgeText": ""
-                        },
-                        {
-                            "name": "Footer",
-                            "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b"
                         }
                     ]
                 },
@@ -156,22 +123,16 @@
                     "name": "Site Content",
                     "items": [
                         {
-                            "name": "Custom and pre-populated home page"
+                            "name": "Home page – The landing page features a unique theme, colorful images, and more inspirational content that is relevant and engaging. Content here is inspired by a LGBTQ+ employee resource group but can be adapted to other types of groups. Customize the Text, News, Events, and Quick Links web parts to make this site your own. "
                         },
                         {
-                            "name": "Pre-populated pages that connect new hires to company mission, culture, and leadership team"
+                            "name": "Page template – A page template with a unique theme can be found in the site’s contents to help create news posts and pages for the site more quickly."
                         },
                         {
-                            "name": "New employee checklist built on Microsoft Lists to help new hires onboard successfully"
+                            "name": "News web part – Pre-populated news posts were created using the page template. "
                         },
                         {
-                            "name": "Example content for the People web part, Yammer web part, News web part, and Quick links web part"
-                        },
-                        {
-                            "name": "Pre-written new employee FAQs page"
-                        },
-                        {
-                            "name": "Recommendations for creating social and engaging experiences"
+                            "name": "Events web part – Pre-populated events from different employee resource groups highlight more opportunities to learn and practice allyship."
                         }
                     ]
                 },
@@ -183,8 +144,8 @@
                             "url": "https://docs.microsoft.com/en-us/sharepoint/add-sample-site"
                         },
                         {
-                            "name": "Step-by-step instructions to provision and customize New employee onboarding sites",
-                            "url": "https://docs.microsoft.com/sharepoint/provision-neo-hub"
+                            "name": "Step-by-step instructions to provision and customize employee resource template",
+                            "url": "https://docs.microsoft.com/en-us/sharepoint/employee-resource-template"
                         }
                     ]
                 }

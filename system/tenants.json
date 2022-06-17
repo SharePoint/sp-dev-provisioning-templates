@@ -74,6 +74,7 @@
         {"id": "M365x27714432.onmicrosoft.com", "tenantName": "M365x27714432.onmicrosoft.com", "referenceOwner": "Kristen - MSFT"},
         {"id": "M365x705733.onmicrosoft.com", "tenantName": "M365x705733.onmicrosoft.com", "referenceOwner": "Kristen - MSFT"},
         {"id": "M365x417362.onmicrosoft.com", "tenantName": "M365x417362.onmicrosoft.com", "referenceOwner": "Mike Hollinshead - MSFT"},
-        {"id": "41vtkl.onmicrosoft.com", "tenantName": "41vtkl.onmicrosoft.com", "referenceOwner": "Derek - Sympraxis"}
+        {"id": "41vtkl.onmicrosoft.com", "tenantName": "41vtkl.onmicrosoft.com", "referenceOwner": "Derek - Sympraxis"},
+        {"id": "m365x43937344.onmicrosoft.com", "tenantName": "m365x43937344.onmicrosoft.com", "referenceOwner": "Vesa Juvonen"}
     ]
 }
