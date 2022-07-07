@@ -67,7 +67,7 @@ Download the .PNP template file that you want to provision, save it in a local f
 ```powershell
 Connect-PnPOnline https://<tenant>-admin.sharepoint.com/
 
-Invoke-PnPTenantTemplate -Path .\your-template-file.pnp -Parameters @{"SiteTitle"="<Title-of-your-site>";"SiteUrl"="/sites/<URL-of-your-target-site>"}
+Invoke-PnPTenantTemplate -Path .\your-template-file.pnp -Parameters @{"SiteTitle"="<Title-of-your-target-site>";"SiteUrl"="/sites/<URL-of-your-target-site>"}
 ```
 
 Replace \<tenant\> with the actual name of your SharePoint Online tenant in Microsoft 365.
@@ -79,7 +79,7 @@ Download the .PNP template file that you want to provision, save it in a local f
 ```powershell
 Connect-PnPOnline https://<tenant>-admin.sharepoint.com/
 
-Invoke-PnPSiteTemplate -Path .\your-template-file.pnp -Parameters @{"SiteTitle"="<Title-of-your-site>";"SiteUrl"="/sites/<URL-of-your-target-site>"}
+Invoke-PnPSiteTemplate -Path .\your-template-file.pnp -Parameters @{"SiteTitle"="<Title-of-your-target-site>";"SiteUrl"="/sites/<URL-of-your-target-site>"}
 ```
 
 Replace \<tenant\> with the actual name of your SharePoint Online tenant in Microsoft 365.
