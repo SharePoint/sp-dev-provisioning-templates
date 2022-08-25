@@ -85,24 +85,24 @@
             <pnp:Property Key="Order" Value="600" />
           </pnp:Properties>
         </pnp:File>
-        <pnp:File Src="SiteAssets/_placeholder-images/news posts/Ally-thumb.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
+        <pnp:File Src="SiteAssets/_placeholder-images/news posts/graphic01.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
           <pnp:Properties>
             <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
-            <pnp:Property Key="FileLeafRef" Value="Ally-thumb.jpg" />
+            <pnp:Property Key="FileLeafRef" Value="graphic01.jpg" />
             <pnp:Property Key="Order" Value="5400" />
           </pnp:Properties>
         </pnp:File>
-        <pnp:File Src="SiteAssets/_placeholder-images/news posts/blackhistorymonth-thumb.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
+        <pnp:File Src="SiteAssets/_placeholder-images/news posts/graphic03.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
           <pnp:Properties>
             <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
-            <pnp:Property Key="FileLeafRef" Value="blackhistorymonth-thumb.jpg" />
+            <pnp:Property Key="FileLeafRef" Value="graphic03.jpg" />
             <pnp:Property Key="Order" Value="5500" />
           </pnp:Properties>
         </pnp:File>
-        <pnp:File Src="SiteAssets/_placeholder-images/news posts/dayofvisibility-thumb.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
+        <pnp:File Src="SiteAssets/_placeholder-images/news posts/graphic04.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
           <pnp:Properties>
             <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
-            <pnp:Property Key="FileLeafRef" Value="dayofvisibility-thumb.jpg" />
+            <pnp:Property Key="FileLeafRef" Value="graphic04.jpg" />
             <pnp:Property Key="Order" Value="5600" />
           </pnp:Properties>
         </pnp:File>
@@ -113,10 +113,10 @@
             <pnp:Property Key="Order" Value="5700" />
           </pnp:Properties>
         </pnp:File>
-        <pnp:File Src="SiteAssets/_placeholder-images/news posts/lgbtqPride_thumb.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
+        <pnp:File Src="SiteAssets/_placeholder-images/news posts/graphic02.jpg" Folder="SiteAssets/_placeholder-images/news posts" Overwrite="true" Level="Published">
           <pnp:Properties>
             <pnp:Property Key="ContentTypeId" Value="0x01010026775E7828A4A94491AB40E3AE1EBD47" />
-            <pnp:Property Key="FileLeafRef" Value="lgbtqPride_thumb.jpg" />
+            <pnp:Property Key="FileLeafRef" Value="graphic02.jpg" />
             <pnp:Property Key="Order" Value="5800" />
           </pnp:Properties>
         </pnp:File>
@@ -486,7 +486,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="International transgender day of visibility" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/dayofvisibility-thumb.jpg}&amp;ext=jpg" PageName="International-Transgender-Day-of-Visibility.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="International transgender day of visibility" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/graphic04.jpg}&amp;ext=jpg" PageName="International-Transgender-Day-of-Visibility.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Pride" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
@@ -534,7 +534,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="LGBTQ+ communities of color celebrate black history month" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/blackhistorymonth-thumb.jpg}&amp;ext=jpg" PageName="LGBTQ-Communities-of-Color.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="LGBTQ+ communities of color celebrate black history month" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/graphic03.jpg}&amp;ext=jpg" PageName="LGBTQ-Communities-of-Color.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Pride" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
@@ -582,7 +582,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="An annual LGBTQ+ pride celebration" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/lgbtqPride_thumb.jpg}&amp;ext=jpg" PageName="An-Annual-LGBT-Pride-Celebration.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="An annual LGBTQ+ pride celebration" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/graphic02.jpg}&amp;ext=jpg" PageName="An-Annual-LGBT-Pride-Celebration.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Pride" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
@@ -630,7 +630,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Supporting transgender and gender diverse people in the workplace" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/Ally-thumb.jpg}&amp;ext=jpg" PageName="Supporting-Transgender-and-Gender-Diverse-People-in-the-Workplace.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Supporting transgender and gender diverse people in the workplace" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/graphic01.jpg}&amp;ext=jpg" PageName="Supporting-Transgender-and-Gender-Diverse-People-in-the-Workplace.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Pride" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
