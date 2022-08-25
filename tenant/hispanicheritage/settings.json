@@ -1,0 +1,169 @@
+{
+    "templateId": "6282301f-3ec1-49f5-9914-14ab171b5443",
+    "categories": [
+        "ORGANIZATION"
+    ],
+    "platforms": [
+        "LOOKBOOK",
+        "SPPNP"
+    ],
+    "packageFile": "pride.pnp",
+    "abstract": "Hispanic Heritage Month",
+    "sortOrder": 650,
+    "promoted": "false",
+    "sortOrderPromoted": 0,
+    "preview": "true",
+    "forceNewSite": "true",
+    "forceExistingSite": "false",
+    "matchingSiteBaseTemplateId": "SITEPAGEPUBLISHING#0",
+    "visible": "true",
+    "metadata": {
+        "properties": [
+            {
+                "name": "SiteTitle",
+                "caption": "Site Title",
+                "description": "Title for your site"
+            },
+            {
+                "name": "SiteUrl",
+                "caption": "Site URL",
+                "description": "Relative URL to be used for the site",
+                "editor": "SiteUrl"
+            }
+        ],
+        "displayInfo": {
+            "pageTemplateId": "system/pageTemplates/template-1",
+            "siteTitle": "Hispanic Heritage Month ",
+            "siteDescriptor": "HISPANIC HERITAGE MONTH RESOURCE GROUP",
+            "descriptionParagraphs": [
+                "Use the Hispanic Heritage Month Employee Resource Group site template to quickly create a communication site to uplift employee resource groups, support the career growth of people in your organization, and to help advance equality and allyship for all.",
+                "This template features content focused on an employee resource group but can be adapted to fit a variety of other employee groups at your organization.",
+                "More details can be found in this article - <a href='https://docs.microsoft.com/en-us/sharepoint/employee-resource-template'>Overview of the Employee Resource Group site template</a>."
+            ],
+            "provisionMessages": {
+                "provisionPageTitle": "Great choice!",
+                "provisionPageSubTitle": "We just need a bit of information before we start provisioning.",
+                "provisionPageText": "The following settings are used for your site. You can keep them as is, or change them to suit your needs."
+            },
+            "previewImages": [
+                {
+                    "type": "fullpage",
+                    "altText": "Template preview",
+                    "url": "./template.jpg"
+                },
+                {
+                    "type": "cardpreview",
+                    "altText": "Template preview",
+                    "url": "./template.jpg"
+                }
+            ],
+            "detailItemCategories": [
+                {
+                    "name": "Webparts",
+                    "items": [
+                        {
+                            "name": "Text",
+                            "description": "Custom RTE formatting",
+                            "url": "https://support.microsoft.com/en-us/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801#:~:text=%20To%20use%20the%20Text%20web%20part%3A%20,5%20Use%20s%EF%BB%BF%EF%BB%BFtrikethrough%206%20I%EF%BB%BFndent%20text%20More%20"
+                        },
+                        {
+                            "name": "Image",
+                            "description": "Text over image",
+                            "url": "https://support.microsoft.com/en-us/office/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2"
+                        },     
+                        {
+                            "name": "News",
+                            "description": "Carousel, Side-by-side",
+                            "url": "https://support.office.com/en-us/article/use-the-news-web-part-on-a-sharepoint-page-c2dcee50-f5d7-434b-8cb9-a7feefd9f165"
+                        },
+                        {
+                            "name": "Events",
+                            "description": "Filmstrip layout",
+                            "url": "https://support.office.com/en-us/article/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909"
+                        },       
+                        {
+                            "name": "Quick Links",
+                            "description": "List",
+                            "url": "https://support.office.com/en-us/article/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82"
+                        },
+                        {
+                            "name": "Spacer",
+                            "description": "Section background",
+                            "url": "https://support.office.com/en-us/article/add-vertical-space-to-a-page-with-the-spacer-web-part-7e6ae288-1634-44e2-bc4c-7fb4042ee905"
+                        }
+                    ]
+                },
+                {
+                    "name": "Features",
+                    "items": [
+                        {
+                            "name": "Custom company theme",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Section background",
+                            "url": "https://support.office.com/en-us/article/add-sections-and-columns-on-a-sharepoint-modern-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899"
+                        },
+                        {
+                            "name": "Compact Header",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Header background",
+                            "url": "https://support.office.com/en-us/article/Change-the-look-of-your-SharePoint-site-06bbadc3-6b04-4a60-9d14-894f6a170818"
+                        },
+                        {
+                            "name": "Custom site logo",
+                            "url": "https://support.office.com/en-us/article/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b",
+                            "badgeText": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Site Content",
+                    "items": [
+                        {
+                            "name": "Home page – The landing page features a unique theme, colorful images, and more inspirational content that is relevant and engaging. Content here is inspired by a Hispanic Heritage Month employee resource group but can be adapted to other types of groups. Customize the Text, News, Events, and Quick Links web parts to make this site your own. "
+                        },
+                        {
+                            "name": "Page template – A page template with a unique theme can be found in the site’s contents to help create news posts and pages for the site more quickly."
+                        },
+                        {
+                            "name": "News web part – Pre-populated news posts were created using the page template. "
+                        },
+                        {
+                            "name": "Events web part – Pre-populated events from different employee resource groups highlight more opportunities to learn and practice allyship."
+                        }
+                    ]
+                },
+                {
+                    "name": "Resources",
+                    "items": [
+                        {
+                            "name": "Learn how to add a sample tenant from the look book",
+                            "url": "https://docs.microsoft.com/en-us/sharepoint/add-sample-site"
+                        },
+                        {
+                            "name": "Step-by-step instructions to provision and customize employee resource template",
+                            "url": "https://docs.microsoft.com/en-us/sharepoint/employee-resource-template"
+                        }
+                    ]
+                }
+            ],
+            "systemRequirements": [
+                {
+                    "name": "SharePoint version",
+                    "value": "SharePoint Online"
+                },
+                {
+                    "name": "Permission required",
+                    "value": "Tenant Admin"
+                },
+                {
+                    "name": "Site language",
+                    "value": "English"
+                }
+            ]
+        }
+    }
+}
