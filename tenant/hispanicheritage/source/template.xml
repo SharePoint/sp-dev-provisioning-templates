@@ -486,14 +486,14 @@
                 <pnp:CanvasControl WebPartType="Spacer" JsonControlData="{&quot;id&quot;: &quot;8654b779-4886-46d4-8ffb-b5ed960ee986&quot;, &quot;instanceId&quot;: &quot;17d16f45-ea67-4bd9-8ed3-9e0e6940e944&quot;, &quot;title&quot;: &quot;Spacer&quot;, &quot;description&quot;: &quot;Add vertical space between areas on the page.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;autoHide&quot;:true,&quot;height&quot;:16}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="8654b779-4886-46d4-8ffb-b5ed960ee986" Order="1" Column="2" />
                 <pnp:CanvasControl WebPartType="Text" ControlId="37bb56b5-59d2-4be1-b476-13dedbd78693" Order="2" Column="2">
                   <pnp:CanvasControlProperties>
-                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;LGBTQI+ people have many dimensions to their identities and are affected by issues that some may consider unrelated to LGBTQI+ communities. Learn from those who are actively working together across groups to drive change for everyone.&lt;/p&gt;&lt;p&gt;Work to protect trans lives, create racial justice, mitigate the impact of COVID-19, expand environmental equity, increase Indigenous visibility, and so much more. LGBTQI+ communities at Contoso and beyond invite everyone to join us in our call for justice and equity, as we highlight how societal issues that are often seen as separate and unrelated, impact us all.&amp;nbsp;The challenges we face are hard to solve. But by working together, we can make an impact in bringing about change for all. Discover how some Contoso&amp;nbsp;employees and activists who inspire us are creating change.&lt;/p&gt;" />
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p&gt;More than 500 years of Hispanic and Latino history and heritage are celebrated in national parks or shared through National Park Service programs and partners in communities across the country. To participate in one of the events, you can check your local community for more details.&lt;/p&gt;" />
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Learn about and celebrate the rich traditions, cultures, and contributions of Latino and Hispanic people" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/graphic04.jpg}&amp;ext=jpg" PageName="International-Transgender-Day-of-Visibility.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Learn about the traditions, cultures, and contributions of Hispanic and Latino people" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/graphic04.jpg}&amp;ext=jpg" PageName="International-Transgender-Day-of-Visibility.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Hispano" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
@@ -541,7 +541,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="How can we help Hispanic/LatinX youth succeed?" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/graphic03.jpg}&amp;ext=jpg" PageName="LGBTQ-Communities-of-Color.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="How can we help Hispanic/LatinX youth succeed?" ThumbnailUrl="https://{fqdn}{site}/_layouts/15/getpreview.ashx?guidSite={sitecollectionid}&amp;guidWeb={siteid}&amp;guidFile={fileuniqueid:SiteAssets/_placeholder-images/news posts/graphic03.jpg}&amp;ext=jpg" PageName="hispano-template.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="true" TopicHeader="Contoso Hispano" AlternativeText="" Authors="" AuthorByLine="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth" BackgroundEmphasis="Strong">
@@ -724,7 +724,7 @@
               <pnp:DataValue FieldName="BannerImageUrl">https://{fqdn}/_layouts/15/getpreview.ashx?path={site}/SiteAssets/_placeholder-images/events/event-thumbnail-02.jpg</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
-              <pnp:DataValue FieldName="Title">Women's history month</pnp:DataValue>
+              <pnp:DataValue FieldName="Title">Women's History Month</pnp:DataValue>
               <pnp:DataValue FieldName="EventDate">2023-03-01T00:00:00Z</pnp:DataValue>
               <pnp:DataValue FieldName="EndDate">2023-03-31T23:59:00Z</pnp:DataValue>
               <pnp:DataValue FieldName="Description" />

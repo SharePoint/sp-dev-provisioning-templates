@@ -8,7 +8,7 @@
         "SPPNP"
     ],
     "packageFile": "template.pnp",
-    "abstract": "Hispanic Heritage Month",
+    "abstract": "HISPANIC HERITAGE EMPLOYEE RESOURCE GROUP ",
     "sortOrder": 650,
     "promoted": "false",
     "sortOrderPromoted": 0,
@@ -33,12 +33,12 @@
         ],
         "displayInfo": {
             "pageTemplateId": "system/pageTemplates/template-1",
-            "siteTitle": "Hispanic Heritage Month ",
-            "siteDescriptor": "HISPANIC HERITAGE MONTH RESOURCE GROUP",
+            "siteTitle": "Hispanic Heritage Month Employee Resource Group",
+            "siteDescriptor": "A RESOURCE GROUP for EMPLOYEES & ALLIES IN THE HISPANIC AND LATINX COMMUNITY ",
             "descriptionParagraphs": [
-                "Use the Hispanic Heritage Month Employee Resource Group site template to quickly create a communication site to uplift employee resource groups, support the career growth of people in your organization, and to help advance equality and allyship for all.",
-                "This template features content focused on an employee resource group but can be adapted to fit a variety of other employee groups at your organization.",
-                "More details can be found in this article - <a href='https://docs.microsoft.com/en-us/sharepoint/employee-resource-template'>Overview of the Employee Resource Group site template</a>."
+                "Use the Hispanic Heritage Employee Resource Group site template to quickly create a communication site to uplift employee resource groups, support the career growth of people in your organization, and to help advance equality and allyship for all.",
+                "This template features content focused on a Hispanic and Latinx employee resource group but can be adapted to fit a variety of other employee groups at your organization.",
+                "More details can be found in this article - <a href='https://docs.microsoft.com/en-us/sharepoint/employee-resource-template'>Overview of the Hispanic Heritage Employee Resource Group site template</a>."
             ],
             "provisionMessages": {
                 "provisionPageTitle": "Great choice!",
@@ -123,13 +123,13 @@
                     "name": "Site Content",
                     "items": [
                         {
-                            "name": "Home page – The landing page features a unique theme, colorful images, and more inspirational content that is relevant and engaging. Content here is inspired by a Hispanic Heritage Month employee resource group but can be adapted to other types of groups. Customize the Text, News, Events, and Quick Links web parts to make this site your own. "
+                            "name": "Home page – The landing page features a unique theme, colorful images, and more inspirational content that is relevant and engaging. Content here is inspired by a Hispanic and Latinx employee resource group but can be adapted to other types of groups. Customize the Text, News, Events, and Quick Links web parts to make this site your own."
                         },
                         {
                             "name": "Page template – A page template with a unique theme can be found in the site’s contents to help create news posts and pages for the site more quickly."
                         },
                         {
-                            "name": "News web part – Pre-populated news posts were created using the page template. "
+                            "name": "News web part – Pre-populated news posts were created using the page template."
                         },
                         {
                             "name": "Events web part – Pre-populated events from different employee resource groups highlight more opportunities to learn and practice allyship."
