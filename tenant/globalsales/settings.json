@@ -28,6 +28,28 @@
         "caption": "Site URL",
         "description": "Relative URL to be used for the site",
         "editor": "SiteUrl"
+      },
+      {
+        "name": "RetailOperationsSiteTitle",
+        "caption": "Retail Operations Site Title",
+        "description": "Title for your site"
+      },
+      {
+        "name": "RetailOperationsSiteUrl",
+        "caption": "Retail Operations Site URL",
+        "description": "Relative URL to be used for the site",
+        "editor": "SiteUrl"
+      },
+      {
+        "name": "ConsumerRetailSiteTitle",
+        "caption": "Consumer Retail Site Title",
+        "description": "Title for your site"
+      },
+      {
+        "name": "ConsumerRetailSiteUrl",
+        "caption": "Consumer Retail Site URL",
+        "description": "Relative URL to be used for the site",
+        "editor": "SiteUrl"
       }
     ],
     "displayInfo": {
