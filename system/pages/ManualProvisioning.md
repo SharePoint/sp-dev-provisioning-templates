@@ -4,10 +4,14 @@ In this page you can find detailed information about how to manually provision a
 
 ## Software prerequisites
 In order to provision the Look Book templates you need to have the following software tools installed on your machine:
+
 - [PowerShell Core](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2)
 - [PnP PowerShell](https://pnp.github.io/powershell/)
 
 Once you have installed the above tools, you can proceed with the following sections.
+
+> [!IMPORTANT]  
+> PnP PowerShell and the provisioning engine used for these templates are provided as an open-source solution with active community providing support for it. There is no SLA for the open-source tool support from Microsoft for these projects and operations.
 
 ## Available templates
 The Look Book templates are based on the PnP Provisioning engine. As such, every single template is represented by a .PNP file, which is nothing more than an OpenXML file that includes all the needed content to deploy the template.
