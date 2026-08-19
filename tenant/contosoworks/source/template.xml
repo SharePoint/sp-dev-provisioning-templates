@@ -447,74 +447,114 @@
               <pnp:DataValue FieldName="Title">News Year's Day</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="EventDate">12/31/2018 4:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">7/1/2019 4:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">31/12/2024 4:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">7/1/2025 4:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Martin Luther King Day</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="EventDate">1/19/2020 4:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">1/20/2020 3:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">19/1/2024 4:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">20/1/2024 3:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">New Year's Day</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="EventDate">12/31/2019 4:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">1/1/2020 3:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">31/12/2024 4:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">1/1/2025 3:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Memorial Day</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="EventDate">5/24/2020 5:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">5/25/2020 4:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">24/5/2024 5:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">25/5/2024 4:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Presidents day</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="EventDate">2/16/2020 4:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">2/17/2020 3:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">16/2/2024 4:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">17/2/2024 3:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Independence day</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="EventDate">7/2/2020 5:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">7/3/2020 4:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2/7/2024 5:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">3/7/2024 4:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Labor Day</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="EventDate">9/6/2020 5:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">9/7/2020 4:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">6/9/2024 5:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">7/9/2024 4:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Thanksgiving Day and Day after Thanksgiving</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="EventDate">11/25/2020 4:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">11/27/2020 3:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">25/11/2024 4:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">27/11/2024 3:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Christmas Eve and Christmas Day</pnp:DataValue>
               <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
-              <pnp:DataValue FieldName="EventDate">12/23/2020 4:00 PM</pnp:DataValue>
-              <pnp:DataValue FieldName="EndDate">12/25/2020 3:59 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">23/12/2024 4:00 PM</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">25/12/2024 3:59 PM</pnp:DataValue>
               <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
             </pnp:DataRow>
+            <pnp:DataRow>
+        <pnp:DataValue FieldName="Title">Australia Day</pnp:DataValue>
+        <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
+        <pnp:DataValue FieldName="Location">Australia</pnp:DataValue>
+        <pnp:DataValue FieldName="EventDate">26/1/2025 12:00 AM</pnp:DataValue>
+        <pnp:DataValue FieldName="EndDate">26/1/2025 11:59 PM</pnp:DataValue>
+        <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="Title">Waitangi Day</pnp:DataValue>
+        <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
+        <pnp:DataValue FieldName="Location">New Zealand</pnp:DataValue>
+        <pnp:DataValue FieldName="EventDate">6/2/2025 12:00 AM</pnp:DataValue>
+        <pnp:DataValue FieldName="EndDate">6/2/2025 11:59 PM</pnp:DataValue>
+        <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="Title">ANZAC Day</pnp:DataValue>
+        <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
+        <pnp:DataValue FieldName="Location">Australia, New Zealand</pnp:DataValue>
+        <pnp:DataValue FieldName="EventDate">25/4/2025 12:00 AM</pnp:DataValue>
+        <pnp:DataValue FieldName="EndDate">25/4/2025 11:59 PM</pnp:DataValue>
+        <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="Title">Queen's Birthday (Australia)</pnp:DataValue>
+        <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
+        <pnp:DataValue FieldName="Location">Australia</pnp:DataValue>
+        <pnp:DataValue FieldName="EventDate">9/6/2025 12:00 AM</pnp:DataValue>
+        <pnp:DataValue FieldName="EndDate">9/6/2025 11:59 PM</pnp:DataValue>
+        <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="Title">Labour Day (New Zealand)</pnp:DataValue>
+        <pnp:DataValue FieldName="Category">Corporate Holidays</pnp:DataValue>
+        <pnp:DataValue FieldName="Location">New Zealand</pnp:DataValue>
+        <pnp:DataValue FieldName="EventDate">27/10/2025 12:00 AM</pnp:DataValue>
+        <pnp:DataValue FieldName="EndDate">27/10/2025 11:59 PM</pnp:DataValue>
+        <pnp:DataValue FieldName="fAllDayEvent">Yes</pnp:DataValue>
+      </pnp:DataRow>
           </pnp:DataRows>
           <pnp:FieldDefaults>
             <pnp:FieldDefault FieldName="Category" />
@@ -543,8 +583,8 @@
             </View>
           </pnp:Views>
           <pnp:Fields>
-            <Field Name="rlsy" DisplayName="2019 Dates" Type="DateTime" ID="{d73f0576-ddd5-4c3e-b2ca-21ff2facc0ba}" SourceID="{{listid:Global Country Holidays}}" StaticName="rlsy" ColName="datetime1" RowOrdinal="0" Version="2" />
-            <Field Name="bxkv" DisplayName="2020 Dates" Type="DateTime" ID="{776564f7-303e-49e6-8189-dfff491d71b3}" SourceID="{{listid:Global Country Holidays}}" StaticName="bxkv" ColName="datetime2" RowOrdinal="0" Version="2" />
+            <Field Name="rlsy" DisplayName="2024 Dates" Type="DateTime" ID="{d73f0576-ddd5-4c3e-b2ca-21ff2facc0ba}" SourceID="{{listid:Global Country Holidays}}" StaticName="rlsy" ColName="datetime1" RowOrdinal="0" Version="2" />
+            <Field Name="bxkv" DisplayName="2024 Dates" Type="DateTime" ID="{776564f7-303e-49e6-8189-dfff491d71b3}" SourceID="{{listid:Global Country Holidays}}" StaticName="bxkv" ColName="datetime2" RowOrdinal="0" Version="2" />
             <Field Type="Choice" DisplayName="Location" Required="TRUE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{cf2ef14e-61e6-4c62-8af1-5f6f9cc05016}" SourceID="{{listid:Global Country Holidays}}" StaticName="Location" Name="Location" ColName="nvarchar4" RowOrdinal="0">
               <Default>United States</Default>
               <CHOICES>
@@ -553,6 +593,8 @@
                 <CHOICE>United States</CHOICE>
                 <CHOICE>United Kingdom</CHOICE>
                 <CHOICE>Singapore</CHOICE>
+                <CHOICE>Australia</CHOICE>
+                <CHOICE>New Zealand</CHOICE>
               </CHOICES>
             </Field>
           </pnp:Fields>
@@ -560,26 +602,62 @@
             <pnp:DataRow>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
               <pnp:DataValue FieldName="Title">New Year's Eve</pnp:DataValue>
-              <pnp:DataValue FieldName="rlsy">1/1/2019 12:00 AM</pnp:DataValue>
-              <pnp:DataValue FieldName="bxkv">1/1/2020 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">1/1/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">1/1/2025 12:00 AM</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
               <pnp:DataValue FieldName="Title">Martin Luther King Day</pnp:DataValue>
-              <pnp:DataValue FieldName="rlsy">1/21/2019 12:00 AM</pnp:DataValue>
-              <pnp:DataValue FieldName="bxkv">1/20/2020 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">21/1/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">20/1/2025 12:00 AM</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
               <pnp:DataValue FieldName="Title">President's Day</pnp:DataValue>
-              <pnp:DataValue FieldName="rlsy">2/18/2019 12:00 AM</pnp:DataValue>
-              <pnp:DataValue FieldName="bxkv">2/17/2020 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">18/2/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">17/2/2025 12:00 AM</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Location">United States</pnp:DataValue>
               <pnp:DataValue FieldName="Title">Memorial Day</pnp:DataValue>
-              <pnp:DataValue FieldName="rlsy">5/27/2019 12:00 AM</pnp:DataValue>
-              <pnp:DataValue FieldName="bxkv">5/25/2020 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">27/5/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">27/5/2025 12:00 AM</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Location">Australia</pnp:DataValue>
+              <pnp:DataValue FieldName="Title">New Year's Day</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">1/1/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">1/1/2025 12:00 AM</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Location">Australia</pnp:DataValue>
+              <pnp:DataValue FieldName="Title">Australia Day</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">1/26/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">1/26/2025 12:00 AM</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Location">Australia</pnp:DataValue>
+              <pnp:DataValue FieldName="Title">ANZAC Day</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">4/25/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">4/25/2025 12:00 AM</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Location">New Zealand</pnp:DataValue>
+              <pnp:DataValue FieldName="Title">New Year's Day</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">1/1/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">1/1/2025 12:00 AM</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Location">New Zealand</pnp:DataValue>
+              <pnp:DataValue FieldName="Title">Waitangi Day</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">2/6/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">2/6/2025 12:00 AM</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Location">New Zealand</pnp:DataValue>
+              <pnp:DataValue FieldName="Title">ANZAC Day</pnp:DataValue>
+              <pnp:DataValue FieldName="rlsy">4/25/2024 12:00 AM</pnp:DataValue>
+              <pnp:DataValue FieldName="bxkv">4/25/2025 12:00 AM</pnp:DataValue>
             </pnp:DataRow>
           </pnp:DataRows>
           <pnp:Webhooks>

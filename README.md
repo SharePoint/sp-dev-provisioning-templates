@@ -1,24 +1,50 @@
+# My SharePoint Site
 
-# SharePoint Provisioning Templates
+https://nology897.sharepoint.com/sites/ContosoWorksSite
 
-Repository for SharePoint PnP Provisioning templates to automate site / tenant level provisioning logic. Templates are divided on different folders based on the structure and needed permissions.
+# Applying Template Script
 
-- Site - These templates contain site level provisioning logic. They can be provisioned and used by any site collection administrator and no tenant scoped permissions are needed.
+Import-Module PnP.PowerShell
 
-- Tenant - These templates contain tenant level provisioning. They could contain for example multiple site collections, site designs, taxonomy configurations etc. You will need to have tenant level permissions to apply these templates.
+$baseUrl = Read-Host "Enter base URL for SharePoint (e.g. https://tenant.sharepoint.com/sites/)"
+$baseTitle = Read-Host "Enter Site Name"
+$baseDescription = "Description for "
+$siteNumber = [int] (Read-Host "Enter # of sites to be generated")
+$siteOwner = Read-Host "Enter site owner user"
+$adminSiteUrl = Read-Host "Enter Admin SharePoint URL"
+$templatePath = Read-Host "Enter Path to template"
+$credential = Get-Credential
+Connect-PnPOnline -Url $adminSiteUrl -Credentials $credential
 
-Sub folders in specific folders are actual templates. Each template has at least one screenshot file and readme file. The readme file should follow the readme template available in the root of this repository. Each template also has a mandatory json file, which has to follow the provided json file structure. This json file information is used to surface metadata on a web site from where the templates can be used. 
+for ($i = 1; $i -le $siteNumber; $i++) {
+  $siteTitle = "$baseTitle$i"
+  $siteUrl = "$baseUrl$siteTitle"
+  $siteDescription = "$baseDescription$siteTitle"
 
-# Contributing
+try {
+Write-Host "Creating site: $siteTitle at URL $siteUrl"
+New-PnPSite -Type CommunicationSite -Title $siteTitle -Url $siteUrl -Lcid 1033 -Description $siteDescription -Owner $siteOwner
+Write-Host "Site creation in progress for: $siteUrl"
+}
+catch {
+Write-Host "Failed to create site: $siteUrl. Error: $\_"
+continue
+}
 
-This project welcomes contributions and suggestions on service texts, but not for the templates.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+Start-Sleep -Seconds 120
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+Connect-PnPOnline -Url $siteUrl -Interactive
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+try {
+Write-Host "Applying template to site: $siteUrl"
+Invoke-PnPSiteTemplate -Path $templatePath
+Write-Host "Template applied to site: $siteUrl"
+}
+catch {
+Write-Host "Failed to apply template to site: $siteUrl. Error: $\_"
+}
 
+Start-Sleep -Seconds 10
+}
+
+Disconnect-PnPOnline
